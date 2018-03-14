@@ -1,5 +1,7 @@
 import * as React from 'react';
 import './App.css';
+import Section from './components/section/Section';
+import Top from './containers/Top';
 
 const logo = require('./logo.svg');
 
@@ -14,6 +16,13 @@ class App extends React.Component {
         <p className="App-intro">
           To get started, edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <Section bg="#eaeaea">
+          This is a section
+          <Top />
+        </Section>
+        <Section bg="yellow">
+          This is another section
+        </Section>
       </div>
     );
   }
