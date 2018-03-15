@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+
+* {
+  font-family: 'Asap', sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+:root {
+  --color-green: #00D646;
+  --content-width: 980px;
+}
+
+.color-green {
+  color: var(--color-green);
 }

@@ -1,0 +1,12 @@
+.gg-top-left {
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(140, 114, 242);
+    color: white;
+}
+

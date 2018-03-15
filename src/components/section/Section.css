@@ -1,0 +1,11 @@
+.gg-section {
+    height: 100vh;
+    width: 100%;
+}
+
+.gg-section-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    position: relative;
+}
