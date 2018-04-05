@@ -1,16 +1,17 @@
 .gg-button {
     background-color: transparent;
-    border-width: 3px;
+    border-width: 2px;
     border-style: solid;
     font-size: 15px;
     color: white;
-    width: 209px;
-    height: 54px;
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     cursor: pointer;
+    padding: 3px;
 }
 
 .gg-button--round {

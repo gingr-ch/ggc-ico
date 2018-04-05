@@ -1,0 +1,23 @@
+.gg-section-container--press-reports {
+    max-height: 211px;
+    padding: 16px 0 32px;
+}
+
+.gg-section-container--press-reports img {
+    max-height: 57px;
+    max-width: 136px;
+    height: auto;
+    width: auto;
+}
+
+.press-title {
+    color: #DF9EFF;
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 0.1em;
+    font-weight: bolder;
+}
+
+.hidden-content ul {
+    padding-left: 0;
+}

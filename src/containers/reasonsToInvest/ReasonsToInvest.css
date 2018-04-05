@@ -1,0 +1,28 @@
+.gg-section-container--reasons-to-invest h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.gg-section-container--reasons-to-invest img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+}
+
+.gg-section-container--reasons-to-invest .flex-column {
+    padding: 1em;
+}
+
+.reason-list {
+    color: white;
+    font-size: 16px;
+}
+
+.reason-list span {
+    color: #C430C4;
+    font-size: 35px;
+    font-weight: bold;
+}

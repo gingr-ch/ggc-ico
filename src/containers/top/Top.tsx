@@ -1,5 +1,6 @@
 import * as React from 'react';
 import ReactPlayer from 'react-player';
+import classNames from 'classnames';
 
 import './Top.css';
 
@@ -9,10 +10,41 @@ import ButtonPlay from '../../components/buttonPlay/ButtonPlay';
 const chart = require('../../assets/img/chart.png');
 
 class Top extends React.Component {
+  state = {
+    open: false
+  };
+
+  player: any;
+
+  constructor(props: object) {
+    super(props);
+
+    this.videoToggle = this.videoToggle.bind(this);
+  }
+  videoToggle() {
+    // console.log("hello");
+    this.setState({
+      open: true,
+      muted: false,
+      volume: 1
+    });
+
+    this.player.seekTo(0);
+  }
+
+  ref = (player: any) => {
+    this.player = player;
+  }
+
   render() {
+    let classes = classNames({
+      'gg-top-left': true,
+      'gg-frame-open': this.state.open
+    });
+
     return (
       <div className="gg-section-container">
-        <div className="gg-top-left">
+        <div className={classes}>
           <h1 style={{ fontSize: '36px' }}>"REVOLUTIONIZING<br /> THE OLDEST INDUSTRY <br />IN THE WORLD"</h1>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <div style={{ fontSize: '24px', marginBottom: '16px' }}>PRIVATE SALE NOW</div>
@@ -27,6 +59,20 @@ class Top extends React.Component {
             </Button>
           </div>
           <img src={chart} alt="Chart" style={{ maxWidth: '600px', width: '100%' }} />
+          <div
+            style={{
+              position: 'absolute',
+              zIndex: 9,
+              width: '122px',
+              height: '122px',
+              right: '-61px',
+              top: 'calc(50% - 61px)'
+            }}
+          >
+            <ButtonPlay videoToggle={this.videoToggle}>
+              PLAY
+            </ButtonPlay>
+          </div>
         </div>
         <div style={{ flex: '1 1 50%', background: 'transparent' }}>
           some content
@@ -40,21 +86,8 @@ class Top extends React.Component {
             muted={true}
             controls={false}
             loop={false}
+            ref={this.ref}
           />
-        </div>
-        <div
-          style={{
-            position: 'absolute',
-            zIndex: 9,
-            width: '122px',
-            height: '122px',
-            left: 'calc(50% - 61px)',
-            top: 'calc(50% - 61px)'
-          }}
-        >
-          <ButtonPlay>
-            PLAY
-          </ButtonPlay>
         </div>
       </div>
     );

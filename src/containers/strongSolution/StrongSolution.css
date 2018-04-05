@@ -1,0 +1,25 @@
+.gg-section-container--strong-solution h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.gg-section-container--strong-solution img {
+    max-width: 210px;
+    max-height: 122px;
+    width: auto;
+    height: auto;
+}
+
+.gg-section-container--strong-solution .title {
+    color: #C430C4;
+    text-transform: uppercase;
+    font-size: 22px;
+    min-height: 50px;
+}
+
+.gg-section-container--strong-solution p {
+    color: white;
+    font-size: 15px;
+    line-height: 23px;
+}

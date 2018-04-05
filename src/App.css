@@ -3,8 +3,8 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  /*animation: App-logo-spin infinite 20s linear;*/
+  height: 48px;
 }
 
 .App-header {
@@ -25,4 +25,57 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.hidden-content {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(0, -50px, 0);
+  transition: all .2s cubic-bezier(.5,.43,.81,.59);
+  width: 100%;
+}
+
+.hidden-content.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translate3d(0, 0, 0);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: sapce-between;
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2.5em;
+}
+
+.flex-column--45 {
+  flex: 1 1 45%;
+}
+
+.flex-column--25 {
+  flex: 1 1 25%;
+}
+
+.flex-column--30 {
+  flex: 1 1 30%;
+}
+
+.flex-column__image {
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column__content {
+  text-align: left;
 }

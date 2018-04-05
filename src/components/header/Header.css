@@ -18,3 +18,20 @@
     max-width: var(--content-width);
     width: 100%;
 }
+
+.gg-header-container__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.gg-header-container__buttons button {
+    width: 113px;
+    max-width: 113px;
+    max-height: 28px;
+}
+
+.gg-header-container__buttons button:first-child {
+    margin-right: 16px;
+}

@@ -1,0 +1,14 @@
+.gg-section-container--what-is-gingr {
+    color: white;
+}
+
+.gg-section-container--what-is-gingr h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.gg-section-container--what-is-gingr h3 {
+    font-weight: 400;
+    max-width: 532px;
+}

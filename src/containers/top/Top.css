@@ -8,5 +8,15 @@
     align-items: center;
     background-color: rgb(140, 114, 242);
     color: white;
+    transform: translateX(0);
+    transition: transform .2s ease-out;
+}
+
+.gg-top-left button {
+    padding: 16px;
+}
+
+.gg-frame-open {
+    transform: translateX(-1000px);
 }
 
