@@ -1,0 +1,25 @@
+.gg-section-container--beta {
+  padding-top: 100px;
+  color: white;
+}
+
+.gg-section-container--beta h1 {
+  font-size: 70px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.gg-section-container--beta h1 span {
+  color: #ffd400;
+}
+
+.gg-section-container--beta h3 {
+  font-weight: 400;
+  font-size: 23px;
+}
+
+.gg-section-container--beta button {
+  width: 205px;
+  height: 49px;
+  font-size: 18px;
+}
