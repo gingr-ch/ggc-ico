@@ -4,11 +4,10 @@ import './Button.css';
 interface ButtonProps {
   borderColor?: string;
   shape?: string;
-  click?: string;
+  click(): () => void;
 }
 
 class Button extends React.Component<ButtonProps> {
-
   render() {
     let shape = '';
     if (this.props.shape === 'round') {
@@ -17,8 +16,13 @@ class Button extends React.Component<ButtonProps> {
 
     return (
       <button
-        className={'gg-button ' + (shape)}
-        style={{ borderColor: this.props.borderColor ? this.props.borderColor : 'transparent' }}
+        className={'gg-button ' + shape}
+        style={{
+          borderColor: this.props.borderColor
+            ? this.props.borderColor
+            : 'transparent'
+        }}
+        onClick={this.props.click}
       >
         {this.props.children}
       </button>
