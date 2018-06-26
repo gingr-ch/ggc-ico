@@ -70,8 +70,8 @@ class WhatIsGingr extends React.Component {
                       url={d.video}
                       width="431px"
                       height="232px"
-                      playing={true}
-                      muted={true}
+                      playing={false}
+                      muted={false}
                       controls={false}
                       loop={false}
                       ref={this.ref}

@@ -105,7 +105,7 @@ class Top extends React.Component {
             url="https://vimeo.com/194665559"
             width="100%"
             height="100%"
-            playing={true}
+            playing={false}
             muted={true}
             controls={false}
             loop={false}
