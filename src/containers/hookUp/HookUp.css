@@ -1,0 +1,105 @@
+.gg-section-container--hookup {
+  padding-top: 100px;
+  color: white;
+}
+
+.gg-section-container--hookup h1 {
+  font-size: 75px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.gg-section-container--hookup h1 span {
+  color: #ffd500;
+}
+
+.gg-section-container--hookup h4 {
+  font-size: 18px;
+  line-height: 1.8em;
+  max-width: 532px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+/*
+.hookup {
+  justify-content: flex-start;
+}
+*/
+
+.hookup__phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hookup__phone span {
+  text-transform: uppercase;
+  color: #77158f;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.hookup__phone--start {
+  align-items: flex-start;
+}
+
+.hookup__phone--start span {
+  padding-left: 8px;
+}
+
+.hookup__hookup {
+  background: #ffd500;
+  color: #670c82;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 9px;
+  padding: 7px 35px;
+}
+
+.hookup__transaction {
+  width: 350px;
+}
+
+.gg-section-container--hookup .path--horizontal {
+  width: 40px;
+  max-width: 40px;
+}
+
+.gg-section-container--hookup .path--vertical {
+  top: 20px;
+  width: 50px;
+  max-width: 50px;
+}
+
+.transaction__escrow {
+  width: 200px;
+}
+
+.transaction__escrow :last-child {
+  top: 7.5px;
+  max-width: 22px;
+  left: -14px;
+}
+
+.escrow__image {
+  transform: translate3d(-12px, -64px, 0);
+}
+
+.hookup__phones {
+  position: relative;
+}
+
+.hookup__phones > :first-child {
+  position: relative;
+  z-index: 2;
+}
+
+.hookup__phones > :last-child {
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  z-index: 1;
+}
