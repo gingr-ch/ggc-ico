@@ -6,18 +6,11 @@ import './Header.css';
 const gingrLogo = require('../../assets/img/logo.png');
 // const logo = require('../../logo.svg');
 
+const adminIco = 'https://admin.ggcico.io/auth/login';
+const whitePaper =
+  'https://docs.wixstatic.com/ugd/2eea42_b23b9045b42246c2ac4f7c6cbf5ee65c.pdf';
+
 class Header extends React.Component {
-  login() {
-    window.open('https://admin.ggcico.io/auth/login', '_blank');
-  }
-
-  whitepaper() {
-    window.open(
-      'https://docs.wixstatic.com/ugd/2eea42_b23b9045b42246c2ac4f7c6cbf5ee65c.pdf',
-      '_blank'
-    );
-  }
-
   click(url: string) {
     window.open(url, '_blank');
   }
@@ -29,20 +22,10 @@ class Header extends React.Component {
           <img src={gingrLogo} className="App-logo" alt="logo" />
           {this.props.children}
           <div className="gg-header-container__buttons">
-            <Button
-              click={() => this.click('https://admin.ggcico.io/auth/login')}
-              borderColor="white"
-            >
+            <Button click={() => this.click(whitePaper)} borderColor="white">
               WHITEPAPER
             </Button>
-            <Button
-              click={() =>
-                this.click(
-                  'https://docs.wixstatic.com/ugd/2eea42_b23b9045b42246c2ac4f7c6cbf5ee65c.pdf'
-                )
-              }
-              borderColor="#df9eff"
-            >
+            <Button click={() => this.click(adminIco)} borderColor="#df9eff">
               LOGIN
             </Button>
           </div>
