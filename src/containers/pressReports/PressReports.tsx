@@ -25,11 +25,21 @@ class PressReports extends React.Component {
                 listStyleType: 'none'
               }}
             >
-              <li><img src={luzernerZeitung} /></li>
-              <li><img src={teleZuri} /></li>
-              <li><img src={startupValley} /></li>
-              <li><img src={teleBasel} /></li>
-              <li><img src={watson} /></li>
+              <li>
+                <img src={luzernerZeitung} />
+              </li>
+              <li>
+                <img src={teleZuri} />
+              </li>
+              <li>
+                <img src={startupValley} />
+              </li>
+              <li>
+                <img src={teleBasel} />
+              </li>
+              <li>
+                <img src={watson} />
+              </li>
             </ul>
           </OnVisible>
         </div>
