@@ -18,6 +18,10 @@ class Header extends React.Component {
     );
   }
 
+  click(url: string) {
+    window.open(url, '_blank');
+  }
+
   render() {
     return (
       <header className="gg-header">
@@ -25,10 +29,20 @@ class Header extends React.Component {
           <img src={gingrLogo} className="App-logo" alt="logo" />
           {this.props.children}
           <div className="gg-header-container__buttons">
-            <Button click={this.whitepaper} borderColor="white">
+            <Button
+              click={() => this.click('https://admin.ggcico.io/auth/login')}
+              borderColor="white"
+            >
               WHITEPAPER
             </Button>
-            <Button click={this.login} borderColor="#df9eff">
+            <Button
+              click={() =>
+                this.click(
+                  'https://docs.wixstatic.com/ugd/2eea42_b23b9045b42246c2ac4f7c6cbf5ee65c.pdf'
+                )
+              }
+              borderColor="#df9eff"
+            >
               LOGIN
             </Button>
           </div>

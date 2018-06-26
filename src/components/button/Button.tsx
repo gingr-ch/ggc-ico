@@ -4,7 +4,7 @@ import './Button.css';
 interface ButtonProps {
   borderColor?: string;
   shape?: string;
-  click(): () => void;
+  click(): any;
 }
 
 class Button extends React.Component<ButtonProps> {
