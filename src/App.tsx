@@ -13,6 +13,8 @@ import ReasonsToInvest from './containers/reasonsToInvest/ReasonsToInvest';
 import Download from './containers/download/Download';
 import WhatIsGingr from './containers/whatIsGingr/WhatIsGingr';
 import Beta from './containers/beta/Beta';
+import Instafuck from './containers/instafuck/Instafuck';
+import HookUp from './containers/hookUp/HookUp';
 
 class App extends React.Component {
   constructor(props: object) {
@@ -57,6 +59,16 @@ class App extends React.Component {
         <ScrollableAnchor id={'section6'}>
           <Section bg="#de9dff">
             <Beta />
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'section7'}>
+          <Section bg="#802e7a">
+            <Instafuck />
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'section8'}>
+          <Section bg="#de9dff">
+            <HookUp />
           </Section>
         </ScrollableAnchor>
       </div>

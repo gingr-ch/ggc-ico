@@ -31,6 +31,7 @@
   }
 }
 
+/* Scroll-in animations */
 .hidden-content {
   opacity: 0;
   visibility: hidden;
@@ -45,6 +46,7 @@
   transform: translate3d(0, 0, 0);
 }
 
+/* Flex */
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -84,7 +86,36 @@
   text-align: left;
 }
 
+/* Horizontal spacer */
 .spacer {
   display: block;
   margin: 1em 0;
+}
+
+/* Paths */
+.path {
+  border-bottom: 8px dotted rgba(255, 213, 0, 1);
+  height: 0 !important;
+  min-height: 0 !important;
+  width: 100%;
+  position: relative;
+}
+
+/*.path--horizontal {}*/
+
+.path--vertical {
+  transform: rotate(90deg);
+}
+
+.path__arrow::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 11px 0 11px 15px;
+  border-color: transparent transparent transparent white;
+  position: absolute;
+  right: -25px;
+  top: -7px;
 }
