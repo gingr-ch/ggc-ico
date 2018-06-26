@@ -1,4 +1,5 @@
 import * as React from 'react';
+import OnVisible from 'react-on-visible';
 
 import Button from '../../components/button/Button';
 import './Beta.css';
@@ -23,8 +24,12 @@ class Beta extends React.Component {
           <Button click={this.click} borderColor="#ffd400">
             Gingr 1.0
           </Button>
+
           <div className="spacer" />
-          <img src={gingrV1} alt="" />
+
+          <OnVisible className="hidden-content" percent={50}>
+            <img src={gingrV1} alt="" />
+          </OnVisible>
         </div>
       </div>
     );
