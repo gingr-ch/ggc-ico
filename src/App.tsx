@@ -17,6 +17,7 @@ import Instafuck from './containers/instafuck/Instafuck';
 import HookUp from './containers/hookUp/HookUp';
 import Blockchain from './containers/blockchain/Blockchain';
 import Flow from './containers/flow/Flow';
+import IcoDetails from './components/icoDetails/IcoDetails';
 
 class App extends React.Component {
   constructor(props: object) {
@@ -81,6 +82,11 @@ class App extends React.Component {
         <ScrollableAnchor id={'section10'}>
           <Section bg="#592356">
             <Flow />
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'section11'}>
+          <Section bg="#4d346a">
+            <IcoDetails />
           </Section>
         </ScrollableAnchor>
       </div>
