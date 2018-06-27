@@ -16,6 +16,7 @@ import Beta from './containers/beta/Beta';
 import Instafuck from './containers/instafuck/Instafuck';
 import HookUp from './containers/hookUp/HookUp';
 import Blockchain from './containers/blockchain/Blockchain';
+import Flow from './containers/flow/Flow';
 
 class App extends React.Component {
   constructor(props: object) {
@@ -75,6 +76,11 @@ class App extends React.Component {
         <ScrollableAnchor id={'section9'}>
           <Section bg="#802e7a">
             <Blockchain />
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'section10'}>
+          <Section bg="#592356">
+            <Flow />
           </Section>
         </ScrollableAnchor>
       </div>
