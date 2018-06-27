@@ -1,0 +1,28 @@
+.gg-section-container--blockchain {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
+}
+
+.gg-section-container--blockchain h1 {
+  font-size: 75px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.gg-section-container--blockchain h1 span {
+  color: #ffd500;
+}
+
+.gg-section-container--blockchain h4 {
+  font-size: 18px;
+  line-height: 1.8em;
+  max-width: 532px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+svg text {
+  fill: white;
+}
