@@ -11,7 +11,7 @@
 }
 
 .gg-section-container--hookup h1 span {
-  color: #ffd500;
+  color: var(--yellow);
 }
 
 .gg-section-container--hookup h4 {
@@ -51,7 +51,7 @@
 }
 
 .hookup__hookup {
-  background: #ffd500;
+  background: var(--yellow);
   color: #670c82;
   text-transform: uppercase;
   font-weight: 900;

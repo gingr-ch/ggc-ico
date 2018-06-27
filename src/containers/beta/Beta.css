@@ -11,7 +11,7 @@
 }
 
 .gg-section-container--beta h1 span {
-  color: #ffd400;
+  color: var(--yellow);
 }
 
 .gg-section-container--beta h3 {

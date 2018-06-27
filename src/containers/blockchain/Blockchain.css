@@ -12,7 +12,7 @@
 }
 
 .gg-section-container--blockchain h1 span {
-  color: #ffd500;
+  color: var(--yellow);
 }
 
 .gg-section-container--blockchain h4 {
@@ -21,8 +21,4 @@
   max-width: 532px;
   font-weight: 400;
   letter-spacing: 2px;
-}
-
-svg text {
-  fill: white;
 }

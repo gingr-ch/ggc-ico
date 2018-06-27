@@ -1,3 +1,9 @@
+/* Variables */
+:root {
+  --yellow: #ffd400;
+}
+
+/* General */
 .App {
   text-align: center;
 }
@@ -94,7 +100,7 @@
 
 /* Paths */
 .path {
-  border-bottom: 8px dotted rgba(255, 213, 0, 1);
+  border-bottom: 8px dotted var(--yellow);
   height: 0 !important;
   min-height: 0 !important;
   width: 100%;

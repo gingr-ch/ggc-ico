@@ -7,7 +7,7 @@
 .gg-section-container--instafuck h1 {
   font-size: 75px;
   text-transform: uppercase;
-  color: #ffd500;
+  color: var(--yellow);
   margin: 0;
 }
 
