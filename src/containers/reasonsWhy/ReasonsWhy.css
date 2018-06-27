@@ -1,0 +1,48 @@
+.gg-section-container--reasons-why {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
+}
+
+.gg-section-container--reasons-why h1 {
+  font-size: 75px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.gg-section-container--reasons-why h1 span {
+  color: var(--yellow);
+}
+
+.gg-section-container--reasons-why h4 {
+  font-size: 18px;
+  line-height: 1.8em;
+  max-width: 532px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-top: 0;
+}
+
+.reasons-why-list {
+  display: flex;
+  flex: 1 1 32%;
+  max-width: 32%;
+  flex-direction: column;
+  padding-top: 105px;
+  padding-left: 150px;
+}
+
+.reasons-why-list .reasons-why-list__item {
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.reasons-why-list .number {
+  color: var(--yellow);
+  font-size: 32px;
+  line-height: 30px;
+  margin-right: 16px;
+}

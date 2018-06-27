@@ -1,0 +1,38 @@
+.table-private-sale {
+  font-size: 13px;
+  border-collapse: collapse;
+}
+
+.table-private-sale [class^="color--"] {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.table-private-sale td {
+  text-align: left;
+  padding: 12px;
+}
+
+.table-private-sale td:first-child {
+  padding-left: 24px;
+}
+
+.table-private-sale td:last-child {
+  padding-right: 24px;
+}
+
+.table-private-sale .color--green {
+  color: #4fcf40;
+}
+
+.table-private-sale .color--red {
+  color: #e40080;
+}
+
+.table-private-sale .color--purple {
+  color: #d935ff;
+}
+
+.table-private-sale .color--cyan {
+  color: #30fffb;
+}
