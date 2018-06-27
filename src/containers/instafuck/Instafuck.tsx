@@ -3,6 +3,8 @@ import * as React from 'react';
 
 import './Instafuck.css';
 
+import InstafuckChart from '../../components/svgInstafuck/svgInstafuck';
+
 class Instafuck extends React.Component {
   render() {
     return (
@@ -14,6 +16,8 @@ class Instafuck extends React.Component {
             "We have created the world’s first button where you get instant
             access with a guaranteed booking for sex"
           </h4>
+          <div className="spacer" />
+          <InstafuckChart />
         </div>
       </div>
     );
