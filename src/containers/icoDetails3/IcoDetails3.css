@@ -20,22 +20,7 @@
   align-items: flex-start;
 }
 
-.ggc-card {
-  text-align: left;
-  line-height: 22px;
-  font-size: 15px;
-  justify-content: flex-start;
-  margin-top: 1em;
-  flex: 1;
-  max-width: 200px;
-}
-
-.ggc-card img {
-  max-width: 80px;
-  max-height: 80px;
-}
-
-.ggc-card .title {
-  font-size: 20px;
-  margin-bottom: 18px;
+.gg-section-container--ico-details3 .ggc-card {
+  max-width: 257px;
+  min-width: 257px;
 }

@@ -28,7 +28,11 @@ class IcoDetails3 extends React.Component {
           </div>
           <div
             className="flex-row"
-            style={{ justifyContent: 'center', alignItems: 'flex-start' }}
+            style={{
+              justifyContent: 'center',
+              alignItems: 'flex-start',
+              marginTop: '50px',
+            }}
           >
             <div
               className="ggc-card flex-column"
