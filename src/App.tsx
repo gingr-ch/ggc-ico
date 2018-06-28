@@ -26,6 +26,9 @@ import Roadmap from './containers/roadmap/Roadmap';
 import GlobalLeader from './containers/globalLeader/GlobalLeader';
 import GlobalLeader2 from './containers/globalLeader2/GlobalLeader2';
 import GlobalLeader3 from './containers/globalLeader3/GlobalLeader3';
+import Team from './containers/team/Team';
+import TeamCEO from './containers/teamCEO/TeamCEO';
+import TeamAll from './containers/teamAll/TeamAll';
 
 class App extends React.Component {
   constructor(props: object) {
@@ -135,6 +138,21 @@ class App extends React.Component {
         <ScrollableAnchor id={'section19'}>
           <Section bg="#802e7a">
             <GlobalLeader3 />
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'section20'}>
+          <Section bg="#592356" small={true}>
+            <Team />
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'section21'}>
+          <Section bg="#802e7a" small={true}>
+            <TeamCEO />
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'section22'}>
+          <Section bg="#592356">
+            <TeamAll />
           </Section>
         </ScrollableAnchor>
       </div>
