@@ -1,0 +1,32 @@
+.ggc-card {
+  text-align: left;
+  line-height: 22px;
+  font-size: 15px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 1em;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.ggc-card .title {
+  color: #F39FFF;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 16px;
+  margin-bottom: 18px;
+}
+
+.ggc-card__image {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.ggc-card img {
+  max-width: 80px;
+  max-height: 80px;
+}
