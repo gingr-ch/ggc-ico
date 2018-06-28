@@ -23,6 +23,9 @@ import IcoDetails3 from './containers/icoDetails3/IcoDetails3';
 import ReasonsWhy from './containers/reasonsWhy/ReasonsWhy';
 import RevolutionarySolution from './containers/revolutionarySolution/RevolutionarySolution';
 import Roadmap from './containers/roadmap/Roadmap';
+import GlobalLeader from './containers/globalLeader/GlobalLeader';
+import GlobalLeader2 from './containers/globalLeader2/GlobalLeader2';
+import GlobalLeader3 from './containers/globalLeader3/GlobalLeader3';
 
 class App extends React.Component {
   constructor(props: object) {
@@ -117,6 +120,21 @@ class App extends React.Component {
         <ScrollableAnchor id={'section16'}>
           <Section bg="#f29eff">
             <Roadmap />
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'section17'}>
+          <Section bg="#802e7a" small={true}>
+            <GlobalLeader />
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'section18'}>
+          <Section bg="#f29eff" small={true}>
+            <GlobalLeader2 />
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'section19'}>
+          <Section bg="#802e7a">
+            <GlobalLeader3 />
           </Section>
         </ScrollableAnchor>
       </div>
