@@ -22,6 +22,7 @@ import IcoDetails2 from './containers/icoDetails2/IcoDetails2';
 import IcoDetails3 from './containers/icoDetails3/IcoDetails3';
 import ReasonsWhy from './containers/reasonsWhy/ReasonsWhy';
 import RevolutionarySolution from './containers/revolutionarySolution/RevolutionarySolution';
+import Roadmap from './containers/roadmap/Roadmap';
 
 class App extends React.Component {
   constructor(props: object) {
@@ -111,6 +112,11 @@ class App extends React.Component {
         <ScrollableAnchor id={'section15'}>
           <Section bg="#802e7a">
             <RevolutionarySolution />
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'section16'}>
+          <Section bg="#f29eff">
+            <Roadmap />
           </Section>
         </ScrollableAnchor>
       </div>

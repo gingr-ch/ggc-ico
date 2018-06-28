@@ -72,7 +72,7 @@ class RevolutionarySolution extends React.Component {
 
           <Cycle />
 
-          <div style={{ marginTop: '150px' }}>
+          <div style={{ marginTop: '150px', marginBottom: '-3px' }}>
             <h4 style={{ maxWidth: '275px', marginBottom: '50px' }}>
               “RIGHT DECISIONS BRING RIGHT PEOPLE”
             </h4>
