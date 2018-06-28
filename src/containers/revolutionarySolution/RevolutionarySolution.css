@@ -1,0 +1,43 @@
+.gg-section-container--revolutionary-solution .gg-content-container {
+  position: relative;
+}
+
+.gg-section-container--revolutionary-solution {
+  padding-top: 100px;
+  padding-bottom: 0px;
+  color: white;
+}
+
+.gg-section-container--revolutionary-solution h1 {
+  font-size: 75px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.gg-section-container--revolutionary-solution h4 {
+  font-size: 18px;
+  line-height: 1.8em;
+  max-width: 532px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-top: 0;
+}
+
+.gg-section-container--revolutionary-solution .ggc-card {
+  flex: 1 1 31%;
+  max-width: 31%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.revolutionary__title {
+  color: #F39FFF;
+  text-transform: uppercase;
+  font-size: 23px;
+  width: 100%;
+  text-align: left;
+  padding-left: 345px;
+  margin-top: 50px;
+  font-weight: bold;
+}
