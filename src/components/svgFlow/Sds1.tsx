@@ -1,6 +1,6 @@
-import * as React from 'react';
+import React from "react";
 
-const FlowChart = (props: any) => (
+const Sds1 = props => (
   <svg
     data-name="Layer 1"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -745,47 +745,47 @@ const FlowChart = (props: any) => (
       d="M57.08 596.459v-4.99l4.32 2.495 4.321 2.495-4.321 2.494-4.32 2.495v-4.989z"
     />
     <g
-      style={{ isolation: 'isolate' }}
+      style={{ isolation: "isolate" }}
       fontSize={7.178}
       fill="#fff"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
       <text
         transform="translate(55.936 586.224)"
-        style={{ isolation: 'isolate' }}
+        style={{ isolation: "isolate" }}
       >
         F
       </text>
       <text
         transform="translate(59.998 586.224)"
-        style={{ isolation: 'isolate' }}
+        style={{ isolation: "isolate" }}
         letterSpacing="-.007em"
       >
         L
       </text>
       <text
         transform="translate(63.53 586.224)"
-        style={{ isolation: 'isolate' }}
+        style={{ isolation: "isolate" }}
         letterSpacing="-.004em"
       >
         O
       </text>
       <text
         transform="translate(69.322 586.224)"
-        style={{ isolation: 'isolate' }}
+        style={{ isolation: "isolate" }}
       >
         W DIR
       </text>
       <text
         transform="translate(89.606 586.224)"
-        style={{ isolation: 'isolate' }}
+        style={{ isolation: "isolate" }}
         letterSpacing="-.003em"
       >
         E
       </text>
       <text
         transform="translate(93.813 586.224)"
-        style={{ isolation: 'isolate' }}
+        style={{ isolation: "isolate" }}
       >
         CTION
       </text>
@@ -2198,4 +2198,4 @@ const FlowChart = (props: any) => (
   </svg>
 );
 
-export default FlowChart;
+export default Sds1;
