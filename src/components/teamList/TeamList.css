@@ -1,0 +1,4 @@
+.team-item:nth-child(3n) {
+  flex: 1 1 25% !important;
+  max-width: 25% !important;
+}
