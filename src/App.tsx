@@ -32,6 +32,7 @@ import TeamAll from './containers/teamAll/TeamAll';
 import Feedback from './containers/feedback/Feedback';
 import ContactUs from './containers/contactUs/ContactUs';
 import Footer from './containers/footer/Footer';
+import BackToTop from './components/backToTop/BackToTop';
 
 class App extends React.Component {
   constructor(props: object) {
@@ -42,6 +43,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <BackToTop />
         <Header>
           <Nav />
         </Header>
