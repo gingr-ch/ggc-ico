@@ -53,6 +53,41 @@
   transform: translate3d(0, 0, 0);
 }
 
+.slide-in {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s cubic-bezier(0.5, 0.43, 0.81, 0.59);
+}
+
+.slide-in--left {
+  transform: translate3d(-50px, 0, 0);
+}
+
+.slide-in--right {
+  transform: translate3d(50px, 0, 0);
+}
+
+.slide-in.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translate3d(0, 0, 0);
+}
+
+.rotate-in {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s cubic-bezier(0.5, 0.43, 0.81, 0.59);
+  transform: rotateZ(-360deg) scale(0);
+  width: 100%;
+  height: 100%;
+}
+
+.rotate-in.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: rotateZ(0deg) scale(1);
+}
+
 /* Flex */
 .flex-row {
   display: flex;
