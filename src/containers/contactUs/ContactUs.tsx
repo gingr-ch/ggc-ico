@@ -13,11 +13,10 @@ class ContactUs extends React.Component {
   render() {
     return (
       <div className="gg-section-container gg-section-container--contactus">
-        <div
-          className="gg-content-container flex-row"
-          style={{ justifyContent: 'flex-start' }}
-        >
-          <h1>Contact Us</h1>
+        <div className="gg-content-container" style={{ alignItems: 'stretch' }}>
+          <div className="flex-row" style={{ justifyContent: 'center' }}>
+            <h1>Contact Us</h1>
+          </div>
 
           <div
             className="flex-column"

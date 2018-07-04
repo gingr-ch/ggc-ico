@@ -13,6 +13,7 @@
 .gg-section-container--contactus button {
     background-color: var(--yellow);
     text-transform: capitalize;
+    padding: 5px;
 }
 
 .gg-section-container--contactus input,
