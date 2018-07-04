@@ -226,6 +226,9 @@ class Footer extends React.Component {
               </div>
             </div>
           </div>
+          <div className="footer-copyright">
+            ©2017 Gingr AG | All Rights Reserved
+          </div>
         </div>
       </div>
     );

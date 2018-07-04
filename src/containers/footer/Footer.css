@@ -1,3 +1,7 @@
+.gg-section-container--footer {
+  padding-bottom: 100px;
+}
+
 .locations-item {
   justify-content: flex-start;
   font-size:14px;
@@ -31,4 +35,10 @@
   font-size: 24px;
   line-height: 1.4em;
   text-transform: uppercase;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 50px;
 }
