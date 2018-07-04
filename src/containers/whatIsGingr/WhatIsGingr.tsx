@@ -1,5 +1,7 @@
 import * as React from 'react';
 import ReactPlayer from 'react-player';
+import OnVisible from 'react-on-visible';
+import classNames from 'classnames';
 
 import './WhatIsGingr.css';
 
@@ -18,7 +20,7 @@ const whatIsList = [
     icon: clientIcon,
     content:
       'Worldwide access to instant and guaranteed sex in a quick and effortless way. Have their information stored while remaining anonymous and pay securely, fast and confidentially',
-    video: 'https://vimeo.com/194665559'
+    video: 'https://vimeo.com/194665559',
   },
   {
     id: 1,
@@ -28,7 +30,7 @@ const whatIsList = [
     icon: gingrIcon,
     content:
       'Worldwide work with only one tool which can connect to millions of clients. Recruitment and workspaces provided by Gingr Connect and Gingr Pop n Go. Receive payments directly on our platform from pre-paying clients with GG Coin. Feel safe every step of the journey with Gingr Care.',
-    img: gingrImg
+    img: gingrImg,
   },
   {
     id: 2,
@@ -38,8 +40,8 @@ const whatIsList = [
     icon2: agencyIcon,
     content:
       'State of the art management features to assist with bookings, personnel requirements and many other areas of the business. Geo-location and advertising on a site that everybody is talking about. Access to pre-paying clients and accounts to store funds from sale revenues with Gingr Bank.',
-    img: establishmentImg
-  }
+    img: establishmentImg,
+  },
 ];
 class WhatIsGingr extends React.Component {
   player: any;
@@ -48,7 +50,17 @@ class WhatIsGingr extends React.Component {
     this.player = player;
   };
 
+  isEven(i: any) {
+    return i % 2 === 0;
+  }
+
   render() {
+    let classes = (i: any) =>
+      classNames({
+        left: !this.isEven(i),
+        right: this.isEven(i),
+      });
+
     return (
       <div className="gg-section-container gg-section-container--what-is-gingr">
         <div className="gg-content-container">
@@ -80,19 +92,21 @@ class WhatIsGingr extends React.Component {
                   )}
                 </div>
                 <div className={'l2c__content l2c__content--' + d.classTitle}>
-                  <div className="l2c__content-title">
-                    {d.icon2 && <img src={d.icon2} alt="" />}
-                    <img src={d.icon} alt="" />
-                    <h3>
-                      {d.title}
-                      {d.subtitle && (
-                        <span className="l2c__content-subtitle">
-                          ({d.subtitle})
-                        </span>
-                      )}
-                    </h3>
-                  </div>
-                  <p>{d.content}</p>
+                  <OnVisible className={'slide-in slide-in--' + classes(i)}>
+                    <div className="l2c__content-title">
+                      {d.icon2 && <img src={d.icon2} alt="" />}
+                      <img src={d.icon} alt="" />
+                      <h3>
+                        {d.title}
+                        {d.subtitle && (
+                          <span className="l2c__content-subtitle">
+                            ({d.subtitle})
+                          </span>
+                        )}
+                      </h3>
+                    </div>
+                    <p>{d.content}</p>
+                  </OnVisible>
                 </div>
               </div>
             ))}
