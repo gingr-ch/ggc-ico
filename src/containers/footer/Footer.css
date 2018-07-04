@@ -1,0 +1,34 @@
+.locations-item {
+  justify-content: flex-start;
+  font-size:14px;
+  line-height:1.7em;
+}
+
+.locations-item :first-child {
+  color: var(--pink);
+  display: flex;
+  flex: 0 0 45%;
+}
+
+.gg-section-container--footer p,
+.locations-item div {
+  text-align: left;
+}
+
+.footer-address p {
+  font-size: 14px;
+  letter-spacing: 0em;
+  line-height: 1.4em;
+}
+
+.footer-address a {
+  color: var(--pink);
+  text-decoration: none;
+}
+
+.footer-title {
+  color: var(--yellow);
+  font-size: 24px;
+  line-height: 1.4em;
+  text-transform: uppercase;
+}
