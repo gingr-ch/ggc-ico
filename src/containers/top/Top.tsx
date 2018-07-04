@@ -6,12 +6,13 @@ import './Top.css';
 
 import Button from '../../components/button/Button';
 import ButtonPlay from '../../components/buttonPlay/ButtonPlay';
+import OnVisible from 'react-on-visible';
 
 const chart = require('../../assets/img/chart.png');
 
 class Top extends React.Component {
   state = {
-    open: false
+    open: false,
   };
 
   player: any;
@@ -28,7 +29,7 @@ class Top extends React.Component {
     this.setState({
       open: true,
       muted: false,
-      volume: 1
+      volume: 1,
     });
 
     this.player.seekTo(0);
@@ -45,7 +46,7 @@ class Top extends React.Component {
   render() {
     let classes = classNames({
       'gg-top-left': true,
-      'gg-frame-open': this.state.open
+      'gg-frame-open': this.state.open,
     });
 
     return (
@@ -83,10 +84,12 @@ class Top extends React.Component {
               width: '122px',
               height: '122px',
               right: '-61px',
-              top: 'calc(50% - 61px)'
+              top: 'calc(50% - 61px)',
             }}
           >
-            <ButtonPlay videoToggle={this.videoToggle}>PLAY</ButtonPlay>
+            <OnVisible className="rotate-in">
+              <ButtonPlay videoToggle={this.videoToggle}>PLAY</ButtonPlay>
+            </OnVisible>
           </div>
         </div>
         <div style={{ flex: '1 1 50%', background: 'transparent' }}>
@@ -98,7 +101,7 @@ class Top extends React.Component {
             width: '100%',
             height: '100%',
             backgroundColor: 'red',
-            zIndex: 0
+            zIndex: 0,
           }}
         >
           <ReactPlayer
