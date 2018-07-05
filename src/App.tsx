@@ -1,5 +1,6 @@
 import * as React from 'react';
 // import { observer } from 'mobx-react';
+import LazyLoad from 'react-lazyload';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
 import './App.css';
@@ -70,111 +71,153 @@ class App extends React.Component {
             <Download />
           </Section>
         </ScrollableAnchor>
-        <ScrollableAnchor id={'section5'}>
-          <Section bg="#812a7b">
-            <WhatIsGingr />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section6'}>
-          <Section bg="#de9dff">
-            <Beta />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section7'}>
-          <Section bg="#802e7a">
-            <Instafuck />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section8'}>
-          <Section bg="#de9dff">
-            <HookUp />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section9'}>
-          <Section bg="#802e7a">
-            <Blockchain />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section10'}>
-          <Section bg="#592356">
-            <Flow />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section11'}>
-          <Section bg="#4d346a">
-            <IcoDetails />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section12'}>
-          <Section bg="#802e7a" small={true}>
-            <IcoDetails2 />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section13'}>
-          <Section bg="#4d346a">
-            <IcoDetails3 />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section14'}>
-          <Section bg="#591d55">
-            <ReasonsWhy />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section15'}>
-          <Section bg="#802e7a">
-            <RevolutionarySolution />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section16'}>
-          <Section bg="#f29eff">
-            <Roadmap />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section17'}>
-          <Section bg="#802e7a" small={true}>
-            <GlobalLeader />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section18'}>
-          <Section bg="#f29eff" small={true}>
-            <GlobalLeader2 />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section19'}>
-          <Section bg="#802e7a">
-            <GlobalLeader3 />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section20'}>
-          <Section bg="#592356" small={true}>
-            <Team />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section21'}>
-          <Section bg="#802e7a" small={true}>
-            <TeamCEO />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section22'}>
-          <Section bg="#592356">
-            <TeamAll />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section23'}>
-          <Section bg="#4d346a" small={true}>
-            <Feedback />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section24'}>
-          <Section bg="#f29eff">
-            <ContactUs />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section25'}>
-          <Section bg="#541252">
-            <Footer />
-          </Section>
-        </ScrollableAnchor>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section5'}>
+            <Section bg="#812a7b">
+              <WhatIsGingr />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section6'}>
+            <Section bg="#de9dff">
+              <Beta />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section7'}>
+            <Section bg="#802e7a">
+              <Instafuck />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section8'}>
+            <Section bg="#de9dff">
+              <HookUp />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section9'}>
+            <Section bg="#802e7a">
+              <Blockchain />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section10'}>
+            <Section bg="#592356">
+              <Flow />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section11'}>
+            <Section bg="#4d346a">
+              <IcoDetails />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section12'}>
+            <Section bg="#802e7a" small={true}>
+              <IcoDetails2 />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section13'}>
+            <Section bg="#4d346a">
+              <IcoDetails3 />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section14'}>
+            <Section bg="#591d55">
+              <ReasonsWhy />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section15'}>
+            <Section bg="#802e7a">
+              <RevolutionarySolution />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section16'}>
+            <Section bg="#f29eff">
+              <Roadmap />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section17'}>
+            <Section bg="#802e7a" small={true}>
+              <GlobalLeader />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section18'}>
+            <Section bg="#f29eff" small={true}>
+              <GlobalLeader2 />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section19'}>
+            <Section bg="#802e7a">
+              <GlobalLeader3 />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section20'}>
+            <Section bg="#592356" small={true}>
+              <Team />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section21'}>
+            <Section bg="#802e7a" small={true}>
+              <TeamCEO />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section22'}>
+            <Section bg="#592356">
+              <TeamAll />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section23'}>
+            <Section bg="#4d346a" small={true}>
+              <Feedback />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section24'}>
+            <Section bg="#f29eff">
+              <ContactUs />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section25'}>
+            <Section bg="#541252">
+              <Footer />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
       </div>
     );
   }
