@@ -1,38 +1,38 @@
 .gg-section-container--contactus {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .gg-section-container--contactus h1 {
-    font-size: 66px;
-    text-transform: uppercase;
-    /* color: var(--yellow); */
-    margin: 0 0 80px;
+  font-size: 66px;
+  text-transform: uppercase;
+  /* color: var(--yellow); */
+  margin: 0 0 80px;
 }
 
 .gg-section-container--contactus button {
-    background-color: var(--yellow);
-    text-transform: capitalize;
-    padding: 5px;
+  background-color: var(--yellow);
+  text-transform: capitalize;
+  padding: 5px;
 }
 
 .gg-section-container--contactus input,
 .gg-section-container--contactus textarea {
-    background-color: #812a7b;
-    margin-bottom: 10px;
-    border: 0;
-    padding: 5px;
-    box-sizing: border-box;
-    color: #F39FFF;
-    font-size: 20px;
+  background-color: #812a7b;
+  margin-bottom: 10px;
+  border: 0;
+  padding: 5px;
+  box-sizing: border-box;
+  color: #F39FFF;
+  font-size: 20px;
 }
 
 .gg-section-container--contactus input::placeholder,
 .gg-section-container--contactus textarea::placeholder {
-    color: #F39FFF;
-    opacity: .8;
+  color: #F39FFF;
+  opacity: .8;
 }
 
 .gg-section-container--contactus textarea {
-    min-height: 150px;
+  min-height: 150px;
 }

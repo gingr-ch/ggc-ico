@@ -2,3 +2,17 @@
   flex: 1 1 25% !important;
   max-width: 25% !important;
 }
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rc-dialog-content {
+  border-radius: 0;
+}
+
+.rc-dialog-body {
+  padding: 0;
+}
