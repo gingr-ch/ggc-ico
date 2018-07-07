@@ -56,21 +56,27 @@ class App extends React.Component {
         <Section bg="#812A7B" small={true}>
           <PressReports />
         </Section>
-        <ScrollableAnchor id={'section2'}>
-          <Section bg="#f39fff">
-            <StrongSolution />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section3'}>
-          <Section bg="#f39fff">
-            <ReasonsToInvest />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'section4'}>
-          <Section bg="white" small={true}>
-            <Download />
-          </Section>
-        </ScrollableAnchor>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section2'}>
+            <Section bg="#f39fff">
+              <StrongSolution />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section3'}>
+            <Section bg="#f39fff">
+              <ReasonsToInvest />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
+        <LazyLoad offset={3000}>
+          <ScrollableAnchor id={'section4'}>
+            <Section bg="white" small={true}>
+              <Download />
+            </Section>
+          </ScrollableAnchor>
+        </LazyLoad>
         <LazyLoad offset={3000}>
           <ScrollableAnchor id={'section5'}>
             <Section bg="#812a7b">
