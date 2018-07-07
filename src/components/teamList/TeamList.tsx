@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Dialog from 'rc-dialog';
+// import * as _ from 'lodash';
 
 import 'rc-dialog/assets/index.css';
 import TeamItem from '../teamItem/TeamItem';
@@ -96,20 +97,33 @@ const list = [
 class TeamList extends React.Component {
   state = {
     visible: false,
-    width: 600,
+    width: 860,
     destroyOnClose: true,
     center: true,
     mousePosition: { x: 0, y: 0 },
+    profile: {
+      id: 0,
+      img: '',
+      flag: '',
+      name: '',
+      role: '',
+      description: '',
+    },
   };
 
-  onClick = (e: any) => {
+  onClick = (item: object, e: any) => {
+    // const currProfile = _.find(list, { id: id });
+    const currProfile = item;
+    console.warn(currProfile);
     this.setState({
       mousePosition: {
         x: e.pageX,
         y: e.pageY,
       },
       visible: true,
+      profile: item,
     });
+    console.warn(this.state);
   };
 
   onClose = () => {
@@ -151,8 +165,69 @@ class TeamList extends React.Component {
         mousePosition={this.state.mousePosition}
         destroyOnClose={this.state.destroyOnClose}
       >
-        <p>basic modal</p>
-        <div style={{ height: 200 }} />
+        <div
+          style={{ minHeight: '200px', alignItems: 'stretch' }}
+          className="flex-row"
+        >
+          <div style={{ background: '#802e7a', padding: '40px' }}>
+            <div style={{ position: 'relative' }}>
+              <img
+                src={this.state.profile.img}
+                style={{ maxWidth: '205px', height: '205px' }}
+                alt=""
+              />
+              <img
+                src={this.state.profile.flag}
+                alt=""
+                style={{
+                  position: 'absolute',
+                  bottom: '-10px',
+                  right: '-10px',
+                }}
+              />
+            </div>
+          </div>
+          <div
+            className="flex-column"
+            style={{
+              justifyContent: 'flex-start',
+              alignItems: 'flex-start',
+              padding: '50px 70px',
+            }}
+          >
+            <h2
+              style={{
+                fontSize: '38px',
+                color: '#F39FFF',
+                letterSpacing: '0.05em',
+                textTransform: 'uppercase',
+                marginBottom: '0',
+              }}
+            >
+              {this.state.profile.name}
+            </h2>
+            <h4
+              style={{
+                fontSize: '19px',
+                color: '#812A7B',
+                letterSpacing: '0.05em',
+                marginTop: '10px',
+              }}
+            >
+              {this.state.profile.role}
+            </h4>
+            <p
+              style={{
+                fontSize: '15px',
+                lineHeight: '1.5em',
+                color: '#000000',
+                fontWeight: 400,
+              }}
+            >
+              {this.state.profile.description}
+            </p>
+          </div>
+        </div>
       </Dialog>
     );
 
@@ -166,15 +241,6 @@ class TeamList extends React.Component {
           transform: 'translate3d(80px,0,0)',
         }}
       >
-        <style>
-          {`
-            .center {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            }
-            `}
-        </style>
         {list.map(item => (
           <TeamItem
             key={item.id}
@@ -184,7 +250,7 @@ class TeamList extends React.Component {
             name={item.name}
             role={item.role}
             description={item.description}
-            onClick={this.onClick}
+            onClick={e => this.onClick(item, e)}
           />
         ))}
         {dialog}
