@@ -20,3 +20,10 @@
     align-items: center;
     justify-content: flex-start;
 }
+
+
+@media(max-width: 599px) {
+  .gg-content-container {
+    max-width: 100vw;
+  }
+}
