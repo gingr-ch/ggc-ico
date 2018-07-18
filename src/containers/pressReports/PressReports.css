@@ -21,3 +21,27 @@
 .hidden-content ul {
     padding-left: 0;
 }
+
+.press-logos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+
+@media(max-width: 599px) {
+  .gg-section-container--press-reports {
+    max-height: none;
+  }
+
+  .press-logos li {
+    margin-bottom: 26px;
+  }
+
+  .press-logos li img {
+    margin: 0 auto;
+  }
+}

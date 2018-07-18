@@ -16,15 +16,7 @@ class PressReports extends React.Component {
         <div className="gg-content-container">
           <h2 className="press-title">Press Reports</h2>
           <OnVisible className="hidden-content" percent={200}>
-            <ul
-              style={{
-                width: '100%',
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-                listStyleType: 'none'
-              }}
-            >
+            <ul className="press-logos">
               <li>
                 <img src={luzernerZeitung} />
               </li>
