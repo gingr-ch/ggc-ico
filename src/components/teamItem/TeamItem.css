@@ -1,0 +1,22 @@
+.team-item {
+  display: flex;
+  flex: 1 1 33%;
+  max-width: 33%;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+
+
+@media(max-width: 599px) {
+  .team-item {
+    max-width: 100%;
+    align-items: center;
+    flex: 1 1 100%;
+  }
+
+  .team-item:nth-child(3n) {
+    min-width: 100% !important;
+    flex: 1 1 100% !important;
+  }
+}

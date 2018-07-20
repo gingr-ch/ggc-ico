@@ -15,17 +15,7 @@ class TeamItems {
 class TeamItem extends React.Component<TeamItems> {
   render() {
     return (
-      <div
-        className={'team-item id-' + this.props.id}
-        style={{
-          display: 'flex',
-          flex: '1 1 33%',
-          maxWidth: '33%',
-          flexDirection: 'column',
-          alignItems: 'flex-start',
-          marginBottom: '80px',
-        }}
-      >
+      <div className={'team-item id-' + this.props.id}>
         <div
           style={{
             display: 'flex',
