@@ -30,7 +30,7 @@ class HookUp extends React.Component {
             </div>
 
             <div
-              className="path path--horizontal path__arrow"
+              className="path path--horizontal path__arrow path--vertical-xs"
               style={{ left: '-12px' }}
             />
 
@@ -39,7 +39,7 @@ class HookUp extends React.Component {
             </div>
 
             <div
-              className="path path--horizontal path__arrow"
+              className="path path--horizontal path__arrow path--vertical-xs"
               style={{ left: '-12px' }}
             />
 
@@ -47,7 +47,7 @@ class HookUp extends React.Component {
               <img src={calendar} alt="" />
             </div>
 
-            <div className="path path--horizontal path__arrow" />
+            <div className="path path--horizontal path__arrow path--vertical-xs" />
 
             <div className="hookup__transactiontransaction__escrow flex-column">
               <div

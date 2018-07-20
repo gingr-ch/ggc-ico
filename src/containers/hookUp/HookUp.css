@@ -103,3 +103,23 @@
   top: -30px;
   z-index: 1;
 }
+
+@media(max-width: 599px) {
+  .gg-section-container--hookup h1 {
+    font-size: 35px;
+  }
+
+  .hookup {
+    flex-direction: column;
+  }
+
+  [class^="hookup__"] {
+    margin-bottom: 50px;
+  }
+
+  .path--horizontal.path--vertical-xs {
+    transform: rotate(90deg);
+    margin: 40px 0 90px;
+    left: 0 !important;
+  }
+}
