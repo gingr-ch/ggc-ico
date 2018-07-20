@@ -19,3 +19,7 @@ body {
 .color-green {
   color: var(--color-green);
 }
+
+#root {
+  overflow-x: hidden;
+}
