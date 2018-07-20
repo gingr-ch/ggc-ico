@@ -42,16 +42,11 @@ class Feedback extends React.Component {
             </div>
           </div>
 
-          <div className="flex-column">
-            <h3>Sign up for our newsletter</h3>
-            <div
-              className="flex-row"
-              style={{
-                alignItems: 'stretch',
-                position: 'relative',
-                width: '500px',
-              }}
-            >
+          <div className="feedback-newsletter flex-column">
+            <h3 className="feedback-newsletter__title">
+              Sign up for our newsletter
+            </h3>
+            <div className="feedback-newsletter__form flex-row">
               <input
                 className="feedback-input"
                 type="text"
