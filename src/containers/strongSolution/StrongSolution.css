@@ -3,7 +3,6 @@
 }
 
 .gg-section-container--strong-solution h1 {
-  font-size: 70px;
   text-transform: uppercase;
   color: white;
 }
@@ -26,4 +25,22 @@
   color: white;
   font-size: 15px;
   line-height: 23px;
+}
+
+.strong-solution-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+@media(max-width: 599px) {
+  .strong-solution-content {
+    flex-direction: column;
+  }
+
+  .ssc-item {
+    align-items: flex-start;
+  }
 }
