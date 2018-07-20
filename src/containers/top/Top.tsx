@@ -50,13 +50,25 @@ class Top extends React.Component {
     });
 
     return (
-      <div className="gg-section-container">
+      <div className="gg-section-container gg-section-container--top">
         <div className={classes}>
           <div className="gg-top-left__container">
-            <h1 style={{ fontSize: '36px' }}>
+            <div className="spacer hide show-xs" />
+            <div className="spacer hide show-xs" />
+
+            <h1 className="gg-h1">
               "REVOLUTIONIZING<br /> THE OLDEST INDUSTRY <br />IN THE WORLD"
             </h1>
+            <div className="spacer hide show-xs" />
+
+            <div className="play-button hide show-xs">
+              <OnVisible className="rotate-in">
+                <ButtonPlay videoToggle={this.videoToggle}>PLAY</ButtonPlay>
+              </OnVisible>
+            </div>
+            <div className="spacer hide show-xs" />
             <div className="spacer" />
+
             <div
               style={{
                 display: 'flex',
@@ -76,6 +88,9 @@ class Top extends React.Component {
               >
                 1 GGC = 0.03 EUR
               </div>
+
+              <div className="spacer hide show-xs" />
+
               <Button click={this.click} borderColor="#00D646">
                 Buy coins now
               </Button>
@@ -87,16 +102,7 @@ class Top extends React.Component {
               alt="Chart"
               style={{ maxWidth: '600px', width: '100%' }}
             />
-            <div
-              style={{
-                position: 'absolute',
-                zIndex: 9,
-                width: '122px',
-                height: '122px',
-                right: '-61px',
-                top: 'calc(50% - 61px)',
-              }}
-            >
+            <div className="play-button hide-xs">
               <OnVisible className="rotate-in">
                 <ButtonPlay videoToggle={this.videoToggle}>PLAY</ButtonPlay>
               </OnVisible>

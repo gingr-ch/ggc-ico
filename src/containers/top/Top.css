@@ -34,8 +34,59 @@
   max-width: 200px;
 }
 
+.play-button {
+  position: absolute;
+  z-index: 9;
+  width: 122px;
+  height: 122px;
+  right: -61px;
+  top: calc(50% - 61px);
+}
+
+.gg-h1 {
+  font-size: 36px;
+}
+
+.gg-head {
+  font-size: 70px;
+}
+
 @media(max-width: 599px) {
+  .gg-section-container--top {
+    min-height: 100vh !important;
+  }
+
   img[alt="Chart"] {
     display: none;
+  }
+
+  .gg-top-left {
+    flex: 1 1 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .play-button {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 0 auto;
+  }
+
+  .play-button button {
+    font-weight: bolder;
+  }
+
+  .gg-top-left__container {
+    margin-right: 0;
+  }
+
+  .gg-h1 {
+    font-size: 28px;
+  }
+
+  .gg-head--xs {
+    font-size: 34px;
   }
 }
