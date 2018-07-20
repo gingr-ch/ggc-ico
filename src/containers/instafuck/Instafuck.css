@@ -29,3 +29,18 @@
 .instafuck-chart {
   width: 100%;
 }
+
+.instafuck-item {
+  margin-bottom: 70px;
+}
+
+.instafuck-item img {
+  max-width: 100%;
+  margin-bottom: 16px;
+}
+
+@media(max-width: 599px) {
+  .gg-section-container--instafuck h1 {
+    font-size: 39px;
+  }
+}
