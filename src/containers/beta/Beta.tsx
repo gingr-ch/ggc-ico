@@ -15,7 +15,7 @@ class Beta extends React.Component {
     return (
       <div className="gg-section-container gg-section-container--beta">
         <div className="gg-content-container">
-          <h1>
+          <h1 className="gg-head gg-head--xs">
             Gingr <span>2.0 Beta</span>
           </h1>
           <h3>COMING SOON</h3>
@@ -28,7 +28,7 @@ class Beta extends React.Component {
           <div className="spacer" />
 
           <OnVisible className="hidden-content" percent={50}>
-            <img src={gingrV1} alt="" />
+            <img src={gingrV1} alt="" className="beta-image" />
           </OnVisible>
         </div>
       </div>

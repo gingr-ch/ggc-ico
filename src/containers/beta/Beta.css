@@ -5,7 +5,6 @@
 }
 
 .gg-section-container--beta h1 {
-  font-size: 70px;
   text-transform: uppercase;
   margin-bottom: 0px;
 }
@@ -23,4 +22,10 @@
   width: 205px;
   height: 49px;
   font-size: 18px;
+}
+
+@media(max-width: 599px) {
+  .beta-image {
+    max-width: 90%;
+  }
 }
