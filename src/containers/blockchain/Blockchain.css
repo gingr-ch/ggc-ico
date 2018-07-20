@@ -22,3 +22,9 @@
   font-weight: 400;
   letter-spacing: 2px;
 }
+
+@media(max-width: 599px) {
+  .gg-section-container--blockchain h1 {
+    font-size: 34px
+  }
+}
