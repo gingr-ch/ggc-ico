@@ -1,6 +1,7 @@
 import * as React from 'react';
 import ReactPlayer from 'react-player';
 import classNames from 'classnames';
+import LocalizedStrings from 'react-localization';
 
 import './Top.css';
 
@@ -9,6 +10,24 @@ import ButtonPlay from '../../components/buttonPlay/ButtonPlay';
 import OnVisible from 'react-on-visible';
 
 const chart = require('../../assets/img/chart.png');
+
+let strings = new LocalizedStrings({
+  en: {
+    revolutionizing: 'REVOLUTIONIZING',
+    theOldestIndustry: 'THE OLDEST INDUSTRY',
+    inTheWorld: 'IN THE WORLD',
+    play: 'PLAY',
+    privateSale: 'PRIVATE SALE NOW',
+    discount: '70% DISCOUNT',
+    buyCoinsNow: 'Buy coins now',
+  },
+  it: {
+    how: 'Come vuoi il tuo uovo oggi?',
+    boiledEgg: 'Uovo sodo',
+    softBoiledEgg: 'Uovo alla coque',
+    choice: 'Come scegliere luovo',
+  },
+});
 
 class Top extends React.Component {
   state = {
@@ -57,13 +76,17 @@ class Top extends React.Component {
             <div className="spacer hide show-xs" />
 
             <h1 className="gg-h1">
-              "REVOLUTIONIZING<br /> THE OLDEST INDUSTRY <br />IN THE WORLD"
+              "{strings.revolutionizing}
+              <br /> {strings.theOldestIndustry} <br />
+              {strings.inTheWorld}"
             </h1>
             <div className="spacer hide show-xs" />
 
             <div className="play-button hide show-xs">
               <OnVisible className="rotate-in">
-                <ButtonPlay videoToggle={this.videoToggle}>PLAY</ButtonPlay>
+                <ButtonPlay videoToggle={this.videoToggle}>
+                  {strings.play}
+                </ButtonPlay>
               </OnVisible>
             </div>
             <div className="spacer hide show-xs" />
@@ -77,10 +100,10 @@ class Top extends React.Component {
               }}
             >
               <div style={{ fontSize: '24px', marginBottom: '16px' }}>
-                PRIVATE SALE NOW
+                {strings.privateSale}
               </div>
               <div className="color-green" style={{ fontSize: '30px' }}>
-                70% DISCOUNT
+                {strings.discount}
               </div>
               <div
                 className="color-green"
@@ -92,7 +115,7 @@ class Top extends React.Component {
               <div className="spacer hide show-xs" />
 
               <Button click={this.click} borderColor="#00D646">
-                Buy coins now
+                {strings.buyCoinsNow}
               </Button>
             </div>
             <div className="spacer" />
@@ -104,7 +127,9 @@ class Top extends React.Component {
             />
             <div className="play-button hide-xs">
               <OnVisible className="rotate-in">
-                <ButtonPlay videoToggle={this.videoToggle}>PLAY</ButtonPlay>
+                <ButtonPlay videoToggle={this.videoToggle}>
+                  {strings.play}
+                </ButtonPlay>
               </OnVisible>
             </div>
           </div>
