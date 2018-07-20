@@ -23,3 +23,10 @@
   letter-spacing: 2px;
   margin-top: 0;
 }
+
+
+@media(max-width: 599px) {
+  .gg-section-container--flow h1 {
+    font-size: 42px
+  }
+}
