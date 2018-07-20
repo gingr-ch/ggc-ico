@@ -14,14 +14,7 @@ class ReasonsWhy extends React.Component {
           </h1>
           <h4>THE GG COIN COULD INCREASE BY A 1000 TIMES</h4>
 
-          <div
-            className="flex-row"
-            style={{
-              justifyContent: 'center',
-              alignItems: 'stretch',
-              marginTop: '50px',
-            }}
-          >
+          <div className="flex-row reasons-why-container">
             <div>
               <img
                 src={gingr}
