@@ -37,8 +37,14 @@
     max-height: none;
   }
 
+  .press-logos {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 56px;
+  } 
+
   .press-logos li {
-    margin-bottom: 26px;
+    margin-bottom: 56px;
   }
 
   .press-logos li img {
