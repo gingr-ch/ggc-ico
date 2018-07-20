@@ -5,7 +5,6 @@
 }
 
 .gg-section-container--what-is-gingr h1 {
-  font-size: 70px;
   text-transform: uppercase;
   color: white;
   margin-bottom: 10px;
@@ -149,4 +148,47 @@
   top: -50px;
   right: -110px;
   position: relative;
+}
+
+
+@media(max-width: 599px) {
+  .gg-section-container--what-is-gingr {
+    padding-bottom: 100px;
+  }
+
+  .l2c__container {
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 0 26px;
+    box-sizing: border-box;
+  }
+
+  .l2c__media::before {
+    display: none;
+  }
+
+  .l2c__media-image {
+    max-width: 100%;
+  }
+
+  .gg-section-container--what-is-gingr .order-xs-1 {
+    order: 1 !important;
+  }
+
+  .gg-section-container--what-is-gingr .order-xs-2 {
+    order: 2 !important;
+  }
+
+  .l2c__container .l2c__content {
+    padding-left: 0 !important;
+    text-align: left !important;
+  }
+
+  .l2c__container .l2c__content-title {
+    justify-content: flex-start !important;
+  }
+
+  .l2c__container .l2c__content-title img {
+    display: none;
+  }
 }

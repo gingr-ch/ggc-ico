@@ -64,7 +64,7 @@ class WhatIsGingr extends React.Component {
     return (
       <div className="gg-section-container gg-section-container--what-is-gingr">
         <div className="gg-content-container">
-          <h1>What is Gingr?</h1>
+          <h1 className="gg-head gg-head--xs">What is Gingr?</h1>
           <h3>
             "THE FIRST GLOBAL MARKET PLACE WITH CRYPTO PAYMENTS FOR THE PAID SEX
             INDUSTRY."
@@ -73,7 +73,7 @@ class WhatIsGingr extends React.Component {
           <div className="list-2-col">
             {whatIsList.map((d, i) => (
               <div key={d.id} className="l2c__container">
-                <div className="l2c__media">
+                <div className="l2c__media order-xs-2">
                   {d.img && (
                     <img className="l2c__media-image" src={d.img} alt="" />
                   )}
@@ -91,7 +91,11 @@ class WhatIsGingr extends React.Component {
                     />
                   )}
                 </div>
-                <div className={'l2c__content l2c__content--' + d.classTitle}>
+                <div
+                  className={
+                    'l2c__content l2c__content--' + d.classTitle + ' order-xs-1'
+                  }
+                >
                   <OnVisible className={'slide-in slide-in--' + classes(i)}>
                     <div className="l2c__content-title">
                       {d.icon2 && <img src={d.icon2} alt="" />}
