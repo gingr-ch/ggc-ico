@@ -29,6 +29,12 @@ class Header extends React.Component {
               LOGIN
             </Button>
           </div>
+
+          <div className="nav-mobile">
+            <div className="nm-bar nm-bar--1" />
+            <div className="nm-bar nm-bar--2" />
+            <div className="nm-bar nm-bar--3" />
+          </div>
         </div>
       </header>
     );
