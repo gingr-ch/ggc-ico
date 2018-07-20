@@ -41,3 +41,28 @@
   margin-top: 50px;
   font-weight: bold;
 }
+
+@media(max-width: 599px) {
+  .gg-section-container--revolutionary-solution h1 {
+    font-size: 32px;
+  }
+
+  .gg-section-container--revolutionary-solution .ggc-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .revolutionary__title {
+    padding-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .gg-section-container--revolutionary-solution .center-title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
