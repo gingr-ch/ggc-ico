@@ -9,7 +9,7 @@ const numbers = require('../../assets/img/download/numbers.png');
 const memorandum = require('../../assets/img/download/memorandum.png');
 
 class Download extends React.Component {
-  render () {
+  render() {
     return (
       <div className="gg-section-container gg-section-container--download">
         <div className="gg-content-container">
@@ -21,22 +21,23 @@ class Download extends React.Component {
                 display: 'flex',
                 flexDirection: 'row',
                 justifyContent: 'space-around',
-                listStyleType: 'none'
+                listStyleType: 'none',
+                flexWrap: 'wrap',
               }}
             >
-              <li style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <li className="download-item">
                 <img src={whitePaper} />
                 <p>WHITEPAPER</p>
               </li>
-              <li style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <li className="download-item">
                 <img src={lightPaper} />
                 <p>LIGHTPAPER</p>
               </li>
-              <li style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <li className="download-item">
                 <img src={numbers} />
                 <p>NUMBERS</p>
               </li>
-              <li style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <li className="download-item">
                 <img src={memorandum} />
                 <p>COMPANY'S MEMORANDUM & ARTICLES OF ASSOCITATION</p>
               </li>

@@ -1,37 +1,55 @@
 .gg-section-container--download {
-    max-height: 377px;
-    padding: 16px 0 32px;
+  max-height: 377px;
+  padding: 16px 0 32px;
 }
 
 .gg-section-container--download img {
-    max-height: 75px;
-    max-width: 60px;
-    height: auto;
-    width: auto;
+  max-height: 75px;
+  max-width: 60px;
+  height: auto;
+  width: auto;
 }
 
 .gg-section-container--download p {
-    color: #F39FFF;
-    font-size: 13px;
+  color: #F39FFF;
+  font-size: 13px;
 }
 
 .gg-section-container--download ul {
-    margin-top: 32px;
-}
-
-.gg-section-container--download ul li {
-    flex: 1 1 10%;
+  margin-top: 32px;
 }
 
 .download-title {
-    color: #DF9EFF;
-    text-transform: uppercase;
-    font-size: 28px;
-    letter-spacing: 0.1em;
-    font-weight: bolder;
-    font-size: 38px;
+  color: #DF9EFF;
+  text-transform: uppercase;
+  font-size: 28px;
+  letter-spacing: 0.1em;
+  font-weight: bolder;
+  font-size: 38px;
 }
 
 .hidden-content ul {
-    padding-left: 0;
+  padding-left: 0;
+}
+
+.download-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 10%;
+  max-width: 10%;
+  width: 100%;
+}
+
+
+@media(max-width: 599px) {
+  .gg-section-container--download {
+    max-height: none;
+  }
+  
+  .download-item {
+    flex: 1 1 50%;
+    max-width: 50%;
+    margin-bottom: 50px;
+  }
 }
