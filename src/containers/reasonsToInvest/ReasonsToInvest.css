@@ -1,28 +1,50 @@
-.gg-section-container--reasons-to-invest h1 {
-    font-size: 70px;
-    text-transform: uppercase;
-    color: white;
+.gg-section-container--reasons-to-invest .gg-head {
+  text-transform: uppercase;
+  color: white;
 }
 
-.gg-section-container--reasons-to-invest img {
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-    max-height: 600px;
-    object-fit: contain;
+.rti-image {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: contain;
 }
 
 .gg-section-container--reasons-to-invest .flex-column {
-    padding: 1em;
+  padding: 1em;
 }
 
+
 .reason-list {
-    color: white;
-    font-size: 16px;
+  color: white;
+  font-size: 16px;
 }
 
 .reason-list span {
-    color: #C430C4;
-    font-size: 35px;
-    font-weight: bold;
+  color: #C430C4;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+@media(max-width: 599px) {
+  .rti-content-container {
+    order: 1
+  }
+
+  .rti-image-container {
+    order: 2
+  }
+
+  .gg-section-container--reasons-to-invest .gg-content-container {
+    padding: 0 26px;
+  }
+
+  .gg-section-container--reasons-to-invest .order-xs-1 {
+    padding-bottom: 0;
+  }
+
+  .rti-image {
+    max-width: 240px;
+  }
 }
