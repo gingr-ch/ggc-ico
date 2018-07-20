@@ -24,10 +24,40 @@
   padding: 0;
 }
 
+.rc-dialog-body__content {
+  min-height: 200px;
+  align-items: stretch;
+}
+
+.rc-dialog-body__text {
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 50px 70px;
+}
+
 @media(max-width: 599px) {
   .team-list {
     transform: translate3d(0,0,0);
     width: 100%;
     flex-wrap: wrap;
+  }
+
+  .rc-dialog {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .rc-dialog-body,
+  .rc-dialog-body__content {
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+
+  .rc-dialog-body__content {
+    flex-direction: column-reverse;
+  }
+
+  .rc-dialog-body__text {
+    padding: 35px;
   }
 }

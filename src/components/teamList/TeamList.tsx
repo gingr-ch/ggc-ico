@@ -165,10 +165,7 @@ class TeamList extends React.Component {
         mousePosition={this.state.mousePosition}
         destroyOnClose={this.state.destroyOnClose}
       >
-        <div
-          style={{ minHeight: '200px', alignItems: 'stretch' }}
-          className="flex-row"
-        >
+        <div className="rc-dialog-body__content flex-row">
           <div style={{ background: '#802e7a', padding: '40px' }}>
             <div style={{ position: 'relative' }}>
               <img
@@ -187,14 +184,7 @@ class TeamList extends React.Component {
               />
             </div>
           </div>
-          <div
-            className="flex-column"
-            style={{
-              justifyContent: 'flex-start',
-              alignItems: 'flex-start',
-              padding: '50px 70px',
-            }}
-          >
+          <div className="rc-dialog-body__text flex-column">
             <h2
               style={{
                 fontSize: '38px',
