@@ -6,7 +6,7 @@ import SvgRoadmap from '../../components/svgRoadmap/Roadmap';
 // const roadmap = require('../../assets/img/roadmap.svg');
 const balloon = require('../../assets/img/gg_balloon.png');
 const gingr = require('../../assets/img/gingr_balloons.png');
-
+const roadMap = require('../../assets/img/roadmap_mobile.png');
 // const gingr = require('../../assets/img/gingr_necklace.png');
 
 // const cardsData = [
@@ -44,7 +44,13 @@ class Roadmap extends React.Component {
           <h1>ROADMAP</h1>
           <h2>DATES COMING SOON</h2>
 
-          <SvgRoadmap />
+          <div className="hide-xs">
+            <SvgRoadmap />
+          </div>
+
+          <div className="hide show-xs">
+            <img src={roadMap} alt="" />
+          </div>
 
           <div
             className="flex-row"
@@ -58,7 +64,7 @@ class Roadmap extends React.Component {
             </div>
 
             <div
-              className="flex-column"
+              className="flex-column roadmap-ballon-container"
               style={{ justifyContent: 'flex-start' }}
             >
               <img src={balloon} alt="" />

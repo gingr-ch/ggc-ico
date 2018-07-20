@@ -26,3 +26,19 @@
   font-weight: 400;
   letter-spacing: 2px;
 }
+
+
+@media(max-width: 599px) {
+  .gg-section-container--roadmap h1 {
+    font-size: 34px;
+  }
+
+  .roadmap-ballon-container {
+    position: relative;
+    left: -62px;
+  }
+
+  .roadmap-ballon-container h4 {
+    margin-top: 180px;
+  }
+}
