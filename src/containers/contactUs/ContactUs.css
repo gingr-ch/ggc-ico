@@ -16,8 +16,15 @@
   padding: 5px;
 }
 
-.gg-section-container--contactus input,
-.gg-section-container--contactus textarea {
+.contactus-form {
+  width: 100%;
+  max-width: 536px;
+  position: relative;
+  align-items: stretch;
+}
+
+.contactus-form__input,
+.contactus-form__textarea {
   background-color: #812a7b;
   margin-bottom: 10px;
   border: 0;
@@ -27,12 +34,26 @@
   font-size: 20px;
 }
 
-.gg-section-container--contactus input::placeholder,
-.gg-section-container--contactus textarea::placeholder {
+.contactus-form__input::placeholder,
+.contactus-form__textarea::placeholder {
   color: #F39FFF;
   opacity: .8;
 }
 
-.gg-section-container--contactus textarea {
+.contactus-form__textarea {
   min-height: 150px;
+}
+
+@media(max-width: 599px) {
+  .gg-section-container--contactus {
+    padding-bottom: 290px;
+  }
+
+  .gg-section-container--contactus h1 {
+    font-size: 38px;
+  }
+
+  .contactus-form {
+    padding: 0;
+  }
 }

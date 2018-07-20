@@ -18,20 +18,16 @@ class ContactUs extends React.Component {
             <h1>Contact Us</h1>
           </div>
 
-          <div
-            className="flex-column"
-            style={{
-              alignItems: 'stretch',
-              position: 'relative',
-              width: '563px',
-            }}
-          >
+          <div className="contactus-form flex-column">
             <input
-              className="contactus-input"
+              className="contactus-form__input"
               type="text"
               placeholder="Email"
             />
-            <textarea className="contactus-textarea" placeholder="Message" />
+            <textarea
+              className="contactus-form__textarea"
+              placeholder="Message"
+            />
             <Button click={this.click}>Send</Button>
           </div>
         </div>
