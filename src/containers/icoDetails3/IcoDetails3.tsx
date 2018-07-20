@@ -12,7 +12,10 @@ class IcoDetails3 extends React.Component {
     return (
       <div className="gg-section-container gg-section-container--ico-details3">
         <div className="gg-content-container">
-          <div className="flex-row" style={{ justifyContent: 'center' }}>
+          <div
+            className="flex-row pie-chart-container"
+            style={{ justifyContent: 'center' }}
+          >
             <img src={pie} alt="" style={{ width: '157px', height: '157px' }} />
             <div
               className="coin-supply-values flex-column"
@@ -27,7 +30,7 @@ class IcoDetails3 extends React.Component {
             </div>
           </div>
           <div
-            className="flex-row"
+            className="ico-details-items-container flex-row"
             style={{
               justifyContent: 'center',
               alignItems: 'flex-start',

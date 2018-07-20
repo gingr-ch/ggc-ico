@@ -36,3 +36,9 @@
 .table-private-sale .color--cyan {
   color: #30fffb;
 }
+
+@media(max-width: 599px) {
+  .table-private-sale {
+    font-size: 10px;
+  }
+}

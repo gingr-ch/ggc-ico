@@ -47,3 +47,10 @@
   bottom: -50px;
   left: -244px;
 }
+
+
+@media(max-width: 599px) {
+  .gg-section-container--ico-details h1 {
+    font-size: 42px;
+  }
+}

@@ -24,3 +24,20 @@
   max-width: 257px;
   min-width: 257px;
 }
+
+@media(max-width: 599px) {
+
+  .pie-chart-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pie-chart-container img,
+  .coin-supply-values {
+    padding-left: 2.5em;
+  }
+  
+  .ico-details-items-container {
+    flex-direction: column;
+  }
+}
