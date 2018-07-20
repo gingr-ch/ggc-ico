@@ -5,3 +5,10 @@
 .ceo-details a {
     color: rgb(243, 159, 255);
 }
+
+
+@media(max-width: 599px) {
+  .gg-section-container--teamAll {
+    padding-bottom: 0;
+  }
+}

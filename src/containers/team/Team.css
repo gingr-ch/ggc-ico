@@ -10,3 +10,9 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+
+@media(max-width: 599px) {
+  .gg-section-container--team h1 {
+    font-size: 42px;
+  }
+}

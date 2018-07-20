@@ -1,3 +1,10 @@
+.team-list {
+  display: flex;
+  flex-flow: row wrap;
+  transform: translate3d(80px, 0px, 0px);
+}
+
+
 .team-item:nth-child(3n) {
   flex: 1 1 25% !important;
   max-width: 25% !important;
@@ -15,4 +22,12 @@
 
 .rc-dialog-body {
   padding: 0;
+}
+
+@media(max-width: 599px) {
+  .team-list {
+    transform: translate3d(0,0,0);
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }

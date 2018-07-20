@@ -232,15 +232,7 @@ class TeamList extends React.Component {
     );
 
     return (
-      <div
-        className="team-list"
-        style={{
-          display: 'flex',
-          flexDirection: 'row',
-          flexWrap: 'wrap',
-          transform: 'translate3d(80px,0,0)',
-        }}
-      >
+      <div className="team-list">
         {list.map(item => (
           <TeamItem
             key={item.id}
