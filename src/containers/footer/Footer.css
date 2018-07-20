@@ -19,6 +19,15 @@
   text-align: left;
 }
 
+.footer-image {
+  margin-top: -439px;
+}
+
+.footer-content {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 .footer-address p {
   font-size: 14px;
   letter-spacing: 0em;
@@ -37,8 +46,41 @@
   text-transform: uppercase;
 }
 
+.footer-locations {
+  align-items: flex-start;
+}
+
+.locations-list {
+  padding: 0px;
+  justify-content: flex-start;
+  flex: 1 1 50%;
+}
+
 .footer-copyright {
   text-align: center;
   font-size: 14px;
   margin-top: 50px;
+}
+
+
+@media(max-width: 599px) {
+  .footer-image {
+    margin-top: -250px;
+    max-width: 100vw;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer-locations {
+    flex-direction: column;
+  }
+
+  .locations-list {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
 }

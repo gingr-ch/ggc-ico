@@ -140,12 +140,9 @@ class Footer extends React.Component {
           className="gg-content-container flex-row"
           style={{ justifyContent: 'flex-start' }}
         >
-          <img src={scene} alt="" style={{ marginTop: '-439px' }} />
+          <img src={scene} alt="" className="footer-image" />
 
-          <div
-            className="flex-row"
-            style={{ justifyContent: 'flex-start', alignItems: 'flex-start' }}
-          >
+          <div className="footer-content flex-row">
             <div
               className="footer-address flex-column"
               style={{ alignItems: 'flex-start' }}
@@ -187,12 +184,7 @@ class Footer extends React.Component {
               style={{ alignItems: 'flex-start', width: '100%' }}
             >
               <h4 className="footer-title">Locations</h4>
-              <div
-                className="flex-row"
-                style={{
-                  alignItems: 'flex-start',
-                }}
-              >
+              <div className="footer-locations flex-row">
                 <div
                   className="locations-list flex-column"
                   style={{
