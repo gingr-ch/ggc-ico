@@ -1,6 +1,7 @@
 import * as React from 'react';
 // import OnVisible from 'react-on-visible';
-import LocalizedStrings, { LocalizedStringsMethods } from 'react-localization';
+import LocalizedStrings from 'react-localization';
+import { InstafuckStrings } from '../../components/l18n';
 
 import './Instafuck.css';
 
@@ -12,20 +13,7 @@ const ggcLogo = require('../../assets/img/instafuck/ggc_logo.png');
 const instafuckEscrow = require('../../assets/img/instafuck/instafuck_escrow.png');
 
 export const langEn = require('../../assets/l18n/instafuck.en.json');
-export interface LocaleStrings extends LocalizedStringsMethods {
-  welcomeTo: string;
-  instafuck: string;
-  weHaveCreatedThe: string;
-  instafuckStep1: string;
-  instafuckStep2: string;
-  instafuckStep3: string;
-  instafuckStep4: string;
-  instafuckStep5: string;
-  clientPhone: string;
-  gingrPhone: string;
-}
-
-export const strings: LocaleStrings = new LocalizedStrings({
+export const strings: InstafuckStrings = new LocalizedStrings({
   en: langEn,
 });
 class Instafuck extends React.Component {
