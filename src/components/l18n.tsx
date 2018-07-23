@@ -227,3 +227,58 @@ export interface RoadmapStrings extends LocalizedStringsMethods {
   datesComingSoon: string;
   oneCryptoCurrencyFromThousands: string;
 }
+
+export interface GlobalLeaderStrings extends LocalizedStringsMethods {
+  globalLeader: string;
+  inTheMarket: string;
+  bePartOfOurVision: string;
+  softCap: string;
+  maxCap: string;
+  switzerland: string;
+  germany: string;
+  austria: string;
+  lichtenstein: string;
+  unitedKingdom: string;
+  newZealand: string;
+  australia: string;
+  canada: string;
+  ireland: string;
+  france: string;
+  luxemburg: string;
+  italy: string;
+  belgium: string;
+  netherlands: string;
+  denmark: string;
+  greece: string;
+  spain: string;
+  portugal: string;
+  finland: string;
+  norway: string;
+  sweden: string;
+  czechRepublic: string;
+  poland: string;
+  hungary: string;
+  slovakia: string;
+  lithuania: string;
+  latvia: string;
+  estonia: string;
+  bulgaria: string;
+  romania: string;
+  mexico: string;
+  venezuela: string;
+  columbia: string;
+  brasil: string;
+  argentina: string;
+  paraguay: string;
+  peru: string;
+  equador: string;
+  uruguay: string;
+  costaRica: string;
+  panama: string;
+  nicaragua: string;
+  bolivia: string;
+  chile: string;
+  africa: string;
+  asia: string;
+  worldwideBranding: string;
+}

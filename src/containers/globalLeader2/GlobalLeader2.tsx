@@ -1,4 +1,11 @@
 import * as React from 'react';
+import LocalizedStrings from 'react-localization';
+import { GlobalLeaderStrings } from '../../components/l18n';
+
+export const langEn = require('../../assets/l18n/global-leader.en.json');
+export const strings: GlobalLeaderStrings = new LocalizedStrings({
+  en: langEn,
+});
 
 import './GlobalLeader2.css';
 
@@ -60,7 +67,7 @@ class GlobalLeader2 extends React.Component {
                     fontSize: '17px',
                   }}
                 >
-                  SOFT CAP
+                  {strings.softCap}
                 </td>
                 <td style={{ background: '#ffd643' }} />
                 <td style={{ background: '#ffd643' }} />
@@ -76,7 +83,7 @@ class GlobalLeader2 extends React.Component {
                     fontSize: '17px',
                   }}
                 >
-                  MAX CAP
+                  {strings.maxCap}
                 </td>
               </tr>
               <tr className="yellow-text">
@@ -90,92 +97,82 @@ class GlobalLeader2 extends React.Component {
                 <td>100 M</td>
               </tr>
               <tr>
-                <td>SWITZERLAND</td>
-                <td>UNITED KINGDOM</td>
-                <td>FRANCE</td>
-                <td>PORTUGAL</td>
-                <td>CZECH REPUBLIC</td>
-                <td>MEXICO</td>
-                <td>AFRICA</td>
-                <td>WORLDWIDE BRANDING</td>
+                <td>{strings.switzerland}</td>
+                <td>{strings.unitedKingdom}</td>
+                <td>{strings.france}</td>
+                <td>{strings.portugal}</td>
+                <td>{strings.czechRepublic}</td>
+                <td>{strings.mexico}</td>
+                <td>{strings.africa}</td>
+                <td>{strings.worldwideBranding}</td>
               </tr>
               <tr>
-                <td>GERMANY</td>
-                <td>NEW ZEALAND</td>
-                <td>LUXEMBURG</td>
-                <td>FINLAND</td>
-                <td>POLAND</td>
-                <td>VENEZUELA</td>
-                <td>ASIA</td>
+                <td>{strings.germany}</td>
+                <td>{strings.newZealand}</td>
+                <td>{strings.luxemburg}</td>
+                <td>{strings.finland}</td>
+                <td>{strings.poland}</td>
+                <td>{strings.venezuela}</td>
+                <td>{strings.asia}</td>
                 <td />
               </tr>
               <tr>
-                <td>AUSTRIA</td>
-                <td>AUSTRALIA</td>
-                <td>ITALY</td>
-                <td>NORWAY</td>
-                <td>HUNGARY</td>
-                <td>COLUMBIA</td>
-                <td />
-                <td />
-              </tr>
-              <tr>
-                <td>LICHTENSTEIN</td>
-                <td>CANADA</td>
-                <td>BELGIUM</td>
-                <td>SWEDEN</td>
-                <td>SLOVAKIA</td>
-                <td>BRASIL</td>
+                <td>{strings.austria}</td>
+                <td>{strings.australia}</td>
+                <td>{strings.italy}</td>
+                <td>{strings.norway}</td>
+                <td>{strings.hungary}</td>
+                <td>{strings.columbia}</td>
                 <td />
                 <td />
               </tr>
               <tr>
-                <td />
-                <td>IRELAND</td>
-                <td>NETHERLANDS</td>
-                <td />
-                <td>LITHUANIA</td>
-                <td>ARGENTINA</td>
+                <td>{strings.lichtenstein}</td>
+                <td>{strings.canada}</td>
+                <td>{strings.belgium}</td>
+                <td>{strings.sweden}</td>
+                <td>{strings.slovakia}</td>
+                <td>{strings.brasil}</td>
                 <td />
                 <td />
               </tr>
               <tr>
                 <td />
+                <td>{strings.ireland}</td>
+                <td>{strings.netherlands}</td>
                 <td />
-                <td>DENMARK</td>
-                <td />
-                <td>LATVIA</td>
-                <td>PARAGUAY</td>
+                <td>{strings.lithuania}</td>
+                <td>{strings.argentina}</td>
                 <td />
                 <td />
               </tr>
               <tr>
                 <td />
                 <td />
-                <td>GREECE</td>
+                <td>{strings.denmark}</td>
                 <td />
-                <td>ESTONIA</td>
-                <td>PERU</td>
-                <td />
-                <td />
-              </tr>
-              <tr>
-                <td />
-                <td />
-                <td>SPAIN</td>
-                <td />
-                <td>BULGARIA</td>
-                <td>EQUADOR</td>
+                <td>{strings.latvia}</td>
+                <td>{strings.paraguay}</td>
                 <td />
                 <td />
               </tr>
               <tr>
                 <td />
                 <td />
+                <td>{strings.greece}</td>
+                <td />
+                <td>{strings.estonia}</td>
+                <td>{strings.peru}</td>
                 <td />
                 <td />
-                <td>ROMANIA</td>
-                <td>URUGUAY</td>
+              </tr>
+              <tr>
+                <td />
+                <td />
+                <td>{strings.spain}</td>
+                <td />
+                <td>{strings.bulgaria}</td>
+                <td>{strings.equador}</td>
                 <td />
                 <td />
               </tr>
@@ -184,8 +181,8 @@ class GlobalLeader2 extends React.Component {
                 <td />
                 <td />
                 <td />
-                <td />
-                <td>COSTA RICA</td>
+                <td>{strings.romania}</td>
+                <td>{strings.uruguay}</td>
                 <td />
                 <td />
               </tr>
@@ -195,7 +192,7 @@ class GlobalLeader2 extends React.Component {
                 <td />
                 <td />
                 <td />
-                <td>PANAMA</td>
+                <td>{strings.costaRica}</td>
                 <td />
                 <td />
               </tr>
@@ -205,7 +202,7 @@ class GlobalLeader2 extends React.Component {
                 <td />
                 <td />
                 <td />
-                <td>NICARAGUA</td>
+                <td>{strings.panama}</td>
                 <td />
                 <td />
               </tr>
@@ -215,7 +212,7 @@ class GlobalLeader2 extends React.Component {
                 <td />
                 <td />
                 <td />
-                <td>BOLIVIA</td>
+                <td>{strings.nicaragua}</td>
                 <td />
                 <td />
               </tr>
@@ -225,7 +222,17 @@ class GlobalLeader2 extends React.Component {
                 <td />
                 <td />
                 <td />
-                <td>CHILE</td>
+                <td>{strings.bolivia}</td>
+                <td />
+                <td />
+              </tr>
+              <tr>
+                <td />
+                <td />
+                <td />
+                <td />
+                <td />
+                <td>{strings.chile}</td>
                 <td />
                 <td />
               </tr>
