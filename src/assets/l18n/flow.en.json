@@ -28,7 +28,9 @@
     "ico": "ICO",
     "crowdSale": "Crowd Sale",
     "externalExchange": "External Exchange",
-    "flowOfFiat": "Flow of Fiat Money & GGC Flow Direction",
-    "cryptoCoin": "Crypto Coin (GGC)",
-    "flowDirection": "Flow Direction"
+    "flowOfFiat": "Flow of Fiat Money & GGC",
+    "cryptoCoin": "Crypto Coin",
+    "flowDirection": "Flow Direction",
+    "premium": "PREMIUM",
+    "escrow": "ESCROW"
 }

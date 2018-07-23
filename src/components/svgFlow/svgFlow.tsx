@@ -1,4 +1,11 @@
 import * as React from 'react';
+import LocalizedStrings from 'react-localization';
+import { FlowStrings } from '../../components/l18n';
+
+export const langEn = require('../../assets/l18n/flow.en.json');
+export const strings: FlowStrings = new LocalizedStrings({
+  en: langEn,
+});
 
 const FlowChart = (props: any) => (
   <svg
@@ -754,40 +761,7 @@ const FlowChart = (props: any) => (
         transform="translate(55.936 586.224)"
         style={{ isolation: 'isolate' }}
       >
-        F
-      </text>
-      <text
-        transform="translate(59.998 586.224)"
-        style={{ isolation: 'isolate' }}
-        letterSpacing="-.007em"
-      >
-        L
-      </text>
-      <text
-        transform="translate(63.53 586.224)"
-        style={{ isolation: 'isolate' }}
-        letterSpacing="-.004em"
-      >
-        O
-      </text>
-      <text
-        transform="translate(69.322 586.224)"
-        style={{ isolation: 'isolate' }}
-      >
-        W DIR
-      </text>
-      <text
-        transform="translate(89.606 586.224)"
-        style={{ isolation: 'isolate' }}
-        letterSpacing="-.003em"
-      >
-        E
-      </text>
-      <text
-        transform="translate(93.813 586.224)"
-        style={{ isolation: 'isolate' }}
-      >
-        CTION
+        {strings.flowDirection}
       </text>
     </g>
     <g fillRule="evenodd">
@@ -806,7 +780,7 @@ const FlowChart = (props: any) => (
       fill="#ffd742"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      BANK
+      {strings.bank}
     </text>
     <path
       fill="none"
@@ -885,22 +859,8 @@ const FlowChart = (props: any) => (
       fill="#ffd742"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      <tspan letterSpacing="-.004em">A</tspan>
-      <tspan x={6.385} y={0} letterSpacing="-.003em">
-        CC
-      </tspan>
-      <tspan x={19.833} y={0}>
-        OUNT /
-      </tspan>
-      <tspan x={-15.477} y={11.644}>
-        INTERNAL
-      </tspan>
-      <tspan x={32.776} y={11.644} letterSpacing="-.027em">
-        W
-      </tspan>
-      <tspan x={41.247} y={11.644}>
-        ALLET
-      </tspan>
+      {strings.account} /<br />
+      {strings.internalWallet}
     </text>
     <text
       transform="translate(1.871 315.976)"
@@ -908,25 +868,7 @@ const FlowChart = (props: any) => (
       fill="#ffd742"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      FREE F
-      <tspan x={45.315} y={0} letterSpacing="-.007em">
-        L
-      </tspan>
-      <tspan x={52.293} y={0} letterSpacing="-.004em">
-        O
-      </tspan>
-      <tspan x={63.739} y={0} letterSpacing="-.037em">
-        A
-      </tspan>
-      <tspan x={72.604} y={0}>
-        T +/-
-      </tspan>
-      <tspan x={104.346} y={0} letterSpacing="-.003em">
-        7
-      </tspan>
-      <tspan x={111.083} y={0}>
-        0%
-      </tspan>
+      {strings.freeFloat} +/- 70%
     </text>
     <text
       transform="translate(569.27 13.025)"
@@ -934,7 +876,7 @@ const FlowChart = (props: any) => (
       fill="#ffd742"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      RESERVE +/- 30%
+      {strings.reserve} +/- 30%
     </text>
     <text
       transform="translate(572.116 315.835)"
@@ -942,13 +884,7 @@ const FlowChart = (props: any) => (
       fill="#ffd742"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      EXTERNAL E
-      <tspan x={80.646} y={0} letterSpacing="-.009em">
-        X
-      </tspan>
-      <tspan x={89.142} y={0} letterSpacing="0em">
-        CHANGE
-      </tspan>
+      {strings.externalExchange}
     </text>
     <text
       transform="translate(2.64 12.056)"
@@ -956,16 +892,7 @@ const FlowChart = (props: any) => (
       fill="#ffd742"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      GINGR P
-      <tspan x={56.676} y={0} letterSpacing=".031em">
-        L
-      </tspan>
-      <tspan x={64.193} y={0} letterSpacing="-.037em">
-        A
-      </tspan>
-      <tspan x={73.057} y={0}>
-        TFORM
-      </tspan>
+      {strings.gingrPlatform}
     </text>
     <text
       transform="rotate(90 19.874 151.529)"
@@ -973,7 +900,7 @@ const FlowChart = (props: any) => (
       fill="#ffd742"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      GINGR PRODUCTS
+      {strings.gingrProducts}
     </text>
     <path
       d="M189.789 153.261c2.094 1.277 4.543 2.751 6.7 4.065.856-2.026 1.638-3.874 2.4-5.683 1.737.686 3.389 1.321 5.026 1.992.624.257.828.015.854-.394l-10.67-5.464.358 4.769"
@@ -1016,7 +943,7 @@ const FlowChart = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      PREMIUM
+      {strings.premium}
     </text>
     <path
       d="M189.654 103.564c2.1 1.282 4.564 2.763 6.732 4.083l2.413-5.708c1.746.69 3.4 1.328 5.05 2 .626.256.831.012.858-.4-3.612-1.848-7.138-3.654-10.718-5.488l.361 4.79"
@@ -1056,7 +983,7 @@ const FlowChart = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      PREMIUM
+      {strings.premium}
     </text>
     <path
       d="M189.789 201.48c2.094 1.275 4.543 2.75 6.7 4.066.856-2.027 1.638-3.876 2.4-5.685 1.737.686 3.389 1.321 5.026 1.993.624.256.828.016.854-.4-3.595-1.839-7.105-3.637-10.67-5.464l.358 4.769"
@@ -1083,7 +1010,7 @@ const FlowChart = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      PREMIUM
+      {strings.premium}
     </text>
     <path
       d="M225.114 193.094c-.789-.654-1.575-1.315-2.373-1.963a.534.534 0 0 1-.219-.464c.01-1.564.006-3.131 0-4.7 0-.405-.112-.516-.521-.52h-2.138c-.424 0-.532.11-.534.54v2.28c-.137-.106-.221-.165-.3-.232l-2.638-2.2a1.54 1.54 0 0 0-2.142-.007q-1.423 1.176-2.838 2.362-2.94 2.445-5.876 4.893c-.389.324-.4.49-.074.887.153.181.3.363.46.543.361.429.507.443.928.088q4.12-3.432 8.236-6.868c.17-.146.274-.165.457-.01 1.3 1.1 2.617 2.191 3.928 3.283q2.174 1.815 4.354 3.63c.367.306.534.295.837-.062.176-.2.348-.413.521-.621.315-.377.3-.548-.073-.861"
@@ -1123,7 +1050,7 @@ const FlowChart = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      PREMIUM
+      {strings.premium}
     </text>
     <path
       d="M215.353 228.164a1.3 1.3 0 0 0-.259.136.553.553 0 0 0-.023.827l.065.057c-.417.633-.831 1.261-1.254 1.9-.517-.619-1.032-1.23-1.527-1.823a2.077 2.077 0 0 0 .155-.365.54.54 0 0 0-.452-.629.552.552 0 0 0-.223 1.081.173.173 0 0 1 .16.157c.312 1.222.631 2.435.943 3.657a.15.15 0 0 0 .17.135h2.344v-5.133z"
@@ -1444,7 +1371,7 @@ const FlowChart = (props: any) => (
       fill="#ffd742"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      30% RESERVE FUNDS GGC
+      30% {strings.reserveFundsGGC}
       <tspan fontSize={8.144} fill="#fff">
         <tspan x={-15.13} y={9.773}>
           (30% + IN
@@ -1765,19 +1692,7 @@ const FlowChart = (props: any) => (
       fill="#ffd742"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      <tspan>GINGR / SEX</tspan>
-      <tspan x={48.138} y={0} letterSpacing="-.004em">
-        W
-      </tspan>
-      <tspan x={55.436} y={0} letterSpacing="0em">
-        OR
-      </tspan>
-      <tspan x={67.456} y={0} letterSpacing="-.005em">
-        K
-      </tspan>
-      <tspan x={72.595} y={0}>
-        ER
-      </tspan>
+      <tspan>{strings.gingrSexWorker}</tspan>
     </text>
     <text
       transform="translate(220.074 385.168)"
@@ -1785,13 +1700,7 @@ const FlowChart = (props: any) => (
       fill="#ffd742"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      ES
-      <tspan x={9.17} y={0} letterSpacing="-.038em">
-        T
-      </tspan>
-      <tspan x={12.851} y={0}>
-        ABLISHMENT
-      </tspan>
+      {strings.establishment}
     </text>
     <text
       transform="translate(308.768 385.168)"
@@ -1799,10 +1708,7 @@ const FlowChart = (props: any) => (
       fill="#ffd742"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      <tspan letterSpacing="-.004em">A</tspan>
-      <tspan x={5.359} y={0}>
-        GENCY
-      </tspan>
+      {strings.agency}
     </text>
     <text
       transform="translate(48.144 385.168)"
@@ -1810,7 +1716,7 @@ const FlowChart = (props: any) => (
       fill="#ffd742"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      CLIENT
+      {strings.client}
     </text>
     <text
       transform="translate(161.802 531.078)"
@@ -1818,13 +1724,7 @@ const FlowChart = (props: any) => (
       fill="#fff"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      EXTERNAL
-      <tspan x={41.509} y={0} letterSpacing="-.027em">
-        W
-      </tspan>
-      <tspan x={48.619} y={0}>
-        ALLET
-      </tspan>
+      {strings.externalWallet}
     </text>
     <text
       transform="rotate(.043 -610934.713 87657.289)"
@@ -1833,13 +1733,7 @@ const FlowChart = (props: any) => (
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
       letterSpacing="-.034em"
     >
-      P
-      <tspan x={4.561} y={0} letterSpacing="-.05em">
-        A
-      </tspan>
-      <tspan x={9.545} y={0} letterSpacing="0em">
-        Y FOR SERVICE
-      </tspan>
+      {strings.payForService}
     </text>
     <path
       d="M163.905 354.2a2.713 2.713 0 0 0 2.577 2.061 2.641 2.641 0 0 0 2.376-2.142c-1.629-1.705-3.27-1.569-4.953.081m2.529.825a.952.952 0 0 1-.862-.709 2.155 2.155 0 0 1 1.726-.007s-.222.716-.864.716"
@@ -1897,13 +1791,7 @@ const FlowChart = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      ESCR
-      <tspan x={14.758} y={0} letterSpacing="-.005em">
-        O
-      </tspan>
-      <tspan x={19.489} y={0}>
-        W
-      </tspan>
+      {strings.escrow}
     </text>
     <text
       transform="translate(317.298 530.222)"
@@ -1911,13 +1799,7 @@ const FlowChart = (props: any) => (
       fill="#ffd742"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      INVES
-      <tspan x={23.316} y={0} letterSpacing="-.01em">
-        T
-      </tspan>
-      <tspan x={27.225} y={0}>
-        OR
-      </tspan>
+      {strings.investor}
     </text>
     <path
       d="M352.646 498.8a15.84 15.84 0 1 1-15.637-15.911 15.96 15.96 0 0 1 15.637 15.911zm-13.927 9.677c1.43-1.2 2.865-1.979 3.67-3.18 1.447-2.165.559-5.095-1.786-6.595-1.416-.906-3.043-1.5-4.4-2.473a2.973 2.973 0 0 1-.78-2.18 1.713 1.713 0 0 1 1.163-1.231c.572-.063 1.627.328 1.74.732.819 2.912 2.79 1.665 4.587 1.543a4.4 4.4 0 0 0-2.214-4.407c-1.541-.778-2.414-1.695-2.214-3.448h-2.065c-.69 1.145-1 2.355-1.695 2.661-2.143.945-3.5 2.291-3.658 4.686-.159 2.478 1.27 3.9 3.292 4.921a18.677 18.677 0 0 1 3.53 1.849 3.451 3.451 0 0 1 .752 2.392c0 .381-.828 1.108-1.244 1.088-.756-.047-1.993-.383-2.136-.866-.854-2.862-2.8-1.7-4.634-1.586-.057 3.662 2.319 4.943 5.108 5.672l.312 2.212h2.553c.059-.867.105-1.556.119-1.786z"
@@ -2039,13 +1921,7 @@ const FlowChart = (props: any) => (
       fill="#fff"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      BUY GGC (
-      <tspan x={50.207} y={0} letterSpacing="-.003em">
-        1
-      </tspan>
-      <tspan x={53.582} y={0}>
-        00% - X%)
-      </tspan>
+      {strings.buyGGC} (100% - X%)
     </text>
     <text
       transform="translate(549.268 57.369)"
@@ -2053,16 +1929,7 @@ const FlowChart = (props: any) => (
       fill="#fff"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      SELL GGC
-      <tspan x={46.702} y={0} letterSpacing="-.005em">
-        (
-      </tspan>
-      <tspan x={50.038} y={0} letterSpacing="-.003em">
-        1
-      </tspan>
-      <tspan x={53.414} y={0}>
-        00% + Y%)
-      </tspan>
+      {strings.sellGGC} (100% + Y%)
     </text>
     <path
       d="M608.7 427.578a1.94 1.94 0 0 1 1.941-1.94 1.944 1.944 0 0 1 1.94 1.94 1.94 1.94 0 0 1-1.94 1.941 1.936 1.936 0 0 1-1.941-1.941zm-23.285 0a1.939 1.939 0 0 1 1.94-1.94 1.945 1.945 0 0 1 1.941 1.94 1.94 1.94 0 0 1-1.941 1.941 1.935 1.935 0 0 1-1.938-1.941zm-23.285 0a1.939 1.939 0 0 1 1.94-1.94 1.945 1.945 0 0 1 1.941 1.94 1.94 1.94 0 0 1-1.941 1.941 1.935 1.935 0 0 1-1.938-1.941z"
@@ -2098,22 +1965,7 @@ const FlowChart = (props: any) => (
       fill="#fff"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      F
-      <tspan x={4.816} y={0} letterSpacing="-.007em">
-        L
-      </tspan>
-      <tspan x={9.003} y={0} letterSpacing="-.004em">
-        O
-      </tspan>
-      <tspan x={15.871} y={0}>
-        W OF FI
-      </tspan>
-      <tspan x={46.345} y={0} letterSpacing="-.037em">
-        A
-      </tspan>
-      <tspan x={51.664} y={0}>
-        T MONEY & GGC
-      </tspan>
+      {strings.flowOfFiat}
     </text>
     <text
       transform="translate(.857 618.407)"
@@ -2121,25 +1973,7 @@ const FlowChart = (props: any) => (
       fill="#fff"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      CRYP
-      <tspan x={21.521} y={0} letterSpacing="-.01em">
-        T
-      </tspan>
-      <tspan x={25.606} y={0}>
-        O
-      </tspan>
-      <tspan x={34.38} y={0} letterSpacing="-.003em">
-        C
-      </tspan>
-      <tspan x={40.278} y={0}>
-        OIN
-      </tspan>
-      <tspan x={58.182} y={0} letterSpacing="-.014em">
-        (
-      </tspan>
-      <tspan x={60.965} y={0}>
-        GGC)
-      </tspan>
+      {strings.cryptoCoin} (GGC)
     </text>
     <path
       fill="#fff"
@@ -2151,22 +1985,7 @@ const FlowChart = (props: any) => (
       fill="#fff"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      F
-      <tspan x={4.816} y={0} letterSpacing="-.007em">
-        L
-      </tspan>
-      <tspan x={9.003} y={0} letterSpacing="-.004em">
-        O
-      </tspan>
-      <tspan x={15.871} y={0}>
-        W DIR
-      </tspan>
-      <tspan x={39.92} y={0} letterSpacing="-.003em">
-        E
-      </tspan>
-      <tspan x={44.907} y={0}>
-        CTION
-      </tspan>
+      {strings.flowDirection}
     </text>
     <path
       d="M48.593 590.9a1.941 1.941 0 0 1 1.941-1.94 1.946 1.946 0 0 1 1.94 1.94 1.939 1.939 0 0 1-1.94 1.941 1.935 1.935 0 0 1-1.941-1.941zm-23.285 0a1.94 1.94 0 0 1 1.939-1.94 1.946 1.946 0 0 1 1.942 1.94 1.94 1.94 0 0 1-1.942 1.941 1.934 1.934 0 0 1-1.939-1.941zm-23.286 0a1.941 1.941 0 0 1 1.941-1.94A1.945 1.945 0 0 1 5.9 590.9a1.939 1.939 0 0 1-1.94 1.941 1.935 1.935 0 0 1-1.938-1.941z"

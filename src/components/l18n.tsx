@@ -109,3 +109,40 @@ export interface BlockchainStrings extends LocalizedStringsMethods {
   jobsWanted: string;
   jobVacancies: string;
 }
+
+export interface FlowStrings extends LocalizedStringsMethods {
+  ggCoin: string;
+  flow: string;
+  onOurGingrPlatform: string;
+  gingrPlatform: string;
+  platform: string;
+  gingrProducts: string;
+  reserve: string;
+  bank: string;
+  buyGGC: string;
+  sellGGC: string;
+  reserveFundsGGC: string;
+  income: string;
+  saleOnExchange: string;
+  fiatFunds: string;
+  workingCapital: string;
+  profits: string;
+  freeFloat: string;
+  account: string;
+  internalWallet: string;
+  client: string;
+  gingrSexWorker: string;
+  establishment: string;
+  agency: string;
+  payForService: string;
+  externalWallet: string;
+  investor: string;
+  ico: string;
+  crowdSale: string;
+  externalExchange: string;
+  flowOfFiat: string;
+  cryptoCoin: string;
+  flowDirection: string;
+  premium: string;
+  escrow: string;
+}

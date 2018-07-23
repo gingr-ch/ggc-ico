@@ -24,6 +24,10 @@
   margin-top: 0;
 }
 
+.gg-section-container--flow svg {
+  text-transform: uppercase;
+}
+
 
 @media(max-width: 599px) {
   .gg-section-container--flow h1 {
