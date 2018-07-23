@@ -1,52 +1,69 @@
 import * as React from 'react';
+import LocalizedStrings, { LocalizedStringsMethods } from 'react-localization';
 
 import './ReasonsToInvest.css';
 
 const reasonsImg = require('../../assets/img/reason_to_invest.png');
 
+export const langEn = require('../../assets/l18n/reasons-to-invest.en.json');
+export interface LocaleStrings extends LocalizedStringsMethods {
+  reasonsToInvest: string;
+  ggCoinShould: string;
+  weProvideFirm: string;
+  ourAssetsAnd: string;
+  theGingrPlatformHas: string;
+  withYourHelp: string;
+  gingrHasAlready: string;
+  ourConceptHas: string;
+  theFirmHasGained: string;
+  weAreRegarded: string;
+  gingrIsThePioneer: string;
+}
+
+export const strings: LocaleStrings = new LocalizedStrings({
+  en: langEn,
+});
+
 const reasonsList = [
   {
     id: 1,
-    text: 'The GG coin should continuously increase in value',
+    text: strings.ggCoinShould,
   },
   {
     id: 2,
-    text: 'We provide firm solutions to existing problems',
+    text: strings.weProvideFirm,
   },
   {
     id: 3,
-    text: 'Our assets and technologies are state of the art',
+    text: strings.ourAssetsAnd,
   },
   {
     id: 4,
-    text:
-      'The Gingr platform has a social benefit, where we are helping the world',
+    text: strings.theGingrPlatformHas,
   },
   {
     id: 5,
-    text:
-      'With your help we can change a 186$ billion market - and you will profit from it',
+    text: strings.withYourHelp,
   },
   {
     id: 6,
-    text: 'Gingr has already started the revolution',
+    text: strings.gingrHasAlready,
   },
   {
     id: 7,
-    text: 'Our concept has already been accepted by users worldwide',
+    text: strings.ourConceptHas,
   },
   {
     id: 8,
-    text: 'The firm has gained traction and we have made money',
+    text: strings.theFirmHasGained,
   },
   {
     id: 9,
-    text: 'We are regarded and proven in the industry to be trustworthy',
+    text: strings.weAreRegarded,
   },
   {
     id: 10,
-    text:
-      'Gingr is the pioneer and will always be the global market leader in its industry',
+    text: strings.gingrIsThePioneer,
   },
 ];
 
@@ -55,12 +72,12 @@ class ReasonsToInvest extends React.Component {
     return (
       <div className="gg-section-container gg-section-container--reasons-to-invest">
         <div className="gg-content-container">
-          <h1 className="gg-head gg-head--xs">10 Reasons To Invest</h1>
+          <h1 className="gg-head gg-head--xs">{strings.reasonsToInvest}</h1>
           <div className="flex-row flex-column-xs">
             <div className="flex-column flex-column--45 order-xs-3">
               <img
                 src={reasonsImg}
-                alt="10 reasons to invest"
+                alt={strings.reasonsToInvest}
                 className="rti-image"
               />
             </div>
