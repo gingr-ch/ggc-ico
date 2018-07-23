@@ -282,3 +282,63 @@ export interface GlobalLeaderStrings extends LocalizedStringsMethods {
   asia: string;
   worldwideBranding: string;
 }
+
+export interface TeamStrings extends LocalizedStringsMethods {
+  team: string;
+}
+
+export interface FeedbackStrings extends LocalizedStringsMethods {
+  feedback: string;
+  ourCompanyIsOpen: string;
+  signUpForOurNewsletter: string;
+  emailAddress: string;
+  signUp: string;
+}
+
+export interface ContactUsStrings extends LocalizedStringsMethods {
+  contactUs: string;
+  email: string;
+  message: string;
+  send: string;
+}
+
+export interface FooterStrings extends LocalizedStringsMethods {
+  address: string;
+  locations: string;
+  phone: string;
+  mobile: string;
+  email: string;
+  companyRegistration: string;
+  number: string;
+  allRightsReserved: string;
+  switzerland: string;
+  germany: string;
+  austria: string;
+  unitedKingdom: string;
+  newZealand: string;
+  australia: string;
+  canada: string;
+  ireland: string;
+  france: string;
+  italy: string;
+  belgium: string;
+  netherlands: string;
+  denmark: string;
+  greece: string;
+  spain: string;
+  portugal: string;
+  finland: string;
+  norway: string;
+  sweden: string;
+  czechRepublic: string;
+  poland: string;
+  hungary: string;
+  slovakia: string;
+  lithuania: string;
+  latvia: string;
+  estonia: string;
+  bulgaria: string;
+  romania: string;
+  mexico: string;
+  turkey: string;
+}
