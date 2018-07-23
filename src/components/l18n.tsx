@@ -221,3 +221,9 @@ export interface RevolutionarySolutionStrings extends LocalizedStringsMethods {
   establishmentAndAgency: string;
   rightDecisionsBringRightPeople: string;
 }
+
+export interface RoadmapStrings extends LocalizedStringsMethods {
+  roadmap: string;
+  datesComingSoon: string;
+  oneCryptoCurrencyFromThousands: string;
+}

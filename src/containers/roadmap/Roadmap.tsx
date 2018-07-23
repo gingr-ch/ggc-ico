@@ -1,4 +1,11 @@
 import * as React from 'react';
+import LocalizedStrings from 'react-localization';
+import { RoadmapStrings } from '../../components/l18n';
+
+export const langEn = require('../../assets/l18n/roadmap.en.json');
+export const strings: RoadmapStrings = new LocalizedStrings({
+  en: langEn,
+});
 
 import './Roadmap.css';
 import SvgRoadmap from '../../components/svgRoadmap/Roadmap';
@@ -41,8 +48,8 @@ class Roadmap extends React.Component {
     return (
       <div className="gg-section-container gg-section-container--roadmap">
         <div className="gg-content-container">
-          <h1>ROADMAP</h1>
-          <h2>DATES COMING SOON</h2>
+          <h1>{strings.roadmap}</h1>
+          <h2>{strings.datesComingSoon}</h2>
 
           <div className="hide-xs">
             <SvgRoadmap />
@@ -68,10 +75,7 @@ class Roadmap extends React.Component {
               style={{ justifyContent: 'flex-start' }}
             >
               <img src={balloon} alt="" />
-              <h4>
-                "One cryptocurrency from thousands, but the only one with
-                millions of physical encounters"
-              </h4>
+              <h4>"{strings.oneCryptoCurrencyFromThousands}"</h4>
             </div>
           </div>
         </div>
