@@ -1,26 +1,13 @@
 import * as React from 'react';
-import LocalizedStrings, { LocalizedStringsMethods } from 'react-localization';
+import LocalizedStrings from 'react-localization';
+import { ReasonsToInvestStrings } from '../../components/l18n';
 
 import './ReasonsToInvest.css';
 
 const reasonsImg = require('../../assets/img/reason_to_invest.png');
 
 export const langEn = require('../../assets/l18n/reasons-to-invest.en.json');
-export interface LocaleStrings extends LocalizedStringsMethods {
-  reasonsToInvest: string;
-  ggCoinShould: string;
-  weProvideFirm: string;
-  ourAssetsAnd: string;
-  theGingrPlatformHas: string;
-  withYourHelp: string;
-  gingrHasAlready: string;
-  ourConceptHas: string;
-  theFirmHasGained: string;
-  weAreRegarded: string;
-  gingrIsThePioneer: string;
-}
-
-export const strings: LocaleStrings = new LocalizedStrings({
+export const strings: ReasonsToInvestStrings = new LocalizedStrings({
   en: langEn,
 });
 
