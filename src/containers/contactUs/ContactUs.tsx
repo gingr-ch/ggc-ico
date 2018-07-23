@@ -1,5 +1,12 @@
 import * as React from 'react';
 import Button from '../../components/button/Button';
+import LocalizedStrings from 'react-localization';
+import { ContactUsStrings } from '../../components/l18n';
+
+export const langEn = require('../../assets/l18n/contact-us.en.json');
+export const strings: ContactUsStrings = new LocalizedStrings({
+  en: langEn,
+});
 
 import './ContactUs.css';
 
@@ -15,20 +22,20 @@ class ContactUs extends React.Component {
       <div className="gg-section-container gg-section-container--contactus">
         <div className="gg-content-container" style={{ alignItems: 'stretch' }}>
           <div className="flex-row" style={{ justifyContent: 'center' }}>
-            <h1>Contact Us</h1>
+            <h1>{strings.contactUs}</h1>
           </div>
 
           <div className="contactus-form flex-column">
             <input
               className="contactus-form__input"
               type="text"
-              placeholder="Email"
+              placeholder={strings.email}
             />
             <textarea
               className="contactus-form__textarea"
-              placeholder="Message"
+              placeholder={strings.message}
             />
-            <Button click={this.click}>Send</Button>
+            <Button click={this.click}>{strings.send}</Button>
           </div>
         </div>
       </div>
