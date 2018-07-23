@@ -47,6 +47,12 @@
     flex-wrap: wrap;
 }
 
+.feedback-social div {
+  flex: 1 1 25%;
+  min-width: 25%;
+  box-sizing: border-box;
+}
+
 .feedback-social img {
     margin-bottom: 35px;
 }
