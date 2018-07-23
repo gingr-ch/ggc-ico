@@ -146,3 +146,31 @@ export interface FlowStrings extends LocalizedStringsMethods {
   premium: string;
   escrow: string;
 }
+
+export interface IcoDetailsStrings extends LocalizedStringsMethods {
+  icoDetails: string;
+  privateSaleNow: string;
+  discount: string;
+  buyCoinsNow: string;
+  prev: string;
+  next: string;
+  privateSale: string;
+  preSale: string;
+  mainSale: string;
+  lastChance: string;
+  day: string;
+  earlyBirds: string;
+  millionCoinsOffered: string;
+  each24Hour: string;
+  totalCoinSupply: string;
+  forCrowdSale: string;
+  mainSalePrice: string;
+  coinsBurned: string;
+  ethereumTEC: string;
+  coinPriceIssue: string;
+  cent: string;
+  startingPriceofGGC: string;
+  remainingGGCCoins: string;
+  usedBlockchain: string;
+  standardBased: string;
+}

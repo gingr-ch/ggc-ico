@@ -1,4 +1,11 @@
 import * as React from 'react';
+import LocalizedStrings from 'react-localization';
+import { IcoDetailsStrings } from '../../components/l18n';
+
+export const langEn = require('../../assets/l18n/ico-details.en.json');
+export const strings: IcoDetailsStrings = new LocalizedStrings({
+  en: langEn,
+});
 
 import './IcoDetails3.css';
 
@@ -21,9 +28,9 @@ class IcoDetails3 extends React.Component {
               className="coin-supply-values flex-column"
               style={{ alignItems: 'flex-start', paddingTop: '32px' }}
             >
-              <div className="title">TOTAL COIN SUPPLY</div>
+              <div className="title">{strings.totalCoinSupply}</div>
               <div>1'000’000’000</div>
-              <div className="title">FOR CROWD SALE</div>
+              <div className="title">{strings.totalCoinSupply}</div>
               <div>700'000'000 (70%)</div>
               <div className="title">GINGR AG</div>
               <div>300’000’000 (30%)</div>
@@ -42,9 +49,9 @@ class IcoDetails3 extends React.Component {
               style={{ alignItems: 'flex-start' }}
             >
               <img src={ggcLogo} alt="" />
-              <div className="title">MAIN SALE PRICE</div>
+              <div className="title">{strings.mainSalePrice}</div>
               <div>
-                Coin Price issue:<br />
+                {strings.coinPriceIssue}:<br />
                 <span
                   style={{
                     color: '#FFD500',
@@ -54,9 +61,9 @@ class IcoDetails3 extends React.Component {
                     display: 'block',
                   }}
                 >
-                  € 0.10 Cent
+                  € 0.10 {strings.cent}
                 </span>
-                Starting price of GGC implementation on Gingr platform is €0.30.
+                {strings.startingPriceofGGC} €0.30.
               </div>
             </div>
             <div
@@ -64,18 +71,18 @@ class IcoDetails3 extends React.Component {
               style={{ alignItems: 'flex-start' }}
             >
               <img src={flame} alt="" />
-              <div className="title">COINS BURNED</div>
-              <div>Remaining GG Coins from 700 million will be burned.</div>
+              <div className="title">{strings.coinsBurned}</div>
+              <div>{strings.remainingGGCCoins}</div>
             </div>
             <div
               className="ggc-card flex-column"
               style={{ alignItems: 'flex-start' }}
             >
               <img src={ethereum} alt="" />
-              <div className="title">ETHEREUM TEC</div>
+              <div className="title">{strings.ethereumTEC}</div>
               <div>
-                Used Block Chain:<br />
-                Ethereum ERC-20 standard-based
+                {strings.usedBlockchain}:<br />
+                {strings.standardBased}
               </div>
             </div>
           </div>

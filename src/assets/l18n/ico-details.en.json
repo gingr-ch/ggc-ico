@@ -22,5 +22,6 @@
     "cent": "Cent",
     "startingPriceofGGC": "Starting price of GGC implementation on Gingr platform is",
     "remainingGGCCoins": "Remaining GG Coins from 700 million will be burned",
-    "usedBlockchain": "Used Block Chain: Ethereum ERC-20 standard-based"
+    "usedBlockchain": "Used Block Chain",
+    "standardBased": "Ethereum ERC-20 standard-based"
 }
