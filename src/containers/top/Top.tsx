@@ -1,7 +1,7 @@
 import * as React from 'react';
 import ReactPlayer from 'react-player';
 import classNames from 'classnames';
-import LocalizedStrings, { LocalizedStringsMethods } from 'react-localization';
+import LocalizedStrings from 'react-localization';
 
 import './Top.css';
 
@@ -14,17 +14,9 @@ const chart = require('../../assets/img/chart.png');
 export const langEn = require('../../assets/l18n/top.en.json');
 export const langDe = require('../../assets/l18n/top.de.json');
 
-export interface LocaleStrings extends LocalizedStringsMethods {
-  revolutionizing: string;
-  theOldestIndustry: string;
-  inTheWorld: string;
-  play: string;
-  privateSale: string;
-  discount: string;
-  buyCoinsNow: string;
-}
+import { TopStrings } from '../../components/l18n';
 
-export const strings: LocaleStrings = new LocalizedStrings({
+export const strings: TopStrings = new LocalizedStrings({
   en: langEn,
   de: langDe,
 });
