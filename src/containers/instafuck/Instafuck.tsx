@@ -1,5 +1,6 @@
 import * as React from 'react';
 // import OnVisible from 'react-on-visible';
+import LocalizedStrings, { LocalizedStringsMethods } from 'react-localization';
 
 import './Instafuck.css';
 
@@ -10,17 +11,31 @@ const instafuckPhone = require('../../assets/img/instafuck/instafuck_phone.png')
 const ggcLogo = require('../../assets/img/instafuck/ggc_logo.png');
 const instafuckEscrow = require('../../assets/img/instafuck/instafuck_escrow.png');
 
+export const langEn = require('../../assets/l18n/instafuck.en.json');
+export interface LocaleStrings extends LocalizedStringsMethods {
+  welcomeTo: string;
+  instafuck: string;
+  weHaveCreatedThe: string;
+  instafuckStep1: string;
+  instafuckStep2: string;
+  instafuckStep3: string;
+  instafuckStep4: string;
+  instafuckStep5: string;
+  clientPhone: string;
+  gingrPhone: string;
+}
+
+export const strings: LocaleStrings = new LocalizedStrings({
+  en: langEn,
+});
 class Instafuck extends React.Component {
   render() {
     return (
       <div className="gg-section-container gg-section-container--instafuck">
         <div className="gg-content-container">
-          <h3>Welcome to</h3>
-          <h1>Instafuck</h1>
-          <h4>
-            "We have created the world’s first button where you get instant
-            access with a guaranteed booking for sex"
-          </h4>
+          <h3>{strings.welcomeTo}</h3>
+          <h1>{strings.instafuck}</h1>
+          <h4>"{strings.weHaveCreatedThe}"</h4>
           <div className="spacer" />
           <div className="hide-xs">
             <InstafuckChart />
@@ -30,30 +45,27 @@ class Instafuck extends React.Component {
             <div className="instafuck-item">
               <img src={gingrIconPink} alt="" />
               <h1>1</h1>
-              <p>Gingrs (sex-workers) activate thier Instafuck status.</p>
+              <p>{strings.instafuckStep1}</p>
             </div>
             <div className="instafuck-item">
               <img src={instafuckMap} alt="" />
               <h1>2</h1>
-              <p>All available Gingrs will be displayed.</p>
+              <p>{strings.instafuckStep2}</p>
             </div>
             <div className="instafuck-item">
               <img src={instafuckPhone} alt="" />
               <h1>3</h1>
-              <p>Client selects favourite Gingr.</p>
+              <p>{strings.instafuckStep3}</p>
             </div>
             <div className="instafuck-item">
               <img src={ggcLogo} alt="" />
               <h1>4</h1>
-              <p>GG Coin sent to escrow to PAY NOW!</p>
+              <p>{strings.instafuckStep4}</p>
             </div>
             <div className="instafuck-item">
               <img src={instafuckEscrow} alt="" />
               <h1>5</h1>
-              <p>
-                Through our scanning process funds will be released from escrow
-                to begin the date.
-              </p>
+              <p>{strings.instafuckStep5}</p>
             </div>
           </div>
         </div>
