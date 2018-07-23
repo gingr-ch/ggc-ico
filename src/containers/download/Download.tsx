@@ -1,5 +1,6 @@
 import * as React from 'react';
 import OnVisible from 'react-on-visible';
+import LocalizedStrings, { LocalizedStringsMethods } from 'react-localization';
 
 import './Download.css';
 
@@ -8,12 +9,24 @@ const lightPaper = require('../../assets/img/download/lightPaper.png');
 const numbers = require('../../assets/img/download/numbers.png');
 const memorandum = require('../../assets/img/download/memorandum.png');
 
+export const langEn = require('../../assets/l18n/download.en.json');
+export interface LocaleStrings extends LocalizedStringsMethods {
+  download: string;
+  whitepaper: string;
+  lightpaper: string;
+  numbers: string;
+  companysMemorandum: string;
+}
+
+export const strings: LocaleStrings = new LocalizedStrings({
+  en: langEn,
+});
 class Download extends React.Component {
   render() {
     return (
       <div className="gg-section-container gg-section-container--download">
         <div className="gg-content-container">
-          <h2 className="download-title">Download</h2>
+          <h2 className="download-title">{strings.download}</h2>
           <OnVisible className="hidden-content" percent={200}>
             <ul
               style={{
@@ -27,19 +40,19 @@ class Download extends React.Component {
             >
               <li className="download-item">
                 <img src={whitePaper} />
-                <p>WHITEPAPER</p>
+                <p>{strings.whitepaper}</p>
               </li>
               <li className="download-item">
                 <img src={lightPaper} />
-                <p>LIGHTPAPER</p>
+                <p>{strings.lightpaper}</p>
               </li>
               <li className="download-item">
                 <img src={numbers} />
-                <p>NUMBERS</p>
+                <p>{strings.numbers}</p>
               </li>
               <li className="download-item">
                 <img src={memorandum} />
-                <p>COMPANY'S MEMORANDUM & ARTICLES OF ASSOCITATION</p>
+                <p>{strings.companysMemorandum}</p>
               </li>
             </ul>
           </OnVisible>
