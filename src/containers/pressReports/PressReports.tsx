@@ -1,5 +1,6 @@
 import * as React from 'react';
 import OnVisible from 'react-on-visible';
+import LocalizedStrings, { LocalizedStringsMethods } from 'react-localization';
 
 import './PressReports.css';
 
@@ -9,12 +10,22 @@ const startupValley = require('../../assets/img/press/startup_valley.png');
 const teleBasel = require('../../assets/img/press/telebasel.png');
 const watson = require('../../assets/img/press/watson.png');
 
+export const langEn = require('../../assets/l18n/press-reports.en.json');
+
+export interface LocaleStrings extends LocalizedStringsMethods {
+  pressReports: string;
+}
+
+export const strings: LocaleStrings = new LocalizedStrings({
+  en: langEn,
+});
+
 class PressReports extends React.Component {
   render() {
     return (
       <div className="gg-section-container gg-section-container--press-reports">
         <div className="gg-content-container">
-          <h2 className="press-title">Press Reports</h2>
+          <h2 className="press-title">{strings.pressReports}</h2>
           <OnVisible className="hidden-content" percent={200}>
             <ul className="press-logos">
               <li>
