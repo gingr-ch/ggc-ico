@@ -2,6 +2,7 @@ import * as React from 'react';
 import ReactPlayer from 'react-player';
 import OnVisible from 'react-on-visible';
 import classNames from 'classnames';
+import LocalizedStrings, { LocalizedStringsMethods } from 'react-localization';
 
 import './WhatIsGingr.css';
 
@@ -12,34 +13,48 @@ const establishmentIcon = require('../../assets/img/icons/establishment.png');
 const gingrImg = require('../../assets/img/what_is_gingr--gingr.png');
 const establishmentImg = require('../../assets/img/what_is_gingr--establishment.png');
 
+export const langEn = require('../../assets/l18n/what-is-gingr.en.json');
+export interface LocaleStrings extends LocalizedStringsMethods {
+  whatIsGingr: string;
+  theFirstGlobalMarket: string;
+  client: string;
+  worldwideAccessTo: string;
+  gingr: string;
+  sexWorker: string;
+  worldwideWorkWith: string;
+  agencyAndEstablishemnt: string;
+  stateOfTheArt: string;
+}
+
+export const strings: LocaleStrings = new LocalizedStrings({
+  en: langEn,
+});
+
 const whatIsList = [
   {
     id: 0,
-    title: 'Client',
+    title: strings.client,
     classTitle: 'client',
     icon: clientIcon,
-    content:
-      'Worldwide access to instant and guaranteed sex in a quick and effortless way. Have their information stored while remaining anonymous and pay securely, fast and confidentially',
+    content: strings.worldwideAccessTo,
     video: 'https://vimeo.com/194665559',
   },
   {
     id: 1,
-    title: 'Gingr',
+    title: strings.gingr,
     subtitle: 'Sex-Worker',
     classTitle: 'gingr',
     icon: gingrIcon,
-    content:
-      'Worldwide work with only one tool which can connect to millions of clients. Recruitment and workspaces provided by Gingr Connect and Gingr Pop n Go. Receive payments directly on our platform from pre-paying clients with GG Coin. Feel safe every step of the journey with Gingr Care.',
+    content: strings.worldwideWorkWith,
     img: gingrImg,
   },
   {
     id: 2,
-    title: 'Agency & Establishment',
+    title: strings.agencyAndEstablishemnt,
     classTitle: 'agency-establishment',
     icon: establishmentIcon,
     icon2: agencyIcon,
-    content:
-      'State of the art management features to assist with bookings, personnel requirements and many other areas of the business. Geo-location and advertising on a site that everybody is talking about. Access to pre-paying clients and accounts to store funds from sale revenues with Gingr Bank.',
+    content: strings.stateOfTheArt,
     img: establishmentImg,
   },
 ];
@@ -64,11 +79,8 @@ class WhatIsGingr extends React.Component {
     return (
       <div className="gg-section-container gg-section-container--what-is-gingr">
         <div className="gg-content-container">
-          <h1 className="gg-head gg-head--xs">What is Gingr?</h1>
-          <h3>
-            "THE FIRST GLOBAL MARKET PLACE WITH CRYPTO PAYMENTS FOR THE PAID SEX
-            INDUSTRY."
-          </h3>
+          <h1 className="gg-head gg-head--xs">{strings.whatIsGingr}?</h1>
+          <h3>"{strings.theFirstGlobalMarket}"</h3>
 
           <div className="list-2-col">
             {whatIsList.map((d, i) => (
