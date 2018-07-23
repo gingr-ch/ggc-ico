@@ -174,3 +174,15 @@ export interface IcoDetailsStrings extends LocalizedStringsMethods {
   usedBlockchain: string;
   standardBased: string;
 }
+
+export interface ReasonsWhyStrings extends LocalizedStringsMethods {
+  sixReasons: string;
+  why: string;
+  theGGCoinCould: string;
+  theGGCoinWillBe: string;
+  burn20OfOurProfits: string;
+  weBuyBackGGC: string;
+  ofTheTransaction: string;
+  equityGingrShare: string;
+  smartContracts: string;
+}

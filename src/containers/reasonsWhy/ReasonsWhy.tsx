@@ -1,18 +1,24 @@
 import * as React from 'react';
+import LocalizedStrings from 'react-localization';
+import { ReasonsWhyStrings } from '../../components/l18n';
 
 import './ReasonsWhy.css';
 
 const gingr = require('../../assets/img/reasons-why.png');
 
+export const langEn = require('../../assets/l18n/reasons-why.en.json');
+export const strings: ReasonsWhyStrings = new LocalizedStrings({
+  en: langEn,
+});
 class ReasonsWhy extends React.Component {
   render() {
     return (
       <div className="gg-section-container gg-section-container--reasons-why">
         <div className="gg-content-container">
           <h1>
-            6 REASONS <span>WHY</span>
+            {strings.sixReasons} <span>{strings.why}</span>
           </h1>
-          <h4>THE GG COIN COULD INCREASE BY A 1000 TIMES</h4>
+          <h4>{strings.theGGCoinCould}</h4>
 
           <div className="flex-row reasons-why-container">
             <div>
@@ -25,46 +31,30 @@ class ReasonsWhy extends React.Component {
             <div className="reasons-why-list">
               <div className="reasons-why-list__item flex-row">
                 <div className="number">1</div>
-                <div>
-                  The GG Coin will be introduced in 2019 on Gingr platform for
-                  the mainstream, all erotic dates with sex-workers will be paid
-                  with the GG Coin.
-                </div>
+                <div>{strings.theGGCoinWillBe}</div>
               </div>
               <div className="reasons-why-list__item flex-row">
                 <div className="number">2</div>
-                <div>
-                  Burn 20% of our profits made from worldwide member ships.
-                </div>
+                <div>{strings.burn20OfOurProfits}</div>
               </div>
               <div className="reasons-why-list__item flex-row">
                 <div className="number">3</div>
-                <div>We buy back GG Coins.</div>
+                <div>{strings.weBuyBackGGC}</div>
               </div>
               <div className="reasons-why-list__item flex-row">
                 <div className="number">4</div>
-                <div>
-                  20% of the transaction fees will be burned. Aprox. 10 Cents
-                  per Tran.
-                </div>
+                <div>{strings.ofTheTransaction}</div>
               </div>
               <div className="reasons-why-list__item flex-row">
                 <div className="number">5</div>
-                <div>
-                  Equity Gingr Share Token in 2020 can only be bought with GG
-                  Coins.
-                </div>
+                <div>{strings.weBuyBackGGC}</div>
               </div>
               <div
                 className="reasons-why-list__item flex-row"
                 style={{ justifyContent: 'flex-start' }}
               >
                 <div className="number">6</div>
-                <div>
-                  Smart contracts in place for GG Coins to be use to pay for
-                  erotic dates on the Gingr platform for any sex-worker around
-                  the world.
-                </div>
+                <div>{strings.smartContracts}</div>
               </div>
             </div>
           </div>
