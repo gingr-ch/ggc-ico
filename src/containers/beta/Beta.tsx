@@ -1,6 +1,8 @@
 import * as React from 'react';
 import OnVisible from 'react-on-visible';
-import LocalizedStrings, { LocalizedStringsMethods } from 'react-localization';
+import LocalizedStrings from 'react-localization';
+
+import { BetaStrings } from '../../components/l18n';
 
 import Button from '../../components/button/Button';
 import './Beta.css';
@@ -8,14 +10,8 @@ import './Beta.css';
 const gingrV1 = require('../../assets/img/gingr_v1.png');
 
 export const langEn = require('../../assets/l18n/gingr-beta.en.json');
-export interface LocaleStrings extends LocalizedStringsMethods {
-  gingr: string;
-  beta: string;
-  comingSoon: string;
-  clickHereToVisit: string;
-}
 
-export const strings: LocaleStrings = new LocalizedStrings({
+export const strings: BetaStrings = new LocalizedStrings({
   en: langEn,
 });
 
