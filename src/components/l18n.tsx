@@ -71,3 +71,41 @@ export interface HookUpStrings extends LocalizedStringsMethods {
   clientPhone: string;
   gingrPhone: string;
 }
+
+export interface BlockchainStrings extends LocalizedStringsMethods {
+  blockchain: string;
+  smartContracts: string;
+  groundBreakingTechnologies: string;
+  wallets: string;
+  payments: string;
+  escrowFunds: string;
+  externalAPIs: string;
+  bank: string;
+  cryptoAndFiat: string;
+  ggcATMCard: string;
+  buySellGGC: string;
+  gingrPopNGo: string;
+  establishmentRoomRentals: string;
+  privateRoomRentals: string;
+  onlineShops: string;
+  physicalShops: string;
+  transport: string;
+  pickTaxi: string;
+  gingrCare: string;
+  healthCheck: string;
+  consultancy: string;
+  bookings: string;
+  popNGoReservation: string;
+  servicesProviderBookigns: string;
+  dateTime: string;
+  place: string;
+  serviceProviders: string;
+  gingrs: string;
+  establishment: string;
+  agencies: string;
+  clients: string;
+  verification: string;
+  gingrConnect: string;
+  jobsWanted: string;
+  jobVacancies: string;
+}

@@ -23,6 +23,10 @@
   letter-spacing: 2px;
 }
 
+.gg-section-container--blockchain svg {
+  text-transform: uppercase;
+}
+
 @media(max-width: 599px) {
   .gg-section-container--blockchain h1 {
     font-size: 34px

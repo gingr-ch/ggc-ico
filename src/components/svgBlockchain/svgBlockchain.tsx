@@ -1,4 +1,11 @@
 import * as React from 'react';
+import LocalizedStrings from 'react-localization';
+import { BlockchainStrings } from '../../components/l18n';
+
+export const langEn = require('../../assets/l18n/blockchain.en.json');
+export const strings: BlockchainStrings = new LocalizedStrings({
+  en: langEn,
+});
 
 const BlockchainChart = (props: any) => (
   <svg
@@ -585,19 +592,19 @@ const BlockchainChart = (props: any) => (
         transform="translate(161.582 24.416)"
         style={{ isolation: 'isolate' }}
       >
-        - PAYMENTS
+        - {strings.payments}
       </text>
       <text
         transform="translate(161.582 35.416)"
         style={{ isolation: 'isolate' }}
       >
-        - ESCROW FUNDS
+        - {strings.escrowFunds}
       </text>
       <text
         transform="translate(161.582 46.416)"
         style={{ isolation: 'isolate' }}
       >
-        - EXTERNAL APIs
+        - {strings.externalAPIs}
       </text>
     </g>
     <g
@@ -634,7 +641,7 @@ const BlockchainChart = (props: any) => (
         transform="translate(287.582 47.75)"
         style={{ isolation: 'isolate' }}
       >
-        - BUY / SELL GGC
+        - {strings.buySellGGC}
       </text>
     </g>
     <g
@@ -693,13 +700,13 @@ const BlockchainChart = (props: any) => (
         transform="translate(436.582 239.416)"
         style={{ isolation: 'isolate' }}
       >
-        - ONLINE SHOPS
+        - {strings.onlineShops}
       </text>
       <text
         transform="translate(436.582 250.416)"
         style={{ isolation: 'isolate' }}
       >
-        - PHYSICAL SHOPS
+        - {strings.physicalShops}
       </text>
     </g>
     <text
@@ -776,7 +783,7 @@ const BlockchainChart = (props: any) => (
         transform="translate(134.915 440.416)"
         style={{ isolation: 'isolate' }}
       >
-        - SERVICES PROVIDER BOOKINGS
+        - {strings.servicesProviderBookigns}
       </text>
       <text
         transform="translate(134.915 451.416)"
@@ -794,7 +801,7 @@ const BlockchainChart = (props: any) => (
         transform="translate(134.915 462.416)"
         style={{ isolation: 'isolate' }}
       >
-        - PLACE
+        - {strings.place}
       </text>
     </g>
     <g
@@ -807,7 +814,7 @@ const BlockchainChart = (props: any) => (
         transform="translate(18.582 346.75)"
         style={{ isolation: 'isolate' }}
       >
-        - GINGRS
+        - {strings.gingrs}
       </text>
       <text
         transform="translate(18.582 357.75)"
@@ -896,7 +903,7 @@ const BlockchainChart = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      BANK
+      {strings.bank}
     </text>
     <g
       style={{ isolation: 'isolate' }}
@@ -1020,7 +1027,7 @@ const BlockchainChart = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      CLIENTS
+      {strings.clients}
     </text>
     <g
       style={{ isolation: 'isolate' }}
