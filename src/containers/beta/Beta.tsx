@@ -1,10 +1,23 @@
 import * as React from 'react';
 import OnVisible from 'react-on-visible';
+import LocalizedStrings, { LocalizedStringsMethods } from 'react-localization';
 
 import Button from '../../components/button/Button';
 import './Beta.css';
 
 const gingrV1 = require('../../assets/img/gingr_v1.png');
+
+export const langEn = require('../../assets/l18n/gingr-beta.en.json');
+export interface LocaleStrings extends LocalizedStringsMethods {
+  gingr: string;
+  beta: string;
+  comingSoon: string;
+  clickHereToVisit: string;
+}
+
+export const strings: LocaleStrings = new LocalizedStrings({
+  en: langEn,
+});
 
 class Beta extends React.Component {
   click() {
@@ -16,13 +29,13 @@ class Beta extends React.Component {
       <div className="gg-section-container gg-section-container--beta">
         <div className="gg-content-container">
           <h1 className="gg-head gg-head--xs">
-            Gingr <span>2.0 Beta</span>
+            {strings.gingr} <span>2.0 {strings.beta}</span>
           </h1>
-          <h3>COMING SOON</h3>
+          <h3>{strings.comingSoon}</h3>
           <div className="spacer" />
-          <p>CLICK HERE TO VISIT OUR FIRST VERSION</p>
+          <p>{strings.clickHereToVisit}</p>
           <Button click={this.click} borderColor="#ffd400">
-            Gingr 1.0
+            {strings.gingr} 1.0
           </Button>
 
           <div className="spacer" />
