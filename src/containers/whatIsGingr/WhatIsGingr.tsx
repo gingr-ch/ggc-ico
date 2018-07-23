@@ -2,7 +2,8 @@ import * as React from 'react';
 import ReactPlayer from 'react-player';
 import OnVisible from 'react-on-visible';
 import classNames from 'classnames';
-import LocalizedStrings, { LocalizedStringsMethods } from 'react-localization';
+import LocalizedStrings from 'react-localization';
+import { WhatIsGingrStrings } from '../../components/l18n';
 
 import './WhatIsGingr.css';
 
@@ -14,19 +15,7 @@ const gingrImg = require('../../assets/img/what_is_gingr--gingr.png');
 const establishmentImg = require('../../assets/img/what_is_gingr--establishment.png');
 
 export const langEn = require('../../assets/l18n/what-is-gingr.en.json');
-export interface LocaleStrings extends LocalizedStringsMethods {
-  whatIsGingr: string;
-  theFirstGlobalMarket: string;
-  client: string;
-  worldwideAccessTo: string;
-  gingr: string;
-  sexWorker: string;
-  worldwideWorkWith: string;
-  agencyAndEstablishemnt: string;
-  stateOfTheArt: string;
-}
-
-export const strings: LocaleStrings = new LocalizedStrings({
+export const strings: WhatIsGingrStrings = new LocalizedStrings({
   en: langEn,
 });
 
