@@ -1,6 +1,7 @@
 import * as React from 'react';
 import OnVisible from 'react-on-visible';
-import LocalizedStrings, { LocalizedStringsMethods } from 'react-localization';
+import LocalizedStrings from 'react-localization';
+import { DownloadStrings } from '../../components/l18n';
 
 import './Download.css';
 
@@ -10,15 +11,7 @@ const numbers = require('../../assets/img/download/numbers.png');
 const memorandum = require('../../assets/img/download/memorandum.png');
 
 export const langEn = require('../../assets/l18n/download.en.json');
-export interface LocaleStrings extends LocalizedStringsMethods {
-  download: string;
-  whitepaper: string;
-  lightpaper: string;
-  numbers: string;
-  companysMemorandum: string;
-}
-
-export const strings: LocaleStrings = new LocalizedStrings({
+export const strings: DownloadStrings = new LocalizedStrings({
   en: langEn,
 });
 class Download extends React.Component {
