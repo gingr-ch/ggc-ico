@@ -5,6 +5,7 @@
     "mobile": "Mobile",
     "email": "Email",
     "companyRegistration": "Company Registration",
+    "number": "No.",
     "allRightsReserved": "All Rights Reserved",
     "switzerland": "Switzerland",
     "germany": "Germany",
@@ -34,5 +35,6 @@
     "estonia": "Estonia",
     "bulgaria": "Bulgaria",
     "romania": "Romania",
-    "mexico": "Mexico"
+    "mexico": "Mexico",
+    "turkey": "Turkey"
 }

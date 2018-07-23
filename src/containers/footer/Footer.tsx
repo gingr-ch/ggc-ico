@@ -1,4 +1,11 @@
 import * as React from 'react';
+import LocalizedStrings from 'react-localization';
+import { FooterStrings } from '../../components/l18n';
+
+export const langEn = require('../../assets/l18n/footer.en.json');
+export const strings: FooterStrings = new LocalizedStrings({
+  en: langEn,
+});
 
 import './Footer.css';
 
@@ -7,123 +14,123 @@ const swissFlag = require('../../assets/img/flags/switzerland.png');
 
 const locations = [
   {
-    country: 'Austria',
+    country: strings.austria,
     phone: '43 720 88 07 10',
   },
   {
-    country: 'Germany',
+    country: strings.germany,
     phone: '49 303 08 07 677',
   },
   {
-    country: 'Switzerland',
+    country: strings.switzerland,
     phone: '41 55 588 00 91',
   },
   {
-    country: 'Canada',
+    country: strings.canada,
     phone: '1 604 900 8866',
   },
   {
-    country: 'Spain',
+    country: strings.spain,
     phone: '34 950 68 00 05',
   },
   {
-    country: 'United Kingdom',
+    country: strings.unitedKingdom,
     phone: '44 800 086 9900',
   },
   {
-    country: 'Australia',
+    country: strings.australia,
     phone: '61 8 7150 1555',
   },
   {
-    country: 'New Zealand',
+    country: strings.newZealand,
     phone: '64 4 887 1055',
   },
   {
-    country: 'Belgium',
+    country: strings.belgium,
     phone: '32 2 588 22 19',
   },
   {
-    country: 'Denmark',
+    country: strings.denmark,
     phone: '45 89 87 40 99',
   },
   {
-    country: 'France',
+    country: strings.france,
     phone: '33 1 86 26 66 22',
   },
   {
-    country: 'Netherlands',
+    country: strings.netherlands,
     phone: '31 85 888 6189',
   },
   {
-    country: 'Italy',
+    country: strings.italy,
     phone: '39 099 944 0069',
   },
   {
-    country: 'Portugal',
+    country: strings.portugal,
     phone: '351 308 804 904',
   },
   {
-    country: 'Finland',
+    country: strings.finland,
     phone: '358 9 424 550 10',
   },
   {
-    country: 'Norway',
+    country: strings.norway,
     phone: '47 23 96 63 96',
   },
   {
-    country: 'Sweden',
+    country: strings.sweden,
     phone: '46 76 466 70 77',
   },
   {
-    country: 'Czech Republic',
+    country: strings.czechRepublic,
     phone: '420 228 883 012',
   },
   {
-    country: 'Hungary',
+    country: strings.hungary,
     phone: '36 84 884 000',
   },
   {
-    country: 'Poland',
+    country: strings.poland,
     phone: '48 71 716 68 78',
   },
   {
-    country: 'Slovakia',
+    country: strings.slovakia,
     phone: '421 48/233 36 08',
   },
   {
-    country: 'Estonia',
+    country: strings.estonia,
     phone: '372 8804265',
   },
   {
-    country: 'Bulgaria',
+    country: strings.bulgaria,
     phone: '359 2 492 5417',
   },
   {
-    country: 'Latvia',
+    country: strings.latvia,
     phone: '371 66 163 771',
   },
   {
-    country: 'Lithuania',
+    country: strings.lithuania,
     phone: '370 447 20340',
   },
   {
-    country: 'Romania',
+    country: strings.romania,
     phone: '40 31 630 2370',
   },
   {
-    country: 'Greece',
+    country: strings.greece,
     phone: '30 2241 888026',
   },
   {
-    country: 'Ireland',
+    country: strings.ireland,
     phone: '353 76 888 7008',
   },
   {
-    country: 'Mexico',
+    country: strings.mexico,
     phone: '52 443 690 3990',
   },
   {
-    country: 'Turkey',
+    country: strings.turkey,
     phone: '90 216 900 11 90',
   },
 ];
@@ -152,7 +159,7 @@ class Footer extends React.Component {
                 style={{ justifyContent: 'flex-start' }}
               >
                 <h4 className="footer-title" style={{ marginRight: '16px' }}>
-                  Address
+                  {strings.address}
                 </h4>
                 <img
                   src={swissFlag}
@@ -164,17 +171,18 @@ class Footer extends React.Component {
                 Gingr AG<br />
                 Badenerstrasse 809<br />
                 8048 Zürich<br />
-                Switzerland
+                {strings.switzerland}
               </p>
 
               <p>
-                Phone: +41 555 00 88 91<br />
-                Mobile: +41 79 579 77 77<br />
-                Email: <a href="mailto:info@ggcico.io">info@ggcico.io</a>
+                {strings.phone}: +41 555 00 88 91<br />
+                {strings.mobile}: +41 79 579 77 77<br />
+                {strings.email}:{' '}
+                <a href="mailto:info@ggcico.io">info@ggcico.io</a>
               </p>
 
               <p>
-                Company Registration No.
+                {strings.companyRegistration} {strings.number}
                 <span style={{ color: '#F39FFF' }}>CHE-461.393.191</span>
               </p>
             </div>
@@ -183,7 +191,7 @@ class Footer extends React.Component {
               className="flex-column"
               style={{ alignItems: 'flex-start', width: '100%' }}
             >
-              <h4 className="footer-title">Locations</h4>
+              <h4 className="footer-title">{strings.locations}</h4>
               <div className="footer-locations flex-row">
                 <div
                   className="locations-list flex-column"
@@ -219,7 +227,7 @@ class Footer extends React.Component {
             </div>
           </div>
           <div className="footer-copyright">
-            ©2017 Gingr AG | All Rights Reserved
+            ©2017 Gingr AG | {strings.allRightsReserved}
           </div>
         </div>
       </div>
