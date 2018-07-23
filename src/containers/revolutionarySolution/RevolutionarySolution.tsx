@@ -1,8 +1,15 @@
 import * as React from 'react';
+import LocalizedStrings from 'react-localization';
+import { RevolutionarySolutionStrings } from '../../components/l18n';
 
 import './RevolutionarySolution.css';
 import GgCard from '../../components/ggCards/GgCard';
 import Cycle from '../../components/svgCycle/svgCycle';
+
+export const langEn = require('../../assets/l18n/revolutionary-solution.en.json');
+export const strings: RevolutionarySolutionStrings = new LocalizedStrings({
+  en: langEn,
+});
 
 const gingr = require('../../assets/img/gingr_necklace.png');
 const popngo = require('../../assets/img/icons/popngo.png');
@@ -13,27 +20,23 @@ const gingrConnect = require('../../assets/img/icons/gingr-connect.png');
 const cardsData = [
   {
     image: popngo,
-    title: 'Gingr Pop N Go',
-    content:
-      'Never has it been so easy to rent property and earn at least three times more. Pop N Go lets you turn a room, apartment or house in to a temporary sex working space.',
+    title: strings.gingrPopNGo,
+    content: strings.neverHasItBeen,
   },
   {
     image: gingrBank,
-    title: 'Gingr Bank',
-    content:
-      'The worlds first accessible bank to the prostitution industry. Solving the cash problem worldwide to store funds for sex-workers, establishments and agencies.',
+    title: strings.gingrBank,
+    content: strings.theWorldsFirstAccessible,
   },
   {
     image: gingrCare,
-    title: 'Gingr Care',
-    content:
-      'A space for all sex-workers that can come for help and support in a confidential surrounding with many facilities and professionals. Our physical presence to allow us to be closer and in direct contact with our users and the whole community.',
+    title: strings.gingrCare,
+    content: strings.aSpaceForAll,
   },
   {
     image: gingrConnect,
-    title: 'Gingr Connect',
-    content:
-      'Our recruitment section for prostitution bringing together on one platform sex-workers, establishments and agencies. It will be the site with the most employers and job vacancy offers globally for sex-workers.',
+    title: strings.gingrConnect,
+    content: strings.ourRecruitmentSection,
   },
 ];
 
@@ -46,7 +49,8 @@ class RevolutionarySolution extends React.Component {
           style={{ justifyContent: 'space-between' }}
         >
           <h1>
-            REVOLUTIONARY<br /> ALL ROUND SOLUTION
+            {strings.revolutionary}
+            <br /> {strings.solution}
           </h1>
 
           <div
@@ -68,7 +72,9 @@ class RevolutionarySolution extends React.Component {
             ))}
           </div>
 
-          <div className="revolutionary__title">Sex-worker Lifecycle</div>
+          <div className="revolutionary__title">
+            {strings.sexWorkerLifecycle}
+          </div>
 
           <Cycle />
 
@@ -77,7 +83,7 @@ class RevolutionarySolution extends React.Component {
               style={{ maxWidth: '275px', marginBottom: '50px' }}
               className="center-title"
             >
-              “RIGHT DECISIONS BRING RIGHT PEOPLE”
+              “{strings.rightDecisionsBringRightPeople}”
             </h4>
             <img
               src={gingr}

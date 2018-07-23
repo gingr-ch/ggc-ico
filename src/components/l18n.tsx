@@ -186,3 +186,38 @@ export interface ReasonsWhyStrings extends LocalizedStringsMethods {
   equityGingrShare: string;
   smartContracts: string;
 }
+
+export interface RevolutionarySolutionStrings extends LocalizedStringsMethods {
+  revolutionary: string;
+  solution: string;
+  gingrPopNGo: string;
+  gingrBank: string;
+  gingrCare: string;
+  gingrConnect: string;
+  neverHasItBeen: string;
+  theWorldsFirstAccessible: string;
+  aSpaceForAll: string;
+  ourRecruitmentSection: string;
+  sexWorkerLifecycle: string;
+  blackMarket: string;
+  humanTrafficking: string;
+  noProtectionOfAuthority: string;
+  getArrested: string;
+  easyVictimsOfCrimes: string;
+  notReceivingTheFunds: string;
+  noSystemToTrackEvents: string;
+  noWorkingRegulations: string;
+  generallyADangrousWorld: string;
+  enter: string;
+  exit: string;
+  signUpWithGingrPlatform: string;
+  ginrgsLikeToWorkIndependently: string;
+  accessToRentRooms: string;
+  client: string;
+  vettedAndVerified: string;
+  depositOfFundsOnSexWorkersAccount: string;
+  supportAndConsulting: string;
+  connectToASafeWorkspace: string;
+  establishmentAndAgency: string;
+  rightDecisionsBringRightPeople: string;
+}
