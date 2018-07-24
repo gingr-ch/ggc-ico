@@ -1,11 +1,11 @@
 import * as React from 'react';
-import LocalizedStrings from 'react-localization';
-import { RoadmapStrings } from '../../components/l18n';
-
-export const langEn = require('../../assets/l18n/roadmap.en.json');
-export const strings: RoadmapStrings = new LocalizedStrings({
-  en: langEn,
-});
+// import LocalizedStrings from 'react-localization';
+// import { RoadmapStrings } from '../../components/l18n';
+// 
+// export const langEn = require('../../assets/l18n/roadmap.en.json');
+// export const strings: RoadmapStrings = new LocalizedStrings({
+//   en: langEn,
+// });
 
 const Roadmap = (props: any) => (
   <svg

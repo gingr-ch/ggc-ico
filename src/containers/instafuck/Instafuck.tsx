@@ -1,7 +1,7 @@
 import * as React from 'react';
 // import OnVisible from 'react-on-visible';
-import LocalizedStrings from 'react-localization';
-import { InstafuckStrings } from '../../components/l18n';
+// import LocalizedStrings from 'react-localization';
+// import { InstafuckStrings } from '../../components/l18n';
 
 import './Instafuck.css';
 
@@ -12,48 +12,53 @@ const instafuckPhone = require('../../assets/img/instafuck/instafuck_phone.png')
 const ggcLogo = require('../../assets/img/instafuck/ggc_logo.png');
 const instafuckEscrow = require('../../assets/img/instafuck/instafuck_escrow.png');
 
-export const langEn = require('../../assets/l18n/instafuck.en.json');
-export const strings: InstafuckStrings = new LocalizedStrings({
-  en: langEn,
-});
-class Instafuck extends React.Component {
+// export const langEn = require('../../assets/l18n/instafuck.en.json');
+// export const strings: InstafuckStrings = new LocalizedStrings({
+//   en: langEn,
+// });
+class Instafuck extends React.Component<any, any> {
+  constructor(props: any) {
+    super(props);
+    this.state = { strings: this.props.lang };
+  }
+
   render() {
     return (
       <div className="gg-section-container gg-section-container--instafuck">
         <div className="gg-content-container">
-          <h3>{strings.welcomeTo}</h3>
-          <h1>{strings.instafuck}</h1>
-          <h4>"{strings.weHaveCreatedThe}"</h4>
+          <h3>{this.state.strings.welcomeTo}</h3>
+          <h1>{this.state.strings.instafuck}</h1>
+          <h4>"{this.state.strings.weHaveCreatedThe}"</h4>
           <div className="spacer" />
           <div className="hide-xs">
-            <InstafuckChart />
+            <InstafuckChart lang={this.state.strings} />
           </div>
 
           <div className="hide show-xs flex-column">
             <div className="instafuck-item">
               <img src={gingrIconPink} alt="" />
               <h1>1</h1>
-              <p>{strings.instafuckStep1}</p>
+              <p>{this.state.strings.instafuckStep1}</p>
             </div>
             <div className="instafuck-item">
               <img src={instafuckMap} alt="" />
               <h1>2</h1>
-              <p>{strings.instafuckStep2}</p>
+              <p>{this.state.strings.instafuckStep2}</p>
             </div>
             <div className="instafuck-item">
               <img src={instafuckPhone} alt="" />
               <h1>3</h1>
-              <p>{strings.instafuckStep3}</p>
+              <p>{this.state.strings.instafuckStep3}</p>
             </div>
             <div className="instafuck-item">
               <img src={ggcLogo} alt="" />
               <h1>4</h1>
-              <p>{strings.instafuckStep4}</p>
+              <p>{this.state.strings.instafuckStep4}</p>
             </div>
             <div className="instafuck-item">
               <img src={instafuckEscrow} alt="" />
               <h1>5</h1>
-              <p>{strings.instafuckStep5}</p>
+              <p>{this.state.strings.instafuckStep5}</p>
             </div>
           </div>
         </div>

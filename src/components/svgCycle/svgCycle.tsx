@@ -1,11 +1,11 @@
 import * as React from 'react';
-import LocalizedStrings from 'react-localization';
-import { RevolutionarySolutionStrings } from '../../components/l18n';
-
-export const langEn = require('../../assets/l18n/revolutionary-solution.en.json');
-export const strings: RevolutionarySolutionStrings = new LocalizedStrings({
-  en: langEn,
-});
+// import LocalizedStrings from 'react-localization';
+// import { RevolutionarySolutionStrings } from '../../components/l18n';
+//
+// export const langEn = require('../../assets/l18n/revolutionary-solution.en.json');
+// export const strings: RevolutionarySolutionStrings = new LocalizedStrings({
+//   en: langEn,
+// });
 
 const Cycle = (props: any) => (
   <svg data-name="Layer 1" viewBox="0 0 786.351 786.448" {...props}>

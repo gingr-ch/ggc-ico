@@ -1,12 +1,12 @@
 import * as React from 'react';
 import Button from '../../components/button/Button';
-import LocalizedStrings from 'react-localization';
-import { FeedbackStrings } from '../../components/l18n';
-
-export const langEn = require('../../assets/l18n/feedback.en.json');
-export const strings: FeedbackStrings = new LocalizedStrings({
-  en: langEn,
-});
+// import LocalizedStrings from 'react-localization';
+// import { FeedbackStrings } from '../../components/l18n';
+//
+// export const langEn = require('../../assets/l18n/feedback.en.json');
+// export const strings: FeedbackStrings = new LocalizedStrings({
+//   en: langEn,
+// });
 
 import './Feedback.css';
 
@@ -15,7 +15,12 @@ const twitter = require('../../assets/img/social/twitter.png');
 const facebook = require('../../assets/img/social/facebook.png');
 const instagram = require('../../assets/img/social/instagram.png');
 
-class Feedback extends React.Component {
+class Feedback extends React.Component<any, any> {
+  constructor(props: any) {
+    super(props);
+    this.state = { strings: this.props.lang };
+  }
+
   click() {
     window.open('https://admin.ggcico.io/auth/register', '_blank');
   }
@@ -24,8 +29,8 @@ class Feedback extends React.Component {
     return (
       <div className="gg-section-container gg-section-container--feedback">
         <div className="gg-content-container flex-row">
-          <h1>{strings.feedback}</h1>
-          <h4>{strings.ourCompanyIsOpen}</h4>
+          <h1>{this.state.strings.feedback}</h1>
+          <h4>{this.state.strings.ourCompanyIsOpen}</h4>
 
           <div className="flex-row feedback-social">
             <div className="flex-column">
@@ -48,7 +53,7 @@ class Feedback extends React.Component {
 
           <div className="feedback-newsletter flex-column">
             <h3 className="feedback-newsletter__title">
-              {strings.signUpForOurNewsletter}
+              {this.state.strings.signUpForOurNewsletter}
             </h3>
             <div className="feedback-newsletter__form flex-row">
               <input
@@ -57,7 +62,7 @@ class Feedback extends React.Component {
                 placeholder="Email address"
               />
               <Button borderColor={'#f29eff'} click={this.click}>
-                {strings.signUp}
+                {this.state.strings.signUp}
               </Button>
             </div>
           </div>

@@ -1,18 +1,23 @@
 import * as React from 'react';
 import Button from '../../components/button/Button';
-import LocalizedStrings from 'react-localization';
-import { ContactUsStrings } from '../../components/l18n';
-
-export const langEn = require('../../assets/l18n/contact-us.en.json');
-export const strings: ContactUsStrings = new LocalizedStrings({
-  en: langEn,
-});
+// import LocalizedStrings from 'react-localization';
+// import { ContactUsStrings } from '../../components/l18n';
+//
+// export const langEn = require('../../assets/l18n/contact-us.en.json');
+// export const strings: ContactUsStrings = new LocalizedStrings({
+//   en: langEn,
+// });
 
 import './ContactUs.css';
 
 // const telegram = require('../../assets/img/social/telegram.png');
 
-class ContactUs extends React.Component {
+class ContactUs extends React.Component<any, any> {
+  constructor(props: any) {
+    super(props);
+    this.state = { strings: this.props.lang };
+  }
+
   click() {
     window.open('https://admin.ggcico.io/auth/register', '_blank');
   }
@@ -22,20 +27,20 @@ class ContactUs extends React.Component {
       <div className="gg-section-container gg-section-container--contactus">
         <div className="gg-content-container" style={{ alignItems: 'stretch' }}>
           <div className="flex-row" style={{ justifyContent: 'center' }}>
-            <h1>{strings.contactUs}</h1>
+            <h1>{this.state.strings.contactUs}</h1>
           </div>
 
           <div className="contactus-form flex-column">
             <input
               className="contactus-form__input"
               type="text"
-              placeholder={strings.email}
+              placeholder={this.state.strings.email}
             />
             <textarea
               className="contactus-form__textarea"
-              placeholder={strings.message}
+              placeholder={this.state.strings.message}
             />
-            <Button click={this.click}>{strings.send}</Button>
+            <Button click={this.click}>{this.state.strings.send}</Button>
           </div>
         </div>
       </div>

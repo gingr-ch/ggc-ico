@@ -1,7 +1,7 @@
 import * as React from 'react';
 import OnVisible from 'react-on-visible';
-import LocalizedStrings from 'react-localization';
-import { DownloadStrings } from '../../components/l18n';
+// import LocalizedStrings from 'react-localization';
+// import { DownloadStrings } from '../../components/l18n';
 
 import './Download.css';
 
@@ -10,16 +10,21 @@ const lightPaper = require('../../assets/img/download/lightPaper.png');
 const numbers = require('../../assets/img/download/numbers.png');
 const memorandum = require('../../assets/img/download/memorandum.png');
 
-export const langEn = require('../../assets/l18n/download.en.json');
-export const strings: DownloadStrings = new LocalizedStrings({
-  en: langEn,
-});
-class Download extends React.Component {
+// export const langEn = require('../../assets/l18n/download.en.json');
+// export const strings: DownloadStrings = new LocalizedStrings({
+//   en: langEn,
+// });
+class Download extends React.Component<any, any> {
+  constructor(props: any) {
+    super(props);
+    this.state = { strings: this.props.lang };
+  }
+
   render() {
     return (
       <div className="gg-section-container gg-section-container--download">
         <div className="gg-content-container">
-          <h2 className="download-title">{strings.download}</h2>
+          <h2 className="download-title">{this.state.strings.download}</h2>
           <OnVisible className="hidden-content" percent={200}>
             <ul
               style={{
@@ -33,19 +38,19 @@ class Download extends React.Component {
             >
               <li className="download-item">
                 <img src={whitePaper} />
-                <p>{strings.whitepaper}</p>
+                <p>{this.state.strings.whitepaper}</p>
               </li>
               <li className="download-item">
                 <img src={lightPaper} />
-                <p>{strings.lightpaper}</p>
+                <p>{this.state.strings.lightpaper}</p>
               </li>
               <li className="download-item">
                 <img src={numbers} />
-                <p>{strings.numbers}</p>
+                <p>{this.state.strings.numbers}</p>
               </li>
               <li className="download-item">
                 <img src={memorandum} />
-                <p>{strings.companysMemorandum}</p>
+                <p>{this.state.strings.companysMemorandum}</p>
               </li>
             </ul>
           </OnVisible>

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import ReactPlayer from 'react-player';
 import classNames from 'classnames';
-import LocalizedStrings from 'react-localization';
+// import LocalizedStrings from 'react-localization';
 
 import './Top.css';
 
@@ -11,25 +11,25 @@ import OnVisible from 'react-on-visible';
 
 const chart = require('../../assets/img/chart.png');
 
-export const langEn = require('../../assets/l18n/top.en.json');
-export const langDe = require('../../assets/l18n/top.de.json');
+// export const langEn = require('../../assets/l18n/top.en.json');
+// export const langDe = require('../../assets/l18n/top.de.json');
+//
+// import { TopStrings } from '../../components/l18n';
+//
+// export const strings: TopStrings = new LocalizedStrings({
+//   en: langEn,
+//   de: langDe,
+// });
 
-import { TopStrings } from '../../components/l18n';
-
-export const strings: TopStrings = new LocalizedStrings({
-  en: langEn,
-  de: langDe,
-});
-
-class Top extends React.Component {
-  state = {
-    open: false,
-  };
-
+class Top extends React.Component<any, any> {
   player: any;
 
-  constructor(props: object) {
+  constructor(props: any) {
     super(props);
+    this.state = {
+      open: false,
+      strings: this.props.lang,
+    };
 
     this.videoToggle = this.videoToggle.bind(this);
     this.click = this.click.bind(this);
@@ -68,16 +68,16 @@ class Top extends React.Component {
             <div className="spacer hide show-xs" />
 
             <h1 className="gg-h1">
-              "{strings.revolutionizing}
-              <br /> {strings.theOldestIndustry} <br />
-              {strings.inTheWorld}"
+              "{this.state.strings.revolutionizing}
+              <br /> {this.state.strings.theOldestIndustry} <br />
+              {this.state.strings.inTheWorld}"
             </h1>
             <div className="spacer hide show-xs" />
 
             <div className="play-button hide show-xs">
               <OnVisible className="rotate-in">
                 <ButtonPlay videoToggle={this.videoToggle}>
-                  {strings.play}
+                  {this.state.strings.play}
                 </ButtonPlay>
               </OnVisible>
             </div>
@@ -92,10 +92,10 @@ class Top extends React.Component {
               }}
             >
               <div style={{ fontSize: '24px', marginBottom: '16px' }}>
-                {strings.privateSale}
+                {this.state.strings.privateSale}
               </div>
               <div className="color-green" style={{ fontSize: '30px' }}>
-                {strings.discount}
+                {this.state.strings.discount}
               </div>
               <div
                 className="color-green"
@@ -107,7 +107,7 @@ class Top extends React.Component {
               <div className="spacer hide show-xs" />
 
               <Button click={this.click} borderColor="#00D646">
-                {strings.buyCoinsNow}
+                {this.state.strings.buyCoinsNow}
               </Button>
             </div>
             <div className="spacer" />
@@ -120,7 +120,7 @@ class Top extends React.Component {
             <div className="play-button hide-xs">
               <OnVisible className="rotate-in">
                 <ButtonPlay videoToggle={this.videoToggle}>
-                  {strings.play}
+                  {this.state.strings.play}
                 </ButtonPlay>
               </OnVisible>
             </div>

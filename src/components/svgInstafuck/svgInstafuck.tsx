@@ -1,12 +1,12 @@
 import * as React from 'react';
-import LocalizedStrings from 'react-localization';
-import { InstafuckStrings } from '../../components/l18n';
-
-export const langEn = require('../../assets/l18n/instafuck.en.json');
-
-export const strings: InstafuckStrings = new LocalizedStrings({
-  en: langEn,
-});
+// import LocalizedStrings from 'react-localization';
+// import { InstafuckStrings } from '../../components/l18n';
+//
+// export const langEn = require('../../assets/l18n/instafuck.en.json');
+//
+// export const strings: InstafuckStrings = new LocalizedStrings({
+//   en: langEn,
+// });
 
 const InstafuckChart = (props: any) => (
   <svg
@@ -589,7 +589,7 @@ const InstafuckChart = (props: any) => (
         fontSize={13}
         fill="#fff"
       >
-        {strings.clientPhone}
+        {props.lang.clientPhone}
       </text>
       <path
         d="M182.393 989.441a4.221 4.221 0 0 1 4.229-4.227 4.22 4.22 0 0 1 4.229 4.227 4.22 4.22 0 0 1-4.229 4.229 4.22 4.22 0 0 1-4.229-4.229zm0-16.914a4.23 4.23 0 0 1 8.458 0 4.227 4.227 0 0 1-4.229 4.232 4.223 4.223 0 0 1-4.229-4.232zm0-16.913a4.232 4.232 0 0 1 4.229-4.229 4.232 4.232 0 0 1 4.229 4.229 4.225 4.225 0 0 1-4.229 4.228 4.221 4.221 0 0 1-4.229-4.228zm0-16.917a4.23 4.23 0 0 1 4.229-4.227 4.232 4.232 0 0 1 4.229 4.227 4.226 4.226 0 0 1-4.229 4.233 4.222 4.222 0 0 1-4.229-4.233zM510.754 871.689a4.234 4.234 0 0 1 4.227-4.227 4.223 4.223 0 0 1 4.229 4.227 4.221 4.221 0 0 1-4.229 4.219 4.231 4.231 0 0 1-4.227-4.219zm0-16.915a4.228 4.228 0 1 1 7.219-2.991 4.224 4.224 0 0 1 1.237 2.991 4.236 4.236 0 0 1-4.229 4.232 4.247 4.247 0 0 1-4.227-4.227v-.005zm0-16.911a4.229 4.229 0 1 1 7.22-2.993 4.23 4.23 0 0 1-2.993 7.219 4.241 4.241 0 0 1-4.227-4.226z"
@@ -665,7 +665,7 @@ const InstafuckChart = (props: any) => (
         fontSize={13}
         fill="#fff"
       >
-        {strings.clientPhone}
+        {props.lang.clientPhone}
       </text>
       <text
         transform="matrix(.999 0 0 .999 482.071 1175.171)"
@@ -674,7 +674,7 @@ const InstafuckChart = (props: any) => (
         fontSize={13}
         fill="#fff"
       >
-        {strings.gingrPhone}
+        {props.lang.gingrPhone}
       </text>
       <text
         transform="matrix(.999 0 0 .999 276.981 674.985)"

@@ -2,8 +2,8 @@ import * as React from 'react';
 import ReactPlayer from 'react-player';
 import OnVisible from 'react-on-visible';
 import classNames from 'classnames';
-import LocalizedStrings from 'react-localization';
-import { WhatIsGingrStrings } from '../../components/l18n';
+// import LocalizedStrings from 'react-localization';
+// import { WhatIsGingrStrings } from '../../components/l18n';
 
 import './WhatIsGingr.css';
 
@@ -14,41 +14,18 @@ const establishmentIcon = require('../../assets/img/icons/establishment.png');
 const gingrImg = require('../../assets/img/what_is_gingr--gingr.png');
 const establishmentImg = require('../../assets/img/what_is_gingr--establishment.png');
 
-export const langEn = require('../../assets/l18n/what-is-gingr.en.json');
-export const strings: WhatIsGingrStrings = new LocalizedStrings({
-  en: langEn,
-});
+// export const langEn = require('../../assets/l18n/what-is-gingr.en.json');
+// export const strings: WhatIsGingrStrings = new LocalizedStrings({
+//   en: langEn,
+// });
 
-const whatIsList = [
-  {
-    id: 0,
-    title: strings.client,
-    classTitle: 'client',
-    icon: clientIcon,
-    content: strings.worldwideAccessTo,
-    video: 'https://vimeo.com/194665559',
-  },
-  {
-    id: 1,
-    title: strings.gingr,
-    subtitle: 'Sex-Worker',
-    classTitle: 'gingr',
-    icon: gingrIcon,
-    content: strings.worldwideWorkWith,
-    img: gingrImg,
-  },
-  {
-    id: 2,
-    title: strings.agencyAndEstablishemnt,
-    classTitle: 'agency-establishment',
-    icon: establishmentIcon,
-    icon2: agencyIcon,
-    content: strings.stateOfTheArt,
-    img: establishmentImg,
-  },
-];
-class WhatIsGingr extends React.Component {
+class WhatIsGingr extends React.Component<any, any> {
   player: any;
+
+  constructor(props: any) {
+    super(props);
+    this.state = { strings: this.props.lang };
+  }
 
   ref = (player: any) => {
     this.player = player;
@@ -65,11 +42,42 @@ class WhatIsGingr extends React.Component {
         right: this.isEven(i),
       });
 
+    const whatIsList = [
+      {
+        id: 0,
+        title: this.state.strings.client,
+        classTitle: 'client',
+        icon: clientIcon,
+        content: this.state.strings.worldwideAccessTo,
+        video: 'https://vimeo.com/194665559',
+      },
+      {
+        id: 1,
+        title: this.state.strings.gingr,
+        subtitle: 'Sex-Worker',
+        classTitle: 'gingr',
+        icon: gingrIcon,
+        content: this.state.strings.worldwideWorkWith,
+        img: gingrImg,
+      },
+      {
+        id: 2,
+        title: this.state.strings.agencyAndEstablishemnt,
+        classTitle: 'agency-establishment',
+        icon: establishmentIcon,
+        icon2: agencyIcon,
+        content: this.state.strings.stateOfTheArt,
+        img: establishmentImg,
+      },
+    ];
+
     return (
       <div className="gg-section-container gg-section-container--what-is-gingr">
         <div className="gg-content-container">
-          <h1 className="gg-head gg-head--xs">{strings.whatIsGingr}?</h1>
-          <h3>"{strings.theFirstGlobalMarket}"</h3>
+          <h1 className="gg-head gg-head--xs">
+            {this.state.strings.whatIsGingr}?
+          </h1>
+          <h3>"{this.state.strings.theFirstGlobalMarket}"</h3>
 
           <div className="list-2-col">
             {whatIsList.map((d, i) => (

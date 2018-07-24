@@ -1,11 +1,11 @@
 import * as React from 'react';
-import LocalizedStrings from 'react-localization';
-import { GlobalLeaderStrings } from '../../components/l18n';
-
-export const langEn = require('../../assets/l18n/global-leader.en.json');
-export const strings: GlobalLeaderStrings = new LocalizedStrings({
-  en: langEn,
-});
+// import LocalizedStrings from 'react-localization';
+// import { GlobalLeaderStrings } from '../../components/l18n';
+//
+// export const langEn = require('../../assets/l18n/global-leader.en.json');
+// export const strings: GlobalLeaderStrings = new LocalizedStrings({
+//   en: langEn,
+// });
 
 import './GlobalLeader.css';
 
@@ -41,17 +41,22 @@ import './GlobalLeader.css';
 //   },
 // ];
 
-class GlobalLeader extends React.Component {
+class GlobalLeader extends React.Component<any, any> {
+  constructor(props: any) {
+    super(props);
+    this.state = { strings: this.props.lang };
+  }
+
   render() {
     return (
       <div className="gg-section-container gg-section-container--global-leader">
         <div className="gg-content-container">
           <h1>
-            {strings.globalLeader}
+            {this.state.strings.globalLeader}
             <br />
-            {strings.inTheMarket}
+            {this.state.strings.inTheMarket}
           </h1>
-          <h4>"{strings.bePartOfOurVision}"</h4>
+          <h4>"{this.state.strings.bePartOfOurVision}"</h4>
         </div>
       </div>
     );

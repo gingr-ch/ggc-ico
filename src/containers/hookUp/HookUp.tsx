@@ -1,6 +1,6 @@
 import * as React from 'react';
-import LocalizedStrings from 'react-localization';
-import { HookUpStrings } from '../../components/l18n';
+// import LocalizedStrings from 'react-localization';
+// import { HookUpStrings } from '../../components/l18n';
 
 import './HookUp.css';
 
@@ -10,27 +10,33 @@ const phoneQrGingr = require('../../assets/img/phone_qr_gingr.png');
 const calendar = require('../../assets/img/icons/calendar.svg');
 const escrow = require('../../assets/img/icons/export_lock.svg');
 
-export const langEn = require('../../assets/l18n/hook-up.en.json');
-export const strings: HookUpStrings = new LocalizedStrings({
-  en: langEn,
-});
+// export const langEn = require('../../assets/l18n/hook-up.en.json');
+// export const strings: HookUpStrings = new LocalizedStrings({
+//   en: langEn,
+// });
+//
+class HookUp extends React.Component<any, any> {
+  constructor(props: any) {
+    super(props);
+    this.state = { strings: this.props.lang };
+  }
 
-class HookUp extends React.Component {
   render() {
     return (
       <div className="gg-section-container gg-section-container--hookup">
         <div className="gg-content-container">
           <h1>
-            <span>{strings.hookUp}</span> {strings.booking}
+            <span>{this.state.strings.hookUp}</span>{' '}
+            {this.state.strings.booking}
           </h1>
-          <h4>"{strings.findYourMostDesired}"</h4>
+          <h4>"{this.state.strings.findYourMostDesired}"</h4>
           <div className="hookup flex-row">
             <div
               className="hookup__phone"
               style={{ transform: 'translate3d(0,31px,0)' }}
             >
               <img src={clientPhone} alt="" />
-              <span>{strings.clientPhone}</span>
+              <span>{this.state.strings.clientPhone}</span>
             </div>
 
             <div
@@ -73,12 +79,12 @@ class HookUp extends React.Component {
               <div className="hookup__phones">
                 <div className="hookup__phone hookup__phone--start">
                   <img src={phoneQrClient} alt="" />
-                  <span>{strings.clientPhone}</span>
+                  <span>{this.state.strings.clientPhone}</span>
                 </div>
 
                 <div className="hookup__phone">
                   <img src={phoneQrGingr} alt="" />
-                  <span>{strings.gingrPhone}</span>
+                  <span>{this.state.strings.gingrPhone}</span>
                 </div>
               </div>
             </div>
