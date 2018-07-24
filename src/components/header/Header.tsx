@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Select from 'react-select';
 
 import Button from '../button/Button';
 import './Header.css';
@@ -9,6 +10,12 @@ const gingrLogo = require('../../assets/img/logo.png');
 const adminIco = 'https://admin.ggcico.io/auth/login';
 const whitePaper =
   'https://docs.wixstatic.com/ugd/2eea42_b23b9045b42246c2ac4f7c6cbf5ee65c.pdf';
+
+const options = [
+  { value: 'chocolate', label: 'Chocolate' },
+  { value: 'strawberry', label: 'Strawberry' },
+  { value: 'vanilla', label: 'Vanilla' },
+];
 
 class Header extends React.Component<any, any> {
   constructor(props: any) {
@@ -33,6 +40,8 @@ class Header extends React.Component<any, any> {
               LOGIN
             </Button>
           </div>
+
+          <Select options={options} />
 
           <div className="nav-mobile">
             <div className="nm-bar nm-bar--1" />
