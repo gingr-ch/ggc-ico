@@ -2868,6 +2868,10 @@ find-up@^2.0.0, find-up@^2.1.0:
   dependencies:
     locate-path "^2.0.0"
 
+flag-icon-css@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/flag-icon-css/-/flag-icon-css-3.0.0.tgz#a67cb3913973e38a8117e738ebbe9081049d8127"
+
 flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
@@ -3015,6 +3019,10 @@ fswatcher-child@^1.0.3:
 function-bind@^1.1.0, function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
+
+fuse.js@^3.2.0:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-3.2.1.tgz#6320cb94ce56ec9755c89ade775bcdbb0358d425"
 
 gauge@~2.7.3:
   version "2.7.4"
@@ -6093,6 +6101,10 @@ react-on-visible@^1.5.0:
     classnames "^2.2.5"
     prop-types "^15.6.0"
 
+react-onclickoutside@^6.7.1:
+  version "6.7.1"
+  resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-6.7.1.tgz#6a5b5b8b4eae6b776259712c89c8a2b36b17be93"
+
 react-player@^1.2.1:
   version "1.6.4"
   resolved "https://registry.yarnpkg.com/react-player/-/react-player-1.6.4.tgz#a7410a23ae849aec1f1854040d3f56ccab054c21"
@@ -6144,6 +6156,13 @@ react-scrollable-anchor@^0.6.1:
   dependencies:
     jump.js "1.0.1"
     prop-types "^15.5.10"
+
+react-select-search@^0.9.3:
+  version "0.9.3"
+  resolved "https://registry.yarnpkg.com/react-select-search/-/react-select-search-0.9.3.tgz#0ed76527aec5e4a3aed96662fd15e17b0f7f4524"
+  dependencies:
+    fuse.js "^3.2.0"
+    react-onclickoutside "^6.7.1"
 
 react-select@^2.0.0:
   version "2.0.0"
