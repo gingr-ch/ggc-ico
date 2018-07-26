@@ -17,14 +17,13 @@ const memorandum = require('../../assets/img/download/memorandum.png');
 class Download extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = { strings: this.props.lang };
   }
 
   render() {
     return (
       <div className="gg-section-container gg-section-container--download">
         <div className="gg-content-container">
-          <h2 className="download-title">{this.state.strings.download}</h2>
+          <h2 className="download-title">{this.props.lang.download}</h2>
           <OnVisible className="hidden-content" percent={200}>
             <ul
               style={{
@@ -38,19 +37,19 @@ class Download extends React.Component<any, any> {
             >
               <li className="download-item">
                 <img src={whitePaper} />
-                <p>{this.state.strings.whitepaper}</p>
+                <p>{this.props.lang.whitepaper}</p>
               </li>
               <li className="download-item">
                 <img src={lightPaper} />
-                <p>{this.state.strings.lightpaper}</p>
+                <p>{this.props.lang.lightpaper}</p>
               </li>
               <li className="download-item">
                 <img src={numbers} />
-                <p>{this.state.strings.numbers}</p>
+                <p>{this.props.lang.numbers}</p>
               </li>
               <li className="download-item">
                 <img src={memorandum} />
-                <p>{this.state.strings.companysMemorandum}</p>
+                <p>{this.props.lang.companysMemorandum}</p>
               </li>
             </ul>
           </OnVisible>

@@ -44,7 +44,6 @@ import './GlobalLeader2.css';
 class GlobalLeader2 extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = { strings: this.props.lang };
   }
 
   render() {
@@ -72,7 +71,7 @@ class GlobalLeader2 extends React.Component<any, any> {
                     fontSize: '17px',
                   }}
                 >
-                  {this.state.strings.softCap}
+                  {this.props.lang.softCap}
                 </td>
                 <td style={{ background: '#ffd643' }} />
                 <td style={{ background: '#ffd643' }} />
@@ -88,7 +87,7 @@ class GlobalLeader2 extends React.Component<any, any> {
                     fontSize: '17px',
                   }}
                 >
-                  {this.state.strings.maxCap}
+                  {this.props.lang.maxCap}
                 </td>
               </tr>
               <tr className="yellow-text">
@@ -102,92 +101,82 @@ class GlobalLeader2 extends React.Component<any, any> {
                 <td>100 M</td>
               </tr>
               <tr>
-                <td>{this.state.strings.switzerland}</td>
-                <td>{this.state.strings.unitedKingdom}</td>
-                <td>{this.state.strings.france}</td>
-                <td>{this.state.strings.portugal}</td>
-                <td>{this.state.strings.czechRepublic}</td>
-                <td>{this.state.strings.mexico}</td>
-                <td>{this.state.strings.africa}</td>
-                <td>{this.state.strings.worldwideBranding}</td>
+                <td>{this.props.lang.switzerland}</td>
+                <td>{this.props.lang.unitedKingdom}</td>
+                <td>{this.props.lang.france}</td>
+                <td>{this.props.lang.portugal}</td>
+                <td>{this.props.lang.czechRepublic}</td>
+                <td>{this.props.lang.mexico}</td>
+                <td>{this.props.lang.africa}</td>
+                <td>{this.props.lang.worldwideBranding}</td>
               </tr>
               <tr>
-                <td>{this.state.strings.germany}</td>
-                <td>{this.state.strings.newZealand}</td>
-                <td>{this.state.strings.luxemburg}</td>
-                <td>{this.state.strings.finland}</td>
-                <td>{this.state.strings.poland}</td>
-                <td>{this.state.strings.venezuela}</td>
-                <td>{this.state.strings.asia}</td>
+                <td>{this.props.lang.germany}</td>
+                <td>{this.props.lang.newZealand}</td>
+                <td>{this.props.lang.luxemburg}</td>
+                <td>{this.props.lang.finland}</td>
+                <td>{this.props.lang.poland}</td>
+                <td>{this.props.lang.venezuela}</td>
+                <td>{this.props.lang.asia}</td>
                 <td />
               </tr>
               <tr>
-                <td>{this.state.strings.austria}</td>
-                <td>{this.state.strings.australia}</td>
-                <td>{this.state.strings.italy}</td>
-                <td>{this.state.strings.norway}</td>
-                <td>{this.state.strings.hungary}</td>
-                <td>{this.state.strings.columbia}</td>
-                <td />
-                <td />
-              </tr>
-              <tr>
-                <td>{this.state.strings.lichtenstein}</td>
-                <td>{this.state.strings.canada}</td>
-                <td>{this.state.strings.belgium}</td>
-                <td>{this.state.strings.sweden}</td>
-                <td>{this.state.strings.slovakia}</td>
-                <td>{this.state.strings.brasil}</td>
+                <td>{this.props.lang.austria}</td>
+                <td>{this.props.lang.australia}</td>
+                <td>{this.props.lang.italy}</td>
+                <td>{this.props.lang.norway}</td>
+                <td>{this.props.lang.hungary}</td>
+                <td>{this.props.lang.columbia}</td>
                 <td />
                 <td />
               </tr>
               <tr>
-                <td />
-                <td>{this.state.strings.ireland}</td>
-                <td>{this.state.strings.netherlands}</td>
-                <td />
-                <td>{this.state.strings.lithuania}</td>
-                <td>{this.state.strings.argentina}</td>
+                <td>{this.props.lang.lichtenstein}</td>
+                <td>{this.props.lang.canada}</td>
+                <td>{this.props.lang.belgium}</td>
+                <td>{this.props.lang.sweden}</td>
+                <td>{this.props.lang.slovakia}</td>
+                <td>{this.props.lang.brasil}</td>
                 <td />
                 <td />
               </tr>
               <tr>
                 <td />
+                <td>{this.props.lang.ireland}</td>
+                <td>{this.props.lang.netherlands}</td>
                 <td />
-                <td>{this.state.strings.denmark}</td>
-                <td />
-                <td>{this.state.strings.latvia}</td>
-                <td>{this.state.strings.paraguay}</td>
+                <td>{this.props.lang.lithuania}</td>
+                <td>{this.props.lang.argentina}</td>
                 <td />
                 <td />
               </tr>
               <tr>
                 <td />
                 <td />
-                <td>{this.state.strings.greece}</td>
+                <td>{this.props.lang.denmark}</td>
                 <td />
-                <td>{this.state.strings.estonia}</td>
-                <td>{this.state.strings.peru}</td>
-                <td />
-                <td />
-              </tr>
-              <tr>
-                <td />
-                <td />
-                <td>{this.state.strings.spain}</td>
-                <td />
-                <td>{this.state.strings.bulgaria}</td>
-                <td>{this.state.strings.equador}</td>
+                <td>{this.props.lang.latvia}</td>
+                <td>{this.props.lang.paraguay}</td>
                 <td />
                 <td />
               </tr>
               <tr>
                 <td />
                 <td />
+                <td>{this.props.lang.greece}</td>
+                <td />
+                <td>{this.props.lang.estonia}</td>
+                <td>{this.props.lang.peru}</td>
                 <td />
                 <td />
-                <td>{this.state.strings.romania}</td>
-                <td>{this.state.strings.uruguay}</td>
+              </tr>
+              <tr>
+                <td />
+                <td />
+                <td>{this.props.lang.spain}</td>
+                <td />
+                <td>{this.props.lang.bulgaria}</td>
+                <td>{this.props.lang.equador}</td>
                 <td />
                 <td />
               </tr>
@@ -196,8 +185,8 @@ class GlobalLeader2 extends React.Component<any, any> {
                 <td />
                 <td />
                 <td />
-                <td />
-                <td>{this.state.strings.costaRica}</td>
+                <td>{this.props.lang.romania}</td>
+                <td>{this.props.lang.uruguay}</td>
                 <td />
                 <td />
               </tr>
@@ -207,7 +196,7 @@ class GlobalLeader2 extends React.Component<any, any> {
                 <td />
                 <td />
                 <td />
-                <td>{this.state.strings.panama}</td>
+                <td>{this.props.lang.costaRica}</td>
                 <td />
                 <td />
               </tr>
@@ -217,7 +206,7 @@ class GlobalLeader2 extends React.Component<any, any> {
                 <td />
                 <td />
                 <td />
-                <td>{this.state.strings.nicaragua}</td>
+                <td>{this.props.lang.panama}</td>
                 <td />
                 <td />
               </tr>
@@ -227,7 +216,7 @@ class GlobalLeader2 extends React.Component<any, any> {
                 <td />
                 <td />
                 <td />
-                <td>{this.state.strings.bolivia}</td>
+                <td>{this.props.lang.nicaragua}</td>
                 <td />
                 <td />
               </tr>
@@ -237,7 +226,17 @@ class GlobalLeader2 extends React.Component<any, any> {
                 <td />
                 <td />
                 <td />
-                <td>{this.state.strings.chile}</td>
+                <td>{this.props.lang.bolivia}</td>
+                <td />
+                <td />
+              </tr>
+              <tr>
+                <td />
+                <td />
+                <td />
+                <td />
+                <td />
+                <td>{this.props.lang.chile}</td>
                 <td />
                 <td />
               </tr>

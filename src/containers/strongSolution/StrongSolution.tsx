@@ -27,7 +27,6 @@ const gstLogo = require('../../assets/img/gingr-share-token_logo.png');
 class StrongSolution extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = { strings: this.props.lang };
   }
 
   render() {
@@ -35,7 +34,7 @@ class StrongSolution extends React.Component<any, any> {
       <div className="gg-section-container gg-section-container--strong-solution">
         <div className="gg-content-container">
           <h1 className="gg-head gg-head--xs">
-            {this.state.strings.strongSolution}
+            {this.props.lang.strongSolution}
           </h1>
           <OnVisible className="hidden-content" percent={80}>
             <div className="strong-solution-content">
@@ -44,8 +43,8 @@ class StrongSolution extends React.Component<any, any> {
                   <img src={gingrLogo} alt="Gingr" />
                 </div>
                 <div className="flex-column__content">
-                  <h3 className="title">{this.state.strings.gingrPlatform}</h3>
-                  <p>{this.state.strings.firstWorldwideDirect}</p>
+                  <h3 className="title">{this.props.lang.gingrPlatform}</h3>
+                  <p>{this.props.lang.firstWorldwideDirect}</p>
                 </div>
               </div>
               <div className="ssc-item flex-column flex-column--30">
@@ -54,9 +53,9 @@ class StrongSolution extends React.Component<any, any> {
                 </div>
                 <div className="flex-column__content">
                   <h3 className="title">
-                    {this.state.strings.ggCoinCurrency} (GGC)
+                    {this.props.lang.ggCoinCurrency} (GGC)
                   </h3>
-                  <p>{this.state.strings.aNewGlobalEcosystem}</p>
+                  <p>{this.props.lang.aNewGlobalEcosystem}</p>
                 </div>
               </div>
               <div className="ssc-item flex-column flex-column--30">
@@ -65,9 +64,9 @@ class StrongSolution extends React.Component<any, any> {
                 </div>
                 <div className="flex-column__content">
                   <h3 className="title">
-                    {this.state.strings.gingrShareToken} (GST)
+                    {this.props.lang.gingrShareToken} (GST)
                   </h3>
-                  <p>{this.state.strings.gingrShareTokensAre}</p>
+                  <p>{this.props.lang.gingrShareTokensAre}</p>
                 </div>
               </div>
             </div>

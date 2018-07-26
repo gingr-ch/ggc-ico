@@ -15,7 +15,6 @@ import './ContactUs.css';
 class ContactUs extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = { strings: this.props.lang };
   }
 
   click() {
@@ -27,20 +26,20 @@ class ContactUs extends React.Component<any, any> {
       <div className="gg-section-container gg-section-container--contactus">
         <div className="gg-content-container" style={{ alignItems: 'stretch' }}>
           <div className="flex-row" style={{ justifyContent: 'center' }}>
-            <h1>{this.state.strings.contactUs}</h1>
+            <h1>{this.props.lang.contactUs}</h1>
           </div>
 
           <div className="contactus-form flex-column">
             <input
               className="contactus-form__input"
               type="text"
-              placeholder={this.state.strings.email}
+              placeholder={this.props.lang.email}
             />
             <textarea
               className="contactus-form__textarea"
-              placeholder={this.state.strings.message}
+              placeholder={this.props.lang.message}
             />
-            <Button click={this.click}>{this.state.strings.send}</Button>
+            <Button click={this.click}>{this.props.lang.send}</Button>
           </div>
         </div>
       </div>

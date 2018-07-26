@@ -17,7 +17,6 @@ const icoStagesAlt = require('../../assets/img/chartAlt_nobg.png');
 class IcoDetails extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = { strings: this.props.lang };
   }
 
   click() {
@@ -28,14 +27,14 @@ class IcoDetails extends React.Component<any, any> {
     return (
       <div className="gg-section-container gg-section-container--ico-details">
         <div className="gg-content-container">
-          <h1>{this.state.strings.icoDetails}</h1>
+          <h1>{this.props.lang.icoDetails}</h1>
           <div className="spacer" />
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <div style={{ fontSize: '24px', marginBottom: '16px' }}>
-              {this.state.strings.privateSaleNow}
+              {this.props.lang.privateSaleNow}
             </div>
             <div className="color-green" style={{ fontSize: '30px' }}>
-              70% {this.state.strings.discount}
+              70% {this.props.lang.discount}
             </div>
             <div
               className="color-green"
@@ -45,7 +44,7 @@ class IcoDetails extends React.Component<any, any> {
             </div>
             <div className="spacer" />
             <Button click={this.click} borderColor="#00D646">
-              {this.state.strings.buyCoinsNow}
+              {this.props.lang.buyCoinsNow}
             </Button>
           </div>
 

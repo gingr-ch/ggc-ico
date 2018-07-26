@@ -18,7 +18,6 @@ const instagram = require('../../assets/img/social/instagram.png');
 class Feedback extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = { strings: this.props.lang };
   }
 
   click() {
@@ -29,8 +28,8 @@ class Feedback extends React.Component<any, any> {
     return (
       <div className="gg-section-container gg-section-container--feedback">
         <div className="gg-content-container flex-row">
-          <h1>{this.state.strings.feedback}</h1>
-          <h4>{this.state.strings.ourCompanyIsOpen}</h4>
+          <h1>{this.props.lang.feedback}</h1>
+          <h4>{this.props.lang.ourCompanyIsOpen}</h4>
 
           <div className="flex-row feedback-social">
             <div className="flex-column">
@@ -53,7 +52,7 @@ class Feedback extends React.Component<any, any> {
 
           <div className="feedback-newsletter flex-column">
             <h3 className="feedback-newsletter__title">
-              {this.state.strings.signUpForOurNewsletter}
+              {this.props.lang.signUpForOurNewsletter}
             </h3>
             <div className="feedback-newsletter__form flex-row">
               <input
@@ -62,7 +61,7 @@ class Feedback extends React.Component<any, any> {
                 placeholder="Email address"
               />
               <Button borderColor={'#f29eff'} click={this.click}>
-                {this.state.strings.signUp}
+                {this.props.lang.signUp}
               </Button>
             </div>
           </div>

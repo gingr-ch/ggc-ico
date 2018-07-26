@@ -18,7 +18,6 @@ const gingrV1 = require('../../assets/img/gingr_v1.png');
 class Beta extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = { strings: this.props.lang };
   }
 
   click() {
@@ -30,14 +29,13 @@ class Beta extends React.Component<any, any> {
       <div className="gg-section-container gg-section-container--beta">
         <div className="gg-content-container">
           <h1 className="gg-head gg-head--xs">
-            {this.state.strings.gingr}{' '}
-            <span>2.0 {this.state.strings.beta}</span>
+            {this.props.lang.gingr} <span>2.0 {this.props.lang.beta}</span>
           </h1>
-          <h3>{this.state.strings.comingSoon}</h3>
+          <h3>{this.props.lang.comingSoon}</h3>
           <div className="spacer" />
-          <p>{this.state.strings.clickHereToVisit}</p>
+          <p>{this.props.lang.clickHereToVisit}</p>
           <Button click={this.click} borderColor="#ffd400">
-            {this.state.strings.gingr} 1.0
+            {this.props.lang.gingr} 1.0
           </Button>
 
           <div className="spacer" />

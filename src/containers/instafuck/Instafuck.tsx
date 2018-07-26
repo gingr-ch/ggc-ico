@@ -19,46 +19,45 @@ const instafuckEscrow = require('../../assets/img/instafuck/instafuck_escrow.png
 class Instafuck extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = { strings: this.props.lang };
   }
 
   render() {
     return (
       <div className="gg-section-container gg-section-container--instafuck">
         <div className="gg-content-container">
-          <h3>{this.state.strings.welcomeTo}</h3>
-          <h1>{this.state.strings.instafuck}</h1>
-          <h4>"{this.state.strings.weHaveCreatedThe}"</h4>
+          <h3>{this.props.lang.welcomeTo}</h3>
+          <h1>{this.props.lang.instafuck}</h1>
+          <h4>"{this.props.lang.weHaveCreatedThe}"</h4>
           <div className="spacer" />
           <div className="hide-xs">
-            <InstafuckChart lang={this.state.strings} />
+            <InstafuckChart lang={this.props.lang} />
           </div>
 
           <div className="hide show-xs flex-column">
             <div className="instafuck-item">
               <img src={gingrIconPink} alt="" />
               <h1>1</h1>
-              <p>{this.state.strings.instafuckStep1}</p>
+              <p>{this.props.lang.instafuckStep1}</p>
             </div>
             <div className="instafuck-item">
               <img src={instafuckMap} alt="" />
               <h1>2</h1>
-              <p>{this.state.strings.instafuckStep2}</p>
+              <p>{this.props.lang.instafuckStep2}</p>
             </div>
             <div className="instafuck-item">
               <img src={instafuckPhone} alt="" />
               <h1>3</h1>
-              <p>{this.state.strings.instafuckStep3}</p>
+              <p>{this.props.lang.instafuckStep3}</p>
             </div>
             <div className="instafuck-item">
               <img src={ggcLogo} alt="" />
               <h1>4</h1>
-              <p>{this.state.strings.instafuckStep4}</p>
+              <p>{this.props.lang.instafuckStep4}</p>
             </div>
             <div className="instafuck-item">
               <img src={instafuckEscrow} alt="" />
               <h1>5</h1>
-              <p>{this.state.strings.instafuckStep5}</p>
+              <p>{this.props.lang.instafuckStep5}</p>
             </div>
           </div>
         </div>

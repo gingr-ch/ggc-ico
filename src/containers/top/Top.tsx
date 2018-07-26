@@ -28,7 +28,6 @@ class Top extends React.Component<any, any> {
     super(props);
     this.state = {
       open: false,
-      strings: this.props.lang,
     };
 
     this.videoToggle = this.videoToggle.bind(this);
@@ -68,16 +67,16 @@ class Top extends React.Component<any, any> {
             <div className="spacer hide show-xs" />
 
             <h1 className="gg-h1">
-              "{this.state.strings.revolutionizing}
-              <br /> {this.state.strings.theOldestIndustry} <br />
-              {this.state.strings.inTheWorld}"
+              "{this.props.lang.revolutionizing}
+              <br /> {this.props.lang.theOldestIndustry} <br />
+              {this.props.lang.inTheWorld}"
             </h1>
             <div className="spacer hide show-xs" />
 
             <div className="play-button hide show-xs">
               <OnVisible className="rotate-in">
                 <ButtonPlay videoToggle={this.videoToggle}>
-                  {this.state.strings.play}
+                  {this.props.lang.play}
                 </ButtonPlay>
               </OnVisible>
             </div>
@@ -92,10 +91,10 @@ class Top extends React.Component<any, any> {
               }}
             >
               <div style={{ fontSize: '24px', marginBottom: '16px' }}>
-                {this.state.strings.privateSale}
+                {this.props.lang.privateSale}
               </div>
               <div className="color-green" style={{ fontSize: '30px' }}>
-                {this.state.strings.discount}
+                {this.props.lang.discount}
               </div>
               <div
                 className="color-green"
@@ -107,7 +106,7 @@ class Top extends React.Component<any, any> {
               <div className="spacer hide show-xs" />
 
               <Button click={this.click} borderColor="#00D646">
-                {this.state.strings.buyCoinsNow}
+                {this.props.lang.buyCoinsNow}
               </Button>
             </div>
             <div className="spacer" />
@@ -120,7 +119,7 @@ class Top extends React.Component<any, any> {
             <div className="play-button hide-xs">
               <OnVisible className="rotate-in">
                 <ButtonPlay videoToggle={this.videoToggle}>
-                  {this.state.strings.play}
+                  {this.props.lang.play}
                 </ButtonPlay>
               </OnVisible>
             </div>

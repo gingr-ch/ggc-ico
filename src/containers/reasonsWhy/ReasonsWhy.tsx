@@ -13,7 +13,6 @@ const gingr = require('../../assets/img/reasons-why.png');
 class ReasonsWhy extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = { strings: this.props.lang };
   }
 
   render() {
@@ -21,10 +20,9 @@ class ReasonsWhy extends React.Component<any, any> {
       <div className="gg-section-container gg-section-container--reasons-why">
         <div className="gg-content-container">
           <h1>
-            {this.state.strings.sixReasons}{' '}
-            <span>{this.state.strings.why}</span>
+            {this.props.lang.sixReasons} <span>{this.props.lang.why}</span>
           </h1>
-          <h4>{this.state.strings.theGGCoinCould}</h4>
+          <h4>{this.props.lang.theGGCoinCould}</h4>
 
           <div className="flex-row reasons-why-container">
             <div>
@@ -37,30 +35,30 @@ class ReasonsWhy extends React.Component<any, any> {
             <div className="reasons-why-list">
               <div className="reasons-why-list__item flex-row">
                 <div className="number">1</div>
-                <div>{this.state.strings.theGGCoinWillBe}</div>
+                <div>{this.props.lang.theGGCoinWillBe}</div>
               </div>
               <div className="reasons-why-list__item flex-row">
                 <div className="number">2</div>
-                <div>{this.state.strings.burn20OfOurProfits}</div>
+                <div>{this.props.lang.burn20OfOurProfits}</div>
               </div>
               <div className="reasons-why-list__item flex-row">
                 <div className="number">3</div>
-                <div>{this.state.strings.weBuyBackGGC}</div>
+                <div>{this.props.lang.weBuyBackGGC}</div>
               </div>
               <div className="reasons-why-list__item flex-row">
                 <div className="number">4</div>
-                <div>{this.state.strings.ofTheTransaction}</div>
+                <div>{this.props.lang.ofTheTransaction}</div>
               </div>
               <div className="reasons-why-list__item flex-row">
                 <div className="number">5</div>
-                <div>{this.state.strings.weBuyBackGGC}</div>
+                <div>{this.props.lang.weBuyBackGGC}</div>
               </div>
               <div
                 className="reasons-why-list__item flex-row"
                 style={{ justifyContent: 'flex-start' }}
               >
                 <div className="number">6</div>
-                <div>{this.state.strings.smartContracts}</div>
+                <div>{this.props.lang.smartContracts}</div>
               </div>
             </div>
           </div>

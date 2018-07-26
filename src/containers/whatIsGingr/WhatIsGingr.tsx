@@ -24,7 +24,6 @@ class WhatIsGingr extends React.Component<any, any> {
 
   constructor(props: any) {
     super(props);
-    this.state = { strings: this.props.lang };
   }
 
   ref = (player: any) => {
@@ -45,28 +44,28 @@ class WhatIsGingr extends React.Component<any, any> {
     const whatIsList = [
       {
         id: 0,
-        title: this.state.strings.client,
+        title: this.props.lang.client,
         classTitle: 'client',
         icon: clientIcon,
-        content: this.state.strings.worldwideAccessTo,
+        content: this.props.lang.worldwideAccessTo,
         video: 'https://vimeo.com/194665559',
       },
       {
         id: 1,
-        title: this.state.strings.gingr,
+        title: this.props.lang.gingr,
         subtitle: 'Sex-Worker',
         classTitle: 'gingr',
         icon: gingrIcon,
-        content: this.state.strings.worldwideWorkWith,
+        content: this.props.lang.worldwideWorkWith,
         img: gingrImg,
       },
       {
         id: 2,
-        title: this.state.strings.agencyAndEstablishemnt,
+        title: this.props.lang.agencyAndEstablishemnt,
         classTitle: 'agency-establishment',
         icon: establishmentIcon,
         icon2: agencyIcon,
-        content: this.state.strings.stateOfTheArt,
+        content: this.props.lang.stateOfTheArt,
         img: establishmentImg,
       },
     ];
@@ -75,9 +74,9 @@ class WhatIsGingr extends React.Component<any, any> {
       <div className="gg-section-container gg-section-container--what-is-gingr">
         <div className="gg-content-container">
           <h1 className="gg-head gg-head--xs">
-            {this.state.strings.whatIsGingr}?
+            {this.props.lang.whatIsGingr}?
           </h1>
-          <h3>"{this.state.strings.theFirstGlobalMarket}"</h3>
+          <h3>"{this.props.lang.theFirstGlobalMarket}"</h3>
 
           <div className="list-2-col">
             {whatIsList.map((d, i) => (

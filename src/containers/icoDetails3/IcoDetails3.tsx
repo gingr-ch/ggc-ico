@@ -17,7 +17,6 @@ const ethereum = require('../../assets/img/ethereum-logo.png');
 class IcoDetails3 extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = { strings: this.props.lang };
   }
 
   render() {
@@ -33,9 +32,9 @@ class IcoDetails3 extends React.Component<any, any> {
               className="coin-supply-values flex-column"
               style={{ alignItems: 'flex-start', paddingTop: '32px' }}
             >
-              <div className="title">{this.state.strings.totalCoinSupply}</div>
+              <div className="title">{this.props.lang.totalCoinSupply}</div>
               <div>1'000’000’000</div>
-              <div className="title">{this.state.strings.totalCoinSupply}</div>
+              <div className="title">{this.props.lang.totalCoinSupply}</div>
               <div>700'000'000 (70%)</div>
               <div className="title">GINGR AG</div>
               <div>300’000’000 (30%)</div>
@@ -54,9 +53,9 @@ class IcoDetails3 extends React.Component<any, any> {
               style={{ alignItems: 'flex-start' }}
             >
               <img src={ggcLogo} alt="" />
-              <div className="title">{this.state.strings.mainSalePrice}</div>
+              <div className="title">{this.props.lang.mainSalePrice}</div>
               <div>
-                {this.state.strings.coinPriceIssue}:<br />
+                {this.props.lang.coinPriceIssue}:<br />
                 <span
                   style={{
                     color: '#FFD500',
@@ -66,9 +65,9 @@ class IcoDetails3 extends React.Component<any, any> {
                     display: 'block',
                   }}
                 >
-                  € 0.10 {this.state.strings.cent}
+                  € 0.10 {this.props.lang.cent}
                 </span>
-                {this.state.strings.startingPriceofGGC} €0.30.
+                {this.props.lang.startingPriceofGGC} €0.30.
               </div>
             </div>
             <div
@@ -76,18 +75,18 @@ class IcoDetails3 extends React.Component<any, any> {
               style={{ alignItems: 'flex-start' }}
             >
               <img src={flame} alt="" />
-              <div className="title">{this.state.strings.coinsBurned}</div>
-              <div>{this.state.strings.remainingGGCCoins}</div>
+              <div className="title">{this.props.lang.coinsBurned}</div>
+              <div>{this.props.lang.remainingGGCCoins}</div>
             </div>
             <div
               className="ggc-card flex-column"
               style={{ alignItems: 'flex-start' }}
             >
               <img src={ethereum} alt="" />
-              <div className="title">{this.state.strings.ethereumTEC}</div>
+              <div className="title">{this.props.lang.ethereumTEC}</div>
               <div>
-                {this.state.strings.usedBlockchain}:<br />
-                {this.state.strings.standardBased}
+                {this.props.lang.usedBlockchain}:<br />
+                {this.props.lang.standardBased}
               </div>
             </div>
           </div>

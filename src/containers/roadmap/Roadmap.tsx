@@ -46,18 +46,17 @@ const roadMap = require('../../assets/img/roadmap_mobile.png');
 class Roadmap extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = { strings: this.props.lang };
   }
 
   render() {
     return (
       <div className="gg-section-container gg-section-container--roadmap">
         <div className="gg-content-container">
-          <h1>{this.state.strings.roadmap}</h1>
-          <h2>{this.state.strings.datesComingSoon}</h2>
+          <h1>{this.props.lang.roadmap}</h1>
+          <h2>{this.props.lang.datesComingSoon}</h2>
 
           <div className="hide-xs">
-            <SvgRoadmap lang={this.state.strings} />
+            <SvgRoadmap lang={this.props.lang} />
           </div>
 
           <div className="hide show-xs">
@@ -80,7 +79,7 @@ class Roadmap extends React.Component<any, any> {
               style={{ justifyContent: 'flex-start' }}
             >
               <img src={balloon} alt="" />
-              <h4>"{this.state.strings.oneCryptoCurrencyFromThousands}"</h4>
+              <h4>"{this.props.lang.oneCryptoCurrencyFromThousands}"</h4>
             </div>
           </div>
         </div>

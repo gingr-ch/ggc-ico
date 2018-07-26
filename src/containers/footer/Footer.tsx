@@ -15,7 +15,6 @@ const swissFlag = require('../../assets/img/flags/switzerland.png');
 class Footer extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = { strings: this.props.lang };
   }
 
   click() {
@@ -25,123 +24,123 @@ class Footer extends React.Component<any, any> {
   render() {
     const locations = [
       {
-        country: this.state.strings.austria,
+        country: this.props.lang.austria,
         phone: '43 720 88 07 10',
       },
       {
-        country: this.state.strings.germany,
+        country: this.props.lang.germany,
         phone: '49 303 08 07 677',
       },
       {
-        country: this.state.strings.switzerland,
+        country: this.props.lang.switzerland,
         phone: '41 55 588 00 91',
       },
       {
-        country: this.state.strings.canada,
+        country: this.props.lang.canada,
         phone: '1 604 900 8866',
       },
       {
-        country: this.state.strings.spain,
+        country: this.props.lang.spain,
         phone: '34 950 68 00 05',
       },
       {
-        country: this.state.strings.unitedKingdom,
+        country: this.props.lang.unitedKingdom,
         phone: '44 800 086 9900',
       },
       {
-        country: this.state.strings.australia,
+        country: this.props.lang.australia,
         phone: '61 8 7150 1555',
       },
       {
-        country: this.state.strings.newZealand,
+        country: this.props.lang.newZealand,
         phone: '64 4 887 1055',
       },
       {
-        country: this.state.strings.belgium,
+        country: this.props.lang.belgium,
         phone: '32 2 588 22 19',
       },
       {
-        country: this.state.strings.denmark,
+        country: this.props.lang.denmark,
         phone: '45 89 87 40 99',
       },
       {
-        country: this.state.strings.france,
+        country: this.props.lang.france,
         phone: '33 1 86 26 66 22',
       },
       {
-        country: this.state.strings.netherlands,
+        country: this.props.lang.netherlands,
         phone: '31 85 888 6189',
       },
       {
-        country: this.state.strings.italy,
+        country: this.props.lang.italy,
         phone: '39 099 944 0069',
       },
       {
-        country: this.state.strings.portugal,
+        country: this.props.lang.portugal,
         phone: '351 308 804 904',
       },
       {
-        country: this.state.strings.finland,
+        country: this.props.lang.finland,
         phone: '358 9 424 550 10',
       },
       {
-        country: this.state.strings.norway,
+        country: this.props.lang.norway,
         phone: '47 23 96 63 96',
       },
       {
-        country: this.state.strings.sweden,
+        country: this.props.lang.sweden,
         phone: '46 76 466 70 77',
       },
       {
-        country: this.state.strings.czechRepublic,
+        country: this.props.lang.czechRepublic,
         phone: '420 228 883 012',
       },
       {
-        country: this.state.strings.hungary,
+        country: this.props.lang.hungary,
         phone: '36 84 884 000',
       },
       {
-        country: this.state.strings.poland,
+        country: this.props.lang.poland,
         phone: '48 71 716 68 78',
       },
       {
-        country: this.state.strings.slovakia,
+        country: this.props.lang.slovakia,
         phone: '421 48/233 36 08',
       },
       {
-        country: this.state.strings.estonia,
+        country: this.props.lang.estonia,
         phone: '372 8804265',
       },
       {
-        country: this.state.strings.bulgaria,
+        country: this.props.lang.bulgaria,
         phone: '359 2 492 5417',
       },
       {
-        country: this.state.strings.latvia,
+        country: this.props.lang.latvia,
         phone: '371 66 163 771',
       },
       {
-        country: this.state.strings.lithuania,
+        country: this.props.lang.lithuania,
         phone: '370 447 20340',
       },
       {
-        country: this.state.strings.romania,
+        country: this.props.lang.romania,
         phone: '40 31 630 2370',
       },
       {
-        country: this.state.strings.greece,
+        country: this.props.lang.greece,
         phone: '30 2241 888026',
       },
       {
-        country: this.state.strings.ireland,
+        country: this.props.lang.ireland,
         phone: '353 76 888 7008',
       },
       {
-        country: this.state.strings.mexico,
+        country: this.props.lang.mexico,
         phone: '52 443 690 3990',
       },
       {
-        country: this.state.strings.turkey,
+        country: this.props.lang.turkey,
         phone: '90 216 900 11 90',
       },
     ];
@@ -163,7 +162,7 @@ class Footer extends React.Component<any, any> {
                 style={{ justifyContent: 'flex-start' }}
               >
                 <h4 className="footer-title" style={{ marginRight: '16px' }}>
-                  {this.state.strings.address}
+                  {this.props.lang.address}
                 </h4>
                 <img
                   src={swissFlag}
@@ -175,19 +174,18 @@ class Footer extends React.Component<any, any> {
                 Gingr AG<br />
                 Badenerstrasse 809<br />
                 8048 Zürich<br />
-                {this.state.strings.switzerland}
+                {this.props.lang.switzerland}
               </p>
 
               <p>
-                {this.state.strings.phone}: +41 555 00 88 91<br />
-                {this.state.strings.mobile}: +41 79 579 77 77<br />
-                {this.state.strings.email}:{' '}
+                {this.props.lang.phone}: +41 555 00 88 91<br />
+                {this.props.lang.mobile}: +41 79 579 77 77<br />
+                {this.props.lang.email}:{' '}
                 <a href="mailto:info@ggcico.io">info@ggcico.io</a>
               </p>
 
               <p>
-                {this.state.strings.companyRegistration}{' '}
-                {this.state.strings.number}
+                {this.props.lang.companyRegistration} {this.props.lang.number}
                 <span style={{ color: '#F39FFF' }}>CHE-461.393.191</span>
               </p>
             </div>
@@ -196,7 +194,7 @@ class Footer extends React.Component<any, any> {
               className="flex-column"
               style={{ alignItems: 'flex-start', width: '100%' }}
             >
-              <h4 className="footer-title">{this.state.strings.locations}</h4>
+              <h4 className="footer-title">{this.props.lang.locations}</h4>
               <div className="footer-locations flex-row">
                 <div
                   className="locations-list flex-column"
@@ -232,7 +230,7 @@ class Footer extends React.Component<any, any> {
             </div>
           </div>
           <div className="footer-copyright">
-            ©2017 Gingr AG | {this.state.strings.allRightsReserved}
+            ©2017 Gingr AG | {this.props.lang.allRightsReserved}
           </div>
         </div>
       </div>

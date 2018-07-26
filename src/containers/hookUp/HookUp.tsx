@@ -18,7 +18,6 @@ const escrow = require('../../assets/img/icons/export_lock.svg');
 class HookUp extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = { strings: this.props.lang };
   }
 
   render() {
@@ -26,17 +25,16 @@ class HookUp extends React.Component<any, any> {
       <div className="gg-section-container gg-section-container--hookup">
         <div className="gg-content-container">
           <h1>
-            <span>{this.state.strings.hookUp}</span>{' '}
-            {this.state.strings.booking}
+            <span>{this.props.lang.hookUp}</span> {this.props.lang.booking}
           </h1>
-          <h4>"{this.state.strings.findYourMostDesired}"</h4>
+          <h4>"{this.props.lang.findYourMostDesired}"</h4>
           <div className="hookup flex-row">
             <div
               className="hookup__phone"
               style={{ transform: 'translate3d(0,31px,0)' }}
             >
               <img src={clientPhone} alt="" />
-              <span>{this.state.strings.clientPhone}</span>
+              <span>{this.props.lang.clientPhone}</span>
             </div>
 
             <div
@@ -79,12 +77,12 @@ class HookUp extends React.Component<any, any> {
               <div className="hookup__phones">
                 <div className="hookup__phone hookup__phone--start">
                   <img src={phoneQrClient} alt="" />
-                  <span>{this.state.strings.clientPhone}</span>
+                  <span>{this.props.lang.clientPhone}</span>
                 </div>
 
                 <div className="hookup__phone">
                   <img src={phoneQrGingr} alt="" />
-                  <span>{this.state.strings.gingrPhone}</span>
+                  <span>{this.props.lang.gingrPhone}</span>
                 </div>
               </div>
             </div>

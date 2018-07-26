@@ -13,7 +13,6 @@ import BlockchainChart from '../../components/svgBlockchain/svgBlockchain';
 class Blockchain extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = { strings: this.props.lang };
   }
 
   render() {
@@ -21,15 +20,15 @@ class Blockchain extends React.Component<any, any> {
       <div className="gg-section-container gg-section-container--blockchain">
         <div className="gg-content-container">
           <h1>
-            <span>{this.state.strings.blockchain}</span> &<br />{' '}
-            {this.state.strings.smartContracts}
+            <span>{this.props.lang.blockchain}</span> &<br />{' '}
+            {this.props.lang.smartContracts}
           </h1>
-          <h4>"{this.state.strings.groundBreakingTechnologies}"</h4>
+          <h4>"{this.props.lang.groundBreakingTechnologies}"</h4>
 
           <div className="spacer" />
           <div className="spacer" />
 
-          <BlockchainChart lang={this.state.strings} />
+          <BlockchainChart lang={this.props.lang} />
         </div>
       </div>
     );

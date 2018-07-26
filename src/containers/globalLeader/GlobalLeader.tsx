@@ -44,7 +44,6 @@ import './GlobalLeader.css';
 class GlobalLeader extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = { strings: this.props.lang };
   }
 
   render() {
@@ -52,11 +51,11 @@ class GlobalLeader extends React.Component<any, any> {
       <div className="gg-section-container gg-section-container--global-leader">
         <div className="gg-content-container">
           <h1>
-            {this.state.strings.globalLeader}
+            {this.props.lang.globalLeader}
             <br />
-            {this.state.strings.inTheMarket}
+            {this.props.lang.inTheMarket}
           </h1>
-          <h4>"{this.state.strings.bePartOfOurVision}"</h4>
+          <h4>"{this.props.lang.bePartOfOurVision}"</h4>
         </div>
       </div>
     );

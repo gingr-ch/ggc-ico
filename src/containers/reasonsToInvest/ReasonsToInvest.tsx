@@ -14,50 +14,49 @@ const reasonsImg = require('../../assets/img/reason_to_invest.png');
 class ReasonsToInvest extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = { strings: this.props.lang };
   }
 
   render() {
     const reasonsList = [
       {
         id: 1,
-        text: this.state.strings.ggCoinShould,
+        text: this.props.lang.ggCoinShould,
       },
       {
         id: 2,
-        text: this.state.strings.weProvideFirm,
+        text: this.props.lang.weProvideFirm,
       },
       {
         id: 3,
-        text: this.state.strings.ourAssetsAnd,
+        text: this.props.lang.ourAssetsAnd,
       },
       {
         id: 4,
-        text: this.state.strings.theGingrPlatformHas,
+        text: this.props.lang.theGingrPlatformHas,
       },
       {
         id: 5,
-        text: this.state.strings.withYourHelp,
+        text: this.props.lang.withYourHelp,
       },
       {
         id: 6,
-        text: this.state.strings.gingrHasAlready,
+        text: this.props.lang.gingrHasAlready,
       },
       {
         id: 7,
-        text: this.state.strings.ourConceptHas,
+        text: this.props.lang.ourConceptHas,
       },
       {
         id: 8,
-        text: this.state.strings.theFirmHasGained,
+        text: this.props.lang.theFirmHasGained,
       },
       {
         id: 9,
-        text: this.state.strings.weAreRegarded,
+        text: this.props.lang.weAreRegarded,
       },
       {
         id: 10,
-        text: this.state.strings.gingrIsThePioneer,
+        text: this.props.lang.gingrIsThePioneer,
       },
     ];
 
@@ -65,13 +64,13 @@ class ReasonsToInvest extends React.Component<any, any> {
       <div className="gg-section-container gg-section-container--reasons-to-invest">
         <div className="gg-content-container">
           <h1 className="gg-head gg-head--xs">
-            {this.state.strings.reasonsToInvest}
+            {this.props.lang.reasonsToInvest}
           </h1>
           <div className="flex-row flex-column-xs">
             <div className="flex-column flex-column--45 order-xs-3">
               <img
                 src={reasonsImg}
-                alt={this.state.strings.reasonsToInvest}
+                alt={this.props.lang.reasonsToInvest}
                 className="rti-image"
               />
             </div>

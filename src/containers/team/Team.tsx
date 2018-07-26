@@ -12,14 +12,13 @@ import './Team.css';
 class Team extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = { strings: this.props.lang };
   }
 
   render() {
     return (
       <div className="gg-section-container gg-section-container--team">
         <div className="gg-content-container">
-          <h1>{this.state.strings.team}</h1>
+          <h1>{this.props.lang.team}</h1>
         </div>
       </div>
     );

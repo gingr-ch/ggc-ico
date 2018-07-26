@@ -13,7 +13,6 @@ import FlowChart from '../../components/svgFlow/svgFlow';
 class Flow extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = { strings: this.props.lang };
   }
 
   render() {
@@ -21,14 +20,14 @@ class Flow extends React.Component<any, any> {
       <div className="gg-section-container gg-section-container--flow">
         <div className="gg-content-container">
           <h1>
-            <span>{this.state.strings.ggCoin}</span> {this.state.strings.flow}
+            <span>{this.props.lang.ggCoin}</span> {this.props.lang.flow}
           </h1>
-          <h4>{this.state.strings.onOurGingrPlatform}</h4>
+          <h4>{this.props.lang.onOurGingrPlatform}</h4>
 
           <div className="spacer" />
           <div className="spacer" />
 
-          <FlowChart lang={this.state.strings} />
+          <FlowChart lang={this.props.lang} />
         </div>
       </div>
     );

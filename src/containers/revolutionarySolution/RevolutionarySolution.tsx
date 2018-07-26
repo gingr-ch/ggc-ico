@@ -20,30 +20,29 @@ const gingrConnect = require('../../assets/img/icons/gingr-connect.png');
 class RevolutionarySolution extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = { strings: this.props.lang };
   }
 
   render() {
     const cardsData = [
       {
         image: popngo,
-        title: this.state.strings.gingrPopNGo,
-        content: this.state.strings.neverHasItBeen,
+        title: this.props.lang.gingrPopNGo,
+        content: this.props.lang.neverHasItBeen,
       },
       {
         image: gingrBank,
-        title: this.state.strings.gingrBank,
-        content: this.state.strings.theWorldsFirstAccessible,
+        title: this.props.lang.gingrBank,
+        content: this.props.lang.theWorldsFirstAccessible,
       },
       {
         image: gingrCare,
-        title: this.state.strings.gingrCare,
-        content: this.state.strings.aSpaceForAll,
+        title: this.props.lang.gingrCare,
+        content: this.props.lang.aSpaceForAll,
       },
       {
         image: gingrConnect,
-        title: this.state.strings.gingrConnect,
-        content: this.state.strings.ourRecruitmentSection,
+        title: this.props.lang.gingrConnect,
+        content: this.props.lang.ourRecruitmentSection,
       },
     ];
 
@@ -54,8 +53,8 @@ class RevolutionarySolution extends React.Component<any, any> {
           style={{ justifyContent: 'space-between' }}
         >
           <h1>
-            {this.state.strings.revolutionary}
-            <br /> {this.state.strings.solution}
+            {this.props.lang.revolutionary}
+            <br /> {this.props.lang.solution}
           </h1>
 
           <div
@@ -78,17 +77,17 @@ class RevolutionarySolution extends React.Component<any, any> {
           </div>
 
           <div className="revolutionary__title">
-            {this.state.strings.sexWorkerLifecycle}
+            {this.props.lang.sexWorkerLifecycle}
           </div>
 
-          <Cycle lang={this.state.strings} />
+          <Cycle lang={this.props.lang} />
 
           <div style={{ marginTop: '150px', marginBottom: '-3px' }}>
             <h4
               style={{ maxWidth: '275px', marginBottom: '50px' }}
               className="center-title"
             >
-              “{this.state.strings.rightDecisionsBringRightPeople}”
+              “{this.props.lang.rightDecisionsBringRightPeople}”
             </h4>
             <img
               src={gingr}
