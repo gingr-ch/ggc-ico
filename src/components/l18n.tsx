@@ -207,7 +207,7 @@ export interface RevolutionarySolutionStrings extends LocalizedStringsMethods {
   notReceivingTheFunds: string;
   noSystemToTrackEvents: string;
   noWorkingRegulations: string;
-  generallyADangrousWorld: string;
+  generallyADangerousWorld: string;
   enter: string;
   exit: string;
   signUpWithGingrPlatform: string;
@@ -504,7 +504,7 @@ export interface LangStrings extends LocalizedStringsMethods {
   notReceivingTheFunds: string;
   noSystemToTrackEvents: string;
   noWorkingRegulations: string;
-  generallyADangrousWorld: string;
+  generallyADangerousWorld: string;
   enter: string;
   exit: string;
   signUpWithGingrPlatform: string;
