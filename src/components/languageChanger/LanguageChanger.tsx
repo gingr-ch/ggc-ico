@@ -70,8 +70,20 @@ function renderCountry(option: any) {
   );
 }
 
-class LanguageChanger extends React.Component<LanguageChangerProps> {
+class LanguageChanger extends React.Component<any, LanguageChangerProps> {
+  constructor(props: object) {
+    super(props);
+  }
+
   render() {
+    // function lang(langCode: any) {
+    //   if (langCode) {
+    //     strings.setLanguage(langCode);
+    //   }
+    //
+    //   return strings.getLanguage();
+    // }
+
     return (
       <div>
         <SelectSearch
@@ -82,6 +94,7 @@ class LanguageChanger extends React.Component<LanguageChangerProps> {
           options={options}
           renderOption={renderCountry}
           value="en"
+          onChange={this.props.langSelect}
         />
       </div>
     );

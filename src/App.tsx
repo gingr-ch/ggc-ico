@@ -7,9 +7,19 @@ import LocalizedStrings from 'react-localization';
 import { LangStrings } from './components/l18n';
 
 export const langEn = require('./assets/l18n/en.json');
+export const langEs = require('./assets/l18n/es.json');
 export const strings: LangStrings = new LocalizedStrings({
   en: langEn,
+  es: langEs,
 });
+
+export function lang(langCode: any) {
+  if (langCode) {
+    strings.setLanguage(langCode);
+  }
+
+  return strings.getLanguage();
+}
 
 import './App.css';
 import Section from './components/section/Section';
@@ -46,15 +56,27 @@ import BackToTop from './components/backToTop/BackToTop';
 class App extends React.Component<any, any> {
   constructor(props: object) {
     super(props);
+    this.handleLangChange = this.handleLangChange.bind(this);
     // this.state = { checked: true };
     this.state = { lang: strings };
+  }
+
+  handleLangChange(langCode: any, e: any) {
+    // e.preventDefault();
+    if (langCode) {
+      console.warn(langCode);
+      strings.setLanguage(langCode.iso);
+    }
+
+    this.setState({ lang: strings });
+    return strings.getLanguage();
   }
 
   render() {
     return (
       <div className="App">
         <BackToTop />
-        <Header lang={this.state.lang}>
+        <Header lang={this.state.lang} langSelect={this.handleLangChange}>
           <Nav />
         </Header>
         <ScrollableAnchor id={'section1'}>
