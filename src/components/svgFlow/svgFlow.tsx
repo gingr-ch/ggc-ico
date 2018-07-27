@@ -1304,16 +1304,7 @@ const FlowChart = (props: any) => (
       fill="#ffd742"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      P
-      <tspan x={5.763} y={0} letterSpacing=".031em">
-        L
-      </tspan>
-      <tspan x={10.905} y={0} letterSpacing="-.037em">
-        A
-      </tspan>
-      <tspan x={16.969} y={0}>
-        TFORM
-      </tspan>
+      {props.lang.platform}
     </text>
     <path
       fill="#fff"
@@ -1326,40 +1317,11 @@ const FlowChart = (props: any) => (
       fill="#ffd742"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      FI
-      <tspan x={8.384} y={0} letterSpacing="-.037em">
-        A
-      </tspan>
-      <tspan x={14.448} y={0} letterSpacing="0em">
-        T FUNDS
-      </tspan>
+      {props.lang.fiatFunds}
       <tspan fontSize={8.144} fill="#fff">
         <tspan x={-52.954} y={9.773}>
-          (
-        </tspan>
-        <tspan x={-50.177} y={9.773} letterSpacing="-.004em">
-          W
-        </tspan>
-        <tspan x={-42.88} y={9.773}>
-          OR
-        </tspan>
-        <tspan x={-30.859} y={9.773} letterSpacing="-.005em">
-          K
-        </tspan>
-        <tspan x={-25.721} y={9.773}>
-          ING CAPI
-        </tspan>
-        <tspan x={9.013} y={9.773} letterSpacing="-.038em">
-          T
-        </tspan>
-        <tspan x={12.694} y={9.773} letterSpacing="0em">
-          AL + IN
-        </tspan>
-        <tspan x={39.219} y={9.773} letterSpacing="-.003em">
-          C
-        </tspan>
-        <tspan x={44.862} y={9.773}>
-          OME + PROFITS)
+          ({props.lang.workingCapital} + {props.lang.income} +{' '}
+          {props.lang.profits})
         </tspan>
         <tspan x={25.981} y={19.546} />
       </tspan>
@@ -1374,19 +1336,7 @@ const FlowChart = (props: any) => (
       30% {props.lang.reserveFundsGGC}
       <tspan fontSize={8.144} fill="#fff">
         <tspan x={-15.13} y={9.773}>
-          (30% + IN
-        </tspan>
-        <tspan x={19.604} y={9.773} letterSpacing="-.003em">
-          C
-        </tspan>
-        <tspan x={25.248} y={9.773}>
-          OME - SALE ON E
-        </tspan>
-        <tspan x={90.407} y={9.773} letterSpacing="-.009em">
-          X
-        </tspan>
-        <tspan x={95.285} y={9.773}>
-          CHANGE)
+          (30% + {props.lang.income} - {props.lang.saleOnExchange})
         </tspan>
       </tspan>
     </text>
@@ -1528,25 +1478,10 @@ const FlowChart = (props: any) => (
       fill="#fff"
       fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
     >
-      I
-      <tspan x={4.83} y={0} letterSpacing="-.003em">
-        C
-      </tspan>
-      <tspan x={16.063} y={0} letterSpacing="0em">
-        O
-      </tspan>
+      {props.lang.ico}
       <tspan fill="#ffd742">
         <tspan x={-36.574} y={19.45}>
-          CR
-        </tspan>
-        <tspan x={-14.515} y={19.45} letterSpacing="-.004em">
-          O
-        </tspan>
-        <tspan x={-1.435} y={19.45} letterSpacing="-.003em">
-          W
-        </tspan>
-        <tspan x={13.104} y={19.45}>
-          D SALE
+          {props.lang.crowdSale}
         </tspan>
       </tspan>
     </text>
