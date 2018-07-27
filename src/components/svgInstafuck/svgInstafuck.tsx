@@ -450,97 +450,9 @@ const InstafuckChart = (props: any) => (
         fontSize={14}
         fill="#fff"
       >
-        G
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 40.166 27.596)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        ingrs
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 69.646 27.596)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        (
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 74.333 27.596)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        sexwor
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 111.579 27.596)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        k
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 118.016 27.596)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        er
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 129.027 27.596)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        s
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 133.91 27.596)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        ) activate
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 30.204 47.997)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        their
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 59.39 47.997)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        I
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 63.364 47.997)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        nstafuck status.
+        <tspan x="0" dy="0">
+          {props.lang.instafuckStep1}
+        </tspan>
       </text>
       <text
         transform="matrix(.999 0 0 .999 578.336 144.161)"
@@ -549,25 +461,9 @@ const InstafuckChart = (props: any) => (
         fontSize={14}
         fill="#fff"
       >
-        A
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 587.543 144.161)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        ll available gingrs
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 578.336 164.561)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        will be displayed.
+        <tspan x="0" dy="0">
+          {props.lang.instafuckStep2}
+        </tspan>
       </text>
       <path
         d="M337.354 119.516a4.231 4.231 0 0 1 4.227-4.232 4.221 4.221 0 0 1 4.23 4.232 4.232 4.232 0 0 1-4.23 4.228 4.243 4.243 0 0 1-4.227-4.228zm-16.914 0a4.233 4.233 0 0 1 4.23-4.232 4.223 4.223 0 0 1 4.228 4.232 4.235 4.235 0 0 1-4.228 4.228 4.244 4.244 0 0 1-4.233-4.228h.003zm-16.917 0a4.234 4.234 0 0 1 4.23-4.232 4.224 4.224 0 0 1 4.231 4.232 4.236 4.236 0 0 1-4.231 4.228 4.244 4.244 0 0 1-4.233-4.228h.003zm-16.914 0a4.234 4.234 0 0 1 4.23-4.232 4.224 4.224 0 0 1 4.23 4.232 4.236 4.236 0 0 1-4.23 4.228 4.245 4.245 0 0 1-4.233-4.228h.003zm-16.914 0a4.231 4.231 0 0 1 4.227-4.232 4.224 4.224 0 0 1 4.23 4.232 4.234 4.234 0 0 1-4.23 4.228 4.243 4.243 0 0 1-4.229-4.228h.002zm-16.914 0a4.224 4.224 0 0 1 4.234-4.232 4.218 4.218 0 0 1 4.224 4.232 4.234 4.234 0 0 1-4.224 4.228 4.235 4.235 0 0 1-4.237-4.228h.003zm-16.913 0a4.226 4.226 0 0 1 4.23-4.232 4.223 4.223 0 0 1 4.227 4.232 4.232 4.232 0 0 1-4.227 4.228 4.234 4.234 0 0 1-4.233-4.228h.003zm-16.911 0a4.223 4.223 0 0 1 4.223-4.232 4.223 4.223 0 0 1 4.23 4.232 4.232 4.232 0 0 1-4.23 4.228 4.232 4.232 0 0 1-4.226-4.228h.003zm-16.917 0a4.223 4.223 0 0 1 4.223-4.232 4.223 4.223 0 0 1 4.234 4.232 4.236 4.236 0 0 1-4.234 4.228 4.233 4.233 0 0 1-4.226-4.228h.003zm-16.918 0a4.225 4.225 0 0 1 4.234-4.232 4.223 4.223 0 0 1 4.227 4.232 4.232 4.232 0 0 1-4.227 4.228 4.239 4.239 0 0 1-4.237-4.228h.003zm-16.915 0a4.236 4.236 0 0 1 4.234-4.232 4.224 4.224 0 0 1 4.228 4.232 4.236 4.236 0 0 1-4.228 4.228 4.247 4.247 0 0 1-4.237-4.228h.003zm-16.91 0a4.23 4.23 0 0 1 4.227-4.232 4.224 4.224 0 0 1 4.229 4.232 4.233 4.233 0 0 1-4.229 4.228 4.241 4.241 0 0 1-4.23-4.228h.003zm-16.914 0a4.231 4.231 0 0 1 4.227-4.232 4.22 4.22 0 0 1 4.229 4.232 4.233 4.233 0 0 1-4.229 4.228 4.243 4.243 0 0 1-4.23-4.228h.003z"
@@ -602,61 +498,7 @@ const InstafuckChart = (props: any) => (
         fontSize={14}
         fill="#fff"
       >
-        C
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 723.548 611.068)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        lie
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 736.155 611.068)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        n
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 743.221 611.068)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        t selects
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 713.936 631.468)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        favourite ging
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 789.084 631.468)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        r
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 793.423 631.468)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        .
+        {props.lang.instafuckStep3}
       </text>
       <text
         transform="matrix(.999 0 0 .999 288.784 1239.147)"
@@ -683,115 +525,7 @@ const InstafuckChart = (props: any) => (
         fontSize={14}
         fill="#fff"
       >
-        GG
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 300.263 674.985)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        C
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 309.806 674.985)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        oin se
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 341.091 674.985)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        n
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 348.157 674.985)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        t to
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 276.981 695.384)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        esc
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 294.372 695.384)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        r
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 299.032 695.384)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        ow to
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 331.871 695.384)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        P
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 339.706 695.384)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        A
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 348.269 695.384)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        Y N
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 370.222 695.384)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        O
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 381.513 695.384)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        W!
+        {props.lang.instafuckStep4}
       </text>
       <text
         transform="matrix(.999 0 0 .999 240.836 692.296)"
@@ -809,124 +543,7 @@ const InstafuckChart = (props: any) => (
         fontSize={14}
         fill="#fff"
       >
-        T
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 656.581 986.794)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        h
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 663.689 986.794)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        r
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 668.348 986.794)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        ough our scanning
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 649.865 1007.193)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        p
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 656.721 1007.193)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        r
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 661.38 1007.193)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        ocess funds will be
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 649.865 1027.593)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        r
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 655.125 1027.593)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        eleased f
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 702.152 1027.593)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        r
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 706.811 1027.593)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        om esc
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 744.7 1027.593)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        r
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 749.359 1027.593)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        ow
-      </text>
-      <text
-        transform="matrix(.999 0 0 .999 649.865 1047.993)"
-        fontFamily="Open Sans"
-        fontWeight={400}
-        fontSize={14}
-        fill="#fff"
-      >
-        to begin the date.
+        {props.lang.instafuckStep5}
       </text>
       <path
         d="M182.393 870.482a4.232 4.232 0 0 1 4.229-4.23 4.233 4.233 0 0 1 4.229 4.23 4.221 4.221 0 0 1-4.229 4.226 4.223 4.223 0 0 1-4.229-4.226zm0-16.919a4.224 4.224 0 0 1 4.229-4.229 4.223 4.223 0 0 1 4.229 4.229 4.225 4.225 0 0 1-4.229 4.231 4.222 4.222 0 0 1-4.229-4.231zm0-16.913a4.228 4.228 0 0 1 1.237-2.992 4.228 4.228 0 0 1 2.992-1.237 4.226 4.226 0 0 1 4.229 4.229 4.22 4.22 0 0 1-4.229 4.227 4.221 4.221 0 0 1-4.229-4.227zm0-16.912a4.218 4.218 0 0 1 4.229-4.227 4.225 4.225 0 0 1 4.229 4.227 4.229 4.229 0 0 1-1.237 2.993 4.228 4.228 0 0 1-2.992 1.237 4.225 4.225 0 0 1-4.229-4.23zm0-16.917a4.224 4.224 0 0 1 4.229-4.227 4.22 4.22 0 0 1 4.229 4.227 4.225 4.225 0 0 1-4.229 4.23 4.228 4.228 0 0 1-4.229-4.23zm0-16.911a4.221 4.221 0 0 1 4.229-4.23 4.222 4.222 0 0 1 4.229 4.23 4.219 4.219 0 0 1-4.229 4.223 4.22 4.22 0 0 1-4.229-4.223zm0-16.915a4.231 4.231 0 0 1 4.229-4.228 4.231 4.231 0 0 1 4.229 4.228 4.227 4.227 0 0 1-4.229 4.227 4.223 4.223 0 0 1-4.229-4.227zm0-16.918a4.232 4.232 0 0 1 4.229-4.227 4.233 4.233 0 0 1 4.229 4.227 4.228 4.228 0 0 1-4.229 4.234 4.23 4.23 0 0 1-4.229-4.234zm0-16.913a4.232 4.232 0 0 1 4.229-4.227 4.233 4.233 0 0 1 4.229 4.227 4.225 4.225 0 0 1-4.229 4.23 4.228 4.228 0 0 1-4.229-4.23zm0-16.913a4.234 4.234 0 0 1 4.229-4.23 4.234 4.234 0 0 1 4.229 4.23 4.222 4.222 0 0 1-4.229 4.231 4.221 4.221 0 0 1-4.229-4.231zm0-16.917a4.221 4.221 0 0 1 4.229-4.228 4.226 4.226 0 0 1 4.229 4.228 4.222 4.222 0 0 1-4.229 4.231 4.226 4.226 0 0 1-4.229-4.231zm0-16.914a4.221 4.221 0 0 1 4.229-4.227 4.225 4.225 0 0 1 4.229 4.227 4.229 4.229 0 0 1-1.237 2.993 4.228 4.228 0 0 1-2.992 1.237 4.225 4.225 0 0 1-4.229-4.23zm0-33.826a4.233 4.233 0 0 1 4.229-4.23 4.233 4.233 0 0 1 4.229 4.23 4.224 4.224 0 0 1-4.229 4.227 4.218 4.218 0 0 1-4.229-4.224v-.003zm0-16.917a4.231 4.231 0 0 1 4.229-4.228 4.231 4.231 0 0 1 4.229 4.228 4.227 4.227 0 0 1-4.229 4.232 4.224 4.224 0 0 1-4.229-4.232z"
