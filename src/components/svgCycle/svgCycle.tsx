@@ -174,34 +174,7 @@ const Cycle = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      GINGR LI
-      <tspan x={42.613} y={0} letterSpacing="-.003em">
-        K
-      </tspan>
-      <tspan x={49.205} y={0} letterSpacing="0em">
-        E
-      </tspan>
-      <tspan x={57.385} y={0} letterSpacing="-.007em">
-        T
-      </tspan>
-      <tspan x={62.379} y={0}>
-        O
-      </tspan>
-      <tspan x={72.701} y={0} letterSpacing="-.005em">
-        W
-      </tspan>
-      <tspan x={81.739} y={0}>
-        ORK
-      </tspan>
-      <tspan x={0} y={14.443}>
-        INDEPENDENT
-      </tspan>
-      <tspan x={72.651} y={14.443} letterSpacing="-.049em">
-        L
-      </tspan>
-      <tspan x={77.261} y={14.443}>
-        Y
-      </tspan>
+      {props.lang.ginrgsLikeToWorkIndependently}
     </text>
     <text
       transform="translate(666.436 470.502)"
@@ -210,10 +183,7 @@ const Cycle = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      GINGR
-      <tspan x={0} y={20.798}>
-        POP N GO
-      </tspan>
+      {props.lang.gingrPopNGo}
     </text>
     <text
       transform="translate(666.436 513.987)"
@@ -222,19 +192,7 @@ const Cycle = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      <tspan letterSpacing="-.005em">A</tspan>
-      <tspan x={6.652} y={0} letterSpacing="-.003em">
-        C
-      </tspan>
-      <tspan x={13.537} y={0} letterSpacing="0em">
-        CESS
-      </tspan>
-      <tspan x={39.591} y={0} letterSpacing="-.007em">
-        T
-      </tspan>
-      <tspan x={44.586} y={0}>
-        O RENT ROOMS
-      </tspan>
+      <tspan letterSpacing="-.005em">{props.lang.accessToRentRooms}</tspan>
     </text>
     <text
       transform="translate(495.118 313.419)"
@@ -243,25 +201,7 @@ const Cycle = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      SIGN UP
-      <tspan x={41.38} y={0} letterSpacing="-.003em">
-        W
-      </tspan>
-      <tspan x={50.438} y={0} letterSpacing="0em">
-        ITH
-      </tspan>
-      <tspan x={0} y={14.443}>
-        GINGR P
-      </tspan>
-      <tspan x={40.329} y={14.443} letterSpacing=".032em">
-        L
-      </tspan>
-      <tspan x={45.758} y={14.443} letterSpacing="-.037em">
-        A
-      </tspan>
-      <tspan x={52.087} y={14.443}>
-        TFORM
-      </tspan>
+      {props.lang.signUpWithGingrPlatform}
     </text>
     <text
       fontSize={10.11}
@@ -270,37 +210,7 @@ const Cycle = (props: any) => (
       fontWeight={700}
     >
       <tspan x={275.091} y={455.281} letterSpacing="-.003em">
-        C
-      </tspan>
-      <tspan x={281.976} y={455.281}>
-        ONN
-      </tspan>
-      <tspan x={305.694} y={455.281} letterSpacing="-.003em">
-        E
-      </tspan>
-      <tspan x={311.608} y={455.281} letterSpacing="0em">
-        CT
-      </tspan>
-      <tspan x={325.823} y={455.281} letterSpacing="-.007em">
-        T
-      </tspan>
-      <tspan x={330.818} y={455.281}>
-        O A SAFE
-      </tspan>
-      <tspan x={312.842} y={469.723} letterSpacing="-.005em">
-        W
-      </tspan>
-      <tspan x={321.88} y={469.723}>
-        ORKS
-      </tspan>
-      <tspan x={348.803} y={469.723} letterSpacing="-.039em">
-        P
-      </tspan>
-      <tspan x={354.394} y={469.723} letterSpacing="-.005em">
-        A
-      </tspan>
-      <tspan x={361.047} y={469.723}>
-        CE
+        {props.lang.connectToASafeWorkspace}
       </tspan>
     </text>
     <text
@@ -310,19 +220,7 @@ const Cycle = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      GINGR
-      <tspan x={-28.095} y={20.798} letterSpacing="-.003em">
-        C
-      </tspan>
-      <tspan x={-16.292} y={20.798}>
-        ONN
-      </tspan>
-      <tspan x={24.368} y={20.798} letterSpacing="-.003em">
-        E
-      </tspan>
-      <tspan x={34.507} y={20.798}>
-        CT
-      </tspan>
+      {props.lang.gingrConnect}
     </text>
     <path
       d="M364.218 561.875v9.085c0 1.458-.731 2.23-2.178 2.172a16.923 16.923 0 0 1-3.793-.361 7.384 7.384 0 0 1-5.35-7.119 701.811 701.811 0 0 1 0-7.678 7.581 7.581 0 0 1 7.5-7.5h1.826a1.886 1.886 0 0 1 2 2.008c-.001 3.133-.005 6.253-.005 9.393zM394.481 561.814v-9.151c0-1.454.727-2.22 2.172-2.169a17.242 17.242 0 0 1 3.788.354 7.371 7.371 0 0 1 5.354 7.12 516.05 516.05 0 0 1 0 7.67 7.569 7.569 0 0 1-7.489 7.5q-.916.014-1.829 0a1.88 1.88 0 0 1-2-2c-.001-3.109.004-6.211.004-9.324zM358.807 548.017a22.577 22.577 0 0 1 41.084.013c-1.281 0-2.6.014-3.91-.024-.179-.007-.4-.265-.525-.458a18.921 18.921 0 0 0-32.143-.086 1 1 0 0 1-1.012.576c-1.173-.053-2.35-.021-3.494-.021zM394.289 575.59c1.146.8 2.413.589 3.689.629a7.519 7.519 0 0 1-7.318 5.645c-1.16.009-2.323.033-3.481-.006a.75.75 0 0 0-.83.525 5.657 5.657 0 1 1-.043-4.873.906.906 0 0 0 1.016.612c.9-.037 1.812-.049 2.714 0a4.043 4.043 0 0 0 4.253-2.532z"
@@ -343,19 +241,10 @@ const Cycle = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      ES
-      <tspan x={11.424} y={0} letterSpacing="-.038em">
-        T
-      </tspan>
-      <tspan x={16.105} y={0} letterSpacing="0em">
-        ABLISHMENT &
-      </tspan>
+      {props.lang.establishment} &
       <tspan letterSpacing="-.005em">
         <tspan x={47.001} y={14.443}>
-          A
-        </tspan>
-        <tspan x={53.654} y={14.443} letterSpacing="0em">
-          GENCY
+          {props.lang.agency}
         </tspan>
       </tspan>
     </text>
@@ -366,38 +255,7 @@ const Cycle = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      DEPOSIT OF FUNDS ON
-      <tspan x={-7.067} y={14.443}>
-        SE
-      </tspan>
-      <tspan x={4.357} y={14.443} letterSpacing="-.021em">
-        X
-      </tspan>
-      <tspan x={10.534} y={14.443} letterSpacing="-.022em">
-        -
-      </tspan>
-      <tspan x={14.042} y={14.443} letterSpacing="-.005em">
-        W
-      </tspan>
-      <tspan x={23.081} y={14.443}>
-        OR
-      </tspan>
-      <tspan x={37.902} y={14.443} letterSpacing="-.003em">
-        K
-      </tspan>
-      <tspan x={44.494} y={14.443}>
-        ERS
-      </tspan>
-      <tspan x={64.886} y={14.443} letterSpacing="-.005em">
-        A
-      </tspan>
-      <tspan x={71.539} y={14.443} letterSpacing="-.003em">
-        CC
-      </tspan>
-      <tspan x={85.309} y={14.443}>
-        OUNT
-      </tspan>
-      <tspan x={111.312} y={28.886} />
+      {props.lang.depositOfFundsOnSexWorkersAccount}
     </text>
     <text
       transform="translate(66.024 721.271)"
@@ -406,7 +264,7 @@ const Cycle = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      <tspan>GINGR BANK</tspan>
+      <tspan>{props.lang.gingrBank}</tspan>
     </text>
     <text
       transform="translate(601.066 721.157)"
@@ -415,7 +273,7 @@ const Cycle = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      CLIENT
+      {props.lang.client}
     </text>
     <text
       transform="translate(0 487.292)"
@@ -424,52 +282,7 @@ const Cycle = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      SUPPORT AND
-      <tspan x={71.053} y={0} letterSpacing="-.003em">
-        C
-      </tspan>
-      <tspan x={77.938} y={0}>
-        ONSU
-      </tspan>
-      <tspan x={106.59} y={0} letterSpacing="-.04em">
-        L
-      </tspan>
-      <tspan x={111.292} y={0}>
-        TING,
-      </tspan>
-      <tspan x={58.122} y={14.443}>
-        REINT
-      </tspan>
-      <tspan x={86.845} y={14.443} letterSpacing="-.003em">
-        E
-      </tspan>
-      <tspan x={92.759} y={14.443}>
-        GR
-      </tspan>
-      <tspan x={106.691} y={14.443} letterSpacing="-.037em">
-        A
-      </tspan>
-      <tspan x={113.02} y={14.443} letterSpacing="0em">
-        TION
-      </tspan>
-      <tspan x={25.416} y={28.886} letterSpacing="-.007em">
-        T
-      </tspan>
-      <tspan x={30.411} y={28.886}>
-        O
-      </tspan>
-      <tspan x={40.733} y={28.886} letterSpacing="-.007em">
-        O
-      </tspan>
-      <tspan x={48.75} y={28.886} letterSpacing="0em">
-        THER JOB MAR
-      </tspan>
-      <tspan x={119.55} y={28.886} letterSpacing="-.003em">
-        K
-      </tspan>
-      <tspan x={126.143} y={28.886} letterSpacing="0em">
-        ET
-      </tspan>
+      {props.lang.supportAndConsulting}
     </text>
     <text
       transform="translate(30.282 465.613)"
@@ -478,7 +291,7 @@ const Cycle = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      <tspan>GINGR CARE</tspan>
+      <tspan>{props.lang.gingrCare}</tspan>
     </text>
     <text
       transform="translate(63.729 237.073)"
@@ -487,7 +300,7 @@ const Cycle = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      EXIT
+      {props.lang.exit}
     </text>
     <text
       transform="translate(557.65 46.699)"
@@ -496,22 +309,7 @@ const Cycle = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      B
-      <tspan x={10.693} y={0} letterSpacing=".032em">
-        L
-      </tspan>
-      <tspan x={20} y={0} letterSpacing="-.005em">
-        A
-      </tspan>
-      <tspan x={31.404} y={0} letterSpacing="0em">
-        CK MAR
-      </tspan>
-      <tspan x={96.605} y={0} letterSpacing="-.003em">
-        K
-      </tspan>
-      <tspan x={107.906} y={0} letterSpacing="0em">
-        ET
-      </tspan>
+      {props.lang.blackMarket}
     </text>
     <path
       d="M484.551 78.7a101.162 101.162 0 0 1-24.579-3.1 27.108 27.108 0 0 1-4.9-1.88c-1.687-.839-1.656-1.739-.026-2.7a29.563 29.563 0 0 1 7.444-2.82c2.865-.784 5.761-1.44 8.65-2.135a1.328 1.328 0 0 1 .748.028 32.61 32.61 0 0 0 10.1 1.892 46.1 46.1 0 0 0 14.4-1.215 1.711 1.711 0 0 0 .369-.111 5.569 5.569 0 0 1 4.332-.2c3.991 1.163 8.007 2.232 11.984 3.438a10.879 10.879 0 0 1 2.859 1.512c.844.573.858 1.25.01 1.8a15.439 15.439 0 0 1-3.158 1.606 62.287 62.287 0 0 1-12.546 2.785 114.889 114.889 0 0 1-15.687 1.1zM497.293 60.36c-6.437 2.348-17.629 1.821-25.191.06.218-1.331.374-2.688.666-4.012.845-3.831 1.708-7.66 2.648-11.469a12.1 12.1 0 0 1 1.231-2.83 1.3 1.3 0 0 1 2.073-.6 8.982 8.982 0 0 1 1.718 1.417c.578.553 1.055 1.213 1.648 1.746a2.972 2.972 0 0 0 4.036.285c.806-.554 1.517-1.245 2.267-1.877.512-.434.994-.914 1.539-1.3 1.239-.892 2.1-.707 2.736.671a18.882 18.882 0 0 1 1.241 3.412c1.167 4.814 2.263 9.646 3.388 14.497zM484.811 112.72a15.567 15.567 0 0 1 .142-5.364c1.062-5.532 3.923-10.118 7.576-14.275a56.84 56.84 0 0 1 7.615-7.062 2.274 2.274 0 0 0 .788-1.161c.395-1.723.7-3.468 1.062-5.341 1.838-.247 3.9-.531 5.976-.786a1.007 1.007 0 0 1 .638.186q5.8 4.023 11.587 8.068a1.983 1.983 0 0 1 .24.257c-6.46 1.12-12.936 1.949-19.083 4.9l7.513 3.575c-10.434 2.23-18.743 7.297-24.054 17.003zM453.027 87.431c2.156-1.852 4.189-3.605 6.226-5.356 1.117-.96 2.216-1.945 3.365-2.866a1.635 1.635 0 0 1 1.085-.333c1.564.175 3.121.432 4.681.648a.952.952 0 0 1 .84.649A49.135 49.135 0 0 0 484.6 99.981a1.135 1.135 0 0 1 .462 1.477c-.419 1.355-.761 2.735-1.137 4.1a.9.9 0 0 1-.105.168c-6.4-3.208-12.691-6.694-19.663-8.984l6.281-5.442c-5.759-1.636-11.315-3.526-17.411-3.869z"
@@ -534,13 +332,7 @@ const Cycle = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      VE
-      <tspan x={12.647} y={0} letterSpacing=".013em">
-        T
-      </tspan>
-      <tspan x={17.844} y={0}>
-        TET AND VERIFIED
-      </tspan>
+      {props.lang.vettedAndVerified}
     </text>
     <text
       transform="translate(557.596 75.598)"
@@ -549,126 +341,27 @@ const Cycle = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      - HUMAN TRAFFIC
-      <tspan x={86.572} y={0} letterSpacing="-.003em">
-        K
-      </tspan>
-      <tspan x={93.164} y={0}>
-        ING
-      </tspan>
+      - {props.lang.humanTrafficking}
       <tspan x={0} y={20.22}>
-        - NO PR
-      </tspan>
-      <tspan x={36.82} y={20.22} letterSpacing="-.007em">
-        O
-      </tspan>
-      <tspan x={44.838} y={20.22}>
-        T
-      </tspan>
-      <tspan x={49.903} y={20.22} letterSpacing="-.003em">
-        E
-      </tspan>
-      <tspan x={55.817} y={20.22}>
-        CTION OF
-      </tspan>
-      <tspan x={105.124} y={20.22} letterSpacing="-.01em">
-        A
-      </tspan>
-      <tspan x={111.726} y={20.22}>
-        UTHORI
-      </tspan>
-      <tspan x={149.82} y={20.22} letterSpacing=".033em">
-        T
-      </tspan>
-      <tspan x={155.219} y={20.22}>
-        Y
+        - {props.lang.noProtectionOfAuthority}
       </tspan>
       <tspan x={0} y={40.44}>
-        - GET ARRESTED
+        - {props.lang.getArrested}
       </tspan>
       <tspan x={0} y={60.661}>
-        - EASY VICTIM OF CRIMES
+        - {props.lang.easyVictimsOfCrimes}
       </tspan>
       <tspan x={0} y={80.881}>
-        - N
-      </tspan>
-      <tspan x={13.78} y={80.881} letterSpacing="-.007em">
-        O
-      </tspan>
-      <tspan x={21.797} y={80.881}>
-        T R
-      </tspan>
-      <tspan x={35.83} y={80.881} letterSpacing="-.003em">
-        E
-      </tspan>
-      <tspan x={41.744} y={80.881}>
-        CEIVING THE FUNDS
+        - {props.lang.notReceivingTheFunds}
       </tspan>
       <tspan x={0} y={101.102}>
-        - NO SYSTEM
-      </tspan>
-      <tspan x={63.025} y={101.102} letterSpacing="-.007em">
-        T
-      </tspan>
-      <tspan x={68.021} y={101.102}>
-        O TR
-      </tspan>
-      <tspan x={90.141} y={101.102} letterSpacing="-.005em">
-        A
-      </tspan>
-      <tspan x={96.793} y={101.102} letterSpacing="0em">
-        CK EVENTS
+        - {props.lang.noSystemToTrackEvents}
       </tspan>
       <tspan x={0} y={121.322}>
-        - NO
-      </tspan>
-      <tspan x={24.103} y={121.322} letterSpacing="-.005em">
-        W
-      </tspan>
-      <tspan x={33.141} y={121.322}>
-        OR
-      </tspan>
-      <tspan x={47.962} y={121.322} letterSpacing="-.003em">
-        K
-      </tspan>
-      <tspan x={54.554} y={121.322}>
-        ING R
-      </tspan>
-      <tspan x={81.699} y={121.322} letterSpacing="-.003em">
-        E
-      </tspan>
-      <tspan x={87.613} y={121.322}>
-        GU
-      </tspan>
-      <tspan x={102.081} y={121.322} letterSpacing=".032em">
-        L
-      </tspan>
-      <tspan x={107.51} y={121.322} letterSpacing="-.037em">
-        A
-      </tspan>
-      <tspan x={113.839} y={121.322}>
-        TIONS
+        - {props.lang.noWorkingRegulations}
       </tspan>
       <tspan x={0} y={141.542}>
-        - GENERAL
-      </tspan>
-      <tspan x={51.409} y={141.542} letterSpacing="-.049em">
-        L
-      </tspan>
-      <tspan x={56.02} y={141.542}>
-        Y A
-      </tspan>
-      <tspan x={73.085} y={141.542} letterSpacing="-.006em">
-        D
-      </tspan>
-      <tspan x={80.486} y={141.542} letterSpacing="0em">
-        ANGEROUS
-      </tspan>
-      <tspan x={137.951} y={141.542} letterSpacing="-.005em">
-        W
-      </tspan>
-      <tspan x={146.99} y={141.542}>
-        ORLD
+        - {props.lang.generallyADangerousWorld}
       </tspan>
     </text>
     <path
@@ -685,7 +378,7 @@ const Cycle = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      ENTER
+      {props.lang.enter}
     </text>
   </svg>
 );
