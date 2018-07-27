@@ -6,7 +6,10 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 // Import locale strings
 import { strings } from './components/localization';
 
+// import global css
 import './App.css';
+
+// import components
 import Section from './components/section/Section';
 import Top from './containers/top/Top';
 import Header from './components/header/Header';
@@ -47,8 +50,7 @@ class App extends React.Component<any, any> {
   }
 
   // handle state change when language is changed
-  handleLangChange(langCode: any, e: any) {
-    // e.preventDefault();
+  handleLangChange(langCode: any) {
     if (langCode) {
       console.warn(langCode);
       strings.setLanguage(langCode.value);
@@ -63,7 +65,7 @@ class App extends React.Component<any, any> {
       <div className="App">
         <BackToTop />
         <Header lang={this.state.lang} langSelect={this.handleLangChange}>
-          <Nav />
+          <Nav lang={this.state.lang} />
         </Header>
         <ScrollableAnchor id={'section1'}>
           <Section bg="#eaeaea">
@@ -74,168 +76,168 @@ class App extends React.Component<any, any> {
           <PressReports lang={this.state.lang} />
         </Section>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section2'}>
+          <ScrollableAnchor id={'strong-solution'}>
             <Section bg="#f39fff">
               <StrongSolution lang={this.state.lang} />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section3'}>
+          <ScrollableAnchor id={'reasons-to-invest'}>
             <Section bg="#f39fff">
               <ReasonsToInvest lang={this.state.lang} />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section4'}>
+          <ScrollableAnchor id={'download'}>
             <Section bg="white" small={true}>
               <Download lang={this.state.lang} />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section5'}>
+          <ScrollableAnchor id={'what-is-gingr'}>
             <Section bg="#812a7b">
               <WhatIsGingr lang={this.state.lang} />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section6'}>
+          <ScrollableAnchor id={'beta'}>
             <Section bg="#de9dff">
               <Beta lang={this.state.lang} />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section7'}>
+          <ScrollableAnchor id={'instafuck'}>
             <Section bg="#802e7a">
               <Instafuck lang={this.state.lang} />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section8'}>
+          <ScrollableAnchor id={'hookup'}>
             <Section bg="#de9dff">
               <HookUp lang={this.state.lang} />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section9'}>
+          <ScrollableAnchor id={'blockchain'}>
             <Section bg="#802e7a">
               <Blockchain lang={this.state.lang} />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section10'}>
+          <ScrollableAnchor id={'flow'}>
             <Section bg="#592356">
               <Flow lang={this.state.lang} />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section11'}>
+          <ScrollableAnchor id={'ico-details'}>
             <Section bg="#4d346a">
               <IcoDetails lang={this.state.lang} />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section12'}>
+          <ScrollableAnchor id={'ico-details-2'}>
             <Section bg="#802e7a" small={true}>
               <IcoDetails2 lang={this.state.lang} />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section13'}>
+          <ScrollableAnchor id={'ico-details-3'}>
             <Section bg="#4d346a">
               <IcoDetails3 lang={this.state.lang} />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section14'}>
+          <ScrollableAnchor id={'reasons-why'}>
             <Section bg="#591d55">
               <ReasonsWhy lang={this.state.lang} />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section15'}>
+          <ScrollableAnchor id={'revolutionary-solution'}>
             <Section bg="#802e7a">
               <RevolutionarySolution lang={this.state.lang} />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section16'}>
+          <ScrollableAnchor id={'roadmap'}>
             <Section bg="#f29eff">
               <Roadmap lang={this.state.lang} />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section17'}>
+          <ScrollableAnchor id={'global-leader'}>
             <Section bg="#802e7a" small={true}>
               <GlobalLeader lang={this.state.lang} />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section18'}>
+          <ScrollableAnchor id={'global-leader-2'}>
             <Section bg="#f29eff" small={true}>
               <GlobalLeader2 lang={this.state.lang} />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section19'}>
+          <ScrollableAnchor id={'global-leader-3'}>
             <Section bg="#802e7a">
               <GlobalLeader3 />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section20'}>
+          <ScrollableAnchor id={'team'}>
             <Section bg="#592356" small={true}>
               <Team lang={this.state.lang} />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section21'}>
+          <ScrollableAnchor id={'team-ceo'}>
             <Section bg="#802e7a" small={true}>
               <TeamCEO />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section22'}>
+          <ScrollableAnchor id={'team-all'}>
             <Section bg="#592356">
               <TeamAll />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section23'}>
+          <ScrollableAnchor id={'feedback'}>
             <Section bg="#4d346a" small={true}>
               <Feedback lang={this.state.lang} />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section24'}>
+          <ScrollableAnchor id={'contact-us'}>
             <Section bg="#f29eff">
               <ContactUs lang={this.state.lang} />
             </Section>
           </ScrollableAnchor>
         </LazyLoad>
         <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'section25'}>
+          <ScrollableAnchor id={'footer'}>
             <Section bg="#541252">
               <Footer lang={this.state.lang} />
             </Section>
