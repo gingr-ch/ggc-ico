@@ -204,8 +204,8 @@ class Footer extends React.Component<any, any> {
                     flex: '1 1 50%',
                   }}
                 >
-                  {locations.slice(0, 15).map(location => (
-                    <div className="locations-item flex-row">
+                  {locations.slice(0, 15).map((location, i) => (
+                    <div key={i} className="locations-item flex-row">
                       <div>{location.country}</div>
                       <div>+ {location.phone}</div>
                     </div>
@@ -219,8 +219,8 @@ class Footer extends React.Component<any, any> {
                     flex: '1 1 50%',
                   }}
                 >
-                  {locations.slice(15).map(location => (
-                    <div className="locations-item flex-row">
+                  {locations.slice(15).map((location, i) => (
+                    <div key={i} className="locations-item flex-row">
                       <div>{location.country}</div>
                       <div>+ {location.phone}</div>
                     </div>

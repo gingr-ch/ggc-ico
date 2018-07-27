@@ -32,7 +32,7 @@ const options = [
   { value: 'ko', iso: 'kr', name: 'Korean' },
   { value: 'lt', iso: 'lt', name: 'Lithuanian' },
   { value: 'ms', iso: 'ms', name: 'Malay' },
-  { value: 'nl', iso: 'nl', name: 'Duth' },
+  { value: 'nl', iso: 'nl', name: 'Dutch' },
   { value: 'no', iso: 'no', name: 'Norwegian' },
   { value: 'pl', iso: 'pl', name: 'Polish' },
   { value: 'pt', iso: 'pt', name: 'Portuguese' },
@@ -83,7 +83,7 @@ class LanguageChanger extends React.Component<any, LanguageChangerProps> {
     //
     //   return strings.getLanguage();
     // }
-
+    console.warn(this.props.lang);
     return (
       <div>
         <SelectSearch
@@ -93,7 +93,7 @@ class LanguageChanger extends React.Component<any, LanguageChangerProps> {
           height={172}
           options={options}
           renderOption={renderCountry}
-          value="en"
+          value={this.props.lang._language}
           onChange={this.props.langSelect}
         />
       </div>

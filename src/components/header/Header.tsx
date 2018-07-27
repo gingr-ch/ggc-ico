@@ -116,7 +116,10 @@ class Header extends React.Component<any, any> {
             </Button>
           </div>
 
-          <LanguageChanger langSelect={this.props.langSelect} />
+          <LanguageChanger
+            lang={this.props.lang}
+            langSelect={this.props.langSelect}
+          />
 
           <div className="nav-mobile">
             <div className="nm-bar nm-bar--1" />
