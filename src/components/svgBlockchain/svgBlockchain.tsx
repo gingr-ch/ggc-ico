@@ -617,25 +617,13 @@ const BlockchainChart = (props: any) => (
         transform="translate(287.582 25.75)"
         style={{ isolation: 'isolate' }}
       >
-        - CRYPTO & FI
-        <tspan x={48.703} y={0} letterSpacing="-.04em">
-          A
-        </tspan>
-        <tspan x={53.287} y={0} letterSpacing="0em">
-          T ACCOUNTS
-        </tspan>
+        - {props.lang.cryptoAndFiat}
       </text>
       <text
         transform="translate(287.582 36.75)"
         style={{ isolation: 'isolate' }}
       >
-        - GGC
-        <tspan x={22.104} y={0} letterSpacing="-.04em">
-          A
-        </tspan>
-        <tspan x={26.688} y={0}>
-          TM CARD
-        </tspan>
+        - {props.lang.ggcATMCard}
       </text>
       <text
         transform="translate(287.582 47.75)"
@@ -654,40 +642,13 @@ const BlockchainChart = (props: any) => (
         transform="translate(402.249 120.083)"
         style={{ isolation: 'isolate' }}
       >
-        - ES
-        <tspan x={12.848} y={0} letterSpacing="-.04em">
-          T
-        </tspan>
-        <tspan x={16.92} y={0}>
-          ABLISHMENT ROOM REN
-        </tspan>
-        <tspan x={105.982} y={0} letterSpacing="-.04em">
-          T
-        </tspan>
-        <tspan x={110.054} y={0}>
-          ALS
-        </tspan>
+        - {props.lang.establishmentRoomRentals}
       </text>
       <text
         transform="translate(402.249 131.083)"
         style={{ isolation: 'isolate' }}
       >
-        - PRI
-        <tspan x={16.184} y={0} letterSpacing="-.03em">
-          V
-        </tspan>
-        <tspan x={20.879} y={0} letterSpacing="-.04em">
-          A
-        </tspan>
-        <tspan x={25.463} y={0}>
-          TE ROOM REN
-        </tspan>
-        <tspan x={76.383} y={0} letterSpacing="-.04em">
-          T
-        </tspan>
-        <tspan x={80.455} y={0}>
-          ALS
-        </tspan>
+        - {props.lang.privateRoomRentals}
       </text>
     </g>
     <g
@@ -716,13 +677,7 @@ const BlockchainChart = (props: any) => (
       fill="#fff"
       fontFamily="Asap-Regular,Asap"
     >
-      - PICK
-      <tspan x={22.783} y={0} letterSpacing="-.04em">
-        T
-      </tspan>
-      <tspan x={26.855} y={0}>
-        AXI UBER SYSTEM
-      </tspan>
+      - {props.lang.pickTaxi}
     </text>
     <g
       style={{ isolation: 'isolate' }}
@@ -734,28 +689,13 @@ const BlockchainChart = (props: any) => (
         transform="translate(301.582 443.75)"
         style={{ isolation: 'isolate' }}
       >
-        - HEA
-        <tspan x={19.616} y={0} letterSpacing="-.05em">
-          L
-        </tspan>
-        <tspan x={23.088} y={0} letterSpacing="0em">
-          TH CHECK
-        </tspan>
+        - {props.lang.healthCheck}
       </text>
       <text
         transform="translate(301.582 454.75)"
         style={{ isolation: 'isolate' }}
       >
-        - CONSU
-        <tspan x={30.728} y={0} letterSpacing="-.05em">
-          L
-        </tspan>
-        <tspan x={34.2} y={0} letterSpacing="-.04em">
-          T
-        </tspan>
-        <tspan x={38.271} y={0} letterSpacing="0em">
-          ANCY
-        </tspan>
+        - {props.lang.consultancy}
       </text>
     </g>
     <g
@@ -768,16 +708,7 @@ const BlockchainChart = (props: any) => (
         transform="translate(134.915 429.416)"
         style={{ isolation: 'isolate' }}
       >
-        - POP N GO RESER
-        <tspan x={64.679} y={0} letterSpacing="-.03em">
-          V
-        </tspan>
-        <tspan x={69.375} y={0} letterSpacing="-.04em">
-          A
-        </tspan>
-        <tspan x={73.959} y={0} letterSpacing="0em">
-          TION
-        </tspan>
+        - {props.lang.popNGoReservation}
       </text>
       <text
         transform="translate(134.915 440.416)"
@@ -789,13 +720,7 @@ const BlockchainChart = (props: any) => (
         transform="translate(134.915 451.416)"
         style={{ isolation: 'isolate' }}
       >
-        - D
-        <tspan x={10.04} y={0} letterSpacing="-.04em">
-          A
-        </tspan>
-        <tspan x={14.624} y={0} letterSpacing="0em">
-          TE / TIME
-        </tspan>
+        - {props.lang.dateTime}
       </text>
       <text
         transform="translate(134.915 462.416)"
@@ -820,19 +745,13 @@ const BlockchainChart = (props: any) => (
         transform="translate(18.582 357.75)"
         style={{ isolation: 'isolate' }}
       >
-        - ES
-        <tspan x={12.848} y={0} letterSpacing="-.04em">
-          T
-        </tspan>
-        <tspan x={16.92} y={0}>
-          ABLISHMENT
-        </tspan>
+        - {props.lang.establishment}
       </text>
       <text
         transform="translate(18.582 368.75)"
         style={{ isolation: 'isolate' }}
       >
-        - AGENCIES
+        - {props.lang.agencies}
       </text>
     </g>
     <text
@@ -842,13 +761,7 @@ const BlockchainChart = (props: any) => (
       fill="#fff"
       fontFamily="Asap-Regular,Asap"
     >
-      - VERIFIC
-      <tspan x={32.167} y={0} letterSpacing="-.04em">
-        A
-      </tspan>
-      <tspan x={36.751} y={0}>
-        TION
-      </tspan>
+      - {props.lang.verification}
     </text>
     <g
       style={{ isolation: 'isolate' }}
@@ -860,25 +773,13 @@ const BlockchainChart = (props: any) => (
         transform="translate(37.915 123.75)"
         style={{ isolation: 'isolate' }}
       >
-        - JOBS
-        <tspan x={24.208} y={0} letterSpacing="-.03em">
-          W
-        </tspan>
-        <tspan x={31.023} y={0}>
-          ANTED
-        </tspan>
+        - {props.lang.jobsWanted}
       </text>
       <text
         transform="translate(37.915 134.75)"
         style={{ isolation: 'isolate' }}
       >
-        - JOB
-        <tspan x={20.208} y={0} letterSpacing="-.03em">
-          V
-        </tspan>
-        <tspan x={24.903} y={0} letterSpacing="0em">
-          ACANCIES
-        </tspan>
+        - {props.lang.jobVacancies}
       </text>
     </g>
     <text
@@ -890,10 +791,7 @@ const BlockchainChart = (props: any) => (
       fontWeight={700}
       letterSpacing="-.03em"
     >
-      W
-      <tspan x={9.825} y={0} letterSpacing="0em">
-        ALLETS
-      </tspan>
+      {props.lang.wallets}
     </text>
     <text
       transform="translate(285.667 9.61)"
@@ -913,22 +811,10 @@ const BlockchainChart = (props: any) => (
       fontWeight={700}
     >
       <text
-        transform="translate(401.667 90.277)"
+        transform="translate(401.667 105.277)"
         style={{ isolation: 'isolate' }}
       >
-        GINGR
-      </text>
-      <text
-        transform="translate(401.667 103.877)"
-        style={{ isolation: 'isolate' }}
-      >
-        POP
-        <tspan x={24.929} y={0} letterSpacing="-.006em">
-          N
-        </tspan>
-        <tspan x={33.601} y={0}>
-          ’ GO
-        </tspan>
+        {props.lang.gingrPopNGo}
       </text>
     </g>
     <text
@@ -939,13 +825,7 @@ const BlockchainChart = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      EXTERNAL AP
-      <tspan x={72.267} y={0} letterSpacing="-.023em">
-        I
-      </tspan>
-      <tspan x={75.545} y={0} letterSpacing="0em">
-        s
-      </tspan>
+      {props.lang.externalAPIs}
     </text>
     <text
       transform="translate(396.333 333.944)"
@@ -955,7 +835,7 @@ const BlockchainChart = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      TRANSPORT
+      {props.lang.transport}
     </text>
     <g
       style={{ isolation: 'isolate' }}
@@ -968,13 +848,7 @@ const BlockchainChart = (props: any) => (
         transform="translate(301.333 412.61)"
         style={{ isolation: 'isolate' }}
       >
-        GINGR
-      </text>
-      <text
-        transform="translate(301.333 426.21)"
-        style={{ isolation: 'isolate' }}
-      >
-        CARE
+        {props.lang.gingrCare}
       </text>
     </g>
     <text
@@ -985,13 +859,7 @@ const BlockchainChart = (props: any) => (
       fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
       fontWeight={700}
     >
-      BOO
-      <tspan x={25.065} y={0} letterSpacing="-.003em">
-        K
-      </tspan>
-      <tspan x={32.437} y={0}>
-        INGS
-      </tspan>
+      {props.lang.bookings}
     </text>
     <g
       style={{ isolation: 'isolate' }}
@@ -1004,19 +872,7 @@ const BlockchainChart = (props: any) => (
         transform="translate(16.333 316.944)"
         style={{ isolation: 'isolate' }}
       >
-        SERVICES
-      </text>
-      <text
-        transform="translate(16.333 330.544)"
-        style={{ isolation: 'isolate' }}
-      >
-        PR
-        <tspan x={14.223} y={0} letterSpacing="-.005em">
-          O
-        </tspan>
-        <tspan x={23.211} y={0}>
-          VIDERS
-        </tspan>
+        {props.lang.serviceProviders}
       </text>
     </g>
     <text
@@ -1040,22 +896,7 @@ const BlockchainChart = (props: any) => (
         transform="translate(37.333 94.277)"
         style={{ isolation: 'isolate' }}
       >
-        GINGR
-      </text>
-      <text
-        transform="translate(37.333 107.877)"
-        style={{ isolation: 'isolate' }}
-      >
-        <tspan letterSpacing="-.003em">C</tspan>
-        <tspan x={7.699} y={0} letterSpacing="0em">
-          ONN
-        </tspan>
-        <tspan x={34.223} y={0} letterSpacing="-.003em">
-          E
-        </tspan>
-        <tspan x={40.837} y={0}>
-          CT
-        </tspan>
+        {props.lang.gingrConnect}
       </text>
     </g>
   </svg>
