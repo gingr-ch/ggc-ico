@@ -67,7 +67,7 @@ class App extends React.Component<any, any> {
         <Header lang={this.state.lang} langSelect={this.handleLangChange}>
           <Nav lang={this.state.lang} />
         </Header>
-        <ScrollableAnchor id={'section1'}>
+        <ScrollableAnchor id={'top'}>
           <Section bg="#eaeaea">
             <Top lang={this.state.lang} />
           </Section>
@@ -75,174 +75,174 @@ class App extends React.Component<any, any> {
         <Section bg="#812A7B" small={true}>
           <PressReports lang={this.state.lang} />
         </Section>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'strong-solution'}>
-            <Section bg="#f39fff">
+        <ScrollableAnchor id={'strong-solution'}>
+          <Section bg="#f39fff">
+            <LazyLoad offset={1000}>
               <StrongSolution lang={this.state.lang} />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'reasons-to-invest'}>
-            <Section bg="#f39fff">
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'reasons-to-invest'}>
+          <Section bg="#f39fff">
+            <LazyLoad offset={1000}>
               <ReasonsToInvest lang={this.state.lang} />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'download'}>
-            <Section bg="white" small={true}>
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'download'}>
+          <Section bg="white" small={true}>
+            <LazyLoad offset={1000}>
               <Download lang={this.state.lang} />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'what-is-gingr'}>
-            <Section bg="#812a7b">
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'what-is-gingr'}>
+          <Section bg="#812a7b">
+            <LazyLoad offset={1000}>
               <WhatIsGingr lang={this.state.lang} />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'beta'}>
-            <Section bg="#de9dff">
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'beta'}>
+          <Section bg="#de9dff">
+            <LazyLoad offset={1000}>
               <Beta lang={this.state.lang} />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'instafuck'}>
-            <Section bg="#802e7a">
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'instafuck'}>
+          <Section bg="#802e7a">
+            <LazyLoad offset={1000}>
               <Instafuck lang={this.state.lang} />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'hookup'}>
-            <Section bg="#de9dff">
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'hookup'}>
+          <Section bg="#de9dff">
+            <LazyLoad offset={1000}>
               <HookUp lang={this.state.lang} />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'blockchain'}>
-            <Section bg="#802e7a">
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'blockchain'}>
+          <Section bg="#802e7a">
+            <LazyLoad offset={1000}>
               <Blockchain lang={this.state.lang} />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'flow'}>
-            <Section bg="#592356">
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'flow'}>
+          <Section bg="#592356">
+            <LazyLoad offset={1000}>
               <Flow lang={this.state.lang} />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'ico-details'}>
-            <Section bg="#4d346a">
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'ico-details'}>
+          <Section bg="#4d346a">
+            <LazyLoad offset={1000}>
               <IcoDetails lang={this.state.lang} />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'ico-details-2'}>
-            <Section bg="#802e7a" small={true}>
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'ico-details-2'}>
+          <Section bg="#802e7a" small={true}>
+            <LazyLoad offset={1000}>
               <IcoDetails2 lang={this.state.lang} />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'ico-details-3'}>
-            <Section bg="#4d346a">
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'ico-details-3'}>
+          <Section bg="#4d346a">
+            <LazyLoad offset={1000}>
               <IcoDetails3 lang={this.state.lang} />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'reasons-why'}>
-            <Section bg="#591d55">
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'reasons-why'}>
+          <Section bg="#591d55">
+            <LazyLoad offset={1000}>
               <ReasonsWhy lang={this.state.lang} />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'revolutionary-solution'}>
-            <Section bg="#802e7a">
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'revolutionary-solution'}>
+          <Section bg="#802e7a">
+            <LazyLoad offset={1000}>
               <RevolutionarySolution lang={this.state.lang} />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'roadmap'}>
-            <Section bg="#f29eff">
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'roadmap'}>
+          <Section bg="#f29eff">
+            <LazyLoad offset={1000}>
               <Roadmap lang={this.state.lang} />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'global-leader'}>
-            <Section bg="#802e7a" small={true}>
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'global-leader'}>
+          <Section bg="#802e7a" small={true}>
+            <LazyLoad offset={1000}>
               <GlobalLeader lang={this.state.lang} />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'global-leader-2'}>
-            <Section bg="#f29eff" small={true}>
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'global-leader-2'}>
+          <Section bg="#f29eff" small={true}>
+            <LazyLoad offset={1000}>
               <GlobalLeader2 lang={this.state.lang} />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'global-leader-3'}>
-            <Section bg="#802e7a">
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'global-leader-3'}>
+          <Section bg="#802e7a">
+            <LazyLoad offset={1000}>
               <GlobalLeader3 />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'team'}>
-            <Section bg="#592356" small={true}>
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'team'}>
+          <Section bg="#592356" small={true}>
+            <LazyLoad offset={1000}>
               <Team lang={this.state.lang} />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'team-ceo'}>
-            <Section bg="#802e7a" small={true}>
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'team-ceo'}>
+          <Section bg="#802e7a" small={true}>
+            <LazyLoad offset={1000}>
               <TeamCEO />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'team-all'}>
-            <Section bg="#592356">
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'team-all'}>
+          <Section bg="#592356">
+            <LazyLoad offset={1000}>
               <TeamAll />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'feedback'}>
-            <Section bg="#4d346a" small={true}>
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'feedback'}>
+          <Section bg="#4d346a" small={true}>
+            <LazyLoad offset={1000}>
               <Feedback lang={this.state.lang} />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'contact-us'}>
-            <Section bg="#f29eff">
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'contact-us'}>
+          <Section bg="#f29eff">
+            <LazyLoad offset={1000}>
               <ContactUs lang={this.state.lang} />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
-        <LazyLoad offset={3000}>
-          <ScrollableAnchor id={'footer'}>
-            <Section bg="#541252">
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'footer'}>
+          <Section bg="#541252">
+            <LazyLoad offset={1000}>
               <Footer lang={this.state.lang} />
-            </Section>
-          </ScrollableAnchor>
-        </LazyLoad>
+            </LazyLoad>
+          </Section>
+        </ScrollableAnchor>
       </div>
     );
   }
