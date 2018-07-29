@@ -1,5 +1,5 @@
 import * as React from 'react';
-import ReactPlayer from 'react-player';
+import VimeoPlayer from 'react-player';
 import classNames from 'classnames';
 
 import './Top.css';
@@ -127,7 +127,7 @@ class Top extends React.Component<any, any> {
             zIndex: 0,
           }}
         >
-          <ReactPlayer
+          <VimeoPlayer
             url="https://vimeo.com/194665559"
             width="100%"
             height="100%"
