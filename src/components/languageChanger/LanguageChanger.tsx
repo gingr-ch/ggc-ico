@@ -110,7 +110,7 @@ class LanguageChanger extends React.Component<any, LanguageChangerProps> {
     //
     //   return strings.getLanguage();
     // }
-    console.warn(this.flagInput);
+    // console.warn(this.flagInput);
     return (
       <div>
         <SelectSearch
