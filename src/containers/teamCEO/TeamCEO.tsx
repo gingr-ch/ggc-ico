@@ -5,23 +5,45 @@ import 'rc-dialog/assets/index.css';
 import './TeamCEO.css';
 
 const image = require('../../assets/img/teamCEO.jpg');
+const ceoFlag = require('../../assets/img/flags/switzerland.png');
+
+const list = [
+  {
+    id: 1,
+    img: image,
+    flag: ceoFlag,
+    name: 'Sergio Rigert',
+    role: 'CEO & FOUNDER',
+    description:
+      'Sergio’s dream is to make the world a better place. With a natural ability to lead his team and emulate his passion for the future, his infectious, funny, honest, and straight forward personality attracts top level people who delight in working with him. Sergio has always given 100 per cent to the project. He is not afraid to push the boundaries both of himself, his team, and in fact the views of the entire world. He constantly questions the status quo and is not afraid to challenge it.',
+  },
+];
 
 class TeamCEO extends React.Component {
   state = {
     visible: false,
-    width: 600,
+    width: 860,
     destroyOnClose: true,
     center: true,
     mousePosition: { x: 0, y: 0 },
+    profile: {
+      id: 0,
+      img: '',
+      flag: '',
+      name: '',
+      role: '',
+      description: '',
+    },
   };
 
-  onClick = (e: any) => {
+  onClick = (item: object, e: any) => {
     this.setState({
       mousePosition: {
         x: e.pageX,
         y: e.pageY,
       },
       visible: true,
+      profile: item,
     });
   };
 
@@ -64,8 +86,59 @@ class TeamCEO extends React.Component {
         mousePosition={this.state.mousePosition}
         destroyOnClose={this.state.destroyOnClose}
       >
-        <p>basic modal</p>
-        <div style={{ height: 200 }} />
+        <div className="rc-dialog-body__content flex-row">
+          <div style={{ background: '#802e7a', padding: '40px' }}>
+            <div style={{ position: 'relative' }}>
+              <img
+                src={this.state.profile.img}
+                style={{ maxWidth: '205px', height: '205px' }}
+                alt=""
+              />
+              <img
+                src={this.state.profile.flag}
+                alt=""
+                style={{
+                  position: 'absolute',
+                  bottom: '-10px',
+                  right: '-10px',
+                }}
+              />
+            </div>
+          </div>
+          <div className="rc-dialog-body__text flex-column">
+            <h2
+              style={{
+                fontSize: '38px',
+                color: '#F39FFF',
+                letterSpacing: '0.05em',
+                textTransform: 'uppercase',
+                marginBottom: '0',
+              }}
+            >
+              {this.state.profile.name}
+            </h2>
+            <h4
+              style={{
+                fontSize: '19px',
+                color: '#812A7B',
+                letterSpacing: '0.05em',
+                marginTop: '10px',
+              }}
+            >
+              {this.state.profile.role}
+            </h4>
+            <p
+              style={{
+                fontSize: '15px',
+                lineHeight: '1.5em',
+                color: '#000000',
+                fontWeight: 400,
+              }}
+            >
+              {this.state.profile.description}
+            </p>
+          </div>
+        </div>
       </Dialog>
     );
 
@@ -81,7 +154,56 @@ class TeamCEO extends React.Component {
             }
             `}
           </style>
-          <img src={image} alt="" onClick={this.onClick} />
+          <img src={image} alt="" onClick={e => this.onClick(list[0], e)} />
+
+          <div
+            className="ceo-details"
+            style={{
+              marginTop: '30px',
+              marginBottom: '150px',
+              textAlign: 'left',
+              width: '100%',
+              maxWidth: '638px',
+            }}
+            onClick={e => this.onClick(list[0], e)}
+          >
+            <div className="flex-row" style={{ justifyContent: 'flex-start' }}>
+              <a
+                href=""
+                style={{
+                  fontSize: '29px',
+                  textTransform: 'uppercase',
+                  fontWeight: 'bold',
+                  marginRight: '18px',
+                }}
+              >
+                SERGIO RIGERT
+              </a>
+              <img src={ceoFlag} alt="" />
+            </div>
+            <h4
+              style={{
+                fontWeight: 'normal',
+                fontSize: '18px',
+                letterSpacing: '0.1em',
+                marginTop: '5px',
+              }}
+            >
+              CEO & FOUNDER
+            </h4>
+            <p style={{ lineHeight: '1.4em', fontSize: '15px' }}>
+              Sergio’s dream is to make the world a better place. With a natural
+              ability to lead his team and emulate his passion for the future,
+              his infectious, funny, honest, and straight forward personality
+              attracts top level people who delight in working with him.
+            </p>
+            <p style={{ lineHeight: '1.4em', fontSize: '15px' }}>
+              Sergio has always given 100 per cent to the project. He is not
+              afraid to push the boundaries both of himself, his team, and in
+              fact the views of the entire world. He constantly questions the
+              status quo and is not afraid to challenge it.
+            </p>
+          </div>
         </div>
         {dialog}
       </div>

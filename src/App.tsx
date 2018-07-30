@@ -209,7 +209,7 @@ class App extends React.Component<any, any> {
           </Section>
         </ScrollableAnchor>
         <ScrollableAnchor id={'team-ceo'}>
-          <Section bg="#802e7a" small={true}>
+          <Section bg="#802e7a" small={true} maxHeight={'350px'}>
             <LazyLoad offset={1000}>
               <TeamCEO />
             </LazyLoad>

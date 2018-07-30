@@ -2,3 +2,12 @@
   margin-top: -40px;
   margin-bottom: -40px;
 }
+
+.ceo-details {
+  position: relative;
+  z-index: 8;
+}
+
+.ceo-details a {
+  color: rgb(243, 159, 255);
+}

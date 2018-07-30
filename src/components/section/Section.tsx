@@ -5,6 +5,7 @@ import './Section.css';
 interface SectionProps {
   bg: string;
   small?: boolean;
+  maxHeight?: string;
 }
 
 class Section extends React.Component<SectionProps> {
@@ -14,7 +15,8 @@ class Section extends React.Component<SectionProps> {
         className="gg-section"
         style={{
           height: this.props.small ? 'auto' : '100%',
-          minHeight: !this.props.small ? '100vh' : '0px'
+          minHeight: !this.props.small ? '100vh' : '0px',
+          maxHeight: this.props.maxHeight ? this.props.maxHeight : 'none',
         }}
       >
         <div
@@ -23,7 +25,7 @@ class Section extends React.Component<SectionProps> {
             height: '100%',
             minHeight: !this.props.small ? '100vh' : '0px',
             display: 'flex',
-            flexDirection: 'column'
+            flexDirection: 'column',
           }}
         >
           {this.props.children}

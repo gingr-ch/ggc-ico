@@ -35,8 +35,8 @@ const list = [
     flag: swiss,
     name: 'Florian Fröhlich',
     role: 'ART DIRECTOR / BRANDING',
-    decription:
-      'Responsible for making everything look beautiful and easy to use. With 10 years’ experience in graphic design working for major advertising companies and having been awarded prizes. When it comes to Florian there are no limits to the graphics, creativity, and vision he envisages. He has a true gift when it comes to branding, design, and marketing.',
+    description:
+      'Responsible for making everything look beautiful and easy to use. With 10 years experience in graphic design working for major advertising companies and having been awarded prizes. When it comes to Florian there are no limits to the graphics, creativity, and vision he envisages. He has a true gift when it comes to branding, design, and marketing.',
   },
   {
     id: 3,
