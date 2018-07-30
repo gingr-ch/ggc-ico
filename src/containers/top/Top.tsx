@@ -1,7 +1,6 @@
 import * as React from 'react';
-import ReactPlayer from 'react-player';
+import VimeoPlayer from 'react-player';
 import classNames from 'classnames';
-// import LocalizedStrings from 'react-localization';
 
 import './Top.css';
 
@@ -11,16 +10,6 @@ import OnVisible from 'react-on-visible';
 
 const chart = require('../../assets/img/chart.png');
 
-// export const langEn = require('../../assets/l18n/top.en.json');
-// export const langDe = require('../../assets/l18n/top.de.json');
-//
-// import { TopStrings } from '../../components/l18n';
-//
-// export const strings: TopStrings = new LocalizedStrings({
-//   en: langEn,
-//   de: langDe,
-// });
-
 class Top extends React.Component<any, any> {
   player: any;
 
@@ -28,6 +17,8 @@ class Top extends React.Component<any, any> {
     super(props);
     this.state = {
       open: false,
+      muted: true,
+      volume: 0,
     };
 
     this.videoToggle = this.videoToggle.bind(this);
@@ -35,13 +26,12 @@ class Top extends React.Component<any, any> {
   }
 
   videoToggle() {
-    // console.log("hello");
     this.setState({
       open: true,
       muted: false,
       volume: 1,
     });
-
+    console.warn(this.state);
     this.player.seekTo(0);
   }
 
@@ -137,7 +127,7 @@ class Top extends React.Component<any, any> {
             zIndex: 0,
           }}
         >
-          <ReactPlayer
+          <VimeoPlayer
             url="https://vimeo.com/194665559"
             width="100%"
             height="100%"

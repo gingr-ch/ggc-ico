@@ -71,9 +71,34 @@ function renderCountry(option: any) {
 }
 
 class LanguageChanger extends React.Component<any, LanguageChangerProps> {
+  flagInput: any;
+
   constructor(props: object) {
     super(props);
+    this.flagInput = React.createRef();
   }
+
+  setFlag = (option: any, state: object, props: any) => {
+    const flag = this.flagInput.current.componentNode;
+    const select = flag.childNodes[1];
+    if (select.childNodes[0].nodeName === 'I') {
+      select.childNodes[0].remove();
+    }
+    let el = document.createElement('i');
+    el.classList.add(
+      'flag-icon',
+      'flag-icon-squared',
+      'flag-icon-' + option.iso
+    );
+    select.insertAdjacentElement('afterbegin', el);
+  };
+
+  selectFlag = (option: any, state: object, props: any) => {
+    this.setFlag(option, state, props);
+    this.props.langSelect(option);
+
+    // return ;
+  };
 
   render() {
     // function lang(langCode: any) {
@@ -83,7 +108,7 @@ class LanguageChanger extends React.Component<any, LanguageChangerProps> {
     //
     //   return strings.getLanguage();
     // }
-    console.warn(this.props.lang);
+    console.warn(this.flagInput);
     return (
       <div>
         <SelectSearch
@@ -93,8 +118,11 @@ class LanguageChanger extends React.Component<any, LanguageChangerProps> {
           height={172}
           options={options}
           renderOption={renderCountry}
+          // renderValue={this.setFlag}
           value={this.props.lang._language}
-          onChange={this.props.langSelect}
+          valueChanged={this.selectFlag}
+          onChange={this.selectFlag}
+          ref={this.flagInput}
         />
       </div>
     );
