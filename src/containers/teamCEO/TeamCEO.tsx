@@ -88,12 +88,16 @@ class TeamCEO extends React.Component {
       >
         <div className="rc-dialog-body__content flex-row">
           <div style={{ background: '#802e7a', padding: '40px' }}>
-            <div style={{ position: 'relative' }}>
-              <img
-                src={this.state.profile.img}
-                style={{ maxWidth: '205px', height: '205px' }}
-                alt=""
-              />
+            <div
+              style={{
+                position: 'relative',
+                width: '205px',
+                height: '205px',
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+                backgroundImage: 'url(' + this.state.profile.img + ')',
+              }}
+            >
               <img
                 src={this.state.profile.flag}
                 alt=""
@@ -169,7 +173,7 @@ class TeamCEO extends React.Component {
           >
             <div className="flex-row" style={{ justifyContent: 'flex-start' }}>
               <a
-                href=""
+                href="#team-ceo"
                 style={{
                   fontSize: '29px',
                   textTransform: 'uppercase',

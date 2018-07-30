@@ -33,7 +33,7 @@ class TeamItem extends React.Component<TeamItems> {
           <img src={this.props.flag} />
         </div>
         <a
-          href="#section22"
+          href="#team-all"
           style={{
             color: '#F39FFF',
             fontSize: '24px',
