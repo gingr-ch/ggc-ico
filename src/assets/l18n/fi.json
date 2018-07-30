@@ -1,6 +1,7 @@
 {
   "blockchain": "Blockchain",
-  "smartContracts": "Smart sopimukset olemassa GG kolikot käyttääkseen maksamaan eroottinen päivämääriä Gingr alustalla tahansa seksityöläinen ympäri maailmaa",
+  "smartContracts": "Smart sopimukset",
+  "smartContractsInPlace": "Smart sopimukset olemassa GG kolikot käyttääkseen maksamaan eroottinen päivämääriä Gingr alustalla tahansa seksityöläinen ympäri maailmaa",
   "groundBreakingTechnologies": "URAAUURTAVA TEKNIIKKA RAJATON RATKAISUJA!",
   "wallets": "LOMPAKOT",
   "payments": "Maksut",
@@ -85,7 +86,7 @@
   "phone": "Puhelin",
   "mobile": "Mobile",
   "companyRegistration": "Yrityksen rekisteröinti",
-  "number": "Ei.",
+  "number": "Hahhaa",
   "allRightsReserved": "Kaikki oikeudet pidätetään",
   "switzerland": "Sveitsi",
   "germany": "Saksa",

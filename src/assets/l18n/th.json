@@ -1,6 +1,7 @@
 {
   "blockchain": "Blockchain",
-  "smartContracts": "สัญญาสมาร์ทใน GG เหรียญจะใช้จ่ายวันที่เร้าอารมณ์บนแพลตฟอร์ม Gingr สำหรับการปฏิบัติงานเพศทั่วโลก",
+  "smartContracts": "สัญญาสมาร์ท",
+  "smartContractsInPlace": "สัญญาสมาร์ทใน GG เหรียญจะใช้จ่ายวันที่เร้าอารมณ์บนแพลตฟอร์ม Gingr สำหรับการปฏิบัติงานเพศทั่วโลก",
   "groundBreakingTechnologies": "พื้นดินทำลายเทคโนโลยีโซลูชั่นไร้ขีดจำกัด",
   "wallets": "กระเป๋าสตางค์",
   "payments": "การชำระเงิน",
@@ -85,7 +86,7 @@
   "phone": "โทรศัพท์",
   "mobile": "มือถือ",
   "companyRegistration": "จดทะเบียนบริษัท",
-  "number": "ไม่ใช่",
+  "number": "555",
   "allRightsReserved": "สงวนลิขสิทธิ์",
   "switzerland": "สวิตเซอร์แลนด์",
   "germany": "เยอรมนี",
