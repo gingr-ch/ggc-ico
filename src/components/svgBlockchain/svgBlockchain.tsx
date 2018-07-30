@@ -16,7 +16,7 @@ const BlockchainChart = (props: any) => (
   >
     <defs>
       <linearGradient
-        id="a"
+        id="blockchain-svg-a"
         x1={-805.798}
         y1={-228.2}
         x2={-788.176}
@@ -34,24 +34,24 @@ const BlockchainChart = (props: any) => (
         <stop offset={1} stopColor="#eb99ff" />
       </linearGradient>
       <linearGradient
-        id="h"
+        id="blockchain-svg-h"
         x1={-805.061}
         y1={-233.39}
         x2={-791.939}
         y2={-240.966}
         gradientTransform="rotate(9.196 -2276.114 6158.613)"
-        xlinkHref="#a"
+        xlinkHref="#blockchain-svg-a"
       />
       <linearGradient
-        id="i"
+        id="blockchain-svg-i"
         x1={-810.012}
         y1={-234.735}
         x2={-792.391}
         y2={-244.908}
-        xlinkHref="#a"
+        xlinkHref="#blockchain-svg-a"
       />
       <linearGradient
-        id="b"
+        id="blockchain-svg-b"
         x1={-944.079}
         y1={609.917}
         x2={-926.119}
@@ -68,43 +68,43 @@ const BlockchainChart = (props: any) => (
         <stop offset={1} stopColor="#ca78ff" />
       </linearGradient>
       <linearGradient
-        id="j"
+        id="blockchain-svg-j"
         x1={-798.384}
         y1={-236.49}
         x2={-792.758}
         y2={-236.49}
         gradientTransform="rotate(9.196 -2276.114 6158.613)"
-        xlinkHref="#b"
+        xlinkHref="#blockchain-svg-b"
       />
       <linearGradient
-        id="k"
+        id="blockchain-svg-k"
         x1={-797.797}
         y1={-238.487}
         x2={-794.082}
         y2={-238.487}
         gradientTransform="rotate(9.196 -2276.114 6158.613)"
-        xlinkHref="#b"
+        xlinkHref="#blockchain-svg-b"
       />
       <linearGradient
-        id="l"
+        id="blockchain-svg-l"
         x1={-804.598}
         y1={-236.514}
         x2={-798.972}
         y2={-236.514}
         gradientTransform="rotate(9.196 -2276.114 6158.613)"
-        xlinkHref="#b"
+        xlinkHref="#blockchain-svg-b"
       />
       <linearGradient
-        id="m"
+        id="blockchain-svg-m"
         x1={-803.359}
         y1={-238.575}
         x2={-799.642}
         y2={-238.575}
         gradientTransform="rotate(9.196 -2276.114 6158.613)"
-        xlinkHref="#b"
+        xlinkHref="#blockchain-svg-b"
       />
       <linearGradient
-        id="c"
+        id="blockchain-svg-c"
         x1={-800.007}
         y1={-234.895}
         x2={-792.612}
@@ -124,7 +124,7 @@ const BlockchainChart = (props: any) => (
         <stop offset={0.946} stopColor="#f9d723" />
       </linearGradient>
       <linearGradient
-        id="d"
+        id="blockchain-svg-d"
         x1={-797.302}
         y1={-237.42}
         x2={-793.614}
@@ -140,7 +140,7 @@ const BlockchainChart = (props: any) => (
         <stop offset={1} stopColor="#eb99ff" />
       </linearGradient>
       <linearGradient
-        id="e"
+        id="blockchain-svg-e"
         x1={-802.99}
         y1={-235.183}
         x2={-798.132}
@@ -157,7 +157,7 @@ const BlockchainChart = (props: any) => (
         <stop offset={0.701} stopColor="#f9e885" />
       </linearGradient>
       <linearGradient
-        id="f"
+        id="blockchain-svg-f"
         x1={-6824.575}
         y1={-238.695}
         x2={-6828.353}
@@ -172,7 +172,7 @@ const BlockchainChart = (props: any) => (
         <stop offset={1} stopColor="#ebc7ff" />
       </linearGradient>
       <linearGradient
-        id="g"
+        id="blockchain-svg-g"
         x1={-806.923}
         y1={-232.143}
         x2={-791.369}
@@ -190,121 +190,121 @@ const BlockchainChart = (props: any) => (
         <stop offset={0.946} stopColor="#f9d723" />
       </linearGradient>
       <linearGradient
-        id="n"
+        id="blockchain-svg-n"
         x1={212.937}
         y1={742.68}
         x2={235.382}
         y2={729.722}
         gradientTransform="rotate(.04 704036.407 385.93)"
-        xlinkHref="#a"
+        xlinkHref="#blockchain-svg-a"
       />
       <linearGradient
-        id="o"
+        id="blockchain-svg-o"
         x1={213.145}
         y1={736.914}
         x2={229.864}
         y2={727.262}
         gradientTransform="rotate(.04 704036.407 385.93)"
-        xlinkHref="#a"
+        xlinkHref="#blockchain-svg-a"
       />
       <linearGradient
-        id="p"
+        id="blockchain-svg-p"
         x1={207.743}
         y1={734.607}
         x2={230.203}
         y2={721.64}
         gradientTransform="rotate(.04 704036.407 385.93)"
-        xlinkHref="#a"
+        xlinkHref="#blockchain-svg-a"
       />
       <linearGradient
-        id="q"
+        id="blockchain-svg-q"
         x1={454.456}
         y1={741.946}
         x2={477.35}
         y2={741.946}
         gradientTransform="rotate(38.177 1067.459 137.411)"
-        xlinkHref="#b"
+        xlinkHref="#blockchain-svg-b"
       />
       <linearGradient
-        id="r"
+        id="blockchain-svg-r"
         x1={221.562}
         y1={732.896}
         x2={228.73}
         y2={732.896}
         gradientTransform="translate(0 -491.346)"
-        xlinkHref="#b"
+        xlinkHref="#blockchain-svg-b"
       />
       <linearGradient
-        id="s"
+        id="blockchain-svg-s"
         x1={222.307}
         y1={730.396}
         x2={227.038}
         y2={730.396}
         gradientTransform="translate(0 -491.346)"
-        xlinkHref="#b"
+        xlinkHref="#blockchain-svg-b"
       />
       <linearGradient
-        id="t"
+        id="blockchain-svg-t"
         x1={213.643}
         y1={732.893}
         x2={220.81}
         y2={732.893}
         gradientTransform="translate(0 -491.346)"
-        xlinkHref="#b"
+        xlinkHref="#blockchain-svg-b"
       />
       <linearGradient
-        id="u"
+        id="blockchain-svg-u"
         x1={215.225}
         y1={730.396}
         x2={219.957}
         y2={730.396}
         gradientTransform="translate(0 -491.346)"
-        xlinkHref="#b"
+        xlinkHref="#blockchain-svg-b"
       />
       <linearGradient
-        id="v"
+        id="blockchain-svg-v"
         x1={219.471}
         y1={734.918}
         x2={228.891}
         y2={729.48}
         gradientTransform="translate(0 -491.346)"
-        xlinkHref="#c"
+        xlinkHref="#blockchain-svg-c"
       />
       <linearGradient
-        id="w"
+        id="blockchain-svg-w"
         x1={222.949}
         y1={731.757}
         x2={227.648}
         y2={729.044}
         gradientTransform="translate(0 -491.346)"
-        xlinkHref="#d"
+        xlinkHref="#blockchain-svg-d"
       />
       <linearGradient
-        id="x"
+        id="blockchain-svg-x"
         x1={215.726}
         y1={734.635}
         x2={221.915}
         y2={731.062}
         gradientTransform="translate(0 -491.346)"
-        xlinkHref="#e"
+        xlinkHref="#blockchain-svg-e"
       />
       <linearGradient
-        id="y"
+        id="blockchain-svg-y"
         x1={-7843.952}
         y1={731.788}
         x2={-7848.764}
         y2={729.009}
         gradientTransform="matrix(-1 0 0 1 -7628.949 -491.346)"
-        xlinkHref="#f"
+        xlinkHref="#blockchain-svg-f"
       />
       <linearGradient
-        id="z"
+        id="blockchain-svg-z"
         x1={211.672}
         y1={737.898}
         x2={231.483}
         y2={726.46}
         gradientTransform="rotate(.04 704036.407 385.93)"
-        xlinkHref="#g"
+        xlinkHref="#blockchain-svg-g"
       />
     </defs>
     <path

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import ReactPlayer from 'react-player';
+import VimeoPlayer from 'react-player';
 import OnVisible from 'react-on-visible';
 import classNames from 'classnames';
 // import LocalizedStrings from 'react-localization';
@@ -86,7 +86,7 @@ class WhatIsGingr extends React.Component<any, any> {
                     <img className="l2c__media-image" src={d.img} alt="" />
                   )}
                   {d.video && (
-                    <ReactPlayer
+                    <VimeoPlayer
                       url={d.video}
                       width="431px"
                       height="232px"

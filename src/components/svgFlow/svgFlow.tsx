@@ -16,7 +16,7 @@ const FlowChart = (props: any) => (
   >
     <defs>
       <linearGradient
-        id="a"
+        id="flow-svg-a"
         x1={449.827}
         y1={199.576}
         x2={527.855}
@@ -34,23 +34,23 @@ const FlowChart = (props: any) => (
         <stop offset={1} stopColor="#eb99ff" />
       </linearGradient>
       <linearGradient
-        id="h"
+        id="flow-svg-h"
         x1={450.472}
         y1={179.418}
         x2={508.594}
         y2={145.861}
-        xlinkHref="#a"
+        xlinkHref="#flow-svg-a"
       />
       <linearGradient
-        id="i"
+        id="flow-svg-i"
         x1={431.431}
         y1={170.966}
         x2={509.483}
         y2={125.903}
-        xlinkHref="#a"
+        xlinkHref="#flow-svg-a"
       />
       <linearGradient
-        id="b"
+        id="flow-svg-b"
         x1={397.705}
         y1={481.873}
         x2={477.221}
@@ -67,39 +67,39 @@ const FlowChart = (props: any) => (
         <stop offset={1} stopColor="#ca78ff" />
       </linearGradient>
       <linearGradient
-        id="j"
+        id="flow-svg-j"
         x1={480.367}
         y1={165.227}
         x2={505.283}
         y2={165.227}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="k"
+        id="flow-svg-k"
         x1={482.964}
         y1={156.638}
         x2={499.416}
         y2={156.638}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="l"
+        id="flow-svg-l"
         x1={452.853}
         y1={165.315}
         x2={477.763}
         y2={165.315}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="m"
+        id="flow-svg-m"
         x1={458.343}
         y1={156.68}
         x2={474.793}
         y2={156.68}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="d"
+        id="flow-svg-d"
         x1={473.082}
         y1={172.36}
         x2={505.834}
@@ -118,7 +118,7 @@ const FlowChart = (props: any) => (
         <stop offset={0.946} stopColor="#f9d723" />
       </linearGradient>
       <linearGradient
-        id="e"
+        id="flow-svg-e"
         x1={485.292}
         y1={161.583}
         x2={501.629}
@@ -133,7 +133,7 @@ const FlowChart = (props: any) => (
         <stop offset={1} stopColor="#eb99ff" />
       </linearGradient>
       <linearGradient
-        id="f"
+        id="flow-svg-f"
         x1={460.008}
         y1={171.329}
         x2={481.532}
@@ -149,7 +149,7 @@ const FlowChart = (props: any) => (
         <stop offset={0.701} stopColor="#f9e885" />
       </linearGradient>
       <linearGradient
-        id="g"
+        id="flow-svg-g"
         x1={-6962.625}
         y1={161.457}
         x2={-6979.354}
@@ -164,7 +164,7 @@ const FlowChart = (props: any) => (
         <stop offset={1} stopColor="#ebc7ff" />
       </linearGradient>
       <linearGradient
-        id="c"
+        id="flow-svg-c"
         x1={445.167}
         y1={182.534}
         x2={514.048}
@@ -182,569 +182,569 @@ const FlowChart = (props: any) => (
         <stop offset={0.946} stopColor="#f9d723" />
       </linearGradient>
       <linearGradient
-        id="n"
+        id="flow-svg-n"
         x1={198.242}
         y1={143.979}
         x2={233.542}
         y2={143.979}
-        xlinkHref="#c"
+        xlinkHref="#flow-svg-c"
       />
       <linearGradient
-        id="o"
+        id="flow-svg-o"
         x1={198.145}
         y1={94.241}
         x2={233.599}
         y2={94.241}
-        xlinkHref="#c"
+        xlinkHref="#flow-svg-c"
       />
       <linearGradient
-        id="p"
+        id="flow-svg-p"
         x1={198.242}
         y1={192.197}
         x2={233.542}
         y2={192.197}
-        xlinkHref="#c"
+        xlinkHref="#flow-svg-c"
       />
       <linearGradient
-        id="q"
+        id="flow-svg-q"
         x1={198.242}
         y1={241.64}
         x2={233.542}
         y2={241.64}
-        xlinkHref="#c"
+        xlinkHref="#flow-svg-c"
       />
       <linearGradient
-        id="r"
+        id="flow-svg-r"
         x1={62.285}
         y1={117.781}
         x2={94.753}
         y2={99.036}
-        xlinkHref="#a"
+        xlinkHref="#flow-svg-a"
       />
       <linearGradient
-        id="s"
+        id="flow-svg-s"
         x1={62.554}
         y1={109.394}
         x2={86.739}
         y2={95.431}
-        xlinkHref="#a"
+        xlinkHref="#flow-svg-a"
       />
       <linearGradient
-        id="t"
+        id="flow-svg-t"
         x1={54.631}
         y1={105.876}
         x2={87.106}
         y2={87.127}
-        xlinkHref="#a"
+        xlinkHref="#flow-svg-a"
       />
       <linearGradient
-        id="u"
+        id="flow-svg-u"
         x1={65.574}
         y1={684.127}
         x2={98.66}
         y2={684.127}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="v"
+        id="flow-svg-v"
         x1={75.226}
         y1={103.077}
         x2={85.593}
         y2={103.077}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="w"
+        id="flow-svg-w"
         x1={76.306}
         y1={99.505}
         x2={83.151}
         y2={99.505}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="x"
+        id="flow-svg-x"
         x1={63.777}
         y1={103.113}
         x2={74.143}
         y2={103.113}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="y"
+        id="flow-svg-y"
         x1={66.063}
         y1={99.52}
         x2={72.906}
         y2={99.52}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="z"
+        id="flow-svg-z"
         x1={72.193}
         y1={106.045}
         x2={85.822}
         y2={98.176}
-        xlinkHref="#d"
+        xlinkHref="#flow-svg-d"
       />
       <linearGradient
-        id="A"
+        id="flow-svg-A"
         x1={77.274}
         y1={101.561}
         x2={84.073}
         y2={97.636}
-        xlinkHref="#e"
+        xlinkHref="#flow-svg-e"
       />
       <linearGradient
-        id="B"
+        id="flow-svg-B"
         x1={66.754}
         y1={105.615}
         x2={75.71}
         y2={100.444}
-        xlinkHref="#f"
+        xlinkHref="#flow-svg-f"
       />
       <linearGradient
-        id="C"
+        id="flow-svg-C"
         x1={-6570.813}
         y1={101.508}
         x2={-6577.773}
         y2={97.49}
-        xlinkHref="#g"
+        xlinkHref="#flow-svg-g"
       />
       <linearGradient
-        id="D"
+        id="flow-svg-D"
         x1={60.347}
         y1={110.691}
         x2={89.006}
         y2={94.144}
-        xlinkHref="#c"
+        xlinkHref="#flow-svg-c"
       />
       <linearGradient
-        id="E"
+        id="flow-svg-E"
         x1={97.944}
         y1={116.737}
         x2={130.411}
         y2={97.992}
-        xlinkHref="#a"
+        xlinkHref="#flow-svg-a"
       />
       <linearGradient
-        id="F"
+        id="flow-svg-F"
         x1={98.212}
         y1={108.349}
         x2={122.396}
         y2={94.387}
-        xlinkHref="#a"
+        xlinkHref="#flow-svg-a"
       />
       <linearGradient
-        id="G"
+        id="flow-svg-G"
         x1={90.289}
         y1={104.832}
         x2={122.765}
         y2={86.083}
-        xlinkHref="#a"
+        xlinkHref="#flow-svg-a"
       />
       <linearGradient
-        id="H"
+        id="flow-svg-H"
         x1={92.983}
         y1={661.289}
         x2={126.067}
         y2={661.289}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="I"
+        id="flow-svg-I"
         x1={110.884}
         y1={102.058}
         x2={121.252}
         y2={102.058}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="J"
+        id="flow-svg-J"
         x1={111.965}
         y1={98.483}
         x2={118.811}
         y2={98.483}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="K"
+        id="flow-svg-K"
         x1={99.437}
         y1={102.093}
         x2={109.801}
         y2={102.093}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="L"
+        id="flow-svg-L"
         x1={101.721}
         y1={98.502}
         x2={108.564}
         y2={98.502}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="M"
+        id="flow-svg-M"
         x1={107.853}
         y1={105.025}
         x2={121.481}
         y2={97.157}
-        xlinkHref="#d"
+        xlinkHref="#flow-svg-d"
       />
       <linearGradient
-        id="N"
+        id="flow-svg-N"
         x1={112.933}
         y1={100.54}
         x2={119.732}
         y2={96.615}
-        xlinkHref="#e"
+        xlinkHref="#flow-svg-e"
       />
       <linearGradient
-        id="O"
+        id="flow-svg-O"
         x1={102.413}
         y1={104.596}
         x2={111.369}
         y2={99.426}
-        xlinkHref="#f"
+        xlinkHref="#flow-svg-f"
       />
       <linearGradient
-        id="P"
+        id="flow-svg-P"
         x1={-6606.472}
         y1={100.489}
         x2={-6613.433}
         y2={96.47}
-        xlinkHref="#g"
+        xlinkHref="#flow-svg-g"
       />
       <linearGradient
-        id="Q"
+        id="flow-svg-Q"
         x1={96.004}
         y1={109.647}
         x2={124.665}
         y2={93.1}
-        xlinkHref="#c"
+        xlinkHref="#flow-svg-c"
       />
       <linearGradient
-        id="R"
+        id="flow-svg-R"
         x1={78.719}
         y1={119.535}
         x2={116.161}
         y2={97.918}
-        xlinkHref="#a"
+        xlinkHref="#flow-svg-a"
       />
       <linearGradient
-        id="S"
+        id="flow-svg-S"
         x1={79.027}
         y1={109.863}
         x2={106.918}
         y2={93.76}
-        xlinkHref="#a"
+        xlinkHref="#flow-svg-a"
       />
       <linearGradient
-        id="T"
+        id="flow-svg-T"
         x1={69.891}
         y1={105.806}
         x2={107.342}
         y2={84.184}
-        xlinkHref="#a"
+        xlinkHref="#flow-svg-a"
       />
       <linearGradient
-        id="U"
+        id="flow-svg-U"
         x1={77.048}
         y1={672.376}
         x2={115.202}
         y2={672.376}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="V"
+        id="flow-svg-V"
         x1={93.587}
         y1={102.667}
         x2={105.541}
         y2={102.667}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="W"
+        id="flow-svg-W"
         x1={94.832}
         y1={98.547}
         x2={102.726}
         y2={98.547}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="X"
+        id="flow-svg-X"
         x1={80.384}
         y1={102.709}
         x2={92.337}
         y2={102.709}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="Y"
+        id="flow-svg-Y"
         x1={83.018}
         y1={98.567}
         x2={90.912}
         y2={98.567}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="Z"
+        id="flow-svg-Z"
         x1={90.091}
         y1={106.09}
         x2={105.806}
         y2={97.017}
-        xlinkHref="#d"
+        xlinkHref="#flow-svg-d"
       />
       <linearGradient
-        id="aa"
+        id="flow-svg-aa"
         x1={95.947}
         y1={100.918}
         x2={103.788}
         y2={96.392}
-        xlinkHref="#e"
+        xlinkHref="#flow-svg-e"
       />
       <linearGradient
-        id="ab"
+        id="flow-svg-ab"
         x1={83.818}
         y1={105.595}
         x2={94.146}
         y2={99.632}
-        xlinkHref="#f"
+        xlinkHref="#flow-svg-f"
       />
       <linearGradient
-        id="ac"
+        id="flow-svg-ac"
         x1={-6587.719}
         y1={100.857}
         x2={-6595.746}
         y2={96.223}
-        xlinkHref="#g"
+        xlinkHref="#flow-svg-g"
       />
       <linearGradient
-        id="ad"
+        id="flow-svg-ad"
         x1={76.483}
         y1={111.358}
         x2={109.534}
         y2={92.276}
-        xlinkHref="#c"
+        xlinkHref="#flow-svg-c"
       />
       <linearGradient
-        id="ae"
+        id="flow-svg-ae"
         x1={690.026}
         y1={180.138}
         x2={708.646}
         y2={169.388}
-        xlinkHref="#a"
+        xlinkHref="#flow-svg-a"
       />
       <linearGradient
-        id="af"
+        id="flow-svg-af"
         x1={690.179}
         y1={175.328}
         x2={704.049}
         y2={167.32}
-        xlinkHref="#a"
+        xlinkHref="#flow-svg-a"
       />
       <linearGradient
-        id="ag"
+        id="flow-svg-ag"
         x1={685.635}
         y1={173.31}
         x2={704.261}
         y2={162.557}
-        xlinkHref="#a"
+        xlinkHref="#flow-svg-a"
       />
       <linearGradient
-        id="ah"
+        id="flow-svg-ah"
         x1={604.984}
         y1={353.918}
         x2={623.959}
         y2={353.918}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="ai"
+        id="flow-svg-ai"
         x1={697.556}
         y1={171.926}
         x2={703.502}
         y2={171.926}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="aj"
+        id="flow-svg-aj"
         x1={698.176}
         y1={169.876}
         x2={702.101}
         y2={169.876}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="ak"
+        id="flow-svg-ak"
         x1={690.991}
         y1={171.946}
         x2={696.935}
         y2={171.946}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="al"
+        id="flow-svg-al"
         x1={692.3}
         y1={169.886}
         x2={696.226}
         y2={169.886}
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="am"
+        id="flow-svg-am"
         x1={695.817}
         y1={173.628}
         x2={703.634}
         y2={169.115}
-        xlinkHref="#d"
+        xlinkHref="#flow-svg-d"
       />
       <linearGradient
-        id="an"
+        id="flow-svg-an"
         x1={698.731}
         y1={171.055}
         x2={702.63}
         y2={168.805}
-        xlinkHref="#e"
+        xlinkHref="#flow-svg-e"
       />
       <linearGradient
-        id="ao"
+        id="flow-svg-ao"
         x1={692.698}
         y1={173.381}
         x2={697.834}
         y2={170.415}
-        xlinkHref="#f"
+        xlinkHref="#flow-svg-f"
       />
       <linearGradient
-        id="ap"
+        id="flow-svg-ap"
         x1={-7197.194}
         y1={171.026}
         x2={-7201.187}
         y2={168.72}
-        xlinkHref="#g"
+        xlinkHref="#flow-svg-g"
       />
       <linearGradient
-        id="aq"
+        id="flow-svg-aq"
         x1={688.913}
         y1={176.071}
         x2={705.351}
         y2={166.581}
-        xlinkHref="#c"
+        xlinkHref="#flow-svg-c"
       />
       <linearGradient
-        id="ar"
+        id="flow-svg-ar"
         x1={-817.749}
         y1={-216.984}
         x2={-800.352}
         y2={-227.028}
         gradientTransform="rotate(9.236 -4743.864 6380.27)"
-        xlinkHref="#a"
+        xlinkHref="#flow-svg-a"
       />
       <linearGradient
-        id="as"
+        id="flow-svg-as"
         x1={-816.97}
         y1={-222.454}
         x2={-804.009}
         y2={-229.936}
         gradientTransform="rotate(9.196 -4768.922 6403.056)"
-        xlinkHref="#a"
+        xlinkHref="#flow-svg-a"
       />
       <linearGradient
-        id="at"
+        id="flow-svg-at"
         x1={-821.852}
         y1={-223.364}
         x2={-804.449}
         y2={-233.412}
         gradientTransform="rotate(9.236 -4743.864 6380.27)"
-        xlinkHref="#a"
+        xlinkHref="#flow-svg-a"
       />
       <linearGradient
-        id="au"
+        id="flow-svg-au"
         x1={-825.784}
         y1={973.09}
         x2={-808.054}
         y2={973.09}
         gradientTransform="rotate(47.363 239.336 1889.186)"
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="av"
+        id="flow-svg-av"
         x1={-810.375}
         y1={-225.569}
         x2={-804.822}
         y2={-225.569}
         gradientTransform="rotate(9.196 -4768.922 6403.056)"
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="aw"
+        id="flow-svg-aw"
         x1={-809.796}
         y1={-227.484}
         x2={-806.129}
         y2={-227.484}
         gradientTransform="rotate(9.196 -4768.922 6403.056)"
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="ax"
+        id="flow-svg-ax"
         x1={-816.51}
         y1={-225.55}
         x2={-810.955}
         y2={-225.55}
         gradientTransform="rotate(9.196 -4768.922 6403.056)"
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="ay"
+        id="flow-svg-ay"
         x1={-815.286}
         y1={-227.473}
         x2={-811.619}
         y2={-227.473}
         gradientTransform="rotate(9.196 -4768.922 6403.056)"
-        xlinkHref="#b"
+        xlinkHref="#flow-svg-b"
       />
       <linearGradient
-        id="az"
+        id="flow-svg-az"
         x1={-812.001}
         y1={-223.978}
         x2={-804.697}
         y2={-228.194}
         gradientTransform="rotate(9.196 -4768.922 6403.056)"
-        xlinkHref="#d"
+        xlinkHref="#flow-svg-d"
       />
       <linearGradient
-        id="aA"
+        id="flow-svg-aA"
         x1={-809.277}
         y1={-226.381}
         x2={-805.635}
         y2={-228.484}
         gradientTransform="rotate(9.196 -4768.922 6403.056)"
-        xlinkHref="#e"
+        xlinkHref="#flow-svg-e"
       />
       <linearGradient
-        id="aB"
+        id="flow-svg-aB"
         x1={-814.916}
         y1={-224.208}
         x2={-810.116}
         y2={-226.979}
         gradientTransform="rotate(9.196 -4768.922 6403.056)"
-        xlinkHref="#f"
+        xlinkHref="#flow-svg-f"
       />
       <linearGradient
-        id="aC"
+        id="flow-svg-aC"
         x1={-5689.177}
         y1={-226.7}
         x2={-5692.906}
         y2={-228.853}
         gradientTransform="scale(-1 1) rotate(-9.2 1520.505 -33994.957)"
-        xlinkHref="#g"
+        xlinkHref="#flow-svg-g"
       />
       <linearGradient
-        id="aD"
+        id="flow-svg-aD"
         x1={-818.789}
         y1={-220.784}
         x2={-803.43}
         y2={-229.651}
         gradientTransform="rotate(9.236 -4743.864 6380.27)"
-        xlinkHref="#c"
+        xlinkHref="#flow-svg-c"
       />
     </defs>
     <path
