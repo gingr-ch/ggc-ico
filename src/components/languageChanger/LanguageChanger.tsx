@@ -14,7 +14,7 @@ interface LanguageChangerProps {
 
 const options = [
   { value: 'en', iso: 'gb', name: 'English' },
-  { value: 'ar', iso: 'ar', name: 'Arabic' },
+  { value: 'ar', iso: 'ae', name: 'Arabic' },
   { value: 'bg', iso: 'bg', name: 'Bulgarian' },
   { value: 'cs', iso: 'cz', name: 'Czech' },
   { value: 'da', iso: 'dk', name: 'Danish' },
@@ -78,7 +78,7 @@ class LanguageChanger extends React.Component<any, LanguageChangerProps> {
     this.flagInput = React.createRef();
   }
 
-  setFlag = (option: any, state: object, props: any) => {
+  setFlag = (option: any) => {
     const flag = this.flagInput.current.componentNode;
     const select = flag.childNodes[1];
     if (select.childNodes[0].nodeName === 'I') {
@@ -91,13 +91,12 @@ class LanguageChanger extends React.Component<any, LanguageChangerProps> {
       'flag-icon-' + option.iso
     );
     select.insertAdjacentElement('afterbegin', el);
+    // select.nodeValue.replaceWith(el);
   };
 
   selectFlag = (option: any, state: object, props: any) => {
-    this.setFlag(option, state, props);
+    this.setFlag(option);
     this.props.langSelect(option);
-
-    // return ;
   };
 
   render() {
@@ -120,7 +119,6 @@ class LanguageChanger extends React.Component<any, LanguageChangerProps> {
           renderOption={renderCountry}
           // renderValue={this.setFlag}
           value={this.props.lang._language}
-          valueChanged={this.selectFlag}
           onChange={this.selectFlag}
           ref={this.flagInput}
         />
