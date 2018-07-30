@@ -42,6 +42,10 @@
   font-weight: bold;
 }
 
+.gg-section-container--revolutionary-solution svg text {
+  text-transform: uppercase;
+}
+
 @media(max-width: 599px) {
   .gg-section-container--revolutionary-solution h1 {
     font-size: 32px;
