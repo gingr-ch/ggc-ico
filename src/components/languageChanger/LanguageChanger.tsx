@@ -80,9 +80,9 @@ class LanguageChanger extends React.Component<any, LanguageChangerProps> {
 
   setFlag = (option: any) => {
     const flag = this.flagInput.current.componentNode;
-    const select = flag.childNodes[1];
-    if (select.childNodes[0].nodeName === 'I') {
-      select.childNodes[0].remove();
+    // const select = flag.childNodes[1];
+    if (flag.childNodes[0].nodeName === 'I') {
+      flag.childNodes[0].remove();
     }
     let el = document.createElement('i');
     el.classList.add(
@@ -90,8 +90,11 @@ class LanguageChanger extends React.Component<any, LanguageChangerProps> {
       'flag-icon-squared',
       'flag-icon-' + option.iso
     );
-    select.insertAdjacentElement('afterbegin', el);
-    // select.nodeValue.replaceWith(el);
+    flag.insertAdjacentElement('afterbegin', el);
+    // select.innerHTML =
+    //   '<i class="flag-icon flag-icon-squared flag-icon-' +
+    //   option.iso +
+    //   '"></i>';
   };
 
   selectFlag = (option: any, state: object, props: any) => {
