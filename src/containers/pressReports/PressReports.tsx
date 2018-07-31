@@ -1,6 +1,7 @@
 import * as React from 'react';
 import OnVisible from 'react-on-visible';
 // import LocalizedStrings, { LocalizedStringsMethods } from 'react-localization';
+import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 
 import './PressReports.css';
 
@@ -21,16 +22,24 @@ const watson = require('../../assets/img/press/watson.png');
 // });
 
 class PressReports extends React.Component<any, any> {
+  percentage: number;
+
   constructor(props: any) {
     super(props);
   }
 
   render() {
+    if (isWidthUp('sm', this.props.width)) {
+      this.percentage = 200;
+    } else {
+      this.percentage = 100;
+    }
+
     return (
       <div className="gg-section-container gg-section-container--press-reports">
         <div className="gg-content-container">
           <h2 className="press-title">{this.props.lang.pressReports}</h2>
-          <OnVisible className="hidden-content" percent={200}>
+          <OnVisible className="hidden-content" percent={this.percentage}>
             <ul className="press-logos">
               <li>
                 <img src={luzernerZeitung} />
@@ -55,4 +64,4 @@ class PressReports extends React.Component<any, any> {
   }
 }
 
-export default PressReports;
+export default withWidth()(PressReports);
