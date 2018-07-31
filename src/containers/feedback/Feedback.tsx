@@ -20,8 +20,8 @@ class Feedback extends React.Component<any, any> {
     super(props);
   }
 
-  click() {
-    window.open('https://admin.ggcico.io/auth/register', '_blank');
+  click(link: string) {
+    window.open(link, '_blank');
   }
 
   render() {
@@ -33,19 +33,39 @@ class Feedback extends React.Component<any, any> {
 
           <div className="flex-row feedback-social">
             <div className="flex-column">
-              <img src={telegram} alt="" />
+              <img
+                src={telegram}
+                alt="Telegram"
+                onClick={() =>
+                  this.click('https://t.me/joinchat/HPxTWg1wnQKf8Guv3INWqw')
+                }
+              />
               <span>Telegram</span>
             </div>
             <div className="flex-column">
-              <img src={twitter} alt="" />
+              <img
+                src={twitter}
+                alt="Twitter"
+                onClick={() => this.click('https://twitter.com/GingrICO')}
+              />
               <span>Twitter</span>
             </div>
             <div className="flex-column">
-              <img src={facebook} alt="" />
+              <img
+                src={facebook}
+                alt="Facebook"
+                onClick={() => this.click('https://www.facebook.com/gingr.ch/')}
+              />
               <span>Facebook</span>
             </div>
             <div className="flex-column">
-              <img src={instagram} alt="" />
+              <img
+                src={instagram}
+                alt="Instagram"
+                onClick={() =>
+                  this.click('https://www.instagram.com/gingrerotic/')
+                }
+              />
               <span>Instagram</span>
             </div>
           </div>
@@ -60,7 +80,12 @@ class Feedback extends React.Component<any, any> {
                 type="text"
                 placeholder="Email address"
               />
-              <Button borderColor={'#f29eff'} click={this.click}>
+              <Button
+                borderColor={'#f29eff'}
+                click={() =>
+                  this.click('https://admin.ggcico.io/auth/register')
+                }
+              >
                 {this.props.lang.signUp}
               </Button>
             </div>
