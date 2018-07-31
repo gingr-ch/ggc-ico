@@ -127,7 +127,7 @@ input[type='search']::-webkit-search-decoration {
   display: none;
   position: absolute;
   top: 60px;
-  left: 0;
+  left: -92px;
   right: 0;
   background: #fff;
   border-radius: 4px;
