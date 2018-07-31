@@ -9,7 +9,7 @@ import * as React from 'react';
 
 import './IcoDetails2.css';
 
-// const gingr = require('../../assets/img/gingr_left.png');
+// const gingr = require(process.env.REACT_APP_MEDIA_URL + 'gingr_left.png');
 
 class IcoDetails2 extends React.Component<any, any> {
   constructor(props: any) {

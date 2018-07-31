@@ -4,7 +4,7 @@ import SelectSearch from 'react-select-search';
 import 'flag-icon-css/css/flag-icon.min.css';
 import './LanguageChanger.css';
 
-// const gingr = require('../../assets/img/gingr_necklace.png');
+// const gingr = require(process.env.REACT_APP_MEDIA_URL + 'gingr_necklace.png');
 
 interface LanguageChangerProps {
   image?: string;

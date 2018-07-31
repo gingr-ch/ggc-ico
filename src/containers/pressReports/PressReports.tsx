@@ -5,11 +5,15 @@ import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 
 import './PressReports.css';
 
-const luzernerZeitung = require('../../assets/img/press/luzerner_zeitung.png');
-const teleZuri = require('../../assets/img/press/tele_zuri.png');
-const startupValley = require('../../assets/img/press/startup_valley.png');
-const teleBasel = require('../../assets/img/press/telebasel.png');
-const watson = require('../../assets/img/press/watson.png');
+const luzernerZeitung = require(process.env.REACT_APP_MEDIA_URL +
+  'press/luzerner_zeitung.png');
+const teleZuri = require(process.env.REACT_APP_MEDIA_URL +
+  'press/tele_zuri.png');
+const startupValley = require(process.env.REACT_APP_MEDIA_URL +
+  'press/startup_valley.png');
+const teleBasel = require(process.env.REACT_APP_MEDIA_URL +
+  'press/telebasel.png');
+const watson = require(process.env.REACT_APP_MEDIA_URL + 'press/watson.png');
 
 // export const langEn = require('../../assets/l18n/press-reports.en.json');
 //

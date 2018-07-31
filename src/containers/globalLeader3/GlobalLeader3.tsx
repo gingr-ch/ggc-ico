@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import './GlobalLeader3.css';
 
-const continents = require('../../assets/img/continents.png');
+const continents = require(process.env.REACT_APP_MEDIA_URL + 'continents.png');
 
 class GlobalLeader3 extends React.Component {
   render() {

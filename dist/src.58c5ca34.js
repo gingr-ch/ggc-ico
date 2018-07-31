@@ -195,7 +195,7 @@ module.exports = emptyObject;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 function makeEmptyFunction(arg) {
@@ -2035,7 +2035,7 @@ module.exports = getActiveElement;
  * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
- * 
+ *
  */
 
 /*eslint-disable no-self-compare */
@@ -2148,7 +2148,7 @@ module.exports = isTextNode;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 var isTextNode = require('./isTextNode');
@@ -19194,13 +19194,13 @@ module.exports = reloadCSS;
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
-      
+
 },{"_css_loader":10}],169:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
-      
+
 },{"_css_loader":10}],18:[function(require,module,exports) {
 'use strict';
 
@@ -22345,13 +22345,13 @@ exports['default'] = ReactPlayer;
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
-      
+
 },{"_css_loader":10}],110:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
-      
+
 },{"_css_loader":10}],76:[function(require,module,exports) {
 'use strict';
 
@@ -22404,7 +22404,7 @@ exports.default = Button;
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
-      
+
 },{"_css_loader":10}],98:[function(require,module,exports) {
 'use strict';
 
@@ -22500,7 +22500,7 @@ var __extends = undefined && undefined.__extends || function () {
     };
 }();
 
-var chart = require('../../assets/img/chart.png');
+var chart = require(process.env.REACT_APP_MEDIA_URL + 'chart.png');
 var Top = /** @class */function (_super) {
     __extends(Top, _super);
     function Top(props) {
@@ -22545,7 +22545,7 @@ exports.default = Top;
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
-      
+
 },{"_css_loader":10}],75:[function(require,module,exports) {
 module.exports="/logo.ee0e2dc0.png";
 },{}],20:[function(require,module,exports) {
@@ -22586,7 +22586,7 @@ var __extends = undefined && undefined.__extends || function () {
     };
 }();
 
-var gingrLogo = require('../../assets/img/logo.png');
+var gingrLogo = require(process.env.REACT_APP_MEDIA_URL + 'logo.png');
 // const logo = require('../../logo.svg');
 var Header = /** @class */function (_super) {
     __extends(Header, _super);
@@ -22604,7 +22604,7 @@ exports.default = Header;
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
-      
+
 },{"_css_loader":10}],21:[function(require,module,exports) {
 'use strict';
 
@@ -22799,7 +22799,7 @@ function setDefaultProps(props) {
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
-      
+
 },{"_css_loader":10}],89:[function(require,module,exports) {
 module.exports="/luzerner_zeitung.0f80da56.png";
 },{}],90:[function(require,module,exports) {
@@ -22848,11 +22848,11 @@ var __extends = undefined && undefined.__extends || function () {
     };
 }();
 
-var luzernerZeitung = require('../../assets/img/press/luzerner_zeitung.png');
-var teleZuri = require('../../assets/img/press/tele_zuri.png');
-var startupValley = require('../../assets/img/press/startup_valley.png');
-var teleBasel = require('../../assets/img/press/telebasel.png');
-var watson = require('../../assets/img/press/watson.png');
+var luzernerZeitung = require(process.env.REACT_APP_MEDIA_URL + 'press/luzerner_zeitung.png');
+var teleZuri = require(process.env.REACT_APP_MEDIA_URL + 'press/tele_zuri.png');
+var startupValley = require(process.env.REACT_APP_MEDIA_URL + 'press/startup_valley.png');
+var teleBasel = require(process.env.REACT_APP_MEDIA_URL + 'press/telebasel.png');
+var watson = require(process.env.REACT_APP_MEDIA_URL + 'press/watson.png');
 var PressReports = /** @class */function (_super) {
     __extends(PressReports, _super);
     function PressReports() {
@@ -22875,7 +22875,7 @@ exports.default = PressReports;
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
-      
+
 },{"_css_loader":10}],80:[function(require,module,exports) {
 module.exports="/gingr_logo.518bd5e7.png";
 },{}],81:[function(require,module,exports) {
@@ -22920,9 +22920,9 @@ var __extends = undefined && undefined.__extends || function () {
     };
 }();
 
-var gingrLogo = require('../../assets/img/gingr_logo.png');
-var ggcLogo = require('../../assets/img/ggc-ico_logo.png');
-var gstLogo = require('../../assets/img/gingr-share-token_logo.png');
+var gingrLogo = require(process.env.REACT_APP_MEDIA_URL + 'gingr_logo.png');
+var ggcLogo = require(process.env.REACT_APP_MEDIA_URL + 'ggc-ico_logo.png');
+var gstLogo = require(process.env.REACT_APP_MEDIA_URL + 'gingr-share-token_logo.png');
 var StrongSolution = /** @class */function (_super) {
     __extends(StrongSolution, _super);
     function StrongSolution() {
@@ -22945,7 +22945,7 @@ exports.default = StrongSolution;
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
-      
+
 },{"_css_loader":10}],84:[function(require,module,exports) {
 module.exports="/reason_to_invest.e62c15f4.png";
 },{}],24:[function(require,module,exports) {
@@ -22980,7 +22980,7 @@ var __extends = undefined && undefined.__extends || function () {
     };
 }();
 
-var reasonsImg = require('../../assets/img/reason_to_invest.png');
+var reasonsImg = require(process.env.REACT_APP_MEDIA_URL + 'reason_to_invest.png');
 var reasonsList = [{
     'id': 1,
     'text': 'The GG coin should continuously increase in value'
@@ -23032,7 +23032,7 @@ exports.default = ReasonsToInvest;
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
-      
+
 },{"_css_loader":10}],94:[function(require,module,exports) {
 module.exports="/whitePaper.4bae3d7c.png";
 },{}],95:[function(require,module,exports) {
@@ -23079,10 +23079,10 @@ var __extends = undefined && undefined.__extends || function () {
     };
 }();
 
-var whitePaper = require('../../assets/img/download/whitePaper.png');
-var lightPaper = require('../../assets/img/download/lightPaper.png');
-var numbers = require('../../assets/img/download/numbers.png');
-var memorandum = require('../../assets/img/download/memorandum.png');
+var whitePaper = require(process.env.REACT_APP_MEDIA_URL + 'download/whitePaper.png');
+var lightPaper = require(process.env.REACT_APP_MEDIA_URL + 'download/lightPaper.png');
+var numbers = require(process.env.REACT_APP_MEDIA_URL + 'download/numbers.png');
+var memorandum = require(process.env.REACT_APP_MEDIA_URL + 'download/memorandum.png');
 var Download = /** @class */function (_super) {
     __extends(Download, _super);
     function Download() {
@@ -23105,7 +23105,7 @@ exports.default = Download;
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
-      
+
 },{"_css_loader":10}],26:[function(require,module,exports) {
 'use strict';
 
@@ -23343,7 +23343,7 @@ function unregister() {
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
-      
+
 },{"_css_loader":10}],2:[function(require,module,exports) {
 'use strict';
 

@@ -7,7 +7,7 @@ import OnVisible from 'react-on-visible';
 import Button from '../../components/button/Button';
 import './Beta.css';
 
-const gingrV1 = require('../../assets/img/gingr_v1.png');
+const gingrV1 = require(process.env.REACT_APP_MEDIA_URL + 'gingr_v1.png');
 
 // export const langEn = require('../../assets/l18n/gingr-beta.en.json');
 //

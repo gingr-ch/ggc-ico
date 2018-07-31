@@ -4,11 +4,16 @@ import * as React from 'react';
 
 import './HookUp.css';
 
-const clientPhone = require('../../assets/img/phone_gingr.png');
-const phoneQrClient = require('../../assets/img/phone_qr_client_beam.png');
-const phoneQrGingr = require('../../assets/img/phone_qr_gingr.png');
-const calendar = require('../../assets/img/icons/calendar.svg');
-const escrow = require('../../assets/img/icons/export_lock.svg');
+const clientPhone = require(process.env.REACT_APP_MEDIA_URL +
+  'phone_gingr.png');
+const phoneQrClient = require(process.env.REACT_APP_MEDIA_URL +
+  'phone_qr_client_beam.png');
+const phoneQrGingr = require(process.env.REACT_APP_MEDIA_URL +
+  'phone_qr_gingr.png');
+const calendar = require(process.env.REACT_APP_MEDIA_URL +
+  'icons/calendar.svg');
+const escrow = require(process.env.REACT_APP_MEDIA_URL +
+  'icons/export_lock.svg');
 
 // export const langEn = require('../../assets/l18n/hook-up.en.json');
 // export const strings: HookUpStrings = new LocalizedStrings({

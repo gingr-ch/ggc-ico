@@ -9,10 +9,10 @@ import * as React from 'react';
 
 import './IcoDetails3.css';
 
-const pie = require('../../assets/img/ico-pie-chart.png');
-const ggcLogo = require('../../assets/img/ggc-logo--flat.png');
-const flame = require('../../assets/img/flame.png');
-const ethereum = require('../../assets/img/ethereum-logo.png');
+const pie = require(process.env.REACT_APP_MEDIA_URL + 'ico-pie-chart.png');
+const ggcLogo = require(process.env.REACT_APP_MEDIA_URL + 'ggc-logo--flat.png');
+const flame = require(process.env.REACT_APP_MEDIA_URL + 'flame.png');
+const ethereum = require(process.env.REACT_APP_MEDIA_URL + 'ethereum-logo.png');
 
 class IcoDetails3 extends React.Component<any, any> {
   constructor(props: any) {

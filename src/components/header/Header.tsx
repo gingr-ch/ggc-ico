@@ -6,7 +6,7 @@ import Button from '../button/Button';
 import Nav from '../nav/Nav';
 import './Header.css';
 
-const gingrLogo = require('../../assets/img/logo.png');
+const gingrLogo = require(process.env.REACT_APP_MEDIA_URL + 'logo.png');
 
 const adminIco = 'https://admin.ggcico.io/auth/login';
 const whitePaper =

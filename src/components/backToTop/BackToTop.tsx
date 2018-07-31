@@ -5,7 +5,7 @@ import Button from '../button/Button';
 
 import './BackToTop.css';
 
-// const telegram = require('../../assets/img/social/telegram.png');
+// const telegram = require(process.env.REACT_APP_MEDIA_URL + 'social/telegram.png');
 
 class BackToTop extends React.Component {
   render() {

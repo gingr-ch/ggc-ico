@@ -7,12 +7,17 @@ import classNames from 'classnames';
 
 import './WhatIsGingr.css';
 
-const clientIcon = require('../../assets/img/icons/client.png');
-const gingrIcon = require('../../assets/img/icons/gingr.png');
-const agencyIcon = require('../../assets/img/icons/agency.png');
-const establishmentIcon = require('../../assets/img/icons/establishment.png');
-const gingrImg = require('../../assets/img/what_is_gingr--gingr.png');
-const establishmentImg = require('../../assets/img/what_is_gingr--establishment.png');
+const clientIcon = require(process.env.REACT_APP_MEDIA_URL +
+  'icons/client.png');
+const gingrIcon = require(process.env.REACT_APP_MEDIA_URL + 'icons/gingr.png');
+const agencyIcon = require(process.env.REACT_APP_MEDIA_URL +
+  'icons/agency.png');
+const establishmentIcon = require(process.env.REACT_APP_MEDIA_URL +
+  'icons/establishment.png');
+const gingrImg = require(process.env.REACT_APP_MEDIA_URL +
+  'what_is_gingr--gingr.png');
+const establishmentImg = require(process.env.REACT_APP_MEDIA_URL +
+  'what_is_gingr--establishment.png');
 
 // export const langEn = require('../../assets/l18n/what-is-gingr.en.json');
 // export const strings: WhatIsGingrStrings = new LocalizedStrings({

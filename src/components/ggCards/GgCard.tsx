@@ -3,7 +3,7 @@ import * as React from 'react';
 import './GgCard.css';
 // import Cycle from '../../components/svgCycle/svgCycle';
 
-// const gingr = require('../../assets/img/gingr_necklace.png');
+// const gingr = require(process.env.REACT_APP_MEDIA_URL + 'gingr_necklace.png');
 
 interface CardProps {
   image?: string;

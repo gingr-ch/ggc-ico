@@ -11,11 +11,14 @@ import Cycle from '../../components/svgCycle/svgCycle';
 //   en: langEn,
 // });
 
-const gingr = require('../../assets/img/gingr_necklace.png');
-const popngo = require('../../assets/img/icons/popngo.png');
-const gingrBank = require('../../assets/img/icons/gingr-bank.png');
-const gingrCare = require('../../assets/img/icons/gingr-care.png');
-const gingrConnect = require('../../assets/img/icons/gingr-connect.png');
+const gingr = require(process.env.REACT_APP_MEDIA_URL + 'gingr_necklace.png');
+const popngo = require(process.env.REACT_APP_MEDIA_URL + 'icons/popngo.png');
+const gingrBank = require(process.env.REACT_APP_MEDIA_URL +
+  'icons/gingr-bank.png');
+const gingrCare = require(process.env.REACT_APP_MEDIA_URL +
+  'icons/gingr-care.png');
+const gingrConnect = require(process.env.REACT_APP_MEDIA_URL +
+  'icons/gingr-connect.png');
 
 class RevolutionarySolution extends React.Component<any, any> {
   constructor(props: any) {

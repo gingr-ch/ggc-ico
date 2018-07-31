@@ -9,8 +9,9 @@ import * as React from 'react';
 
 import './Footer.css';
 
-const scene = require('../../assets/img/scene.png');
-const swissFlag = require('../../assets/img/flags/switzerland.png');
+const scene = require(process.env.REACT_APP_MEDIA_URL + 'scene.png');
+const swissFlag = require(process.env.REACT_APP_MEDIA_URL +
+  'flags/switzerland.png');
 
 class Footer extends React.Component<any, any> {
   constructor(props: any) {

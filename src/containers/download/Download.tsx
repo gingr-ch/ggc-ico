@@ -5,10 +5,10 @@ import OnVisible from 'react-on-visible';
 
 import './Download.css';
 
-const whitePaper = require('../../assets/img/download/whitePaper.png');
-const lightPaper = require('../../assets/img/download/lightPaper.png');
-const numbers = require('../../assets/img/download/numbers.png');
-const memorandum = require('../../assets/img/download/memorandum.png');
+const whitePaper = require(process.env.REACT_APP_MEDIA_URL + 'download/whitePaper.png');
+const lightPaper = require(process.env.REACT_APP_MEDIA_URL + 'download/lightPaper.png');
+const numbers = require(process.env.REACT_APP_MEDIA_URL + 'download/numbers.png');
+const memorandum = require(process.env.REACT_APP_MEDIA_URL + 'download/memorandum.png');
 
 const whitepaperPdf = require('../../assets/docs/ggcoin-whitepaper.pdf');
 const lightpaperPdf = require('../../assets/docs/ggcoin-lightpaper.pdf');

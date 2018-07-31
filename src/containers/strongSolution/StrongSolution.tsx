@@ -4,9 +4,10 @@ import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 
 import './StrongSolution.css';
 
-const gingrLogo = require('../../assets/img/gingr_logo.png');
-const ggcLogo = require('../../assets/img/ggc-ico_logo.png');
-const gstLogo = require('../../assets/img/gingr-share-token_logo.png');
+const gingrLogo = require(process.env.REACT_APP_MEDIA_URL + 'gingr_logo.png');
+const ggcLogo = require(process.env.REACT_APP_MEDIA_URL + 'ggc-ico_logo.png');
+const gstLogo = require(process.env.REACT_APP_MEDIA_URL +
+  'gingr-share-token_logo.png');
 
 class StrongSolution extends React.Component<any, any> {
   percentage: number;

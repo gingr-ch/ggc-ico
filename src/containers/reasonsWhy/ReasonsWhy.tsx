@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import './ReasonsWhy.css';
 
-const gingr = require('../../assets/img/reasons-why.png');
+const gingr = require(process.env.REACT_APP_MEDIA_URL + 'reasons-why.png');
 
 // export const langEn = require('../../assets/l18n/reasons-why.en.json');
 // export const strings: ReasonsWhyStrings = new LocalizedStrings({

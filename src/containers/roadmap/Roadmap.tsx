@@ -10,11 +10,11 @@ import * as React from 'react';
 import './Roadmap.css';
 import SvgRoadmap from '../../components/svgRoadmap/Roadmap';
 
-// const roadmap = require('../../assets/img/roadmap.svg');
-const balloon = require('../../assets/img/gg_balloon.png');
-const gingr = require('../../assets/img/gingr_balloons.png');
-const roadMap = require('../../assets/img/roadmap_mobile.png');
-// const gingr = require('../../assets/img/gingr_necklace.png');
+// const roadmap = require(process.env.REACT_APP_MEDIA_URL + 'roadmap.svg');
+const balloon = require(process.env.REACT_APP_MEDIA_URL + 'gg_balloon.png');
+const gingr = require(process.env.REACT_APP_MEDIA_URL + 'gingr_balloons.png');
+const roadMap = require(process.env.REACT_APP_MEDIA_URL + 'roadmap_mobile.png');
+// const gingr = require(process.env.REACT_APP_MEDIA_URL + 'gingr_necklace.png');
 
 // const cardsData = [
 //   {

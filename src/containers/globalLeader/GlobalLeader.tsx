@@ -9,10 +9,10 @@ import * as React from 'react';
 
 import './GlobalLeader.css';
 
-// const balloon = require('../../assets/img/gg_balloon.png');
-// const gingr = require('../../assets/img/gingr_balloons.png');
+// const balloon = require(process.env.REACT_APP_MEDIA_URL + 'gg_balloon.png');
+// const gingr = require(process.env.REACT_APP_MEDIA_URL + 'gingr_balloons.png');
 
-// const gingr = require('../../assets/img/gingr_necklace.png');
+// const gingr = require(process.env.REACT_APP_MEDIA_URL + 'gingr_necklace.png');
 
 // const cardsData = [
 //   {

@@ -10,10 +10,10 @@ import Button from '../../components/button/Button';
 
 import './Feedback.css';
 
-const telegram = require('../../assets/img/social/telegram.png');
-const twitter = require('../../assets/img/social/twitter.png');
-const facebook = require('../../assets/img/social/facebook.png');
-const instagram = require('../../assets/img/social/instagram.png');
+const telegram = require(process.env.REACT_APP_MEDIA_URL + 'social/telegram.png');
+const twitter = require(process.env.REACT_APP_MEDIA_URL + 'social/twitter.png');
+const facebook = require(process.env.REACT_APP_MEDIA_URL + 'social/facebook.png');
+const instagram = require(process.env.REACT_APP_MEDIA_URL + 'social/instagram.png');
 
 class Feedback extends React.Component<any, any> {
   constructor(props: any) {

@@ -6,9 +6,10 @@ import Carousel from 'nuka-carousel';
 import Button from '../../components/button/Button';
 import './IcoDetails.css';
 
-const gingr = require('../../assets/img/gingr_left.png');
-const icoStages = require('../../assets/img/chart.png');
-const icoStagesAlt = require('../../assets/img/chartAlt_nobg.png');
+const gingr = require(process.env.REACT_APP_MEDIA_URL + 'gingr_left.png');
+const icoStages = require(process.env.REACT_APP_MEDIA_URL + 'chart.png');
+const icoStagesAlt = require(process.env.REACT_APP_MEDIA_URL +
+  'chartAlt_nobg.png');
 
 // export const langEn = require('../../assets/l18n/ico-details.en.json');
 // export const strings: IcoDetailsStrings = new LocalizedStrings({

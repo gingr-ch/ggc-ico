@@ -10,7 +10,7 @@ import Button from '../../components/button/Button';
 
 import './ContactUs.css';
 
-// const telegram = require('../../assets/img/social/telegram.png');
+// const telegram = require(process.env.REACT_APP_MEDIA_URL + 'social/telegram.png');
 
 class ContactUs extends React.Component<any, any> {
   constructor(props: any) {

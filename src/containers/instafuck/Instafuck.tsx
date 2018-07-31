@@ -6,11 +6,16 @@ import * as React from 'react';
 import './Instafuck.css';
 
 import InstafuckChart from '../../components/svgInstafuck/svgInstafuck';
-const instafuckMap = require('../../assets/img/instafuck/instafuck_map.png');
-const gingrIconPink = require('../../assets/img/instafuck/gingr_icon--pink.png');
-const instafuckPhone = require('../../assets/img/instafuck/instafuck_phone.png');
-const ggcLogo = require('../../assets/img/instafuck/ggc_logo.png');
-const instafuckEscrow = require('../../assets/img/instafuck/instafuck_escrow.png');
+const instafuckMap = require(process.env.REACT_APP_MEDIA_URL +
+  'instafuck/instafuck_map.png');
+const gingrIconPink = require(process.env.REACT_APP_MEDIA_URL +
+  'instafuck/gingr_icon--pink.png');
+const instafuckPhone = require(process.env.REACT_APP_MEDIA_URL +
+  'instafuck/instafuck_phone.png');
+const ggcLogo = require(process.env.REACT_APP_MEDIA_URL +
+  'instafuck/ggc_logo.png');
+const instafuckEscrow = require(process.env.REACT_APP_MEDIA_URL +
+  'instafuck/instafuck_escrow.png');
 
 // export const langEn = require('../../assets/l18n/instafuck.en.json');
 // export const strings: InstafuckStrings = new LocalizedStrings({

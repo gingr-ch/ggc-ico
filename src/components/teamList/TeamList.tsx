@@ -6,18 +6,18 @@ import 'rc-dialog/assets/index.css';
 import TeamItem from '../teamItem/TeamItem';
 import './TeamList.css';
 
-const vlad = require('../../assets/img/team/vlad.jpg');
-const flo = require('../../assets/img/team/flo.jpg');
-const yurii = require('../../assets/img/team/yurii.jpg');
-const nyhl = require('../../assets/img/team/nyhl.jpg');
-const olha = require('../../assets/img/team/olha.jpg');
-const jeff = require('../../assets/img/team/jeff.jpg');
-const taras = require('../../assets/img/team/taras.jpg');
-const sergiy = require('../../assets/img/team/sergiy.jpg');
+const vlad = require(process.env.REACT_APP_MEDIA_URL + 'team/vlad.jpg');
+const flo = require(process.env.REACT_APP_MEDIA_URL + 'team/flo.jpg');
+const yurii = require(process.env.REACT_APP_MEDIA_URL + 'team/yurii.jpg');
+const nyhl = require(process.env.REACT_APP_MEDIA_URL + 'team/nyhl.jpg');
+const olha = require(process.env.REACT_APP_MEDIA_URL + 'team/olha.jpg');
+const jeff = require(process.env.REACT_APP_MEDIA_URL + 'team/jeff.jpg');
+const taras = require(process.env.REACT_APP_MEDIA_URL + 'team/taras.jpg');
+const sergiy = require(process.env.REACT_APP_MEDIA_URL + 'team/sergiy.jpg');
 
-const swiss = require('../../assets/img/flags/switzerland.png');
-const southAfrica = require('../../assets/img/flags/south-africa.png');
-const ukraine = require('../../assets/img/flags/ukraine.png');
+const swiss = require(process.env.REACT_APP_MEDIA_URL + 'flags/switzerland.png');
+const southAfrica = require(process.env.REACT_APP_MEDIA_URL + 'flags/south-africa.png');
+const ukraine = require(process.env.REACT_APP_MEDIA_URL + 'flags/ukraine.png');
 
 const list = [
   {

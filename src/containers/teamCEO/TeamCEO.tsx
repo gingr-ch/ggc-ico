@@ -4,8 +4,9 @@ import Dialog from 'rc-dialog';
 import 'rc-dialog/assets/index.css';
 import './TeamCEO.css';
 
-const image = require('../../assets/img/teamCEO.jpg');
-const ceoFlag = require('../../assets/img/flags/switzerland.png');
+const image = require(process.env.REACT_APP_MEDIA_URL + 'teamCEO.jpg');
+const ceoFlag = require(process.env.REACT_APP_MEDIA_URL +
+  'flags/switzerland.png');
 
 const list = [
   {

@@ -8,7 +8,7 @@ import Button from '../../components/button/Button';
 import ButtonPlay from '../../components/buttonPlay/ButtonPlay';
 import OnVisible from 'react-on-visible';
 
-const chart = require('../../assets/img/chart.png');
+const chart = require(process.env.REACT_APP_MEDIA_URL + 'chart.png');
 
 class Top extends React.Component<any, any> {
   player: any;

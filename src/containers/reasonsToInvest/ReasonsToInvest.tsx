@@ -4,7 +4,8 @@ import * as React from 'react';
 
 import './ReasonsToInvest.css';
 
-const reasonsImg = require('../../assets/img/reason_to_invest.png');
+const reasonsImg = require(process.env.REACT_APP_MEDIA_URL +
+  'reason_to_invest.png');
 
 // export const langEn = require('../../assets/l18n/reasons-to-invest.en.json');
 // export const strings: ReasonsToInvestStrings = new LocalizedStrings({
