@@ -80,6 +80,11 @@ class LanguageChanger extends React.Component<any, LanguageChangerProps> {
     // this.flag = this.flagInput.current.componentNode;
   }
 
+  initFlag = (lang: any) =>
+    options.filter(function(country: any) {
+      return country.value === lang._language;
+    })[0];
+
   setFlag = (option: any) => {
     const flag = this.flagInput.current.componentNode;
     // const select = flag.childNodes[1];
@@ -93,16 +98,17 @@ class LanguageChanger extends React.Component<any, LanguageChangerProps> {
       'flag-icon-' + option.iso
     );
     flag.insertAdjacentElement('afterbegin', el);
-    // select.innerHTML =
-    //   '<i class="flag-icon flag-icon-squared flag-icon-' +
-    //   option.iso +
-    //   '"></i>';
   };
 
-  selectFlag = (option: any, state: object, props: any) => {
+  selectFlag = (option: any) => {
     this.setFlag(option);
     this.props.langSelect(option);
   };
+
+  componentDidMount() {
+    const initflag = this.initFlag(this.props.lang);
+    this.setFlag(initflag);
+  }
 
   render() {
     return (
