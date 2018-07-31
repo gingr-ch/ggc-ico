@@ -60,10 +60,27 @@
   transition: 0.4s;
 }
 
+.gg-button--clicked .nav-icon-bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.gg-button--clicked .nav-icon-bar2 {
+  opacity: 0;
+}
+
+.gg-button--clicked .nav-icon-bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+[class^="MuiPaper-root-"] {
+  background-color: black !important;
+}
 
 @media(max-width: 599px) {
   .mobile-nav-button {
     display: flex;
+    position: relative;
+    z-index: 2000;
   }
 
   .gg-header-container {

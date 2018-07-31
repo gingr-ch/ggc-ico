@@ -53,7 +53,10 @@ class Header extends React.Component<any, any> {
           />
 
           <div className="mobile-nav-button">
-            <Button click={this.toggleDrawer('right', true)}>
+            <Button
+              click={this.toggleDrawer('right', true)}
+              className={this.state.right ? 'gg-button--clicked' : ''}
+            >
               <div className="nav-icon-bar1" />
               <div className="nav-icon-bar2" />
               <div className="nav-icon-bar3" />
