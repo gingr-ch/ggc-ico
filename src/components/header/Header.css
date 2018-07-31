@@ -72,7 +72,8 @@
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-[class^="MuiPaper-root-"] {
+div[class^="MuiPaper-root-"],
+div[direction="left"] {
   background-color: black !important;
 }
 
