@@ -72,10 +72,12 @@ function renderCountry(option: any) {
 
 class LanguageChanger extends React.Component<any, LanguageChangerProps> {
   flagInput: any;
+  // flag: any;
 
   constructor(props: object) {
     super(props);
     this.flagInput = React.createRef();
+    // this.flag = this.flagInput.current.componentNode;
   }
 
   setFlag = (option: any) => {
@@ -103,17 +105,10 @@ class LanguageChanger extends React.Component<any, LanguageChangerProps> {
   };
 
   render() {
-    // function lang(langCode: any) {
-    //   if (langCode) {
-    //     strings.setLanguage(langCode);
-    //   }
-    //
-    //   return strings.getLanguage();
-    // }
-    // console.warn(this.flagInput);
     return (
       <div>
         <SelectSearch
+          ref={this.flagInput}
           name="countries"
           multiple={false}
           search={false}
@@ -123,7 +118,6 @@ class LanguageChanger extends React.Component<any, LanguageChangerProps> {
           // renderValue={this.setFlag}
           value={this.props.lang._language}
           onChange={this.selectFlag}
-          ref={this.flagInput}
         />
       </div>
     );

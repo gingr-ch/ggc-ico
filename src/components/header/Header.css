@@ -42,11 +42,34 @@
   margin-right: 16px;
 }
 
+.mobile-nav-button {
+  display: none;
+}
+
+.mobile-nav-button .gg-button {
+  flex-direction: column;
+}
+
+.nav-icon-bar1, 
+.nav-icon-bar2, 
+.nav-icon-bar3 {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
 
 @media(max-width: 599px) {
+  .mobile-nav-button {
+    display: flex;
+  }
+
   .gg-header-container {
     padding: 0 14px;
     max-width: 100vw;
+    justify-content: space-between;
   }
 
   .gg-header-container__buttons button {

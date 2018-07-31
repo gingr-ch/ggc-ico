@@ -25,3 +25,24 @@
     color: white;
     text-decoration: none;
 }
+
+.gg-nav--side {
+  padding: 24px;
+  min-width: 200px;
+}
+
+.gg-nav--side ul {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.gg-nav--side ul li {
+  font-size: 18px;
+  line-height: 38px;
+}
+
+.gg-nav--side ul li a {
+  color: black;
+}
