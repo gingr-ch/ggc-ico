@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Loadable from 'react-loadable';
 // import { observer } from 'mobx-react';
 import LazyLoad from 'react-lazyload';
 import ScrollableAnchor from 'react-scrollable-anchor';
@@ -15,8 +16,18 @@ import Top from './containers/top/Top';
 import Header from './components/header/Header';
 import Nav from './components/nav/Nav';
 import PressReports from './containers/pressReports/PressReports';
-import StrongSolution from './containers/strongSolution/StrongSolution';
-import ReasonsToInvest from './containers/reasonsToInvest/ReasonsToInvest';
+
+const StrongSolution = Loadable({
+  loader: () => import('./containers/strongSolution/StrongSolution'),
+  loading: () => <div>Loading...</div>,
+});
+
+const ReasonsToInvest = Loadable({
+  loader: () => import('./containers/reasonsToInvest/ReasonsToInvest'),
+  loading: () => <div>Loading...</div>,
+});
+// import StrongSolution from './containers/strongSolution/StrongSolution';
+// import ReasonsToInvest from './containers/reasonsToInvest/ReasonsToInvest';
 import Download from './containers/download/Download';
 import WhatIsGingr from './containers/whatIsGingr/WhatIsGingr';
 import Beta from './containers/beta/Beta';

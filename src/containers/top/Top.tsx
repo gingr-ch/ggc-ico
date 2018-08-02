@@ -1,6 +1,7 @@
 import * as React from 'react';
 import VimeoPlayer from 'react-player';
 import classNames from 'classnames';
+// import Img from 'react-image';
 
 import './Top.css';
 
@@ -12,6 +13,7 @@ const chart = require(process.env.REACT_APP_MEDIA_URL + 'chart.png');
 
 class Top extends React.Component<any, any> {
   player: any;
+  env = process.env.REACT_APP_MEDIA_URL;
 
   constructor(props: any) {
     super(props);
