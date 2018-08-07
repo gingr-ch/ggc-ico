@@ -42,7 +42,9 @@ class PressReports extends React.Component<any, any> {
     return (
       <div className="gg-section-container gg-section-container--press-reports">
         <div className="gg-content-container">
-          <h2 className="press-title">{this.props.lang.pressReports}</h2>
+          <h2 className="app-header app-header--small">
+            {this.props.lang.pressReports}
+          </h2>
           <OnVisible className="hidden-content" percent={this.percentage}>
             <ul className="press-logos">
               <li>
