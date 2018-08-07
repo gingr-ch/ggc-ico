@@ -26,7 +26,7 @@ class IcoDetails2 extends React.Component<any, any> {
                 <td className="color--green">{this.props.lang.privateSale}</td>
                 <td />
                 <td />
-                <td>0 - 17.5</td>
+                <td>750</td>
                 <td>{this.props.lang.millionCoinsOffered}</td>
                 <td className="color--green">-70%</td>
                 <td className="color--green">€ 0.03</td>
@@ -35,10 +35,10 @@ class IcoDetails2 extends React.Component<any, any> {
                 <td className="color--red">{this.props.lang.preSale}</td>
                 <td>{this.props.lang.day} 1</td>
                 <td>{this.props.lang.earlyBirds}</td>
-                <td>17.5 - X</td>
+                <td>150</td>
                 <td>{this.props.lang.millionCoinsOffered}</td>
                 <td className="color--red">-50%</td>
-                <td className="color--red">€ 0.05</td>
+                <td className="color--red">€ 0.06</td>
               </tr>
               <tr style={{ background: '#4c306a' }}>
                 <td />
