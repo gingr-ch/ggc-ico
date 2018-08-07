@@ -1,6 +1,8 @@
+
+
 .select-search-box {
-  width: 35px;
-  height: 35px;
+  width: var(--flag-d);
+  height: var(--flag-d);
   position: relative;
   border-radius: 50%;
   margin-left: 16px;
@@ -14,8 +16,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 35px !important;
-  height: 35px;
+  width: var(--flag-d) !important;
+  height: var(--flag-d);
   border-radius: 50%;
 }
 
@@ -55,7 +57,7 @@
 .select-search-box__search {
   display: block;
   width: 100%;
-  height: 35px;
+  height: var(--flag-d);
   border: none;
   background: none;
   outline: none;
