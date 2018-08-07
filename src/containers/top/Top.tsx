@@ -58,7 +58,7 @@ class Top extends React.Component<any, any> {
             <div className="spacer hide show-xs" />
             <div className="spacer hide show-xs" />
 
-            <h1 className="gg-h1">
+            <h1 className="app-header gg-h1">
               "{this.props.lang.revolutionizing}
               <br /> {this.props.lang.theOldestIndustry} <br />
               {this.props.lang.inTheWorld}"
