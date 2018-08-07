@@ -136,7 +136,7 @@ class Top extends React.Component<any, any> {
             playing={false}
             muted={true}
             controls={false}
-            loop={false}
+            loop={true}
             ref={this.ref}
           />
         </div>
