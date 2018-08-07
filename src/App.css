@@ -203,3 +203,25 @@
     order: 3;
   }
 }
+
+/* Headers */
+.app-header {
+  font-size: 75px;
+  text-transform: uppercase;
+  font-family: 'brandon_grotesquebold', sans-serif;
+}
+
+.app-header span {
+  color: var(--yellow);
+  font-family: inherit;
+}
+
+.app-header.app-header--small {
+  font-size: 38px;
+}
+
+@media(max-width: 599px) {
+  .app-header {
+    font-size: 34px;
+  }
+}

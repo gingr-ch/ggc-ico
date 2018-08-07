@@ -78,9 +78,7 @@ class WhatIsGingr extends React.Component<any, any> {
     return (
       <div className="gg-section-container gg-section-container--what-is-gingr">
         <div className="gg-content-container">
-          <h1 className="gg-head gg-head--xs">
-            {this.props.lang.whatIsGingr}?
-          </h1>
+          <h1 className="app-header">{this.props.lang.whatIsGingr}?</h1>
           <h3>"{this.props.lang.theFirstGlobalMarket}"</h3>
 
           <div className="list-2-col">

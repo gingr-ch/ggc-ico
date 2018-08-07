@@ -4,15 +4,9 @@
   color: white;
 }
 
-.gg-section-container--reasons-why h1 {
-  font-size: 75px;
-  text-transform: uppercase;
+.gg-section-container--reasons-why .app-header {
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.gg-section-container--reasons-why h1 span {
-  color: var(--yellow);
 }
 
 .gg-section-container--reasons-why h4 {
@@ -54,7 +48,7 @@
 }
 
 @media(max-width: 599px) {
-  .gg-section-container--reasons-why h1 {
+  .gg-section-container--reasons-why .app-header {
     font-size: 40px;
   }
 

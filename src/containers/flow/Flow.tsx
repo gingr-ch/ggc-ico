@@ -19,7 +19,7 @@ class Flow extends React.Component<any, any> {
     return (
       <div className="gg-section-container gg-section-container--flow">
         <div className="gg-content-container">
-          <h1>
+          <h1 className="app-header">
             <span>{this.props.lang.ggCoin}</span> {this.props.lang.flow}
           </h1>
           <h4>{this.props.lang.onOurGingrPlatform}</h4>

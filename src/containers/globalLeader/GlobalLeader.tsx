@@ -50,7 +50,7 @@ class GlobalLeader extends React.Component<any, any> {
     return (
       <div className="gg-section-container gg-section-container--global-leader">
         <div className="gg-content-container">
-          <h1>
+          <h1 className="app-header">
             {this.props.lang.globalLeader}
             <br />
             {this.props.lang.inTheMarket}

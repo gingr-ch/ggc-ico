@@ -55,7 +55,7 @@ class RevolutionarySolution extends React.Component<any, any> {
           className="gg-content-container"
           style={{ justifyContent: 'space-between' }}
         >
-          <h1>
+          <h1 className="app-header app-header--xs">
             {this.props.lang.revolutionary}
             <br /> {this.props.lang.solution}
           </h1>

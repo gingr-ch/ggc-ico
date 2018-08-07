@@ -4,9 +4,7 @@
   color: white;
 }
 
-.gg-section-container--instafuck h1 {
-  font-size: 75px;
-  text-transform: uppercase;
+.gg-section-container--instafuck .app-header {
   color: var(--yellow);
   margin: 0;
 }
@@ -40,7 +38,7 @@
 }
 
 @media(max-width: 599px) {
-  .gg-section-container--instafuck h1 {
+  .gg-section-container--instafuck .app-header {
     font-size: 39px;
   }
 }

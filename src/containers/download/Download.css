@@ -19,13 +19,9 @@
   margin-top: 32px;
 }
 
-.download-title {
+.gg-section-container--download .app-header.app-header--small {
   color: #DF9EFF;
-  text-transform: uppercase;
-  font-size: 28px;
   letter-spacing: 0.1em;
-  font-weight: bolder;
-  font-size: 38px;
 }
 
 .hidden-content ul {
@@ -47,7 +43,7 @@
   .gg-section-container--download {
     max-height: none;
   }
-  
+
   .download-item {
     flex: 1 1 50%;
     max-width: 50%;

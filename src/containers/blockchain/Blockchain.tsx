@@ -19,7 +19,7 @@ class Blockchain extends React.Component<any, any> {
     return (
       <div className="gg-section-container gg-section-container--blockchain">
         <div className="gg-content-container">
-          <h1>
+          <h1 className="app-header">
             <span>{this.props.lang.blockchain}</span> &<br />{' '}
             {this.props.lang.smartContracts}
           </h1>

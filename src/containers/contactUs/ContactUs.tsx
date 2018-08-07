@@ -26,7 +26,7 @@ class ContactUs extends React.Component<any, any> {
       <div className="gg-section-container gg-section-container--contactus">
         <div className="gg-content-container" style={{ alignItems: 'stretch' }}>
           <div className="flex-row" style={{ justifyContent: 'center' }}>
-            <h1>{this.props.lang.contactUs}</h1>
+            <h1 className="app-header">{this.props.lang.contactUs}</h1>
           </div>
 
           <div className="contactus-form flex-column">

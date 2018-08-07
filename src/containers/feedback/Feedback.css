@@ -4,7 +4,7 @@
     color: white;
 }
 
-.gg-section-container--feedback h1 {
+.gg-section-container--feedback .app-header {
     font-size: 66px;
     text-transform: uppercase;
     /* color: var(--yellow); */
@@ -71,7 +71,7 @@
 }
 
 @media(max-width: 599px) {
-  .gg-section-container--feedback h1 {
+  .gg-section-container--feedback .app-header {
     font-size: 48px;
   }
 

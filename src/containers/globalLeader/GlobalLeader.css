@@ -4,11 +4,10 @@
   color: white;
 }
 
-.gg-section-container--global-leader h1 {
-  font-size: 75px;
-  text-transform: uppercase;
+.gg-section-container--global-leader .app-header {
   margin-top: 0;
   margin-bottom: 0;
+  line-height: 80px;
 }
 
 .gg-section-container--global-leader h4 {
@@ -24,7 +23,7 @@
     padding-top: 80px;
     padding-bottom: 100px;
   }
-  .gg-section-container--global-leader h1 {
+  .gg-section-container--global-leader .app-header {
     font-size: 34px;
   }
 }

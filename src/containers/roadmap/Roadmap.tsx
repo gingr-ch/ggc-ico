@@ -52,7 +52,7 @@ class Roadmap extends React.Component<any, any> {
     return (
       <div className="gg-section-container gg-section-container--roadmap">
         <div className="gg-content-container">
-          <h1>{this.props.lang.roadmap}</h1>
+          <h1 className="app-header">{this.props.lang.roadmap}</h1>
           <h2>{this.props.lang.datesComingSoon}</h2>
 
           <div className="hide-xs">
