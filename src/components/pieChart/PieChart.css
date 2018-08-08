@@ -1,0 +1,28 @@
+.pie-chart {
+  width: 157px;
+  height: 157px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.pie-chart__item {
+  display: flex;
+  height: 157px;
+  flex: 1 1 50%;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.pie-chart__item--left {
+  background: #c430c4;
+  border-bottom-left-radius: 157px;
+  border-top-left-radius: 157px;
+}
+
+.pie-chart__item--right {
+  background: #33ffeb;
+  border-bottom-right-radius: 157px;
+  border-top-right-radius: 157px;
+}

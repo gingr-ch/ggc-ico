@@ -8,11 +8,25 @@ import * as React from 'react';
 // });
 
 import './IcoDetails3.css';
+import PieChart from '../../components/pieChart/PieChart';
 
-const pie = require(process.env.REACT_APP_MEDIA_URL + 'ico-pie-chart.png');
+// const pie = require(process.env.REACT_APP_MEDIA_URL + 'ico-pie-chart.png');
 const ggcLogo = require(process.env.REACT_APP_MEDIA_URL + 'ggc-logo--flat.png');
 const flame = require(process.env.REACT_APP_MEDIA_URL + 'flame.png');
 const ethereum = require(process.env.REACT_APP_MEDIA_URL + 'ethereum-logo.png');
+
+const pieItems = [
+  {
+    id: 0,
+    value: '50%',
+    pos: 'left',
+  },
+  {
+    id: 1,
+    value: '50%',
+    pos: 'right',
+  },
+];
 
 class IcoDetails3 extends React.Component<any, any> {
   constructor(props: any) {
@@ -27,17 +41,19 @@ class IcoDetails3 extends React.Component<any, any> {
             className="flex-row pie-chart-container"
             style={{ justifyContent: 'center' }}
           >
-            <img src={pie} alt="" style={{ width: '157px', height: '157px' }} />
+            <PieChart items={pieItems} />
             <div
               className="coin-supply-values flex-column"
               style={{ alignItems: 'flex-start', paddingTop: '32px' }}
             >
-              <div className="title">{this.props.lang.totalCoinSupply}</div>
-              <div>1'000’000’000</div>
-              <div className="title">{this.props.lang.totalCoinSupply}</div>
-              <div>700'000'000 (70%)</div>
-              <div className="title">GINGR AG</div>
-              <div>300’000’000 (30%)</div>
+              <div className="title title--yellow">
+                {this.props.lang.totalCoinSupply}
+              </div>
+              <div>2'000’000’000</div>
+              <div className="title">{this.props.lang.forCrowdSale}</div>
+              <div>1'000’000’000 (50%)</div>
+              <div className="title title--cyan">GINGR AG</div>
+              <div>1'000’000’000 (50%)</div>
             </div>
           </div>
           <div

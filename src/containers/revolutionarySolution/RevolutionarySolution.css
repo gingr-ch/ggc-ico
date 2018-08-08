@@ -9,8 +9,6 @@
 }
 
 .gg-section-container--revolutionary-solution h1 {
-  font-size: 75px;
-  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -47,9 +45,11 @@
 }
 
 @media(max-width: 599px) {
+  /*
   .gg-section-container--revolutionary-solution h1 {
     font-size: 32px;
   }
+  */
 
   .gg-section-container--revolutionary-solution .ggc-card {
     flex: 1 1 100%;

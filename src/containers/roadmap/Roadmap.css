@@ -4,9 +4,7 @@
   color: white;
 }
 
-.gg-section-container--roadmap h1 {
-  font-size: 75px;
-  text-transform: uppercase;
+.gg-section-container--roadmap .app-header {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -29,7 +27,7 @@
 
 
 @media(max-width: 599px) {
-  .gg-section-container--roadmap h1 {
+  .gg-section-container--roadmap .app-header {
     font-size: 34px;
   }
 

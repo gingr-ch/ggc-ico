@@ -26,84 +26,48 @@ class IcoDetails2 extends React.Component<any, any> {
                 <td className="color--green">{this.props.lang.privateSale}</td>
                 <td />
                 <td />
-                <td>0 - 17.5</td>
+                <td>750</td>
                 <td>{this.props.lang.millionCoinsOffered}</td>
                 <td className="color--green">-70%</td>
                 <td className="color--green">€ 0.03</td>
               </tr>
+
               <tr style={{ background: '#4c306a' }}>
                 <td className="color--red">{this.props.lang.preSale}</td>
-                <td>{this.props.lang.day} 1</td>
-                <td>{this.props.lang.earlyBirds}</td>
-                <td>17.5 - X</td>
+                <td />
+                <td />
+                <td>150</td>
                 <td>{this.props.lang.millionCoinsOffered}</td>
                 <td className="color--red">-50%</td>
-                <td className="color--red">€ 0.05</td>
+                <td className="color--red">€ 0.06</td>
               </tr>
-              <tr style={{ background: '#4c306a' }}>
+
+              <tr style={{ background: '#392551' }}>
+                <td className="color--purple">{this.props.lang.mainSale}</td>
+                <td>{this.props.lang.tier} 1</td>
                 <td />
-                <td>{this.props.lang.day} 2-10</td>
-                <td />
-                <td>X - 87.5</td>
+                <td>50</td>
                 <td>{this.props.lang.millionCoinsOffered}</td>
-                <td className="color--red">-25%</td>
-                <td className="color--red">€ 0.075</td>
-              </tr>
-              <tr style={{ background: '#4c306a' }}>
-                <td />
-                <td>{this.props.lang.day} 10-20</td>
-                <td />
-                <td>87.5 - 192.5</td>
-                <td>{this.props.lang.millionCoinsOffered}</td>
-                <td className="color--red">-15%</td>
-                <td className="color--red">€ 0.085</td>
-              </tr>
-              <tr style={{ background: '#4c306a' }}>
-                <td />
-                <td>{this.props.lang.day} 20-30</td>
-                <td />
-                <td>192.5 - 297.5</td>
-                <td>{this.props.lang.millionCoinsOffered}</td>
-                <td className="color--red">-10%</td>
-                <td className="color--red">€ 0.09</td>
+                <td className="color--red">-33%</td>
+                <td className="color--purple">€ 0.08</td>
               </tr>
               <tr style={{ background: '#392551' }}>
                 <td className="color--purple">{this.props.lang.mainSale}</td>
-                <td>{this.props.lang.day} 1</td>
-                <td>{this.props.lang.earlyBirds}</td>
-                <td>297.5 - X</td>
-                <td>{this.props.lang.millionCoinsOffered}</td>
+                <td>{this.props.lang.tier} 2</td>
                 <td />
-                <td className="color--purple">€ 0.095</td>
+                <td>30</td>
+                <td>{this.props.lang.millionCoinsOffered}</td>
+                <td className="color--red">-16.6%</td>
+                <td className="color--purple">€ 0.10</td>
               </tr>
               <tr style={{ background: '#392551' }}>
+                <td className="color--purple">{this.props.lang.mainSale}</td>
+                <td>{this.props.lang.tier} 3</td>
                 <td />
-                <td>{this.props.lang.day} 2-31</td>
-                <td />
-                <td>X - 600</td>
+                <td>20</td>
                 <td>{this.props.lang.millionCoinsOffered}</td>
                 <td />
-                <td className="color--purple">€ 0.245</td>
-              </tr>
-              <tr style={{ background: '#392551' }}>
-                <td />
-                <td />
-                <td />
-                <td />
-                <td style={{ maxWidth: '200px' }}>
-                  € 0.005 {this.props.lang.each24Hour} € 0.245
-                </td>
-                <td />
-                <td />
-              </tr>
-              <tr style={{ background: '#4c306a' }}>
-                <td className="color--cyan">{this.props.lang.lastChance}</td>
-                <td />
-                <td />
-                <td>100</td>
-                <td>{this.props.lang.millionCoinsOffered}</td>
-                <td />
-                <td className="color--cyan">€ 0.30</td>
+                <td className="color--purple">€ 0.12</td>
               </tr>
             </tbody>
           </table>

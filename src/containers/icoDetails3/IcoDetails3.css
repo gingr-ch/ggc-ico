@@ -8,8 +8,16 @@
   font-weight: bold;
 }
 
+.gg-section-container--ico-details3 .title.title--yellow {
+  color: var(--yellow);
+}
+
 .gg-section-container--ico-details3 .title:not(:first-child) {
   margin-top: 16px;
+}
+
+.gg-section-container--ico-details3 .title.title--cyan {
+  color: #33ffeb;
 }
 
 .gg-section-container--ico-details3 .title {
@@ -36,7 +44,7 @@
   .coin-supply-values {
     padding-left: 2.5em;
   }
-  
+
   .ico-details-items-container {
     flex-direction: column;
   }

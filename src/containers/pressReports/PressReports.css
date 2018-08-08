@@ -10,12 +10,9 @@
     width: auto;
 }
 
-.press-title {
+.gg-section-container--press-reports .app-header {
     color: #DF9EFF;
-    text-transform: uppercase;
     font-size: 28px;
-    letter-spacing: 0.1em;
-    font-weight: bolder;
 }
 
 .hidden-content ul {
@@ -41,7 +38,7 @@
     max-width: 80%;
     margin: 0 auto;
     margin-top: 56px;
-  } 
+  }
 
   .press-logos li {
     margin-bottom: 56px;

@@ -5,10 +5,14 @@ import OnVisible from 'react-on-visible';
 
 import './Download.css';
 
-const whitePaper = require(process.env.REACT_APP_MEDIA_URL + 'download/whitePaper.png');
-const lightPaper = require(process.env.REACT_APP_MEDIA_URL + 'download/lightPaper.png');
-const numbers = require(process.env.REACT_APP_MEDIA_URL + 'download/numbers.png');
-const memorandum = require(process.env.REACT_APP_MEDIA_URL + 'download/memorandum.png');
+const whitePaper = require(process.env.REACT_APP_MEDIA_URL +
+  'download/whitePaper.png');
+const lightPaper = require(process.env.REACT_APP_MEDIA_URL +
+  'download/lightPaper.png');
+const numbers = require(process.env.REACT_APP_MEDIA_URL +
+  'download/numbers.png');
+const memorandum = require(process.env.REACT_APP_MEDIA_URL +
+  'download/memorandum.png');
 
 const whitepaperPdf = require('../../assets/docs/ggcoin-whitepaper.pdf');
 const lightpaperPdf = require('../../assets/docs/ggcoin-lightpaper.pdf');
@@ -28,7 +32,9 @@ class Download extends React.Component<any, any> {
     return (
       <div className="gg-section-container gg-section-container--download">
         <div className="gg-content-container">
-          <h2 className="download-title">{this.props.lang.download}</h2>
+          <h2 className="app-header app-header--small">
+            {this.props.lang.download}
+          </h2>
           <OnVisible className="hidden-content" percent={200}>
             <ul
               style={{

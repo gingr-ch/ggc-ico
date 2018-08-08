@@ -2,6 +2,7 @@
 :root {
   --yellow: #ffd400;
   --pink: rgb(243, 159, 255);
+  --flag-d: 28px;
 }
 
 /* General */
@@ -201,5 +202,28 @@
 
   .order-xs-3 {
     order: 3;
+  }
+}
+
+/* Headers */
+.app-header {
+  font-size: 75px;
+  text-transform: uppercase;
+  font-family: 'brandon_grotesquebold', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.app-header span {
+  color: var(--yellow);
+  font-family: inherit;
+}
+
+.app-header.app-header--small {
+  font-size: 38px;
+}
+
+@media(max-width: 599px) {
+  .app-header {
+    font-size: 34px;
   }
 }

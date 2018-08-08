@@ -1,6 +1,8 @@
 .table-private-sale {
   font-size: 13px;
   border-collapse: collapse;
+  max-width: 800px;
+  width: 100%;
 }
 
 .table-private-sale [class^="color--"] {
@@ -10,7 +12,7 @@
 
 .table-private-sale td {
   text-align: left;
-  padding: 12px;
+  padding: 20px;
 }
 
 .table-private-sale td:first-child {

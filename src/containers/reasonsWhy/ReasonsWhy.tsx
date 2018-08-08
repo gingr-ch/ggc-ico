@@ -19,7 +19,7 @@ class ReasonsWhy extends React.Component<any, any> {
     return (
       <div className="gg-section-container gg-section-container--reasons-why">
         <div className="gg-content-container">
-          <h1>
+          <h1 className="app-header">
             {this.props.lang.sixReasons} <span>{this.props.lang.why}</span>
           </h1>
           <h4>{this.props.lang.theGGCoinCould}</h4>

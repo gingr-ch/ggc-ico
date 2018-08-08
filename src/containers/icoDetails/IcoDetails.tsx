@@ -28,7 +28,7 @@ class IcoDetails extends React.Component<any, any> {
     return (
       <div className="gg-section-container gg-section-container--ico-details">
         <div className="gg-content-container">
-          <h1>{this.props.lang.icoDetails}</h1>
+          <h1 className="app-header">{this.props.lang.icoDetails}</h1>
           <div className="spacer" />
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <div style={{ fontSize: '24px', marginBottom: '16px' }}>

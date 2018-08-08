@@ -1,6 +1,7 @@
 import * as React from 'react';
 import VimeoPlayer from 'react-player';
 import classNames from 'classnames';
+// import Img from 'react-image';
 
 import './Top.css';
 
@@ -12,6 +13,7 @@ const chart = require(process.env.REACT_APP_MEDIA_URL + 'chart.png');
 
 class Top extends React.Component<any, any> {
   player: any;
+  env = process.env.REACT_APP_MEDIA_URL;
 
   constructor(props: any) {
     super(props);
@@ -56,7 +58,7 @@ class Top extends React.Component<any, any> {
             <div className="spacer hide show-xs" />
             <div className="spacer hide show-xs" />
 
-            <h1 className="gg-h1">
+            <h1 className="app-header gg-h1">
               "{this.props.lang.revolutionizing}
               <br /> {this.props.lang.theOldestIndustry} <br />
               {this.props.lang.inTheWorld}"
@@ -134,7 +136,7 @@ class Top extends React.Component<any, any> {
             playing={false}
             muted={true}
             controls={false}
-            loop={false}
+            loop={true}
             ref={this.ref}
           />
         </div>

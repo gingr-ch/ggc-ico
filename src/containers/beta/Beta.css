@@ -4,13 +4,8 @@
   color: white;
 }
 
-.gg-section-container--beta h1 {
-  text-transform: uppercase;
+.gg-section-container--beta .app-header {
   margin-bottom: 0px;
-}
-
-.gg-section-container--beta h1 span {
-  color: var(--yellow);
 }
 
 .gg-section-container--beta h3 {

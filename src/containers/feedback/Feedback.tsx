@@ -10,10 +10,13 @@ import Button from '../../components/button/Button';
 
 import './Feedback.css';
 
-const telegram = require(process.env.REACT_APP_MEDIA_URL + 'social/telegram.png');
+const telegram = require(process.env.REACT_APP_MEDIA_URL +
+  'social/telegram.png');
 const twitter = require(process.env.REACT_APP_MEDIA_URL + 'social/twitter.png');
-const facebook = require(process.env.REACT_APP_MEDIA_URL + 'social/facebook.png');
-const instagram = require(process.env.REACT_APP_MEDIA_URL + 'social/instagram.png');
+const facebook = require(process.env.REACT_APP_MEDIA_URL +
+  'social/facebook.png');
+const instagram = require(process.env.REACT_APP_MEDIA_URL +
+  'social/instagram.png');
 
 class Feedback extends React.Component<any, any> {
   constructor(props: any) {
@@ -28,7 +31,7 @@ class Feedback extends React.Component<any, any> {
     return (
       <div className="gg-section-container gg-section-container--feedback">
         <div className="gg-content-container flex-row">
-          <h1>{this.props.lang.feedback}</h1>
+          <h1 className="app-header">{this.props.lang.feedback}</h1>
           <h4>{this.props.lang.ourCompanyIsOpen}</h4>
 
           <div className="flex-row feedback-social">

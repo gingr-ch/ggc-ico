@@ -4,10 +4,10 @@
   padding-bottom: 250px;
 }
 
-.gg-section-container--what-is-gingr h1 {
-  text-transform: uppercase;
+.gg-section-container--what-is-gingr .app-header {
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
+  line-height: 57px;
 }
 
 .gg-section-container--what-is-gingr h3 {

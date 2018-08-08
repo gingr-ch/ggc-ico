@@ -26,9 +26,7 @@ class StrongSolution extends React.Component<any, any> {
     return (
       <div className="gg-section-container gg-section-container--strong-solution">
         <div className="gg-content-container">
-          <h1 className="gg-head gg-head--xs">
-            {this.props.lang.strongSolution}
-          </h1>
+          <h1 className="app-header">{this.props.lang.strongSolution}</h1>
           <OnVisible className="hidden-content" percent={this.percentage}>
             <div className="strong-solution-content">
               <div className="ssc-item flex-column flex-column--30">

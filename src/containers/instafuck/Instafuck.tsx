@@ -31,7 +31,7 @@ class Instafuck extends React.Component<any, any> {
       <div className="gg-section-container gg-section-container--instafuck">
         <div className="gg-content-container">
           <h3>{this.props.lang.welcomeTo}</h3>
-          <h1>{this.props.lang.instafuck}</h1>
+          <h1 className="app-header">{this.props.lang.instafuck}</h1>
           <h4>"{this.props.lang.weHaveCreatedThe}"</h4>
           <div className="spacer" />
           <div className="hide-xs">

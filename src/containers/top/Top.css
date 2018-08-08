@@ -33,6 +33,7 @@
 .gg-top-left__container button {
   max-width: 210px;
   width: 100%;
+  font-weight: bolder;
 }
 
 .play-button {
@@ -46,6 +47,7 @@
 
 .gg-h1 {
   font-size: 36px;
+  line-height: 42px;
 }
 
 .gg-head {

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Loadable from 'react-loadable';
 // import { observer } from 'mobx-react';
 import LazyLoad from 'react-lazyload';
 import ScrollableAnchor from 'react-scrollable-anchor';
@@ -15,11 +16,36 @@ import Top from './containers/top/Top';
 import Header from './components/header/Header';
 import Nav from './components/nav/Nav';
 import PressReports from './containers/pressReports/PressReports';
-import StrongSolution from './containers/strongSolution/StrongSolution';
-import ReasonsToInvest from './containers/reasonsToInvest/ReasonsToInvest';
-import Download from './containers/download/Download';
-import WhatIsGingr from './containers/whatIsGingr/WhatIsGingr';
-import Beta from './containers/beta/Beta';
+
+const StrongSolution = Loadable({
+  loader: () => import('./containers/strongSolution/StrongSolution'),
+  loading: () => <div>Loading...</div>,
+});
+
+const ReasonsToInvest = Loadable({
+  loader: () => import('./containers/reasonsToInvest/ReasonsToInvest'),
+  loading: () => <div>Loading...</div>,
+});
+
+const Download = Loadable({
+  loader: () => import('./containers/download/Download'),
+  loading: () => <div>Loading...</div>,
+});
+
+const WhatIsGingr = Loadable({
+  loader: () => import('./containers/whatIsGingr/WhatIsGingr'),
+  loading: () => <div>Loading...</div>,
+});
+
+const Beta = Loadable({
+  loader: () => import('./containers/beta/Beta'),
+  loading: () => <div>Loading...</div>,
+});
+// import StrongSolution from './containers/strongSolution/StrongSolution';
+// import ReasonsToInvest from './containers/reasonsToInvest/ReasonsToInvest';
+// import Download from './containers/download/Download';
+// import WhatIsGingr from './containers/whatIsGingr/WhatIsGingr';
+// import Beta from './containers/beta/Beta';
 import Instafuck from './containers/instafuck/Instafuck';
 import HookUp from './containers/hookUp/HookUp';
 import Blockchain from './containers/blockchain/Blockchain';
