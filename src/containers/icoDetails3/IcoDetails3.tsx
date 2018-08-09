@@ -11,6 +11,8 @@ import './IcoDetails3.css';
 import PieChart from '../../components/pieChart/PieChart';
 
 // const pie = require(process.env.REACT_APP_MEDIA_URL + 'ico-pie-chart.png');
+const euroSign = require(process.env.REACT_APP_MEDIA_URL +
+  'euro-sign-logo.png');
 const ggcLogo = require(process.env.REACT_APP_MEDIA_URL + 'ggc-logo--flat.png');
 const flame = require(process.env.REACT_APP_MEDIA_URL + 'flame.png');
 const ethereum = require(process.env.REACT_APP_MEDIA_URL + 'ethereum-logo.png');
@@ -68,6 +70,24 @@ class IcoDetails3 extends React.Component<any, any> {
               className="ggc-card flex-column"
               style={{ alignItems: 'flex-start' }}
             >
+              <img src={euroSign} alt="" />
+              <div className="title">{this.props.lang.totalSupply}</div>
+              <div>
+                <span
+                  style={{
+                    color: '#FFD500',
+                    fontSize: '20px',
+                  }}
+                >
+                  20.45 {this.props.lang.million} €
+                </span>
+              </div>
+            </div>
+
+            <div
+              className="ggc-card flex-column"
+              style={{ alignItems: 'flex-start' }}
+            >
               <img src={ggcLogo} alt="" />
               <div className="title">{this.props.lang.mainSalePrice}</div>
               <div>
@@ -81,9 +101,8 @@ class IcoDetails3 extends React.Component<any, any> {
                     display: 'block',
                   }}
                 >
-                  € 0.10 {this.props.lang.cent}
+                  € 0.12 {this.props.lang.cent}
                 </span>
-                {this.props.lang.startingPriceofGGC} €0.30.
               </div>
             </div>
             <div

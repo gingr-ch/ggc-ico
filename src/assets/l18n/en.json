@@ -169,10 +169,12 @@
   "day": "Day",
   "tier": "Tier",
   "earlyBirds": "Early Birds",
+  "million": "Million",
   "millionCoinsOffered": "Million Coins Offered",
   "each24Hour":
     "each 24 hour for 30 remaining days or until all coins are sold. Max reach",
   "totalCoinSupply": "Total Coin Supply",
+  "totalSupply": "Total Supply",
   "forCrowdSale": "For Crowd Sale",
   "mainSalePrice": "Main Sale Price",
   "coinsBurned": "Coins Burned",
@@ -181,7 +183,7 @@
   "cent": "Cent",
   "startingPriceofGGC":
     "Starting price of GGC implementation on Gingr platform is",
-  "remainingGGCCoins": "Remaining GG Coins from 700 million will be burned",
+  "remainingGGCCoins": "Unsold GG Coins will be burned",
   "usedBlockchain": "Used Block Chain",
   "standardBased": "Ethereum ERC-20 standard-based",
   "welcomeTo": "Welcome to",
