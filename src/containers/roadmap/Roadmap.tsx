@@ -55,7 +55,7 @@ class Roadmap extends React.Component<any, any> {
           <h1 className="app-header">{this.props.lang.roadmap}</h1>
           <h2>{this.props.lang.datesComingSoon}</h2>
 
-          <div className="hide-xs">
+          <div className="hide-xs" style={{ marginTop: '100px' }}>
             <SvgRoadmap lang={this.props.lang} />
           </div>
 
