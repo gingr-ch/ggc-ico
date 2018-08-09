@@ -33,7 +33,7 @@ class IcoDetails2 extends React.Component<any, any> {
               </tr>
 
               <tr style={{ background: '#4c306a' }}>
-                <td className="color--red">{this.props.lang.preSale}</td>
+                <td className="color--red">{this.props.lang.publicPreSale}</td>
                 <td />
                 <td />
                 <td>150</td>
@@ -43,7 +43,9 @@ class IcoDetails2 extends React.Component<any, any> {
               </tr>
 
               <tr style={{ background: '#392551' }}>
-                <td className="color--purple">{this.props.lang.mainSale}</td>
+                <td className="color--purple">
+                  {this.props.lang.publicMainSale}
+                </td>
                 <td>{this.props.lang.tier} 1</td>
                 <td />
                 <td>50</td>
@@ -52,7 +54,9 @@ class IcoDetails2 extends React.Component<any, any> {
                 <td className="color--purple">€ 0.08</td>
               </tr>
               <tr style={{ background: '#392551' }}>
-                <td className="color--purple">{this.props.lang.mainSale}</td>
+                <td className="color--purple">
+                  {this.props.lang.publicMainSale}
+                </td>
                 <td>{this.props.lang.tier} 2</td>
                 <td />
                 <td>30</td>
@@ -61,7 +65,9 @@ class IcoDetails2 extends React.Component<any, any> {
                 <td className="color--purple">€ 0.10</td>
               </tr>
               <tr style={{ background: '#392551' }}>
-                <td className="color--purple">{this.props.lang.mainSale}</td>
+                <td className="color--purple">
+                  {this.props.lang.publicMainSale}
+                </td>
                 <td>{this.props.lang.tier} 3</td>
                 <td />
                 <td>20</td>
