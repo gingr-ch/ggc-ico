@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import './RevolutionarySolution.css';
 import GgCard from '../../components/ggCards/GgCard';
-import Cycle from '../../components/svgCycle/svgCycle';
+import Cycle from '../../components/svgCycle/svgCycle2';
 
 // export const langEn = require('../../assets/l18n/revolutionary-solution.en.json');
 // export const strings: RevolutionarySolutionStrings = new LocalizedStrings({
