@@ -49,6 +49,7 @@ class TeamItem extends React.Component<TeamItems> {
             marginTop: '0.5em',
             fontSize: '13px',
             letterSpacing: '0.1em',
+            textTransform: 'uppercase',
           }}
         >
           {this.props.role}
