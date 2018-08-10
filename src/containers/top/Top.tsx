@@ -1,15 +1,16 @@
 import * as React from 'react';
 import VimeoPlayer from 'react-player';
 import classNames from 'classnames';
+import OnVisible from 'react-on-visible';
 // import Img from 'react-image';
 
 import './Top.css';
 
 import Button from '../../components/button/Button';
 import ButtonPlay from '../../components/buttonPlay/ButtonPlay';
-import OnVisible from 'react-on-visible';
+import Chart from '../../components/svgChart/svgChart';
 
-const chart = require(process.env.REACT_APP_MEDIA_URL + 'chart.png');
+// const chart = require(process.env.REACT_APP_MEDIA_URL + 'chart.png');
 
 class Top extends React.Component<any, any> {
   player: any;
@@ -103,11 +104,9 @@ class Top extends React.Component<any, any> {
             </div>
             <div className="spacer" />
             <div className="spacer" />
-            <img
-              src={chart}
-              alt="Chart"
-              style={{ maxWidth: '600px', width: '100%' }}
-            />
+
+            <Chart lang={this.props.lang} />
+
             <div className="play-button hide-xs">
               <OnVisible className="rotate-in">
                 <ButtonPlay videoToggle={this.videoToggle}>
