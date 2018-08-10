@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Text } from '@vx/text';
 // import LocalizedStrings from 'react-localization';
 // import { BlockchainStrings } from '../../components/l18n';
 //
@@ -787,7 +788,7 @@ const BlockchainChart = (props: any) => (
       style={{ isolation: 'isolate' }}
       fontSize={11.306}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
+      fontFamily="brandon_grotesquebold,Brandon Grotesque"
       fontWeight={700}
       letterSpacing="-.03em"
     >
@@ -798,7 +799,7 @@ const BlockchainChart = (props: any) => (
       style={{ isolation: 'isolate' }}
       fontSize={11.306}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
+      fontFamily="brandon_grotesquebold,Brandon Grotesque"
       fontWeight={700}
     >
       {props.lang.bank}
@@ -807,22 +808,27 @@ const BlockchainChart = (props: any) => (
       style={{ isolation: 'isolate' }}
       fontSize={11.306}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
+      fontFamily="brandon_grotesquebold,Brandon Grotesque"
       fontWeight={700}
     >
-      <text
-        transform="translate(401.667 105.277)"
+      <Text
+        verticalAnchor="start"
+        textAnchor="start"
+        width="80"
+        x="401.667"
+        y="83.277"
+        lineHeight="1.2em"
         style={{ isolation: 'isolate' }}
       >
         {props.lang.gingrPopNGo}
-      </text>
+      </Text>
     </g>
     <text
       transform="translate(436 223.61)"
       style={{ isolation: 'isolate' }}
       fontSize={11.306}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
+      fontFamily="brandon_grotesquebold,Brandon Grotesque"
       fontWeight={700}
     >
       {props.lang.externalAPIs}
@@ -832,7 +838,7 @@ const BlockchainChart = (props: any) => (
       style={{ isolation: 'isolate' }}
       fontSize={11.306}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
+      fontFamily="brandon_grotesquebold,Brandon Grotesque"
       fontWeight={700}
     >
       {props.lang.transport}
@@ -841,22 +847,27 @@ const BlockchainChart = (props: any) => (
       style={{ isolation: 'isolate' }}
       fontSize={11.306}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
+      fontFamily="brandon_grotesquebold,Brandon Grotesque"
       fontWeight={700}
     >
-      <text
-        transform="translate(301.333 412.61)"
+      <Text
+        verticalAnchor="start"
+        textAnchor="start"
+        width="80"
+        x="301.333"
+        y="406.61"
+        lineHeight="1.2em"
         style={{ isolation: 'isolate' }}
       >
         {props.lang.gingrCare}
-      </text>
+      </Text>
     </g>
     <text
       transform="translate(134.667 412.944)"
       style={{ isolation: 'isolate' }}
       fontSize={11.306}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
+      fontFamily="brandon_grotesquebold,Brandon Grotesque"
       fontWeight={700}
     >
       {props.lang.bookings}
@@ -865,22 +876,27 @@ const BlockchainChart = (props: any) => (
       style={{ isolation: 'isolate' }}
       fontSize={11.306}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
+      fontFamily="brandon_grotesquebold,Brandon Grotesque"
       fontWeight={700}
     >
-      <text
-        transform="translate(16.333 316.944)"
+      <Text
+        verticalAnchor="start"
+        textAnchor="start"
+        width="80"
+        x="16.333"
+        y="309.944"
+        lineHeight="1.2em"
         style={{ isolation: 'isolate' }}
       >
         {props.lang.serviceProviders}
-      </text>
+      </Text>
     </g>
     <text
       transform="translate(0 227.61)"
       style={{ isolation: 'isolate' }}
       fontSize={11.306}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
+      fontFamily="brandon_grotesquebold,Brandon Grotesque"
       fontWeight={700}
     >
       {props.lang.clients}
@@ -889,15 +905,20 @@ const BlockchainChart = (props: any) => (
       style={{ isolation: 'isolate' }}
       fontSize={11.306}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
+      fontFamily="brandon_grotesquebold,Brandon Grotesque"
       fontWeight={700}
     >
-      <text
-        transform="translate(37.333 94.277)"
+      <Text
+        verticalAnchor="start"
+        textAnchor="start"
+        width="80"
+        x="37.333"
+        y="88.277"
+        lineHeight="1.2em"
         style={{ isolation: 'isolate' }}
       >
         {props.lang.gingrConnect}
-      </text>
+      </Text>
     </g>
   </svg>
 );
