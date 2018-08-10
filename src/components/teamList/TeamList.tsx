@@ -93,8 +93,7 @@ class TeamList extends React.Component<any, any> {
         flag: swiss,
         name: 'Vladimir Vuckovic',
         role: this.props.lang.salesManager,
-        description:
-          'Vladimir has a proven track record of high sale levels with an extensive network of contacts in many industries, particularly insurance.',
+        description: this.props.lang.vladimirHasAProven,
       },
       {
         id: 2,
@@ -102,8 +101,7 @@ class TeamList extends React.Component<any, any> {
         flag: swiss,
         name: 'Florian Fröhlich',
         role: this.props.lang.artDirector + ' / ' + this.props.lang.branding,
-        description:
-          'Responsible for making everything look beautiful and easy to use. With 10 years experience in graphic design working for major advertising companies and having been awarded prizes. When it comes to Florian there are no limits to the graphics, creativity, and vision he envisages. He has a true gift when it comes to branding, design, and marketing.',
+        description: this.props.lang.responsibleForMaking,
       },
       {
         id: 3,
@@ -111,8 +109,7 @@ class TeamList extends React.Component<any, any> {
         flag: ukraine,
         name: 'Yurii Firs',
         role: this.props.lang.cto,
-        description:
-          'I’m a web whiz trying to facilitate the modern life by letting more magic (technology) to the world. For the purpose of making this come true, I live and breathe the frontend (JS, Angular, ReactJS, etc.) and backend (PHP, Node.js, etc.) tasks having devoted the quarter of my life to creating top-notch solutions for Gingr.',
+        description: this.props.lang.imAWebWhiz,
       },
       {
         id: 4,
@@ -120,8 +117,7 @@ class TeamList extends React.Component<any, any> {
         flag: southAfrica,
         name: 'Nyhl Rawlings',
         role: this.props.lang.blockchainDeveloper,
-        description:
-          'Having learnt to program as a child, has over the years mastered neat and efficient code in more than a dozen programming languages. Nyhl is also proficient in circuit design, repair and retro fitting and is currently studying integrated circuit design. His IT skills include c/c++, Qt, java, php, javacript, ruby, python, c#, assembly x86, assembly arm, Objective C, Swift digital circuit design, 3d modelling.',
+        description: this.props.lang.havingLearntToProgram,
       },
       {
         id: 5,
@@ -129,8 +125,7 @@ class TeamList extends React.Component<any, any> {
         flag: ukraine,
         name: 'Olha Koshchuk',
         role: this.props.lang.projectManager,
-        description:
-          'Hi, I’m Olha. I’m a Project Manager. I’m a problem-solving maniac. My super powers in organisation, communication and leading a team of developers skills are merged to assist the Gingr’ needs.',
+        description: this.props.lang.hiImOlha,
       },
       {
         id: 6,
@@ -138,8 +133,7 @@ class TeamList extends React.Component<any, any> {
         flag: swiss,
         name: 'Jeff Stählin',
         role: this.props.lang.seniorFrontendDeveloper,
-        description:
-          'With over 9 years of experience in IT and specializing in front-end development Jefferson is truly passionate about coding. One of his main focuses is ensuring that the user experience on Gingr is of the highest level providing optimal interaction. His skill set includes HTML, CSS, SCSS, Less, Responsive Design, Javascript, ES2015, jQuery, Wordpress with a lot of experience with the AngularJS & Angular 2+ frameworks. Well versed in using NodeJS. Adept with modern build tools such as Webpack, Grunt & Gulp. Comfortable on the command line for everyday use. Average experience in MYSQL and general server setups with NGINX and Apache. Some experience in PHP from creating Wordpress plugins and themes.',
+        description: this.props.lang.withOver9Years,
       },
       {
         id: 7,
@@ -147,8 +141,7 @@ class TeamList extends React.Component<any, any> {
         flag: ukraine,
         name: 'Taras Kohanets',
         role: this.props.lang.seniorDeveloper,
-        description:
-          'I’m Terry, a web developer with totally fresh approach to web and mobile development. I’m keen on dealing with modern technologies like JavaScript, Angular, Sails.js, Express.js, Node.js.',
+        description: this.props.lang.imTerry,
       },
       {
         id: 8,
@@ -156,8 +149,7 @@ class TeamList extends React.Component<any, any> {
         flag: ukraine,
         name: 'Sergiy Voitovych',
         role: this.props.lang.techLead + ' - ' + this.props.lang.webLogic,
-        description:
-          'I’m Serhii. I’m just a web developer who strives to create the awesome stuff. Whether it’s managing a remote team or delivering challenging projects from start to launch, I’m ready to take it up. The tools I’ve got the most passion for are JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, Angular.',
+        description: this.props.lang.imSerhii,
       },
     ];
 
