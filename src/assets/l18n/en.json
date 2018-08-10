@@ -311,5 +311,21 @@
   "october": "October",
   "november": "November",
   "december": "December",
-  "login": "Login"
+  "login": "Login",
+  "telegram": "Telegram",
+  "twitter": "Twitter",
+  "facebook": "Facebook",
+  "instagram": "Instagram",
+  "salesManager": "Sales Manager",
+  "artDirector": "Art Director",
+  "branding": "Branding",
+  "cto": "CTO",
+  "blockchainDeveloper": "Blockchain Developer",
+  "projectManager": "Project Manager",
+  "seniorFrontendDeveloper": "Senior Frontend Developer",
+  "seniorDeveloper": "Senior Developer",
+  "techLead": "Tech Lead",
+  "webLogic": "Web Logic",
+  "ceo": "CEO",
+  "founder": "Founder"
 }

@@ -220,7 +220,7 @@ class App extends React.Component<any, any> {
         <ScrollableAnchor id={'team-all'}>
           <Section bg="#592356">
             <LazyLoad offset={1000} height={'100%'} once={true}>
-              <TeamAll />
+              <TeamAll lang={this.state.lang} />
             </LazyLoad>
           </Section>
         </ScrollableAnchor>
