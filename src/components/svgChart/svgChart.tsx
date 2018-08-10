@@ -22,37 +22,13 @@ const Chart = (props: any) => (
       transform="matrix(1 -1.570796e-04 1.570796e-04 1 18.999 73.882)"
       className="st1 st2 st3"
     >
-      -
-    </text>
-    <text
-      transform="matrix(1 -1.570796e-04 1.570796e-04 1 23.248 73.8813)"
-      className="st1 st2 st3"
-    >
-      75%
+      -75%
     </text>
     <text
       transform="matrix(1 -1.570796e-04 1.570796e-04 1 19.3688 85.2119)"
       className="st4 st5 st6"
     >
-      0
-    </text>
-    <text
-      transform="matrix(1 -1.570796e-04 1.570796e-04 1 24.4758 85.2111)"
-      className="st4 st5 st6"
-    >
-      .
-    </text>
-    <text
-      transform="matrix(1 -1.570796e-04 1.570796e-04 1 26.1988 85.2109)"
-      className="st4 st5 st6"
-    >
-      0
-    </text>
-    <text
-      transform="matrix(1 -1.570796e-04 1.570796e-04 1 31.2808 85.2101)"
-      className="st4 st5 st6"
-    >
-      3 €
+      0.03 €
     </text>
     <path
       className="st1"
@@ -70,109 +46,37 @@ const Chart = (props: any) => (
       transform="matrix(1 -1.570796e-04 1.570796e-04 1 92.08 56.225)"
       className="st7 st2 st3"
     >
-      -
-    </text>
-    <text
-      transform="matrix(1 -1.570796e-04 1.570796e-04 1 96.304 56.2243)"
-      className="st7 st2 st3"
-    >
-      50%
+      -50%
     </text>
     <text
       transform="matrix(1 -1.570796e-04 1.570796e-04 1 93.2388 67.5548)"
       className="st4 st5 st6"
     >
-      0
-    </text>
-    <text
-      transform="matrix(1 -1.570796e-04 1.570796e-04 1 98.3458 67.554)"
-      className="st4 st5 st6"
-    >
-      .
-    </text>
-    <text
-      transform="matrix(1 -1.570796e-04 1.570796e-04 1 100.0688 67.5537)"
-      className="st4 st5 st6"
-    >
-      06 €
+      0.06 €
     </text>
     <text
       transform="matrix(1 -1.570796e-04 1.570796e-04 1 170.553 37.209)"
       className="st8 st2 st3"
     >
-      -
-    </text>
-    <text
-      transform="matrix(1 -1.570796e-04 1.570796e-04 1 174.789 37.2083)"
-      className="st8 st2 st3"
-    >
-      33%
+      -33%
     </text>
     <text
       transform="matrix(1 -1.570796e-04 1.570796e-04 1 170.9248 48.5389)"
       className="st4 st5 st6"
     >
-      0
-    </text>
-    <text
-      transform="matrix(1 -1.570796e-04 1.570796e-04 1 176.0318 48.5381)"
-      className="st4 st5 st6"
-    >
-      .
-    </text>
-    <text
-      transform="matrix(1 -1.570796e-04 1.570796e-04 1 177.7548 48.5379)"
-      className="st4 st5 st6"
-    >
-      08 €
+      0.08 €
     </text>
     <text
       transform="matrix(1 -1.570796e-04 1.570796e-04 1 245.502 19.122)"
       className="st8 st2 st3"
     >
-      -
-    </text>
-    <text
-      transform="matrix(1 -1.570796e-04 1.570796e-04 1 249.726 19.1213)"
-      className="st8 st2 st3"
-    >
-      16
-    </text>
-    <text
-      transform="matrix(1 -1.570796e-04 1.570796e-04 1 260.603 19.1196)"
-      className="st8 st2 st3"
-    >
-      .
-    </text>
-    <text
-      transform="matrix(1 -1.570796e-04 1.570796e-04 1 263.382 19.1192)"
-      className="st8 st2 st3"
-    >
-      6%
+      -16.6%
     </text>
     <text
       transform="matrix(1 -1.570796e-04 1.570796e-04 1 250.6018 30.4512)"
       className="st4 st5 st6"
     >
-      0
-    </text>
-    <text
-      transform="matrix(1 -1.570796e-04 1.570796e-04 1 255.7088 30.4504)"
-      className="st4 st5 st6"
-    >
-      .
-    </text>
-    <text
-      transform="matrix(1 -1.570796e-04 1.570796e-04 1 257.3678 30.4501)"
-      className="st4 st5 st6"
-    >
-      1
-    </text>
-    <text
-      transform="matrix(1 -1.570796e-04 1.570796e-04 1 260.1188 30.4497)"
-      className="st4 st5 st6"
-    >
-      0 €
+      0.10 €
     </text>
     <line className="st0" x1="28.3" y1="149.8" x2="337.4" y2="149.8" />
     <text
@@ -237,13 +141,7 @@ const Chart = (props: any) => (
       d="M342.9 28.4c1.7 3.3.5 7.3-2.7 9.1s-7.3.5-9.1-2.7c-1.7-3.3-.5-7.3 2.7-9.1 3.2-1.7 7.3-.5 9.1 2.7zm-77.5 118.2c1.7 3.3.5 7.3-2.7 9.1-3.3 1.7-7.3.5-9.1-2.7-1.7-3.3-.5-7.3 2.7-9.1 3.2-1.8 7.3-.6 9.1 2.7zm77.5 0c1.7 3.3.5 7.3-2.7 9.1-3.3 1.7-7.3.5-9.1-2.7-1.7-3.3-.5-7.3 2.7-9.1 3.2-1.8 7.3-.6 9.1 2.7z"
     />
     <text transform="matrix(1 0 0 1 308.463 11.689)" className="st4 st2 st10">
-      0
-    </text>
-    <text transform="matrix(1 0 0 1 329.228 11.689)" className="st4 st2 st10">
-      .
-    </text>
-    <text transform="matrix(1 0 0 1 332.157 11.689)" className="st4 st2 st10">
-      12 €
+      0.12 €
     </text>
   </svg>
 );
