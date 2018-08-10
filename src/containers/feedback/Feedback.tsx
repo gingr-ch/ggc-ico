@@ -38,38 +38,38 @@ class Feedback extends React.Component<any, any> {
             <div className="flex-column">
               <img
                 src={telegram}
-                alt="Telegram"
+                alt={this.props.lang.telegram}
                 onClick={() =>
                   this.click('https://t.me/joinchat/HPxTWg1wnQKf8Guv3INWqw')
                 }
               />
-              <span>Telegram</span>
+              <span>{this.props.lang.telegram}</span>
             </div>
             <div className="flex-column">
               <img
                 src={twitter}
-                alt="Twitter"
+                alt={this.props.lang.twitter}
                 onClick={() => this.click('https://twitter.com/GingrICO')}
               />
-              <span>Twitter</span>
+              <span>{this.props.lang.twitter}</span>
             </div>
             <div className="flex-column">
               <img
                 src={facebook}
-                alt="Facebook"
+                alt={this.props.lang.facebook}
                 onClick={() => this.click('https://www.facebook.com/gingr.ch/')}
               />
-              <span>Facebook</span>
+              <span>{this.props.lang.facebook}</span>
             </div>
             <div className="flex-column">
               <img
                 src={instagram}
-                alt="Instagram"
+                alt={this.props.lang.instagram}
                 onClick={() =>
                   this.click('https://www.instagram.com/gingrerotic/')
                 }
               />
-              <span>Instagram</span>
+              <span>{this.props.lang.instagram}</span>
             </div>
           </div>
 
