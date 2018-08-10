@@ -1,0 +1,10 @@
+.flow-header,
+.flow-header tspan {
+  font-family: brandon_grotesquebold;
+  fill: #ffd742;
+}
+
+.flow-header.flow-header--white,
+.flow-header.flow-header--white tspan {
+  fill: white;
+}

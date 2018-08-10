@@ -8,6 +8,7 @@ import * as React from 'react';
 // export const strings: FlowStrings = new LocalizedStrings({
 //   en: langEn,
 // });
+import './svgFlow.css';
 
 const FlowChart = (props: any) => (
   <svg
@@ -779,8 +780,7 @@ const FlowChart = (props: any) => (
     <text
       transform="translate(665.298 87.389)"
       fontSize={15.83}
-      fill="#ffd742"
-      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
+      className="flow-header"
     >
       {props.lang.bank}
     </text>
@@ -871,32 +871,28 @@ const FlowChart = (props: any) => (
     <text
       transform="translate(1.871 315.976)"
       fontSize={14.183}
-      fill="#ffd742"
-      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
+      className="flow-header"
     >
       {props.lang.freeFloat} +/- 70%
     </text>
     <text
       transform="translate(569.27 13.025)"
       fontSize={14.183}
-      fill="#ffd742"
-      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
+      className="flow-header"
     >
       {props.lang.reserve} +/- 30%
     </text>
     <text
       transform="translate(572.116 315.835)"
       fontSize={14.183}
-      fill="#ffd742"
-      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
+      className="flow-header"
     >
       {props.lang.externalExchange}
     </text>
     <text
       transform="translate(2.64 12.056)"
       fontSize={14.183}
-      fill="#ffd742"
-      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
+      className="flow-header"
     >
       {props.lang.gingrPlatform}
     </text>
@@ -1307,8 +1303,7 @@ const FlowChart = (props: any) => (
     <text
       transform="translate(316.682 66.941)"
       fontSize={9.702}
-      fill="#ffd742"
-      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
+      className="flow-header"
     >
       {props.lang.platform}
     </text>
@@ -1478,15 +1473,10 @@ const FlowChart = (props: any) => (
       fill="#ee8aff"
       fillRule="evenodd"
     />
-    <text
-      transform="translate(467.603 506.179)"
-      fontSize={16.209}
-      fill="#fff"
-      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
-    >
-      {props.lang.ico}
+    <text transform="translate(467.603 506.179)" fontSize={16.209}>
+      <tspan className="flow-header flow-header--white">{props.lang.ico}</tspan>
       <tspan fill="#ffd742">
-        <tspan x={-36.574} y={19.45}>
+        <tspan x={-36.574} y={19.45} className="flow-header">
           {props.lang.crowdSale}
         </tspan>
       </tspan>
