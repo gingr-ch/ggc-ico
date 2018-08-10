@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Text } from '@vx/text';
 
 import './svgChart.css';
 
@@ -79,51 +80,82 @@ const Chart = (props: any) => (
       0.10 €
     </text>
     <line className="st0" x1="28.3" y1="149.8" x2="337.4" y2="149.8" />
-    <text
-      transform="matrix(0.983 0 0 1 89.8799 171.6367)"
+    <Text
       className="st7 st2 st9"
+      verticalAnchor="start"
+      textAnchor="start"
+      width="70"
+      x="89.8799"
+      y="165.6367"
     >
       {props.lang.publicPreSale}
-    </text>
-    <text
-      transform="matrix(0.983 0 0 1 166.9219 171.4141)"
+    </Text>
+
+    <Text
       className="st8 st2 st9"
+      verticalAnchor="start"
+      textAnchor="start"
+      width="70"
+      x="166.9219"
+      y="165.4141"
     >
       {props.lang.publicMainSale}
-    </text>
+    </Text>
+
     <text
-      transform="matrix(0.983 0 0 1 166.9219 190.8027)"
+      transform="matrix(0.983 0 0 1 166.9219 192.8027)"
       className="st4 st2 st9"
     >
       {props.lang.tier} 1
     </text>
-    <text
-      transform="matrix(0.983 0 0 1 246.5469 171.6367)"
+
+    <Text
       className="st8 st2 st9"
+      verticalAnchor="start"
+      textAnchor="start"
+      width="70"
+      x="246.5469"
+      y="165.6367"
     >
       {props.lang.publicMainSale}
-    </text>
+    </Text>
+
     <text
-      transform="matrix(0.983 0 0 1 246.5469 191.0264)"
+      transform="matrix(0.983 0 0 1 246.5469 192.8027)"
       className="st4 st2 st9"
     >
       {props.lang.tier} 2
     </text>
-    <text
-      transform="matrix(0.983 0 0 1 323.0469 171.6367)"
+
+    <Text
       className="st8 st2 st9"
+      verticalAnchor="start"
+      textAnchor="start"
+      width="70"
+      x="323.0469"
+      y="165.6367"
     >
-      {props.lang.mainSale}
-    </text>
+      {props.lang.publicMainSale}
+    </Text>
+
     <text
-      transform="matrix(0.983 0 0 1 323.0469 191.0264)"
+      transform="matrix(0.983 0 0 1 323.0469 192.8027)"
       className="st4 st2 st9"
     >
       {props.lang.tier} 3
     </text>
-    <text transform="matrix(1 0 0 1 0 171.712)" className="st1 st2 st9">
+
+    <Text
+      className="st1 st2 st9"
+      verticalAnchor="start"
+      textAnchor="start"
+      width="70"
+      x="12"
+      y="165.6367"
+    >
       {props.lang.privateSale}
-    </text>
+    </Text>
+
     <path
       className="st7"
       d="M110.8 146.6c1.8 3.3.5 7.3-2.7 9.1-3.3 1.8-7.3.5-9.1-2.7-1.7-3.3-.5-7.3 2.7-9.1 3.3-1.8 7.4-.6 9.1 2.7z"

@@ -6,3 +6,4 @@ declare module 'react-select-search';
 declare module 'react-image';
 declare module 'd3';
 declare module 'd3-textwrap';
+declare module 'vx__text';
