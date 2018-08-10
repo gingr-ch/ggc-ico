@@ -83,8 +83,14 @@ class Top extends React.Component<any, any> {
                 alignItems: 'center',
               }}
             >
-              <div style={{ fontSize: '24px', marginBottom: '16px' }}>
-                {this.props.lang.privateSale}
+              <div
+                style={{
+                  fontSize: '24px',
+                  marginBottom: '16px',
+                  textTransform: 'uppercase',
+                }}
+              >
+                {this.props.lang.privateSaleNow}
               </div>
               <div className="color-green" style={{ fontSize: '30px' }}>
                 {this.props.lang.discount}

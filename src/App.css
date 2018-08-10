@@ -209,7 +209,6 @@
 .app-header {
   font-size: 75px;
   text-transform: uppercase;
-  font-family: 'brandon_grotesquebold', sans-serif;
   letter-spacing: 0.03em;
 }
 
@@ -220,6 +219,12 @@
 
 .app-header.app-header--small {
   font-size: 38px;
+}
+
+h1, 
+h3 {
+  letter-spacing: 0.03em;
+  font-family: 'brandon_grotesque_regularRg', sans-serif;
 }
 
 @media(max-width: 599px) {
