@@ -1,4 +1,6 @@
 import * as React from 'react';
+// import { Text } from '@vx/text';
+
 // import LocalizedStrings from 'react-localization';
 // import { FlowStrings } from '../../components/l18n';
 //
@@ -755,7 +757,7 @@ const FlowChart = (props: any) => (
       style={{ isolation: 'isolate' }}
       fontSize={7.178}
       fill="#fff"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       <text
         transform="translate(55.936 586.224)"
@@ -778,7 +780,7 @@ const FlowChart = (props: any) => (
       transform="translate(665.298 87.389)"
       fontSize={15.83}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       {props.lang.bank}
     </text>
@@ -854,19 +856,23 @@ const FlowChart = (props: any) => (
     />
     <path fill="#b60b99" d="M425.998 410.279H541.94v34.596H425.998z" />
     <text
-      transform="translate(457.609 425.084)"
+      transform="translate(442.609 425.084)"
       fontSize={9.703}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
-      {props.lang.account} /<br />
-      {props.lang.internalWallet}
+      <tspan x="17" y="0">
+        {props.lang.account} /
+      </tspan>
+      <tspan x="0" y="10">
+        {props.lang.internalWallet}
+      </tspan>
     </text>
     <text
       transform="translate(1.871 315.976)"
       fontSize={14.183}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       {props.lang.freeFloat} +/- 70%
     </text>
@@ -874,7 +880,7 @@ const FlowChart = (props: any) => (
       transform="translate(569.27 13.025)"
       fontSize={14.183}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       {props.lang.reserve} +/- 30%
     </text>
@@ -882,7 +888,7 @@ const FlowChart = (props: any) => (
       transform="translate(572.116 315.835)"
       fontSize={14.183}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       {props.lang.externalExchange}
     </text>
@@ -890,7 +896,7 @@ const FlowChart = (props: any) => (
       transform="translate(2.64 12.056)"
       fontSize={14.183}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       {props.lang.gingrPlatform}
     </text>
@@ -898,7 +904,7 @@ const FlowChart = (props: any) => (
       transform="rotate(90 19.874 151.529)"
       fontSize={9.702}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       {props.lang.gingrProducts}
     </text>
@@ -940,7 +946,7 @@ const FlowChart = (props: any) => (
       transform="translate(204.19 161.172)"
       fontSize={4.897}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
+      fontFamily="brandon_grotesquebold,Brandon Grotesque"
       fontWeight={700}
     >
       {props.lang.premium}
@@ -980,7 +986,7 @@ const FlowChart = (props: any) => (
       transform="translate(204.839 111.596)"
       fontSize={4.783}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
+      fontFamily="brandon_grotesquebold,Brandon Grotesque"
       fontWeight={700}
     >
       {props.lang.premium}
@@ -1007,7 +1013,7 @@ const FlowChart = (props: any) => (
       transform="translate(204.19 209.391)"
       fontSize={4.897}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
+      fontFamily="brandon_grotesquebold,Brandon Grotesque"
       fontWeight={700}
     >
       {props.lang.premium}
@@ -1047,7 +1053,7 @@ const FlowChart = (props: any) => (
       transform="translate(204.19 258.833)"
       fontSize={4.897}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
+      fontFamily="brandon_grotesquebold,Brandon Grotesque"
       fontWeight={700}
     >
       {props.lang.premium}
@@ -1302,7 +1308,7 @@ const FlowChart = (props: any) => (
       transform="translate(316.682 66.941)"
       fontSize={9.702}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       {props.lang.platform}
     </text>
@@ -1315,7 +1321,7 @@ const FlowChart = (props: any) => (
       transform="translate(661.223 196.636)"
       fontSize={9.703}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       {props.lang.fiatFunds}
       <tspan fontSize={8.144} fill="#fff">
@@ -1331,7 +1337,7 @@ const FlowChart = (props: any) => (
       transform="translate(627.71 125.351)"
       fontSize={9.703}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       30% {props.lang.reserveFundsGGC}
       <tspan fontSize={8.144} fill="#fff">
@@ -1476,7 +1482,7 @@ const FlowChart = (props: any) => (
       transform="translate(467.603 506.179)"
       fontSize={16.209}
       fill="#fff"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       {props.lang.ico}
       <tspan fill="#ffd742">
@@ -1625,7 +1631,7 @@ const FlowChart = (props: any) => (
       transform="translate(124.978 385.168)"
       fontSize={8.144}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       <tspan>{props.lang.gingrSexWorker}</tspan>
     </text>
@@ -1633,7 +1639,7 @@ const FlowChart = (props: any) => (
       transform="translate(220.074 385.168)"
       fontSize={8.144}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       {props.lang.establishment}
     </text>
@@ -1641,7 +1647,7 @@ const FlowChart = (props: any) => (
       transform="translate(308.768 385.168)"
       fontSize={8.144}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       {props.lang.agency}
     </text>
@@ -1649,7 +1655,7 @@ const FlowChart = (props: any) => (
       transform="translate(48.144 385.168)"
       fontSize={8.144}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       {props.lang.client}
     </text>
@@ -1657,7 +1663,7 @@ const FlowChart = (props: any) => (
       transform="translate(161.802 531.078)"
       fontSize={8.144}
       fill="#fff"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       {props.lang.externalWallet}
     </text>
@@ -1665,7 +1671,7 @@ const FlowChart = (props: any) => (
       transform="rotate(.043 -610934.713 87657.289)"
       fontSize={8.144}
       fill="#fff"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
       letterSpacing="-.034em"
     >
       {props.lang.payForService}
@@ -1723,7 +1729,7 @@ const FlowChart = (props: any) => (
       transform="translate(87.489 433.712)"
       fontSize={5.951}
       fill="#aa3dc1"
-      fontFamily="BrandonGrotesque-Bold,Brandon Grotesque"
+      fontFamily="brandon_grotesquebold,Brandon Grotesque"
       fontWeight={700}
     >
       {props.lang.escrow}
@@ -1732,7 +1738,7 @@ const FlowChart = (props: any) => (
       transform="translate(317.298 530.222)"
       fontSize={8.144}
       fill="#ffd742"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       {props.lang.investor}
     </text>
@@ -1854,7 +1860,7 @@ const FlowChart = (props: any) => (
       transform="translate(549.264 43.945)"
       fontSize={9.928}
       fill="#fff"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       {props.lang.buyGGC} (100% - X%)
     </text>
@@ -1862,7 +1868,7 @@ const FlowChart = (props: any) => (
       transform="translate(549.268 57.369)"
       fontSize={9.928}
       fill="#fff"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       {props.lang.sellGGC} (100% + Y%)
     </text>
@@ -1898,7 +1904,7 @@ const FlowChart = (props: any) => (
       transform="translate(0 583.532)"
       fontSize={8.51}
       fill="#fff"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       {props.lang.flowOfFiat}
     </text>
@@ -1906,7 +1912,7 @@ const FlowChart = (props: any) => (
       transform="translate(.857 618.407)"
       fontSize={8.51}
       fill="#fff"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       {props.lang.cryptoCoin} (GGC)
     </text>
@@ -1918,7 +1924,7 @@ const FlowChart = (props: any) => (
       transform="translate(1.46 651.07)"
       fontSize={8.51}
       fill="#fff"
-      fontFamily="BrandonGrotesque-Medium,Brandon Grotesque"
+      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       {props.lang.flowDirection}
     </text>
