@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Text } from '@vx/text';
 // import LocalizedStrings from 'react-localization';
 // import { RevolutionarySolutionStrings } from '../../components/l18n';
 //
@@ -6,6 +7,8 @@ import * as React from 'react';
 // export const strings: RevolutionarySolutionStrings = new LocalizedStrings({
 //   en: langEn,
 // });
+
+import './svgCycle.css';
 
 const Cycle = (props: any) => (
   <svg data-name="Layer 1" viewBox="0 0 620.586 620.767" {...props}>
@@ -198,8 +201,13 @@ const Cycle = (props: any) => (
       points="302.715 172.682 299.673 167.318 305.838 167.367 312.002 167.417 308.879 172.729 305.754 178.046 302.715 172.682"
       style={{ fill: '#fff' }}
     />
-    <text
-      transform="translate(454.092 310.208)"
+    <Text
+      verticalAnchor="start"
+      textAnchor="start"
+      width="70"
+      x="454.092"
+      y="310.208"
+      lineHeight="1.4em"
       style={{
         fontSize: '7.978891849517822px',
         fill: '#fff',
@@ -207,18 +215,25 @@ const Cycle = (props: any) => (
       }}
     >
       {props.lang.ginrgsLikeToWorkIndependently}
-    </text>
-    <text
-      transform="translate(525.949 371.425)"
+    </Text>
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="start"
+      width="70"
+      x="525.949"
+      y="362.425"
+      lineHeight="1.2em"
       style={{
         fontSize: '13.6781005859375px',
         fill: '#ffd742',
         fontFamily: 'brandon_grotesquebold, Brandon Grotesque',
-        fontWeight: 700,
+        fontWeight: 400,
       }}
+      className="cycle-header"
     >
       {props.lang.gingrPopNGo}
-    </text>
+    </Text>
     <text
       transform="translate(525.949 405.743)"
       style={{
@@ -231,8 +246,13 @@ const Cycle = (props: any) => (
         {props.lang.accessToRentRooms}
       </tspan>
     </text>
-    <text
-      transform="translate(390.745 247.455)"
+    <Text
+      verticalAnchor="start"
+      textAnchor="start"
+      width="60"
+      x="390.745"
+      y="247.455"
+      lineHeight="1.4em"
       style={{
         fontSize: '7.978891849517822px',
         fill: '#fff',
@@ -240,33 +260,35 @@ const Cycle = (props: any) => (
       }}
     >
       {props.lang.signUpWithGingrPlatform}
-    </text>
-    <text
+    </Text>
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="end"
+      width="60"
+      x="302.1"
+      y="359.413"
+      lineHeight="1.4em"
       style={{
         fontSize: '7.978891849517822px',
         fill: '#fff',
         fontWeight: 700,
       }}
     >
-      <tspan
-        x="217.1"
-        y="359.413"
-        style={{ letterSpacing: '-0.002998634610073813em' }}
-      >
-        {props.lang.connectToASafeWorkspace}
-      </tspan>
-    </text>
-    <text
-      transform="translate(253.407 326.465)"
-      style={{
-        fontSize: '13.6781005859375px',
-        fill: '#ffd742',
-        fontFamily: 'brandon_grotesquebold, Brandon Grotesque',
-        fontWeight: 700,
-      }}
+      {props.lang.connectToASafeWorkspace}
+    </Text>
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="end"
+      width="60"
+      x="303.407"
+      y="321.465"
+      lineHeight="1.2em"
+      className="cycle-header"
     >
       {props.lang.gingrConnect}
-    </text>
+    </Text>
     <path
       d="M287.439 443.534v7.17c0 1.151-.577 1.76-1.719 1.714a13.254 13.254 0 0 1-2.993-.285 5.824 5.824 0 0 1-4.222-5.618q-.016-3.033 0-6.059a5.983 5.983 0 0 1 5.915-5.916h1.441a1.49 1.49 0 0 1 1.574 1.586c.007 2.468.004 4.931.004 7.408zm23.883-.047v-7.222c0-1.148.574-1.752 1.714-1.712a13.539 13.539 0 0 1 2.99.279 5.818 5.818 0 0 1 4.226 5.619c.014 2.022.014 4.035 0 6.053a5.974 5.974 0 0 1-5.911 5.921q-.723.011-1.443 0a1.483 1.483 0 0 1-1.579-1.577c0-2.457.003-4.905.003-7.361zM283.169 432.6a17.818 17.818 0 0 1 32.423.01c-1.011 0-2.05.011-3.086-.019-.141 0-.316-.209-.414-.362a14.933 14.933 0 0 0-25.367-.068.79.79 0 0 1-.8.456c-.925-.045-1.853-.017-2.756-.017zm28.002 21.759a4.876 4.876 0 0 0 2.912.5 5.938 5.938 0 0 1-5.776 4.455c-.916.006-1.834.025-2.747 0a.592.592 0 0 0-.655.414 4.465 4.465 0 1 1-.035-3.846.716.716 0 0 0 .8.484c.714-.029 1.43-.039 2.143 0a3.192 3.192 0 0 0 3.358-2.007z"
       style={{ fill: '#f39fff' }}
@@ -294,8 +316,14 @@ const Cycle = (props: any) => (
         </tspan>
       </tspan>
     </text>
-    <text
-      transform="translate(49.022 586.439)"
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="end"
+      width="80"
+      x="135.022"
+      y="581.439"
+      lineHeight="1.4em"
       style={{
         fontSize: '7.978891849517822px',
         fill: '#fff',
@@ -303,31 +331,31 @@ const Cycle = (props: any) => (
       }}
     >
       {props.lang.depositOfFundsOnSexWorkersAccount}
-    </text>
-    <text
-      transform="translate(52.106 569.331)"
-      style={{
-        fontSize: '13.6781005859375px',
-        fill: '#ffd742',
-        fontFamily: 'brandon_grotesquebold, Brandon Grotesque',
-        fontWeight: 700,
-      }}
-    >
+    </Text>
+    <text transform="translate(52.106 569.331)" className="cycle-header">
       {props.lang.gingrBank}
     </text>
+
     <text
       transform="translate(474.359 569.24)"
       style={{
         fontSize: '13.6781005859375px',
         fill: '#ffd742',
         fontFamily: 'brandon_grotesquebold, Brandon Grotesque',
-        fontWeight: 700,
+        fontWeight: 400,
       }}
+      className="cycle-header"
     >
       {props.lang.client}
     </text>
-    <text
-      transform="translate(0 384.675)"
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="end"
+      width="80"
+      x="104.359"
+      y="380.675"
+      lineHeight="1.4em"
       style={{
         fontSize: '7.978891849517822px',
         fill: '#fff',
@@ -335,15 +363,16 @@ const Cycle = (props: any) => (
       }}
     >
       {props.lang.supportAndConsulting}
-    </text>
+    </Text>
     <text
       transform="translate(23.9 367.566)"
       style={{
         fontSize: '13.6781005859375px',
         fill: '#ffd742',
         fontFamily: 'brandon_grotesquebold, Brandon Grotesque',
-        fontWeight: 700,
+        fontWeight: 400,
       }}
+      className="cycle-header"
     >
       {props.lang.gingrCare}
     </text>
@@ -353,19 +382,21 @@ const Cycle = (props: any) => (
         fontSize: '16.896432876586914px',
         fill: '#ffd742',
         fontFamily: 'brandon_grotesquebold, Brandon Grotesque',
-        fontWeight: 700,
+        fontWeight: 400,
       }}
+      className="cycle-header"
     >
       {props.lang.exit}
     </text>
     <text
-      transform="translate(440.096 36.961)"
+      transform="translate(440.096 25.961)"
       style={{
         fontSize: '13.6781005859375px',
         fill: '#e5a376',
         fontFamily: 'brandon_grotesquebold, Brandon Grotesque',
-        fontWeight: 700,
+        fontWeight: 400,
       }}
+      className="cycle-header"
     >
       {props.lang.blackMarket}
     </text>
@@ -392,7 +423,7 @@ const Cycle = (props: any) => (
       {props.lang.vettedAndVerified}
     </text>
     <text
-      transform="translate(440.053 59.77)"
+      transform="translate(440.053 45.77)"
       style={{
         fontSize: '7.978891849517822px',
         fill: '#fff',
