@@ -20,7 +20,7 @@ const list = [
   },
 ];
 
-class TeamCEO extends React.Component {
+class TeamCEO extends React.Component<any, any> {
   state = {
     visible: false,
     width: 860,
@@ -36,6 +36,10 @@ class TeamCEO extends React.Component {
       description: '',
     },
   };
+
+  constructor(props: object) {
+    super(props);
+  }
 
   onClick = (item: object, e: any) => {
     this.setState({
@@ -194,19 +198,13 @@ class TeamCEO extends React.Component {
                 marginTop: '5px',
               }}
             >
-              CEO & FOUNDER
+              {this.props.lang.ceo} & {this.props.lang.founder}
             </h4>
             <p style={{ lineHeight: '1.4em', fontSize: '15px' }}>
-              Sergio’s dream is to make the world a better place. With a natural
-              ability to lead his team and emulate his passion for the future,
-              his infectious, funny, honest, and straight forward personality
-              attracts top level people who delight in working with him.
+              {this.props.lang.sergiosDream}
             </p>
             <p style={{ lineHeight: '1.4em', fontSize: '15px' }}>
-              Sergio has always given 100 per cent to the project. He is not
-              afraid to push the boundaries both of himself, his team, and in
-              fact the views of the entire world. He constantly questions the
-              status quo and is not afraid to challenge it.
+              {this.props.lang.sergioHasAlways}
             </p>
           </div>
         </div>
