@@ -40,10 +40,10 @@ class Header extends React.Component<any, any> {
           {this.props.children}
           <div className="gg-header-container__buttons">
             <Button click={() => this.click(whitePaper)} borderColor="white">
-              WHITEPAPER
+              {this.props.lang.whitepaper}
             </Button>
             <Button click={() => this.click(adminIco)} borderColor="#df9eff">
-              LOGIN
+              {this.props.lang.login}
             </Button>
           </div>
 
