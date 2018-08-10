@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Text } from '@vx/text';
 // import LocalizedStrings from 'react-localization';
 // import { RoadmapStrings } from '../../components/l18n';
 //
@@ -6,6 +7,7 @@ import * as React from 'react';
 // export const strings: RoadmapStrings = new LocalizedStrings({
 //   en: langEn,
 // });
+import './svgRoadmap.css';
 
 const Roadmap = (props: any) => (
   <svg
@@ -16,6 +18,7 @@ const Roadmap = (props: any) => (
       maxWidth: '645px',
       minWidth: '645px',
       textTransform: 'uppercase',
+      fontFamily: 'brandon_grotesque_regularRg',
     }}
   >
     <text
@@ -107,7 +110,8 @@ const Roadmap = (props: any) => (
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
       }}
     >
-      GINGR 2<tspan
+      GINGR 2
+      <tspan
         x="59.206"
         y={0}
         style={{ letterSpacing: '-0.01598629486374358em' }}
@@ -180,16 +184,18 @@ const Roadmap = (props: any) => (
     >
       {props.lang.june}
     </text>
-    <text
-      transform="translate(316.634 138.746)"
-      style={{
-        fontSize: '15.103879928588867px',
-        fill: '#fff',
-        fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
-      }}
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="start"
+      width="180"
+      x="316.634"
+      y="128.746"
+      lineHeight="1.2em"
+      className="roadmap-header"
     >
       {props.lang.establishUkranianITCompany}
-    </text>
+    </Text>
     <text
       transform="translate(316.742 118.351)"
       style={{
@@ -328,7 +334,8 @@ const Roadmap = (props: any) => (
         fontWeight: 700,
       }}
     >
-      2<tspan
+      2
+      <tspan
         x="11.396"
         y={0}
         style={{ letterSpacing: '-0.005015980113636364em' }}
@@ -345,16 +352,17 @@ const Roadmap = (props: any) => (
       height="269.482"
       style={{ fill: '#d3007e' }}
     />
-    <text
-      transform="translate(316.688 52.419)"
-      style={{
-        fontSize: '15.103879928588867px',
-        fill: '#fff',
-        fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
-      }}
+    <Text
+      verticalAnchor="start"
+      textAnchor="start"
+      width="180"
+      x="316.688"
+      y="45.419"
+      lineHeight="1.2em"
+      className="roadmap-header"
     >
       {props.lang.ggcPaymentSystemIncorporated}
-    </text>
+    </Text>
     <text
       transform="translate(316.796 32.024)"
       style={{
