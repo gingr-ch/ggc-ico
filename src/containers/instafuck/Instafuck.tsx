@@ -5,7 +5,7 @@ import * as React from 'react';
 
 import './Instafuck.css';
 
-import InstafuckChart from '../../components/svgInstafuck/svgInstafuck';
+import InstafuckChart from '../../components/svgInstafuck/svgInstafuck2';
 const instafuckMap = require(process.env.REACT_APP_MEDIA_URL +
   'instafuck/instafuck_map.png');
 const gingrIconPink = require(process.env.REACT_APP_MEDIA_URL +
