@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-.ggc-card .title {
+.ggc-card__title {
   color: #F39FFF;
   text-transform: uppercase;
   font-weight: bold;
