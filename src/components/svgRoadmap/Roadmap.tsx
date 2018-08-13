@@ -110,24 +110,7 @@ const Roadmap = (props: any) => (
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
       }}
     >
-      GINGR 2
-      <tspan
-        x="59.206"
-        y={0}
-        style={{ letterSpacing: '-0.01598629486374358em' }}
-      >
-        .
-      </tspan>
-      <tspan x="62.423" y={0}>
-        0{' '}
-      </tspan>
-      <tspan
-        x="75.276"
-        y={0}
-        style={{ letterSpacing: '0.031002743729686744em' }}
-      >
-        {props.lang.launch}
-      </tspan>
+      GINGR 2.0 {props.lang.launch}
       <tspan style={{ fontSize: '9.23015022277832px' }}>
         <tspan x="7.957" y="13.426">
           {props.lang.pressReleaseWorldWide}
@@ -291,10 +274,7 @@ const Roadmap = (props: any) => (
         y="17.621"
         style={{ letterSpacing: '-0.013998110568252722em' }}
       >
-        (
-      </tspan>
-      <tspan x="4.939" y="17.621">
-        GCS) {props.lang.sale}
+        (GCS) {props.lang.sale}
       </tspan>
     </text>
     <text
@@ -334,17 +314,7 @@ const Roadmap = (props: any) => (
         fontWeight: 700,
       }}
     >
-      2
-      <tspan
-        x="11.396"
-        y={0}
-        style={{ letterSpacing: '-0.005015980113636364em' }}
-      >
-        0
-      </tspan>
-      <tspan x="25.058" y={0}>
-        20
-      </tspan>
+      2020
     </text>
     <rect
       x="285.236"
@@ -383,17 +353,7 @@ const Roadmap = (props: any) => (
     >
       {props.lang.developing}
       <tspan x="22.852" y="18.125">
-        GINGR 2
-      </tspan>
-      <tspan
-        x="82.058"
-        y="18.125"
-        style={{ letterSpacing: '-0.01598629486374358em' }}
-      >
-        .
-      </tspan>
-      <tspan x="85.275" y="18.125">
-        0
+        GINGR 2.0
       </tspan>
     </text>
     <text
