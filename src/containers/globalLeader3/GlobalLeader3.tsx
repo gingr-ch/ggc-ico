@@ -1,4 +1,5 @@
 import * as React from 'react';
+import OnVisible from 'react-on-visible';
 
 import './GlobalLeader3.css';
 
@@ -9,7 +10,9 @@ class GlobalLeader3 extends React.Component {
     return (
       <div className="gg-section-container gg-section-container--global-leader3">
         <div className="gg-content-container">
-          <img src={continents} alt="" style={{ maxWidth: '100%' }} />
+          <OnVisible className="hidden-content hidden-content--fade-in">
+            <img src={continents} alt="" style={{ maxWidth: '100%' }} />
+          </OnVisible>
         </div>
       </div>
     );
