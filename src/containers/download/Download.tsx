@@ -35,7 +35,10 @@ class Download extends React.Component<any, any> {
           <h2 className="app-header app-header--small">
             {this.props.lang.download}
           </h2>
-          <OnVisible className="hidden-content" percent={200}>
+          <OnVisible
+            className="hidden-content hidden-content--flip-in-right"
+            percent={200}
+          >
             <ul
               style={{
                 width: '100%',

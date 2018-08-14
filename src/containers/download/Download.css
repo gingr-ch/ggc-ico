@@ -38,6 +38,11 @@
   text-transform: uppercase;
 }
 
+.download-item img,
+.download-item p {
+  opacity: 0;
+}
+
 
 @media(max-width: 599px) {
   .gg-section-container--download {

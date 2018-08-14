@@ -106,6 +106,37 @@
   }
 }
 
+.hidden-content.hidden-content--flip-in-right {
+  transform: translate3d(0, 0, 0);
+}
+
+.hidden-content.hidden-content--flip-in-right.visible .download-item img,
+.hidden-content.hidden-content--flip-in-right.visible .download-item p {
+  animation-name: flipInRight;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.hidden-content.hidden-content--flip-in-right.visible .download-item p {
+  animation-delay: .3s;
+}
+
+@keyframes flipInRight {
+  0% {
+    transform: translate3d(0, 0, 0) scale(.3) rotateY(-180deg);
+    opacity: 0;
+  }
+  50% {
+    transform: translate3d(110px, 0, 0) scale(.5) rotateY(-90deg);
+    opacity: .6;
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
 .slide-in {
   opacity: 0;
   visibility: hidden;
