@@ -48,6 +48,11 @@
   width: 100%;
 }
 
+.hidden-content.hidden-content--fade-in {
+  transform: translate3d(0, 0, 0);
+  transition-duration: 0.6s;
+}
+
 .hidden-content.hidden-content--from-left {
   transform: translate3d(-50px, 0, 0);
 }
