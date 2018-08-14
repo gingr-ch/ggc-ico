@@ -6,6 +6,7 @@ import * as React from 'react';
 // export const strings: IcoDetailsStrings = new LocalizedStrings({
 //   en: langEn,
 // });
+import OnVisible from 'react-on-visible';
 
 import './IcoDetails3.css';
 import PieChart from '../../components/pieChart/PieChart';
@@ -43,20 +44,27 @@ class IcoDetails3 extends React.Component<any, any> {
             className="flex-row pie-chart-container"
             style={{ justifyContent: 'center' }}
           >
-            <PieChart items={pieItems} />
-            <div
-              className="coin-supply-values flex-column"
-              style={{ alignItems: 'flex-start', paddingTop: '32px' }}
+            <OnVisible className="hidden-content hidden-content--slide-in--left hidden-content--ico-details--slide-in--left">
+              <PieChart items={pieItems} />
+            </OnVisible>
+            <OnVisible
+              className="hidden-content hidden-content--slide-in--left hidden-content--ico-details--slide-in--left"
+              percent={30}
             >
-              <div className="title title--yellow">
-                {this.props.lang.totalCoinSupply}
+              <div
+                className="coin-supply-values flex-column"
+                style={{ alignItems: 'flex-start', paddingTop: '32px' }}
+              >
+                <div className="title title--yellow">
+                  {this.props.lang.totalCoinSupply}
+                </div>
+                <div>2'000’000’000</div>
+                <div className="title">{this.props.lang.forCrowdSale}</div>
+                <div>1'000’000’000 (50%)</div>
+                <div className="title title--cyan">GINGR AG</div>
+                <div>1'000’000’000 (50%)</div>
               </div>
-              <div>2'000’000’000</div>
-              <div className="title">{this.props.lang.forCrowdSale}</div>
-              <div>1'000’000’000 (50%)</div>
-              <div className="title title--cyan">GINGR AG</div>
-              <div>1'000’000’000 (50%)</div>
-            </div>
+            </OnVisible>
           </div>
           <div
             className="ico-details-items-container flex-row"
@@ -70,7 +78,9 @@ class IcoDetails3 extends React.Component<any, any> {
               className="ggc-card flex-column"
               style={{ alignItems: 'flex-start' }}
             >
-              <img src={euroSign} alt="" />
+              <OnVisible className="hidden-content hidden-content--fade-in-rotate">
+                <img src={euroSign} alt="" />
+              </OnVisible>
               <div className="title">{this.props.lang.totalSupply}</div>
               <div>
                 <span
@@ -88,7 +98,9 @@ class IcoDetails3 extends React.Component<any, any> {
               className="ggc-card flex-column"
               style={{ alignItems: 'flex-start' }}
             >
-              <img src={ggcLogo} alt="" />
+              <OnVisible className="hidden-content hidden-content--fade-in-rotate">
+                <img src={ggcLogo} alt="" />
+              </OnVisible>
               <div className="title">{this.props.lang.mainSalePrice}</div>
               <div>
                 {this.props.lang.coinPriceIssue}:<br />
@@ -109,7 +121,9 @@ class IcoDetails3 extends React.Component<any, any> {
               className="ggc-card flex-column"
               style={{ alignItems: 'flex-start' }}
             >
-              <img src={flame} alt="" />
+              <OnVisible className="hidden-content hidden-content--fade-in-rotate">
+                <img src={flame} alt="" />
+              </OnVisible>
               <div className="title">{this.props.lang.coinsBurned}</div>
               <div>{this.props.lang.remainingGGCCoins}</div>
             </div>
@@ -117,7 +131,9 @@ class IcoDetails3 extends React.Component<any, any> {
               className="ggc-card flex-column"
               style={{ alignItems: 'flex-start' }}
             >
-              <img src={ethereum} alt="" />
+              <OnVisible className="hidden-content hidden-content--fade-in-rotate">
+                <img src={ethereum} alt="" />
+              </OnVisible>
               <div className="title">{this.props.lang.ethereumTEC}</div>
               <div>
                 {this.props.lang.usedBlockchain}:<br />

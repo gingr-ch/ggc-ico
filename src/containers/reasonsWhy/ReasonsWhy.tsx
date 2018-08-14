@@ -1,8 +1,11 @@
 import * as React from 'react';
 // import LocalizedStrings from 'react-localization';
 // import { ReasonsWhyStrings } from '../../components/l18n';
+// import OnVisible from 'react-on-visible';
+// import { PoseGroup } from 'react-pose';
 
 import './ReasonsWhy.css';
+import OnVisible from 'react-on-visible';
 
 const gingr = require(process.env.REACT_APP_MEDIA_URL + 'reasons-why.png');
 
@@ -33,33 +36,35 @@ class ReasonsWhy extends React.Component<any, any> {
               />
             </div>
             <div className="reasons-why-list">
-              <div className="reasons-why-list__item flex-row">
-                <div className="number">1</div>
-                <div>{this.props.lang.theGGCoinWillBe}</div>
-              </div>
-              <div className="reasons-why-list__item flex-row">
-                <div className="number">2</div>
-                <div>{this.props.lang.burn20OfOurProfits}</div>
-              </div>
-              <div className="reasons-why-list__item flex-row">
-                <div className="number">3</div>
-                <div>{this.props.lang.weBuyBackGGC}</div>
-              </div>
-              <div className="reasons-why-list__item flex-row">
-                <div className="number">4</div>
-                <div>{this.props.lang.ofTheTransaction}</div>
-              </div>
-              <div className="reasons-why-list__item flex-row">
-                <div className="number">5</div>
-                <div>{this.props.lang.weBuyBackGGC}</div>
-              </div>
-              <div
-                className="reasons-why-list__item flex-row"
-                style={{ justifyContent: 'flex-start' }}
-              >
-                <div className="number">6</div>
-                <div>{this.props.lang.smartContracts}</div>
-              </div>
+              <OnVisible className="hidden-content hidden-content--list">
+                <div className="reasons-why-list__item flex-row">
+                  <div className="number">1</div>
+                  <div>{this.props.lang.theGGCoinWillBe}</div>
+                </div>
+                <div className="reasons-why-list__item flex-row">
+                  <div className="number">2</div>
+                  <div>{this.props.lang.burn20OfOurProfits}</div>
+                </div>
+                <div className="reasons-why-list__item flex-row">
+                  <div className="number">3</div>
+                  <div>{this.props.lang.weBuyBackGGC}</div>
+                </div>
+                <div className="reasons-why-list__item flex-row">
+                  <div className="number">4</div>
+                  <div>{this.props.lang.ofTheTransaction}</div>
+                </div>
+                <div className="reasons-why-list__item flex-row">
+                  <div className="number">5</div>
+                  <div>{this.props.lang.weBuyBackGGC}</div>
+                </div>
+                <div
+                  className="reasons-why-list__item flex-row"
+                  style={{ justifyContent: 'flex-start' }}
+                >
+                  <div className="number">6</div>
+                  <div>{this.props.lang.smartContracts}</div>
+                </div>
+              </OnVisible>
             </div>
           </div>
         </div>

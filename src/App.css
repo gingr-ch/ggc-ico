@@ -64,7 +64,10 @@
 
 .hidden-content.hidden-content--slide-in--right {
   transform: translate3d(-50px, 0, 0);
-  opacity: 0;
+}
+
+.hidden-content.hidden-content--slide-in--left {
+  transform: translate3d(50px, 0, 0);
 }
 
 .hidden-content.visible {
@@ -75,6 +78,30 @@
 
 .hidden-content.visible.hidden-content--flip-in-right {
   animation-name: flipInRight;
+}
+
+.hidden-content.hidden-content--fade-in-rotate {
+  transform: translate3d(0, 0, 0) rotateZ(0);
+  transform-origin: center center;
+  width: auto;
+}
+
+.hidden-content.visible.hidden-content--fade-in-rotate {
+  animation-name: fadeInRotate;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
+}
+
+.hidden-content.visible.hidden-content--slide-in--right {
+  animation-name: slideInRight;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
+}
+
+.hidden-content.visible.hidden-content--slide-in--left {
+  animation-name: slideInLeft;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeInList {
@@ -114,6 +141,28 @@
   }
   100% {
     transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translate3d(50px, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRotate {
+  0% {
+    transform: translate3d(0, 0, 0) rotateZ(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotateZ(360deg);
     opacity: 1;
   }
 }
