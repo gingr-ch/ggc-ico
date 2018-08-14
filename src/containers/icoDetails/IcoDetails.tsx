@@ -54,7 +54,12 @@ class IcoDetails extends React.Component<any, any> {
           <div className="spacer" />
           <div className="spacer" />
 
-          <Carousel autoplay={true} heightMode={'max'} wrapAround={true}>
+          <Carousel
+            autoplay={true}
+            heightMode={'max'}
+            wrapAround={true}
+            initialSlideHeight={'488px'}
+          >
             <img src={icoStages} />
             <img src={icoStagesAlt} />
           </Carousel>
