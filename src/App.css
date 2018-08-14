@@ -75,6 +75,10 @@
   transform: translate3d(50px, 0, 0);
 }
 
+.hidden-content.hidden-content--zoom-in {
+  transform: translate3d(0, 0, 0) scale(10);
+}
+
 .hidden-content.visible {
   opacity: 1;
   visibility: visible;
@@ -107,6 +111,11 @@
   animation-name: slideInLeft;
   animation-duration: .8s;
   animation-fill-mode: forwards;
+}
+
+.hidden-content.visible.hidden-content--zoom-in {
+  transform: translate3d(0, 0, 0) scale(1);
+  transition-duration: .6s;
 }
 
 @keyframes fadeInList {
@@ -348,8 +357,10 @@ h1 {
   font-family: 'brandon_grotesquebold', sans-serif;
 }
 
+h2,
 h3 {
   font-family: 'brandon_grotesque_regularRg', sans-serif;
+  text-transform: uppercase;
 }
 
 @media(max-width: 599px) {
