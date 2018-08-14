@@ -7,7 +7,7 @@ class AboutList extends React.Component {
     const items = [
       { id: 1, name: 'Client', text: 'download' },
       { id: 2, name: 'Platform', anchor: 'platform' },
-      { id: 3, name: 'GG Coin', anchor: 'ggcoin' }
+      { id: 3, name: 'GG Coin', anchor: 'ggcoin' },
     ];
     const itemsList = items.map(item => (
       <li key={item.id.toString()}>
@@ -15,7 +15,7 @@ class AboutList extends React.Component {
       </li>
     ));
 
-    return <ul>{{ itemsList }}</ul>;
+    return <ul>{itemsList}</ul>;
   }
 }
 

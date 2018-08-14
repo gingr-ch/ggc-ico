@@ -21,7 +21,9 @@ class GgCard extends React.Component<CardProps> {
         <div className="ggc-card__image">
           {this.props.image && <img src={this.props.image} alt="" />}
         </div>
-        {this.props.title && <div className="title">{this.props.title}</div>}
+        {this.props.title && (
+          <div className="ggc-card__title">{this.props.title}</div>
+        )}
         {this.props.content && <div>{this.props.content}</div>}
       </div>
     );
