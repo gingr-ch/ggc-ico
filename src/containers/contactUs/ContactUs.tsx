@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Button from '../../components/button/Button';
+import OnVisible from 'react-on-visible';
 // import LocalizedStrings from 'react-localization';
 // import { ContactUsStrings } from '../../components/l18n';
 //
@@ -29,18 +30,20 @@ class ContactUs extends React.Component<any, any> {
             <h1 className="app-header">{this.props.lang.contactUs}</h1>
           </div>
 
-          <div className="contactus-form flex-column">
-            <input
-              className="contactus-form__input"
-              type="text"
-              placeholder={this.props.lang.email}
-            />
-            <textarea
-              className="contactus-form__textarea"
-              placeholder={this.props.lang.message}
-            />
-            <Button click={this.click}>{this.props.lang.send}</Button>
-          </div>
+          <OnVisible className="hidden-content hidden-content--fade-in">
+            <div className="contactus-form flex-column">
+              <input
+                className="contactus-form__input"
+                type="text"
+                placeholder={this.props.lang.email}
+              />
+              <textarea
+                className="contactus-form__textarea"
+                placeholder={this.props.lang.message}
+              />
+              <Button click={this.click}>{this.props.lang.send}</Button>
+            </div>
+          </OnVisible>
         </div>
       </div>
     );
