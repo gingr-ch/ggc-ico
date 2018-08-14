@@ -1,4 +1,6 @@
 import * as React from 'react';
+import OnVisible from 'react-on-visible';
+
 // import LocalizedStrings from 'react-localization';
 // import { BlockchainStrings } from '../../components/l18n';
 
@@ -28,7 +30,9 @@ class Blockchain extends React.Component<any, any> {
           <div className="spacer" />
           <div className="spacer" />
 
-          <BlockchainChart lang={this.props.lang} />
+          <OnVisible percent={50} className="hidden-content">
+            <BlockchainChart lang={this.props.lang} />
+          </OnVisible>
         </div>
       </div>
     );

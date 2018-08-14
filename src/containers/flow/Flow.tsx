@@ -1,7 +1,7 @@
 import * as React from 'react';
 // import LocalizedStrings from 'react-localization';
 // import { FlowStrings } from '../../components/l18n';
-
+import OnVisible from 'react-on-visible';
 import './Flow.css';
 
 import FlowChart from '../../components/svgFlow/svgFlow';
@@ -26,8 +26,9 @@ class Flow extends React.Component<any, any> {
 
           <div className="spacer" />
           <div className="spacer" />
-
-          <FlowChart lang={this.props.lang} />
+          <OnVisible className="hidden-content hidden-content--slide-in--right">
+            <FlowChart lang={this.props.lang} />
+          </OnVisible>
         </div>
       </div>
     );

@@ -33,6 +33,11 @@
   min-width: 257px;
 }
 
+.hidden-content.hidden-content--ico-details--slide-in--left:first-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
 @media(max-width: 599px) {
 
   .pie-chart-container {

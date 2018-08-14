@@ -47,6 +47,37 @@
   margin-right: 16px;
 }
 
+.hidden-content.hidden-content--list .reasons-why-list__item {
+  transform: translate3d(0, -20px, 0);
+  opacity: 0;
+}
+
+.hidden-content.hidden-content--list .reasons-why-list__item:nth-child(1) {
+  animation-delay: .25s;
+}
+.hidden-content.hidden-content--list .reasons-why-list__item:nth-child(2) {
+  animation-delay: .50s;
+}
+.hidden-content.hidden-content--list .reasons-why-list__item:nth-child(3) {
+  animation-delay: .75s;
+}
+.hidden-content.hidden-content--list .reasons-why-list__item:nth-child(4) {
+  animation-delay: 1s;
+}
+.hidden-content.hidden-content--list .reasons-why-list__item:nth-child(5) {
+  animation-delay: 1.25s;
+}
+.hidden-content.hidden-content--list .reasons-why-list__item:nth-child(6) {
+  animation-delay: 1.75s;
+}
+
+.hidden-content.hidden-content--list.visible .reasons-why-list__item {
+  animation-name: fadeInList;
+  animation-duration: .2s;
+  animation-timing-function: cubic-bezier(0.5, 0.43, 0.81, 0.59);
+  animation-fill-mode: forwards;
+}
+
 @media(max-width: 599px) {
   .gg-section-container--reasons-why .app-header {
     font-size: 40px;

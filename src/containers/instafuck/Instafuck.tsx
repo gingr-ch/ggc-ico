@@ -1,4 +1,6 @@
 import * as React from 'react';
+import OnVisible from 'react-on-visible';
+
 // import OnVisible from 'react-on-visible';
 // import LocalizedStrings from 'react-localization';
 // import { InstafuckStrings } from '../../components/l18n';
@@ -31,7 +33,12 @@ class Instafuck extends React.Component<any, any> {
       <div className="gg-section-container gg-section-container--instafuck">
         <div className="gg-content-container">
           <h3>{this.props.lang.welcomeTo}</h3>
-          <h1 className="app-header">{this.props.lang.instafuck}</h1>
+          <OnVisible
+            percent={50}
+            className="hidden-content hidden-content--instafuck"
+          >
+            <h1 className="app-header">{this.props.lang.instafuck}</h1>
+          </OnVisible>
           <h4>"{this.props.lang.weHaveCreatedThe}"</h4>
           <div className="spacer" />
           <div className="hide-xs">

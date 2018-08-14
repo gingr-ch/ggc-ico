@@ -1,6 +1,7 @@
 import * as React from 'react';
 // import LocalizedStrings from 'react-localization';
 // import { RevolutionarySolutionStrings } from '../../components/l18n';
+import OnVisible from 'react-on-visible';
 
 import './RevolutionarySolution.css';
 import GgCard from '../../components/ggCards/GgCard';
@@ -83,20 +84,26 @@ class RevolutionarySolution extends React.Component<any, any> {
             {this.props.lang.sexWorkerLifecycle}
           </div>
 
-          <Cycle lang={this.props.lang} />
+          <OnVisible className="hidden-content hidden-content--slide-in--right">
+            <Cycle lang={this.props.lang} />
+          </OnVisible>
 
           <div style={{ marginTop: '150px', marginBottom: '-3px' }}>
-            <h4
-              style={{ maxWidth: '275px', marginBottom: '50px' }}
-              className="center-title"
-            >
-              “{this.props.lang.rightDecisionsBringRightPeople}”
-            </h4>
-            <img
-              src={gingr}
-              alt=""
-              style={{ maxWidth: '749px', width: '100%' }}
-            />
+            <OnVisible className="hidden-content hidden-content--slide-in--left">
+              <h4
+                style={{ maxWidth: '275px', marginBottom: '50px' }}
+                className="center-title"
+              >
+                “{this.props.lang.rightDecisionsBringRightPeople}”
+              </h4>
+            </OnVisible>
+            <OnVisible className="hidden-content hidden-content--fade-in">
+              <img
+                src={gingr}
+                alt=""
+                style={{ maxWidth: '749px', width: '100%' }}
+              />
+            </OnVisible>
           </div>
         </div>
       </div>

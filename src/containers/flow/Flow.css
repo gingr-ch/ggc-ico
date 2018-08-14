@@ -22,7 +22,6 @@
   text-transform: uppercase;
 }
 
-
 @media(max-width: 599px) {
   .gg-section-container--flow .app-header {
     font-size: 42px

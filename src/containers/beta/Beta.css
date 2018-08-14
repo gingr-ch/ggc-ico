@@ -11,12 +11,30 @@
 .gg-section-container--beta h3 {
   font-weight: 400;
   font-size: 23px;
+  text-transform: uppercase;
 }
 
 .gg-section-container--beta button {
   width: 205px;
   height: 49px;
   font-size: 18px;
+  margin: 0 auto;
+}
+
+.gg-section-container--beta button,
+.gg-section-container--beta p {
+  opacity: 0;
+}
+
+.hidden-content.hidden-content--flip-in-right.visible .beta-item {
+  animation-name: flipInRight;
+  animation-duration: 1.0s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.hidden-content.hidden-content--flip-in-right.visible .beta-item {
+  animation-delay: .3s;
 }
 
 @media(max-width: 599px) {

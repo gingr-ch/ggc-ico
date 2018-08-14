@@ -3,6 +3,7 @@
   border-collapse: collapse;
   max-width: 800px;
   width: 100%;
+  margin: 0 auto;
 }
 
 .table-private-sale [class^="color--"] {
@@ -37,6 +38,16 @@
 
 .table-private-sale .color--cyan {
   color: #30fffb;
+}
+
+.hidden-content.hidden-content--ico-details2 {
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+.hidden-content.visible.hidden-content--ico-details2 {
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
 }
 
 @media(max-width: 599px) {

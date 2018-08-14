@@ -1,4 +1,5 @@
 import * as React from 'react';
+import OnVisible from 'react-on-visible';
 
 import './GgCard.css';
 // import Cycle from '../../components/svgCycle/svgCycle';
@@ -19,7 +20,9 @@ class GgCard extends React.Component<CardProps> {
         style={{ alignItems: 'flex-start' }}
       >
         <div className="ggc-card__image">
-          {this.props.image && <img src={this.props.image} alt="" />}
+          <OnVisible className="hidden-content hidden-content--fade-in-rotate">
+            {this.props.image && <img src={this.props.image} alt="" />}
+          </OnVisible>
         </div>
         {this.props.title && (
           <div className="ggc-card__title">{this.props.title}</div>

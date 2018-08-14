@@ -1,4 +1,5 @@
 import * as React from 'react';
+import OnVisible from 'react-on-visible';
 // import LocalizedStrings from 'react-localization';
 // import { FooterStrings } from '../../components/l18n';
 //
@@ -151,7 +152,12 @@ class Footer extends React.Component<any, any> {
           className="gg-content-container flex-row"
           style={{ justifyContent: 'flex-start' }}
         >
-          <img src={scene} alt="" className="footer-image" />
+          <OnVisible
+            className="hidden-content hidden-content--fade-in"
+            percent={-100}
+          >
+            <img src={scene} alt="" className="footer-image" />
+          </OnVisible>
 
           <div className="footer-content flex-row">
             <div
@@ -172,15 +178,20 @@ class Footer extends React.Component<any, any> {
                 />
               </div>
               <p>
-                Gingr AG<br />
-                Badenerstrasse 809<br />
-                8048 Zürich<br />
+                Gingr AG
+                <br />
+                Badenerstrasse 809
+                <br />
+                8048 Zürich
+                <br />
                 {this.props.lang.switzerland}
               </p>
 
               <p>
-                {this.props.lang.phone}: +41 555 00 88 91<br />
-                {this.props.lang.mobile}: +41 79 579 77 77<br />
+                {this.props.lang.phone}: +41 555 00 88 91
+                <br />
+                {this.props.lang.mobile}: +41 79 579 77 77
+                <br />
                 {this.props.lang.email}:{' '}
                 <a href="mailto:info@ggcico.io">info@ggcico.io</a>
               </p>

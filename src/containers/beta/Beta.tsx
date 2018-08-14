@@ -33,16 +33,28 @@ class Beta extends React.Component<any, any> {
           </h1>
           <h3>{this.props.lang.comingSoon}</h3>
           <div className="spacer" />
-          <p>{this.props.lang.clickHereToVisit}</p>
-          <Button click={this.click} borderColor="#ffd400">
-            {this.props.lang.gingr} 1.0
-          </Button>
+          <OnVisible
+            className="hidden-content hidden-content--flip-in-right"
+            percent={50}
+          >
+            <p className="beta-item">{this.props.lang.clickHereToVisit}</p>
+          </OnVisible>
+          <OnVisible
+            className="hidden-content hidden-content--flip-in-right"
+            percent={60}
+          >
+            <Button
+              className="beta-item"
+              click={this.click}
+              borderColor="#ffd400"
+            >
+              {this.props.lang.gingr} 1.0
+            </Button>
+          </OnVisible>
 
           <div className="spacer" />
 
-          <OnVisible className="hidden-content" percent={50}>
-            <img src={gingrV1} alt="" className="beta-image" />
-          </OnVisible>
+          <img src={gingrV1} alt="" className="beta-image" />
         </div>
       </div>
     );

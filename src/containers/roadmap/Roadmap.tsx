@@ -6,6 +6,7 @@ import * as React from 'react';
 // export const strings: RoadmapStrings = new LocalizedStrings({
 //   en: langEn,
 // });
+import OnVisible from 'react-on-visible';
 
 import './Roadmap.css';
 import SvgRoadmap from '../../components/svgRoadmap/Roadmap';
@@ -53,7 +54,9 @@ class Roadmap extends React.Component<any, any> {
       <div className="gg-section-container gg-section-container--roadmap">
         <div className="gg-content-container">
           <h1 className="app-header">{this.props.lang.roadmap}</h1>
-          <h2>{this.props.lang.datesComingSoon}</h2>
+          <OnVisible className="hidden-content hidden-content--zoom-in">
+            <h2>{this.props.lang.datesComingSoon}</h2>
+          </OnVisible>
 
           <div className="hide-xs" style={{ marginTop: '100px' }}>
             <SvgRoadmap lang={this.props.lang} />

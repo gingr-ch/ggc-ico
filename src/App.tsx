@@ -113,7 +113,7 @@ class App extends React.Component<any, any> {
         </Section>
         <ScrollableAnchor id={'download'}>
           <Section bg="white" small={true}>
-            <LazyLoad offset={1000} height={'100%'} once={true}>
+            <LazyLoad offset={1000} height={'366.86px'} once={true}>
               <Download lang={this.state.lang} />
             </LazyLoad>
           </Section>
