@@ -48,10 +48,55 @@
   width: 100%;
 }
 
+.hidden-content.hidden-content--from-left {
+  transform: translate3d(-50px, 0, 0);
+}
+
+.hidden-content.hidden-content--list {
+  transform: translate3d(0, 0, 0);
+}
+
+.hidden-content.hidden-content--list .reason-list {
+  transform: translate3d(0, -20px, 0);
+}
+
+.hidden-content.hidden-content--list .reason-list:nth-child(1) {
+  animation-delay: .25s;
+}
+.hidden-content.hidden-content--list .reason-list:nth-child(2) {
+  animation-delay: .75s;
+}
+.hidden-content.hidden-content--list .reason-list:nth-child(3) {
+  animation-delay: 1.25s;
+}
+.hidden-content.hidden-content--list .reason-list:nth-child(4) {
+  animation-delay: 1.75s;
+}
+.hidden-content.hidden-content--list .reason-list:nth-child(5) {
+  animation-delay: 2.25s;
+}
+
 .hidden-content.visible {
   opacity: 1;
   visibility: visible;
   transform: translate3d(0, 0, 0);
+}
+
+.hidden-content.visible .reason-list {
+  animation-name: fadeInList;
+  animation-duration: .2s;
+  animation-timing-function: cubic-bezier(0.5, 0.43, 0.81, 0.59);
+}
+
+@-keyframes fadeInList {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -50%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .slide-in {

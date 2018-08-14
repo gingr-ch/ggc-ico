@@ -27,41 +27,55 @@ class StrongSolution extends React.Component<any, any> {
       <div className="gg-section-container gg-section-container--strong-solution">
         <div className="gg-content-container">
           <h1 className="app-header">{this.props.lang.strongSolution}</h1>
-          <OnVisible className="hidden-content" percent={this.percentage}>
-            <div className="strong-solution-content">
-              <div className="ssc-item flex-column flex-column--30">
-                <div className="flex-column__image">
+
+          <div className="strong-solution-content">
+            <div className="ssc-item flex-column flex-column--30">
+              <div className="flex-column__image">
+                <OnVisible
+                  className="hidden-content hidden-content--from-left"
+                  percent={this.percentage}
+                >
                   <img src={gingrLogo} alt="Gingr" />
-                </div>
-                <div className="flex-column__content">
-                  <h3 className="title">{this.props.lang.gingrPlatform}</h3>
-                  <p>{this.props.lang.firstWorldwideDirect}</p>
-                </div>
+                </OnVisible>
               </div>
-              <div className="ssc-item flex-column flex-column--30">
-                <div className="flex-column__image">
-                  <img src={ggcLogo} alt="GGC ICO" />
-                </div>
-                <div className="flex-column__content">
-                  <h3 className="title">
-                    {this.props.lang.ggCoinCurrency} (GGC)
-                  </h3>
-                  <p>{this.props.lang.aNewGlobalEcosystem}</p>
-                </div>
-              </div>
-              <div className="ssc-item flex-column flex-column--30">
-                <div className="flex-column__image">
-                  <img src={gstLogo} alt="Gingr Share Token" />
-                </div>
-                <div className="flex-column__content">
-                  <h3 className="title">
-                    {this.props.lang.gingrShareToken} (GST)
-                  </h3>
-                  <p>{this.props.lang.gingrShareTokensAre}</p>
-                </div>
+              <div className="flex-column__content">
+                <h3 className="title">{this.props.lang.gingrPlatform}</h3>
+                <p>{this.props.lang.firstWorldwideDirect}</p>
               </div>
             </div>
-          </OnVisible>
+            <div className="ssc-item flex-column flex-column--30">
+              <div className="flex-column__image">
+                <OnVisible
+                  className="hidden-content hidden-content--from-left"
+                  percent={this.percentage}
+                >
+                  <img src={ggcLogo} alt="GGC ICO" />
+                </OnVisible>
+              </div>
+              <div className="flex-column__content">
+                <h3 className="title">
+                  {this.props.lang.ggCoinCurrency} (GGC)
+                </h3>
+                <p>{this.props.lang.aNewGlobalEcosystem}</p>
+              </div>
+            </div>
+            <div className="ssc-item flex-column flex-column--30">
+              <div className="flex-column__image">
+                <OnVisible
+                  className="hidden-content hidden-content--from-left"
+                  percent={this.percentage}
+                >
+                  <img src={gstLogo} alt="Gingr Share Token" />
+                </OnVisible>
+              </div>
+              <div className="flex-column__content">
+                <h3 className="title">
+                  {this.props.lang.gingrShareToken} (GST)
+                </h3>
+                <p>{this.props.lang.gingrShareTokensAre}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );

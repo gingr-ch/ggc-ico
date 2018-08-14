@@ -1,6 +1,7 @@
 import * as React from 'react';
 // import LocalizedStrings from 'react-localization';
 // import { ReasonsToInvestStrings } from '../../components/l18n';
+import OnVisible from 'react-on-visible';
 
 import './ReasonsToInvest.css';
 
@@ -74,20 +75,24 @@ class ReasonsToInvest extends React.Component<any, any> {
               />
             </div>
             <div className="flex-column flex-column--25 order-xs-1">
-              {reasonsList.slice(0, 5).map((d, i) => (
-                <div key={d.id} className="reason-list flex-column">
-                  <span>{d.id}</span>
-                  {d.text}
-                </div>
-              ))}
+              <OnVisible className="hidden-content hidden-content--list">
+                {reasonsList.slice(0, 5).map((d, i) => (
+                  <div key={d.id} className="reason-list flex-column">
+                    <span>{d.id}</span>
+                    {d.text}
+                  </div>
+                ))}
+              </OnVisible>
             </div>
             <div className="flex-column flex-column--25 order-xs-2">
-              {reasonsList.slice(5, 10).map((d, i) => (
-                <div key={d.id} className="reason-list flex-column">
-                  <span>{d.id}</span>
-                  {d.text}
-                </div>
-              ))}
+              <OnVisible className="hidden-content hidden-content--list">
+                {reasonsList.slice(5, 10).map((d, i) => (
+                  <div key={d.id} className="reason-list flex-column">
+                    <span>{d.id}</span>
+                    {d.text}
+                  </div>
+                ))}
+              </OnVisible>
             </div>
           </div>
         </div>
