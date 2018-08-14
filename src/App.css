@@ -73,6 +73,10 @@
   transform: translate3d(0, 0, 0);
 }
 
+.hidden-content.visible.hidden-content--flip-in-right {
+  animation-name: flipInRight;
+}
+
 @keyframes fadeInList {
   0% {
     opacity: 0;
