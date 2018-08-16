@@ -44,12 +44,14 @@
     justify-content: center;
     margin: 80px auto 50px auto;
     flex-wrap: wrap;
+    align-items: stretch;
 }
 
 .feedback-social div {
   flex: 1 1 25%;
   min-width: 25%;
   box-sizing: border-box;
+  justify-content: space-between;
 }
 
 .feedback-social img {
