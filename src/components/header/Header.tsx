@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Drawer from '@material-ui/core/Drawer';
+import Img from 'react-image'
 
 import LanguageChanger from '../languageChanger/LanguageChanger';
 import Button from '../button/Button';
@@ -36,7 +37,7 @@ class Header extends React.Component<any, any> {
     return (
       <header className="gg-header">
         <div className="gg-header-container">
-          <img src={gingrLogo} className="App-logo" alt="logo" />
+          <Img src={gingrLogo} className="App-logo" alt="logo" />
           {this.props.children}
           <div className="gg-header-container__buttons">
             <Button click={() => this.click(whitePaper)} borderColor="white">

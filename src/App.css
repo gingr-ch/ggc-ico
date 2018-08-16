@@ -222,6 +222,26 @@
   transform: rotateZ(0deg) scale(1);
 }
 
+/* image placeholder to image transitions */
+.fade-wait-leave {
+  opacity: 1;
+}
+.fade-wait-leave.fade-wait-leave-active {
+  opacity: 0;
+  transition: opacity 400ms ease-in;
+}
+.fade-wait-enter {
+  opacity: 0;
+}
+.fade-wait-enter.fade-wait-enter-active {
+  opacity: 1;
+  /* Delay the enter animation until the leave completes */
+  transition: opacity 400ms ease-in 600ms;
+}
+.fade-wait-height {
+  transition: height 600ms ease-in-out;
+}
+
 /* Flex */
 .flex-row {
   display: flex;

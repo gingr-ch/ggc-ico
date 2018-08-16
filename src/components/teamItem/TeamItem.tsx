@@ -1,16 +1,22 @@
 import * as React from 'react';
+import Img from 'react-image';
+import ReactCSSTransitionReplace from 'react-css-transition-replace';
 
 import './TeamItem.css';
 
 class TeamItems {
   id: number;
   img: string;
+  thumb: string;
   flag: string;
   name: string;
   role: string;
   description?: string;
   onClick: (e: any) => void;
 }
+
+const fadeOut = 400;
+const fadeIn = 600;
 
 class TeamItem extends React.Component<TeamItems> {
   render() {
@@ -25,10 +31,33 @@ class TeamItem extends React.Component<TeamItems> {
             marginBottom: '24px',
           }}
         >
-          <img
+          <Img
             src={this.props.img}
             style={{ borderRadius: '50%', width: '159px', height: '159px' }}
             onClick={this.props.onClick}
+            loader={
+              <Img
+                src={this.props.thumb}
+                style={{
+                  borderRadius: '50%',
+                  width: '159px',
+                  height: '159px',
+                  filter: 'blur(10px)',
+                }}
+              />
+            }
+            container={children => {
+              return (
+                <ReactCSSTransitionReplace
+                  transitionEnterTimeout={fadeIn * 10}
+                  transitionLeaveTimeout={fadeOut}
+                  transitionName="fade-wait"
+                  changeWidth={false}
+                >
+                  {children}
+                </ReactCSSTransitionReplace>
+              );
+            }}
           />
           <img src={this.props.flag} />
         </div>

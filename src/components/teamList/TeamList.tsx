@@ -1,11 +1,14 @@
 import * as React from 'react';
 import Dialog from 'rc-dialog';
 // import * as _ from 'lodash';
+import Img from 'react-image';
+import ReactCSSTransitionReplace from 'react-css-transition-replace';
 
 import 'rc-dialog/assets/index.css';
 import TeamItem from '../teamItem/TeamItem';
 import './TeamList.css';
 
+// require images
 const vlad = require(process.env.REACT_APP_MEDIA_URL + 'team/vlad.jpg');
 const flo = require(process.env.REACT_APP_MEDIA_URL + 'team/flo.jpg');
 const yurii = require(process.env.REACT_APP_MEDIA_URL + 'team/yurii.jpg');
@@ -15,11 +18,34 @@ const jeff = require(process.env.REACT_APP_MEDIA_URL + 'team/jeff.jpg');
 const taras = require(process.env.REACT_APP_MEDIA_URL + 'team/taras.jpg');
 const sergiy = require(process.env.REACT_APP_MEDIA_URL + 'team/sergiy.jpg');
 
+// require thumbnails
+const vladThumb = require(process.env.REACT_APP_MEDIA_URL +
+  'team/thumbs/vlad.jpg');
+const floThumb = require(process.env.REACT_APP_MEDIA_URL +
+  'team/thumbs/flo.jpg');
+const yuriiThumb = require(process.env.REACT_APP_MEDIA_URL +
+  'team/thumbs/yurii.jpg');
+const nyhlThumb = require(process.env.REACT_APP_MEDIA_URL +
+  'team/thumbs/nyhl.jpg');
+const olhaThumb = require(process.env.REACT_APP_MEDIA_URL +
+  'team/thumbs/olha.jpg');
+const jeffThumb = require(process.env.REACT_APP_MEDIA_URL +
+  'team/thumbs/jeff.jpg');
+const tarasThumb = require(process.env.REACT_APP_MEDIA_URL +
+  'team/thumbs/taras.jpg');
+const sergiyThumb = require(process.env.REACT_APP_MEDIA_URL +
+  'team/thumbs/sergiy.jpg');
+
+// require flags
 const swiss = require(process.env.REACT_APP_MEDIA_URL +
   'flags/switzerland.png');
 const southAfrica = require(process.env.REACT_APP_MEDIA_URL +
   'flags/south-africa.png');
 const ukraine = require(process.env.REACT_APP_MEDIA_URL + 'flags/ukraine.png');
+
+// standard fade durations
+const fadeOut = 400;
+const fadeIn = 600;
 
 class TeamList extends React.Component<any, any> {
   state = {
@@ -31,6 +57,7 @@ class TeamList extends React.Component<any, any> {
     profile: {
       id: 0,
       img: '',
+      thumb: '',
       flag: '',
       name: '',
       role: '',
@@ -90,6 +117,7 @@ class TeamList extends React.Component<any, any> {
       {
         id: 1,
         img: vlad,
+        thumb: vladThumb,
         flag: swiss,
         name: 'Vladimir Vuckovic',
         role: this.props.lang.salesManager,
@@ -98,6 +126,7 @@ class TeamList extends React.Component<any, any> {
       {
         id: 2,
         img: flo,
+        thumb: floThumb,
         flag: swiss,
         name: 'Florian Fröhlich',
         role: this.props.lang.artDirector + ' / ' + this.props.lang.branding,
@@ -106,6 +135,7 @@ class TeamList extends React.Component<any, any> {
       {
         id: 3,
         img: yurii,
+        thumb: yuriiThumb,
         flag: ukraine,
         name: 'Yurii Firs',
         role: this.props.lang.cto,
@@ -114,6 +144,7 @@ class TeamList extends React.Component<any, any> {
       {
         id: 4,
         img: nyhl,
+        thumb: nyhlThumb,
         flag: southAfrica,
         name: 'Nyhl Rawlings',
         role: this.props.lang.blockchainDeveloper,
@@ -122,6 +153,7 @@ class TeamList extends React.Component<any, any> {
       {
         id: 5,
         img: olha,
+        thumb: olhaThumb,
         flag: ukraine,
         name: 'Olha Koshchuk',
         role: this.props.lang.projectManager,
@@ -130,6 +162,7 @@ class TeamList extends React.Component<any, any> {
       {
         id: 6,
         img: jeff,
+        thumb: jeffThumb,
         flag: swiss,
         name: 'Jeff Stählin',
         role: this.props.lang.seniorFrontendDeveloper,
@@ -138,6 +171,7 @@ class TeamList extends React.Component<any, any> {
       {
         id: 7,
         img: taras,
+        thumb: tarasThumb,
         flag: ukraine,
         name: 'Taras Kohanets',
         role: this.props.lang.seniorDeveloper,
@@ -146,6 +180,7 @@ class TeamList extends React.Component<any, any> {
       {
         id: 8,
         img: sergiy,
+        thumb: sergiyThumb,
         flag: ukraine,
         name: 'Sergiy Voitovych',
         role: this.props.lang.techLead + ' - ' + this.props.lang.webLogic,
@@ -171,11 +206,43 @@ class TeamList extends React.Component<any, any> {
                 position: 'relative',
                 width: '205px',
                 height: '205px',
-                backgroundPosition: 'center',
-                backgroundSize: 'cover',
-                backgroundImage: 'url(' + this.state.profile.img + ')',
               }}
             >
+              <Img
+                src={this.state.profile.img}
+                style={{
+                  position: 'absolute',
+                  width: '205px',
+                  height: '205px',
+                  top: 0,
+                  left: 0,
+                }}
+                loader={
+                  <Img
+                    src={this.state.profile.thumb}
+                    style={{
+                      position: 'absolute',
+                      width: '205px',
+                      height: '205px',
+                      top: 0,
+                      left: 0,
+                      filter: 'blur(10px)',
+                    }}
+                  />
+                }
+                container={children => {
+                  return (
+                    <ReactCSSTransitionReplace
+                      transitionEnterTimeout={fadeIn * 10}
+                      transitionLeaveTimeout={fadeOut}
+                      transitionName="fade-wait"
+                      changeWidth={false}
+                    >
+                      {children}
+                    </ReactCSSTransitionReplace>
+                  );
+                }}
+              />
               <img
                 src={this.state.profile.flag}
                 alt=""
@@ -231,6 +298,7 @@ class TeamList extends React.Component<any, any> {
             key={item.id}
             id={item.id}
             img={item.img}
+            thumb={item.thumb}
             flag={item.flag}
             name={item.name}
             role={item.role}
