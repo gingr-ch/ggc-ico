@@ -104,7 +104,11 @@ class Top extends React.Component<any, any> {
 
               <div className="spacer hide show-xs" />
 
-              <Button click={this.click} borderColor="#00D646">
+              <Button
+                click={this.click}
+                borderColor="#00D646"
+                className="btn-buy-coins"
+              >
                 {this.props.lang.buyCoinsNow}
               </Button>
             </div>

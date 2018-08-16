@@ -54,6 +54,15 @@
   font-size: 70px;
 }
 
+.btn-buy-coins {
+  transition: .2s ease-in-out;
+}
+
+.btn-buy-coins:hover {
+  background-color: var(--purple);
+  border-color: var(--yellow) !important;
+}
+
 @media(max-width: 599px) {
   .gg-section-container--top {
     min-height: 100vh !important;
