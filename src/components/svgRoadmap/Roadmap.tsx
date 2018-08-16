@@ -19,6 +19,7 @@ const Roadmap = (props: any) => (
       minWidth: '645px',
       textTransform: 'uppercase',
       fontFamily: 'brandon_grotesque_regularRg',
+      overflow: 'visible',
     }}
   >
     <text
