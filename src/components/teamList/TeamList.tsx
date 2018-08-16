@@ -43,10 +43,6 @@ const southAfrica = require(process.env.REACT_APP_MEDIA_URL +
   'flags/south-africa.png');
 const ukraine = require(process.env.REACT_APP_MEDIA_URL + 'flags/ukraine.png');
 
-// standard fade durations
-const fadeOut = 400;
-const fadeIn = 600;
-
 class TeamList extends React.Component<any, any> {
   state = {
     visible: false,
@@ -233,8 +229,6 @@ class TeamList extends React.Component<any, any> {
                 container={children => {
                   return (
                     <ReactCSSTransitionReplace
-                      transitionEnterTimeout={fadeIn * 10}
-                      transitionLeaveTimeout={fadeOut}
                       transitionName="fade-wait"
                       changeWidth={false}
                     >

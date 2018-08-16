@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Img from 'react-image';
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
+import OnVisible from 'react-on-visible';
 
 import './TeamItem.css';
 
@@ -15,9 +16,6 @@ class TeamItems {
   onClick: (e: any) => void;
 }
 
-const fadeOut = 400;
-const fadeIn = 600;
-
 class TeamItem extends React.Component<TeamItems> {
   render() {
     return (
@@ -31,34 +29,34 @@ class TeamItem extends React.Component<TeamItems> {
             marginBottom: '24px',
           }}
         >
-          <Img
-            src={this.props.img}
-            style={{ borderRadius: '50%', width: '159px', height: '159px' }}
-            onClick={this.props.onClick}
-            loader={
-              <Img
-                src={this.props.thumb}
-                style={{
-                  borderRadius: '50%',
-                  width: '159px',
-                  height: '159px',
-                  filter: 'blur(10px)',
-                }}
-              />
-            }
-            container={children => {
-              return (
-                <ReactCSSTransitionReplace
-                  transitionEnterTimeout={fadeIn * 10}
-                  transitionLeaveTimeout={fadeOut}
-                  transitionName="fade-wait"
-                  changeWidth={false}
-                >
-                  {children}
-                </ReactCSSTransitionReplace>
-              );
-            }}
-          />
+          <OnVisible>
+            <Img
+              src={this.props.img}
+              style={{ borderRadius: '50%', width: '159px', height: '159px' }}
+              onClick={this.props.onClick}
+              loader={
+                <Img
+                  src={this.props.thumb}
+                  style={{
+                    borderRadius: '50%',
+                    width: '159px',
+                    height: '159px',
+                    filter: 'blur(10px)',
+                  }}
+                />
+              }
+              container={children => {
+                return (
+                  <ReactCSSTransitionReplace
+                    transitionName="fade-wait"
+                    changeWidth={false}
+                  >
+                    {children}
+                  </ReactCSSTransitionReplace>
+                );
+              }}
+            />
+          </OnVisible>
           <img src={this.props.flag} />
         </div>
         <a
