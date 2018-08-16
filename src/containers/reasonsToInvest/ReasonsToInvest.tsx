@@ -66,7 +66,7 @@ class ReasonsToInvest extends React.Component<any, any> {
       <div className="gg-section-container gg-section-container--reasons-to-invest">
         <div className="gg-content-container">
           <h1 className="app-header">{this.props.lang.reasonsToInvest}</h1>
-          <div className="flex-row flex-column-xs">
+          <div className="flex-row flex-column-xs flex-row--align-start">
             <div className="flex-column flex-column--45 order-xs-3">
               <img
                 src={reasonsImg}

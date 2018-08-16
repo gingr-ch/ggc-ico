@@ -1,6 +1,16 @@
+.gg-section-container--reasons-to-invest .gg-content-container {
+  padding-bottom: 100px;
+}
+
 .gg-section-container--reasons-to-invest .gg-head {
   text-transform: uppercase;
   color: white;
+}
+
+@media(min-width: 600px) {
+  .gg-section-container--reasons-to-invest .flex-row.flex-row--align-start {
+    align-items: flex-start;
+  }
 }
 
 .rti-image {
