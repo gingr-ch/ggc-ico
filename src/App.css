@@ -80,6 +80,10 @@
   transform: translate3d(0, 0, 0) scale(10);
 }
 
+.hidden-content.hidden-content--slide-in-up {
+  transform: translate3d(0, 50px, 0);
+}
+
 .hidden-content.visible {
   opacity: 1;
   visibility: visible;
@@ -118,6 +122,7 @@
   transform: translate3d(0, 0, 0) scale(1);
   transition-duration: .6s;
 }
+
 
 @keyframes fadeInList {
   0% {

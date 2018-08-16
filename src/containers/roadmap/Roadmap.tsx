@@ -81,7 +81,9 @@ class Roadmap extends React.Component<any, any> {
               className="flex-column roadmap-ballon-container"
               style={{ justifyContent: 'flex-start' }}
             >
-              <img src={balloon} alt="" />
+              <OnVisible className="hidden-content hidden-content--slide-in-up">
+                <img src={balloon} alt="Balloon floating upwards" />
+              </OnVisible>
               <h4>"{this.props.lang.oneCryptoCurrencyFromThousands}"</h4>
             </div>
           </div>
