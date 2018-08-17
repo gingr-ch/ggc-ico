@@ -98,7 +98,7 @@ class App extends React.Component<any, any> {
             <Top lang={this.state.lang} />
           </Section>
         </ScrollableAnchor>
-        <Section bg="#812A7B" small={true}>
+        <Section bg="#4c306a" small={true}>
           <PressReports lang={this.state.lang} />
         </Section>
         <Section bg="#f39fff">

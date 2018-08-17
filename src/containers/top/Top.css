@@ -45,7 +45,7 @@
 
 .gg-top-left__container button:hover {
   color: white;
-  background: var(--green);
+  background: var(--pink);
   border-color: var(--green) !important;
 }
 
