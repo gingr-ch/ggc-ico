@@ -113,6 +113,7 @@ class Top extends React.Component<any, any> {
                 forceVideo: true,
               },
             }}
+            playsinline={true}
             style={{ background: '#000000' }}
           />
         </div>
