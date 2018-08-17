@@ -26,6 +26,13 @@
   opacity: 0;
 }
 
+.gg-section-container--beta .beta-image {
+  width: 100%;
+  height: auto;
+  max-width: 900px;
+  max-height: 557px;
+}
+
 .hidden-content.hidden-content--flip-in-right.visible .beta-item {
   animation-name: flipInRight;
   animation-duration: 1.0s;
