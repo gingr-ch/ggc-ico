@@ -13,6 +13,8 @@ class Button extends React.Component<ButtonProps> {
     let shape = '';
     if (this.props.shape === 'round') {
       shape += 'gg-button--round';
+    } else if (this.props.shape === 'rounded-edges') {
+      shape += 'gg-button--rounded-edges';
     }
 
     return (

@@ -1,0 +1,40 @@
+.promo-logos {
+  width: 100%;
+}
+
+.promo-logos .press-logos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.promo-logos .press-logo {
+  flex: 1 1 20%;
+}
+
+.promo-logos .press-logo img {
+  width: auto;
+  height: auto;
+  max-width: 129px;
+  max-height: 53px;
+}
+
+
+@media(max-width: 599px) {
+  .promo-logos .press-logos {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 56px;
+  }
+
+  .promo-logos .press-logos li {
+    margin-bottom: 56px;
+  }
+
+  .promo-logos .press-logos li img {
+    margin: 0 auto;
+  }
+}

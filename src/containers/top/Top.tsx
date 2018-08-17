@@ -7,10 +7,11 @@ import OnVisible from 'react-on-visible';
 import './Top.css';
 
 import Button from '../../components/button/Button';
-import ButtonPlay from '../../components/buttonPlay/ButtonPlay';
-import Chart from '../../components/svgChart/svgChart';
+import PromoLogos from '../../components/promoLogos/PromoLogos';
+// import ButtonPlay from '../../components/buttonPlay/ButtonPlay';
+// import Chart from '../../components/svgChart/svgChart';
 
-const video = require('../../assets/video/ggc-ico__promo.mp4');
+const video = require('../../assets/video/ggc-ico.mp4');
 // const chart = require(process.env.REACT_APP_MEDIA_URL + 'chart.png');
 
 class Top extends React.Component<any, any> {
@@ -24,7 +25,7 @@ class Top extends React.Component<any, any> {
       muted: true,
       volume: 0,
       controls: false,
-      playing: false,
+      playing: true,
     };
 
     this.videoToggle = this.videoToggle.bind(this);
@@ -45,6 +46,7 @@ class Top extends React.Component<any, any> {
 
   ref = (player: any) => {
     this.player = player;
+    this.player.seekTo(44);
   };
 
   click() {
@@ -71,69 +73,22 @@ class Top extends React.Component<any, any> {
             </h1>
             <div className="spacer hide show-xs" />
 
-            <div className="play-button hide show-xs">
-              <OnVisible className="rotate-in">
-                <ButtonPlay videoToggle={this.videoToggle}>
-                  {this.props.lang.play}
-                </ButtonPlay>
-              </OnVisible>
-            </div>
-            <div className="spacer hide show-xs" />
-            <div className="spacer" />
-
-            <div
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-              }}
-            >
-              <div
-                style={{
-                  fontSize: '24px',
-                  marginBottom: '16px',
-                  textTransform: 'uppercase',
-                }}
-              >
-                {this.props.lang.privateSaleNow}
-              </div>
-              <div className="color-green" style={{ fontSize: '30px' }}>
-                {this.props.lang.discount}
-              </div>
-              <div
-                className="color-green"
-                style={{ fontSize: '27px', marginBottom: '16px' }}
-              >
-                1 GGC = 0.03 EUR
-              </div>
-
-              <div className="spacer hide show-xs" />
-
-              <Button
-                click={this.click}
-                borderColor="#00D646"
-                className="btn-buy-coins"
-              >
-                {this.props.lang.buyCoinsNow}
-              </Button>
-            </div>
-            <div className="spacer" />
-            <div className="spacer" />
-
-            <Chart lang={this.props.lang} />
-
             <div className="play-button hide-xs">
               <OnVisible className="rotate-in">
-                <ButtonPlay videoToggle={this.videoToggle}>
-                  {this.props.lang.play}
-                </ButtonPlay>
+                <Button
+                  click={this.videoToggle}
+                  borderColor={'#ffffff'}
+                  shape="rounded-edges"
+                >
+                  {this.props.lang.playVideo}
+                </Button>
               </OnVisible>
             </div>
+
+            <PromoLogos />
           </div>
         </div>
-        <div style={{ flex: '1 1 50%', background: 'transparent' }}>
-          some content
-        </div>
+
         <div
           style={{
             position: 'absolute',
@@ -159,6 +114,7 @@ class Top extends React.Component<any, any> {
                 forceVideo: true,
               },
             }}
+            playsinline={true}
             style={{ background: '#000000' }}
           />
         </div>
