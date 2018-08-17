@@ -1,5 +1,5 @@
 import * as React from 'react';
-import VimeoPlayer from 'react-player';
+import ReactPlayer from 'react-player';
 import classNames from 'classnames';
 import OnVisible from 'react-on-visible';
 // import Img from 'react-image';
@@ -10,6 +10,7 @@ import Button from '../../components/button/Button';
 import ButtonPlay from '../../components/buttonPlay/ButtonPlay';
 import Chart from '../../components/svgChart/svgChart';
 
+const video = require('../../assets/video/ggc-ico__promo.mp4');
 // const chart = require(process.env.REACT_APP_MEDIA_URL + 'chart.png');
 
 class Top extends React.Component<any, any> {
@@ -22,6 +23,8 @@ class Top extends React.Component<any, any> {
       open: false,
       muted: true,
       volume: 0,
+      controls: false,
+      playing: false,
     };
 
     this.videoToggle = this.videoToggle.bind(this);
@@ -32,7 +35,9 @@ class Top extends React.Component<any, any> {
     this.setState({
       open: true,
       muted: false,
-      volume: 1,
+      volume: 0.8,
+      controls: true,
+      playing: true,
     });
     console.warn(this.state);
     this.player.seekTo(0);
@@ -137,16 +142,24 @@ class Top extends React.Component<any, any> {
             backgroundColor: 'red',
             zIndex: 0,
           }}
+          className="player-container"
         >
-          <VimeoPlayer
-            url="https://vimeo.com/284779399/63b787e939"
+          <ReactPlayer
+            url={video}
             width="100%"
             height="100%"
-            playing={false}
-            muted={true}
-            controls={false}
+            playing={this.state.playing}
+            volume={this.state.volume}
+            muted={this.state.muted}
+            controls={this.state.controls}
             loop={true}
             ref={this.ref}
+            config={{
+              file: {
+                forceVideo: true,
+              },
+            }}
+            style={{ background: '#000000' }}
           />
         </div>
       </div>
