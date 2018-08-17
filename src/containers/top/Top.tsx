@@ -11,7 +11,7 @@ import PromoLogos from '../../components/promoLogos/PromoLogos';
 // import ButtonPlay from '../../components/buttonPlay/ButtonPlay';
 // import Chart from '../../components/svgChart/svgChart';
 
-const video = require('../../assets/video/ggc-ico__promo.mp4');
+const video = require('../../assets/video/ggc-ico.mp4');
 // const chart = require(process.env.REACT_APP_MEDIA_URL + 'chart.png');
 
 class Top extends React.Component<any, any> {
@@ -46,7 +46,7 @@ class Top extends React.Component<any, any> {
 
   ref = (player: any) => {
     this.player = player;
-    this.player.seekTo(42);
+    this.player.seekTo(44);
   };
 
   click() {
