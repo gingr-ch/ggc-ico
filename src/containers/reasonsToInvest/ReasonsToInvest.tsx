@@ -1,12 +1,16 @@
 import * as React from 'react';
 // import LocalizedStrings from 'react-localization';
 // import { ReasonsToInvestStrings } from '../../components/l18n';
+import Img from 'react-image';
+import ReactCSSTransitionReplace from 'react-css-transition-replace';
 import OnVisible from 'react-on-visible';
 
 import './ReasonsToInvest.css';
 
 const reasonsImg = require(process.env.REACT_APP_MEDIA_URL +
-  'reason_to_invest.png');
+  'reason_to_invest_316.png');
+const reasonsImgThumb = require(process.env.REACT_APP_MEDIA_URL +
+  'thumbs/reason_to_invest.png');
 
 // export const langEn = require('../../assets/l18n/reasons-to-invest.en.json');
 // export const strings: ReasonsToInvestStrings = new LocalizedStrings({
@@ -68,11 +72,38 @@ class ReasonsToInvest extends React.Component<any, any> {
           <h1 className="app-header">{this.props.lang.reasonsToInvest}</h1>
           <div className="flex-row flex-column-xs flex-row--align-start">
             <div className="flex-column flex-column--45 order-xs-3">
-              <img
-                src={reasonsImg}
-                alt={this.props.lang.reasonsToInvest}
-                className="rti-image"
-              />
+              <OnVisible>
+                <Img
+                  src={reasonsImg}
+                  style={{
+                    width: '316px',
+                    height: '600px',
+                  }}
+                  alt={this.props.lang.reasonsToInvest}
+                  className="rti-image"
+                  onClick={this.props.onClick}
+                  loader={
+                    <Img
+                      src={reasonsImgThumb}
+                      style={{
+                        width: '316px',
+                        height: '600px',
+                        filter: 'blur(10px)',
+                      }}
+                    />
+                  }
+                  container={children => {
+                    return (
+                      <ReactCSSTransitionReplace
+                        transitionName="fade-wait"
+                        changeWidth={false}
+                      >
+                        {children}
+                      </ReactCSSTransitionReplace>
+                    );
+                  }}
+                />
+              </OnVisible>
             </div>
             <div className="flex-column flex-column--25 order-xs-1">
               <OnVisible className="hidden-content hidden-content--list">
