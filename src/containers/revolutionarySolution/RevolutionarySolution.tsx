@@ -1,6 +1,8 @@
 import * as React from 'react';
 // import LocalizedStrings from 'react-localization';
 // import { RevolutionarySolutionStrings } from '../../components/l18n';
+import Img from 'react-image';
+import ReactCSSTransitionReplace from 'react-css-transition-replace';
 import OnVisible from 'react-on-visible';
 
 import './RevolutionarySolution.css';
@@ -12,7 +14,10 @@ import Cycle from '../../components/svgCycle/svgCycle2';
 //   en: langEn,
 // });
 
-const gingr = require(process.env.REACT_APP_MEDIA_URL + 'gingr_necklace.png');
+const gingr = require(process.env.REACT_APP_MEDIA_URL +
+  'gingr_necklace_749.png');
+const gingrThumb = require(process.env.REACT_APP_MEDIA_URL +
+  'thumbs/gingr_necklace.png');
 const popngo = require(process.env.REACT_APP_MEDIA_URL + 'icons/popngo.png');
 const gingrBank = require(process.env.REACT_APP_MEDIA_URL +
   'icons/gingr-bank.png');
@@ -98,10 +103,39 @@ class RevolutionarySolution extends React.Component<any, any> {
               </h4>
             </OnVisible>
             <OnVisible className="hidden-content hidden-content--fade-in">
-              <img
+              <Img
                 src={gingr}
-                alt=""
-                style={{ maxWidth: '749px', width: '100%' }}
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  maxWidth: '749px',
+                  maxHeight: '635px',
+                }}
+                alt={this.props.lang.reasonsToInvest}
+                className="rti-image"
+                onClick={this.props.onClick}
+                loader={
+                  <Img
+                    src={gingrThumb}
+                    style={{
+                      width: '100%',
+                      height: 'auto',
+                      maxWidth: '749px',
+                      maxHeight: '635px',
+                      filter: 'blur(10px)',
+                    }}
+                  />
+                }
+                container={children => {
+                  return (
+                    <ReactCSSTransitionReplace
+                      transitionName="fade-wait"
+                      changeWidth={false}
+                    >
+                      {children}
+                    </ReactCSSTransitionReplace>
+                  );
+                }}
               />
             </OnVisible>
           </div>
