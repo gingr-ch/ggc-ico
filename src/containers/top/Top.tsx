@@ -25,7 +25,7 @@ class Top extends React.Component<any, any> {
       muted: true,
       volume: 0,
       controls: false,
-      playing: false,
+      playing: true,
     };
 
     this.videoToggle = this.videoToggle.bind(this);
@@ -46,6 +46,7 @@ class Top extends React.Component<any, any> {
 
   ref = (player: any) => {
     this.player = player;
+    this.player.seekTo(42);
   };
 
   click() {
