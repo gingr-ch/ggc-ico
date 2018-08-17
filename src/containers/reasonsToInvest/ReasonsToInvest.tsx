@@ -76,8 +76,10 @@ class ReasonsToInvest extends React.Component<any, any> {
                 <Img
                   src={reasonsImg}
                   style={{
-                    width: '316px',
-                    height: '600px',
+                    width: 'auto',
+                    height: '100%',
+                    maxWidth: '316px',
+                    maxHeight: '600px',
                   }}
                   alt={this.props.lang.reasonsToInvest}
                   className="rti-image"
@@ -86,8 +88,10 @@ class ReasonsToInvest extends React.Component<any, any> {
                     <Img
                       src={reasonsImgThumb}
                       style={{
-                        width: '316px',
-                        height: '600px',
+                        width: 'auto',
+                        height: '100%',
+                        maxWidth: '316px',
+                        maxHeight: '600px',
                         filter: 'blur(10px)',
                       }}
                     />
