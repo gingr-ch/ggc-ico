@@ -37,7 +37,7 @@ class Download extends React.Component<any, any> {
           </h2>
           <OnVisible
             className="hidden-content hidden-content--flip-in-right"
-            percent={200}
+            percent={50}
           >
             <ul
               style={{
