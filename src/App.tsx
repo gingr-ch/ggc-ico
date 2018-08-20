@@ -78,7 +78,6 @@ class App extends React.Component<any, any> {
   // handle state change when language is changed
   handleLangChange(langCode: any) {
     if (langCode) {
-      console.warn(langCode);
       strings.setLanguage(langCode.value);
     }
 

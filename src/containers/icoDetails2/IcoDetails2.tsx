@@ -29,7 +29,6 @@ class IcoDetails2 extends React.Component<any, any> {
                     {this.props.lang.privateSale}
                   </td>
                   <td />
-                  <td />
                   <td>750</td>
                   <td>{this.props.lang.millionCoinsOffered}</td>
                   <td className="color--green">-70%</td>
@@ -40,7 +39,6 @@ class IcoDetails2 extends React.Component<any, any> {
                   <td className="color--red">
                     {this.props.lang.publicPreSale}
                   </td>
-                  <td />
                   <td />
                   <td>150</td>
                   <td>{this.props.lang.millionCoinsOffered}</td>
@@ -53,7 +51,6 @@ class IcoDetails2 extends React.Component<any, any> {
                     {this.props.lang.publicMainSale}
                   </td>
                   <td>{this.props.lang.tier} 1</td>
-                  <td />
                   <td>50</td>
                   <td>{this.props.lang.millionCoinsOffered}</td>
                   <td className="color--red">-33%</td>
@@ -64,7 +61,6 @@ class IcoDetails2 extends React.Component<any, any> {
                     {this.props.lang.publicMainSale}
                   </td>
                   <td>{this.props.lang.tier} 2</td>
-                  <td />
                   <td>30</td>
                   <td>{this.props.lang.millionCoinsOffered}</td>
                   <td className="color--red">-16.6%</td>
@@ -75,7 +71,6 @@ class IcoDetails2 extends React.Component<any, any> {
                     {this.props.lang.publicMainSale}
                   </td>
                   <td>{this.props.lang.tier} 3</td>
-                  <td />
                   <td>20</td>
                   <td>{this.props.lang.millionCoinsOffered}</td>
                   <td />

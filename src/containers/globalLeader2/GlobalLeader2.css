@@ -63,3 +63,10 @@
   font-size: 15px;
   font-weight: bold;
 }
+
+@media(max-width: 599px) {
+  .gg-section-container--global-leader2 .gg-content-container {
+    padding: 0;
+    overflow-y: scroll;
+  }
+}

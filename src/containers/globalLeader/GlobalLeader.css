@@ -25,5 +25,6 @@
   }
   .gg-section-container--global-leader .app-header {
     font-size: 34px;
+    line-height: 48px;
   }
 }

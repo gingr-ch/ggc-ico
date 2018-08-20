@@ -53,4 +53,9 @@
   .ico-details-items-container {
     flex-direction: column;
   }
+
+  .hidden-content.hidden-content--ico-details--slide-in--left:first-child {
+    justify-content: flex-start;
+    padding-left: 35px;
+  }
 }

@@ -63,7 +63,11 @@ class Roadmap extends React.Component<any, any> {
           </div>
 
           <div className="hide show-xs">
-            <img src={roadMap} alt="" />
+            <img
+              src={roadMap}
+              alt="Roadmap infographic"
+              style={{ maxWidth: '100%' }}
+            />
           </div>
 
           <div
@@ -74,7 +78,7 @@ class Roadmap extends React.Component<any, any> {
               className="flex-column"
               style={{ justifyContent: 'flex-end', paddingTop: '150px' }}
             >
-              <img src={gingr} alt="" />
+              <img src={gingr} alt="Girl holding a bunch of ballons" />
             </div>
 
             <div

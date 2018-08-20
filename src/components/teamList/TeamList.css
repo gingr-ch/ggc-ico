@@ -45,6 +45,7 @@
   .rc-dialog {
     width: 100vw;
     height: 100vh;
+    margin: 0;
   }
 
   .rc-dialog-body,

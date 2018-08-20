@@ -51,6 +51,10 @@
 }
 
 @media(max-width: 599px) {
+  .gg-section-container--ico-details2 .gg-content-container {
+    padding: 0;
+  }
+
   .table-private-sale {
     font-size: 10px;
   }

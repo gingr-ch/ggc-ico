@@ -42,7 +42,6 @@ class Top extends React.Component<any, any> {
       controls: true,
       playing: true,
     });
-    console.warn(this.state);
     this.player.seekTo(0);
   }
 
@@ -101,6 +100,7 @@ class Top extends React.Component<any, any> {
             height: '100%',
             backgroundColor: 'red',
             zIndex: 0,
+            overflow: 'hidden',
           }}
           className="player-container"
         >

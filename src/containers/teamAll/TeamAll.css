@@ -8,4 +8,8 @@
   .gg-section-container--teamAll {
     padding-bottom: 0;
   }
+
+  .team-list {
+    margin-top: 5em;
+  }
 }

@@ -109,12 +109,16 @@
   }
 
   [class^="hookup__"] {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
 
   .path--horizontal.path--vertical-xs {
     transform: rotate(90deg);
     margin: 40px 0 90px;
     left: 0 !important;
+  }
+
+  .hookup__phones > :first-child {
+    margin-bottom: 0;
   }
 }

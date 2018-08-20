@@ -67,8 +67,7 @@ class TeamList extends React.Component<any, any> {
 
   onClick = (item: object, e: any) => {
     // const currProfile = _.find(list, { id: id });
-    const currProfile = item;
-    console.warn(currProfile);
+    // const currProfile = item;
     this.setState({
       mousePosition: {
         x: e.pageX,
@@ -77,7 +76,6 @@ class TeamList extends React.Component<any, any> {
       visible: true,
       profile: item,
     });
-    console.warn(this.state);
   };
 
   onClose = () => {

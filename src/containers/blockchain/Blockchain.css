@@ -24,6 +24,7 @@
 
 @media(max-width: 599px) {
   .gg-section-container--blockchain .app-header {
-    font-size: 34px
+    font-size: 34px;
+    line-height: 48px;
   }
 }
