@@ -76,11 +76,11 @@
   background-color: var(--purple);
   border-color: var(--yellow) !important;
 }
-/*
-.player-container video {
-  margin-top: 35px;
+
+.gg-section-container--top video {
+  object-fit: cover;
 }
-*/
+
 @media(max-width: 599px) {
   .gg-section-container--top {
     min-height: 100vh !important;
