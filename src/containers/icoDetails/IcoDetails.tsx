@@ -7,9 +7,11 @@ import Button from '../../components/button/Button';
 import './IcoDetails.css';
 
 const gingr = require(process.env.REACT_APP_MEDIA_URL + 'gingr_left.png');
-const icoStages = require(process.env.REACT_APP_MEDIA_URL + 'chart.png');
+// const icoStages = require(process.env.REACT_APP_MEDIA_URL + 'chart.png');
 const icoStagesAlt = require(process.env.REACT_APP_MEDIA_URL +
   'chartAlt_nobg.png');
+
+import Chart from '../../components/svgChart/svgChart';
 
 // export const langEn = require('../../assets/l18n/ico-details.en.json');
 // export const strings: IcoDetailsStrings = new LocalizedStrings({
@@ -22,6 +24,13 @@ class IcoDetails extends React.Component<any, any> {
 
   click() {
     window.open('https://admin.ggcico.io/auth/register', '_blank');
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      window.dispatchEvent(new Event('resize'));
+      // tslint:disable-next-line:align
+    }, 0);
   }
 
   render() {
@@ -54,13 +63,8 @@ class IcoDetails extends React.Component<any, any> {
           <div className="spacer" />
           <div className="spacer" />
 
-          <Carousel
-            autoplay={true}
-            heightMode={'max'}
-            wrapAround={true}
-            initialSlideHeight={488}
-          >
-            <img src={icoStages} />
+          <Carousel autoplay={true} heightMode={'max'} wrapAround={true}>
+            <Chart lang={this.props.lang} />
             <img src={icoStagesAlt} />
           </Carousel>
 

@@ -46,9 +46,16 @@
   left: -244px;
 }
 
+.slider-control-bottomcenter {
+  display: none;
+}
 
 @media(max-width: 599px) {
   .gg-section-container--ico-details .app-header {
     font-size: 42px;
+  }
+
+  .gg-section-container--ico-details .gingr-left {
+    display: none;
   }
 }

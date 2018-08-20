@@ -1,11 +1,4 @@
 import * as React from 'react';
-// import LocalizedStrings from 'react-localization';
-// import { IcoDetailsStrings } from '../../components/l18n';
-//
-// export const langEn = require('../../assets/l18n/ico-details.en.json');
-// export const strings: IcoDetailsStrings = new LocalizedStrings({
-//   en: langEn,
-// });
 import OnVisible from 'react-on-visible';
 
 import './IcoDetails2.css';

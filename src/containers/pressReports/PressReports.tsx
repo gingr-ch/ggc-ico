@@ -68,7 +68,7 @@ class PressReports extends React.Component<any, any> {
               {this.props.lang.privateSaleNow}
             </div>
             <div style={{ fontSize: '30px', color: '#F39FFF' }}>
-              {this.props.lang.discount}
+              70% {this.props.lang.discount}
             </div>
             <div
               style={{
