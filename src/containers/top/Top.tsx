@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player';
 import classNames from 'classnames';
 import OnVisible from 'react-on-visible';
 // import Img from 'react-image';
-import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
+// import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 
 import './Top.css';
 
@@ -55,15 +55,18 @@ class Top extends React.Component<any, any> {
     window.open('https://admin.ggcico.io/auth/register', '_blank');
   }
 
+  // componentDidMount() {
+  //   if (!isWidthUp('sm', this.props.width)) {
+  //     console.warn('poo');
+  //     this.player.playing = false;
+  //   }
+  // }
+
   render() {
     let classes = classNames({
       'gg-top-left': true,
       'gg-frame-open': this.state.open,
     });
-
-    if (!isWidthUp('sm', this.props.width)) {
-      console.warn('poo');
-    }
 
     return (
       <div className="gg-section-container gg-section-container--top">
@@ -74,7 +77,6 @@ class Top extends React.Component<any, any> {
               <br /> {this.props.lang.theOldestIndustry} <br />
               {this.props.lang.inTheWorld}"
             </h1>
-            <div className="spacer hide show-xs" />
 
             <div className="play-button">
               <OnVisible className="rotate-in">
@@ -126,4 +128,5 @@ class Top extends React.Component<any, any> {
   }
 }
 
-export default withWidth()(Top);
+// export default withWidth()(Top);
+export default Top;
