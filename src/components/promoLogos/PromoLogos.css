@@ -22,6 +22,14 @@
   max-height: 53px;
 }
 
+.press-logos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
 
 @media(max-width: 599px) {
   .promo-logos .press-logos {
@@ -29,12 +37,19 @@
     margin: 0 auto;
     margin-top: 56px;
   }
-
-  .promo-logos .press-logos li {
+  
+  .press-logos .press-logo {
     margin-bottom: 56px;
   }
-
-  .promo-logos .press-logos li img {
+  
+  .promo-logos .press-logo img {
+    max-height: 38px;
     margin: 0 auto;
+  }
+}
+
+@media(max-width: 376px) {
+  .promo-logos .press-logo img {
+    max-height: 34px;
   }
 }

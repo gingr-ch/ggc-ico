@@ -1,12 +1,3 @@
-/* Variables */
-:root {
-  --yellow: #ffd400;
-  --pink: rgb(243, 159, 255);
-  --purple: rgba(150, 48, 176, 1);
-  --green: rgba(32, 206, 136, 1);
-  --flag-d: 28px;
-}
-
 /* General */
 .App {
   text-align: center;

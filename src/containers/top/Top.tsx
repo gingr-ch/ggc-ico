@@ -3,6 +3,7 @@ import ReactPlayer from 'react-player';
 import classNames from 'classnames';
 import OnVisible from 'react-on-visible';
 // import Img from 'react-image';
+import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 
 import './Top.css';
 
@@ -17,6 +18,7 @@ const video = require('../../assets/video/ggc-ico.mp4');
 class Top extends React.Component<any, any> {
   player: any;
   env = process.env.REACT_APP_MEDIA_URL;
+  percentage: number;
 
   constructor(props: any) {
     super(props);
@@ -59,13 +61,14 @@ class Top extends React.Component<any, any> {
       'gg-frame-open': this.state.open,
     });
 
+    if (!isWidthUp('sm', this.props.width)) {
+      console.warn('poo');
+    }
+
     return (
       <div className="gg-section-container gg-section-container--top">
         <div className={classes}>
           <div className="gg-top-left__container">
-            <div className="spacer hide show-xs" />
-            <div className="spacer hide show-xs" />
-
             <h1 className="app-header gg-h1">
               "{this.props.lang.revolutionizing}
               <br /> {this.props.lang.theOldestIndustry} <br />
@@ -73,7 +76,7 @@ class Top extends React.Component<any, any> {
             </h1>
             <div className="spacer hide show-xs" />
 
-            <div className="play-button hide-xs">
+            <div className="play-button">
               <OnVisible className="rotate-in">
                 <Button
                   click={this.videoToggle}
@@ -123,4 +126,4 @@ class Top extends React.Component<any, any> {
   }
 }
 
-export default Top;
+export default withWidth()(Top);

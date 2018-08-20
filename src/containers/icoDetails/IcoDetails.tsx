@@ -58,7 +58,7 @@ class IcoDetails extends React.Component<any, any> {
             autoplay={true}
             heightMode={'max'}
             wrapAround={true}
-            initialSlideHeight={'488px'}
+            initialSlideHeight={488}
           >
             <img src={icoStages} />
             <img src={icoStagesAlt} />

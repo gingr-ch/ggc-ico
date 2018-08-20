@@ -49,7 +49,7 @@ class PromoLogos extends React.Component<any, any> {
 
     return (
       <div className="promo-logos">
-        <OnVisible className="hidden-content" percent={this.percentage}>
+        <OnVisible className="hidden-content">
           <ul className="press-logos">
             {logos.map((logo, i) => (
               <li className="press-logo" key={i}>

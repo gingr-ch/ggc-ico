@@ -110,13 +110,19 @@
 
   .gg-top-left__container {
     margin-right: 0;
+    padding-top: 100px;
   }
 
   .gg-h1 {
     font-size: 28px;
+    font-family: 'brandon_grotesque_regularRg', sans-serif;
+    letter-spacing: .14em;
+    line-height: 50px;
   }
 
   .gg-head--xs {
     font-size: 34px;
   }
+
+  
 }
