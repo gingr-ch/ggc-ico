@@ -8,10 +8,11 @@ import './IcoDetails.css';
 
 const gingr = require(process.env.REACT_APP_MEDIA_URL + 'gingr_left.png');
 // const icoStages = require(process.env.REACT_APP_MEDIA_URL + 'chart.png');
-const icoStagesAlt = require(process.env.REACT_APP_MEDIA_URL +
-  'chartAlt_nobg.png');
+// const icoStagesAlt = require(process.env.REACT_APP_MEDIA_URL +
+//   'chartAlt_nobg.png');
 
 import Chart from '../../components/svgChart/svgChart';
+import Chart2 from '../../components/svgChart2/svgChart2';
 
 // export const langEn = require('../../assets/l18n/ico-details.en.json');
 // export const strings: IcoDetailsStrings = new LocalizedStrings({
@@ -65,7 +66,7 @@ class IcoDetails extends React.Component<any, any> {
 
           <Carousel autoplay={true} heightMode={'max'} wrapAround={true}>
             <Chart lang={this.props.lang} />
-            <img src={icoStagesAlt} />
+            <Chart2 lang={this.props.lang} />
           </Carousel>
 
           <img className="gingr-left" src={gingr} alt="" />

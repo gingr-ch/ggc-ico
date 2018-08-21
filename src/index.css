@@ -43,4 +43,5 @@ body {
 
 #root {
   overflow-x: hidden;
+  margin-bottom: -17px;
 }
