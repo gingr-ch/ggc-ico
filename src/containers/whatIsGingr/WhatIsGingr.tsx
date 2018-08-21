@@ -1,5 +1,5 @@
 import * as React from 'react';
-import VimeoPlayer from 'react-player';
+import ReactPlayer from 'react-player';
 import OnVisible from 'react-on-visible';
 import classNames from 'classnames';
 // import LocalizedStrings from 'react-localization';
@@ -18,6 +18,8 @@ const gingrImg = require(process.env.REACT_APP_MEDIA_URL +
   'what_is_gingr--gingr.png');
 const establishmentImg = require(process.env.REACT_APP_MEDIA_URL +
   'what_is_gingr--establishment.png');
+
+const clientVideo = require('../../assets/video/ggc-ico.mp4');
 
 // export const langEn = require('../../assets/l18n/what-is-gingr.en.json');
 // export const strings: WhatIsGingrStrings = new LocalizedStrings({
@@ -53,7 +55,7 @@ class WhatIsGingr extends React.Component<any, any> {
         classTitle: 'client',
         icon: clientIcon,
         content: this.props.lang.worldwideAccessTo,
-        video: 'https://vimeo.com/194665559',
+        video: clientVideo,
       },
       {
         id: 1,
@@ -89,16 +91,27 @@ class WhatIsGingr extends React.Component<any, any> {
                     <img className="l2c__media-image" src={d.img} alt="" />
                   )}
                   {d.video && (
-                    <VimeoPlayer
-                      url={d.video}
+                    <ReactPlayer
+                      url={clientVideo}
                       width="431px"
-                      height="232px"
+                      height="234px"
                       playing={false}
+                      volume={0.8}
                       muted={false}
-                      controls={false}
+                      controls={true}
                       loop={false}
                       ref={this.ref}
-                      className="l2c__media-image"
+                      config={{
+                        file: {
+                          forceVideo: true,
+                        },
+                      }}
+                      playsinline={true}
+                      style={{
+                        background: '#000000',
+                        zIndex: 3,
+                        position: 'relative',
+                      }}
                     />
                   )}
                 </div>
