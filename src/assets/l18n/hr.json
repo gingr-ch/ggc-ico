@@ -59,6 +59,7 @@
   "reserve": "Rezerve",
   "buyGGC": "Kupiti GGC",
   "sellGGC": "Prodati GGC",
+  "ggcSold": "GGC prodao",
   "reserveFundsGGC": "Rezervnih fondova GGC",
   "income": "Prihoda",
   "saleOnExchange": "Prodaja sustava Exchange",
@@ -307,5 +308,6 @@
   "hiImOlha": "Zdravo, ja sam Olha. Ja sam voditelj projekta. Ja sam manijak rješavanje problema. Moj super moći u organizaciji, komunikaciji i vodeći tim programera vještine su spojene kako bi pomogli u Gingr' treba.",
   "withOver9Years": "Sa preko 9 godina iskustva u tome i specijalizirana za front-end razvoj Jefferson je zaista strastveni o kodiranju. Jedan od glavnih fokusira osigurava da korisnik iskustva na Gingr je na najvišoj razini pruža optimalnu interakciju. Njegova vještina uključuje HTML, CSS, SCSS, manje, odgovarajući Design, Javascript, ES2015, jQuery, Wordpress sa dosta iskustva sa AngularJS i kutna 2 + okviri. Dobro upućen u korištenju NodeJS. Vješt sa modernim graditi alat poput Webpack, roktati i progutati. Dobra je komandna linija za svakodnevnu upotrebu. Prosječna iskustvo u MYSQL i opće poslužitelj postava s NGINX i Apache. Neka iskustva u PHP-u iz stvaranje Wordpress čep i tema.",
   "imTerry": "Ja sam Terry, web developer s potpuno svjež pristup web i mobilne razvoj. Ja sam ljut na suočavanje s modernim tehnologijama kao što su JavaScript, Kutna, Sails.js, Express.js, Node.js.",
-  "imSerhii": "Ja sam Serhii. Ja sam samo web developer koji nastoji stvoriti strašan stvari. Da li je upravljanje udaljenim tim ili isporuku izazovnim projektima od početka do lansirati, ja sam spreman za to. Su alati imam najviše strasti za JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, Kutna."
+  "imSerhii": "Ja sam Serhii. Ja sam samo web developer koji nastoji stvoriti strašan stvari. Da li je upravljanje udaljenim tim ili isporuku izazovnim projektima od početka do lansirati, ja sam spreman za to. Su alati imam najviše strasti za JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, Kutna.",
+  "aboutMe": "O meni"
 }

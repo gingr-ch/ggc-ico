@@ -59,6 +59,7 @@
   "reserve": "Rezerwy",
   "buyGGC": "Kupić GGC",
   "sellGGC": "Sprzedaj GGC",
+  "ggcSold": "GGC sprzedawane",
   "reserveFundsGGC": "Funduszy rezerwowych GGC",
   "income": "Dochód",
   "saleOnExchange": "Sprzedaży na giełdzie",
@@ -307,5 +308,6 @@
   "hiImOlha": "Witam jestem Olha. Jestem menadżerem projektu. Jestem maniakiem rozwiązywania problemów. Moja super moce w organizacji, komunikacja i kierowanie zespołem programistów umiejętności są scalane do pomocy Gingr' potrzebuje.",
   "withOver9Years": "Z ponad 9 letnie doświadczenie w IT i specjalizuje się w tworzeniu front-end Jefferson jest naprawdę pasjonatem kodowania. Jednym z jego głównych jest zapewnienie, że doświadczenia użytkownika na Gingr jest na najwyższym poziomie, zapewniając optymalną interakcję. Jego umiejętności zestaw zawiera HTML, CSS, SCSS, mniej, Responsive Design, ES2015, Javascript, jQuery, Wordpress z dużym doświadczenie platform AngularJS & kątowa 2 +. Dobrze zorientowany w użyciu NodeJS. Adept z budowy nowoczesnych narzędzi takich jak Webpack, Grunt & łyk. Komfortowe w wierszu polecenia do codziennego użytku. Średnie doświadczenie w ogólne serwera konfiguracji NGINX i Apache i MYSQL. Pewne doświadczenie w PHP od tworzenia Wordpress wtyczki i motywy.",
   "imTerry": "Jestem Terry, web developer z całkowicie świeże podejście do sieci web i mobilne. Cieszę się, że na zajmowanie się nowoczesne technologie, takie jak JavaScript, kątowe, Sails.js, Express.js Node.js.",
-  "imSerhii": "Jestem Serhii. Jestem po prostu web developer, który stara się stworzyć niesamowite rzeczy. Czy to jest zarządzanie zespołem zdalnego lub realizacji wymagających projektów od początku do uruchomienia, jestem gotowy do podjęcia go. Narzędzia, mam większość pasja są JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, Angular."
+  "imSerhii": "Jestem Serhii. Jestem po prostu web developer, który stara się stworzyć niesamowite rzeczy. Czy to jest zarządzanie zespołem zdalnego lub realizacji wymagających projektów od początku do uruchomienia, jestem gotowy do podjęcia go. Narzędzia, mam większość pasja są JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, Angular.",
+  "aboutMe": "O mnie"
 }

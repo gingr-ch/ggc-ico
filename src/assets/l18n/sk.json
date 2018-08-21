@@ -59,6 +59,7 @@
   "reserve": "Rezerva",
   "buyGGC": "Predám GGC",
   "sellGGC": "Predávame GGC",
+  "ggcSold": "GGC predané",
   "reserveFundsGGC": "Rezervných fondov GGC",
   "income": "Príjem",
   "saleOnExchange": "Predaj na burze",
@@ -307,5 +308,6 @@
   "hiImOlha": "Ahoj, ja som Olha. Som projektový manažér. Som maniak problémov. Moja super právomoci organizácie, komunikácie a vedie tím vývojárov zručností sú zlúčené pomáhať Gingr \"potrebuje.",
   "withOver9Years": "S viac ako 9 rokov skúseností v ňom a špecializujúca sa na vývoj Jefferson je naozaj vášnivý kódovanie. Jeho hlavné zameranie je zabezpečiť, aby užívateľ skúsenosti na Gingr na najvyššej úrovni poskytuje optimálnu interakciu. Svojich schopností set obsahuje HTML, CSS, SCSS menej, responzívny dizajn, Javascript, ES2015, jQuery, Wordpress s veľa skúseností s AngularJS & uhlovej 2 + rámcov. Dobre zběhlý v používaní osobný rozvoj. Adept s moderným stavať nástrojov akými sú Webpack, Grunt & dúškom. Pohodlné v príkazovom riadku pre každodenné použitie. Priemerné skúsenosti v všeobecné server nastavenia s NGINX a Apache a MYSQL. Určité skúsenosti v PHP od vytvorenie Wordpress pluginy a motívy.",
   "imTerry": "Som Terry, web developer s úplne nový prístup k webu a mobilných vývoj. Mám záujem o nakladaní s modernými technológiami ako JavaScript, uhlové, Sails.js, Express.js, Node.js.",
-  "imSerhii": "Ja som Serhii. Ja som len webový vývojár, ktorý sa snaží vytvoriť úžasné veci. Či je riadenie vzdialeného tímu alebo poskytovanie náročných projektov od začiatku začať, som pripravený si to. Mám väčšinu vášeň pre nástroje sú JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, uhlové."
+  "imSerhii": "Ja som Serhii. Ja som len webový vývojár, ktorý sa snaží vytvoriť úžasné veci. Či je riadenie vzdialeného tímu alebo poskytovanie náročných projektov od začiatku začať, som pripravený si to. Mám väčšinu vášeň pre nástroje sú JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, uhlové.",
+  "aboutMe": "O mne"
 }

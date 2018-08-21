@@ -59,6 +59,7 @@
   "reserve": "Reserve",
   "buyGGC": "Kjøpe GGC",
   "sellGGC": "Selg GGC",
+  "ggcSold": "GGC solgt",
   "reserveFundsGGC": "Reservere midler GGC",
   "income": "Inntekt",
   "saleOnExchange": "Salg på Exchange",
@@ -307,5 +308,6 @@
   "hiImOlha": "Hei, er jeg Olha. Jeg er prosjektleder. Jeg er en problemløsning galning. Min super krefter i organisasjon, kommunikasjon og leder et team av utviklere ferdigheter er slått sammen for å hjelpe Gingr' trenger.",
   "withOver9Years": "Med over 9 års erfaring i det og spesialiserer seg på programutvikling er Jefferson virkelig brenner for koding. En av hans viktigste fokuserer er å sikre at brukeropplevelsen på Gingr er på høyeste nivå gir optimalt samspill. Hans dyktighet sett inkluderer HTML, CSS, SCSS, mindre, forståelsesfull Design, Javascript, ES2015, jQuery, Wordpress med mye erfaring med de AngularJS & Angular 2 + rammene. Vel bevandret i bruk av NodeJS. Adept med moderne bygge verktøy som Webpack, grynt & slurk. Behagelig på kommandolinjen for daglig bruk. Gjennomsnittlig erfaring i MYSQL og generell server oppsett med NGINX og Apache. Noen erfaring i PHP oppretter Wordpress plugins og temaer.",
   "imTerry": "Jeg er Terry, en web-utvikler med helt frisk tilnærming til web- og mobil utvikling. Jeg er ivrig på å håndtere moderne teknologier som JavaScript, Angular, Sails.js, Express.js, Node.js.",
-  "imSerhii": "Jeg er Serhii. Jeg er bare en webutvikler som arbeider for å skape awesome ting. Enten det er administrere en ekstern team eller levere utfordrende prosjekter fra start å lansere, er jeg klar til å ta det opp. Verktøyene jeg har de fleste lidenskap for er JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, Angular."
+  "imSerhii": "Jeg er Serhii. Jeg er bare en webutvikler som arbeider for å skape awesome ting. Enten det er administrere en ekstern team eller levere utfordrende prosjekter fra start å lansere, er jeg klar til å ta det opp. Verktøyene jeg har de fleste lidenskap for er JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, Angular.",
+  "aboutMe": "Om meg"
 }

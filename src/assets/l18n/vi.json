@@ -59,6 +59,7 @@
   "reserve": "Khu bảo tồn",
   "buyGGC": "Mua GGC",
   "sellGGC": "Bán GGC",
+  "ggcSold": "GGC bán",
   "reserveFundsGGC": "Dự trữ quỹ GGC",
   "income": "Thu nhập",
   "saleOnExchange": "Bán trao đổi",
@@ -307,5 +308,6 @@
   "hiImOlha": "Hi, I 'm Olha. Tôi là một người quản lý dự án. Tôi là một maniac giải quyết vấn đề. Siêu năng lượng của tôi trong tổ chức, giao tiếp và dẫn đầu một nhóm các nhà phát triển những kỹ năng được sáp nhập để hỗ trợ Gingr' nhu cầu.",
   "withOver9Years": "Với hơn 9 năm kinh nghiệm trong nó và chuyên về phát triển front-end Jefferson là thực sự passionate về mã hóa. Một trong những tập trung chính của ông là đảm bảo rằng kinh nghiệm người dùng trên Gingr là cấp cao nhất, cung cấp sự tương tác tối ưu. Ông thiết lập kỹ năng bao gồm HTML, CSS, SCSS, ít hơn, phản ứng nhanh thiết kế, Javascript, ES2015, jQuery, Wordpress với rất nhiều kinh nghiệm với các khuôn khổ AngularJS & góc 2 +. Thành thạo trong việc sử dụng NodeJS. Lão luyện với xây dựng hiện đại các công cụ như Webpack, Grunt & Gulp. Thoải mái trên dòng lệnh cho sử dụng hàng ngày. Kinh nghiệm trung bình trong MYSQL và tổng server thiết lập NGINX và Apache. Một số kinh nghiệm trong PHP tạo Wordpress plugins và chủ đề.",
   "imTerry": "Tôi là Terry, một nhà phát triển web với cách tiếp cận hoàn toàn tươi cho web và điện thoại di động phát triển. Tôi quan tâm về đối phó với các công nghệ hiện đại như JavaScript, góc, Sails.js, Express.js, Node.js.",
-  "imSerhii": "Tôi là Serhii. Tôi chỉ cần một nhà phát triển web những người phấn đấu để tạo ra công cụ tuyệt vời. Cho dù đó quản lý một đội ngũ từ xa hoặc cung cấp đầy thách thức dự án từ khi bắt đầu khởi động, tôi đã sẵn sàng để đưa nó lên. Các công cụ tôi đã có đam mê nhất là JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, góc."
+  "imSerhii": "Tôi là Serhii. Tôi chỉ cần một nhà phát triển web những người phấn đấu để tạo ra công cụ tuyệt vời. Cho dù đó quản lý một đội ngũ từ xa hoặc cung cấp đầy thách thức dự án từ khi bắt đầu khởi động, tôi đã sẵn sàng để đưa nó lên. Các công cụ tôi đã có đam mê nhất là JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, góc.",
+  "aboutMe": "Về tôi"
 }

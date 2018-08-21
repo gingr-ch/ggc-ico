@@ -59,6 +59,7 @@
   "reserve": "Rezerv",
   "buyGGC": "GGC satın",
   "sellGGC": "GGC satmak",
+  "ggcSold": "GGC sattı",
   "reserveFundsGGC": "Rezerv para GGC",
   "income": "Gelir",
   "saleOnExchange": "Döviz Satış",
@@ -307,5 +308,6 @@
   "hiImOlha": "Merhaba, ben Olha. Ben bir proje yöneticisiyim. Sorun çözme manyak olduğumu. Süper güçlerimi organizasyon, iletişim ve geliştiriciler becerilerinin bir takım lider Gingr yardımcı olmak için birleştirilir ' ihtiyacı.",
   "withOver9Years": "9 yılı aşkın tecrübesi ve ön uç geliştirme konusunda uzmanlaşmış Jefferson gerçekten kodlama hakkında tutkulu olduğunu. Onun ana odakları birini Gingr üstünde belgili tanımlık kullanıcı deneyim en iyi etkileşim sağlayan en üst düzeyde olduğunu garanti etmektedir. Onun beceri kümesi içerir HTML, CSS, SCSS, daha az duyarlı tasarım, jQuery, Javascript, ES2015 çok AngularJS ve açısal 2 + çerçeveler ile deneyimi ile Wordpress. İyi NodeJS kullanımında usta. Usta ile modern kurmak Webpack, Grunt ve bardak gibi araçları. Günlük kullanım için komut satırında rahat. MYSQL ve genel sunucu kurulumları NGINX ve Apache ile ortalama deneyim. Biraz tecrübe php Wordpress eklentileri ve temaları oluşturma.",
   "imTerry": "Terry, bir web geliştirici web ve mobil geliştirme için tamamen yeni bir yaklaşım ile ben. Im'güçlü JavaScript, açısal, Sails.js, Express.js, Node.js gibi modern teknolojiler ile ilgili.",
-  "imSerhii": "Serhii ben. Ben sadece korku veren malzeme oluşturmak için çaba bir web geliştirici değilim. Uzak ekip yönetme veya zorlu projeleri başlatmak için Başlat teslim olsun, onu almaya hazırım. Çoğu tutkusu var araçlardır JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, açısal."
+  "imSerhii": "Serhii ben. Ben sadece korku veren malzeme oluşturmak için çaba bir web geliştirici değilim. Uzak ekip yönetme veya zorlu projeleri başlatmak için Başlat teslim olsun, onu almaya hazırım. Çoğu tutkusu var araçlardır JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, açısal.",
+  "aboutMe": "Benim hakkımda"
 }

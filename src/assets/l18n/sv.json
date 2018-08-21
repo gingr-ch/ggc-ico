@@ -59,6 +59,7 @@
   "reserve": "Reserve",
   "buyGGC": "Köp GGC",
   "sellGGC": "Sälja GGC",
+  "ggcSold": "GGC säljs",
   "reserveFundsGGC": "Reservfonder GGC",
   "income": "Inkomst",
   "saleOnExchange": "Försäljning på Exchange",
@@ -307,5 +308,6 @@
   "hiImOlha": "Hej, jag Olha. Jag är projektledare. Jag är en problemlösning. Min super befogenheter i organisationen, kommunikation och leder ett team av utvecklare färdigheter slås samman för att hjälpa Gingr' behov.",
   "withOver9Years": "Med över 9 års erfarenhet inom IT och specialiserat sig på front-end utveckling brinner Jefferson verkligen kodning. En av hans huvudsakliga fokus är att se till att användarupplevelsen på Gingr är på högsta nivå ger optimal samverkan. Hans skicklighet innehåller HTML, CSS, SCSS, mindre, responsiv Design, ES2015, Javascript, jQuery, Wordpress med en hel del erfarenhet med de AngularJS & vinkelformig 2 + ramarna. Väl insatt i använder NodeJS. Adept med moderna bygga verktyg såsom Webpack, Grunt & klunk. Bekväm på kommandoraden för dagligt bruk. Genomsnittliga erfarenheten i MYSQL och allmän server uppställningar med NGINX och Apache. Viss erfarenhet av PHP från att skapa Wordpress plugins och teman.",
   "imTerry": "Jag är Terry, webbutvecklare med helt färska inställning till webb- och mobilutveckling. Jag är angelägen om att hantera modern teknik som vinkelformig, Express.js, Sails.js, JavaScript, Node.js.",
-  "imSerhii": "Jag är Peter. Jag är bara en webbutvecklare som strävar efter att skapa awesome grejer. Oavsett om det en avlägsen Europacupfinal eller levererar utmanande projekt från start för att starta, är jag redo att ta upp. Verktygen har jag de flesta passion för är JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, vinkelformig."
+  "imSerhii": "Jag är Peter. Jag är bara en webbutvecklare som strävar efter att skapa awesome grejer. Oavsett om det en avlägsen Europacupfinal eller levererar utmanande projekt från start för att starta, är jag redo att ta upp. Verktygen har jag de flesta passion för är JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, vinkelformig.",
+  "aboutMe": "Om mig"
 }

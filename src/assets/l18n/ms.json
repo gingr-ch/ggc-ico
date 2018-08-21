@@ -59,6 +59,7 @@
   "reserve": "Rizab",
   "buyGGC": "Membeli GGC",
   "sellGGC": "Menjual GGC",
+  "ggcSold": "GGC dijual",
   "reserveFundsGGC": "Dana rizab GGC",
   "income": "Pendapatan",
   "saleOnExchange": "Jualan atas Pertukaran",
@@ -307,5 +308,6 @@
   "hiImOlha": "Hi, I 'm Olha. Saya seorang pengurus projek. Saya orang gila penyelesaian masalah. Kuasa istimewa saya dalam organisasi, komunikasi dan mengetuai sekumpulan kemahiran pemaju akan bergabung untuk membantu Gingr dalam ' keperluan.",
   "withOver9Years": "Dengan lebih daripada 9 tahun pengalaman di DALAMNYA dan dalam pembangunan front-end Jefferson sememangnya benar-benar ghairah dengan coding. Salah satu tumpuan utama beliau adalah memastikan pengalaman pengguna pada Gingr merupakan peringkat tertinggi menyediakan interaksi yang optimum. Set kemahiran beliau termasuk HTML, CSS, SCSS, kurang, Reka bentuk yang responsif, Javascript, ES2015, jQuery, Wordpress dengan banyak pengalaman dengan rangka AngularJS & sudut 2 +. Mahir dalam menggunakan NodeJS. Berkebolehan dengan moden membina alat seperti Webpack, Grunt & Gulp. Selesa pada baris arahan untuk kegunaan harian. Purata pengalaman setups pelayan umum dengan NGINX dan Apache dan MYSQL. Sebahagian pengalaman dalam PHP daripada mencipta tema Wordpress plugins dan.",
   "imTerry": "Saya Terry, pemaju web dengan pendekatan yang benar-benar segar untuk laman web dan telefon mudah alih pembangunan. Saya berminat dengan berurusan dengan teknologi moden seperti JavaScript, sudut, Sails.js, Express.js, Node.js.",
-  "imSerhii": "Saya Serhii. Saya hanya pemaju web yang berusaha mencipta barangan yang menggerunkan. Sama ada ia menguruskan sebuah pasukan yang jauh atau menyampaikan mencabar projek dari mula hingga ke pelancaran, saya bersedia untuk menerimanya. Alat-alat yang aku punya minat kebanyakan untuk akan JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, sudut."
+  "imSerhii": "Saya Serhii. Saya hanya pemaju web yang berusaha mencipta barangan yang menggerunkan. Sama ada ia menguruskan sebuah pasukan yang jauh atau menyampaikan mencabar projek dari mula hingga ke pelancaran, saya bersedia untuk menerimanya. Alat-alat yang aku punya minat kebanyakan untuk akan JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, sudut.",
+  "aboutMe": "Tentang aku"
 }

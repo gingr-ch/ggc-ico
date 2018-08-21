@@ -59,6 +59,7 @@
   "reserve": "Rezervy",
   "buyGGC": "Koupit GGC",
   "sellGGC": "Prodávat GGC",
+  "ggcSold": "GGC prodáno",
   "reserveFundsGGC": "Rezervní fondy GGC",
   "income": "Příjem",
   "saleOnExchange": "Prodej na burze",
@@ -87,7 +88,7 @@
   "phone": "Telefon",
   "mobile": "Mobilní",
   "companyRegistration": "Registrace společnosti",
-  "number": "Cha",
+  "number": "Ne.",
   "allRightsReserved": "Všechna práva vyhrazena",
   "switzerland": "Švýcarsko",
   "germany": "Německo",
@@ -307,5 +308,6 @@
   "hiImOlha": "Ahoj já jsem Olha. Já jsem vedoucí projektu. Já jsem maniak řešení problémů. Moje super pravomoci organizace, komunikace a vedení týmu vývojářů dovednosti jsou sloučeny pomáhat Gingr' potřebuje.",
   "withOver9Years": "S více než 9 let zkušeností v ní a specializující se na front-end vývoje Jefferson je opravdu vášnivý kódování. Jedním z jeho hlavních témat je zajistit, aby uživatelské zkušenosti na Gingr nejvyšší úrovně zajištění optimální interakce. Jeho dovednosti set zahrnuje HTML, CSS, SCSS, méně responsivní Design, ES2015, Javascript, jQuery, Wordpress se spoustou zkušeností s AngularJS & Angular 2 + rámců. Zběhlí v používání NodeJS. Adept s moderní sestavení nástroje například Webpack Grunt & douškem. Pohodlné na příkazovém řádku pro každodenní použití. Průměrné zkušenosti v MYSQL a nastavení Obecné serveru Apache a NGINX. Některé zkušenosti v PHP vytvářet Wordpress pluginů a témat.",
   "imTerry": "Já jsem Terry, web developer s naprosto nový přístup k webu a vývoj mobilních aplikací. Já jsem na jednání s moderní technologií, jako jsou JavaScript, úhlové, Sails.js, Express.js, Node.js.",
-  "imSerhii": "Já jsem chutná. Já jsem jen webový vývojář, který se snaží vytvořit úžasné věci. Při správě vzdáleného týmu, nebo přinášejí náročné projekty od začátku spuštění, jsem připraven se obrátit. Jsou nástroje, já mám většinu vášeň pro JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, úhlové."
+  "imSerhii": "Já jsem chutná. Já jsem jen webový vývojář, který se snaží vytvořit úžasné věci. Při správě vzdáleného týmu, nebo přinášejí náročné projekty od začátku spuštění, jsem připraven se obrátit. Jsou nástroje, já mám většinu vášeň pro JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, úhlové.",
+  "aboutMe": "O mně"
 }

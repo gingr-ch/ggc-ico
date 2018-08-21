@@ -59,6 +59,7 @@
   "reserve": "Riserva",
   "buyGGC": "Acquista GGC",
   "sellGGC": "Vendere GGC",
+  "ggcSold": "GGC venduto",
   "reserveFundsGGC": "Fondi di riserva GGC",
   "income": "Reddito",
   "saleOnExchange": "Vendita sul cambio",
@@ -307,5 +308,6 @@
   "hiImOlha": "Ciao, io sono Olha. Sono un Manager di progetto. Io sono un maniaco di problem solving. La mia super poteri nell'organizzazione, la comunicazione e la Guida di un team di competenze agli sviluppatori vengono unite per assistere il Gingr' ha bisogno.",
   "withOver9Years": "Con oltre 9 anni di esperienza nel settore IT e specializzato nello sviluppo di front-end Jefferson è veramente appassionato di codifica. Uno dei suoi principali obiettivi è garantire che l'esperienza utente su Gingr è di altissimo livello fornendo un'interazione ottimale. Suo insieme di abilità include HTML, CSS, SCSS, meno, Responsive Design, ES2015, Javascript, jQuery, Wordpress con un sacco di esperienza con i quadri di AngularJS & angolare 2 +. Esperto nell'uso di NodeJS. Adepto con moderno costruire strumenti come Webpack, Grunt & Gulp. Confortevole nella riga di comando per l'uso quotidiano. Esperienza nella media in MYSQL e settaggi generali server NGINX e Apache. Qualche esperienza in PHP, dalla creazione di temi e plugin Wordpress.",
   "imTerry": "Sono Terry, uno sviluppatore web con totalmente fresco approccio alla sviluppo web e mobile. Io sono appassionato di trattare con moderne tecnologie come JavaScript, angolare, Sails.js, Express.js, node. js.",
-  "imSerhii": "Io sono Serhii. Io sono solo uno sviluppatore web che si sforza di creare la roba impressionante. Gestione di un team remoto o consegna impegnativi progetti dall'inizio a lanciare, io sono pronto a prenderlo. Gli strumenti che ho la passione per la maggior parte sono JavaScript, PHP, node. js, Sails.js, Express.js, YII1/2, angolare."
+  "imSerhii": "Io sono Serhii. Io sono solo uno sviluppatore web che si sforza di creare la roba impressionante. Gestione di un team remoto o consegna impegnativi progetti dall'inizio a lanciare, io sono pronto a prenderlo. Gli strumenti che ho la passione per la maggior parte sono JavaScript, PHP, node. js, Sails.js, Express.js, YII1/2, angolare.",
+  "aboutMe": "Su di Me"
 }

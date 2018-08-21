@@ -59,6 +59,7 @@
   "reserve": "储备",
   "buyGGC": "购买 GGC",
   "sellGGC": "销售 GGC",
+  "ggcSold": "GGC 出售",
   "reserveFundsGGC": "储备基金 GGC",
   "income": "收入",
   "saleOnExchange": "交易所销售",
@@ -307,5 +308,6 @@
   "hiImOlha": "嗨, 我是 Olha。我是项目经理。我是个解决问题的疯子我的超能力在组织, 沟通和领导一个团队的开发人员技能被合并, 以帮助 Gingr 的需要。",
   "withOver9Years": "拥有超过9年的 IT 经验和专业的前端开发杰弗逊是真正热衷于编码。他的主要重点之一是确保用户在 Gingr 上的体验是最高级别的, 提供最佳的交互。他的技能集包括 HTML, CSS, SCSS, 更少, 响应性的设计, Javascript, ES2015, jQuery, Wordpress 与 AngularJS 和角 2 + 框架的许多经验。精通使用 NodeJS。熟练使用现代建筑工具, 如 Webpack、咕噜和咽。舒适的命令行日常使用。具有 NGINX 和 Apache 的 MYSQL 和常规服务器设置的一般经验。一些 PHP 的经验, 从创建 Wordpress 插件和主题。",
   "imTerry": "我是特里, 一个全新的网络和移动开发方法的网络开发者。我热衷于处理像 JavaScript, 角, 帆这样的现代技术. js, 快递. js, 节点. js。",
-  "imSerhii": "我是 Serhii我只是一个网络开发者, 他们努力创造出令人敬畏的东西。无论是管理远程团队还是从启动到启动都提供具有挑战性的项目, 我都准备好了。我最热衷的工具是 JavaScript、PHP、节点. js, 帆. js, YII1/2, 角。"
+  "imSerhii": "我是 Serhii我只是一个网络开发者, 他们努力创造出令人敬畏的东西。无论是管理远程团队还是从启动到启动都提供具有挑战性的项目, 我都准备好了。我最热衷的工具是 JavaScript、PHP、节点. js, 帆. js, YII1/2, 角。",
+  "aboutMe": "关于我"
 }

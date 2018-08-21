@@ -59,6 +59,7 @@
   "reserve": "Reserve",
   "buyGGC": "Ostaa GGC",
   "sellGGC": "Myydä GGC",
+  "ggcSold": "GGC myydään",
   "reserveFundsGGC": "Rahastokorotuksessa GGC",
   "income": "Tulot",
   "saleOnExchange": "Myynti vaihto",
@@ -87,7 +88,7 @@
   "phone": "Puhelin",
   "mobile": "Mobile",
   "companyRegistration": "Yrityksen rekisteröinti",
-  "number": "Ei.",
+  "number": "Hahhaa",
   "allRightsReserved": "Kaikki oikeudet pidätetään",
   "switzerland": "Sveitsi",
   "germany": "Saksa",
@@ -307,5 +308,6 @@
   "hiImOlha": "Hei olen Olha. Olen projektipäällikkö. Olen ongelmien maniac. Minun suurvaltojen organisaatio-, viestintä- ja johtava tiimi kehittäjät taitoja yhdistetään auttaa Gingr' on.",
   "withOver9Years": "Yli 9 vuoden kokemus IT- ja erikoistunut front-end kehitystä Jefferson on todella intohimoisesti koodaus. Yksi hänen tärkeimmistä painopisteistä on varmistaa, että käyttäjien kokemuksia Gingr on korkein taso sisältää saavutettaisiin. Hänen taito sisältää HTML, CSS, SCSS vähemmän reagoiva Design, Javascript, ES2015, jQuery, Wordpress kanssa paljon kokemusta AngularJS & kulmikas 2 + puitteissa. Hyvin perehtynyt avulla NodeJS. Adept moderni rakentaa työkaluja kuten Webpack, Grunt & nielaisu. Mukava komentorivillä arkikäyttöön. Keskimääräinen kokemus MYSQL ja kaikinpuolinen tarjoilija asetelmia NGINX ja Apache. Kokemusta php luomasta Wordpress plugins ja teemoja.",
   "imTerry": "Olen Terry, web-kehittäjä, täysin uusi lähestymistapa web ja mobiili kehittäminen. Haluan käsitellä modernia teknologiaa, kuten JavaScript, kulmikas, Sails.js, Express.js, Node.js.",
-  "imSerhii": "Olen Serhii. Olen vain web-kehittäjä, joka pyrkii luomaan mahtavia juttuja. Toimitusjohtaja kauko team tai antaneet haastavia hankkeita Käynnistä, olen valmis ottamaan sen. Minulla suurin intohimo työkalut ovat JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, kulmikas."
+  "imSerhii": "Olen Serhii. Olen vain web-kehittäjä, joka pyrkii luomaan mahtavia juttuja. Toimitusjohtaja kauko team tai antaneet haastavia hankkeita Käynnistä, olen valmis ottamaan sen. Minulla suurin intohimo työkalut ovat JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, kulmikas.",
+  "aboutMe": "Minusta"
 }

@@ -59,6 +59,7 @@
   "reserve": "Tartalék",
   "buyGGC": "Vásárlás GGC",
   "sellGGC": "Eladni GGC",
+  "ggcSold": "GGC értékesített",
   "reserveFundsGGC": "Tartalékalapok GGC",
   "income": "Jövedelem",
   "saleOnExchange": "Eladó, csere",
@@ -307,5 +308,6 @@
   "hiImOlha": "Szia én vagyok Olha. Én vagyok a projekt menedzser. Én egy probléma-megoldási mániákus. Az én szuper erőkre szervezet, a kommunikáció és a vezető egy csapat a fejlesztők készségek egyesülnek, hogy segítse a Gingr' szüksége van.",
   "withOver9Years": "Több mint 9 éves tapasztalattal rendelkezik az informatikai és a szakosodott front-end fejlesztés Jefferson igazán szenvedélyes kódolás. Az egyik a fő összpontosít van annak biztosítása, hogy a felhasználói élmény, a Gingr a legmagasabb szinten, hogy optimális kölcsönhatás. A készség készlet tartalmazza a HTML, CSS, n, kevésbé érzékeny tervezés, Javascript, ES2015, jQuery, Wordpress-val sok tapasztalat-val a AngularJS & szög 2 + keretek között. Jól ismerik a NodeJS. Ügyes modern épít eszközök, mint a Webpack, Grunt & korty. Kényelmes a parancssorban a mindennapi használatra. Átlagos tapasztalat általános kiszolgáló-beállítások NGINX és az Apache és a MYSQL. Néhány tapasztalat, php, Wordpress plugins és témák.",
   "imTerry": "Terry, egy teljesen új megközelítés a web- és mobil fejlesztés webfejlesztő vagyok. Én rajongok a modern technológiák, mint a JavaScript, a szög, a Sails.js, a Express.js, a Node.js foglalkozik.",
-  "imSerhii": "Én vagyok a Serhii. Én csak egy webfejlesztő, aki arra törekszik, hogy a fantasztikus dolgokat létrehozni. Akár egy távoli csapat irányítása vagy kihívást jelentő projektek megvalósítása az elejétől a dob, én kész vagyok, hogy vegye fel. Már van a leg--bb szenvedélyes eszközök a JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, szög."
+  "imSerhii": "Én vagyok a Serhii. Én csak egy webfejlesztő, aki arra törekszik, hogy a fantasztikus dolgokat létrehozni. Akár egy távoli csapat irányítása vagy kihívást jelentő projektek megvalósítása az elejétől a dob, én kész vagyok, hogy vegye fel. Már van a leg--bb szenvedélyes eszközök a JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, szög.",
+  "aboutMe": "Rólam"
 }

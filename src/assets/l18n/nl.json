@@ -59,6 +59,7 @@
   "reserve": "Reserve",
   "buyGGC": "GGC kopen",
   "sellGGC": "Verkopen van de GGC",
+  "ggcSold": "GGC verkocht",
   "reserveFundsGGC": "Reservefondsen GGC",
   "income": "Inkomen",
   "saleOnExchange": "Verkoop op Exchange",
@@ -307,5 +308,6 @@
   "hiImOlha": "Hallo, ben ik Olha. Ik ben een Project Manager. Ik ben een probleemoplossende maniak. Mijn super bevoegdheden in de organisatie, communicatie en leidt een team van ontwikkelaars vaardigheden worden samengevoegd ter ondersteuning van de Gingr' nodig heeft.",
   "withOver9Years": "Met meer dan 9 jaar ervaring in IT en gespecialiseerd in front-end ontwikkeling is Jefferson echt gepassioneerd door codering. Een van zijn belangrijkste richt zich is ervoor te zorgen dat de user experience op Gingr van het hoogste niveau bieden optimale interactie. Zijn vaardigheid-reeks omvat HTML, CSS, SCS, minder, Responsive Design, ES2015, Javascript, jQuery, Wordpress met veel ervaring met de AngularJS & Angular 2 + kaders. Goed vertrouwd in het gebruik van NodeJS. Adept met moderne ingebouwde tools zoals Webpack, Grunt & Gulp. Comfortabel op de opdrachtregel voor dagelijks gebruik. Gemiddelde ervaring in MYSQL en algemene server opstellingen met NGINX en Apache. Enige ervaring in PHP van het creëren van Wordpress plugins en thema's.",
   "imTerry": "Ik ben Terry, een webontwikkelaar met totaal nieuwe aanpak voor het web en mobiele ontwikkeling. Ik ben enthousiast over omgaan met moderne technologieën zoals JavaScript, Angular, Sails.js, Express.js, Node.js.",
-  "imSerhii": "Ik ben Serhii. Ik ben gewoon een webontwikkelaar, die streeft naar de awesome waar. Of het managen van een extern team uitdagende projecten van begin tot lancering leveren, ben ik klaar om het innemen. De tools die ik heb de meeste passie voor zijn JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, Angular."
+  "imSerhii": "Ik ben Serhii. Ik ben gewoon een webontwikkelaar, die streeft naar de awesome waar. Of het managen van een extern team uitdagende projecten van begin tot lancering leveren, ben ik klaar om het innemen. De tools die ik heb de meeste passie voor zijn JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, Angular.",
+  "aboutMe": "Over mij"
 }

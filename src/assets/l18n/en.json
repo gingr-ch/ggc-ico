@@ -62,6 +62,7 @@
   "reserve": "Reserve",
   "buyGGC": "Buy GGC",
   "sellGGC": "Sell GGC",
+  "ggcSold": "GGC Sold",
   "reserveFundsGGC": "Reserve Funds GGC",
   "income": "Income",
   "saleOnExchange": "Sale on Exchange",
@@ -338,5 +339,6 @@
   "hiImOlha": "Hi, I’m Olha. I’m a Project Manager. I’m a problem-solving maniac. My super powers in organisation, communication and leading a team of developers skills are merged to assist the Gingr’ needs.",
   "withOver9Years": "With over 9 years of experience in IT and specializing in front-end development Jefferson is truly passionate about coding. One of his main focuses is ensuring that the user experience on Gingr is of the highest level providing optimal interaction. His skill set includes HTML, CSS, SCSS, Less, Responsive Design, Javascript, ES2015, jQuery, Wordpress with a lot of experience with the AngularJS & Angular 2+ frameworks. Well versed in using NodeJS. Adept with modern build tools such as Webpack, Grunt & Gulp. Comfortable on the command line for everyday use. Average experience in MYSQL and general server setups with NGINX and Apache. Some experience in PHP from creating Wordpress plugins and themes.",
   "imTerry": "I’m Terry, a web developer with totally fresh approach to web and mobile development. I’m keen on dealing with modern technologies like JavaScript, Angular, Sails.js, Express.js, Node.js.",
-  "imSerhii": "I’m Serhii. I’m just a web developer who strives to create the awesome stuff. Whether it’s managing a remote team or delivering challenging projects from start to launch, I’m ready to take it up. The tools I’ve got the most passion for are JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, Angular."
+  "imSerhii": "I’m Serhii. I’m just a web developer who strives to create the awesome stuff. Whether it’s managing a remote team or delivering challenging projects from start to launch, I’m ready to take it up. The tools I’ve got the most passion for are JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, Angular.",
+  "aboutMe": "About Me"
 }

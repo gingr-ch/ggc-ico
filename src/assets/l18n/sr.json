@@ -59,6 +59,7 @@
   "reserve": "Rezervi",
   "buyGGC": "Kupi GGC",
   "sellGGC": "Prodajem GGC",
+  "ggcSold": "GGC prodao",
   "reserveFundsGGC": "Rezervna sredstva GGC",
   "income": "Prihod",
   "saleOnExchange": "Prodaja na Exchange serveru",
@@ -307,5 +308,6 @@
   "hiImOlha": "Zdravo, ja sam Pogledaj kako to. Ja sam upravitelj. Ja sam manijak za rešavanje problema. Objedinjene su moje supermoжi u organizaciji, komunikacija i vodi ekipu programeri sposobnosti da pomogne u Gingr' treba.",
   "withOver9Years": "Sa preko 9 godina iskustva u njoj i specijalizacija front-end razvoj Jefferson je istinski strastven u vezi za kodiranje. Jedan od njegove glavne fokusiran osigurava da je korisničko iskustvo na Gingr je na najvišem nivou pruža optimalne interakcije. Njegovo iskustvo koje uključuje HTML, CSS, SCSS, manje od toga, dražesna dizajn, Javascript, ES2015, jQuery, Wordpress sa puno iskustva sa AngularJS & ugaonom 2 + okosnica. Da sadite pomoću NodeJS. Vešti sa modernim build alata kao što su Webpack, Grunte & zalogaju. Udobno mi je u komandnoj liniji za svakodnevnu upotrebu. Prosečna iskustvo u MYSQL i podešavanja Opšte postavke servera sa NGINX i Apache. Neka iskustva u PHP iz kreiranje dodatne komponente za Wordpress i teme.",
   "imTerry": "Ja sam Terry, web programer sa potpuno nov pristup web i mobilne razvoja. Ja sam lud za izlaženje na kraj sa modernim tehnologijama kao JavaScript ugaonom, Sails.js, Express.js, Node.js.",
-  "imSerhii": "Ja sam Serhii. Ja sam web developer koji nastoji da biste kreirali super stvari. Da li je Upravljanje udaljenim tim ili dostavlja izazovan projekte od početka do lansiranja, spreman sam da ga zauzme. Imam većinu strast za alat su JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, ugaonom."
+  "imSerhii": "Ja sam Serhii. Ja sam web developer koji nastoji da biste kreirali super stvari. Da li je Upravljanje udaljenim tim ili dostavlja izazovan projekte od početka do lansiranja, spreman sam da ga zauzme. Imam većinu strast za alat su JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, ugaonom.",
+  "aboutMe": "O meni"
 }

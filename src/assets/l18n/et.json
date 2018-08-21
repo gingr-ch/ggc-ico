@@ -59,6 +59,7 @@
   "reserve": "Reservi",
   "buyGGC": "Osta GGC",
   "sellGGC": "Müüa GGC",
+  "ggcSold": "GGC müüdud",
   "reserveFundsGGC": "Rahalised vahendid GGC",
   "income": "Tulu",
   "saleOnExchange": "Müük, vahetus",
@@ -307,5 +308,6 @@
   "hiImOlha": "Tere, olen Olha. Ma olen projektijuht. Ma olen hull probleemide lahendamisel. Minu super võimu organisatsiooni-, side-ja juhtiv meeskond arendajad oskused ühendatakse abistamiseks ning Gingr \"vajab.",
   "withOver9Years": "Üle 9 aasta kogemus see ja esiotsa arengukoostööle spetsialiseerunud Jefferson on tõeliselt kirglik kodeerimine. Üks tema põhipunktile on tagada, et kasutaja kogemus Gingr on optimaalse koostöö kõrgemat taset. Oma oskuste kogumi sisaldab HTML, CSS, SCSS vähem, adaptiivne kujundus, Javascript, ES2015, jQuery, Wordpress AngularJS & nurga 2 + raamistike kogemusi palju. Ka kogenud NodeJS kasutades. Vilunud kaasaegne ehitada tööriistad nagu Webpack, Grunt & suutäis. Mugav käsureal igapäevaseks kasutamiseks. Keskmine kogemus MYSQL ja üldise serveri seadistuse NGINX ja Apache. Selle probleemi php Wordpress pluginad ja teemad.",
   "imTerry": "Ma olen Terry, veebi arendaja täiesti värske lähenemine veebi- ja mobiilirakenduste arendusega. Olen huvitatud on edastanud kaasaegseid tehnoloogiaid nagu JavaScript, nurga, Sails.js, Express.js, Node.js.",
-  "imSerhii": "Ma olen Üllar. Ma olen lihtsalt veebi arendaja, kelle eesmärgiks on luua vinge värk. Kas see on serveri rühma juhtimise või pakkuda keerukas projektis käivitada algusest, olen valmis seda võtma. Mul on enamik kirg vahendid on JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, nurga."
+  "imSerhii": "Ma olen Üllar. Ma olen lihtsalt veebi arendaja, kelle eesmärgiks on luua vinge värk. Kas see on serveri rühma juhtimise või pakkuda keerukas projektis käivitada algusest, olen valmis seda võtma. Mul on enamik kirg vahendid on JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, nurga.",
+  "aboutMe": "Minu kohta"
 }

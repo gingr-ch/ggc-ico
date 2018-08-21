@@ -59,6 +59,7 @@
   "reserve": "Reserve",
   "buyGGC": "Købe GGC",
   "sellGGC": "Sælge GGC",
+  "ggcSold": "GGC sælges",
   "reserveFundsGGC": "Reservefonde GGC",
   "income": "Indkomst",
   "saleOnExchange": "Salg på Exchange",
@@ -87,7 +88,7 @@
   "phone": "Telefon",
   "mobile": "Mobiltelefon",
   "companyRegistration": "Virksomhedsregistrering",
-  "number": "Nej.",
+  "number": "Lol",
   "allRightsReserved": "Alle rettigheder forbeholdes",
   "switzerland": "Schweiz",
   "germany": "Tyskland",
@@ -307,5 +308,6 @@
   "hiImOlha": "Hej, er jeg Olha. Jeg er en projektleder. Jeg er en problemløsning maniac. Min super beføjelser i organisation, kommunikation og lede et team af udviklere færdigheder flettes sammen for at hjælpe Gingr' behov.",
   "withOver9Years": "Med over 9 års erfaring i IT og med speciale i front-end udvikling er Jefferson virkelig passioneret om kodning. En af hans primære fokus er at sikre, at brugeroplevelsen på Gingr er det højeste niveau giver optimal interaktion. Hans dygtighed sæt indeholder HTML, CSS, SCSS, mindre lydhør Design, Javascript, ES2015, jQuery, Wordpress med en masse erfaring med AngularJS & kantede 2 + rammer. Velbevandret i ved hjælp af NodeJS. Adept hos moderne opbygge værktøjer såsom Webpack, Grunt & slurk. Komfortable på kommandolinjen til hverdagsbrug. Gennemsnitlige erfaringer i MYSQL og generelle server opsætninger med NGINX og Apache. Nogle erfaringer i PHP fra at skabe Wordpress plugins og temaer.",
   "imTerry": "Jeg er Terry, en web-udvikler med helt friske tilgang til web- og mobiludvikling. Jeg er opsat på at handle med moderne teknologier som JavaScript, kantede, Sails.js, Express.js, Node.js.",
-  "imSerhii": "Jeg er Serhii. Jeg er bare en web-udvikler, der stræber efter at skabe den awesome ting. Uanset om det administration af et ekstern team eller levere udfordrende projekter fra start til start, er jeg klar til at tage det. De værktøjer, jeg har fået den mest passion for er JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, kantede."
+  "imSerhii": "Jeg er Serhii. Jeg er bare en web-udvikler, der stræber efter at skabe den awesome ting. Uanset om det administration af et ekstern team eller levere udfordrende projekter fra start til start, er jeg klar til at tage det. De værktøjer, jeg har fået den mest passion for er JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, kantede.",
+  "aboutMe": "Om mig"
 }

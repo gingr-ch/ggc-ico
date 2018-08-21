@@ -59,6 +59,7 @@
   "reserve": "Rezerva",
   "buyGGC": "Cumpara GGC",
   "sellGGC": "Vindem GGC",
+  "ggcSold": "GGC vândute",
   "reserveFundsGGC": "Fonduri de rezervă GGC",
   "income": "Venituri",
   "saleOnExchange": "Vânzarea pe schimb",
@@ -307,5 +308,6 @@
   "hiImOlha": "Buna, sunt dumitru. Eu sunt un Manager de proiect. Sunt un maniac de rezolvare. Meu super puteri în organizaţie, comunicarea şi conduce o echipa de dezvoltatori abilităţile sunt îmbinate pentru a asista Gingr' are nevoie.",
   "withOver9Years": "Cu peste 9 ani de experienta in IT si specializata in dezvoltarea front-end Jefferson este cu adevărat pasionat de codificare. Unul dintre sale se concentrează principal este de a asigura că experienţa utilizatorului pe Gingr este de cel mai înalt nivel, oferind interacţiune optimă. Lui set de competenţe include HTML, CSS, SCSS, mai puţin, receptiv Design, Javascript, ES2015, jQuery, Wordpress cu o mulţime de experienţă cu cadrele AngularJS & unghiulară 2 +. Bine versat în utilizarea NodeJS. ADEPT cu moderne construi instrumente, cum ar fi Webpack, groh & înghiţitură. Confortabil pe linia de comandă pentru folosirea zilnică. Experienta medie in MYSQL si setari generale server cu NGINX şi Apache. Unele experienţă în PHP la crearea de Wordpress plugin-uri şi teme.",
   "imTerry": "Eu sunt Terry, un dezvoltator de web cu totul proaspătă abordare a web şi mobile de dezvoltare. Eu sunt dornici de pe care se ocupă cu tehnologii moderne, cum ar fi JavaScript, unghiular, Sails.js, Express.js, Node.js.",
-  "imSerhii": "Eu sunt Serhii. Eu sunt doar un dezvoltator de web, care se străduieşte să creeze lucruri minunat. Dacă este o echipa de la distanţă de gestionare sau oferind proiecte provocatoare la început să lanseze, sunt gata să ia-o. Instrumente pe care am luat majoritatea pasiunea pentru sunt JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, unghiulară."
+  "imSerhii": "Eu sunt Serhii. Eu sunt doar un dezvoltator de web, care se străduieşte să creeze lucruri minunat. Dacă este o echipa de la distanţă de gestionare sau oferind proiecte provocatoare la început să lanseze, sunt gata să ia-o. Instrumente pe care am luat majoritatea pasiunea pentru sunt JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, unghiulară.",
+  "aboutMe": "Despre mine"
 }

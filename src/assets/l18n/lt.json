@@ -59,6 +59,7 @@
   "reserve": "Rezervas",
   "buyGGC": "Pirkti GGC",
   "sellGGC": "Parduodu GGC",
+  "ggcSold": "Parduodamas GGC",
   "reserveFundsGGC": "Rezervo lėšos GGC",
   "income": "Pajamų",
   "saleOnExchange": "Pardavimas biržoje",
@@ -307,5 +308,6 @@
   "hiImOlha": "Hi, I 'm Olha. Esu projektų vadovė. I 'm problemų maniakas. Mano super galias organizacijoje, bendravimo ir pirmaujanti komanda kūrėjams įgūdžių yra sujungti padėti į Gingr \"reikia.",
   "withOver9Years": "Su daugiau kaip 9 metų patirtis – tai ir specializuojasi front-end plėtros Jefferson yra tikrai aistringai apie kodavimo. Vienas iš jo pagrindinis dėmesys yra užtikrinti, kad vartotojo patirtį Gingr yra aukščiausio lygio teikimą optimalus sąveika. Jo įgūdžių rinkinį sudaro HTML, CSS, SCSS, mažiau reaguoja dizainas, Javascript, ES2015, jQuery, Wordpress su daug patirties su AngularJS & Kampinis 2 + sistemas. Gerai išmanantis naudojant NodeJS. Gebėjimai su šiuolaikinės statybos įrankių, pvz., Webpack, Grunt & burnelę. Patogus kasdieniniam naudojimui komandų eilutėje. Vidutinis patirtį MYSQL ir bendrojo serverio konfigūracijos su NGINX ir Apache. Pažengęs php sukurti Wordpress įskiepių ir temos.",
   "imTerry": "Aš esu Terry, kūrėjas su visiškai naują požiūrį į interneto ir mobiliųjų technologijų kūrimą. Aš mėgstu su modernių technologijų, pavyzdžiui, JavaScript, kampinis, Sails.js, Express.js, Node.js.",
-  "imSerhii": "Aš esu Serhii. Aš tiesiog web programuotojas, kuris siekia sukurti nuostabus daiktai. Ar jis valdyti nuotolinio komandos arba užtikrinant sudėtingas projektus nuo pradžių pradėti, aš esu pasirengęs priimti jį. Turiu dauguma aistrą įrankiai yra JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, kampinis."
+  "imSerhii": "Aš esu Serhii. Aš tiesiog web programuotojas, kuris siekia sukurti nuostabus daiktai. Ar jis valdyti nuotolinio komandos arba užtikrinant sudėtingas projektus nuo pradžių pradėti, aš esu pasirengęs priimti jį. Turiu dauguma aistrą įrankiai yra JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, kampinis.",
+  "aboutMe": "Apie mane"
 }

@@ -59,6 +59,7 @@
   "reserve": "Rezerve",
   "buyGGC": "Nakup GGC",
   "sellGGC": "Prodaja GGC",
+  "ggcSold": "GGC prodajajo",
   "reserveFundsGGC": "Rezervnih sredstev GGC",
   "income": "Dohodek",
   "saleOnExchange": "Prodajo na izmenjavo",
@@ -307,5 +308,6 @@
   "hiImOlha": "Hi, jaz sem Olga. Jaz sem vodja projekta. Jaz sem reševanje manijak. Moj super moči v organizaciji, komunikacije in vodi ekipo razvijalcev spretnosti so združeni za pomoč v Gingr \"potrebuje.",
   "withOver9Years": "Z več kot 9 let izkušenj v njem in specializirano front-end za razvoj Jefferson je resnično strastno o kodiranja. Med njegove glavne osredotoča je zagotavljanje, da uporabniško izkušnjo na Gingr je na najvišji ravni, ki zagotavlja optimalno interakcije. Njegove sposobnosti, ki vključuje HTML, CSS, SCSS, manj odziven Design, ES2015, Javascript, jQuery, Wordpress z veliko izkušenj z AngularJS & kotni 2 + okvirov. Dobro podkovanega v uporabo na NodeJS. Spretni s sodobno graditi orodij, kot so Webpack, Grunt & požirek. Udobno v ukazni vrstici za vsakdanjo rabo. Povprečna izkušnje v MYSQL in splošna strežnik postavitve z NGINX in Apache. Nekaj izkušenj v PHP od ustvarjanja, Wordpress plugins in teme.",
   "imTerry": "Jaz sem Terry, spletni razvijalec s popolnoma svež pristop k spletni in mobilni razvoj. Sem želela na obravnavo sodobnih tehnologij, kot so JavaScript, kotni, Sails.js, Express.js, Node.js.",
-  "imSerhii": "Jaz sem Serhii. Jaz sem samo spletni razvijalec, ki si prizadeva ustvariti super stvari. Ali je upravljanje oddaljenih ekipo ali dali zahtevnih projektov od začetka za začetek, sem pripravljen začeti opravljati. Orodja, sem dobil večino strast za so JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, kotni."
+  "imSerhii": "Jaz sem Serhii. Jaz sem samo spletni razvijalec, ki si prizadeva ustvariti super stvari. Ali je upravljanje oddaljenih ekipo ali dali zahtevnih projektov od začetka za začetek, sem pripravljen začeti opravljati. Orodja, sem dobil večino strast za so JavaScript, PHP, Node.js, Sails.js, Express.js, YII1/2, kotni.",
+  "aboutMe": "O meni"
 }
