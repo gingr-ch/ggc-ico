@@ -14,12 +14,14 @@ const agencyIcon = require(process.env.REACT_APP_MEDIA_URL +
   'icons/agency.png');
 const establishmentIcon = require(process.env.REACT_APP_MEDIA_URL +
   'icons/establishment.png');
-const gingrImg = require(process.env.REACT_APP_MEDIA_URL +
-  'what_is_gingr--gingr.png');
-const establishmentImg = require(process.env.REACT_APP_MEDIA_URL +
-  'what_is_gingr--establishment.png');
+// const gingrImg = require(process.env.REACT_APP_MEDIA_URL +
+//   'what_is_gingr--gingr.png');
+// const establishmentImg = require(process.env.REACT_APP_MEDIA_URL +
+//   'what_is_gingr--establishment.png');
 
 const clientVideo = require('../../assets/video/ggc-ico.mp4');
+const gingrVideo = require('../../assets/video/gingr-video.m4v');
+const establishmentVideo = require('../../assets/video/establishment-video.m4v');
 
 // export const langEn = require('../../assets/l18n/what-is-gingr.en.json');
 // export const strings: WhatIsGingrStrings = new LocalizedStrings({
@@ -64,7 +66,7 @@ class WhatIsGingr extends React.Component<any, any> {
         classTitle: 'gingr',
         icon: gingrIcon,
         content: this.props.lang.worldwideWorkWith,
-        img: gingrImg,
+        video: gingrVideo,
       },
       {
         id: 2,
@@ -73,7 +75,7 @@ class WhatIsGingr extends React.Component<any, any> {
         icon: establishmentIcon,
         icon2: agencyIcon,
         content: this.props.lang.stateOfTheArt,
-        img: establishmentImg,
+        video: establishmentVideo,
       },
     ];
 
@@ -87,12 +89,9 @@ class WhatIsGingr extends React.Component<any, any> {
             {whatIsList.map((d, i) => (
               <div key={d.id} className="l2c__container">
                 <div className="l2c__media order-xs-2">
-                  {d.img && (
-                    <img className="l2c__media-image" src={d.img} alt="" />
-                  )}
                   {d.video && (
                     <ReactPlayer
-                      url={clientVideo}
+                      url={d.video}
                       width="431px"
                       height="234px"
                       playing={false}
@@ -122,8 +121,13 @@ class WhatIsGingr extends React.Component<any, any> {
                 >
                   <OnVisible className={'slide-in slide-in--' + classes(i)}>
                     <div className="l2c__content-title">
-                      {d.icon2 && <img src={d.icon2} alt="" />}
-                      <img src={d.icon} alt="" />
+                      {d.icon2 && (
+                        <img
+                          src={d.icon2}
+                          alt={d.classTitle + ' second icon'}
+                        />
+                      )}
+                      <img src={d.icon} alt={d.classTitle + ' icon'} />
                       <h3>
                         {d.title}
                         {d.subtitle && (
