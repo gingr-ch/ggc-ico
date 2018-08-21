@@ -296,6 +296,7 @@ class TeamList extends React.Component<any, any> {
             role={item.role}
             description={item.description}
             onClick={e => this.onClick(item, e)}
+            lang={this.props.lang}
           />
         ))}
         {dialog}
