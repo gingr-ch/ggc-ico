@@ -12,7 +12,7 @@
     "d3-textwrap": "^2.0.2",
     "flag-icon-css": "^3.0.0",
     "lodash": "^4.17.10",
-    "nuka-carousel": "^4.2.2",
+    "nuka-carousel": "^4.3.6",
     "prop-types": "^15.6.2",
     "rc-dialog": "^7.1.7",
     "react": "^16.2.0",

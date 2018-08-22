@@ -1,6 +1,6 @@
 import * as React from 'react';
-import OnVisible from 'react-on-visible';
-// import LocalizedStrings, { LocalizedStringsMethods } from 'react-localization';
+// import OnVisible from 'react-on-visible';
+import Carousel from 'nuka-carousel';
 import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 
 import './PromoLogos.css';
@@ -15,15 +15,12 @@ const teleBasel = require(process.env.REACT_APP_MEDIA_URL +
   'press/telebasel.png');
 const watson = require(process.env.REACT_APP_MEDIA_URL + 'press/watson.png');
 
-// export const langEn = require('../../assets/l18n/press-reports.en.json');
-//
-// export interface LocaleStrings extends LocalizedStringsMethods {
-//   pressReports: string;
-// }
-//
-// export const strings: LocaleStrings = new LocalizedStrings({
-//   en: langEn,
-// });
+const anabell = require(process.env.REACT_APP_MEDIA_URL + 'press/anabell.png');
+const bernerZeitung = require(process.env.REACT_APP_MEDIA_URL +
+  'press/bz_berner_zeitung.png');
+const thunerTagblatt = require(process.env.REACT_APP_MEDIA_URL +
+  'press/bz_thuner_tagblatt.png');
+const derBund = require(process.env.REACT_APP_MEDIA_URL + 'press/der_bund.png');
 
 const logos = [
   { 0: luzernerZeitung },
@@ -31,10 +28,15 @@ const logos = [
   { 2: startupValley },
   { 3: teleBasel },
   { 4: watson },
+  { 5: anabell },
+  { 6: bernerZeitung },
+  { 7: thunerTagblatt },
+  { 8: derBund },
 ];
 
 class PromoLogos extends React.Component<any, any> {
   percentage: number;
+  slides: number;
 
   constructor(props: any) {
     super(props);
@@ -42,22 +44,43 @@ class PromoLogos extends React.Component<any, any> {
 
   render() {
     if (isWidthUp('sm', this.props.width)) {
-      this.percentage = 200;
+      this.slides = 5;
     } else {
-      this.percentage = 100;
+      this.slides = 2;
     }
 
     return (
       <div className="promo-logos">
-        <OnVisible className="hidden-content">
-          <ul className="press-logos">
+        <div className="press-logos">
+          <Carousel
+            autoplay={true}
+            heightMode={'max'}
+            wrapAround={true}
+            slidesToShow={this.slides}
+            renderCenterLeftControls={({ previousSlide }) => (
+              <button
+                style={{ background: 'none', color: 'white', border: 'none' }}
+                onClick={previousSlide}
+              >
+                &#60;
+              </button>
+            )}
+            renderCenterRightControls={({ nextSlide }) => (
+              <button
+                style={{ background: 'none', color: 'white', border: 'none' }}
+                onClick={nextSlide}
+              >
+                &#62;
+              </button>
+            )}
+          >
             {logos.map((logo, i) => (
-              <li className="press-logo" key={i}>
+              <div className="press-logo" key={i}>
                 <img src={logo[i]} />
-              </li>
+              </div>
             ))}
-          </ul>
-        </OnVisible>
+          </Carousel>
+        </div>
       </div>
     );
   }

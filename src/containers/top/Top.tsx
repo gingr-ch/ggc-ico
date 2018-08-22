@@ -2,18 +2,14 @@ import * as React from 'react';
 import ReactPlayer from 'react-player';
 import classNames from 'classnames';
 import OnVisible from 'react-on-visible';
-// import Img from 'react-image';
 // import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 
 import './Top.css';
 
 import Button from '../../components/button/Button';
 import PromoLogos from '../../components/promoLogos/PromoLogos';
-// import ButtonPlay from '../../components/buttonPlay/ButtonPlay';
-// import Chart from '../../components/svgChart/svgChart';
 
 const video = require('../../assets/video/ggc-ico.mp4');
-// const chart = require(process.env.REACT_APP_MEDIA_URL + 'chart.png');
 
 class Top extends React.Component<any, any> {
   player: any;
