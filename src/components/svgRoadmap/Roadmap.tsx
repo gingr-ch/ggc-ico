@@ -118,16 +118,7 @@ const Roadmap = (props: any) => (
         </tspan>
       </tspan>
     </text>
-    <text
-      transform="translate(127.338 342.834)"
-      style={{
-        fontSize: '10.367409706115723px',
-        fill: '#d3007e',
-        fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
-      }}
-    >
-      {props.lang.april}
-    </text>
+
     <text
       transform="translate(23.448 452.476)"
       style={{
@@ -139,16 +130,6 @@ const Roadmap = (props: any) => (
       GGC ICO {props.lang.preSale}
     </text>
     <text
-      transform="translate(134.212 432.082)"
-      style={{
-        fontSize: '10.367409706115723px',
-        fill: '#d3007e',
-        fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
-      }}
-    >
-      {props.lang.may}
-    </text>
-    <text
       transform="translate(12.03 536.936)"
       style={{
         fontSize: '15.103879928588867px',
@@ -157,16 +138,6 @@ const Roadmap = (props: any) => (
       }}
     >
       GGC ICO {props.lang.mainSale}
-    </text>
-    <text
-      transform="translate(129.64 516.542)"
-      style={{
-        fontSize: '10.367409706115723px',
-        fill: '#d3007e',
-        fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
-      }}
-    >
-      {props.lang.june}
     </text>
 
     <Text
@@ -181,16 +152,6 @@ const Roadmap = (props: any) => (
       {props.lang.establishUkranianITCompany}
     </Text>
     <text
-      transform="translate(316.742 118.351)"
-      style={{
-        fontSize: '10.367409706115723px',
-        fill: '#d3007e',
-        fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
-      }}
-    >
-      {props.lang.september}
-    </text>
-    <text
       transform="translate(316.634 225.398)"
       style={{
         fontSize: '15.103879928588867px',
@@ -204,16 +165,6 @@ const Roadmap = (props: any) => (
           {props.lang.headquartersSwitzerland}
         </tspan>
       </tspan>
-    </text>
-    <text
-      transform="translate(316.742 205.004)"
-      style={{
-        fontSize: '10.367409706115723px',
-        fill: '#d3007e',
-        fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
-      }}
-    >
-      {props.lang.november}
     </text>
     <text
       transform="translate(319.58 314.836)"
@@ -232,16 +183,6 @@ const Roadmap = (props: any) => (
       </tspan>
     </text>
     <text
-      transform="translate(319.688 295.441)"
-      style={{
-        fontSize: '10.367409706115723px',
-        fill: '#c333ff',
-        fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
-      }}
-    >
-      {props.lang.february}
-    </text>
-    <text
       transform="translate(319.526 417.623)"
       style={{
         fontSize: '15.103879928588867px',
@@ -251,16 +192,7 @@ const Roadmap = (props: any) => (
     >
       {props.lang.gingrBank}
     </text>
-    <text
-      transform="translate(319.634 397.229)"
-      style={{
-        fontSize: '10.367409706115723px',
-        fill: '#c333ff',
-        fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
-      }}
-    >
-      {props.lang.may}
-    </text>
+
     <text
       transform="translate(319.526 510.366)"
       style={{
@@ -278,16 +210,7 @@ const Roadmap = (props: any) => (
         (GCS) {props.lang.sale}
       </tspan>
     </text>
-    <text
-      transform="translate(319.634 489.972)"
-      style={{
-        fontSize: '10.367409706115723px',
-        fill: '#23b770',
-        fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
-      }}
-    >
-      {props.lang.october}
-    </text>
+
     <rect
       x="285.167"
       y="443.399"
@@ -334,16 +257,7 @@ const Roadmap = (props: any) => (
     >
       {props.lang.ggcPaymentSystemIncorporated}
     </Text>
-    <text
-      transform="translate(316.796 32.024)"
-      style={{
-        fontSize: '10.367409706115723px',
-        fill: '#d3007e',
-        fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
-      }}
-    >
-      {props.lang.july}
-    </text>
+
     <text
       transform="translate(60.55 237.459)"
       style={{
