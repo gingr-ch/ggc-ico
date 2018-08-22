@@ -29,7 +29,7 @@ class Beta extends React.Component<any, any> {
       <div className="gg-section-container gg-section-container--beta">
         <div className="gg-content-container">
           <h1 className="app-header">
-            {this.props.lang.gingr} <span>2.0 {this.props.lang.beta}</span>
+            {this.props.lang.gingr} <span>2.0</span>
           </h1>
           <h3>{this.props.lang.comingSoon}</h3>
           <div className="spacer" />
