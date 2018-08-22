@@ -1,10 +1,13 @@
 import * as React from 'react';
 import Dialog from 'rc-dialog';
+import Img from 'react-image';
+import ReactCSSTransitionReplace from 'react-css-transition-replace';
 
 import 'rc-dialog/assets/index.css';
 import './TeamCEO.css';
 
 const image = require(process.env.REACT_APP_MEDIA_URL + 'teamCEO.jpg');
+const thumb = require(process.env.REACT_APP_MEDIA_URL + 'thumbs/teamCEO.jpg');
 const ceoFlag = require(process.env.REACT_APP_MEDIA_URL +
   'flags/switzerland.png');
 
@@ -163,7 +166,41 @@ class TeamCEO extends React.Component<any, any> {
             }
             `}
           </style>
-          <img src={image} alt="" onClick={e => this.onClick(list[0], e)} />
+
+          <Img
+            src={image}
+            alt="Sergio Rigert CEO of Gingr"
+            onClick={e => this.onClick(list[0], e)}
+            style={{
+              width: '638px',
+              height: '426px',
+            }}
+            loader={
+              <Img
+                src={thumb}
+                style={{
+                  width: '638px',
+                  height: '426px',
+                  filter: 'blur(10px)',
+                }}
+              />
+            }
+            container={children => {
+              return (
+                <ReactCSSTransitionReplace
+                  transitionName="fade-wait"
+                  changeWidth={false}
+                >
+                  <div
+                    className="ceo-details__image"
+                    data-about={this.props.lang.aboutMe}
+                  >
+                    {children}
+                  </div>
+                </ReactCSSTransitionReplace>
+              );
+            }}
+          />
 
           <div
             className="ceo-details"
