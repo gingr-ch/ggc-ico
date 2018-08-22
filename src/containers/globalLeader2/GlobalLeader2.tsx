@@ -64,7 +64,7 @@ class GlobalLeader2 extends React.Component<any, any> {
                   <td>2020 / 2021</td>
                   <td>2021</td>
                 </tr>
-                <tr>
+                <tr style={{ height: '33px' }}>
                   <td
                     style={{
                       background: '#ffd643',
@@ -72,9 +72,7 @@ class GlobalLeader2 extends React.Component<any, any> {
                       textAlign: 'left',
                       fontSize: '17px',
                     }}
-                  >
-                    {this.props.lang.softCap}
-                  </td>
+                  />
                   <td style={{ background: '#ffd643' }} />
                   <td style={{ background: '#ffd643' }} />
                   <td style={{ background: '#ffd643' }} />
@@ -88,19 +86,7 @@ class GlobalLeader2 extends React.Component<any, any> {
                       textAlign: 'right',
                       fontSize: '17px',
                     }}
-                  >
-                    {this.props.lang.maxCap}
-                  </td>
-                </tr>
-                <tr className="yellow-text">
-                  <td>1 M</td>
-                  <td>4.5 M</td>
-                  <td>12 M</td>
-                  <td>25.5 M</td>
-                  <td>31 M</td>
-                  <td>37.5 M</td>
-                  <td>49-76.5 M</td>
-                  <td>100 M</td>
+                  />
                 </tr>
                 <tr>
                   <td>{this.props.lang.switzerland}</td>
