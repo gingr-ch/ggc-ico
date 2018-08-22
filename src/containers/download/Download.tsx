@@ -9,8 +9,8 @@ const whitePaper = require(process.env.REACT_APP_MEDIA_URL +
   'download/whitePaper.png');
 const lightPaper = require(process.env.REACT_APP_MEDIA_URL +
   'download/lightPaper.png');
-const numbers = require(process.env.REACT_APP_MEDIA_URL +
-  'download/numbers.png');
+// const numbers = require(process.env.REACT_APP_MEDIA_URL +
+//   'download/numbers.png');
 const memorandum = require(process.env.REACT_APP_MEDIA_URL +
   'download/memorandum.png');
 
@@ -60,10 +60,6 @@ class Download extends React.Component<any, any> {
                   <img src={lightPaper} />
                 </a>
                 <p>{this.props.lang.lightpaper}</p>
-              </li>
-              <li className="download-item">
-                <img src={numbers} />
-                <p>{this.props.lang.numbers}</p>
               </li>
               <li className="download-item">
                 <a href={memorandumPdf} target="_blank">
