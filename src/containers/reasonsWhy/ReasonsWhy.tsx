@@ -62,7 +62,7 @@ class ReasonsWhy extends React.Component<any, any> {
                   style={{ justifyContent: 'flex-start' }}
                 >
                   <div className="number">6</div>
-                  <div>{this.props.lang.smartContracts}</div>
+                  <div>{this.props.lang.weTargetAGlobal}</div>
                 </div>
               </OnVisible>
             </div>
