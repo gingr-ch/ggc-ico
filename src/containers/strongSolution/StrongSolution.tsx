@@ -35,7 +35,7 @@ class StrongSolution extends React.Component<any, any> {
                   className="hidden-content hidden-content--from-left"
                   percent={this.percentage}
                 >
-                  <img src={gingrLogo} alt="Gingr" />
+                  <img src={gingrLogo} alt="Gingr logo" />
                 </OnVisible>
               </div>
               <div className="flex-column__content">
@@ -49,7 +49,7 @@ class StrongSolution extends React.Component<any, any> {
                   className="hidden-content hidden-content--from-left"
                   percent={this.percentage}
                 >
-                  <img src={ggcLogo} alt="GGC ICO" />
+                  <img src={ggcLogo} alt="GGC ICO icon" />
                 </OnVisible>
               </div>
               <div className="flex-column__content">
@@ -65,7 +65,7 @@ class StrongSolution extends React.Component<any, any> {
                   className="hidden-content hidden-content--from-left"
                   percent={this.percentage}
                 >
-                  <img src={gstLogo} alt="Gingr Share Token" />
+                  <img src={gstLogo} alt="Gingr Share Token icon" />
                 </OnVisible>
               </div>
               <div className="flex-column__content">
