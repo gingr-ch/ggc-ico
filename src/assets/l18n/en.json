@@ -126,13 +126,14 @@
   "gingr": "Gingr",
   "beta": "beta",
   "comingSoon": "Coming Soon",
-  "clickHereToVisit": "Click here to visit our first version",
+  "clickHereToVisit": "Click here to visit our beta version",
   "globalLeader": "Global Leader",
   "inTheMarket": "in the Market",
   "bePartOfOurVision":
     "Be part of our vision and join the movement as we grow!",
   "softCap": "Soft Cap",
   "maxCap": "Max Cap",
+  "hardcap": "Hardcap",
   "lichtenstein": "Lichtenstein",
   "luxemburg": "Luxemburg",
   "venezuela": "Venezuela",
@@ -219,14 +220,15 @@
   "why": "Why",
   "theGGCoinCould": "THE GG COIN COULD INCREASE BY A 1000 TIMES",
   "theGGCoinWillBe":
-    "The GG Coin will be introduced in 2019 on Gingr platform for the mainstream, all erotic dates with sex-workers will be paid with the GG Coin",
+    "The GG Coin is the only accepted payment for all erotic dates and services booked on Gingr",
   "burn20OfOurProfits":
-    "Burn 20% of our profits made from worldwide member ships",
-  "weBuyBackGGC": "We buy back GG Coins",
+    "We buy back 1 Billion GG Coins reducing the circulating supply by 50% over time",
+  "weBuyBackGGC": "We use 20% of our profit solely to buy back GG Coin every quarter of the year",
   "ofTheTransaction":
-    "20% of the transaction fees will be burned. Aprox. 10 Cents per Tran",
+    "We are the pioneer and future market leader of the industry",
   "equityGingrShare":
-    "Equity Gingr Share Token in 2020 can only be bought with GG Coins",
+    "New users need to purchase GG Coin to use our application",
+  "weTargetAGlobal": "We target a global audience in a 186 Billion $ market",
   "revolutionary": "REVOLUTIONARY",
   "solution": "ALL ROUND SOLUTION",
   "gingrBank": "GINGR BANK",
