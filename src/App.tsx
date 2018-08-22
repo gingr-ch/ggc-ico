@@ -27,10 +27,7 @@ const ReasonsToInvest = Loadable({
   loading: () => <div>Loading...</div>,
 });
 
-const Download = Loadable({
-  loader: () => import('./containers/download/Download'),
-  loading: () => <div>Loading...</div>,
-});
+import Download from './containers/download/Download';
 
 const WhatIsGingr = Loadable({
   loader: () => import('./containers/whatIsGingr/WhatIsGingr'),
@@ -43,7 +40,6 @@ const Beta = Loadable({
 });
 // import StrongSolution from './containers/strongSolution/StrongSolution';
 // import ReasonsToInvest from './containers/reasonsToInvest/ReasonsToInvest';
-// import Download from './containers/download/Download';
 // import WhatIsGingr from './containers/whatIsGingr/WhatIsGingr';
 // import Beta from './containers/beta/Beta';
 import Instafuck from './containers/instafuck/Instafuck';
@@ -61,7 +57,13 @@ import GlobalLeader2 from './containers/globalLeader2/GlobalLeader2';
 import GlobalLeader3 from './containers/globalLeader3/GlobalLeader3';
 import Team from './containers/team/Team';
 import TeamCEO from './containers/teamCEO/TeamCEO';
-import TeamAll from './containers/teamAll/TeamAll';
+// import TeamAll from './containers/teamAll/TeamAll';
+
+const TeamAll = Loadable({
+  loader: () => import('./containers/teamAll/TeamAll'),
+  loading: () => <div>Loading...</div>,
+});
+
 import Feedback from './containers/feedback/Feedback';
 import ContactUs from './containers/contactUs/ContactUs';
 import Footer from './containers/footer/Footer';
@@ -92,11 +94,9 @@ class App extends React.Component<any, any> {
         <Header lang={this.state.lang} langSelect={this.handleLangChange}>
           <Nav lang={this.state.lang} />
         </Header>
-        <ScrollableAnchor id={'top'}>
-          <Section bg="#eaeaea">
-            <Top lang={this.state.lang} />
-          </Section>
-        </ScrollableAnchor>
+        <Section bg="#eaeaea">
+          <Top lang={this.state.lang} />
+        </Section>
         <Section bg="#4c306a" small={true}>
           <PressReports lang={this.state.lang} />
         </Section>
