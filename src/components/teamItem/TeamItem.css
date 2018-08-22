@@ -29,13 +29,14 @@
   font-size: 22px;
   font-weight: bolder;
   transform: scale3d(0, 0, 0);
-  transition: transform .2s ease-in, opacity .2s ease-in;
+  transition: transform .2s ease-in .2s, opacity .2s ease-in .2s;
   pointer-events: none;
 }
 
 .team-item:hover .team-item__image::after {
   opacity: .7;
   transform: scale3d(1, 1, 1);
+  transition: transform .2s ease-in, opacity .2s ease-in;
 }
 
 
