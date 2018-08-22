@@ -856,14 +856,14 @@ const FlowChart = (props: any) => (
       fontSize={14.183}
       className="flow-header"
     >
-      {props.lang.freeFloat} +/- 70%
+      {props.lang.freeFloat} +/- 50%
     </text>
     <text
       transform="translate(569.27 13.025)"
       fontSize={14.183}
       className="flow-header"
     >
-      {props.lang.reserve} +/- 30%
+      {props.lang.reserve} +/- 50%
     </text>
     <text
       transform="translate(572.116 315.835)"
