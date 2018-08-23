@@ -19,14 +19,10 @@ const encode = data => {
 };
 
 class ContactUs extends React.Component<any, any> {
-  constructor(props: any) {
+  constructor(props: object) {
     super(props);
 
     this.state = { email: '', message: '' };
-  }
-
-  click() {
-    window.open('https://admin.ggcico.io/auth/register', '_blank');
   }
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
@@ -39,7 +35,7 @@ class ContactUs extends React.Component<any, any> {
     })
       .then(() => alert('Success!'))
       .catch(error => alert(error));
-
+    console.warn(this.state);
     e.preventDefault();
   };
 
