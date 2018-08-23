@@ -28,6 +28,7 @@ class ContactUs extends React.Component<any, any> {
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
   handleSubmit = e => {
+    console.warn(this.state);
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -35,7 +36,6 @@ class ContactUs extends React.Component<any, any> {
     })
       .then(() => alert('Success!'))
       .catch(error => alert(error));
-    console.warn(this.state);
     e.preventDefault();
   };
 
@@ -55,6 +55,7 @@ class ContactUs extends React.Component<any, any> {
           <OnVisible className="hidden-content hidden-content--fade-in">
             <form
               onSubmit={this.handleSubmit}
+              name="contact"
               className="contactus-form flex-column"
             >
               <input type="hidden" name="form-name" value="contact" />
