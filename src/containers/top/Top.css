@@ -17,7 +17,7 @@
 }
 
 .gg-frame-open {
-  transform: translateX(-1720px);
+  transform: translateX(-1920px);
 }
 
 .gg-top-left__container {
@@ -79,6 +79,32 @@
 
 .gg-section-container--top video {
   object-fit: cover;
+}
+
+.close-button__image {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 95px;
+  right: 25px;
+  z-index: 19;
+  fill: white;
+  opacity: 0;
+  visibility: hidden;
+  transform: rotateZ(-360deg) scale(0);
+  transition: transform .2s ease-in-out;
+  cursor: pointer;
+}
+
+.close-button__image.close-button__image--show {
+  opacity: .7;
+  transform: rotateZ(-360deg) scale(1);
+  visibility: visible;
+}
+
+.close-button__image:hover {
+  opacity: 1;
+  transform: rotateZ(0deg) scale(1);
 }
 
 @media(max-width: 599px) {
