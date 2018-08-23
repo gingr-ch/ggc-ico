@@ -10,6 +10,8 @@ const image = require(process.env.REACT_APP_MEDIA_URL + 'teamCEO.jpg');
 const thumb = require(process.env.REACT_APP_MEDIA_URL + 'thumbs/teamCEO.jpg');
 const ceoFlag = require(process.env.REACT_APP_MEDIA_URL +
   'flags/switzerland.png');
+const linkedin = require(process.env.REACT_APP_MEDIA_URL +
+  'icons/linkedin_tiny.png');
 
 const list = [
   {
@@ -42,6 +44,8 @@ class TeamCEO extends React.Component<any, any> {
 
   constructor(props: object) {
     super(props);
+
+    this.social = this.social.bind(this);
   }
 
   onClick = (item: object, e: any) => {
@@ -74,6 +78,13 @@ class TeamCEO extends React.Component<any, any> {
     });
   };
 
+  social() {
+    window.open(
+      'https://www.linkedin.com/comm/in/sergio-rigert-b25063137?trk=eml-email_second_guest_reminder_02-hero-2-prof~photo&trkEmail=eml-email_second_guest_reminder_02-hero-2-prof~photo-null-v0wfmr~jkcbzkw5~m7-null-neptune%2Fprofile~vanity%2Eview&lipi=urn%3Ali%3Apage%3Aemail_email_second_guest_reminder_02%3Bgq%2FJuvdCR%2F6JeguqEAZ%2FWA%3D%3D',
+      '_blank'
+    );
+  }
+
   render() {
     const style = {
       width: this.state.width,
@@ -95,7 +106,16 @@ class TeamCEO extends React.Component<any, any> {
         destroyOnClose={this.state.destroyOnClose}
       >
         <div className="rc-dialog-body__content flex-row">
-          <div style={{ background: '#802e7a', padding: '40px' }}>
+          <div
+            style={{
+              background: '#802e7a',
+              padding: '40px',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              alignItems: 'flex-start',
+            }}
+          >
             <div
               style={{
                 position: 'relative',
@@ -115,6 +135,9 @@ class TeamCEO extends React.Component<any, any> {
                   right: '-10px',
                 }}
               />
+            </div>
+            <div className="ceo-details__social">
+              <img src={linkedin} alt="linkedin logo" onClick={this.social} />
             </div>
           </div>
           <div className="rc-dialog-body__text flex-column">
