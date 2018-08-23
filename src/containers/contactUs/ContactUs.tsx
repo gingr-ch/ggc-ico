@@ -35,6 +35,7 @@ class ContactUs extends React.Component<any, any> {
   handleSubmit = e => {
     e.preventDefault();
     const form = e.target;
+    console.warn(form);
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -63,9 +64,10 @@ class ContactUs extends React.Component<any, any> {
             <form
               name="contact"
               method="post"
+              action="#"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
-              onSubmit={this.handleSubmit}
+              onSubmit={e => this.handleSubmit}
               className="contactus-form flex-column"
             >
               <input type="hidden" name="form-name" value="contact" />
@@ -75,14 +77,14 @@ class ContactUs extends React.Component<any, any> {
                 name="email"
                 id="email"
                 placeholder={this.props.lang.email}
-                onChange={this.handleChange}
+                onChange={e => this.handleChange}
               />
               <textarea
                 className="contactus-form__textarea"
                 name="message"
                 id="message"
                 placeholder={this.props.lang.message}
-                onChange={this.handleChange}
+                onChange={e => this.handleChange}
               />
               <Button btnType="submit">{this.props.lang.send}</Button>
             </form>
