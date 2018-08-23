@@ -12,44 +12,40 @@ import OnVisible from 'react-on-visible';
 import './ContactUs.css';
 
 // const telegram = require(process.env.REACT_APP_MEDIA_URL + 'social/telegram.png');
-function encode(data: any) {
+const encode = data => {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
     .join('&');
-}
+};
+
 class ContactUs extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
 
-    this.state = {};
+    this.state = { email: '', message: '' };
   }
 
   click() {
     window.open('https://admin.ggcico.io/auth/register', '_blank');
   }
 
-  handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
+  handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
   handleSubmit = e => {
-    e.preventDefault();
-    const form = e.target;
-    console.warn(form);
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...this.state,
-      }),
+      body: encode({ 'form-name': 'contact', ...this.state }),
     })
-      // .then(() => navigateTo(form.getAttribute('action')))
-      .then(() => console.warn('Form sent successfully'))
-      .catch(error => console.warn(error));
+      .then(() => alert('Success!'))
+      .catch(error => alert(error));
+
+    e.preventDefault();
   };
 
   render() {
+    const { email, message } = this.state;
+
     return (
       <div className="gg-section-container gg-section-container--contactus">
         <div
@@ -62,28 +58,26 @@ class ContactUs extends React.Component<any, any> {
 
           <OnVisible className="hidden-content hidden-content--fade-in">
             <form
-              name="contact"
-              method="post"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              onSubmit={e => this.handleSubmit(e)}
+              onSubmit={this.handleSubmit}
               className="contactus-form flex-column"
             >
               <input type="hidden" name="form-name" value="contact" />
               <input
                 className="contactus-form__input"
-                type="text"
+                type="email"
                 name="email"
                 id="email"
                 placeholder={this.props.lang.email}
-                onChange={e => this.handleChange(e)}
+                onChange={this.handleChange}
+                value={email}
               />
               <textarea
                 className="contactus-form__textarea"
                 name="message"
                 id="message"
                 placeholder={this.props.lang.message}
-                onChange={e => this.handleChange(e)}
+                onChange={this.handleChange}
+                value={message}
               />
               <Button btnType="submit">{this.props.lang.send}</Button>
             </form>
