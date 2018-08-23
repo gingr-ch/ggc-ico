@@ -23,15 +23,49 @@ const thunerTagblatt = require(process.env.REACT_APP_MEDIA_URL +
 const derBund = require(process.env.REACT_APP_MEDIA_URL + 'press/der_bund.png');
 
 const logos = [
-  { 0: luzernerZeitung },
-  { 1: teleZuri },
-  { 2: startupValley },
-  { 3: teleBasel },
-  { 4: watson },
-  { 5: anabell },
-  { 6: bernerZeitung },
-  { 7: thunerTagblatt },
-  { 8: derBund },
+  {
+    title: luzernerZeitung,
+    link:
+      'http://www.luzernerzeitung.ch/nachrichten/video/news/sts181177,10010',
+  },
+  {
+    title: teleZuri,
+    link:
+      'https://www.telezueri.ch/63-show-zueriinfo/13610-episode-express-sex-auf-knopfdruck-die-schnellste-badewanne-der-welt',
+  },
+  {
+    title: startupValley,
+    link: 'https://www.startupvalley.news/de/gingr-das-bordell-in-der-cloud/',
+  },
+  {
+    title: teleBasel,
+    link:
+      'https://telebasel.ch/telebasel-news/?aid=4063&pid=80858&channel=15881',
+  },
+  {
+    title: watson,
+    link:
+      'https://www.watson.ch/Schweiz/App/226677653-%C2%ABInsta-Fuck%C2%BB-App--Jetzt-k%C3%B6nnen-Sexarbeiterinnen-ihre-Freier-bewerten',
+  },
+  {
+    title: anabell,
+    link: 'https://desktop.12app.ch/articles/24173241',
+  },
+  {
+    title: bernerZeitung,
+    link:
+      'https://www.bernerzeitung.ch/leben/gesellschaft/er-wollte-den-sexmarkt-revolutionieren/story/17758002',
+  },
+  {
+    title: thunerTagblatt,
+    link:
+      'https://www.thunertagblatt.ch/leben/gesellschaft/er-wollte-den-sexmarkt-revolutionieren/story/17758002',
+  },
+  {
+    title: derBund,
+    link:
+      'https://www.derbund.ch/leben/gesellschaft/er-wollte-den-sexmarkt-revolutionieren/story/17758002',
+  },
 ];
 
 class PromoLogos extends React.Component<any, any> {
@@ -40,6 +74,12 @@ class PromoLogos extends React.Component<any, any> {
 
   constructor(props: any) {
     super(props);
+
+    this.click = this.click.bind(this);
+  }
+
+  click(link: string) {
+    window.open(link, '_blank');
   }
 
   render() {
@@ -76,7 +116,7 @@ class PromoLogos extends React.Component<any, any> {
           >
             {logos.map((logo, i) => (
               <div className="press-logo" key={i}>
-                <img src={logo[i]} />
+                <img src={logo.title} onClick={() => this.click(logo.link)} />
               </div>
             ))}
           </Carousel>

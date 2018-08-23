@@ -57,8 +57,8 @@ class Top extends React.Component<any, any> {
     this.player.seekTo(44);
   };
 
-  click() {
-    window.open('https://admin.ggcico.io/auth/register', '_blank');
+  click(link: string) {
+    window.open(link, '_blank');
   }
 
   // componentDidMount() {
