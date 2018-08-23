@@ -148,6 +148,9 @@ class Top extends React.Component<any, any> {
             ref={this.ref}
             config={{
               file: {
+                attributes: {
+                  controlsList: 'nodownload',
+                },
                 forceVideo: true,
               },
             }}
