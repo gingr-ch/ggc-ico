@@ -63,12 +63,12 @@ class ContactUs extends React.Component<any, any> {
             <form
               name="contact"
               method="post"
-              action="#"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={this.handleSubmit}
               className="contactus-form flex-column"
             >
+              <input type="hidden" name="form-name" value="contact" />
               <input
                 className="contactus-form__input"
                 type="text"
@@ -84,9 +84,7 @@ class ContactUs extends React.Component<any, any> {
                 placeholder={this.props.lang.message}
                 onChange={this.handleChange}
               />
-              <Button click={() => this.handleSubmit}>
-                {this.props.lang.send}
-              </Button>
+              <Button btnType="submit">{this.props.lang.send}</Button>
             </form>
           </OnVisible>
         </div>

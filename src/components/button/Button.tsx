@@ -5,7 +5,8 @@ interface ButtonProps {
   borderColor?: string;
   shape?: string;
   className?: string;
-  click(): any;
+  btnType?: string;
+  click?(): any;
 }
 
 class Button extends React.Component<ButtonProps> {
@@ -25,6 +26,7 @@ class Button extends React.Component<ButtonProps> {
             ? this.props.borderColor
             : 'transparent',
         }}
+        type={this.props.btnType}
         onClick={this.props.click}
       >
         {this.props.children}
