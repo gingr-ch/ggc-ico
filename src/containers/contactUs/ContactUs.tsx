@@ -66,7 +66,7 @@ class ContactUs extends React.Component<any, any> {
               method="post"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
-              onSubmit={e => this.handleSubmit}
+              onSubmit={e => this.handleSubmit(e)}
               className="contactus-form flex-column"
             >
               <input type="hidden" name="form-name" value="contact" />
@@ -76,14 +76,14 @@ class ContactUs extends React.Component<any, any> {
                 name="email"
                 id="email"
                 placeholder={this.props.lang.email}
-                onChange={e => this.handleChange}
+                onChange={e => this.handleChange(e)}
               />
               <textarea
                 className="contactus-form__textarea"
                 name="message"
                 id="message"
                 placeholder={this.props.lang.message}
-                onChange={e => this.handleChange}
+                onChange={e => this.handleChange(e)}
               />
               <Button btnType="submit">{this.props.lang.send}</Button>
             </form>
