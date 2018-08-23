@@ -45,7 +45,7 @@ class IcoDetails extends React.Component<any, any> {
               {this.props.lang.privateSaleNow}
             </div>
             <div className="color-green" style={{ fontSize: '30px' }}>
-              70% {this.props.lang.discount}
+              75% {this.props.lang.discount}
             </div>
             <div
               className="color-green"

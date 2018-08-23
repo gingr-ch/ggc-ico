@@ -24,7 +24,7 @@ class IcoDetails2 extends React.Component<any, any> {
                   <td />
                   <td>750</td>
                   <td>{this.props.lang.millionCoinsOffered}</td>
-                  <td className="color--green">-70%</td>
+                  <td className="color--green">-75%</td>
                   <td className="color--green">€ 0.03</td>
                 </tr>
 
