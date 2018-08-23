@@ -44,8 +44,8 @@ class ContactUs extends React.Component<any, any> {
       }),
     })
       // .then(() => navigateTo(form.getAttribute('action')))
-      .then(() => e.props.alert.success('Form sent successfully'))
-      .catch(error => e.props.alert.error(error));
+      .then(() => console.warn('Form sent successfully'))
+      .catch(error => console.warn(error));
   };
 
   render() {
