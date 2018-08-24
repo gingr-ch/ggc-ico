@@ -95,7 +95,7 @@ class IcoDetails3 extends React.Component<any, any> {
                     fontSize: '20px',
                   }}
                 >
-                  20.45 {this.props.lang.million} €
+                  € 20.45 {this.props.lang.million}
                 </span>
               </div>
             </div>
@@ -119,7 +119,7 @@ class IcoDetails3 extends React.Component<any, any> {
                     display: 'block',
                   }}
                 >
-                  € 0.12 {this.props.lang.cent}
+                  € 0.12
                 </span>
               </div>
             </div>
