@@ -2,12 +2,18 @@ import * as React from 'react';
 import ReactPlayer from 'react-player';
 import classNames from 'classnames';
 import OnVisible from 'react-on-visible';
+import Dialog from 'rc-dialog';
 // import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
+import 'rc-dialog/assets/index.css';
 
 import './Top.css';
 
 import Button from '../../components/button/Button';
 import PromoLogos from '../../components/promoLogos/PromoLogos';
+import SuisseIco from '../../components/svgSuisseIco/svgSuisseIco';
+import LegallyApproved from '../../components/svgLegallyApproved/svgLegallyApproved';
+import Finma from '../../components/svgFinma/svgFinma';
+import LegalContent from '../../components/legalContent/LegalContent';
 
 const video = require('../../assets/video/ggc-ico.mp4');
 
@@ -24,6 +30,11 @@ class Top extends React.Component<any, any> {
       volume: 0,
       controls: false,
       playing: true,
+      visible: false,
+      width: 860,
+      destroyOnClose: true,
+      center: true,
+      mousePosition: { x: 0, y: 0 },
     };
 
     this.videoToggle = this.videoToggle.bind(this);
@@ -61,6 +72,18 @@ class Top extends React.Component<any, any> {
     window.open(link, '_blank');
   }
 
+  onClick = (e: any) => {
+    // const currProfile = _.find(list, { id: id });
+    // const currProfile = item;
+    this.setState({
+      mousePosition: {
+        x: e.pageX,
+        y: e.pageY,
+      },
+      visible: true,
+    });
+  };
+
   // componentDidMount() {
   //   if (!isWidthUp('sm', this.props.width)) {
   //     console.warn('poo');
@@ -68,7 +91,35 @@ class Top extends React.Component<any, any> {
   //   }
   // }
 
+  onClose = () => {
+    // console.log(e);
+    this.setState({
+      visible: false,
+    });
+  };
+
+  onDestroyOnCloseChange = (e: any) => {
+    this.setState({
+      destroyOnClose: e.target.checked,
+    });
+  };
+
+  center = (e: any) => {
+    this.setState({
+      center: e.target.checked,
+    });
+  };
+
   render() {
+    const style = {
+      width: this.state.width,
+    };
+
+    let wrapClassName = '';
+    if (this.state.center) {
+      wrapClassName = 'center';
+    }
+
     let classes = classNames({
       'gg-top-left': true,
       'gg-frame-open': this.state.open,
@@ -79,15 +130,37 @@ class Top extends React.Component<any, any> {
       'close-button__image--show': this.state.open,
     });
 
+    const dialog = (
+      <Dialog
+        visible={this.state.visible}
+        wrapClassName={wrapClassName}
+        animation="zoom"
+        maskAnimation="fade"
+        onClose={this.onClose}
+        style={style}
+        mousePosition={this.state.mousePosition}
+        destroyOnClose={this.state.destroyOnClose}
+      >
+        <div className="rc-dialog-body__content flex-row">
+          <div className="rc-dialog-body__text flex-column">
+            <LegalContent lang={this.props.lang} />
+          </div>
+        </div>
+      </Dialog>
+    );
+
     return (
       <div className="gg-section-container gg-section-container--top">
         <div className={classes}>
           <div className="gg-top-left__container">
-            <h1 className="app-header gg-h1">
-              "{this.props.lang.revolutionizing}
-              <br /> {this.props.lang.theOldestIndustry} <br />
-              {this.props.lang.inTheWorld}"
-            </h1>
+            <div>
+              <h1 className="app-header gg-h1">
+                "{this.props.lang.revolutionizing}
+                <br /> {this.props.lang.theOldestIndustry} <br />
+                {this.props.lang.inTheWorld}"
+              </h1>
+              <SuisseIco width="150px" style={{ marginTop: '2em' }} />
+            </div>
 
             <div className="play-button">
               <OnVisible className="rotate-in">
@@ -99,6 +172,23 @@ class Top extends React.Component<any, any> {
                   {this.props.lang.playVideo}
                 </Button>
               </OnVisible>
+            </div>
+
+            <div className="stamps-container">
+              <LegallyApproved width="150px" height="150px" />
+              <Finma width="150px" height="150px" />
+              <a
+                onClick={e => this.onClick(e)}
+                style={{
+                  textDecoration: 'underline',
+                  fontSize: '14px',
+                  position: 'relative',
+                  top: '-1em',
+                  cursor: 'pointer',
+                }}
+              >
+                read more
+              </a>
             </div>
 
             <PromoLogos />
@@ -158,6 +248,7 @@ class Top extends React.Component<any, any> {
             style={{ background: '#000000' }}
           />
         </div>
+        {dialog}
       </div>
     );
   }
