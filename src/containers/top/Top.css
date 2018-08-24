@@ -158,4 +158,28 @@
   .gg-head--xs {
     font-size: 34px;
   }
+
+  .stamps-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    top: 10%;
+    justify-content: space-around;
+  }
+
+  .stamps-container :first-child,
+  .stamps-container :nth-child(2) {
+    display: flex;
+    flex: 1 1 40%;
+    width: 100%;
+    max-width: 40%;
+  }
+
+  .stamps-container :last-child {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
 }
