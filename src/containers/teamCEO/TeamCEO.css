@@ -50,3 +50,9 @@
   width: 31px;
   cursor: pointer;
 }
+
+@media(max-width: 599px) {
+  .ceo-details__social {
+    margin-top: 1em;
+  }
+}
