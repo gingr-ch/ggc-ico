@@ -1,15 +1,9 @@
 import * as React from 'react';
-// import LocalizedStrings from 'react-localization';
-// import { FlowStrings } from '../../components/l18n';
 import OnVisible from 'react-on-visible';
 import './Flow.css';
 
 import FlowChart from '../../components/svgFlow/svgFlow';
 
-// export const langEn = require('../../assets/l18n/flow.en.json');
-// export const strings: FlowStrings = new LocalizedStrings({
-//   en: langEn,
-// });
 class Flow extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
