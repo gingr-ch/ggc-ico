@@ -1,5 +1,6 @@
 import * as React from 'react';
 // import LegallyApproved from '../svgLegallyApproved/svgLegallyApproved';
+import './LegalContent.css';
 
 const Stach = require('../../assets/img/logo_stach.png');
 const Finma = require('../../assets/img/logo_finma.png');
@@ -41,7 +42,10 @@ class LegalContent extends React.Component<any, any> {
         <p>{this.props.lang.asYouAreProbablyAware}</p>
         <p>{this.props.lang.havingSaidThatWeHaveNow}</p>
         <div style={{ display: 'block', margin: '3em 0' }} />
-        <div className="flex-row" style={{ alignItems: 'flex-start' }}>
+        <div
+          className="legal-content__companies flex-row"
+          style={{ alignItems: 'flex-start' }}
+        >
           <div
             className="flex-column"
             style={{

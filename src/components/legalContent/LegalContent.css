@@ -1,0 +1,13 @@
+@media(max-width: 599px) {
+  .legal-content {
+    width: 100%;
+  }
+
+  .legal-content__companies {
+    flex-direction: column;
+  }
+
+  .legal-content__companies .flex-column:last-child {
+    margin-top: 3em;
+  }
+}

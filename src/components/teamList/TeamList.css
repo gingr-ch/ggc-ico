@@ -41,24 +41,4 @@
     width: 100%;
     flex-wrap: wrap;
   }
-
-  .rc-dialog {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-  }
-
-  .rc-dialog-body,
-  .rc-dialog-body__content {
-    min-height: 100vh;
-    min-width: 100vw;
-  }
-
-  .rc-dialog-body__content {
-    flex-direction: column-reverse;
-  }
-
-  .rc-dialog-body__text {
-    padding: 35px;
-  }
 }
