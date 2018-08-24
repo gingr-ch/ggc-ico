@@ -4,7 +4,7 @@ import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 
 import './StrongSolution.css';
 
-const gingrLogo = require(process.env.REACT_APP_MEDIA_URL + 'gingr_logo.png');
+const gingrLogo = require(process.env.REACT_APP_MEDIA_URL + 'gingr_logo.svg');
 const ggcLogo = require(process.env.REACT_APP_MEDIA_URL + 'ggc-ico_logo.png');
 const gstLogo = require(process.env.REACT_APP_MEDIA_URL +
   'gingr-share-token_logo.png');
@@ -35,7 +35,11 @@ class StrongSolution extends React.Component<any, any> {
                   className="hidden-content hidden-content--from-left"
                   percent={this.percentage}
                 >
-                  <img src={gingrLogo} alt="Gingr logo" />
+                  <img
+                    className="ssc-item__gingr-logo"
+                    src={gingrLogo}
+                    alt="Gingr logo"
+                  />
                 </OnVisible>
               </div>
               <div className="flex-column__content">

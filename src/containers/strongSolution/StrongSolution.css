@@ -14,6 +14,10 @@
   height: auto;
 }
 
+.gg-section-container--strong-solution .ssc-item__gingr-logo {
+  width: 100%
+}
+
 .gg-section-container--strong-solution .title {
   color: #c430c4;
   text-transform: uppercase;
