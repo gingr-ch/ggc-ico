@@ -159,7 +159,6 @@
   .l2c__container {
     flex-direction: column;
     margin-top: 100px;
-    padding: 0 26px;
     box-sizing: border-box;
   }
 
@@ -168,6 +167,11 @@
   }
 
   .l2c__media-image {
+    max-width: 100%;
+  }
+
+  .gg-section-container--what-is-gingr .order-xs-1 div,
+  .gg-section-container--what-is-gingr .order-xs-2 div {
     max-width: 100%;
   }
 
@@ -190,5 +194,9 @@
 
   .l2c__container .l2c__content-title img {
     display: none;
+  }
+
+  .l2c__content h3 {
+    font-size: 33px;
   }
 }
