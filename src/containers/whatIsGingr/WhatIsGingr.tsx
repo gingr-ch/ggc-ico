@@ -14,19 +14,10 @@ const agencyIcon = require(process.env.REACT_APP_MEDIA_URL +
   'icons/agency.png');
 const establishmentIcon = require(process.env.REACT_APP_MEDIA_URL +
   'icons/establishment.png');
-// const gingrImg = require(process.env.REACT_APP_MEDIA_URL +
-//   'what_is_gingr--gingr.png');
-// const establishmentImg = require(process.env.REACT_APP_MEDIA_URL +
-//   'what_is_gingr--establishment.png');
 
-const clientVideo = require('../../assets/video/ggc-ico.mp4');
+const clientVideo = require('../../assets/video/client-video_en.m4v');
 const gingrVideo = require('../../assets/video/gingr-video.m4v');
 const establishmentVideo = require('../../assets/video/establishment-video.m4v');
-
-// export const langEn = require('../../assets/l18n/what-is-gingr.en.json');
-// export const strings: WhatIsGingrStrings = new LocalizedStrings({
-//   en: langEn,
-// });
 
 class WhatIsGingr extends React.Component<any, any> {
   player: any;
