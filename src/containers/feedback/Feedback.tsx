@@ -36,7 +36,7 @@ class Feedback extends React.Component<any, any> {
           <h4>{this.props.lang.ourCompanyIsOpen}</h4>
           <OnVisible className="hidden-content hidden-content--fade-in">
             <div className="flex-row feedback-social">
-              <div className="flex-column">
+              <div className="flex-column feeback-social__item">
                 <img
                   src={telegram}
                   alt={this.props.lang.telegram}
@@ -46,7 +46,7 @@ class Feedback extends React.Component<any, any> {
                 />
                 <span>{this.props.lang.telegram}</span>
               </div>
-              <div className="flex-column">
+              <div className="flex-column feeback-social__item">
                 <img
                   src={twitter}
                   alt={this.props.lang.twitter}
@@ -54,7 +54,7 @@ class Feedback extends React.Component<any, any> {
                 />
                 <span>{this.props.lang.twitter}</span>
               </div>
-              <div className="flex-column">
+              <div className="flex-column feeback-social__item">
                 <img
                   src={facebook}
                   alt={this.props.lang.facebook}
@@ -64,7 +64,7 @@ class Feedback extends React.Component<any, any> {
                 />
                 <span>{this.props.lang.facebook}</span>
               </div>
-              <div className="flex-column">
+              <div className="flex-column feeback-social__item">
                 <img
                   src={instagram}
                   alt={this.props.lang.instagram}

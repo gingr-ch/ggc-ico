@@ -55,7 +55,44 @@
 }
 
 .feedback-social img {
-    margin-bottom: 35px;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.feeback-social__item img,
+.feeback-social__item span {
+  cursor: pointer;
+}
+
+.feeback-social__item:hover img {
+  animation: bounce .3s cubic-bezier(0.5, 0.43, 0.81, 0.59);
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  }
+  5% {
+    transform: scale3d(1.2, .7, 1) translate3d(0, 0, 0);
+  }
+  10% {
+    transform: scale3d(.8, 1.2, 1) translate3d(0, -10px, 0);
+  }
+  45% {
+    transform: scale3d(1, 1, 1) translate3d(0, -40px, 0);
+  }
+  70% {
+    transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  }
+  90% {
+    transform: scale3d(1.2, .8, 1) translate3d(0, 0, 0);
+  }
+  95% {
+    transform: scale3d(.8, 1.2, 1) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  }
 }
 
 .feedback-input {
