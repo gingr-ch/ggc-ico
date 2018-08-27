@@ -14,6 +14,7 @@ const LegallyApproved = (props: any) => (
           strokeMiterlimit: 10,
           strokeWidth: '0.4px',
         }}
+        className="stamp-hover-stroke"
       />
       <rect
         y="14.374"
@@ -40,6 +41,7 @@ const LegallyApproved = (props: any) => (
           fontFamily: 'Asap, sans-serif',
           fontWeight: 700,
         }}
+        className="stamp-hover"
       >
         2018
       </text>
@@ -52,6 +54,7 @@ const LegallyApproved = (props: any) => (
           fontWeight: 700,
           letterSpacing: '0.016092501217938326em',
         }}
+        className="stamp-hover"
       >
         LEGALLY
         <tspan style={{ letterSpacing: '0.015896251203085417em' }}>

@@ -175,8 +175,16 @@ class Top extends React.Component<any, any> {
             </div>
 
             <div className="stamps-container">
-              <LegallyApproved width="150px" height="150px" />
-              <Finma width="150px" height="150px" />
+              <LegallyApproved
+                width="150px"
+                height="150px"
+                onClick={e => this.onClick(e)}
+              />
+              <Finma
+                width="150px"
+                height="150px"
+                onClick={e => this.onClick(e)}
+              />
               <a
                 onClick={e => this.onClick(e)}
                 style={{
