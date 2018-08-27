@@ -153,7 +153,8 @@
     position: relative;
     top: auto;
     right: auto;
-    margin: 0 auto;
+    margin: 2em auto 0;
+    order: 4;
   }
 
   .play-button button {
@@ -168,8 +169,8 @@
   .gg-h1 {
     font-size: 28px;
     font-family: 'brandon_grotesque_regularRg', sans-serif;
-    letter-spacing: .14em;
-    line-height: 50px;
+    letter-spacing: .07em;
+    line-height: 39px;
   }
 
   .gg-head--xs {
@@ -180,8 +181,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
-    top: 10%;
+    top: -1.5em;
     justify-content: space-around;
+    order: 1;
   }
 
   .stamps-container :first-child,
@@ -196,7 +198,15 @@
     display: flex;
     flex: 1 1 100%;
     justify-content: center;
-    margin-top: 2em;
+    margin-top: 0;
     margin-bottom: 1em;
+  }
+
+  .gg-top-content {
+    order: 3;
+  }
+
+  .suisse-ico-logo {
+    order: 5;
   }
 }

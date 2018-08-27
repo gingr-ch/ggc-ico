@@ -23,7 +23,7 @@ const SuisseIco = (props: any) => (
           letterSpacing: '0.016033058789382718em',
         }}
       >
-        SUISSE ICO
+        {props.lang.suisseIco}
       </text>
     </g>
   </svg>

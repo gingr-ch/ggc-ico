@@ -153,14 +153,19 @@ class Top extends React.Component<any, any> {
       <div className="gg-section-container gg-section-container--top">
         <div className={classes}>
           <div className="gg-top-left__container">
-            <div>
+            <div className="gg-top-content">
               <h1 className="app-header gg-h1">
                 "{this.props.lang.revolutionizing}
                 <br /> {this.props.lang.theOldestIndustry} <br />
                 {this.props.lang.inTheWorld}"
               </h1>
-              <SuisseIco width="150px" style={{ marginTop: '2em' }} />
             </div>
+            <SuisseIco
+              width="150px"
+              style={{ marginTop: '2em' }}
+              className="suisse-ico-logo"
+              lang={this.props.lang}
+            />
 
             <div className="play-button">
               <OnVisible className="rotate-in">

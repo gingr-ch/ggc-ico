@@ -43,6 +43,7 @@
 @media(max-width: 599px) {
   .promo-logos {
     margin-bottom: 30px;
+    order: 6;
   }
   
   .promo-logos .press-logos {
