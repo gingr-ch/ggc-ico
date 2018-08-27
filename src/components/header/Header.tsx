@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Drawer from '@material-ui/core/Drawer';
-import Img from 'react-image'
+import Img from 'react-image';
 
 import LanguageChanger from '../languageChanger/LanguageChanger';
 import Button from '../button/Button';
@@ -43,7 +43,11 @@ class Header extends React.Component<any, any> {
             <Button click={() => this.click(whitePaper)} borderColor="white">
               {this.props.lang.whitepaper}
             </Button>
-            <Button click={() => this.click(adminIco)} borderColor="#df9eff">
+            <Button
+              click={() => this.click(adminIco)}
+              borderColor="#df9eff"
+              className="btn-login"
+            >
               {this.props.lang.login}
             </Button>
           </div>
