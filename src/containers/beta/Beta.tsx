@@ -44,7 +44,7 @@ class Beta extends React.Component<any, any> {
             percent={60}
           >
             <Button
-              className="beta-item"
+              className="beta-item btn-beta"
               click={this.click}
               borderColor="#ffd400"
             >

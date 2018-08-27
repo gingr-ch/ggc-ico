@@ -33,6 +33,15 @@
   max-height: 557px;
 }
 
+.btn-beta {
+  transition: all .2s ease-in;
+}
+
+.btn-beta:hover {
+  background-color: rgba(50, 65, 88, 1);
+  border-color: rgba(45, 45, 45, 1) !important;
+}
+
 .hidden-content.hidden-content--flip-in-right.visible .beta-item {
   animation-name: flipInRight;
   animation-duration: 1.0s;
