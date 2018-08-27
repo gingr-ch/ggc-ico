@@ -54,7 +54,11 @@ class IcoDetails extends React.Component<any, any> {
               1 GGC = 0.03 EUR
             </div>
             <div className="spacer" />
-            <Button click={this.click} borderColor="#00D646">
+            <Button
+              click={this.click}
+              borderColor="#00D646"
+              className="btn-buy-coins"
+            >
               {this.props.lang.buyCoinsNow}
             </Button>
           </div>
