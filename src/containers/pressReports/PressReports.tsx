@@ -67,14 +67,14 @@ class PressReports extends React.Component<any, any> {
             >
               {this.props.lang.privateSaleNow}
             </div>
-            <div style={{ fontSize: '30px', color: '#F39FFF' }}>
+            <div style={{ fontSize: '30px', color: 'rgba(32, 206, 136, 1)' }}>
               75% {this.props.lang.discount}
             </div>
             <div
               style={{
                 fontSize: '27px',
                 marginBottom: '16px',
-                color: '#F39FFF',
+                color: 'rgba(32, 206, 136, 1)',
               }}
             >
               1 GGC = 0.03 EUR
@@ -84,7 +84,7 @@ class PressReports extends React.Component<any, any> {
 
             <Button
               click={this.click}
-              borderColor="#F39FFF"
+              borderColor="rgba(32, 206, 136, 1)"
               className="btn-buy-coins"
             >
               {this.props.lang.buyCoinsNow}
