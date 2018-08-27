@@ -93,7 +93,10 @@ class LegalContent extends React.Component<any, any> {
             <p>
               Postfach 1944 | Switzerland
               <br />
-              kummer@stach.ch | www.stach.ch
+              <a href="mailto:kummer@stach.ch">kummer@stach.ch</a> |{' '}
+              <a href="//www.stach.ch" target="_blank">
+                www.stach.ch
+              </a>
             </p>
           </div>
           <div
@@ -131,7 +134,12 @@ class LegalContent extends React.Component<any, any> {
               T +41 31 327 91 00
               <br />F +41 31 327 91 01
             </p>
-            <p>info@finma.ch | www.finma.ch</p>
+            <p>
+              <a href="mailto:info@finma.ch">info@finma.ch</a> |{' '}
+              <a href="//www.finma.ch" target="_blank">
+                www.finma.ch
+              </a>
+            </p>
           </div>
         </div>
       </div>
