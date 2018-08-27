@@ -15,7 +15,7 @@ const agencyIcon = require(process.env.REACT_APP_MEDIA_URL +
 const establishmentIcon = require(process.env.REACT_APP_MEDIA_URL +
   'icons/establishment.png');
 
-const clientVideo = require('../../assets/video/client-video_en.m4v');
+// const clientVideo = require('../../assets/video/client-video_en.m4v');
 const gingrVideo = require('../../assets/video/gingr-video.m4v');
 const establishmentVideo = require('../../assets/video/establishment-video.m4v');
 
@@ -34,12 +34,28 @@ class WhatIsGingr extends React.Component<any, any> {
     return i % 2 === 0;
   }
 
+  getLanguage() {
+    if (
+      this.props.lang._language !== 'en' &&
+      this.props.lang._language !== 'es' &&
+      this.props.lang._language !== 'de'
+    ) {
+      return 'en';
+    }
+
+    return this.props.lang._language;
+  }
+
   render() {
     let classes = (i: any) =>
       classNames({
         left: !this.isEven(i),
         right: this.isEven(i),
       });
+
+    const clientVideo = require('../../assets/video/client-video_' +
+      this.getLanguage() +
+      '.m4v');
 
     const whatIsList = [
       {
