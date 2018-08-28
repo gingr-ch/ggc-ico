@@ -1,76 +1,75 @@
 import * as React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Loadable from 'react-loadable';
 // import { observer } from 'mobx-react';
 import LazyLoad from 'react-lazyload';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
 // Import locale strings
-import { strings } from './components/localization';
+import { strings } from '../../components/localization';
 
 // import global css
 import './App.css';
 
 // import components
-import Section from './components/section/Section';
-import Top from './containers/top/Top';
-import Header from './components/header/Header';
-import Nav from './components/nav/Nav';
-import PressReports from './containers/pressReports/PressReports';
+import Section from '../../components/section/Section';
+import Top from '../top/Top';
+import Header from '../../components/header/Header';
+import Nav from '../../components/nav/Nav';
+import PressReports from '../pressReports/PressReports';
 
 const StrongSolution = Loadable({
-  loader: () => import('./containers/strongSolution/StrongSolution'),
+  loader: () => import('../strongSolution/StrongSolution'),
   loading: () => <div>Loading...</div>,
 });
 
 const ReasonsToInvest = Loadable({
-  loader: () => import('./containers/reasonsToInvest/ReasonsToInvest'),
+  loader: () => import('../reasonsToInvest/ReasonsToInvest'),
   loading: () => <div>Loading...</div>,
 });
 
-import Download from './containers/download/Download';
+import Download from '../download/Download';
 
 const WhatIsGingr = Loadable({
-  loader: () => import('./containers/whatIsGingr/WhatIsGingr'),
+  loader: () => import('../whatIsGingr/WhatIsGingr'),
   loading: () => <div>Loading...</div>,
 });
 
 const Beta = Loadable({
-  loader: () => import('./containers/beta/Beta'),
+  loader: () => import('../beta/Beta'),
   loading: () => <div>Loading...</div>,
 });
-// import StrongSolution from './containers/strongSolution/StrongSolution';
-// import ReasonsToInvest from './containers/reasonsToInvest/ReasonsToInvest';
-// import WhatIsGingr from './containers/whatIsGingr/WhatIsGingr';
-// import Beta from './containers/beta/Beta';
-import Instafuck from './containers/instafuck/Instafuck';
-import HookUp from './containers/hookUp/HookUp';
-import Blockchain from './containers/blockchain/Blockchain';
-import Flow from './containers/flow/Flow';
-import IcoDetails from './containers/icoDetails/IcoDetails';
-import IcoDetails2 from './containers/icoDetails2/IcoDetails2';
-import IcoDetails3 from './containers/icoDetails3/IcoDetails3';
-import ReasonsWhy from './containers/reasonsWhy/ReasonsWhy';
-import RevolutionarySolution from './containers/revolutionarySolution/RevolutionarySolution';
-import Roadmap from './containers/roadmap/Roadmap';
-import GlobalLeader from './containers/globalLeader/GlobalLeader';
-import GlobalLeader2 from './containers/globalLeader2/GlobalLeader2';
-import GlobalLeader3 from './containers/globalLeader3/GlobalLeader3';
-import Team from './containers/team/Team';
-import TeamCEO from './containers/teamCEO/TeamCEO';
-// import TeamAll from './containers/teamAll/TeamAll';
+// import StrongSolution from '../strongSolution/StrongSolution';
+// import ReasonsToInvest from '../reasonsToInvest/ReasonsToInvest';
+// import WhatIsGingr from '../whatIsGingr/WhatIsGingr';
+// import Beta from '../beta/Beta';
+import Instafuck from '../instafuck/Instafuck';
+import HookUp from '../hookUp/HookUp';
+import Blockchain from '../blockchain/Blockchain';
+import Flow from '../flow/Flow';
+import IcoDetails from '../icoDetails/IcoDetails';
+import IcoDetails2 from '../icoDetails2/IcoDetails2';
+import IcoDetails3 from '../icoDetails3/IcoDetails3';
+import ReasonsWhy from '../reasonsWhy/ReasonsWhy';
+import RevolutionarySolution from '../revolutionarySolution/RevolutionarySolution';
+import Roadmap from '../roadmap/Roadmap';
+import GlobalLeader from '../globalLeader/GlobalLeader';
+import GlobalLeader2 from '../globalLeader2/GlobalLeader2';
+import GlobalLeader3 from '../globalLeader3/GlobalLeader3';
+import Team from '../team/Team';
+import TeamCEO from '../teamCEO/TeamCEO';
+// import TeamAll from '../teamAll/TeamAll';
 
 const TeamAll = Loadable({
-  loader: () => import('./containers/teamAll/TeamAll'),
+  loader: () => import('../teamAll/TeamAll'),
   loading: () => <div>Loading...</div>,
 });
 
-import Feedback from './containers/feedback/Feedback';
-import ContactUs from './containers/contactUs/ContactUs';
-import Footer from './containers/footer/Footer';
-import BackToTop from './components/backToTop/BackToTop';
+import Feedback from '../feedback/Feedback';
+import ContactUs from '../contactUs/ContactUs';
+import Footer from '../footer/Footer';
+import BackToTop from '../../components/backToTop/BackToTop';
 
-class App extends React.Component<any, any> {
+class Home extends React.Component<any, any> {
   constructor(props: object) {
     super(props);
     this.handleLangChange = this.handleLangChange.bind(this);
@@ -246,4 +245,4 @@ class App extends React.Component<any, any> {
   }
 }
 
-export default App;
+export default Home;
