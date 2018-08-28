@@ -8,7 +8,7 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import { strings } from '../../components/localization';
 
 // import global css
-import './App.css';
+// import './App.css';
 
 // import components
 import Section from '../../components/section/Section';
