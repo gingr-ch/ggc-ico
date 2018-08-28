@@ -14,7 +14,7 @@ import SvgRoadmap from '../../components/svgRoadmap/Roadmap';
 // const roadmap = require(process.env.REACT_APP_MEDIA_URL + 'roadmap.svg');
 const balloon = require(process.env.REACT_APP_MEDIA_URL + 'gg_balloon.png');
 const gingr = require(process.env.REACT_APP_MEDIA_URL + 'gingr_balloons.png');
-const roadMap = require(process.env.REACT_APP_MEDIA_URL + 'roadmap_mobile.png');
+// const roadMap = require(process.env.REACT_APP_MEDIA_URL + 'roadmap_mobile.png');
 // const gingr = require(process.env.REACT_APP_MEDIA_URL + 'gingr_necklace.png');
 
 // const cardsData = [
@@ -59,15 +59,11 @@ class Roadmap extends React.Component<any, any> {
           </OnVisible>
 
           <div className="hide-xs" style={{ marginTop: '100px' }}>
-            <SvgRoadmap lang={this.props.lang} />
+            <SvgRoadmap lang={this.props.lang} maxw="645px" minw="645px" />
           </div>
 
           <div className="hide show-xs">
-            <img
-              src={roadMap}
-              alt="Roadmap infographic"
-              style={{ maxWidth: '100%' }}
-            />
+            <SvgRoadmap lang={this.props.lang} maxw="100%" minw="100%" />
           </div>
 
           <div
