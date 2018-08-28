@@ -181,7 +181,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
-    top: -1.5em;
+    top: -2em;
     justify-content: space-around;
     order: 1;
   }
@@ -189,9 +189,9 @@
   .stamps-container :first-child,
   .stamps-container :nth-child(2) {
     display: flex;
-    flex: 1 1 40%;
+    flex: 1 1 34%;
     width: 100%;
-    max-width: 40%;
+    max-width: 34%;
   }
 
   .stamps-container :last-child {

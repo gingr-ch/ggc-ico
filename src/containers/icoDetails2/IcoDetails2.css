@@ -58,4 +58,16 @@
   .table-private-sale {
     font-size: 10px;
   }
+
+  .table-private-sale td:nth-child(2) {
+    display: none;
+  }
+
+  .table-private-sale td:last-child {
+    width: 45px;
+  }
+
+  .table-private-sale td:first-child {
+    font-size: 14px;
+  }
 }
