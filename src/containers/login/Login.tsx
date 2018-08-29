@@ -75,6 +75,7 @@ const LoginRight = styled.div`
   @media (max-width: 599px) {
     width: 100vw;
     height: 50vh;
+    min-height: 344px;
     bottom: 0;
     top: auto;
     z-index: 5;
