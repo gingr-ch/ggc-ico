@@ -16,3 +16,15 @@
 .login-view .login-input:hover::before {
   border-bottom: 2px solid rgba(255, 255, 255, 0.87) !important;
 }
+
+@media(max-width: 599px) {
+  .login-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .login-view .login-input {
+    margin-bottom: 3em;
+  }
+}
