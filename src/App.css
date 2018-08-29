@@ -401,6 +401,10 @@ h3 {
     top: 40px;
   }
 
+  .rc-dialog-body {
+    padding: 0 !important;
+  }
+
   .rc-dialog-body,
   .rc-dialog-body .rc-dialog-body__content {
     min-height: 100vh;
