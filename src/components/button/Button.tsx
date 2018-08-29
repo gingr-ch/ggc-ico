@@ -26,10 +26,6 @@ const Btn = styled.button`
   text-transform: uppercase;
   cursor: pointer;
   padding: 3px;
-
-  &:focus {
-    outline: 0;
-  }
 `;
 
 class Button extends React.Component<ButtonProps> {
