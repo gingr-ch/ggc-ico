@@ -65,6 +65,8 @@
 
   .table-private-sale td:last-child {
     width: 45px;
+    padding-left: 0px;
+    padding-right: 15px;
   }
 
   .table-private-sale td:first-child {
