@@ -42,5 +42,7 @@
 
   .gg-section-container--roadmap h4 {
     width: 110%;
+    position: relative;
+    transform: translateX(-20px);
   }
 }
