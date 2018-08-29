@@ -387,7 +387,7 @@ h3 {
   }
 
   .rc-dialog-wrap .rc-dialog {
-    width: 100vw;
+    width: 100vw !important;
     height: 100vh;
     margin: 0;
   }
