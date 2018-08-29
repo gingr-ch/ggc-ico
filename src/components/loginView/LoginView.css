@@ -1,18 +1,18 @@
-.login-input[class^="MuiInput-root"] {
+.login-view .login-input {
   color: white;
   width: 100%;
   max-width: 311px;
   margin-top: 3em;
 }
 
-.login-input[class^="MuiInput-root"]::before {
+.login-view .login-input::before {
   border-bottom: 1px solid rgba(255, 255, 255, 0.42);
 }
 
-.login-input[class^="MuiInput-root"]::after {
+.login-view .login-input::after {
   border-bottom: 2px solid var(--yellow);
 }
 
-.login-input[class^="MuiInput-root"]:hover::before {
+.login-view .login-input:hover::before {
   border-bottom: 2px solid rgba(255, 255, 255, 0.87) !important;
 }

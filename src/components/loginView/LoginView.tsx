@@ -44,7 +44,7 @@ const Button = styled.button`
 const LoginView = ({ onSubmit }) => {
   // const { classes } = props;
   return (
-    <div>
+    <div className="login-view">
       <LoginTitle>Password Protected</LoginTitle>
       <form
         onSubmit={onSubmit}
