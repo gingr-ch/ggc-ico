@@ -59,10 +59,12 @@
 
 .gg-h1 {
   font-size: 43px;
-  line-height: 60px;
+  line-height: 75px;
   letter-spacing: .2em;
   margin-bottom: 0;
   margin-top: 0;
+  max-width: 630px;
+  width: 100%;
 }
 
 .gg-head {
