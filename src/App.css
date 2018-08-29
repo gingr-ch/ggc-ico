@@ -392,6 +392,15 @@ h3 {
     margin: 0;
   }
 
+  .rc-dialog-wrap .rc-dialog .rc-dialog-content {
+    border-radius: 0;
+    padding-top: 2em;
+  }
+
+  .rc-dialog-wrap .rc-dialog .rc-dialog-close {
+    top: 40px;
+  }
+
   .rc-dialog-body,
   .rc-dialog-body .rc-dialog-body__content {
     min-height: 100vh;
