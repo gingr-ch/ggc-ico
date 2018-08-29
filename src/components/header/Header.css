@@ -84,6 +84,11 @@ div[direction="left"] {
     z-index: 2000;
   }
 
+  .mobile-nav-button button {
+    display: flex;
+    flex-direction: column;
+  }
+
   .gg-header-container {
     padding: 0 14px;
     max-width: 100vw;
