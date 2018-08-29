@@ -1,4 +1,7 @@
 import * as React from 'react';
+import styled from 'styled-components';
+import classNames from 'classnames';
+
 import './Button.css';
 
 interface ButtonProps {
@@ -9,18 +12,32 @@ interface ButtonProps {
   click?(): any;
 }
 
+const Btn = styled.button`
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 15px;
+  color: white;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 3px;
+`;
+
 class Button extends React.Component<ButtonProps> {
   render() {
-    let shape = '';
-    if (this.props.shape === 'round') {
-      shape += 'gg-button--round';
-    } else if (this.props.shape === 'rounded-edges') {
-      shape += 'gg-button--rounded-edges';
-    }
+    let classes = classNames({
+      'gg-button--round': this.props.shape === 'round',
+      'gg-button--rounded-edges': this.props.shape === 'rounded-edges',
+    });
 
     return (
-      <button
-        className={'gg-button ' + shape + ' ' + this.props.className}
+      <Btn
+        className={(this.props.className ? this.props.className : '') + classes}
         style={{
           borderColor: this.props.borderColor
             ? this.props.borderColor
@@ -30,7 +47,7 @@ class Button extends React.Component<ButtonProps> {
         onClick={this.props.click}
       >
         {this.props.children}
-      </button>
+      </Btn>
     );
   }
 }
