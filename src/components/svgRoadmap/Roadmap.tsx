@@ -1,12 +1,6 @@
 import * as React from 'react';
 import { Text } from '@vx/text';
-// import LocalizedStrings from 'react-localization';
-// import { RoadmapStrings } from '../../components/l18n';
-//
-// export const langEn = require('../../assets/l18n/roadmap.en.json');
-// export const strings: RoadmapStrings = new LocalizedStrings({
-//   en: langEn,
-// });
+
 import './svgRoadmap.css';
 
 const Roadmap = (props: any) => (
@@ -15,11 +9,12 @@ const Roadmap = (props: any) => (
     viewBox="0 0 483.898 571.685"
     style={{
       width: '100%',
-      maxWidth: '645px',
-      minWidth: '645px',
+      maxWidth: props.maxw,
+      minWidth: props.minw,
       textTransform: 'uppercase',
       fontFamily: 'brandon_grotesque_regularRg',
       overflow: 'visible',
+      height: '100%',
     }}
   >
     <text

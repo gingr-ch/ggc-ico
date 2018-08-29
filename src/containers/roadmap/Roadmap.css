@@ -39,4 +39,8 @@
   .roadmap-ballon-container h4 {
     margin-top: 180px;
   }
+
+  .gg-section-container--roadmap h4 {
+    width: 110%;
+  }
 }

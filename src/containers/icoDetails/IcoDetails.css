@@ -58,4 +58,12 @@
   .gg-section-container--ico-details .gingr-left {
     display: none;
   }
+
+  .gg-section-container--ico-details .slider li:first-child {
+    padding: 0;
+  }
+
+  .gg-section-container--ico-details .slider li:first-child svg {
+    margin-top: 8em;
+  }
 }
