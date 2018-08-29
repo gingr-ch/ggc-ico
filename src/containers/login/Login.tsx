@@ -27,6 +27,7 @@ const LoginLeft = styled.div`
   top: 0;
   background: var(--pink);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   transform: translateX(-5vw);
@@ -40,7 +41,7 @@ const LoginLeft = styled.div`
     border-width: 100vh 0 0 10vw;
     border-color: transparent transparent transparent var(--pink);
     position: absolute;
-    right: -10vw;
+    right: -9.99vw;
     top: 0;
     z-index: 3;
   }
@@ -84,6 +85,7 @@ class Login extends React.Component<any, any> {
     return (
       <LoginContainer>
         <LoginLeft>
+          <h2>{this.props.lang.ggcCoinIcoComingSoon}!</h2>
           <Img
             src={reasonsImg}
             style={{

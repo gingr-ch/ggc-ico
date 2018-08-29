@@ -70,7 +70,12 @@ class App extends React.Component<any, any> {
             component={Home}
             authenticated={authenticated}
           />
-          <Route exact={true} path="/login" component={Login} />
+          <Route
+            exact={true}
+            path="/login"
+            component={Login}
+            lang={this.state.lang}
+          />
         </div>
       </Router>
     );
