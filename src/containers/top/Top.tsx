@@ -155,9 +155,7 @@ class Top extends React.Component<any, any> {
           <div className="gg-top-left__container">
             <div className="gg-top-content">
               <h1 className="app-header gg-h1">
-                "{this.props.lang.revolutionizing}
-                <br /> {this.props.lang.theOldestIndustry} <br />
-                {this.props.lang.inTheWorld}"
+                "{this.props.lang.revolutionizingTheOldestIndustryInTheWorld}"
               </h1>
             </div>
             <SuisseIco
