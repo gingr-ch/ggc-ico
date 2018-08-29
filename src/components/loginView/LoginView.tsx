@@ -21,6 +21,13 @@ const Button = styled.button`
   padding: 12px 44px;
   text-transform: uppercase;
   border: none;
+  border-radius: 3px;
+
+  @media (max-width: 420px) {
+    width: 100%;
+    font-size: 20px;
+    padding: 24px 44px;
+  }
 `;
 
 // const styles = theme => ({

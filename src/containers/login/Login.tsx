@@ -6,6 +6,7 @@ import ReactCSSTransitionReplace from 'react-css-transition-replace';
 import Base from '../../Base';
 
 import LoginView from '../../components/loginView/LoginView';
+import { strings } from '../../components/localization';
 
 // Require images
 const reasonsImg = require(process.env.REACT_APP_MEDIA_URL +
@@ -45,6 +46,18 @@ const LoginLeft = styled.div`
     top: 0;
     z-index: 3;
   }
+
+  @media (max-width: 599px) {
+    width: 100vw;
+    height: 50vh;
+    transform: translateX(0);
+    justify-content: flex-start;
+    padding-top: 2em;
+
+    &::after {
+      content: none;
+    }
+  }
 `;
 
 const LoginRight = styled.div`
@@ -58,11 +71,23 @@ const LoginRight = styled.div`
   align-items: center;
   background: #78006f;
   z-index: 1;
+
+  @media (max-width: 599px) {
+    width: 100vw;
+    height: 50vh;
+    bottom: 0;
+    top: auto;
+    z-index: 5;
+    align-items: stretch;
+    padding-bottom: 24px;
+  }
 `;
 
 class Login extends React.Component<any, any> {
   constructor(props: object) {
     super(props);
+
+    this.state = { lang: strings };
   }
 
   signIn = async (email: string, password: string) => {
@@ -85,7 +110,7 @@ class Login extends React.Component<any, any> {
     return (
       <LoginContainer>
         <LoginLeft>
-          <h2>{this.props.lang.ggcCoinIcoComingSoon}!</h2>
+          <h2>{this.state.lang.ggcCoinIcoComingSoon}!</h2>
           <Img
             src={reasonsImg}
             style={{
@@ -93,6 +118,7 @@ class Login extends React.Component<any, any> {
               height: '100%',
               maxWidth: '316px',
               maxHeight: '600px',
+              transform: 'translateX(-20px)',
             }}
             alt="GGC ICO logo in a cloud"
             className="rti-image"
@@ -104,6 +130,7 @@ class Login extends React.Component<any, any> {
                   height: '100%',
                   maxWidth: '316px',
                   maxHeight: '600px',
+                  transform: 'translateX(-20px)',
                   filter: 'blur(10px)',
                 }}
               />
