@@ -13,18 +13,6 @@ const ceoFlag = require(process.env.REACT_APP_MEDIA_URL +
 const linkedin = require(process.env.REACT_APP_MEDIA_URL +
   'icons/linkedin_tiny.png');
 
-const list = [
-  {
-    id: 1,
-    img: image,
-    flag: ceoFlag,
-    name: 'Sergio Rigert',
-    role: 'CEO & FOUNDER',
-    description:
-      'Sergio’s dream is to make the world a better place. With a natural ability to lead his team and emulate his passion for the future, his infectious, funny, honest, and straight forward personality attracts top level people who delight in working with him. Sergio has always given 100 per cent to the project. He is not afraid to push the boundaries both of himself, his team, and in fact the views of the entire world. He constantly questions the status quo and is not afraid to challenge it.',
-  },
-];
-
 class TeamCEO extends React.Component<any, any> {
   state = {
     visible: false,
@@ -86,6 +74,18 @@ class TeamCEO extends React.Component<any, any> {
   }
 
   render() {
+    const list = [
+      {
+        id: 1,
+        img: image,
+        flag: ceoFlag,
+        name: 'Sergio Rigert',
+        role: 'CEO & FOUNDER',
+        description:
+          this.props.lang.sergiosDream + ' ' + this.props.lang.sergioHasAlways,
+      },
+    ];
+
     const style = {
       width: this.state.width,
     };
