@@ -1601,14 +1601,6 @@ const FlowChart = (props: any) => (
       fill="#ffd742"
     />
     <text
-      transform="translate(124.978 385.168)"
-      fontSize={8.144}
-      fill="#ffd742"
-      fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
-    >
-      <tspan>{props.lang.gingrSexWorker}</tspan>
-    </text>
-    <text
       transform="translate(220.074 385.168)"
       fontSize={8.144}
       fill="#ffd742"
@@ -1909,6 +1901,23 @@ const FlowChart = (props: any) => (
     >
       {props.lang.flowDirection}
     </text>
+    <Text
+      verticalAnchor="start"
+      textAnchor="middle"
+      width="40"
+      x="164.978"
+      y="379.168"
+      lineHeight="1.2em"
+      style={{
+        isolation: 'isolate',
+        fill: '#ffd742',
+        fontFamily: 'brandon_grotesque_regularRg',
+        fontSize: '8.144px',
+        background: '#592857',
+      }}
+    >
+      {props.lang.gingrSexWorker}
+    </Text>
     <path
       d="M48.593 590.9a1.941 1.941 0 0 1 1.941-1.94 1.946 1.946 0 0 1 1.94 1.94 1.939 1.939 0 0 1-1.94 1.941 1.935 1.935 0 0 1-1.941-1.941zm-23.285 0a1.94 1.94 0 0 1 1.939-1.94 1.946 1.946 0 0 1 1.942 1.94 1.94 1.94 0 0 1-1.942 1.941 1.934 1.934 0 0 1-1.939-1.941zm-23.286 0a1.941 1.941 0 0 1 1.941-1.94A1.945 1.945 0 0 1 5.9 590.9a1.939 1.939 0 0 1-1.94 1.941 1.935 1.935 0 0 1-1.938-1.941z"
       fill="#ffd742"
