@@ -1,5 +1,5 @@
 import * as React from 'react';
-// import { Text } from '@vx/text';
+import { Text } from '@vx/text';
 
 // import LocalizedStrings from 'react-localization';
 // import { FlowStrings } from '../../components/l18n';
@@ -1698,15 +1698,23 @@ const FlowChart = (props: any) => (
       fill="#f3d551"
       fillRule="evenodd"
     />
-    <text
-      transform="translate(87.489 433.712)"
-      fontSize={5.951}
-      fill="#aa3dc1"
-      fontFamily="brandon_grotesquebold,Brandon Grotesque"
-      fontWeight={700}
+    <Text
+      verticalAnchor="start"
+      textAnchor="middle"
+      width="40"
+      x="99.789"
+      y="425.712"
+      lineHeight="1.2em"
+      style={{
+        fill: '#aa3dc1',
+        fontFamily: 'brandon_grotesquebold',
+        fontSize: '5.951px',
+        fontWeight: '700',
+      }}
     >
       {props.lang.escrow}
-    </text>
+    </Text>
+
     <text
       transform="translate(317.298 530.222)"
       fontSize={8.144}
@@ -1830,7 +1838,7 @@ const FlowChart = (props: any) => (
       d="M481.784 288.43h-5.134l2.568-4.446 2.566-4.447 2.566 4.447 2.569 4.446h-5.135zM481.511 305.594h5.134l-2.568 4.445-2.566 4.447-2.566-4.447-2.569-4.445h5.135z"
     />
     <text
-      transform="translate(549.264 43.945)"
+      transform="translate(529.264 43.945)"
       fontSize={9.928}
       fill="#fff"
       fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
@@ -1838,7 +1846,7 @@ const FlowChart = (props: any) => (
       {props.lang.buyGGC} (100% - X%)
     </text>
     <text
-      transform="translate(549.268 57.369)"
+      transform="translate(529.268 57.369)"
       fontSize={9.928}
       fill="#fff"
       fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
