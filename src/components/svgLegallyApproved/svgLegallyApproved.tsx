@@ -46,7 +46,7 @@ const LegallyApproved = (props: any) => (
         2018
       </text>
       <text
-        transform="translate(6.5 7.98)"
+        transform="translate(6 7.98)"
         style={{
           fontSize: '4.07611px',
           fill: '#fff',
