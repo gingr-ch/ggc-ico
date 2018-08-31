@@ -26,9 +26,9 @@ class Download extends React.Component<any, any> {
 
   render() {
     return (
-      <div className="gg-section-cnewslettertainer gg-section-container--download">
-        <div className="gg-contentnewsletterontainer">
-          <h2 className="app-headenewsletterapp-header--small">
+      <div className="gg-section-container gg-section-container--download">
+        <div className="gg-container">
+          <h2 className="app-header app-header--small">
             {this.props.lang.download}
           </h2>
           <OnVisible
