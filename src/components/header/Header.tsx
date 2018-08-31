@@ -10,8 +10,9 @@ import './Header.css';
 const gingrLogo = require(process.env.REACT_APP_MEDIA_URL + 'logo.png');
 
 const adminIco = 'https://admin.ggcico.io/auth/login';
-const whitePaper =
-  'https://docs.wixstatic.com/ugd/2eea42_b23b9045b42246c2ac4f7c6cbf5ee65c.pdf';
+// const whitePaper =
+//   'https://docs.wixstatic.com/ugd/2eea42_b23b9045b42246c2ac4f7c6cbf5ee65c.pdf';
+const whitepaperPdf = require('../../assets/docs/ggcoin-whitepaper.pdf');
 
 class Header extends React.Component<any, any> {
   state = {
@@ -40,7 +41,7 @@ class Header extends React.Component<any, any> {
           <Img src={gingrLogo} className="App-logo" alt="logo" />
           {this.props.children}
           <div className="gg-header-container__buttons">
-            <Button click={() => this.click(whitePaper)} borderColor="white">
+            <Button click={() => this.click(whitepaperPdf)} borderColor="white">
               {this.props.lang.whitepaper}
             </Button>
             <Button
