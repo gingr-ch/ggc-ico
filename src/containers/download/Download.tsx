@@ -46,25 +46,25 @@ class Download extends React.Component<any, any> {
               }}
             >
               <li className="download-item">
-                <a href={whitepaperPdf} target="_blank">
+                <a href={whitepaperPdf} download="ggc-white-paper">
                   <img src={whitePaper} />
                 </a>
                 <p>{this.props.lang.whitepaper}</p>
               </li>
               <li className="download-item">
-                <a href={factSheetPdf} target="_blank">
+                <a href={factSheetPdf} download="ggc-fact-Sheet">
                   <img src={factSheet} />
                 </a>
                 <p>{this.props.lang.factSheet}</p>
               </li>
               <li className="download-item">
-                <a href={lightpaperPdf} target="_blank">
+                <a href={lightpaperPdf} download="ggc-light-paper">
                   <img src={lightPaper} />
                 </a>
                 <p>{this.props.lang.lightpaper}</p>
               </li>
               <li className="download-item">
-                <a href={memorandumPdf} target="_blank">
+                <a href={memorandumPdf} download="ggc-memorandum">
                   <img src={memorandum} />
                 </a>
                 <p>{this.props.lang.companysMemorandum}</p>
