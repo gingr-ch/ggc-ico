@@ -42,7 +42,7 @@
 
 @media(max-width: 599px) {
   .promo-logos {
-    margin-bottom: 30px;
+    margin-bottom: 0;
     order: 6;
   }
   
