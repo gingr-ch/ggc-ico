@@ -14,10 +14,10 @@ const factSheet = require(process.env.REACT_APP_MEDIA_URL +
 const memorandum = require(process.env.REACT_APP_MEDIA_URL +
   'download/legal_memorandum.png');
 
-const whitepaperPdf = require('../../assets/docs/ggcoin-whitepaper.pdf');
+const whitepaperPdf = require('../../assets/docs/ggcoin-white_paper.pdf');
 const lightpaperPdf = require('../../assets/docs/ggcoin-lightpaper.pdf');
 const factSheetPdf = require('../../assets/docs/ggcoin-factsheet.pdf');
-const memorandumPdf = require('../../assets/docs/ggcoin-memorandum.pdf');
+const memorandumPdf = require('../../assets/docs/ggcoin-legal_memorandum.pdf');
 
 class Download extends React.Component<any, any> {
   constructor(props: any) {
@@ -26,9 +26,9 @@ class Download extends React.Component<any, any> {
 
   render() {
     return (
-      <div className="gg-section-container gg-section-container--download">
-        <div className="gg-content-container">
-          <h2 className="app-header app-header--small">
+      <div className="gg-section-cnewslettertainer gg-section-container--download">
+        <div className="gg-contentnewsletterontainer">
+          <h2 className="app-headenewsletterapp-header--small">
             {this.props.lang.download}
           </h2>
           <OnVisible
