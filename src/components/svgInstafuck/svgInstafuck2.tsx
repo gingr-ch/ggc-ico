@@ -614,7 +614,7 @@ const InstafuckChart = (props: any) => (
     <Text
       verticalAnchor="start"
       textAnchor="start"
-      width="210"
+      width={70}
       x="81.227"
       y="5.105"
       lineHeight="1.4em"
@@ -626,7 +626,7 @@ const InstafuckChart = (props: any) => (
     <Text
       verticalAnchor="start"
       textAnchor="start"
-      width="210"
+      width={70}
       x="412.415"
       y="79.173"
       lineHeight="1.4em"
@@ -638,7 +638,7 @@ const InstafuckChart = (props: any) => (
     <Text
       verticalAnchor="start"
       textAnchor="start"
-      width="110"
+      width={70}
       x="508.669"
       y="358.652"
       lineHeight="1.4em"
@@ -650,7 +650,7 @@ const InstafuckChart = (props: any) => (
     <Text
       verticalAnchor="start"
       textAnchor="start"
-      width="170"
+      width={170}
       x="207.608"
       y="373.78"
       lineHeight="1.4em"
@@ -662,7 +662,7 @@ const InstafuckChart = (props: any) => (
     <Text
       verticalAnchor="start"
       textAnchor="start"
-      width="160"
+      width={70}
       x="421.778"
       y="593.886"
       lineHeight="1.4em"
