@@ -160,7 +160,7 @@ class Top extends React.Component<any, any> {
             </div>
             <SuisseIco
               width="150px"
-              style={{ marginTop: '2em' }}
+              style={{ marginTop: '2em', overflow: 'visible' }}
               className="suisse-ico-logo"
               lang={this.props.lang}
             />
