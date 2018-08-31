@@ -44,9 +44,12 @@
 
 .mobile-nav-button {
   display: none;
+  position: relative;
+  z-index: 2000;
 }
 
-.mobile-nav-button .gg-button {
+.mobile-nav-button button {
+  display: flex;
   flex-direction: column;
 }
 
@@ -80,13 +83,6 @@ div[direction="left"] {
 @media(max-width: 599px) {
   .mobile-nav-button {
     display: flex;
-    position: relative;
-    z-index: 2000;
-  }
-
-  .mobile-nav-button button {
-    display: flex;
-    flex-direction: column;
   }
 
   .gg-header-container {
