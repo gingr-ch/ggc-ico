@@ -191,6 +191,7 @@
     top: 0em;
     justify-content: space-around;
     order: 1;
+    min-height: 150px;
   }
 
   .stamps-container :first-child,
@@ -221,5 +222,9 @@
     order: 5;
     max-height: 50px;
     margin-top: 1em !important;
+  }
+
+  .close-button__image {
+    top: 25px;
   }
 }
