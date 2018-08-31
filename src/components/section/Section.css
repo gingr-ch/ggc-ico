@@ -21,6 +21,10 @@
     justify-content: flex-start;
 }
 
+.gg-section--top {
+  min-height: calc(100vh - 73px) !important;
+}
+
 
 @media(max-width: 599px) {
   .gg-content-container {

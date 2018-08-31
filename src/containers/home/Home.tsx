@@ -94,7 +94,7 @@ class Home extends React.Component<any, any> {
         <Header lang={this.state.lang} langSelect={this.handleLangChange}>
           <Nav lang={this.state.lang} />
         </Header>
-        <Section bg="#eaeaea">
+        <Section bg="#eaeaea" top={true}>
           <Top lang={this.state.lang} />
         </Section>
         <Section bg="#4c306a" small={true}>

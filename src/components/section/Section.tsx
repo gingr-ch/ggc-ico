@@ -6,6 +6,7 @@ interface SectionProps {
   bg: string;
   small?: boolean;
   maxHeight?: string;
+  top?: boolean;
 }
 
 class Section extends React.Component<SectionProps> {
@@ -27,6 +28,7 @@ class Section extends React.Component<SectionProps> {
             display: 'flex',
             flexDirection: 'column',
           }}
+          className={this.props.top ? 'gg-section--top' : ''}
         >
           {this.props.children}
         </div>
