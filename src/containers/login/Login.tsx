@@ -42,7 +42,7 @@ const LoginLeft = styled.div`
     border-width: 100vh 0 0 10vw;
     border-color: transparent transparent transparent var(--pink);
     position: absolute;
-    right: -9.99vw;
+    right: -9.97vw;
     top: 0;
     z-index: 3;
   }
@@ -53,6 +53,7 @@ const LoginLeft = styled.div`
     transform: translateX(0);
     justify-content: flex-start;
     padding-top: 2em;
+    overflow: hidden;
 
     &::after {
       content: none;
@@ -84,6 +85,12 @@ const LoginRight = styled.div`
   }
 `;
 
+const Header = styled.h2`
+  @media (max-height: 600px) {
+    display: none;
+  }
+`;
+
 class Login extends React.Component<any, any> {
   constructor(props: object) {
     super(props);
@@ -111,7 +118,7 @@ class Login extends React.Component<any, any> {
     return (
       <LoginContainer>
         <LoginLeft>
-          <h2>{this.state.lang.ggcCoinIcoComingSoon}!</h2>
+          <Header>{this.state.lang.ggcCoinIcoComingSoon}!</Header>
           <Img
             src={reasonsImg}
             style={{
