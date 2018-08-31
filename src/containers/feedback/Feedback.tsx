@@ -44,7 +44,11 @@ class Feedback extends React.Component<any, any> {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'newsletter', ...this.state }),
     })
-      .then(() => alert('Success!'))
+      .then(() =>
+        alert(
+          'Success! Thank you for your interest in our newsletter. You will receive updates on our ICO per this email.'
+        )
+      )
       .catch(error => alert(error));
     e.preventDefault();
   };

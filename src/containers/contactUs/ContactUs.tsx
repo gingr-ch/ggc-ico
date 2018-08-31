@@ -33,7 +33,11 @@ class ContactUs extends React.Component<any, any> {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', ...this.state }),
     })
-      .then(() => alert('Success!'))
+      .then(() =>
+        alert(
+          'Success! Thank you for your interest, we will be in touch with you shortly'
+        )
+      )
       .catch(error => alert(error));
     e.preventDefault();
   };
