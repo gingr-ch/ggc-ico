@@ -1458,12 +1458,25 @@ const FlowChart = (props: any) => (
     />
     <text transform="translate(467.603 506.179)" fontSize={16.209}>
       <tspan className="flow-header flow-header--white">{props.lang.ico}</tspan>
-      <tspan fill="#ffd742">
-        <tspan x={-36.574} y={19.45} className="flow-header">
-          {props.lang.crowdSale}
-        </tspan>
-      </tspan>
     </text>
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="middle"
+      width="100"
+      x="480.177"
+      y="515.629"
+      lineHeight="1.2em"
+      style={{
+        fill: '#ffd742',
+        fontFamily: 'brandon_grotesquebold',
+        fontSize: '16.209px',
+        fontWeight: '700',
+      }}
+    >
+      {props.lang.crowdSale}
+    </Text>
+
     <path
       d="M457.774 544.753a9.307 9.307 0 1 1-9.306-9.305 9.306 9.306 0 0 1 9.306 9.305z"
       fill="#ee8aff"

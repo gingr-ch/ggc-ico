@@ -9,20 +9,16 @@ const whitePaper = require(process.env.REACT_APP_MEDIA_URL +
   'download/whitePaper.png');
 const lightPaper = require(process.env.REACT_APP_MEDIA_URL +
   'download/lightPaper.png');
-// const numbers = require(process.env.REACT_APP_MEDIA_URL +
-//   'download/numbers.png');
+const factSheet = require(process.env.REACT_APP_MEDIA_URL +
+  'download/factSheets.png');
 const memorandum = require(process.env.REACT_APP_MEDIA_URL +
-  'download/memorandum.png');
+  'download/legal_memorandum.png');
 
 const whitepaperPdf = require('../../assets/docs/ggcoin-whitepaper.pdf');
 const lightpaperPdf = require('../../assets/docs/ggcoin-lightpaper.pdf');
-// const numbersPdf = require('../../assets/docs/ggcoin-numbers.pdf');
+const factSheetPdf = require('../../assets/docs/ggcoin-factsheet.pdf');
 const memorandumPdf = require('../../assets/docs/ggcoin-memorandum.pdf');
 
-// export const langEn = require('../../assets/l18n/download.en.json');
-// export const strings: DownloadStrings = new LocalizedStrings({
-//   en: langEn,
-// });
 class Download extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
@@ -54,6 +50,12 @@ class Download extends React.Component<any, any> {
                   <img src={whitePaper} />
                 </a>
                 <p>{this.props.lang.whitepaper}</p>
+              </li>
+              <li className="download-item">
+                <a href={factSheetPdf} target="_blank">
+                  <img src={factSheet} />
+                </a>
+                <p>{this.props.lang.factSheet}</p>
               </li>
               <li className="download-item">
                 <a href={lightpaperPdf} target="_blank">

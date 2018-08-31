@@ -21,7 +21,6 @@ const StrongSolution = Loadable({
   loader: () => import('../strongSolution/StrongSolution'),
   loading: () => <div>Loading...</div>,
 });
-
 const ReasonsToInvest = Loadable({
   loader: () => import('../reasonsToInvest/ReasonsToInvest'),
   loading: () => <div>Loading...</div>,
@@ -51,7 +50,13 @@ import IcoDetails2 from '../icoDetails2/IcoDetails2';
 import IcoDetails3 from '../icoDetails3/IcoDetails3';
 import ReasonsWhy from '../reasonsWhy/ReasonsWhy';
 import RevolutionarySolution from '../revolutionarySolution/RevolutionarySolution';
-import Roadmap from '../roadmap/Roadmap';
+// import Roadmap from '../roadmap/Roadmap';
+
+const Roadmap = Loadable({
+  loader: () => import('../roadmap/Roadmap'),
+  loading: () => <div>Loading...</div>,
+});
+
 import GlobalLeader from '../globalLeader/GlobalLeader';
 import GlobalLeader2 from '../globalLeader2/GlobalLeader2';
 import GlobalLeader3 from '../globalLeader3/GlobalLeader3';

@@ -95,7 +95,7 @@ class PromoLogos extends React.Component<any, any> {
           <Carousel
             autoplay={true}
             heightMode={'max'}
-            initialSlideHeight={'54px'}
+            initialSlideHeight={54}
             wrapAround={true}
             slidesToShow={this.slides}
             renderCenterLeftControls={({ previousSlide }) => (

@@ -91,9 +91,10 @@ const Chart = (props: any) => (
       className="chart-top-st7 chart-top-st2 chart-top-st9"
       verticalAnchor="start"
       textAnchor="start"
-      width="70"
+      width={70}
       x="89.8799"
       y="165.6367"
+      scaleToFit={true}
     >
       {props.lang.publicPreSale}
     </Text>
