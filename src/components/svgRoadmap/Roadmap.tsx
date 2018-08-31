@@ -17,8 +17,13 @@ const Roadmap = (props: any) => (
       height: '100%',
     }}
   >
-    <text
-      transform="translate(5.089 52.323)"
+    <Text
+      verticalAnchor="start"
+      textAnchor="end"
+      width={140}
+      x="155.558"
+      y="50.323"
+      lineHeight="1.2em"
       style={{
         fontSize: '15.103879928588867px',
         fill: '#fff',
@@ -26,12 +31,24 @@ const Roadmap = (props: any) => (
       }}
     >
       {props.lang.foundedGingrAG}
-      <tspan style={{ fontSize: '9.23015022277832px' }}>
-        <tspan x="47.084" y="13.426">
-          {props.lang.zurich} / {props.lang.switzerland}
-        </tspan>
-      </tspan>
-    </text>
+    </Text>
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="end"
+      width={140}
+      x="155.558"
+      y="67.749"
+      lineHeight="1.2em"
+      style={{
+        fontSize: '9.23015022277832px',
+        fill: '#fff',
+        fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
+      }}
+    >
+      {props.lang.zurich + ' / ' + props.lang.switzerland}
+    </Text>
+
     <text
       transform="translate(109.214 31.929)"
       style={{
@@ -71,8 +88,14 @@ const Roadmap = (props: any) => (
       height="170.308"
       style={{ fill: '#c333ff' }}
     />
-    <text
-      transform="translate(0 139.379)"
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="end"
+      width={100}
+      x="155"
+      y="139.379"
+      lineHeight="1.2em"
       style={{
         fontSize: '15.103879928588867px',
         fill: '#fff',
@@ -80,14 +103,8 @@ const Roadmap = (props: any) => (
       }}
     >
       {props.lang.gingrBetaVersion}
-      <tspan
-        x="92.781"
-        y="18.125"
-        style={{ letterSpacing: '0.031002743729686744em' }}
-      >
-        {props.lang.launch}
-      </tspan>
-    </text>
+    </Text>
+
     <text
       transform="translate(99.904 118.984)"
       style={{
@@ -98,47 +115,75 @@ const Roadmap = (props: any) => (
     >
       {props.lang.december}
     </text>
-    <text
-      transform="translate(17.558 363.229)"
-      style={{
-        fontSize: '15.103879928588867px',
-        fill: '#fff',
-        fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
-      }}
-    >
-      GINGR 2.0 {props.lang.launch}
-      <tspan style={{ fontSize: '9.23015022277832px' }}>
-        <tspan x="7.957" y="13.426">
-          {props.lang.pressReleaseWorldWide}
-        </tspan>
-      </tspan>
-    </text>
 
-    <text
-      transform="translate(23.448 452.476)"
+    <Text
+      verticalAnchor="start"
+      textAnchor="end"
+      width={140}
+      x="155.558"
+      y="358.229"
+      lineHeight="1.2em"
       style={{
         fontSize: '15.103879928588867px',
         fill: '#fff',
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
       }}
     >
-      GGC ICO {props.lang.preSale}
-    </text>
-    <text
-      transform="translate(12.03 536.936)"
+      {'GINGR 2.0 ' + props.lang.launch}
+    </Text>
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="end"
+      width={140}
+      x="155.515"
+      y="376.655"
+      lineHeight="1.2em"
+      style={{
+        fontSize: '9.23015022277832px',
+        fill: '#fff',
+        fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
+      }}
+    >
+      {props.lang.pressReleaseWorldWide}
+    </Text>
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="end"
+      width={140}
+      x="155.558"
+      y="452.476"
+      lineHeight="1.2em"
       style={{
         fontSize: '15.103879928588867px',
         fill: '#fff',
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
       }}
     >
-      GGC ICO {props.lang.mainSale}
-    </text>
+      {'GGC ICO ' + props.lang.preSale}
+    </Text>
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="end"
+      width={140}
+      x="155.558"
+      y="536.936"
+      lineHeight="1.2em"
+      style={{
+        fontSize: '15.103879928588867px',
+        fill: '#fff',
+        fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
+      }}
+    >
+      {'GGC ICO ' + props.lang.mainSale}
+    </Text>
 
     <Text
       verticalAnchor="start"
       textAnchor="start"
-      width="180"
+      width={180}
       x="316.634"
       y="128.746"
       lineHeight="1.2em"
@@ -244,7 +289,7 @@ const Roadmap = (props: any) => (
     <Text
       verticalAnchor="start"
       textAnchor="start"
-      width="180"
+      width={180}
       x="316.688"
       y="45.419"
       lineHeight="1.2em"
@@ -253,19 +298,23 @@ const Roadmap = (props: any) => (
       {props.lang.ggcPaymentSystemIncorporated}
     </Text>
 
-    <text
-      transform="translate(60.55 237.459)"
+    <Text
+      verticalAnchor="start"
+      textAnchor="end"
+      width={140}
+      x="155.55"
+      y="237.459"
+      lineHeight="1.2em"
+      className="roadmap-header"
       style={{
         fontSize: '15.103879928588867px',
         fill: '#fff',
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
       }}
     >
-      {props.lang.developing}
-      <tspan x="22.852" y="18.125">
-        GINGR 2.0
-      </tspan>
-    </text>
+      {props.lang.developing + ' GINGR 2.0'}
+    </Text>
+
     <text
       transform="translate(200.864 218.16) rotate(90)"
       style={{
