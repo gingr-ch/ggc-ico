@@ -15,7 +15,7 @@ import LegallyApproved from '../../components/svgLegallyApproved/svgLegallyAppro
 import Finma from '../../components/svgFinma/svgFinma';
 import LegalContent from '../../components/legalContent/LegalContent';
 
-const video = require('../../assets/video/ggc-ico.mp4');
+const video = require('../../assets/video/promo.m4v');
 
 class Top extends React.Component<any, any> {
   player: any;
