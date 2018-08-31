@@ -91,10 +91,9 @@ const Chart = (props: any) => (
       className="chart-top-st7 chart-top-st2 chart-top-st9"
       verticalAnchor="start"
       textAnchor="start"
-      width={70}
+      width={25}
       x="89.8799"
       y="165.6367"
-      scaleToFit={true}
     >
       {props.lang.publicPreSale}
     </Text>
@@ -103,7 +102,7 @@ const Chart = (props: any) => (
       className="chart-top-st8 chart-top-st2 chart-top-st9"
       verticalAnchor="start"
       textAnchor="start"
-      width="70"
+      width={25}
       x="166.9219"
       y="165.4141"
     >
@@ -121,7 +120,7 @@ const Chart = (props: any) => (
       className="chart-top-st8 chart-top-st2 chart-top-st9"
       verticalAnchor="start"
       textAnchor="start"
-      width="70"
+      width={25}
       x="246.5469"
       y="165.6367"
     >
@@ -139,7 +138,7 @@ const Chart = (props: any) => (
       className="chart-top-st8 chart-top-st2 chart-top-st9"
       verticalAnchor="start"
       textAnchor="start"
-      width="70"
+      width={25}
       x="323.0469"
       y="165.6367"
     >
@@ -157,7 +156,7 @@ const Chart = (props: any) => (
       className="chart-top-st1 chart-top-st2 chart-top-st9"
       verticalAnchor="start"
       textAnchor="start"
-      width="70"
+      width={25}
       x="12"
       y="165.6367"
     >
