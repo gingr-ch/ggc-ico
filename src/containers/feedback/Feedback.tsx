@@ -19,16 +19,39 @@ const facebook = require(process.env.REACT_APP_MEDIA_URL +
 const instagram = require(process.env.REACT_APP_MEDIA_URL +
   'social/instagram.png');
 
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
+
 class Feedback extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
+
+    this.state = { email: '' };
   }
 
   click(link: string) {
     window.open(link, '_blank');
   }
 
+  handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
+  handleSubmit = e => {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'newsletter', ...this.state }),
+    })
+      .then(() => alert('Success!'))
+      .catch(error => alert(error));
+    e.preventDefault();
+  };
+
   render() {
+    const { email } = this.state;
+
     return (
       <div className="gg-section-container gg-section-container--feedback">
         <div className="gg-content-container flex-row">
@@ -81,21 +104,25 @@ class Feedback extends React.Component<any, any> {
             <h3 className="feedback-newsletter__title">
               {this.props.lang.signUpForOurNewsletter}
             </h3>
-            <div className="feedback-newsletter__form flex-row">
+            <form
+              onSubmit={this.handleSubmit}
+              name="newsletter"
+              className="feedback-newsletter__form flex-row"
+            >
+              <input type="hidden" name="form-name" value="newsletter" />
               <input
                 className="feedback-input"
-                type="text"
-                placeholder="Email address"
+                type="email"
+                name="email"
+                id="email"
+                placeholder={this.props.lang.email}
+                onChange={this.handleChange}
+                value={email}
               />
-              <Button
-                borderColor={'#f29eff'}
-                click={() =>
-                  this.click('https://admin.ggcico.io/auth/register')
-                }
-              >
+              <Button borderColor={'#f29eff'} btnType="submit">
                 {this.props.lang.signUp}
               </Button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
