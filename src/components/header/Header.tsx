@@ -41,9 +41,25 @@ class Header extends React.Component<any, any> {
           <Img src={gingrLogo} className="App-logo" alt="logo" />
           {this.props.children}
           <div className="gg-header-container__buttons">
-            <Button click={() => this.click(whitepaperPdf)} borderColor="white">
+            <a
+              href={whitepaperPdf}
+              download="ggc-white-paper"
+              style={{
+                textTransform: 'uppercase',
+                color: 'white',
+                border: '2px solid white',
+                fontSize: '15px',
+                textDecoration: 'none',
+                height: 'auto',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                cursor: 'pointer',
+                padding: '3px',
+              }}
+            >
               {this.props.lang.whitepaper}
-            </Button>
+            </a>
             <Button
               click={() => this.click(adminIco)}
               borderColor="#df9eff"

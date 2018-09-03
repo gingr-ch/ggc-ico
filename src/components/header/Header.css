@@ -32,13 +32,15 @@
   align-items: center;
 }
 
-.gg-header-container__buttons button {
+.gg-header-container__buttons button,
+.gg-header-container__buttons a {
   width: 113px;
   max-width: 113px;
   max-height: 28px;
 }
 
-.gg-header-container__buttons button:first-child {
+.gg-header-container__buttons button:first-child,
+.gg-header-container__buttons a:first-child {
   margin-right: 16px;
 }
 
