@@ -13,11 +13,14 @@ const factSheet = require(process.env.REACT_APP_MEDIA_URL +
   'download/factSheets.png');
 const memorandum = require(process.env.REACT_APP_MEDIA_URL +
   'download/legal_memorandum.png');
+const companyMemorandum = require(process.env.REACT_APP_MEDIA_URL +
+  'download/memorandum.png');
 
 const whitepaperPdf = require('../../assets/docs/ggcoin-white_paper.pdf');
 const lightpaperPdf = require('../../assets/docs/ggcoin-lightpaper.pdf');
 const factSheetPdf = require('../../assets/docs/ggcoin-factsheet.pdf');
 const memorandumPdf = require('../../assets/docs/ggcoin-legal_memorandum.pdf');
+const companyMemorandumPdf = require('../../assets/docs/ggcoin-company_memorandum.pdf');
 
 class Download extends React.Component<any, any> {
   constructor(props: any) {
@@ -64,10 +67,19 @@ class Download extends React.Component<any, any> {
                 <p>{this.props.lang.lightpaper}</p>
               </li>
               <li className="download-item">
-                <a href={memorandumPdf} download="ggc-memorandum">
-                  <img src={memorandum} />
+                <a
+                  href={companyMemorandumPdf}
+                  download="ggc-company-memorandum"
+                >
+                  <img src={companyMemorandum} />
                 </a>
                 <p>{this.props.lang.companysMemorandum}</p>
+              </li>
+              <li className="download-item">
+                <a href={memorandumPdf} download="ggc-legal-memorandum">
+                  <img src={memorandum} />
+                </a>
+                <p>{this.props.lang.legalMemorandum}</p>
               </li>
             </ul>
           </OnVisible>
