@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Loadable from 'react-loadable';
+// import Loadable from 'react-loadable';
 // import { observer } from 'mobx-react';
 import LazyLoad from 'react-lazyload';
 import ScrollableAnchor from 'react-scrollable-anchor';
@@ -17,30 +17,30 @@ import Header from '../../components/header/Header';
 import Nav from '../../components/nav/Nav';
 import PressReports from '../pressReports/PressReports';
 
-const StrongSolution = Loadable({
-  loader: () => import('../strongSolution/StrongSolution'),
-  loading: () => <div>Loading...</div>,
-});
-const ReasonsToInvest = Loadable({
-  loader: () => import('../reasonsToInvest/ReasonsToInvest'),
-  loading: () => <div>Loading...</div>,
-});
+// const StrongSolution = Loadable({
+//   loader: () => import('../strongSolution/StrongSolution'),
+//   loading: () => <div>Loading...</div>,
+// });
+// const ReasonsToInvest = Loadable({
+//   loader: () => import('../reasonsToInvest/ReasonsToInvest'),
+//   loading: () => <div>Loading...</div>,
+// });
 
 import Download from '../download/Download';
 
-const WhatIsGingr = Loadable({
-  loader: () => import('../whatIsGingr/WhatIsGingr'),
-  loading: () => <div>Loading...</div>,
-});
+// const WhatIsGingr = Loadable({
+//   loader: () => import('../whatIsGingr/WhatIsGingr'),
+//   loading: () => <div>Loading...</div>,
+// });
 
-const Beta = Loadable({
-  loader: () => import('../beta/Beta'),
-  loading: () => <div>Loading...</div>,
-});
-// import StrongSolution from '../strongSolution/StrongSolution';
-// import ReasonsToInvest from '../reasonsToInvest/ReasonsToInvest';
-// import WhatIsGingr from '../whatIsGingr/WhatIsGingr';
-// import Beta from '../beta/Beta';
+// const Beta = Loadable({
+//   loader: () => import('../beta/Beta'),
+//   loading: () => <div>Loading...</div>,
+// });
+import StrongSolution from '../strongSolution/StrongSolution';
+import ReasonsToInvest from '../reasonsToInvest/ReasonsToInvest';
+import WhatIsGingr from '../whatIsGingr/WhatIsGingr';
+import Beta from '../beta/Beta';
 import Instafuck from '../instafuck/Instafuck';
 import HookUp from '../hookUp/HookUp';
 import Blockchain from '../blockchain/Blockchain';
@@ -50,24 +50,24 @@ import IcoDetails2 from '../icoDetails2/IcoDetails2';
 import IcoDetails3 from '../icoDetails3/IcoDetails3';
 import ReasonsWhy from '../reasonsWhy/ReasonsWhy';
 import RevolutionarySolution from '../revolutionarySolution/RevolutionarySolution';
-// import Roadmap from '../roadmap/Roadmap';
+import Roadmap from '../roadmap/Roadmap';
 
-const Roadmap = Loadable({
-  loader: () => import('../roadmap/Roadmap'),
-  loading: () => <div>Loading...</div>,
-});
+// const Roadmap = Loadable({
+//   loader: () => import('../roadmap/Roadmap'),
+//   loading: () => <div>Loading...</div>,
+// });
 
 import GlobalLeader from '../globalLeader/GlobalLeader';
 import GlobalLeader2 from '../globalLeader2/GlobalLeader2';
 import GlobalLeader3 from '../globalLeader3/GlobalLeader3';
 import Team from '../team/Team';
 import TeamCEO from '../teamCEO/TeamCEO';
-// import TeamAll from '../teamAll/TeamAll';
+import TeamAll from '../teamAll/TeamAll';
 
-const TeamAll = Loadable({
-  loader: () => import('../teamAll/TeamAll'),
-  loading: () => <div>Loading...</div>,
-});
+// const TeamAll = Loadable({
+//   loader: () => import('../teamAll/TeamAll'),
+//   loading: () => <div>Loading...</div>,
+// });
 
 import Feedback from '../feedback/Feedback';
 import ContactUs from '../contactUs/ContactUs';

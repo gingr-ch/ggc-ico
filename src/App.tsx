@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-
+import Loadable from 'react-loadable';
 // Import locale strings
 import { strings } from './components/localization';
 
@@ -10,8 +10,14 @@ import './App.css';
 import Base from './Base';
 
 import PrivateRoute from './PrivateRoute';
-import Home from './containers/home/Home';
 import Login from './containers/login/Login';
+
+const Home = Loadable({
+  loader: () => import('./containers/home/Home'),
+  loading: () => <div>Loading...</div>,
+});
+
+// import Home from './containers/home/Home';
 
 class App extends React.Component<any, any> {
   constructor(props: object) {

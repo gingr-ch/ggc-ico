@@ -24,7 +24,7 @@ const instafuckEscrow = require(process.env.REACT_APP_MEDIA_URL +
 //   en: langEn,
 // });
 class Instafuck extends React.Component<any, any> {
-  constructor(props: any) {
+  constructor(props: object) {
     super(props);
   }
 
