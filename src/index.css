@@ -27,6 +27,7 @@ body {
   font-family: sans-serif;
   color: white;
   position: relative;
+  background: black;
 }
 
 :root {
