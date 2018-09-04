@@ -49,19 +49,19 @@ class Download extends React.Component<any, any> {
               }}
             >
               <li className="download-item">
-                <a href={whitepaperPdf} download="ggc-white-paper">
+                <a href={whitepaperPdf} download="ggc-white-paper.pdf">
                   <img src={whitePaper} />
                 </a>
                 <p>{this.props.lang.whitepaper}</p>
               </li>
               <li className="download-item">
-                <a href={factSheetPdf} download="ggc-fact-Sheet">
+                <a href={factSheetPdf} download="ggc-fact-sheet.pdf">
                   <img src={factSheet} />
                 </a>
                 <p>{this.props.lang.factSheet}</p>
               </li>
               <li className="download-item">
-                <a href={lightpaperPdf} download="ggc-light-paper">
+                <a href={lightpaperPdf} download="ggc-light-paper.pdf">
                   <img src={lightPaper} />
                 </a>
                 <p>{this.props.lang.lightpaper}</p>
@@ -69,14 +69,14 @@ class Download extends React.Component<any, any> {
               <li className="download-item">
                 <a
                   href={companyMemorandumPdf}
-                  download="ggc-company-memorandum"
+                  download="ggc-company-memorandum.pdf"
                 >
                   <img src={companyMemorandum} />
                 </a>
                 <p>{this.props.lang.companysMemorandum}</p>
               </li>
               <li className="download-item">
-                <a href={memorandumPdf} download="ggc-legal-memorandum">
+                <a href={memorandumPdf} download="ggc-legal-memorandum.pdf">
                   <img src={memorandum} />
                 </a>
                 <p>{this.props.lang.legalMemorandum}</p>
