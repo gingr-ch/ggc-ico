@@ -11,6 +11,7 @@ const InstafuckChart = (props: any) => (
     width={805.883}
     height={1242.959}
     {...props}
+    style={{ overflow: 'visible' }}
   >
     <defs>
       <linearGradient
@@ -638,7 +639,7 @@ const InstafuckChart = (props: any) => (
     <Text
       verticalAnchor="start"
       textAnchor="start"
-      width={70}
+      width={50}
       x="508.669"
       y="358.652"
       lineHeight="1.4em"
@@ -650,7 +651,7 @@ const InstafuckChart = (props: any) => (
     <Text
       verticalAnchor="start"
       textAnchor="start"
-      width={170}
+      width={50}
       x="207.608"
       y="373.78"
       lineHeight="1.4em"

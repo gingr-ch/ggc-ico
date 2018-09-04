@@ -41,7 +41,10 @@ class Instafuck extends React.Component<any, any> {
           </OnVisible>
           <h4>"{this.props.lang.weHaveCreatedThe}"</h4>
           <div className="spacer" />
-          <div className="hide-xs">
+          <div
+            className="hide-xs"
+            style={{ width: '100%', overflow: 'hidden' }}
+          >
             <InstafuckChart lang={this.props.lang} />
           </div>
 
