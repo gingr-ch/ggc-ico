@@ -2,6 +2,7 @@ import * as React from 'react';
 import Img from 'react-image';
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
 import OnVisible from 'react-on-visible';
+import styled from 'styled-components';
 
 import './TeamItem.css';
 
@@ -17,6 +18,12 @@ class TeamItems {
   lang: object;
 }
 
+const FlagImg = styled.img`
+  position: absolute;
+  top: 0;
+  right: 20px;
+`;
+
 class TeamItem extends React.Component<any, TeamItems> {
   render() {
     return (
@@ -28,6 +35,7 @@ class TeamItem extends React.Component<any, TeamItems> {
             justifyContent: 'flex-start',
             alignItems: 'flex-start',
             marginBottom: '24px',
+            position: 'relative',
           }}
         >
           <OnVisible>
@@ -63,7 +71,7 @@ class TeamItem extends React.Component<any, TeamItems> {
               />
             </div>
           </OnVisible>
-          <img src={this.props.flag} />
+          <FlagImg src={this.props.flag} />
         </div>
         <a
           href="#team-all"
