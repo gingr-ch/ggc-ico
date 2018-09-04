@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import Input from '@material-ui/core/Input';
 // import { withStyles } from '@material-ui/core/styles';
 
@@ -31,6 +31,29 @@ const Button = styled.button`
   }
 `;
 
+const ErrorMsgKeyframes = keyframes`
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
+
+const ErrorMsg = styled.div`
+  color: red;
+  width: 100%;
+  margin-top: 3px;
+  position: relative;
+  animation-name: ${ErrorMsgKeyframes};
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+`;
+
 // const styles = theme => ({
 //   input: {
 //     color: 'white',
@@ -49,7 +72,7 @@ const Button = styled.button`
 //   },
 // });
 
-const LoginView = ({ onSubmit }) => {
+const LoginView = ({ onSubmit, error }) => {
   // const { classes } = props;
   return (
     <div className="login-view">
@@ -69,6 +92,7 @@ const LoginView = ({ onSubmit }) => {
           placeholder="Password"
           className="login-input"
         />
+        {error && <ErrorMsg>Password incorrect</ErrorMsg>}
         <Button type="submit">ENTER</Button>
       </form>
     </div>

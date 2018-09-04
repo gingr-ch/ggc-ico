@@ -42,7 +42,7 @@ const LoginLeft = styled.div`
     border-width: 100vh 0 0 10vw;
     border-color: transparent transparent transparent var(--pink);
     position: absolute;
-    right: -9.97vw;
+    right: -9.95vw;
     top: 0;
     z-index: 3;
   }
@@ -92,28 +92,23 @@ const Header = styled.h2`
 `;
 
 class Login extends React.Component<any, any> {
-  err = '';
-
   constructor(props: object) {
     super(props);
 
-    this.state = { lang: strings };
+    this.state = { lang: strings, error: false };
   }
-
-  signIn = async (email: string, password: string) => {
-    await Base.auth().signInWithEmailAndPassword(email, password);
-    this.props.history.push('/');
-  };
 
   handleSignUp = async event => {
     event.preventDefault();
+    this.setState({ error: false });
     const { password } = event.target.elements;
     const email: string = 'login@ggcico.io';
+
     try {
-      this.signIn(email, password.value);
+      await Base.auth().signInWithEmailAndPassword(email, password.value);
+      this.props.history.push('/');
     } catch (error) {
-      console.warn(error.message);
-      // this.err = error;
+      this.setState({ error: true });
     }
   };
 
@@ -159,7 +154,7 @@ class Login extends React.Component<any, any> {
           />
         </LoginLeft>
         <LoginRight>
-          <LoginView onSubmit={this.handleSignUp} />
+          <LoginView onSubmit={this.handleSignUp} error={this.state.error} />
         </LoginRight>
       </LoginContainer>
     );
