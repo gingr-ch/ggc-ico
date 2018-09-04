@@ -22,6 +22,7 @@ const Button = styled.button`
   text-transform: uppercase;
   border: none;
   border-radius: 3px;
+  cursor: pointer;
 
   @media (max-width: 420px) {
     width: 100%;

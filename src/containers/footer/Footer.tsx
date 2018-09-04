@@ -242,7 +242,7 @@ class Footer extends React.Component<any, any> {
             </div>
           </div>
           <div className="footer-copyright">
-            ©2017 Gingr AG | {this.props.lang.allRightsReserved}
+            ©2018 Gingr AG | {this.props.lang.allRightsReserved}
           </div>
         </div>
       </div>

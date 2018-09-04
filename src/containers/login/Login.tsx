@@ -92,6 +92,8 @@ const Header = styled.h2`
 `;
 
 class Login extends React.Component<any, any> {
+  err = '';
+
   constructor(props: object) {
     super(props);
 
@@ -110,7 +112,8 @@ class Login extends React.Component<any, any> {
     try {
       this.signIn(email, password.value);
     } catch (error) {
-      alert(error);
+      console.warn(error.message);
+      // this.err = error;
     }
   };
 
