@@ -785,7 +785,7 @@ const BlockchainChart = (props: any) => (
     </g>
     <text
       transform="translate(160.167 9.61)"
-      style={{ isolation: 'isolate' }}
+      style={{ isolation: 'isolate', textTransform: 'uppercase' }}
       fontSize={11.306}
       fill="#ffd742"
       fontFamily="brandon_grotesquebold,Brandon Grotesque"
@@ -796,7 +796,7 @@ const BlockchainChart = (props: any) => (
     </text>
     <text
       transform="translate(285.667 9.61)"
-      style={{ isolation: 'isolate' }}
+      style={{ isolation: 'isolate', textTransform: 'uppercase' }}
       fontSize={11.306}
       fill="#ffd742"
       fontFamily="brandon_grotesquebold,Brandon Grotesque"
@@ -814,18 +814,18 @@ const BlockchainChart = (props: any) => (
       <Text
         verticalAnchor="start"
         textAnchor="start"
-        width="80"
+        width={25}
         x="401.667"
         y="83.277"
         lineHeight="1.2em"
-        style={{ isolation: 'isolate' }}
+        style={{ isolation: 'isolate', textTransform: 'uppercase' }}
       >
         {props.lang.gingrPopNGo}
       </Text>
     </g>
     <text
       transform="translate(436 223.61)"
-      style={{ isolation: 'isolate' }}
+      style={{ isolation: 'isolate', textTransform: 'uppercase' }}
       fontSize={11.306}
       fill="#ffd742"
       fontFamily="brandon_grotesquebold,Brandon Grotesque"
@@ -835,7 +835,7 @@ const BlockchainChart = (props: any) => (
     </text>
     <text
       transform="translate(396.333 333.944)"
-      style={{ isolation: 'isolate' }}
+      style={{ isolation: 'isolate', textTransform: 'uppercase' }}
       fontSize={11.306}
       fill="#ffd742"
       fontFamily="brandon_grotesquebold,Brandon Grotesque"
@@ -853,11 +853,11 @@ const BlockchainChart = (props: any) => (
       <Text
         verticalAnchor="start"
         textAnchor="start"
-        width="80"
+        width={20}
         x="301.333"
         y="406.61"
         lineHeight="1.2em"
-        style={{ isolation: 'isolate' }}
+        style={{ isolation: 'isolate', textTransform: 'uppercase' }}
       >
         {props.lang.gingrCare}
       </Text>
@@ -882,7 +882,7 @@ const BlockchainChart = (props: any) => (
       <Text
         verticalAnchor="start"
         textAnchor="start"
-        width="80"
+        width={40}
         x="16.333"
         y="309.944"
         lineHeight="1.2em"
@@ -911,7 +911,7 @@ const BlockchainChart = (props: any) => (
       <Text
         verticalAnchor="start"
         textAnchor="start"
-        width="80"
+        width={30}
         x="37.333"
         y="88.277"
         lineHeight="1.2em"

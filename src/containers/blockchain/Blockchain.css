@@ -19,7 +19,8 @@
 }
 
 .gg-section-container--blockchain svg {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+  overflow: visible;
 }
 
 @media(max-width: 599px) {
