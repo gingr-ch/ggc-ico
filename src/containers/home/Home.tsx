@@ -204,7 +204,7 @@ class Home extends React.Component<any, any> {
         </Section>
         <Section bg="#802e7a">
           <LazyLoad offset={1000} height={'100%'} once={true}>
-            <GlobalLeader3 />
+            <GlobalLeader3 lang={this.state.lang} />
           </LazyLoad>
         </Section>
         <ScrollableAnchor id={'team'}>
