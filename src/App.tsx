@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Loadable from 'react-loadable';
+import Cookies from 'universal-cookie';
 // Import locale strings
 import { strings } from './components/localization';
 
@@ -16,6 +17,8 @@ const Home = Loadable({
   loader: () => import('./containers/home/Home'),
   loading: () => <div>Loading...</div>,
 });
+
+const cookies = new Cookies();
 
 // import Home from './containers/home/Home';
 
@@ -42,6 +45,13 @@ class App extends React.Component<any, any> {
     return strings.getLanguage();
   }
 
+  checkLanguageCookie() {
+    if (cookies.get('vr-lang')) {
+      const cookie = cookies.get('vr-lang');
+      this.handleLangChange(cookie);
+    }
+  }
+
   componentWillMount() {
     Base.auth().onAuthStateChanged(user => {
       if (user) {
@@ -58,6 +68,8 @@ class App extends React.Component<any, any> {
         });
       }
     });
+
+    this.checkLanguageCookie();
   }
 
   render() {

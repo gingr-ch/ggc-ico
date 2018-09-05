@@ -105,7 +105,10 @@ class LanguageChanger extends React.Component<any, LanguageChangerProps> {
   };
 
   selectFlag = (option: any) => {
-    cookies.set('vr-lang', option, { path: '/', domain: '.ggcico.io' });
+    cookies.set('vr-lang', option, {
+      path: '/',
+      domain: process.env.REACT_APP_DOMAIN,
+    });
     this.setFlag(option);
     this.props.langSelect(option);
     console.warn(cookies.get('vr-lang'));
