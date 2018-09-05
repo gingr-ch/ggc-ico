@@ -34,7 +34,8 @@
     "react-scrollable-anchor": "^0.6.1",
     "react-select": "^2.0.0",
     "react-select-search": "^0.9.3",
-    "styled-components": "^3.2.5"
+    "styled-components": "^4.0.0-beta.0",
+    "universal-cookie": "^3.0.4"
   },
   "scripts": {
     "start": "react-scripts-ts start",
