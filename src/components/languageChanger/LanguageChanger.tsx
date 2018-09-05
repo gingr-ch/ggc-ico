@@ -71,6 +71,7 @@ function renderCountry(option: any) {
   );
 }
 
+// Initialize universal-cookies
 const cookies = new Cookies();
 
 class LanguageChanger extends React.Component<any, LanguageChangerProps> {
@@ -104,7 +105,7 @@ class LanguageChanger extends React.Component<any, LanguageChangerProps> {
   };
 
   selectFlag = (option: any) => {
-    cookies.set('vr-lang', option, { path: '/' });
+    cookies.set('vr-lang', option, { path: '/', domain: '.ggcico.io' });
     this.setFlag(option);
     this.props.langSelect(option);
     console.warn(cookies.get('vr-lang'));
