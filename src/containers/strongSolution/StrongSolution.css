@@ -15,7 +15,8 @@
 }
 
 .gg-section-container--strong-solution .ssc-item__gingr-logo {
-  width: 100%
+  /* width: 100%; */
+  width: 210px;
 }
 
 .gg-section-container--strong-solution .title {
