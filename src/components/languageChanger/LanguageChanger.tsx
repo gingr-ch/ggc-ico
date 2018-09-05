@@ -1,5 +1,6 @@
 import * as React from 'react';
 import SelectSearch from 'react-select-search';
+import Cookies from 'universal-cookie';
 
 import 'flag-icon-css/css/flag-icon.min.css';
 import './LanguageChanger.css';
@@ -70,6 +71,8 @@ function renderCountry(option: any) {
   );
 }
 
+const cookies = new Cookies();
+
 class LanguageChanger extends React.Component<any, LanguageChangerProps> {
   flagInput: any;
   // flag: any;
@@ -101,8 +104,10 @@ class LanguageChanger extends React.Component<any, LanguageChangerProps> {
   };
 
   selectFlag = (option: any) => {
+    cookies.set('vr-lang', option, { path: '/' });
     this.setFlag(option);
     this.props.langSelect(option);
+    console.warn(cookies.get('vr-lang'));
   };
 
   componentDidMount() {
