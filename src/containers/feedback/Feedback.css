@@ -39,7 +39,7 @@
 }
 
 .feedback-social {
-    max-width: 532px;
+    max-width: 600px;
     width: 100%;
     justify-content: center;
     margin: 80px auto 50px auto;
@@ -48,8 +48,8 @@
 }
 
 .feedback-social div {
-  flex: 1 1 25%;
-  min-width: 25%;
+  flex: 1 1 20%;
+  min-width: 20%;
   box-sizing: border-box;
   justify-content: space-between;
 }

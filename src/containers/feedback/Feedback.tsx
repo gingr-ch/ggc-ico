@@ -67,11 +67,21 @@ class Feedback extends React.Component<any, any> {
                 <img
                   src={telegram}
                   alt={this.props.lang.telegram}
-                  onClick={() =>
-                    this.click('https://t.me/joinchat/HPxTWg1wnQKf8Guv3INWqw')
-                  }
+                  onClick={() => this.click('https://t.me/gingrggcgroup')}
                 />
-                <span>{this.props.lang.telegram}</span>
+                <span>
+                  {this.props.lang.telegram} {this.props.lang.group}
+                </span>
+              </div>
+              <div className="flex-column feeback-social__item">
+                <img
+                  src={telegram}
+                  alt={this.props.lang.telegram}
+                  onClick={() => this.click('https://t.me/gingrggcoin')}
+                />
+                <span>
+                  {this.props.lang.telegram} {this.props.lang.channel}
+                </span>
               </div>
               <div className="flex-column feeback-social__item">
                 <img
