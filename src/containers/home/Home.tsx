@@ -73,6 +73,7 @@ import Feedback from '../feedback/Feedback';
 import ContactUs from '../contactUs/ContactUs';
 import Footer from '../footer/Footer';
 import BackToTop from '../../components/backToTop/BackToTop';
+import SocialSidebar from '../../components/socialSidebar/SocialSidebar';
 
 class Home extends React.Component<any, any> {
   constructor(props: object) {
@@ -245,6 +246,7 @@ class Home extends React.Component<any, any> {
             <Footer lang={this.state.lang} />
           </LazyLoad>
         </Section>
+        <SocialSidebar />
       </div>
     );
   }
