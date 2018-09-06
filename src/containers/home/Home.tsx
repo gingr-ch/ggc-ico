@@ -168,7 +168,7 @@ class Home extends React.Component<any, any> {
             <IcoDetails2 lang={this.state.lang} />
           </LazyLoad>
         </Section>
-        <Section bg="#4d346a">
+        <Section bg="#4d346a" small={true}>
           <LazyLoad offset={1000} height={'100%'} once={true}>
             <IcoDetails3 lang={this.state.lang} />
           </LazyLoad>
