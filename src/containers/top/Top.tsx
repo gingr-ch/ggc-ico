@@ -31,7 +31,8 @@ class Top extends React.Component<any, any> {
       controls: false,
       playing: true,
       visible: false,
-      width: 860,
+      width: '100%',
+      height: '100%',
       destroyOnClose: true,
       center: true,
       mousePosition: { x: 0, y: 0 },
@@ -49,6 +50,7 @@ class Top extends React.Component<any, any> {
       volume: 0.8,
       controls: true,
       playing: true,
+      // height: 'auto',
     });
     this.player.seekTo(0);
   }
@@ -211,9 +213,13 @@ class Top extends React.Component<any, any> {
             position: 'absolute',
             width: '100%',
             height: '100%',
-            backgroundColor: 'red',
+            backgroundColor: 'black',
             zIndex: 0,
             overflow: 'hidden',
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'center',
           }}
           className="player-container"
         >
@@ -239,8 +245,8 @@ class Top extends React.Component<any, any> {
           </div>
           <ReactPlayer
             url={video}
-            width="100%"
-            height="100%"
+            width={this.state.width}
+            height={this.state.height}
             playing={this.state.playing}
             volume={this.state.volume}
             muted={this.state.muted}
@@ -256,7 +262,13 @@ class Top extends React.Component<any, any> {
               },
             }}
             playsinline={true}
-            style={{ background: '#000000' }}
+            style={{
+              background: '#000000',
+              display: 'flex',
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
           />
         </div>
         {dialog}
