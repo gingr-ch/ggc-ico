@@ -22,28 +22,26 @@ class ContactUs extends React.Component<any, any> {
   constructor(props: object) {
     super(props);
 
-    this.state = { email: '', message: '' };
+    this.state = { email: '', message: '', sending: false, sent: false };
   }
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
   handleSubmit = e => {
+    e.preventDefault();
+    this.setState({ sending: true });
+
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', ...this.state }),
     })
-      .then(() =>
-        alert(
-          'Success! Thank you for your interest, we will be in touch with you shortly'
-        )
-      )
+      .then(() => setTimeout(() => this.setState({ sent: true }), 3000))
       .catch(error => alert(error));
-    e.preventDefault();
   };
 
   render() {
-    const { email, message } = this.state;
+    const { email, message, sending, sent } = this.state;
 
     return (
       <div className="gg-section-container gg-section-container--contactus">
@@ -79,7 +77,87 @@ class ContactUs extends React.Component<any, any> {
                 onChange={this.handleChange}
                 value={message}
               />
-              <Button btnType="submit">{this.props.lang.send}</Button>
+              <Button btnType="submit">
+                {sending &&
+                  !sent && (
+                    <svg
+                      width="55"
+                      height="17"
+                      viewBox="0 0 120 30"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="#fff"
+                    >
+                      <circle cx="15" cy="15" r="15">
+                        <animate
+                          attributeName="r"
+                          from="15"
+                          to="15"
+                          begin="0s"
+                          dur="0.8s"
+                          values="15;9;15"
+                          calcMode="linear"
+                          repeatCount="indefinite"
+                        />
+                        <animate
+                          attributeName="fill-opacity"
+                          from="1"
+                          to="1"
+                          begin="0s"
+                          dur="0.8s"
+                          values="1;.5;1"
+                          calcMode="linear"
+                          repeatCount="indefinite"
+                        />
+                      </circle>
+                      <circle cx="60" cy="15" r="9" fill-opacity="0.3">
+                        <animate
+                          attributeName="r"
+                          from="9"
+                          to="9"
+                          begin="0s"
+                          dur="0.8s"
+                          values="9;15;9"
+                          calcMode="linear"
+                          repeatCount="indefinite"
+                        />
+                        <animate
+                          attributeName="fill-opacity"
+                          from="0.5"
+                          to="0.5"
+                          begin="0s"
+                          dur="0.8s"
+                          values=".5;1;.5"
+                          calcMode="linear"
+                          repeatCount="indefinite"
+                        />
+                      </circle>
+                      <circle cx="105" cy="15" r="15">
+                        <animate
+                          attributeName="r"
+                          from="15"
+                          to="15"
+                          begin="0s"
+                          dur="0.8s"
+                          values="15;9;15"
+                          calcMode="linear"
+                          repeatCount="indefinite"
+                        />
+                        <animate
+                          attributeName="fill-opacity"
+                          from="1"
+                          to="1"
+                          begin="0s"
+                          dur="0.8s"
+                          values="1;.5;1"
+                          calcMode="linear"
+                          repeatCount="indefinite"
+                        />
+                      </circle>
+                    </svg>
+                  )}
+                {sending && sent && this.props.lang.sent}
+                {!sent && !sending && this.props.lang.send}
+              </Button>
             </form>
           </OnVisible>
         </div>
