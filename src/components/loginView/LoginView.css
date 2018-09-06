@@ -17,6 +17,21 @@
   border-bottom: 2px solid rgba(255, 255, 255, 0.87) !important;
 }
 
+.login-view .login-button {
+  background: var(--yellow);
+  color: var(--purple);
+  margin-top: 2em;
+  padding: 12px 44px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.login-view .login-button:hover {
+  background: #d6b200;
+}
+
 @media(max-width: 599px) {
   .login-view {
     display: flex;
@@ -26,5 +41,11 @@
 
   .login-view .login-input {
     margin-bottom: 3em;
+  }
+
+  .login-view .login-button {
+    width: 100%;
+    font-size: 20px;
+    padding: 24px 44px;
   }
 }

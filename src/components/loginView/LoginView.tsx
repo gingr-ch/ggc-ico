@@ -2,6 +2,7 @@ import * as React from 'react';
 import styled, { keyframes } from 'styled-components';
 import Input from '@material-ui/core/Input';
 // import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
 // import Button from '../button/Button';
 import './LoginView.css';
@@ -14,22 +15,22 @@ const LoginTitle = styled.h1`
   font-weight: 500;
 `;
 
-const Button = styled.button`
-  background: var(--yellow);
-  color: var(--purple);
-  margin-top: 2em;
-  padding: 12px 44px;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-
-  @media (max-width: 420px) {
-    width: 100%;
-    font-size: 20px;
-    padding: 24px 44px;
-  }
-`;
+// const Button = styled.button`
+//   background: var(--yellow);
+//   color: var(--purple);
+//   margin-top: 2em;
+//   padding: 12px 44px;
+//   text-transform: uppercase;
+//   border: none;
+//   border-radius: 3px;
+//   cursor: pointer;
+//
+//   @media (max-width: 420px) {
+//     width: 100%;
+//     font-size: 20px;
+//     padding: 24px 44px;
+//   }
+// `;
 
 const ErrorMsgKeyframes = keyframes`
   0% {
@@ -93,7 +94,9 @@ const LoginView = ({ onSubmit, error }) => {
           className="login-input"
         />
         {error && <ErrorMsg>Password incorrect</ErrorMsg>}
-        <Button type="submit">ENTER</Button>
+        <Button variant="contained" className="login-button" type="submit">
+          ENTER
+        </Button>
       </form>
     </div>
   );
