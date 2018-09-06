@@ -17,7 +17,7 @@ const SuisseIco = (props: any) => (
       <Text
         verticalAnchor="middle"
         textAnchor="start"
-        width="25"
+        width={40}
         x="7.789"
         y="2.959"
         lineHeight="1.2em"
