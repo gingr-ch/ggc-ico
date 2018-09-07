@@ -88,12 +88,18 @@ const LoginView = ({ onSubmit, error }) => {
         }}
       >
         <Input
+          name="username"
+          type="text"
+          placeholder="Username"
+          className="login-input"
+        />
+        <Input
           name="password"
           type="password"
           placeholder="Password"
           className="login-input"
         />
-        {error && <ErrorMsg>Password incorrect</ErrorMsg>}
+        {error && <ErrorMsg>Username and/or Password incorrect</ErrorMsg>}
         <Button variant="contained" className="login-button" type="submit">
           ENTER
         </Button>

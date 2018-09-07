@@ -1,7 +1,7 @@
 import * as React from 'react';
 import ReactPlayer from 'react-player';
 import classNames from 'classnames';
-import OnVisible from 'react-on-visible';
+// import OnVisible from 'react-on-visible';
 import Dialog from 'rc-dialog';
 // import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 import 'rc-dialog/assets/index.css';
@@ -168,15 +168,13 @@ class Top extends React.Component<any, any> {
             />
 
             <div className="play-button">
-              <OnVisible className="rotate-in">
-                <Button
-                  click={this.videoToggle}
-                  borderColor={'#ffffff'}
-                  shape="rounded-edges"
-                >
-                  {this.props.lang.playVideo}
-                </Button>
-              </OnVisible>
+              <Button
+                click={this.videoToggle}
+                borderColor={'#ffffff'}
+                shape="rounded-edges"
+              >
+                {this.props.lang.playVideo}
+              </Button>
             </div>
 
             <div className="stamps-container">

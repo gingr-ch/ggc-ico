@@ -33,10 +33,18 @@ class PressReports extends React.Component<any, any> {
 
   constructor(props: any) {
     super(props);
+
+    this.state = {
+      user: 'friends',
+    };
   }
 
   click() {
     window.open('https://admin.ggcico.io/auth/register', '_blank');
+  }
+
+  componentDidMount() {
+    this.setState({ user: this.props.user });
   }
 
   render() {
@@ -82,13 +90,15 @@ class PressReports extends React.Component<any, any> {
 
             <div className="spacer hide show-xs" />
 
-            <Button
-              click={this.click}
-              borderColor="rgba(32, 206, 136, 1)"
-              className="btn-buy-coins"
-            >
-              {this.props.lang.buyCoinsNow}
-            </Button>
+            {this.state.user === 'friends' && (
+              <Button
+                click={this.click}
+                borderColor="rgba(32, 206, 136, 1)"
+                className="btn-buy-coins"
+              >
+                {this.props.lang.buyCoinsNow}
+              </Button>
+            )}
           </div>
         </div>
       </div>
