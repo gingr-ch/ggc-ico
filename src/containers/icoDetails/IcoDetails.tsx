@@ -1,23 +1,14 @@
 import * as React from 'react';
 import Carousel from 'nuka-carousel';
-// import LocalizedStrings from 'react-localization';
-// import { IcoDetailsStrings } from '../../components/l18n';
 
 import Button from '../../components/button/Button';
 import './IcoDetails.css';
 
 const gingr = require(process.env.REACT_APP_MEDIA_URL + 'gingr_left.png');
-// const icoStages = require(process.env.REACT_APP_MEDIA_URL + 'chart.png');
-// const icoStagesAlt = require(process.env.REACT_APP_MEDIA_URL +
-//   'chartAlt_nobg.png');
 
 import Chart from '../../components/svgChart/svgChart';
 import Chart2 from '../../components/svgChart2/svgChart2';
 
-// export const langEn = require('../../assets/l18n/ico-details.en.json');
-// export const strings: IcoDetailsStrings = new LocalizedStrings({
-//   en: langEn,
-// });
 class IcoDetails extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
@@ -63,9 +54,9 @@ class IcoDetails extends React.Component<any, any> {
             </Button>
           </div>
 
-          <div className="spacer" />
-          <div className="spacer" />
-          <div className="spacer" />
+          <div className="spacer hide-xs" />
+          <div className="spacer hide-xs" />
+          <div className="spacer hide-xs" />
           <div className="spacer" />
 
           <Carousel autoplay={true} heightMode={'max'} wrapAround={true}>
