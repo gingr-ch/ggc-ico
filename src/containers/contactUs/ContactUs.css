@@ -11,6 +11,12 @@
   background-color: var(--yellow);
   text-transform: capitalize;
   padding: 5px;
+  transition: border-color .2s ease, background-color .2s ease;
+}
+
+.gg-section-container--contactus button.btn-sent {
+  background: var(--green);
+  border-color: var(--green);
 }
 
 .contactus-form {

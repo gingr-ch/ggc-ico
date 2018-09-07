@@ -77,7 +77,7 @@ class ContactUs extends React.Component<any, any> {
                 onChange={this.handleChange}
                 value={message}
               />
-              <Button btnType="submit">
+              <Button btnType="submit" className={sent && 'btn-sent'}>
                 {sending &&
                   !sent && (
                     <svg
