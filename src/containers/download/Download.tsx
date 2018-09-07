@@ -16,11 +16,19 @@ const memorandum = require(process.env.REACT_APP_MEDIA_URL +
 const companyMemorandum = require(process.env.REACT_APP_MEDIA_URL +
   'download/memorandum.png');
 
-const whitepaperPdf = require('../../assets/docs/ggcoin-white_paper.pdf');
-const lightpaperPdf = require('../../assets/docs/ggcoin-lightpaper.pdf');
-const factSheetPdf = require('../../assets/docs/ggcoin-factsheet.pdf');
-const memorandumPdf = require('../../assets/docs/ggcoin-legal_memorandum.pdf');
-const companyMemorandumPdf = require('../../assets/docs/ggcoin-company_memorandum.pdf');
+// const whitepaperPdf = require('../../assets/docs/ggcoin-white_paper.pdf');
+// const lightpaperPdf = require('../../assets/docs/ggcoin-lightpaper.pdf');
+// const factSheetPdf = require('../../assets/docs/ggcoin-factsheet.pdf');
+// const memorandumPdf = require('../../assets/docs/ggcoin-legal_memorandum.pdf');
+// const companyMemorandumPdf = require('../../assets/docs/ggcoin-company_memorandum.pdf');
+
+const whitepaperPdf = 'https://api.ggcoin.ch/download/pdf/ggc-white-paper.pdf';
+const lightpaperPdf = 'https://api.ggcoin.ch/download/pdf/ggc-light-paper.pdf';
+const factSheetPdf = 'https://api.ggcoin.ch/download/pdf/ggc-fact-sheet.pdf';
+const memorandumPdf =
+  'https://api.ggcoin.ch/download/pdf/ggc-legal-memorandum.pdf';
+const companyMemorandumPdf =
+  'https://api.ggcoin.ch/download/pdf/ggc-company-memorandum.pdf';
 
 class Download extends React.Component<any, any> {
   constructor(props: any) {
@@ -49,34 +57,31 @@ class Download extends React.Component<any, any> {
               }}
             >
               <li className="download-item">
-                <a href={whitepaperPdf} download="ggc-white-paper.pdf">
+                <a href={whitepaperPdf} target="_blank">
                   <img src={whitePaper} />
                 </a>
                 <p>{this.props.lang.whitepaper}</p>
               </li>
               <li className="download-item">
-                <a href={factSheetPdf} download="ggc-fact-sheet.pdf">
+                <a href={factSheetPdf} target="_blank">
                   <img src={factSheet} />
                 </a>
                 <p>{this.props.lang.factSheet}</p>
               </li>
               <li className="download-item">
-                <a href={lightpaperPdf} download="ggc-light-paper.pdf">
+                <a href={lightpaperPdf} target="_blank">
                   <img src={lightPaper} />
                 </a>
                 <p>{this.props.lang.lightpaper}</p>
               </li>
               <li className="download-item">
-                <a
-                  href={companyMemorandumPdf}
-                  download="ggc-company-memorandum.pdf"
-                >
+                <a href={companyMemorandumPdf} target="_blank">
                   <img src={companyMemorandum} />
                 </a>
                 <p>{this.props.lang.companysMemorandum}</p>
               </li>
               <li className="download-item">
-                <a href={memorandumPdf} download="ggc-legal-memorandum.pdf">
+                <a href={memorandumPdf} target="_blank">
                   <img src={memorandum} />
                 </a>
                 <p>{this.props.lang.legalMemorandum}</p>
