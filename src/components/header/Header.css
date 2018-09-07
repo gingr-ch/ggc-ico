@@ -98,9 +98,7 @@ div[direction="left"] {
 
   .gg-header-container__buttons button {
     width: auto;
-    max-height: 38px;
-    padding: 6px;
-    padding-left: 12px;
-    padding-right: 12px;
+    max-height: 28px;
+    padding: 3px 12px 4px;
   }
 }
