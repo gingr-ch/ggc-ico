@@ -101,11 +101,14 @@ class Login extends React.Component<any, any> {
   handleSignUp = async event => {
     event.preventDefault();
     this.setState({ error: false });
-    const { password } = event.target.elements;
-    const email: string = 'login@ggcico.io';
+    const { username, password } = event.target.elements;
+    // const email: string = 'login@ggcico.io';
 
     try {
-      await Base.auth().signInWithEmailAndPassword(email, password.value);
+      await Base.auth().signInWithEmailAndPassword(
+        username.value + '@ggcico.io',
+        password.value
+      );
       this.props.history.push('/');
     } catch (error) {
       this.setState({ error: true });

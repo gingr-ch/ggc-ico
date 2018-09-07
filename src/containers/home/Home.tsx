@@ -1,6 +1,10 @@
 import * as React from 'react';
 // import Loadable from 'react-loadable';
 // import { observer } from 'mobx-react';
+
+// Load firebase service
+import Base from '../../Base';
+
 import LazyLoad from 'react-lazyload';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
@@ -80,7 +84,10 @@ class Home extends React.Component<any, any> {
     super(props);
     this.handleLangChange = this.handleLangChange.bind(this);
     // this.state = { checked: true };
-    this.state = { lang: strings };
+    this.state = {
+      lang: strings,
+      user: null,
+    };
   }
 
   // handle state change when language is changed
@@ -93,18 +100,39 @@ class Home extends React.Component<any, any> {
     return strings.getLanguage();
   }
 
+  getUser = async () => {
+    let user;
+
+    try {
+      user = Base.auth().currentUser;
+      let name = user.email.substring(0, user.email.lastIndexOf('@'));
+
+      this.setState({ user: name });
+    } catch (error) {
+      throw error;
+    }
+  };
+
+  componentDidMount() {
+    this.getUser();
+  }
+
   render() {
     return (
       <div className="App">
         <BackToTop />
-        <Header lang={this.state.lang} langSelect={this.handleLangChange}>
+        <Header
+          lang={this.state.lang}
+          langSelect={this.handleLangChange}
+          user={this.state.user}
+        >
           <Nav lang={this.state.lang} />
         </Header>
         <Section bg="#eaeaea" top={true}>
           <Top lang={this.state.lang} />
         </Section>
         <Section bg="#4c306a" small={true}>
-          <PressReports lang={this.state.lang} />
+          <PressReports lang={this.state.lang} user={this.state.user} />
         </Section>
         <Section bg="#f39fff">
           <LazyLoad offset={1000} height={'100%'} once={true}>
@@ -160,7 +188,7 @@ class Home extends React.Component<any, any> {
         <ScrollableAnchor id={'ico-details'}>
           <Section bg="#4d346a">
             <LazyLoad offset={1000} height={'100%'} once={true}>
-              <IcoDetails lang={this.state.lang} />
+              <IcoDetails lang={this.state.lang} user={this.state.user} />
             </LazyLoad>
           </Section>
         </ScrollableAnchor>

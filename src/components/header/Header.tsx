@@ -15,13 +15,18 @@ const adminIco = 'https://admin.ggcico.io/auth/login';
 const whitepaperPdf = require('../../assets/docs/ggcoin-white_paper.pdf');
 
 class Header extends React.Component<any, any> {
-  state = {
-    right: false,
-  };
+  // state = {
+  //   right: false,
+  //   user: 'friends',
+  // };
 
   constructor(props: any) {
     super(props);
     // this.state = { strings: this.props.lang };
+    this.state = {
+      user: null,
+      right: false,
+    };
   }
 
   click(url: string) {
@@ -33,6 +38,24 @@ class Header extends React.Component<any, any> {
       [side]: open,
     });
   };
+
+  getUser = async () => {
+    try {
+      let user = this.props.user;
+      this.setState({ user: user });
+      console.warn(this.props.user);
+    } catch (error) {
+      throw error;
+    }
+  };
+
+  componentDidMount() {
+    this.getUser();
+  }
+
+  // componentDidUpdate() {
+  //   this.setState({ user: this.props.user });
+  // }
 
   render() {
     return (
@@ -60,13 +83,15 @@ class Header extends React.Component<any, any> {
             >
               {this.props.lang.whitepaper}
             </a>
-            <Button
-              click={() => this.click(adminIco)}
-              borderColor="#df9eff"
-              className="btn-login"
-            >
-              {this.props.lang.login}
-            </Button>
+            {this.state.user === 'friends' && (
+              <Button
+                click={() => this.click(adminIco)}
+                borderColor="#df9eff"
+                className="btn-login"
+              >
+                {this.props.lang.login}
+              </Button>
+            )}
           </div>
 
           <LanguageChanger

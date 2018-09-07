@@ -12,6 +12,10 @@ import Chart2 from '../../components/svgChart2/svgChart2';
 class IcoDetails extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
+
+    this.state = {
+      user: 'friends',
+    };
   }
 
   click() {
@@ -19,6 +23,7 @@ class IcoDetails extends React.Component<any, any> {
   }
 
   componentDidMount() {
+    this.setState({ user: this.props.user });
     setTimeout(() => {
       window.dispatchEvent(new Event('resize'));
       // tslint:disable-next-line:align
@@ -45,13 +50,15 @@ class IcoDetails extends React.Component<any, any> {
               1 GGC = 0.03 EUR
             </div>
             <div className="spacer" />
-            <Button
-              click={this.click}
-              borderColor="#00D646"
-              className="btn-buy-coins"
-            >
-              {this.props.lang.buyCoinsNow}
-            </Button>
+            {this.state.user === 'friends' && (
+              <Button
+                click={this.click}
+                borderColor="#00D646"
+                className="btn-buy-coins"
+              >
+                {this.props.lang.buyCoinsNow}
+              </Button>
+            )}
           </div>
 
           <div className="spacer hide-xs" />
