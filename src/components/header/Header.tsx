@@ -12,7 +12,7 @@ const gingrLogo = require(process.env.REACT_APP_MEDIA_URL + 'logo.png');
 const adminIco = 'https://admin.ggcico.io/auth/login';
 // const whitePaper =
 //   'https://docs.wixstatic.com/ugd/2eea42_b23b9045b42246c2ac4f7c6cbf5ee65c.pdf';
-const whitepaperPdf = require('../../assets/docs/ggcoin-white_paper.pdf');
+const whitepaperPdf = 'https://api.ggcoin.ch/download/pdf/ggc-white-paper.pdf';
 
 class Header extends React.Component<any, any> {
   // state = {
@@ -46,7 +46,6 @@ class Header extends React.Component<any, any> {
           <div className="gg-header-container__buttons">
             <a
               href={whitepaperPdf}
-              download="ggc-white-paper"
               style={{
                 textTransform: 'uppercase',
                 color: 'white',
@@ -60,6 +59,7 @@ class Header extends React.Component<any, any> {
                 cursor: 'pointer',
                 padding: '3px',
               }}
+              target="_blank"
             >
               {this.props.lang.whitepaper}
             </a>
