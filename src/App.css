@@ -315,9 +315,22 @@
   opacity: 0;
 }
 
-@media(max-width: 599px) {
-  .App-logo,
+@media(max-width: 967px) {
   .App .gg-nav {
+    display: none;
+  }
+
+  .App-logo {
+    margin: 0 auto 0 0;
+  }
+
+  .gg-header-container {
+    padding: 0 15px;
+  }
+}
+
+@media(max-width: 599px) {
+  .App-logo {
     display: none;
   }
 
@@ -401,7 +414,7 @@ h3 {
   .rc-dialog-wrap .rc-dialog .rc-dialog-close {
     top: 40px;
   }
-  
+
   .rc-dialog-body {
     padding: 0 !important;
   }

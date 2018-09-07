@@ -23,7 +23,7 @@ class Nav extends React.Component<any, any> {
     ));
 
     return (
-      <nav className={'gg-nav ' + (this.props.side ? 'gg-nav--side' : '')}>
+      <nav className={'gg-nav' + (this.props.side ? ' gg-nav--side' : '')}>
         <ul>{itemsList}</ul>
       </nav>
     );

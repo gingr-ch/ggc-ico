@@ -55,8 +55,8 @@
   flex-direction: column;
 }
 
-.nav-icon-bar1, 
-.nav-icon-bar2, 
+.nav-icon-bar1,
+.nav-icon-bar2,
 .nav-icon-bar3 {
   width: 30px;
   height: 2px;
@@ -82,11 +82,14 @@ div[direction="left"] {
   background-color: black !important;
 }
 
-@media(max-width: 599px) {
+@media(max-width: 967px) {
   .mobile-nav-button {
     display: flex;
+    margin-left: 10px;
   }
+}
 
+@media(max-width: 599px) {
   .gg-header-container {
     padding: 0 14px;
     max-width: 100vw;
