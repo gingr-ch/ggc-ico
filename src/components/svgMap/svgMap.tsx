@@ -1348,7 +1348,7 @@ const Map = (props: any) => (
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
         textTransform: 'uppercase',
       }}
-      transform="translate(282.086 477.772)"
+      transform="translate(282.086 497.772)"
     >
       {props.lang.europe}
     </text>
@@ -1359,7 +1359,7 @@ const Map = (props: any) => (
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
         textTransform: 'uppercase',
       }}
-      transform="translate(38.654 477.772)"
+      transform="translate(38.654 497.772)"
     >
       {props.lang.africa}
     </text>
@@ -1369,7 +1369,7 @@ const Map = (props: any) => (
       textAnchor="start"
       width={120}
       x="38.654"
-      y="185.62"
+      y="205.62"
       lineHeight="1.2em"
       style={{
         isolation: 'isolate',
@@ -1388,7 +1388,7 @@ const Map = (props: any) => (
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
         textTransform: 'uppercase',
       }}
-      transform="translate(281.894 202.62)"
+      transform="translate(281.894 223.62)"
     >
       {props.lang.southAmerica}
     </text>
@@ -1399,7 +1399,7 @@ const Map = (props: any) => (
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
         textTransform: 'uppercase',
       }}
-      transform="translate(531.659 202.397)"
+      transform="translate(531.659 223.62)"
     >
       {props.lang.australia}
     </text>
@@ -1410,7 +1410,7 @@ const Map = (props: any) => (
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
         textTransform: 'uppercase',
       }}
-      transform="translate(531.659 477.697)"
+      transform="translate(531.659 497.697)"
     >
       {props.lang.asia}
     </text>
