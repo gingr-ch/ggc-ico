@@ -262,10 +262,6 @@ class Top extends React.Component<any, any> {
             playsinline={false}
             style={{
               background: '#000000',
-              display: 'flex',
-              flexDirection: 'row',
-              alignItems: 'center',
-              justifyContent: 'center',
             }}
           />
         </div>
