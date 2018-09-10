@@ -43,7 +43,10 @@ class Instafuck extends React.Component<any, any> {
           <div className="spacer" />
           <div
             className="hide-xs"
-            style={{ width: '100%', overflow: 'hidden' }}
+            style={{
+              width: '100%',
+              overflow: 'hidden',
+            }}
           >
             <InstafuckChart lang={this.props.lang} />
           </div>
