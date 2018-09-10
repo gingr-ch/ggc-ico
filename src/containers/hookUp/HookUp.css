@@ -18,11 +18,10 @@
   margin-top: 0;
 }
 
-/*
+
 .hookup {
-  justify-content: flex-start;
+  min-height: 439px;
 }
-*/
 
 .hookup__phone {
   display: flex;
