@@ -35,8 +35,12 @@ const SocialSidebarContainer = styled.div`
     padding: 10px;
   }
 
-  @media (max-width: 599px) {
+  @media (max-width: 979px) {
     display: none;
+  }
+
+  @media screen and (max-width: 979px) and (orientation: landscape) {
+    top: 30%;
   }
 `;
 

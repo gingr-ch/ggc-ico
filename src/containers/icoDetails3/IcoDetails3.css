@@ -6,6 +6,17 @@
   color: #F39FFF;
   text-transform: uppercase;
   font-weight: normal;
+  text-align: left;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.gg-section-container--ico-details3 .title > div {
+  margin-right: 15px;
+  flex: 0 0 19%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .gg-section-container--ico-details3 .title.title--yellow {

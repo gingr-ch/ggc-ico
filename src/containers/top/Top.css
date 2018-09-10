@@ -93,7 +93,6 @@
 .close-button__image {
   width: 40px;
   height: 40px;
-  z-index: 19;
   fill: white;
   opacity: 0;
   visibility: hidden;
@@ -142,6 +141,18 @@
   top: 1em;
   position: absolute;
   right: 1em;
+  z-index: 19;
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  .gg-h1 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .gg-top-left__container {
+    padding-top: 15px;
+  }
 }
 
 @media(max-width: 599px) {

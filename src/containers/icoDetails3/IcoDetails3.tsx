@@ -57,17 +57,18 @@ class IcoDetails3 extends React.Component<any, any> {
                 className="coin-supply-values flex-column"
                 style={{ alignItems: 'flex-start', paddingTop: '32px' }}
               >
-                <div className="title title--cyan">
-                  50% {this.props.lang.publicSale}
+                <div className="title title--cyan flex-row">
+                  <div>50%</div> {this.props.lang.publicSale}
                 </div>
-                <div className="title title--pink">
-                  30% {this.props.lang.companyReserve}
+                <div className="title title--pink flex-row">
+                  <div>30%</div> {this.props.lang.companyReserve}
                 </div>
-                <div className="title title--purple">
-                  15% {this.props.lang.strategicPartnerships}
+                <div className="title title--purple flex-row">
+                  <div>15%</div> {this.props.lang.strategicPartnerships}
                 </div>
-                <div className="title" style={{ maxWidth: '182px' }}>
-                  5% {this.props.lang.earlySupportersAndAngelInvestors}
+                <div className="title flex-row" style={{ maxWidth: '182px' }}>
+                  <div>5%</div>{' '}
+                  {this.props.lang.earlySupportersAndAngelInvestors}
                 </div>
               </div>
             </OnVisible>
