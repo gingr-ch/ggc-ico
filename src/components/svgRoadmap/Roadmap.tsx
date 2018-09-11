@@ -119,7 +119,7 @@ const Roadmap = (props: any) => (
     <Text
       verticalAnchor="start"
       textAnchor="end"
-      width={140}
+      width={150}
       x="155.558"
       y="358.229"
       lineHeight="1.2em"
@@ -135,7 +135,7 @@ const Roadmap = (props: any) => (
     <Text
       verticalAnchor="start"
       textAnchor="end"
-      width={140}
+      width={150}
       x="155.515"
       y="376.655"
       lineHeight="1.2em"
