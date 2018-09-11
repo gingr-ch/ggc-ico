@@ -20,7 +20,7 @@ const SocialSidebarContainer = styled.div`
   align-items: center;
   background: #4d346a;
   position: fixed;
-  top: 50%;
+  top: 43%;
   left: 0;
   z-index: 10;
   max-width: 80px;

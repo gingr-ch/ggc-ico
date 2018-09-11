@@ -5,7 +5,7 @@ import { goToAnchor } from 'react-scrollable-anchor';
 const NavContainer = styled.div`
   position: fixed;
   right: 0;
-  top: 40%;
+  top: 42%;
   width: 40px;
   overflow-x: visible;
   z-index: 8;
