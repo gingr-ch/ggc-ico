@@ -35,6 +35,16 @@
 .gg-section-container--ico-details .slider li:first-child {
   padding: 50px;
 }
+
+.gg-section-container--ico-details .slider .slider-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.gg-section-container--ico-details .slider .slider-slide svg {
+  width: 100%;
+}
 /*
 .gg-section-container--ico-details .slider ul {
   min-height: 488px;
