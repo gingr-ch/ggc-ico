@@ -75,16 +75,16 @@ class Download extends React.Component<any, any> {
                 <p>{this.props.lang.lightpaper}</p>
               </li>
               <li className="download-item">
-                <a href={companyMemorandumPdf} target="_blank">
-                  <img src={companyMemorandum} />
-                </a>
-                <p>{this.props.lang.companysMemorandum}</p>
-              </li>
-              <li className="download-item">
                 <a href={memorandumPdf} target="_blank">
                   <img src={memorandum} />
                 </a>
                 <p>{this.props.lang.legalMemorandum}</p>
+              </li>
+              <li className="download-item">
+                <a href={companyMemorandumPdf} target="_blank">
+                  <img src={companyMemorandum} />
+                </a>
+                <p>{this.props.lang.companysMemorandum}</p>
               </li>
             </ul>
           </OnVisible>
