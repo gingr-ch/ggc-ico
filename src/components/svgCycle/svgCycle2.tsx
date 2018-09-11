@@ -353,7 +353,7 @@ const Cycle = (props: any) => (
     <Text
       verticalAnchor="start"
       textAnchor="end"
-      width="80"
+      width={120}
       x="104.359"
       y="380.675"
       lineHeight="1.4em"
