@@ -20,7 +20,7 @@ const Roadmap = (props: any) => (
     <Text
       verticalAnchor="start"
       textAnchor="end"
-      width={140}
+      width={200}
       x="155.558"
       y="50.323"
       lineHeight="1.2em"
