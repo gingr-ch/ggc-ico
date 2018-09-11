@@ -204,7 +204,7 @@ const Cycle = (props: any) => (
     <Text
       verticalAnchor="start"
       textAnchor="start"
-      width="70"
+      width={100}
       x="454.092"
       y="310.208"
       lineHeight="1.4em"
@@ -249,7 +249,7 @@ const Cycle = (props: any) => (
     <Text
       verticalAnchor="start"
       textAnchor="start"
-      width="60"
+      width={80}
       x="390.745"
       y="247.455"
       lineHeight="1.4em"
@@ -265,7 +265,7 @@ const Cycle = (props: any) => (
     <Text
       verticalAnchor="start"
       textAnchor="end"
-      width="60"
+      width={100}
       x="302.1"
       y="359.413"
       lineHeight="1.4em"
