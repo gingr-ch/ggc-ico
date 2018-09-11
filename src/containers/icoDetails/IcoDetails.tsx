@@ -38,7 +38,8 @@ class IcoDetails extends React.Component<any, any> {
           <div className="spacer" />
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <div style={{ fontSize: '24px', marginBottom: '16px' }}>
-              {this.props.lang.privateSaleNow}
+              {this.props.lang.privateSale}{' '}
+              {this.state.user === 'friends' && this.props.lang.now}
             </div>
             <div className="color-green" style={{ fontSize: '30px' }}>
               75% {this.props.lang.discount}
