@@ -9,6 +9,7 @@
   text-align: left;
   justify-content: flex-start;
   align-items: flex-start;
+  max-width: 272px;
 }
 
 .gg-section-container--ico-details3 .title > div {

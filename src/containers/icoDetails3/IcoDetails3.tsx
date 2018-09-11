@@ -66,7 +66,7 @@ class IcoDetails3 extends React.Component<any, any> {
                 <div className="title title--purple flex-row">
                   <div>15%</div> {this.props.lang.strategicPartnerships}
                 </div>
-                <div className="title flex-row" style={{ maxWidth: '182px' }}>
+                <div className="title flex-row">
                   <div>5%</div>{' '}
                   {this.props.lang.earlySupportersAndAngelInvestors}
                 </div>
