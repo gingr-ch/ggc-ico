@@ -50,3 +50,9 @@
     padding: 0;
   }
 }
+
+@media(max-width: 320px) {
+  .gg-section-container--strong-solution .app-header {
+    font-size: 30px;
+  }
+}
