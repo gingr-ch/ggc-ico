@@ -36,6 +36,10 @@
   padding: 50px;
 }
 
+.gg-section-container--ico-details .slider li:first-child svg {
+  height: 364.72px;
+}
+
 .gg-section-container--ico-details .slider .slider-slide {
   display: flex !important;
   justify-content: center;
