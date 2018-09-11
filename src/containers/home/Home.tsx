@@ -41,6 +41,7 @@ import ContactUs from '../contactUs/ContactUs';
 import Footer from '../footer/Footer';
 import BackToTop from '../../components/backToTop/BackToTop';
 import SocialSidebar from '../../components/socialSidebar/SocialSidebar';
+import DotNav from '../../components/dotNav/DotNav';
 
 class Home extends React.Component<any, any> {
   constructor(props: object) {
@@ -190,6 +191,7 @@ class Home extends React.Component<any, any> {
           <Footer lang={this.state.lang} />
         </Section>
         <SocialSidebar />
+        <DotNav lang={this.state.lang} />
       </div>
     );
   }
