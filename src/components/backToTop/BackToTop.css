@@ -11,12 +11,12 @@
   */
   opacity: 1;
   visibility: visible;
-  transform: scale(1);
+  transform: scale3d(1, 1, 1);
   transition: all .2s ease-in;
 }
 
 .btt-btn.hidden {
   opacity: 0;
   visibility: hidden;
-  transform: scale(0);
+  transform: scale3d(0, 0, 0);
 }
