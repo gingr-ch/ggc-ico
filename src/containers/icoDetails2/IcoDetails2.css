@@ -78,4 +78,11 @@
   .gg-section-container--ico-details2 .gg-content-container {
     overflow-x: scroll;
   }
+
+  .gg-section-container--ico-details2 .gg-content-container .hidden-content.visible .table-arrow {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: scale3d(1, 1 ,1);
+  }
 }

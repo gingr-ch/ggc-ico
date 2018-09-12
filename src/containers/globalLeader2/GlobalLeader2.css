@@ -69,23 +69,23 @@
   opacity: 0;
   visibility: hidden;
   transform: scale3d(0, 1 ,1);
-  transition: all .2s ease-in;
+  transition: transform .2s ease-in 1.5s;
+  position: absolute;
+  top: -9px;
+  z-index: 3;
 }
 
-.table-arrow svg {
+.table-arrow svg path {
   fill: rgba(255, 255, 255, .6);
 }
 
 @media(max-width: 599px) {
   .gg-section-container--global-leader2 .gg-content-container {
     padding: 0;
-    overflow-y: scroll;
+    overflow-x: scroll;
   }
 
-  .gg-section-container--global-leader2 .gg-content-container .table-arrow {
-    position: absolute;
-    top: -9px;
-    z-index: 3;
+  .gg-section-container--global-leader2 .gg-content-container .hidden-content.visible .table-arrow {
     display: block;
     opacity: 1;
     visibility: visible;

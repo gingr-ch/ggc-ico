@@ -14,9 +14,11 @@ class GlobalLeader2 extends React.Component<any, any> {
     return (
       <div className="gg-section-container gg-section-container--global-leader2">
         <div className="gg-content-container">
-          <div className="table-arrow">
-            <Arrows />
-          </div>
+          <OnVisible className="hidden-content hidden-content--arrows">
+            <div className="table-arrow">
+              <Arrows />
+            </div>
+          </OnVisible>
           <OnVisible className="hidden-content hidden-content--flip-in-right hidden-content--ico-details2">
             <table className="table-market-cap">
               <tbody>

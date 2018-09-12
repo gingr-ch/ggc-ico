@@ -3,7 +3,7 @@ import OnVisible from 'react-on-visible';
 
 import './IcoDetails2.css';
 
-// const gingr = require(process.env.REACT_APP_MEDIA_URL + 'gingr_left.png');
+import Arrows from '../../components/svgArrows/svgArrows';
 
 class IcoDetails2 extends React.Component<any, any> {
   constructor(props: any) {
@@ -14,6 +14,11 @@ class IcoDetails2 extends React.Component<any, any> {
     return (
       <div className="gg-section-container gg-section-container--ico-details2">
         <div className="gg-content-container">
+          <OnVisible className="hidden-content hidden-content--arrows">
+            <div className="table-arrow">
+              <Arrows />
+            </div>
+          </OnVisible>
           <OnVisible className="hidden-content hidden-content--flip-in-right hidden-content--ico-details2">
             <table className="table-private-sale">
               <tbody>

@@ -58,7 +58,8 @@
   transform: translate3d(0, 0, 0);
 }
 
-.hidden-content.hidden-content--flip-in-right {
+.hidden-content.hidden-content--flip-in-right,
+.hidden-content.hidden-content--arrows {
   transform: translate3d(0, 0, 0);
 }
 
@@ -121,6 +122,15 @@
 .hidden-content.visible.hidden-content--zoom-in {
   transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
   transition-duration: .6s;
+}
+
+.hidden-content.visible.hidden-content--arrows {
+  transition-delay: 1.5s;
+  overflow: visible;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 6;
 }
 
 
