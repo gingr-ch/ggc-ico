@@ -69,4 +69,11 @@
     padding: 0;
     overflow-y: scroll;
   }
+
+  .gg-section-container--global-leader2 .gg-content-container .table-arrow {
+    position: absolute;
+    top: -63px;
+    font-size: 80px;
+    z-index: 3;
+  }
 }
