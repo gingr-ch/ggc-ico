@@ -17,6 +17,8 @@ const olha = require(process.env.REACT_APP_MEDIA_URL + 'team/olha.jpg');
 const jeff = require(process.env.REACT_APP_MEDIA_URL + 'team/jeff.jpg');
 const taras = require(process.env.REACT_APP_MEDIA_URL + 'team/taras.jpg');
 const sergiy = require(process.env.REACT_APP_MEDIA_URL + 'team/sergiy.jpg');
+const linkedin = require(process.env.REACT_APP_MEDIA_URL +
+  'icons/linkedin_tiny.png');
 
 // require thumbnails
 const vladThumb = require(process.env.REACT_APP_MEDIA_URL +
@@ -43,6 +45,9 @@ const southAfrica = require(process.env.REACT_APP_MEDIA_URL +
   'flags/south-africa.png');
 const ukraine = require(process.env.REACT_APP_MEDIA_URL + 'flags/ukraine.png');
 
+const social = (url: string) => {
+  window.open(url, '_blank');
+};
 class TeamList extends React.Component<any, any> {
   state = {
     visible: false,
@@ -58,6 +63,7 @@ class TeamList extends React.Component<any, any> {
       name: '',
       role: '',
       description: '',
+      linkedin: '',
     },
   };
 
@@ -134,6 +140,7 @@ class TeamList extends React.Component<any, any> {
         name: 'Yurii Firs',
         role: this.props.lang.cto,
         description: this.props.lang.imAWebWhiz,
+        linkedin: 'https://www.linkedin.com/in/yuriyfirs/',
       },
       {
         id: 4,
@@ -152,6 +159,7 @@ class TeamList extends React.Component<any, any> {
         name: 'Olha Koshchuk',
         role: this.props.lang.projectManager,
         description: this.props.lang.hiImOlha,
+        linkedin: 'https://www.linkedin.com/in/olha-koshchuk/',
       },
       {
         id: 6,
@@ -170,6 +178,7 @@ class TeamList extends React.Component<any, any> {
         name: 'Taras Kohanets',
         role: this.props.lang.seniorDeveloper,
         description: this.props.lang.imTerry,
+        linkedin: 'https://www.linkedin.com/in/terry-kohanets-280b52159/',
       },
       {
         id: 8,
@@ -179,6 +188,7 @@ class TeamList extends React.Component<any, any> {
         name: 'Sergiy Voitovych',
         role: this.props.lang.techLead + ' - ' + this.props.lang.webLogic,
         description: this.props.lang.imSerhii,
+        linkedin: 'https://www.linkedin.com/in/sergiyvoytovych/',
       },
     ];
 
@@ -245,6 +255,15 @@ class TeamList extends React.Component<any, any> {
                 }}
               />
             </div>
+            {this.state.profile.linkedin && (
+              <div className="ceo-details__social">
+                <img
+                  src={linkedin}
+                  alt="linkedin logo"
+                  onClick={() => social(this.state.profile.linkedin)}
+                />
+              </div>
+            )}
           </div>
           <div className="rc-dialog-body__text flex-column">
             <h2
