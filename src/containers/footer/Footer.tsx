@@ -66,16 +66,8 @@ class Footer extends React.Component<any, any> {
         phone: '45 89 87 40 99',
       },
       {
-        country: this.props.lang.france,
-        phone: '33 1 86 26 66 22',
-      },
-      {
         country: this.props.lang.netherlands,
-        phone: '31 85 888 6189',
-      },
-      {
-        country: this.props.lang.italy,
-        phone: '39 099 944 0069',
+        phone: '31 13 808 0077',
       },
       {
         country: this.props.lang.portugal,
@@ -86,16 +78,8 @@ class Footer extends React.Component<any, any> {
         phone: '358 9 424 550 10',
       },
       {
-        country: this.props.lang.norway,
-        phone: '47 23 96 63 96',
-      },
-      {
         country: this.props.lang.sweden,
         phone: '46 76 466 70 77',
-      },
-      {
-        country: this.props.lang.czechRepublic,
-        phone: '420 228 883 012',
       },
       {
         country: this.props.lang.hungary,
@@ -120,10 +104,6 @@ class Footer extends React.Component<any, any> {
       {
         country: this.props.lang.latvia,
         phone: '371 66 163 771',
-      },
-      {
-        country: this.props.lang.lithuania,
-        phone: '370 447 20340',
       },
       {
         country: this.props.lang.romania,
@@ -216,7 +196,7 @@ class Footer extends React.Component<any, any> {
                     flex: '1 1 50%',
                   }}
                 >
-                  {locations.slice(0, 15).map((location, i) => (
+                  {locations.slice(0, 13).map((location, i) => (
                     <div key={i} className="locations-item flex-row">
                       <div>{location.country}</div>
                       <div>+ {location.phone}</div>
@@ -231,7 +211,7 @@ class Footer extends React.Component<any, any> {
                     flex: '1 1 50%',
                   }}
                 >
-                  {locations.slice(15).map((location, i) => (
+                  {locations.slice(13).map((location, i) => (
                     <div key={i} className="locations-item flex-row">
                       <div>{location.country}</div>
                       <div>+ {location.phone}</div>
