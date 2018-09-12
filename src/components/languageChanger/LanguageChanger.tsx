@@ -5,8 +5,6 @@ import Cookies from 'universal-cookie';
 import 'flag-icon-css/css/flag-icon.min.css';
 import './LanguageChanger.css';
 
-// const gingr = require(process.env.REACT_APP_MEDIA_URL + 'gingr_necklace.png');
-
 interface LanguageChangerProps {
   image?: string;
   title?: string;
@@ -111,7 +109,7 @@ class LanguageChanger extends React.Component<any, LanguageChangerProps> {
     });
     this.setFlag(option);
     this.props.langSelect(option);
-    console.warn(cookies.get('vr-lang'));
+    // console.warn(cookies.get('vr-lang'));
   };
 
   componentDidMount() {
