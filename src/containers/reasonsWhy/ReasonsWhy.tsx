@@ -1,13 +1,13 @@
 import * as React from 'react';
-// import LocalizedStrings from 'react-localization';
-// import { ReasonsWhyStrings } from '../../components/l18n';
-// import OnVisible from 'react-on-visible';
-// import { PoseGroup } from 'react-pose';
+import Img from 'react-image';
+import ReactCSSTransitionReplace from 'react-css-transition-replace';
 
 import './ReasonsWhy.css';
 import OnVisible from 'react-on-visible';
 
 const gingr = require(process.env.REACT_APP_MEDIA_URL + 'reasons-why.png');
+const gingrThumb = require(process.env.REACT_APP_MEDIA_URL +
+  'thumbs/reasons-why.png');
 
 // export const langEn = require('../../assets/l18n/reasons-why.en.json');
 // export const strings: ReasonsWhyStrings = new LocalizedStrings({
@@ -29,10 +29,36 @@ class ReasonsWhy extends React.Component<any, any> {
 
           <div className="flex-row reasons-why-container">
             <div>
-              <img
+              <Img
                 src={gingr}
-                style={{ maxWidth: '360px', width: '100%' }}
-                alt=""
+                style={{
+                  maxWidth: '360px',
+                  width: '100%',
+                  height: '100%',
+                  maxHeight: '728.217px',
+                }}
+                loader={
+                  <Img
+                    src={gingrThumb}
+                    style={{
+                      maxWidth: '360px',
+                      width: '100%',
+                      height: '100%',
+                      maxHeight: '728.217px',
+                      filter: 'blur(10px)',
+                    }}
+                  />
+                }
+                container={children => {
+                  return (
+                    <ReactCSSTransitionReplace
+                      transitionName="fade-wait"
+                      changeWidth={false}
+                    >
+                      {children}
+                    </ReactCSSTransitionReplace>
+                  );
+                }}
               />
             </div>
             <div className="reasons-why-list">

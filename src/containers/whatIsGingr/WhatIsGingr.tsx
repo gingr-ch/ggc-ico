@@ -2,8 +2,6 @@ import * as React from 'react';
 import ReactPlayer from 'react-player';
 import OnVisible from 'react-on-visible';
 import classNames from 'classnames';
-// import LocalizedStrings from 'react-localization';
-// import { WhatIsGingrStrings } from '../../components/l18n';
 
 import './WhatIsGingr.css';
 
@@ -15,7 +13,7 @@ const agencyIcon = require(process.env.REACT_APP_MEDIA_URL +
 const establishmentIcon = require(process.env.REACT_APP_MEDIA_URL +
   'icons/establishment.png');
 
-// const clientVideo = require('../../assets/video/client-video_en.m4v');
+// require videos
 const gingrVideo = require('../../assets/video/gingr-video.m4v');
 const establishmentVideo = require('../../assets/video/establishment-video.m4v');
 
