@@ -243,3 +243,11 @@
     top: 25px;
   }
 }
+
+
+@media(max-width: 320px) {
+  .gg-h1 {
+    font-size: 19px;
+    line-height: 27px;
+  }
+}
