@@ -73,3 +73,9 @@
     font-size: 14px;
   }
 }
+
+@media(max-width: 320px) {
+  .gg-section-container--ico-details2 .gg-content-container {
+    overflow-x: scroll;
+  }
+}
