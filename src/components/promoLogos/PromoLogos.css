@@ -45,7 +45,7 @@
     margin-bottom: 0;
     order: 6;
   }
-  
+
   .promo-logos .press-logos {
     max-width: 80%;
     margin: 0 auto;
@@ -56,7 +56,7 @@
     margin-bottom: 56px;
   }
   */
-  
+
   .promo-logos .press-logo img {
     max-height: 38px;
     margin: 0 auto;
@@ -66,5 +66,11 @@
 @media(max-width: 376px) {
   .promo-logos .press-logo img {
     max-height: 34px;
+  }
+}
+
+@media(max-width: 320px) {
+  .promo-logos .press-logos {
+    margin-top: 40px;
   }
 }

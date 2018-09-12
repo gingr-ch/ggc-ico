@@ -98,6 +98,7 @@ class PromoLogos extends React.Component<any, any> {
             initialSlideHeight={54}
             wrapAround={true}
             slidesToShow={this.slides}
+            cellSpacing={10}
             renderCenterLeftControls={({ previousSlide }) => (
               <button
                 style={{ background: 'none', color: 'white', border: 'none' }}
