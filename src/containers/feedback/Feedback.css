@@ -20,7 +20,7 @@
 
 .feedback-newsletter__form {
   width: 100%;
-  max-width: 500px;
+  /* max-width: 500px; */
   position: relative;
   align-items: stretch;
 }
@@ -96,12 +96,13 @@
 }
 
 .feedback-input {
-    background: rgba(150, 48, 176, 1);
-    color: white;
-    border: none;
-    padding: 8px;
-    width: 100%;
-    margin-right: 12px;
+  background: rgba(150, 48, 176, 1);
+  color: white;
+  border: none;
+  padding: 8px;
+  width: 100%;
+  margin-right: 12px;
+  font-size: 16px;
 }
 
 .feedback-input::placeholder {
