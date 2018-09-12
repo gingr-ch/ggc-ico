@@ -34,8 +34,9 @@
 }
 
 .gg-section-container--feedback button {
-    padding: 9px 24px;
-    flex: 0 0 auto;
+  padding: 9px 24px;
+  flex: 0 0 auto;
+  transition: all .2s ease;
 }
 
 .feedback-social {
@@ -108,6 +109,12 @@
 .feedback-input::placeholder {
     color: white;
 }
+
+.gg-section-container--feedback button.btn-sent {
+  background: var(--green);
+  border-color: var(--green) !important;
+}
+
 
 @media(max-width: 599px) {
   .gg-section-container--feedback .app-header {

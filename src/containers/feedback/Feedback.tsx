@@ -139,7 +139,11 @@ class Feedback extends React.Component<any, any> {
                 onChange={this.handleChange}
                 value={email}
               />
-              <Button borderColor={'#f29eff'} btnType="submit">
+              <Button
+                borderColor={'#f29eff'}
+                btnType="submit"
+                className={sent && 'btn-sent'}
+              >
                 {sending &&
                   !sent && (
                     <svg
