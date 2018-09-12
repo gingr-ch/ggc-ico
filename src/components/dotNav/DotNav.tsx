@@ -58,6 +58,14 @@ const NavDot = styled.div`
     opacity: 1;
     visibility: visible;
   }
+
+  @media (max-width: 979px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 979px) and (orientation: landscape) {
+    top: 30%;
+  }
 `;
 
 const click = (event: any, item: any) => {
