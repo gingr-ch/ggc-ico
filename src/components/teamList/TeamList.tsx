@@ -40,10 +40,10 @@ const sergiyThumb = require(process.env.REACT_APP_MEDIA_URL +
 
 // require flags
 const swiss = require(process.env.REACT_APP_MEDIA_URL +
-  'flags/switzerland.png');
+  'flags/switzerland.svg');
 const southAfrica = require(process.env.REACT_APP_MEDIA_URL +
-  'flags/south-africa.png');
-const ukraine = require(process.env.REACT_APP_MEDIA_URL + 'flags/ukraine.png');
+  'flags/south-africa.svg');
+const ukraine = require(process.env.REACT_APP_MEDIA_URL + 'flags/ukraine.svg');
 
 const social = (url: string) => {
   window.open(url, '_blank');

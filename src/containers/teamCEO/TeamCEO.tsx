@@ -9,7 +9,7 @@ import './TeamCEO.css';
 const image = require(process.env.REACT_APP_MEDIA_URL + 'teamCEO.jpg');
 const thumb = require(process.env.REACT_APP_MEDIA_URL + 'thumbs/teamCEO.jpg');
 const ceoFlag = require(process.env.REACT_APP_MEDIA_URL +
-  'flags/switzerland.png');
+  'flags/switzerland.svg');
 const linkedin = require(process.env.REACT_APP_MEDIA_URL +
   'icons/linkedin_tiny.png');
 
