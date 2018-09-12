@@ -1,6 +1,6 @@
 .App > :nth-child(3) {
   /* height: calc(100% - 73px) !important; */
-  min-height: calc(100vh - 73px) !important;
+  min-height: calc(100% - 73px) !important;
 }
 
 .gg-top-left {
@@ -166,7 +166,7 @@
 
   .gg-top-left {
     flex: 1 1 100%;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
   }
