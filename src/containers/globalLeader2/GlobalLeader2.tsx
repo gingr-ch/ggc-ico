@@ -3,6 +3,8 @@ import OnVisible from 'react-on-visible';
 
 import './GlobalLeader2.css';
 
+import Arrows from '../../components/svgArrows/svgArrows';
+
 class GlobalLeader2 extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
@@ -12,7 +14,9 @@ class GlobalLeader2 extends React.Component<any, any> {
     return (
       <div className="gg-section-container gg-section-container--global-leader2">
         <div className="gg-content-container">
-          <div className="table-arrow">&#x2194;</div>
+          <div className="table-arrow">
+            <Arrows />
+          </div>
           <OnVisible className="hidden-content hidden-content--flip-in-right hidden-content--ico-details2">
             <table className="table-market-cap">
               <tbody>

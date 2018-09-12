@@ -64,6 +64,18 @@
   font-weight: bold;
 }
 
+.table-arrow {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale3d(0, 1 ,1);
+  transition: all .2s ease-in;
+}
+
+.table-arrow svg {
+  fill: rgba(255, 255, 255, .6);
+}
+
 @media(max-width: 599px) {
   .gg-section-container--global-leader2 .gg-content-container {
     padding: 0;
@@ -72,8 +84,11 @@
 
   .gg-section-container--global-leader2 .gg-content-container .table-arrow {
     position: absolute;
-    top: -63px;
-    font-size: 80px;
+    top: -14px;
     z-index: 3;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: scale3d(1, 1 ,1);
   }
 }
