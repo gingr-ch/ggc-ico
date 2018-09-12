@@ -204,7 +204,16 @@ class TeamList extends React.Component<any, any> {
         destroyOnClose={this.state.destroyOnClose}
       >
         <div className="rc-dialog-body__content flex-row">
-          <div style={{ background: '#802e7a', padding: '40px' }}>
+          <div
+            style={{
+              background: '#802e7a',
+              padding: '40px',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              alignItems: 'flex-start',
+            }}
+          >
             <div
               style={{
                 position: 'relative',
