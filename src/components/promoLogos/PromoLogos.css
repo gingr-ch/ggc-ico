@@ -34,10 +34,12 @@
 
 .promo-logos .slider-control-centerleft {
   left: -35px !important;
+  top: 26% !important;
 }
 
 .promo-logos .slider-control-centerright {
   right: -35px !important;
+  top: 26% !important;
 }
 
 @media(max-width: 599px) {
