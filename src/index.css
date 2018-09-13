@@ -19,11 +19,11 @@
 * {
   font-family: 'Asap', sans-serif;
   outline: 0;
-  font-smooth: auto;
 }
 
 p {
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
