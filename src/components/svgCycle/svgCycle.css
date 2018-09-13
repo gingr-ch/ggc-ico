@@ -1,3 +1,7 @@
+.svg-cycle {
+  overflow: visible;
+}
+
 .cycle-header,
 .cycle-header tspan {
   font-family: brandon_grotesquebold;
