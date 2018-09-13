@@ -144,6 +144,20 @@
   z-index: 19;
 }
 
+.suisse-ico-logo {
+  max-height: 50px;
+  margin-top: 2em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1em;
+  font-size: 25px;
+}
+
+.suisse-ico-logo img {
+  margin-right: 8px;
+}
+
 @media screen and (max-width: 767px) and (orientation: landscape) {
   .gg-h1 {
     font-size: 34px;

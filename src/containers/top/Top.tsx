@@ -10,12 +10,14 @@ import './Top.css';
 
 import Button from '../../components/button/Button';
 import PromoLogos from '../../components/promoLogos/PromoLogos';
-import SuisseIco from '../../components/svgSuisseIco/svgSuisseIco';
+// import SuisseIco from '../../components/svgSuisseIco/svgSuisseIco';
 import LegallyApproved from '../../components/svgLegallyApproved/svgLegallyApproved';
 import Finma from '../../components/svgFinma/svgFinma';
 import LegalContent from '../../components/legalContent/LegalContent';
 
 const video = require('../../assets/video/promo.m4v');
+const swiss = require(process.env.REACT_APP_MEDIA_URL +
+  'flags/switzerland.svg');
 
 class Top extends React.Component<any, any> {
   player: any;
@@ -160,12 +162,13 @@ class Top extends React.Component<any, any> {
                 "{this.props.lang.revolutionizingTheOldestIndustryInTheWorld}"
               </h1>
             </div>
-            <SuisseIco
-              width="150px"
-              style={{ marginTop: '2em', overflow: 'visible' }}
-              className="suisse-ico-logo"
-              lang={this.props.lang}
-            />
+            <div className="suisse-ico-logo">
+              <img
+                src={swiss}
+                alt="Swiss flag icon"
+              />
+              {this.props.lang.suisseIco}
+            </div>
 
             <div className="play-button">
               <Button
