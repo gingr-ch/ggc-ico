@@ -7,7 +7,7 @@ const Finma = (props: any) => (
       <text
         transform="translate(2.239 13.501)"
         style={{
-          fontSize: '2.84131px',
+          fontSize: '2.44131px',
           fill: '#fff',
           fontFamily: 'Asap, sans-serif',
           fontWeight: 700,
@@ -50,7 +50,7 @@ const Finma = (props: any) => (
         style={{ fill: '#f195ff' }}
       />
       <text
-        transform="translate(9.065 8.003) scale(1.139 1)"
+        transform="translate(8.765 8.003) scale(1.139 1)"
         style={{
           fontSize: '3.86978px',
           fill: '#fff',

@@ -23,7 +23,7 @@ const LegallyApproved = (props: any) => (
         style={{ fill: '#f195ff' }}
       />
       <text
-        transform="translate(3.122 18.343)"
+        transform="translate(1.822 18.143)"
         style={{
           fontSize: '3.95165px',
           fill: '#fff',
@@ -34,7 +34,7 @@ const LegallyApproved = (props: any) => (
         GG COIN ICO
       </text>
       <text
-        transform="translate(11.661 22.564)"
+        transform="translate(10.961 22.564)"
         style={{
           fontSize: '2.8462860584259033px',
           fill: '#fff',
@@ -46,7 +46,7 @@ const LegallyApproved = (props: any) => (
         2018
       </text>
       <text
-        transform="translate(6 7.98)"
+        transform="translate(5.6 7.98)"
         style={{
           fontSize: '4.07611px',
           fill: '#fff',
