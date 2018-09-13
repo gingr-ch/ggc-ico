@@ -5,15 +5,19 @@ const Finma = (props: any) => (
     <title>Finma</title>
     <g id="finma" data-name="Finma">
       <text
-        transform="translate(2.239 13.501)"
+        transform="translate(0 3.7)"
         style={{
-          fontSize: '2.44131px',
+          fontSize: '2.74131px',
           fill: '#fff',
           fontFamily: 'Asap, sans-serif',
           fontWeight: 700,
           letterSpacing: '0.015948576789397914em',
         }}
         className="stamp-hover"
+        x="50%"
+        y="50%"
+        alignment-baseline="middle"
+        text-anchor="middle"
       >
         APPROVAL PENDING
       </text>

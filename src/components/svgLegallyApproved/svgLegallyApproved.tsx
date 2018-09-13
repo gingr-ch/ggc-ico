@@ -23,18 +23,22 @@ const LegallyApproved = (props: any) => (
         style={{ fill: '#f195ff' }}
       />
       <text
-        transform="translate(1.822 18.143)"
+        transform="translate(0 5)"
         style={{
           fontSize: '3.95165px',
           fill: '#fff',
           fontFamily: 'Asap, sans-serif',
           fontWeight: 700,
         }}
+        x="50%"
+        y="50%"
+        alignment-baseline="middle"
+        text-anchor="middle"
       >
         GG COIN ICO
       </text>
       <text
-        transform="translate(10.961 22.564)"
+        transform="translate(0 0)"
         style={{
           fontSize: '2.8462860584259033px',
           fill: '#fff',
@@ -42,11 +46,15 @@ const LegallyApproved = (props: any) => (
           fontWeight: 700,
         }}
         className="stamp-hover"
+        x="50%"
+        y="90%"
+        alignment-baseline="middle"
+        text-anchor="middle"
       >
         2018
       </text>
       <text
-        transform="translate(5.6 7.98)"
+        transform="translate(0 0.98)"
         style={{
           fontSize: '4.07611px',
           fill: '#fff',
@@ -55,10 +63,14 @@ const LegallyApproved = (props: any) => (
           letterSpacing: '0.016092501217938326em',
         }}
         className="stamp-hover"
+        x="50%"
+        y="25%"
+        alignment-baseline="middle"
+        text-anchor="middle"
       >
         LEGALLY
         <tspan style={{ letterSpacing: '0.015896251203085417em' }}>
-          <tspan x="-1.654" y="4.976">
+          <tspan x="50%" y="48%">
             APPROVED
           </tspan>
         </tspan>
