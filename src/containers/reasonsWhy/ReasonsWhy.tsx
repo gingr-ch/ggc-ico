@@ -81,7 +81,7 @@ class ReasonsWhy extends React.Component<any, any> {
                 </div>
                 <div className="reasons-why-list__item flex-row">
                   <div className="number">5</div>
-                  <div>{this.props.lang.weBuyBackGGC}</div>
+                  <div>{this.props.lang.equityGingrShare}</div>
                 </div>
                 <div
                   className="reasons-why-list__item flex-row"
