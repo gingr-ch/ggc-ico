@@ -814,7 +814,7 @@ const BlockchainChart = (props: any) => (
       <Text
         verticalAnchor="start"
         textAnchor="start"
-        width={25}
+        width={75}
         x="401.667"
         y="83.277"
         lineHeight="1.2em"
