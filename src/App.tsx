@@ -12,11 +12,11 @@ import Base from './Base';
 
 import PrivateRoute from './PrivateRoute';
 import Login from './containers/login/Login';
-import Loader from './components/loader/Loader';
+import LoaderPage from './components/loaderPage/LoaderPage';
 
 const Home = Loadable({
   loader: () => import('./containers/home/Home'),
-  loading: () => <Loader />,
+  loading: () => <LoaderPage />,
 });
 
 const cookies = new Cookies();
@@ -77,7 +77,7 @@ class App extends React.Component<any, any> {
     const { authenticated, loading, lang } = this.state;
 
     if (loading) {
-      return <Loader />;
+      return <LoaderPage />;
     }
 
     return (

@@ -34,7 +34,7 @@ const Background = styled.div`
   }
 `;
 
-const Loader = () => {
+const LoaderPage = () => {
   return (
     <div>
       <Background>
@@ -53,4 +53,4 @@ const Loader = () => {
   );
 };
 
-export default Loader;
+export default LoaderPage;
