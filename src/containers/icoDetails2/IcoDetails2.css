@@ -24,6 +24,10 @@
   padding-right: 24px;
 }
 
+.table-private-sale__coins {
+  font-size: 15px;
+}
+
 .table-private-sale .color--green {
   color: #4fcf40;
 }
@@ -74,6 +78,8 @@
   }
 }
 
+
+
 @media(max-width: 320px) {
   .gg-section-container--ico-details2 .gg-content-container {
     overflow-x: scroll;
@@ -84,5 +90,17 @@
     opacity: 1;
     visibility: visible;
     transform: scale3d(1, 1 ,1);
+  }
+
+  .table-private-sale td {
+    padding: 11px;
+  }
+
+  .table-private-sale td:first-child {
+    padding-left: 10px;
+  }
+
+  .table-private-sale td:last-child {
+    padding-right: 10px;
   }
 }
