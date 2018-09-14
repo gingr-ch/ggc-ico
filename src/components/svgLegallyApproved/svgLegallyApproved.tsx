@@ -32,8 +32,8 @@ const LegallyApproved = (props: any) => (
         }}
         x="50%"
         y="50%"
-        alignment-baseline="middle"
-        text-anchor="middle"
+        alignmentBaseline="middle"
+        textAnchor="middle"
       >
         GG COIN ICO
       </text>
@@ -48,8 +48,8 @@ const LegallyApproved = (props: any) => (
         className="stamp-hover"
         x="50%"
         y="90%"
-        alignment-baseline="middle"
-        text-anchor="middle"
+        alignmentBaseline="middle"
+        textAnchor="middle"
       >
         2018
       </text>
@@ -65,8 +65,8 @@ const LegallyApproved = (props: any) => (
         className="stamp-hover"
         x="50%"
         y="25%"
-        alignment-baseline="middle"
-        text-anchor="middle"
+        alignmentBaseline="middle"
+        textAnchor="middle"
       >
         LEGALLY
         <tspan style={{ letterSpacing: '0.015896251203085417em' }}>
