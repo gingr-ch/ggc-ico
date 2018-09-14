@@ -102,7 +102,7 @@ const Chart = (props: any) => (
       className="chart-top-st8 chart-top-st2 chart-top-st9"
       verticalAnchor="start"
       textAnchor="start"
-      width={45.6}
+      width={48.6}
       x="166.9219"
       y="165.4141"
     >
@@ -120,7 +120,7 @@ const Chart = (props: any) => (
       className="chart-top-st8 chart-top-st2 chart-top-st9"
       verticalAnchor="start"
       textAnchor="start"
-      width={45.6}
+      width={48.6}
       x="246.5469"
       y="165.6367"
     >
@@ -138,7 +138,7 @@ const Chart = (props: any) => (
       className="chart-top-st8 chart-top-st2 chart-top-st9"
       verticalAnchor="start"
       textAnchor="start"
-      width={45.6}
+      width={48.6}
       x="323.0469"
       y="165.6367"
     >
