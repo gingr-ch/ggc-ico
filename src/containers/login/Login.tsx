@@ -3,6 +3,7 @@ import { withRouter } from 'react-router';
 import styled from 'styled-components';
 import Img from 'react-image';
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
+import Cookies from 'universal-cookie';
 import Base from '../../Base';
 
 import LoginView from '../../components/loginView/LoginView';
@@ -13,6 +14,10 @@ const reasonsImg = require(process.env.REACT_APP_MEDIA_URL +
   'reason_to_invest_316.png');
 const reasonsImgThumb = require(process.env.REACT_APP_MEDIA_URL +
   'thumbs/reason_to_invest.png');
+
+
+// Initialize universal-cookies
+const cookies = new Cookies();
 
 // styled components
 const LoginContainer = styled.div`
@@ -94,7 +99,6 @@ const Header = styled.h2`
 class Login extends React.Component<any, any> {
   constructor(props: object) {
     super(props);
-
     this.state = { lang: strings, error: false };
   }
 
@@ -110,6 +114,10 @@ class Login extends React.Component<any, any> {
         password.value
       );
       this.props.history.push('/');
+      cookies.set('vr-ref', username.value, {
+        path: '/',
+        domain: process.env.REACT_APP_DOMAIN,
+      });
     } catch (error) {
       this.setState({ error: true });
     }
