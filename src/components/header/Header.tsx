@@ -9,7 +9,30 @@ import './Header.css';
 
 const gingrLogo = require(process.env.REACT_APP_MEDIA_URL + 'logo.png');
 
-const adminIco = 'https://admin.ggcico.io/auth/login';
+const users = {
+  'friends1': 'L247',
+  'friends2': 'L229',
+  'friends3': 'L198',
+  'friends4': 'L230',
+  'friends5': 'L224',
+  'friends6': 'L231',
+  'friends7': 'L232',
+  'friends8': 'L234',
+  'friends9': 'L235',
+  'friends10': 'L236',
+  'friends11': 'L237',
+  'friends12': 'L238',
+  'friends13': 'L239',
+  'friends14': 'L240',
+  'friends15': 'L241',
+  'friends16': 'L242',
+  'friends17': 'L243',
+  'friends18': 'L244',
+  'friends19': 'L245',
+  'friends20': 'L246'
+};
+
+let adminIco = 'https://admin.ggcico.io/auth/register?refcode=';
 // const whitePaper =
 //   'https://docs.wixstatic.com/ugd/2eea42_b23b9045b42246c2ac4f7c6cbf5ee65c.pdf';
 const whitepaperPdf = 'https://api.ggcoin.ch/download/pdf/ggc-white-paper.pdf';
@@ -25,6 +48,7 @@ class Header extends React.Component<any, any> {
     this.state = {
       right: false,
     };
+
   }
 
   click(url: string) {
@@ -38,6 +62,9 @@ class Header extends React.Component<any, any> {
   };
 
   render() {
+    if (this.props.user) {
+      adminIco = 'https://admin.ggcico.io/auth/register?refcode=' + users[this.props.user];
+    }
     return (
       <header className="gg-header">
         <div className="gg-header-container">
