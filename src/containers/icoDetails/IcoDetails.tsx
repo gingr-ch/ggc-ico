@@ -39,7 +39,7 @@ class IcoDetails extends React.Component<any, any> {
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <div style={{ fontSize: '24px', marginBottom: '16px' }}>
               {this.props.lang.privateSale}{' '}
-              {this.state.user === 'friends' && this.props.lang.now}
+              {this.state.user && this.state.user.indexOf('friends') === 0 && this.props.lang.now}
             </div>
             <div className="color-green" style={{ fontSize: '30px' }}>
               75% {this.props.lang.discount}
@@ -51,7 +51,7 @@ class IcoDetails extends React.Component<any, any> {
               1 GGC = 0.03 EUR
             </div>
             <div className="spacer" />
-            {this.state.user === 'friends' && (
+            {this.state.user && this.state.user.indexOf('friends') === 0 && (
               <Button
                 click={this.click}
                 borderColor="#00D646"

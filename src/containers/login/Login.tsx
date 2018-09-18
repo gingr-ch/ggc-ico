@@ -15,7 +15,6 @@ const reasonsImg = require(process.env.REACT_APP_MEDIA_URL +
 const reasonsImgThumb = require(process.env.REACT_APP_MEDIA_URL +
   'thumbs/reason_to_invest.png');
 
-
 // Initialize universal-cookies
 const cookies = new Cookies();
 

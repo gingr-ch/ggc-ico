@@ -63,7 +63,7 @@ class Header extends React.Component<any, any> {
             >
               {this.props.lang.whitepaper}
             </a>
-            {this.props.user === 'friends' && (
+            {this.props.user && this.props.user.indexOf('friends') === 0 && (
               <Button
                 click={() => this.click(adminIco)}
                 borderColor="#df9eff"

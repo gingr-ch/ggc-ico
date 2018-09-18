@@ -52,7 +52,7 @@ class PressReports extends React.Component<any, any> {
               }}
             >
               {this.props.lang.privateSale}{' '}
-              {this.state.user === 'friends' && this.props.lang.now}
+              {this.state.user && this.state.user.indexOf('friends') === 0 && this.props.lang.now}
             </div>
             <div style={{ fontSize: '30px', color: 'rgba(32, 206, 136, 1)' }}>
               75% {this.props.lang.discount}
@@ -69,7 +69,7 @@ class PressReports extends React.Component<any, any> {
 
             <div className="spacer hide show-xs" />
 
-            {this.state.user === 'friends' && (
+            {this.state.user.indexOf('friends') === 0 && (
               <Button
                 click={this.click}
                 borderColor="rgba(32, 206, 136, 1)"
