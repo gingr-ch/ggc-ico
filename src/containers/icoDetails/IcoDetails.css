@@ -29,6 +29,7 @@
 .gg-section-container--ico-details .slider {
   width: 100%;
   max-width: 791px;
+  z-index: 2;
   /*min-height: 488px;*/
 }
 
