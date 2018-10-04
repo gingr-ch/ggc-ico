@@ -11,7 +11,17 @@
 
 .gg-section-container--press-reports .gg-content-container svg,
 .gg-section-container--press-reports .gg-content-container .buy-coins-container {
+  width: 100%;
+}
+
+.gg-section-container--press-reports .gg-content-container svg {
+  flex: 1 1 50%;
+  max-width: 50%;
+}
+
+.gg-section-container--press-reports .gg-content-container .buy-coins-container {
   flex: 1 1 30%;
+  max-width: 30%;
 }
 
 .gg-section-container--press-reports img {
