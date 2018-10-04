@@ -254,6 +254,7 @@ class Top extends React.Component<any, any> {
             controls={this.state.controls}
             loop={true}
             ref={this.ref}
+            autoPlay={true}
             config={{
               file: {
                 attributes: {
