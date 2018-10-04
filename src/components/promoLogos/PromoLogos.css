@@ -42,6 +42,10 @@
   top: 26% !important;
 }
 
+.promo-logos .slider-list {
+  max-height: 54px;
+}
+
 @media(max-width: 599px) {
   .promo-logos {
     margin-bottom: 0;
