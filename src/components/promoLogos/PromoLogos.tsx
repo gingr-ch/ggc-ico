@@ -5,8 +5,6 @@ import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 
 import './PromoLogos.css';
 
-const luzernerZeitung = require(process.env.REACT_APP_MEDIA_URL +
-  'press/luzerner_zeitung.png');
 const teleZuri = require(process.env.REACT_APP_MEDIA_URL +
   'press/tele_zuri.png');
 const startupValley = require(process.env.REACT_APP_MEDIA_URL +
@@ -23,11 +21,6 @@ const thunerTagblatt = require(process.env.REACT_APP_MEDIA_URL +
 const derBund = require(process.env.REACT_APP_MEDIA_URL + 'press/der_bund.png');
 
 const logos = [
-  {
-    title: luzernerZeitung,
-    link:
-      'http://www.luzernerzeitung.ch/nachrichten/video/news/sts181177,10010',
-  },
   {
     title: teleZuri,
     link:
