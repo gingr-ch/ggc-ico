@@ -15,8 +15,8 @@ const establishmentIcon = require(process.env.REACT_APP_MEDIA_URL +
   'icons/establishment.png');
 
 // require videos
-import gingrVideo from '../../assets/video/gingr-video.m4v';
-import establishmentVideo from '../../assets/video/establishment-video.m4v';
+// import gingrVideo from '../../assets/video/gingr-video.m4v';
+// import establishmentVideo from '../../assets/video/establishment-video.m4v';
 
 class WhatIsGingr extends React.Component<any, any> {
   player: any;
@@ -53,6 +53,12 @@ class WhatIsGingr extends React.Component<any, any> {
       });
 
     const clientVideo = require('../../assets/video/client-video_' +
+      this.getLanguage() +
+      '.m4v');
+    const gingrVideo = require('../../assets/video/gingr-video_' +
+      this.getLanguage() +
+      '.m4v');
+    const establishmentVideo = require('../../assets/video/establishment-video_' +
       this.getLanguage() +
       '.m4v');
 
@@ -95,7 +101,7 @@ class WhatIsGingr extends React.Component<any, any> {
             {whatIsList.map((d, i) => (
               <div key={d.id} className="l2c__container">
                 <div className="l2c__media order-xs-2">
-                  <LazyLoad offset={1000}>
+                  <LazyLoad offset={1000} height={234}>
                     {d.video && (
                       <ReactPlayer
                         url={d.video}
