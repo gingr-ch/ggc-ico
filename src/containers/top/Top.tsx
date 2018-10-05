@@ -1,21 +1,20 @@
 import * as React from 'react';
 import ReactPlayer from 'react-player';
 import classNames from 'classnames';
-// import OnVisible from 'react-on-visible';
 import Dialog from 'rc-dialog';
-// import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
+import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 import 'rc-dialog/assets/index.css';
 
 import './Top.css';
 
 import Button from '../../components/button/Button';
 import PromoLogos from '../../components/promoLogos/PromoLogos';
-// import SuisseIco from '../../components/svgSuisseIco/svgSuisseIco';
 import LegallyApproved from '../../components/svgLegallyApproved/svgLegallyApproved';
 import Finma from '../../components/svgFinma/svgFinma';
 import LegalContent from '../../components/legalContent/LegalContent';
 
-import video from '../../assets/video/promo.m4v';
+import video from '../../assets/video/1080p/promo.m4v';
+import video480p from '../../assets/video/480p/promo.m4v';
 const swiss = require(process.env.REACT_APP_MEDIA_URL +
   'flags/switzerland.svg');
 
@@ -38,6 +37,7 @@ class Top extends React.Component<any, any> {
       destroyOnClose: true,
       center: true,
       mousePosition: { x: 0, y: 0 },
+      videoSrc: video,
     };
 
     this.videoToggle = this.videoToggle.bind(this);
@@ -77,8 +77,6 @@ class Top extends React.Component<any, any> {
   }
 
   onClick = (e: any) => {
-    // const currProfile = _.find(list, { id: id });
-    // const currProfile = item;
     this.setState({
       mousePosition: {
         x: e.pageX,
@@ -88,12 +86,12 @@ class Top extends React.Component<any, any> {
     });
   };
 
-  // componentDidMount() {
-  //   if (!isWidthUp('sm', this.props.width)) {
-  //     console.warn('poo');
-  //     this.player.playing = false;
-  //   }
-  // }
+  componentDidMount() {
+    if (!isWidthUp('sm', this.props.width)) {
+      this.player.videoSrc = video480p;
+      // console.warn('480p');
+    }
+  }
 
   onClose = () => {
     // console.log(e);
@@ -242,7 +240,7 @@ class Top extends React.Component<any, any> {
             </svg>
           </div>
           <ReactPlayer
-            url={video}
+            url={this.state.videoSrc}
             width={this.state.width}
             height={this.state.height}
             playing={this.state.playing}
@@ -272,5 +270,5 @@ class Top extends React.Component<any, any> {
   }
 }
 
-// export default withWidth()(Top);
-export default Top;
+export default withWidth()(Top);
+// export default Top;

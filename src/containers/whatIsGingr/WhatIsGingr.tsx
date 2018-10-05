@@ -3,26 +3,25 @@ import ReactPlayer from 'react-player';
 import OnVisible from 'react-on-visible';
 import classNames from 'classnames';
 import LazyLoad from 'react-lazyload';
+import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 
 import './WhatIsGingr.css';
 
-const clientIcon = require(process.env.REACT_APP_MEDIA_URL +
-  'icons/client.png');
-const gingrIcon = require(process.env.REACT_APP_MEDIA_URL + 'icons/gingr.png');
-const agencyIcon = require(process.env.REACT_APP_MEDIA_URL +
-  'icons/agency.png');
-const establishmentIcon = require(process.env.REACT_APP_MEDIA_URL +
-  'icons/establishment.png');
-
-// require videos
-// import gingrVideo from '../../assets/video/gingr-video.m4v';
-// import establishmentVideo from '../../assets/video/establishment-video.m4v';
+import clientIcon from '../../assets/img/icons/client.png';
+import gingrIcon from '../../assets/img/icons/gingr.png';
+import establishmentIcon from '../../assets/img/icons/establishment.png';
+import agencyIcon from '../../assets/img/icons/agency.png';
 
 class WhatIsGingr extends React.Component<any, any> {
   player: any;
+  videoSize: string = '1080p';
 
   constructor(props: any) {
     super(props);
+
+    this.state = {
+      width: null,
+    };
   }
 
   ref = (player: any) => {
@@ -46,19 +45,29 @@ class WhatIsGingr extends React.Component<any, any> {
   }
 
   render() {
+    if (!isWidthUp('sm', this.props.width)) {
+      this.videoSize = '480p';
+    }
+
     let classes = (i: any) =>
       classNames({
         left: !this.isEven(i),
         right: this.isEven(i),
       });
 
-    const clientVideo = require('../../assets/video/client-video_' +
+    const clientVideo = require('../../assets/video/' +
+      this.videoSize +
+      '/client-video_' +
       this.getLanguage() +
       '.m4v');
-    const gingrVideo = require('../../assets/video/gingr-video_' +
+    const gingrVideo = require('../../assets/video/' +
+      this.videoSize +
+      '/gingr-video_' +
       this.getLanguage() +
       '.m4v');
-    const establishmentVideo = require('../../assets/video/establishment-video_' +
+    const establishmentVideo = require('../../assets/video/' +
+      this.videoSize +
+      '/establishment-video_' +
       this.getLanguage() +
       '.m4v');
 
@@ -163,4 +172,6 @@ class WhatIsGingr extends React.Component<any, any> {
   }
 }
 
-export default WhatIsGingr;
+export default withWidth()(WhatIsGingr);
+
+// export default WhatIsGingr;
