@@ -1,20 +1,12 @@
 import * as React from 'react';
 import OnVisible from 'react-on-visible';
-// import LocalizedStrings from 'react-localization';
-//
-// import { BetaStrings } from '../../components/l18n';
+import LazyLoad from 'react-lazyload';
 
 import Button from '../../components/button/Button';
 import './Beta.css';
 
 const gingrV1 = require(process.env.REACT_APP_MEDIA_URL + 'gingr_v1.png');
 
-// export const langEn = require('../../assets/l18n/gingr-beta.en.json');
-//
-// export const strings: BetaStrings = new LocalizedStrings({
-//   en: langEn,
-// });
-//
 class Beta extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
@@ -53,8 +45,9 @@ class Beta extends React.Component<any, any> {
           </OnVisible>
 
           <div className="spacer" />
-
-          <img src={gingrV1} alt="" className="beta-image" />
+          <LazyLoad offset={500} height={557}>
+            <img src={gingrV1} alt="" className="beta-image" />
+          </LazyLoad>
         </div>
       </div>
     );

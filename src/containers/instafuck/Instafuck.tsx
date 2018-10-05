@@ -19,10 +19,6 @@ const ggcLogo = require(process.env.REACT_APP_MEDIA_URL +
 const instafuckEscrow = require(process.env.REACT_APP_MEDIA_URL +
   'instafuck/instafuck_escrow.png');
 
-// export const langEn = require('../../assets/l18n/instafuck.en.json');
-// export const strings: InstafuckStrings = new LocalizedStrings({
-//   en: langEn,
-// });
 class Instafuck extends React.Component<any, any> {
   constructor(props: object) {
     super(props);
