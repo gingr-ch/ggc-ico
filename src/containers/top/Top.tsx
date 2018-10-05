@@ -15,7 +15,7 @@ import LegallyApproved from '../../components/svgLegallyApproved/svgLegallyAppro
 import Finma from '../../components/svgFinma/svgFinma';
 import LegalContent from '../../components/legalContent/LegalContent';
 
-const video = require('../../assets/video/promo.m4v');
+import video from '../../assets/video/promo.m4v';
 const swiss = require(process.env.REACT_APP_MEDIA_URL +
   'flags/switzerland.svg');
 
@@ -163,10 +163,7 @@ class Top extends React.Component<any, any> {
               </h1>
             </div>
             <div className="suisse-ico-logo">
-              <img
-                src={swiss}
-                alt="Swiss flag icon"
-              />
+              <img src={swiss} alt="Swiss flag icon" />
               {this.props.lang.suisseIco}
             </div>
 
