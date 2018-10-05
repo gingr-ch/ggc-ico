@@ -1,18 +1,12 @@
 import * as React from 'react';
-// import LocalizedStrings from 'react-localization';
-// import { RevolutionarySolutionStrings } from '../../components/l18n';
 import Img from 'react-image';
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
 import OnVisible from 'react-on-visible';
+import LazyLoad from 'react-lazyload';
 
 import './RevolutionarySolution.css';
 import GgCard from '../../components/ggCards/GgCard';
 import Cycle from '../../components/svgCycle/svgCycle2';
-
-// export const langEn = require('../../assets/l18n/revolutionary-solution.en.json');
-// export const strings: RevolutionarySolutionStrings = new LocalizedStrings({
-//   en: langEn,
-// });
 
 const gingr = require(process.env.REACT_APP_MEDIA_URL +
   'gingr_necklace_749.png');
@@ -89,9 +83,11 @@ class RevolutionarySolution extends React.Component<any, any> {
             {this.props.lang.sexWorkerLifecycle}
           </div>
 
-          <OnVisible className="hidden-content hidden-content--slide-in--right">
-            <Cycle lang={this.props.lang} />
-          </OnVisible>
+          <LazyLoad offset={500} height={980.28}>
+            <OnVisible className="hidden-content hidden-content--slide-in--right">
+              <Cycle lang={this.props.lang} />
+            </OnVisible>
+          </LazyLoad>
 
           <div style={{ marginTop: '150px', marginBottom: '-3px' }}>
             <OnVisible className="hidden-content hidden-content--slide-in--left">
