@@ -1,12 +1,6 @@
 import * as React from 'react';
 import OnVisible from 'react-on-visible';
-// import LocalizedStrings from 'react-localization';
-// import { FooterStrings } from '../../components/l18n';
-//
-// export const langEn = require('../../assets/l18n/footer.en.json');
-// export const strings: FooterStrings = new LocalizedStrings({
-//   en: langEn,
-// });
+import LazyLoad from 'react-lazyload';
 
 import './Footer.css';
 
@@ -15,26 +9,26 @@ const swissFlag = require(process.env.REACT_APP_MEDIA_URL +
   'flags/switzerland.png');
 
 const users = {
-  'friends1': 'L247',
-  'friends2': 'L229',
-  'friends3': 'L198',
-  'friends4': 'L230',
-  'friends5': 'L224',
-  'friends6': 'L231',
-  'friends7': 'L232',
-  'friends8': 'L234',
-  'friends9': 'L235',
-  'friends10': 'L236',
-  'friends11': 'L237',
-  'friends12': 'L238',
-  'friends13': 'L239',
-  'friends14': 'L240',
-  'friends15': 'L241',
-  'friends16': 'L242',
-  'friends17': 'L243',
-  'friends18': 'L244',
-  'friends19': 'L245',
-  'friends20': 'L246'
+  friends1: 'L247',
+  friends2: 'L229',
+  friends3: 'L198',
+  friends4: 'L230',
+  friends5: 'L224',
+  friends6: 'L231',
+  friends7: 'L232',
+  friends8: 'L234',
+  friends9: 'L235',
+  friends10: 'L236',
+  friends11: 'L237',
+  friends12: 'L238',
+  friends13: 'L239',
+  friends14: 'L240',
+  friends15: 'L241',
+  friends16: 'L242',
+  friends17: 'L243',
+  friends18: 'L244',
+  friends19: 'L245',
+  friends20: 'L246',
 };
 
 let refcode = '';
@@ -162,12 +156,14 @@ class Footer extends React.Component<any, any> {
           className="gg-content-container flex-row"
           style={{ justifyContent: 'flex-start' }}
         >
-          <OnVisible
-            className="hidden-content hidden-content--fade-in"
-            percent={-100}
-          >
-            <img src={scene} alt="" className="footer-image" />
-          </OnVisible>
+          <LazyLoad offset={500} height={745}>
+            <OnVisible
+              className="hidden-content hidden-content--fade-in"
+              percent={-100}
+            >
+              <img src={scene} alt="" className="footer-image" />
+            </OnVisible>
+          </LazyLoad>
 
           <div className="footer-content flex-row">
             <div

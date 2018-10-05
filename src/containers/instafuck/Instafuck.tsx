@@ -1,9 +1,6 @@
 import * as React from 'react';
 import OnVisible from 'react-on-visible';
-
-// import OnVisible from 'react-on-visible';
-// import LocalizedStrings from 'react-localization';
-// import { InstafuckStrings } from '../../components/l18n';
+import LazyLoad from 'react-lazyload';
 
 import './Instafuck.css';
 
@@ -44,7 +41,9 @@ class Instafuck extends React.Component<any, any> {
               overflow: 'hidden',
             }}
           >
-            <InstafuckChart lang={this.props.lang} />
+            <LazyLoad offset={500} height={1242.959}>
+              <InstafuckChart lang={this.props.lang} />
+            </LazyLoad>
           </div>
 
           <div className="hide show-xs flex-column">

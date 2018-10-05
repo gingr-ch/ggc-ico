@@ -1,17 +1,11 @@
 import * as React from 'react';
 import OnVisible from 'react-on-visible';
-
-// import LocalizedStrings from 'react-localization';
-// import { BlockchainStrings } from '../../components/l18n';
+import LazyLoad from 'react-lazyload';
 
 import './Blockchain.css';
 
 import BlockchainChart from '../../components/svgBlockchain/svgBlockchain';
 
-// export const langEn = require('../../assets/l18n/blockchain.en.json');
-// export const strings: BlockchainStrings = new LocalizedStrings({
-//   en: langEn,
-// });
 class Blockchain extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
@@ -30,9 +24,11 @@ class Blockchain extends React.Component<any, any> {
           <div className="spacer" />
           <div className="spacer" />
 
-          <OnVisible percent={50} className="hidden-content">
-            <BlockchainChart lang={this.props.lang} />
-          </OnVisible>
+          <LazyLoad offset={500} height={866.58}>
+            <OnVisible percent={50} className="hidden-content">
+              <BlockchainChart lang={this.props.lang} />
+            </OnVisible>
+          </LazyLoad>
         </div>
       </div>
     );

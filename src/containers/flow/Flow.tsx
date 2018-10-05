@@ -1,5 +1,7 @@
 import * as React from 'react';
 import OnVisible from 'react-on-visible';
+import LazyLoad from 'react-lazyload';
+
 import './Flow.css';
 
 import FlowChart from '../../components/svgFlow/svgFlow';
@@ -20,9 +22,11 @@ class Flow extends React.Component<any, any> {
 
           <div className="spacer" />
           <div className="spacer" />
-          <OnVisible className="hidden-content hidden-content--slide-in--right">
-            <FlowChart lang={this.props.lang} />
-          </OnVisible>
+          <LazyLoad offset={500} height={826.28}>
+            <OnVisible className="hidden-content hidden-content--slide-in--right">
+              <FlowChart lang={this.props.lang} />
+            </OnVisible>
+          </LazyLoad>
         </div>
       </div>
     );

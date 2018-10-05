@@ -9,10 +9,6 @@ const gingr = require(process.env.REACT_APP_MEDIA_URL + 'reasons-why.png');
 const gingrThumb = require(process.env.REACT_APP_MEDIA_URL +
   'thumbs/reasons-why.png');
 
-// export const langEn = require('../../assets/l18n/reasons-why.en.json');
-// export const strings: ReasonsWhyStrings = new LocalizedStrings({
-//   en: langEn,
-// });
 class ReasonsWhy extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
