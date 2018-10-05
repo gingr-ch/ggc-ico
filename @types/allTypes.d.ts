@@ -7,3 +7,12 @@ declare module 'react-image';
 declare module 'd3';
 declare module 'd3-textwrap';
 declare module 'vx__text';
+declare module '*.m4v' {
+  let _: string;
+  export = _;
+}
+
+declare module '*.png' {
+  let _: string;
+  export = _;
+}
