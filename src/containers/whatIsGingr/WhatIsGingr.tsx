@@ -2,6 +2,7 @@ import * as React from 'react';
 import ReactPlayer from 'react-player';
 import OnVisible from 'react-on-visible';
 import classNames from 'classnames';
+import LazyLoad from 'react-lazyload';
 
 import './WhatIsGingr.css';
 
@@ -14,8 +15,8 @@ const establishmentIcon = require(process.env.REACT_APP_MEDIA_URL +
   'icons/establishment.png');
 
 // require videos
-const gingrVideo = require('../../assets/video/gingr-video.m4v');
-const establishmentVideo = require('../../assets/video/establishment-video.m4v');
+import gingrVideo from '../../assets/video/gingr-video.m4v';
+import establishmentVideo from '../../assets/video/establishment-video.m4v';
 
 class WhatIsGingr extends React.Component<any, any> {
   player: any;
@@ -94,30 +95,32 @@ class WhatIsGingr extends React.Component<any, any> {
             {whatIsList.map((d, i) => (
               <div key={d.id} className="l2c__container">
                 <div className="l2c__media order-xs-2">
-                  {d.video && (
-                    <ReactPlayer
-                      url={d.video}
-                      width="431px"
-                      height="234px"
-                      playing={false}
-                      volume={0.8}
-                      muted={false}
-                      controls={true}
-                      loop={false}
-                      ref={this.ref}
-                      config={{
-                        file: {
-                          forceVideo: true,
-                        },
-                      }}
-                      playsinline={true}
-                      style={{
-                        background: '#000000',
-                        zIndex: 3,
-                        position: 'relative',
-                      }}
-                    />
-                  )}
+                  <LazyLoad offset={1000}>
+                    {d.video && (
+                      <ReactPlayer
+                        url={d.video}
+                        width="431px"
+                        height="234px"
+                        playing={false}
+                        volume={0.8}
+                        muted={false}
+                        controls={true}
+                        loop={false}
+                        ref={this.ref}
+                        config={{
+                          file: {
+                            forceVideo: true,
+                          },
+                        }}
+                        playsinline={true}
+                        style={{
+                          background: '#000000',
+                          zIndex: 3,
+                          position: 'relative',
+                        }}
+                      />
+                    )}
+                  </LazyLoad>
                 </div>
                 <div
                   className={
