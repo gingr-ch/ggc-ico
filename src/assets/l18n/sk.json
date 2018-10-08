@@ -4,7 +4,7 @@
   "blockchain": "Databáze Blockchain",
   "smartContracts": "Smart zmlúv",
   "smartContractsInPlace": "Smart zmlúv zavedené pre GG mince používať platiť za erotické dátumy na platforme Gingr pre akýkoľvek sex pracovník po celom svete",
-  "groundBreakingTechnologies": "PRELOMOVÚ TECHNOLÓGIU S NEOBMEDZENÉ RIEŠENIA!",
+  "groundBreakingTechnologies": "Prelomovú technológiu s neobmedzené riešenia!",
   "wallets": "PEŇAŽENKY",
   "payments": "Platby",
   "escrowFunds": "Úschov finančných prostriedkov",
@@ -42,6 +42,7 @@
   "email": "E-mailom",
   "message": "Hlásenie",
   "send": "Odoslať",
+  "sent": "Odoslané",
   "download": "Na stiahnutie",
   "whitepaper": "Whitepaper",
   "lightpaper": "Lightpaper",
@@ -164,6 +165,7 @@
   "prev": "Prev",
   "next": "Ďalší",
   "privateSale": "SÚKROMNÝ PREDAJ",
+  "now": "TERAZ",
   "preSale": "Predpredajný",
   "mainSale": "Hlavný predaj",
   "publicPreSale": "Verejné Predpredaj",
@@ -298,6 +300,8 @@
   "twitter": "Twitter",
   "facebook": "Facebook",
   "instagram": "Instagram",
+  "group": "Skupina",
+  "channel": "Kanál",
   "salesManager": "Manažér predaja",
   "artDirector": "Art Director",
   "branding": "Branding",
@@ -325,5 +329,8 @@
   "finmaApprovalPending": "FINMA schválenie čakajúcich",
   "theGingrProjectAndAllItsLegal": "Gingr projekt a všetky jej právnej dokumentácie, ktorá zahŕňa naše Whitepaper, právneho názoru, politík ochrany údajov a všetkých zmluvných dokumentoch pre používateľov platformy gingr teraz legálne schválené. Táto práca bola vykonaná aj renomovanej švajčiarskej advokátskou kanceláriou Stach Anwälte AG.",
   "asYouAreProbablyAware": "Ako pravdepodobne viete, vždy, keď sa zaoberajú právne predpisy a nariadenia, získanie dokumentácia spoločnosti schválené, licencované atď môže byť veľmi dlhé, únavné a nákladné operácie. Ak si myslíte, že je časovo náročné, to isté v priemysle ICO je oveľa dlhšie, ako je takýto inovatívny mechanizmus, ktorý ešte nie je oficiálne uznávané po celom svete.",
-  "havingSaidThatWeHaveNow": "Having povedal aby, sme sa teraz prispôsobiť všetko švajčiarske zákony a ich ICO usmernenia s FINMA žiadosti (finančný trh dozorné orgány). Právnik nás informoval, že aplikácia bude trvať od 1-4 mesiace získať odpoveď a cíti veľmi istý, že to všetko pôjde dobre. Po FINMA schválení potom legálne budeme schopní ponúknuť úradne schválených ICO širokej verejnosti po celom svete. Z nášho výskumu vieme, že ICO, ktorá sa zaviazala tento právny postup má veľký úspech."
+  "havingSaidThatWeHaveNow": "Having povedal aby, sme sa teraz prispôsobiť všetko švajčiarske zákony a ich ICO usmernenia s FINMA žiadosti (finančný trh dozorné orgány). Právnik nás informoval, že aplikácia bude trvať od 1-4 mesiace získať odpoveď a cíti veľmi istý, že to všetko pôjde dobre. Po FINMA schválení potom legálne budeme schopní ponúknuť úradne schválených ICO širokej verejnosti po celom svete. Z nášho výskumu vieme, že ICO, ktorá sa zaviazala tento právny postup má veľký úspech.",
+  "europe": "Európa",
+  "northAndCentralAmerica": "North & Stredná Amerika",
+  "southAmerica": "Južná Amerika"
 }

@@ -42,6 +42,7 @@
   "email": "电子邮件",
   "message": "消息",
   "send": "发送",
+  "sent": "送",
   "download": "下载",
   "whitepaper": "白皮书",
   "lightpaper": "Lightpaper",
@@ -164,6 +165,7 @@
   "prev": "昨日",
   "next": "下",
   "privateSale": "私人销售",
+  "now": "现在",
   "preSale": "售前",
   "mainSale": "主要销售",
   "publicPreSale": "公开预售",
@@ -298,6 +300,8 @@
   "twitter": "Twitter",
   "facebook": "Facebook",
   "instagram": "Instagram",
+  "group": "组",
+  "channel": "通道",
   "salesManager": "销售经理",
   "artDirector": "艺术总监",
   "branding": "品牌",
@@ -325,5 +329,8 @@
   "finmaApprovalPending": "FINMA 审批待定",
   "theGingrProjectAndAllItsLegal": "Gingr 项目及其所有法律文件, 包括我们的白皮书、法律意见、数据保护政策和 Gingr 平台用户的所有合同文件, 现已获得法律批准。这项工作是由一家知名的瑞士律师事务所淀粉 Anwälte 股份公司进行的。",
   "asYouAreProbablyAware": "正如您可能知道, 每当处理法律和法规, 获得公司文件批准, 许可等可能是一个非常漫长, 繁琐和昂贵的操作。如果你认为这是时间消耗, 在 ICO 行业的同样的东西是更长的时间, 因为它是这样一个创新的机制, 仍然没有正式认可的世界各地。",
-  "havingSaidThatWeHaveNow": "说了这一点之后, 我们现在已经将所有的一切都修改为瑞士法律及其与 FINMA 申请 (金融市场监管当局) 提交的 ICO 准则。律师告诉我们, 申请将需要 1-4 月的时间来得到答案, 并感到非常有信心, 这将是顺利的。在 FINMA 批准后, 我们将依法能够提供一个正式批准的 ICO 给全世界的大众。从我们的研究中我们知道, 任何从事这一法律程序的 ICO 都取得了巨大的成功。"
+  "havingSaidThatWeHaveNow": "说了这一点之后, 我们现在已经将所有的一切都修改为瑞士法律及其与 FINMA 申请 (金融市场监管当局) 提交的 ICO 准则。律师告诉我们, 申请将需要 1-4 月的时间来得到答案, 并感到非常有信心, 这将是顺利的。在 FINMA 批准后, 我们将依法能够提供一个正式批准的 ICO 给全世界的大众。从我们的研究中我们知道, 任何从事这一法律程序的 ICO 都取得了巨大的成功。",
+  "europe": "欧洲",
+  "northAndCentralAmerica": "北美洲和中美洲",
+  "southAmerica": "南美"
 }

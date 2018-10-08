@@ -4,7 +4,7 @@
   "blockchain": "Blockchain",
   "smartContracts": "Kontrak-kontrak yang bijak",
   "smartContractsInPlace": "Kontrak yang pintar di tempat bagi GG syiling untuk digunakan untuk membayar pada tarikh erotik pada Gingr platform bagi mana-mana jantina pekerja seluruh dunia",
-  "groundBreakingTechnologies": "PERLETAKAN BATU ASAS TEKNOLOGI DENGAN PENYELESAIAN TANPA HAD!",
+  "groundBreakingTechnologies": "Perletakan batu asas teknologi dengan penyelesaian tanpa had!",
   "wallets": "DOMPET",
   "payments": "Pembayaran",
   "escrowFunds": "Dana escrow",
@@ -42,6 +42,7 @@
   "email": "E-mel",
   "message": "Mesej",
   "send": "Hantar",
+  "sent": "Dihantar",
   "download": "Muat turun",
   "whitepaper": "Whitepaper",
   "lightpaper": "Lightpaper",
@@ -164,6 +165,7 @@
   "prev": "Sblm",
   "next": "Seterusnya",
   "privateSale": "JUALAN PERIBADI",
+  "now": "SEKARANG",
   "preSale": "Jualan pra",
   "mainSale": "Penjualan utama",
   "publicPreSale": "Presale awam",
@@ -298,6 +300,8 @@
   "twitter": "Twitter",
   "facebook": "Facebook",
   "instagram": "Instagram",
+  "group": "Kumpulan",
+  "channel": "Saluran",
   "salesManager": "Pengurus Jualan",
   "artDirector": "Pengarah seni",
   "branding": "Penjenamaan",
@@ -325,5 +329,8 @@
   "finmaApprovalPending": "Kelulusan FINMA sementara menunggu",
   "theGingrProjectAndAllItsLegal": "Projek Gingr dan semua dokumentasi undang-undang yang meliputi Whitepaper kami, pendapat undang-undang, polisi-polisi Perlindungan Data dan semua dokumen kontrak untuk pengguna platform gingr sekarang undang-undang diluluskan. Kerja-kerja ini telah dijalankan oleh firma undang-undang Swiss tempat Stach Anwälte AG.",
   "asYouAreProbablyAware": "Seperti yang anda mungkin sedar apabila berurusan dengan undang-undang dan peraturan-peraturan, mendapatkan dokumentasi Syarikat yang diluluskan, berlesen dan lain-lain boleh menjadi operasi yang sangat panjang, membosankan dan mahal. Jika anda berfikir bahawa memakan masa, perkara yang sama dalam industri ICO adalah lebih lama kerana ianya seperti satu inovatif mekanisme yang masih tidak secara rasmi diiktiraf di seluruh dunia.",
-  "havingSaidThatWeHaveNow": "Justeru itu, kita telah sekarang menyesuaikan segala-galanya kepada undang-undang Swiss dan mereka ICO Garis Panduan Permohonan FINMA (kewangan pasaran pihak berkuasa penyeliaan) dikemukakan. Peguam telah memaklumkan kepada kami bahawa permohonan akan mengambil masa antara 1-4 bulan untuk mendapat jawapan dan berasa sangat yakin bahawa ia akan pergi juga. Setelah mendapat kelulusan FINMA kami kemudian sisi undang-undang akan dapat menawarkan ICO untuk diluluskan secara rasmi kepada orang ramai di seluruh dunia. Dari kajian kami tahu bahawa ICO apa-apa yang telah melaksanakan prosedur undang-undang ini telah mencapai kejayaan yang besar."
+  "havingSaidThatWeHaveNow": "Justeru itu, kita telah sekarang menyesuaikan segala-galanya kepada undang-undang Swiss dan mereka ICO Garis Panduan Permohonan FINMA (kewangan pasaran pihak berkuasa penyeliaan) dikemukakan. Peguam telah memaklumkan kepada kami bahawa permohonan akan mengambil masa antara 1-4 bulan untuk mendapat jawapan dan berasa sangat yakin bahawa ia akan pergi juga. Setelah mendapat kelulusan FINMA kami kemudian sisi undang-undang akan dapat menawarkan ICO untuk diluluskan secara rasmi kepada orang ramai di seluruh dunia. Dari kajian kami tahu bahawa ICO apa-apa yang telah melaksanakan prosedur undang-undang ini telah mencapai kejayaan yang besar.",
+  "europe": "Europe",
+  "northAndCentralAmerica": "Amerika Utara & Central",
+  "southAmerica": "Amerika Selatan"
 }

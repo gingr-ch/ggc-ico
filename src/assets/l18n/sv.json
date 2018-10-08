@@ -4,7 +4,7 @@
   "blockchain": "Blockchain",
   "smartContracts": "Smart kontrakt",
   "smartContractsInPlace": "Smart-avtal på plats för GG mynt ska använda för att betala för erotiska datum på Gingr plattform för alla sex-arbetare runt om i världen",
-  "groundBreakingTechnologies": "BANBRYTANDE TEKNIK MED OBEGRÄNSADE LÖSNINGAR!",
+  "groundBreakingTechnologies": "Banbrytande teknik med obegränsade lösningar!",
   "wallets": "PLÅNBÖCKER",
   "payments": "Betalningar",
   "escrowFunds": "Spärrade medel",
@@ -42,6 +42,7 @@
   "email": "E-post",
   "message": "Meddelande",
   "send": "Skicka",
+  "sent": "Skickas",
   "download": "Ladda ner",
   "whitepaper": "Whitepaper",
   "lightpaper": "Lightpaper",
@@ -164,6 +165,7 @@
   "prev": "Föregående",
   "next": "Nästa",
   "privateSale": "PRIVAT FÖRSÄLJNING",
+  "now": "NU",
   "preSale": "Pre-försäljning",
   "mainSale": "Huvudsakliga försäljning",
   "publicPreSale": "Offentlig Presale",
@@ -298,6 +300,8 @@
   "twitter": "Twitter",
   "facebook": "Facebook",
   "instagram": "Instagram",
+  "group": "Grupp",
+  "channel": "Kanal",
   "salesManager": "Försäljningschef",
   "artDirector": "Art Director",
   "branding": "Branding",
@@ -325,5 +329,8 @@
   "finmaApprovalPending": "FINMA godkännande väntande",
   "theGingrProjectAndAllItsLegal": "Gingr projektet och alla dess rättsliga dokumentationen som inkluderar vårt Whitepaper, juridiskt utlåtande, Policies för dataskydd och alla avtalsenliga dokument för gingr plattform användare är nu lagligt godkända. Detta arbete har utförts av en välrenommerade schweiziska Advokatbyrå Stach Anwälte AG.",
   "asYouAreProbablyAware": "Som ni förmodligen vet när behandlar lagstiftning och förordningar, kan får företaget dokumentation godkänd, licensierade etc vara en mycket lång, långtråkig och kostsam operation. Om du tror att det är tidskrävande, är samma sak i ICO branschen mycket längre eftersom det är sådan en innovativ mekanism som är fortfarande inte officiellt erkänd över hela världen.",
-  "havingSaidThatWeHaveNow": "Med detta sagt, har vi nu anpassat allt schweiziska lagar och deras ICO riktlinjer med FINMA ansökan (finansiella marknaden tillsynsmyndigheter). Advokaten har informerat oss att ansökan kommer att ta mellan 1 – 4 månader att få ett svar och känns mycket säker att det kommer allt gå bra. Vid FINMA godkännande kommer vi sedan lagligt kunna erbjuda en officiellt godkänd ICO till allmänheten i hela världen. Från vår forskning vet vi att någon ICO som har åtagit sig detta rättsligt förfarande har haft stor framgång."
+  "havingSaidThatWeHaveNow": "Med detta sagt, har vi nu anpassat allt schweiziska lagar och deras ICO riktlinjer med FINMA ansökan (finansiella marknaden tillsynsmyndigheter). Advokaten har informerat oss att ansökan kommer att ta mellan 1 – 4 månader att få ett svar och känns mycket säker att det kommer allt gå bra. Vid FINMA godkännande kommer vi sedan lagligt kunna erbjuda en officiellt godkänd ICO till allmänheten i hela världen. Från vår forskning vet vi att någon ICO som har åtagit sig detta rättsligt förfarande har haft stor framgång.",
+  "europe": "Europa",
+  "northAndCentralAmerica": "Nordamerika & Central",
+  "southAmerica": "Sydamerika"
 }

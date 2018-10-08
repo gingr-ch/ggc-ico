@@ -42,10 +42,12 @@
   "email": "E-Mail",
   "message": "Nachricht",
   "send": "Senden",
+  "sent": "Gesendet",
   "download": "Download",
   "whitepaper": "Whitepaper",
   "lightpaper": "Lightpaper",
   "numbers": "Zahlen",
+  "factSheet": "Factsheet",
   "companysMemorandum": "Stauten und Memorandum",
   "legalMemorandum": "RECHTLICHE VEREINBARUNG",
   "feedback": "Feedback",
@@ -298,6 +300,8 @@
   "twitter": "Twitter",
   "facebook": "Facebook",
   "instagram": "Instagram",
+  "group": "Gruppe",
+  "channel": "Kanal",
   "salesManager": "Sales Manager",
   "artDirector": "Artdirector",
   "branding": "Branding",
@@ -325,5 +329,8 @@
   "finmaApprovalPending": "FINMA-Zulassung beantragt",
   "theGingrProjectAndAllItsLegal": "Das Gingr-Projekt und seine rechtliche Dokumentation umfasst unser Whitepaper herunter, Rechtsgutachten, Datenschutz-Policies und alle Vertragsunterlagen für Gingr Plattform Benutzer sind jetzt gesetzlich zugelassen. Diese Arbeit wurde von einer renommierten Schweizer Anwaltskanzlei Stach darüber AG durchgeführt.",
   "asYouAreProbablyAware": "Wie Sie wahrscheinlich wissen wann immer Umgang mit Gesetzen und Verordnungen, kann Unterlagen der Gesellschaft genehmigt, lizenzierte etc. eine sehr lange, mühsame und kostspielige Operation sein. Wenn Sie denken, die Zeit in Anspruch nimmt, ist das gleiche in der ICO-Industrie viel länger, da es einen innovativen Mechanismus ist, der noch nicht offiziell auf der ganzen Welt anerkannt wird.",
-  "havingSaidThatWeHaveNow": "Abgesehen davon, haben wir jetzt alles Schweizer Gesetze und ihre ICO-Richtlinien mit der FINMA Antrag (Markt Finanzaufsichtsbehörden) angepasst. Der Anwalt hat uns mitgeteilt, dass die Anwendung dauert zwischen 1 – 4 Monate Zeit, um eine Antwort zu bekommen und fühlt sich sehr zuversichtlich, dass alles gut gehen wird. Zustimmung der FINMA werden wir dann rechtlich einer behördlich genehmigten ICO an der Breite Öffentlichkeit weltweit anbieten. Aus unserer Forschung wissen wir, dass jede ICO, die dieses Gerichtsverfahrens eingeleitet hat großen Erfolg gehabt hat."
+  "havingSaidThatWeHaveNow": "Abgesehen davon, haben wir jetzt alles Schweizer Gesetze und ihre ICO-Richtlinien mit der FINMA Antrag (Markt Finanzaufsichtsbehörden) angepasst. Der Anwalt hat uns mitgeteilt, dass die Anwendung dauert zwischen 1 – 4 Monate Zeit, um eine Antwort zu bekommen und fühlt sich sehr zuversichtlich, dass alles gut gehen wird. Zustimmung der FINMA werden wir dann rechtlich einer behördlich genehmigten ICO an der Breite Öffentlichkeit weltweit anbieten. Aus unserer Forschung wissen wir, dass jede ICO, die dieses Gerichtsverfahrens eingeleitet hat großen Erfolg gehabt hat.",
+  "europe": "Europa",
+  "northAndCentralAmerica": "Nordamerika & Central",
+  "southAmerica": "Südamerika"
 }
