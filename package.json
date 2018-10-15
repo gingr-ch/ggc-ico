@@ -28,7 +28,7 @@
     "react-pose": "^2.2.0",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts-ts": "2.13.0",
+    "react-scripts-ts": "^3.1.0",
     "react-scrollable-anchor": "^0.6.1",
     "react-select": "^2.0.0",
     "react-select-search": "^0.9.3",
