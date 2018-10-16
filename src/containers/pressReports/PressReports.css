@@ -61,6 +61,12 @@
     flex-direction: column;
   }
 
+  .gg-section-container--press-reports .gg-content-container svg,
+  .gg-section-container--press-reports .gg-content-container .buy-coins-container {
+    flex: auto;
+    max-width: 100%;
+  }
+
   .buy-coins-container {
     margin-top: 3em;
   }
