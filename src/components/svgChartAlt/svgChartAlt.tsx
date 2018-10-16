@@ -26,7 +26,7 @@ const ChartAlt = (props: any) => (
       transform="matrix(1 0 0 1 297.2459 327.9142)"
       className="chart-alt__st3 chart-alt__st4 chart-alt__st5"
     >
-      GGC SOLD
+      MILLION GGC SOLD
     </text>
     <text transform="matrix(0 1 -1 0 120.7466 105.1759)">
       <tspan
@@ -178,31 +178,31 @@ const ChartAlt = (props: any) => (
       transform="matrix(1 0 0 1 150.053 352.5939)"
       className="chart-alt__st7 chart-alt__st4 chart-alt__st6"
     >
-      200
+      100
     </text>
     <text
       transform="matrix(1 0 0 1 195.4759 352.5939)"
       className="chart-alt__st7 chart-alt__st4 chart-alt__st6"
     >
-      400
+      200
     </text>
     <text
       transform="matrix(1 0 0 1 241.8484 352.5939)"
       className="chart-alt__st7 chart-alt__st4 chart-alt__st6"
     >
-      600
+      300
     </text>
     <text
       transform="matrix(1 0 0 1 287.284 352.5939)"
       className="chart-alt__st7 chart-alt__st4 chart-alt__st6"
     >
-      800
+      400
     </text>
     <text
       transform="matrix(1 0 0 1 332.1751 352.5939)"
       className="chart-alt__st7 chart-alt__st4 chart-alt__st6"
     >
-      1000
+      500
     </text>
     <line
       className="chart-alt__st8"

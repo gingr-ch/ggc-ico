@@ -42,7 +42,7 @@ const Chart2 = (props: any) => (
     />
     <text
       className="st3 st4 st5"
-      transform="translate(-82.512 -104.92) translate(297.25 327.91)"
+      transform="translate(-124.512 -104.92) translate(297.25 327.91)"
       fill="#fff"
       fontFamily="brandon_grotesque_regularRg"
       fontSize="9.4466px"
@@ -119,19 +119,19 @@ const Chart2 = (props: any) => (
       fontSize="8.6594px"
     >
       <text className="st7 st4 st6" x="67.541489" y="247.6769">
-        200
+        100
       </text>
       <text className="st7 st4 st6" x="112.96439" y="247.6769">
-        400
+        200
       </text>
       <text className="st7 st4 st6" x="159.33688" y="247.6769">
-        600
+        300
       </text>
       <text className="st7 st4 st6" x="204.77249" y="247.6769">
-        800
+        400
       </text>
       <text className="st7 st4 st6" x="249.66359" y="247.6769">
-        1000
+        500
       </text>
     </g>
     <g stroke="#f3d551" fill="none" strokeMiterlimit={10}>
