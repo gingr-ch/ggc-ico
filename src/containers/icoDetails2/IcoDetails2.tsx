@@ -22,7 +22,7 @@ class IcoDetails2 extends React.Component<any, any> {
                     {this.props.lang.privateSale}
                   </td>
                   <td />
-                  <td className="table-private-sale__coins">750</td>
+                  <td className="table-private-sale__coins">375</td>
                   <td>{this.props.lang.millionCoinsOffered}</td>
                   <td className="color--green">-75%</td>
                   <td className="color--green">€ 0.03</td>
@@ -33,7 +33,7 @@ class IcoDetails2 extends React.Component<any, any> {
                     {this.props.lang.publicPreSale}
                   </td>
                   <td />
-                  <td className="table-private-sale__coins">150</td>
+                  <td className="table-private-sale__coins">75</td>
                   <td>{this.props.lang.millionCoinsOffered}</td>
                   <td className="color--red">-50%</td>
                   <td className="color--red">€ 0.06</td>
@@ -41,30 +41,30 @@ class IcoDetails2 extends React.Component<any, any> {
 
                 <tr style={{ background: '#392551' }}>
                   <td className="color--purple">
-                    {this.props.lang.publicMainSale}
+                    {this.props.lang.publicSale}
                   </td>
                   <td>{this.props.lang.tier} 1</td>
-                  <td className="table-private-sale__coins">50</td>
+                  <td className="table-private-sale__coins">25</td>
                   <td>{this.props.lang.millionCoinsOffered}</td>
                   <td className="color--red">-33%</td>
                   <td className="color--purple">€ 0.08</td>
                 </tr>
                 <tr style={{ background: '#392551' }}>
                   <td className="color--purple">
-                    {this.props.lang.publicMainSale}
+                    {this.props.lang.publicSale}
                   </td>
                   <td>{this.props.lang.tier} 2</td>
-                  <td className="table-private-sale__coins">30</td>
+                  <td className="table-private-sale__coins">15</td>
                   <td>{this.props.lang.millionCoinsOffered}</td>
                   <td className="color--red">-16.6%</td>
                   <td className="color--purple">€ 0.10</td>
                 </tr>
                 <tr style={{ background: '#392551' }}>
                   <td className="color--purple">
-                    {this.props.lang.publicMainSale}
+                    {this.props.lang.publicSale}
                   </td>
                   <td>{this.props.lang.tier} 3</td>
-                  <td className="table-private-sale__coins">20</td>
+                  <td className="table-private-sale__coins">10</td>
                   <td>{this.props.lang.millionCoinsOffered}</td>
                   <td />
                   <td className="color--purple">€ 0.12</td>
