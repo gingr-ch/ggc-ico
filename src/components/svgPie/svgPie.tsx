@@ -19,45 +19,55 @@ const PieChart = (props: any) => (
       d="M45.062,45.062V0a45.063,45.063,0,1,1,0,90.125h0Z"
       style={{ fill: '#7caace' }}
     />
+    <path
+      d="M45.153,45.145,18.632,8.593A42.964,42.964,0,0,1,31.225,2.186Z"
+      style={{ fill: '#e27fe5' }}
+    />
     <text
-      transform="translate(61.211 49.099)"
       style={{
         fontSize: '9.117480278015137px',
         fill: '#60146a',
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
       }}
+      transform="translate(61.211 49.099)"
     >
       50%
     </text>
     <text
-      transform="translate(17.278 63.262)"
       style={{
         fontSize: '9.117480278015137px',
         fill: '#60146a',
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
       }}
+      transform="translate(17.278 63.262)"
     >
       30%
     </text>
     <text
-      transform="translate(18.334 27.63)"
       style={{
         fontSize: '9.117480278015137px',
         fill: '#60146a',
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
       }}
+      transform="translate(12.887 31.63)"
     >
-      15%
+      <tspan style={{ letterSpacing: '-0.0029990467943137354em' }}>1</tspan>
+      <tspan x="3.1" y="0">
+        0%
+      </tspan>
     </text>
     <text
-      transform="translate(37.015 18.171)"
       style={{
         fontSize: '9.117480278015137px',
         fill: '#60146a',
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
       }}
+      transform="translate(28.005 18.171)"
     >
-      5%
+      <tspan style={{ letterSpacing: '-0.0029990467943137354em' }}>1</tspan>
+      <tspan x="3.1" y="0">
+        0%
+      </tspan>
     </text>
   </svg>
 );

@@ -64,10 +64,10 @@ class IcoDetails3 extends React.Component<any, any> {
                   <div>30%</div> {this.props.lang.companyReserve}
                 </div>
                 <div className="title title--purple flex-row">
-                  <div>15%</div> {this.props.lang.strategicPartnerships}
+                  <div>10%</div> {this.props.lang.strategicPartnerships}
                 </div>
                 <div className="title flex-row">
-                  <div>5%</div>{' '}
+                  <div>10%</div>{' '}
                   {this.props.lang.earlySupportersAndAngelInvestors}
                 </div>
               </div>
