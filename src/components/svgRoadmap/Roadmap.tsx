@@ -247,7 +247,7 @@ const Roadmap = (props: any) => (
         y="17.621"
         style={{ letterSpacing: '-0.013998110568252722em' }}
       >
-        (GCS) {props.lang.sale}
+        (GST) {props.lang.sale}
       </tspan>
     </text>
 
