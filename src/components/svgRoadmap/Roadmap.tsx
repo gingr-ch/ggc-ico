@@ -161,7 +161,7 @@ const Roadmap = (props: any) => (
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
       }}
     >
-      {'GGC ICO ' + props.lang.preSale}
+      {'GGC ICO ' + props.lang.publicPreSale}
     </Text>
 
     <Text
@@ -177,7 +177,7 @@ const Roadmap = (props: any) => (
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
       }}
     >
-      {'GGC ICO ' + props.lang.mainSale}
+      {'GGC ICO ' + props.lang.publicSale}
     </Text>
 
     <Text
