@@ -11,8 +11,7 @@ const phoneQrGingr = require(process.env.REACT_APP_MEDIA_URL +
   'phone_qr_gingr.png');
 const calendar = require(process.env.REACT_APP_MEDIA_URL +
   'icons/calendar.svg');
-const escrow = require(process.env.REACT_APP_MEDIA_URL +
-  'icons/export_lock.svg');
+const escrow = require(process.env.REACT_APP_MEDIA_URL + 'icons/lock.svg');
 
 // export const langEn = require('../../assets/l18n/hook-up.en.json');
 // export const strings: HookUpStrings = new LocalizedStrings({
@@ -76,6 +75,8 @@ class HookUp extends React.Component<any, any> {
                   />
 
                   <img src={escrow} className="escrow__image" alt="" />
+
+                  <div className="escrow__text">{this.props.lang.escrow}</div>
 
                   <div className="path path--horizontal" />
                   <div className="path path--vertical path__arrow" />

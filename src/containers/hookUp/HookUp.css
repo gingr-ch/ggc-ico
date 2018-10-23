@@ -83,6 +83,15 @@
   transform: translate3d(-12px, -64px, 0);
 }
 
+.escrow__text {
+  position: absolute;
+  transform: translate3d(74px, -20px, 0px);
+  width: 50px;
+  font-size: 9px;
+  color: #661481;
+  text-transform: uppercase;
+}
+
 .hookup__phones {
   position: relative;
 }
