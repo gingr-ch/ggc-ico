@@ -43,6 +43,8 @@ import BackToTop from '../../components/backToTop/BackToTop';
 import SocialSidebar from '../../components/socialSidebar/SocialSidebar';
 import DotNav from '../../components/dotNav/DotNav';
 
+import EventBanner from '../../components/eventBanner/EventBanner';
+
 class Home extends React.Component<any, any> {
   constructor(props: object) {
     super(props);
@@ -92,6 +94,7 @@ class Home extends React.Component<any, any> {
         >
           <Nav lang={this.state.lang} />
         </Header>
+        <EventBanner />
         <Section bg="#eaeaea" top={true}>
           <Top lang={this.state.lang} />
         </Section>

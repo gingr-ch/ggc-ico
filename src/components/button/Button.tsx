@@ -6,6 +6,7 @@ import './Button.css';
 
 interface ButtonProps {
   borderColor?: string;
+  btnStyle?: string;
   shape?: string;
   className?: string;
   btnType?: string;
@@ -33,6 +34,7 @@ class Button extends React.Component<ButtonProps> {
     let classes = classNames({
       'gg-button--round': this.props.shape === 'round',
       'gg-button--rounded-edges': this.props.shape === 'rounded-edges',
+      'gg-button--secondary': this.props.btnStyle === 'secondary',
     });
 
     return (

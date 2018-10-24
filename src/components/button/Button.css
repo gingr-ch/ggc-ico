@@ -28,3 +28,9 @@
 .gg-button--rounded-edges {
   border-radius: 10px;
 }
+
+.gg-button--secondary {
+  background-color: var(--yellow);
+  color: var(--purple);
+  padding: 0 16px;
+}
