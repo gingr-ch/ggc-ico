@@ -50,6 +50,7 @@ body {
   --yellow: #ffd400;
   --pink: rgb(243, 159, 255);
   --purple: rgba(150, 48, 176, 1);
+  --purple-dark: #78006f;
   --green: rgba(32, 206, 136, 1);
   --flag-d: 28px;
   --content-width: 980px;
