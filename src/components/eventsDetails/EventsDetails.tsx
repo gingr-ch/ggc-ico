@@ -44,6 +44,10 @@ const ListItem = styled.div`
 `;
 
 const EventsDetails = props => {
+  const goToReg = () => {
+    props.history.push('/meetup/registration');
+  };
+
   return (
     <div
       style={{
@@ -90,7 +94,9 @@ const EventsDetails = props => {
         </ListItem>
       </List>
 
-      <Button btnStyle="secondary-fat">Join</Button>
+      <Button btnStyle="secondary-fat" click={goToReg}>
+        Join
+      </Button>
     </div>
   );
 };

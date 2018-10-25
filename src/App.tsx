@@ -91,12 +91,7 @@ class App extends React.Component<any, any> {
             authenticated={authenticated}
           />
           <Route exact={true} path="/login" component={Login} lang={lang} />
-          <Route
-            exact={true}
-            path="/meetup"
-            component={EventsPage}
-            lang={lang}
-          />
+          <Route path="/meetup" component={EventsPage} lang={lang} />
         </div>
       </Router>
     );
