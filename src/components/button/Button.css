@@ -34,3 +34,9 @@
   color: var(--purple);
   padding: 0 16px;
 }
+
+.gg-button--fat {
+  padding: 12px 45px;
+  min-width: 230px;
+  font-size: 18px;
+}

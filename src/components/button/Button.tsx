@@ -35,6 +35,8 @@ class Button extends React.Component<ButtonProps> {
       'gg-button--round': this.props.shape === 'round',
       'gg-button--rounded-edges': this.props.shape === 'rounded-edges',
       'gg-button--secondary': this.props.btnStyle === 'secondary',
+      'gg-button--secondary gg-button--fat':
+        this.props.btnStyle === 'secondary-fat',
     });
 
     return (
