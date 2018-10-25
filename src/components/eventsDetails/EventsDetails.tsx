@@ -25,13 +25,20 @@ const ListItem = styled.div`
   flex-direction: row;
   margin-bottom: 1.3em;
 
-  > span {
+  > * {
     &:first-child {
       flex: 1 1 40%;
       color: var(--yellow);
     }
     &:nth-child(2) {
       flex: 1 1 60%;
+
+      & > span {
+        color: var(--yellow);
+        font-size: 16px;
+        display: block;
+        margin-top: 8px;
+      }
     }
   }
 `;
@@ -69,11 +76,17 @@ const EventsDetails = props => {
         </ListItem>
         <ListItem>
           <span>18:00 - 18:30</span>
-          <span>GGC Coin Presentation</span>
+          <div>
+            GGC Coin Presentation
+            <span>with Sergio Rigert / CEO</span>
+          </div>
         </ListItem>
         <ListItem>
           <span>18:30 - 22:00</span>
-          <span>Open Talk</span>
+          <div>
+            Open Talk
+            <span>with Gingr Team</span>
+          </div>
         </ListItem>
       </List>
 

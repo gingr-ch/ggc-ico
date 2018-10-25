@@ -6,6 +6,7 @@ import { strings } from '../../components/localization';
 
 import EventsDetails from '../../components/eventsDetails/EventsDetails';
 import EventsRegistration from '../../components/eventsRegistration/EventsRegistration';
+import MapPin from '../../components/mapPin/MapPin';
 
 const Container = styled.div`
   width: 100%;
@@ -101,7 +102,9 @@ class EventsPage extends React.Component<any, any> {
             }}
             defaultCenter={this.state.center}
             defaultZoom={this.state.zoom}
-          />
+          >
+            <MapPin lat={this.state.center.lat} lng={this.state.center.lng} />
+          </GoogleMapReact>
         </div>
         <Left>
           <Route
