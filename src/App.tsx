@@ -21,8 +21,8 @@ const Home = Loadable({
 });
 
 const cookies = new Cookies();
-
 // import Home from './containers/home/Home';
+// const Login = React.lazy(() => import('./containers/login/Login'));
 
 class App extends React.Component<any, any> {
   constructor(props: object) {
@@ -83,7 +83,7 @@ class App extends React.Component<any, any> {
 
     return (
       <Router>
-        <div>
+        <div style={{ height: '100%', width: '100%' }}>
           <PrivateRoute
             exact={true}
             path="/"

@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { Route } from 'react-router-dom';
 import styled from 'styled-components';
-// import GoogleMapReact from 'google-map-react';
+import GoogleMapReact from 'google-map-react';
 import { strings } from '../../components/localization';
 
 import EventsDetails from '../../components/eventsDetails/EventsDetails';
+import EventsRegistration from '../../components/eventsRegistration/EventsRegistration';
 
 const Container = styled.div`
   width: 100%;
@@ -52,45 +53,39 @@ const Left = styled.div`
   }
 `;
 
-const Right = styled.div`
-  width: 60vw;
-  height: 100vh;
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--purple);
-  z-index: 1;
-
-  @media (max-width: 599px) {
-    width: 100vw;
-    height: 50vh;
-    min-height: 344px;
-    bottom: 0;
-    top: auto;
-    z-index: 5;
-    align-items: stretch;
-    padding-bottom: 24px;
-  }
-`;
-
-const Header = styled.h2`
-  @media (max-height: 600px) {
-    display: none;
-  }
-`;
+// const Right = styled.div`
+//   width: 60vw;
+//   height: 100vh;
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background: var(--purple);
+//   z-index: 1;
+//
+//   @media (max-width: 599px) {
+//     width: 100vw;
+//     height: 50vh;
+//     min-height: 344px;
+//     bottom: 0;
+//     top: auto;
+//     z-index: 5;
+//     align-items: stretch;
+//     padding-bottom: 24px;
+//   }
+// `;
 
 class EventsPage extends React.Component<any, any> {
   constructor(props: object) {
     super(props);
     this.state = {
       center: {
-        lat: 59.95,
-        lng: 30.33,
+        lat: 47.3882067,
+        lng: 8.4946743,
       },
-      zoom: 11,
+      zoom: 15,
       lang: strings,
       error: false,
     };
@@ -99,17 +94,28 @@ class EventsPage extends React.Component<any, any> {
   render() {
     return (
       <Container>
-        EventsPage
+        <div style={{ height: '100vh', width: '100%' }}>
+          <GoogleMapReact
+            bootstrapURLKeys={{
+              key: 'AIzaSyBnTvJK4x80mH7WfOs-HpCJ9uwuguyiMGc',
+            }}
+            defaultCenter={this.state.center}
+            defaultZoom={this.state.zoom}
+          />
+        </div>
         <Left>
-          <Header>{this.state.lang.ggcCoinIcoComingSoon}!</Header>
           <Route
             exact={true}
             path="/meetup"
             component={EventsDetails}
             lang={this.state.lang}
           />
+          <Route
+            path="/meetup/registration"
+            component={EventsRegistration}
+            lang={this.state.lang}
+          />
         </Left>
-        <Right />
       </Container>
     );
   }
