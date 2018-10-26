@@ -6,6 +6,7 @@ import { strings } from '../../components/localization';
 
 import EventsDetails from '../../components/eventsDetails/EventsDetails';
 import EventsRegistration from '../../components/eventsRegistration/EventsRegistration';
+import EventsRegConfirmation from '../../components/eventsRegConfirmation/EventsRegConfirmation';
 import MapPin from '../../components/mapPin/MapPin';
 
 const Container = styled.div`
@@ -116,6 +117,11 @@ class EventsPage extends React.Component<any, any> {
           <Route
             path={`${this.props.match.path}/registration`}
             component={EventsRegistration}
+            lang={this.state.lang}
+          />
+          <Route
+            path={`${this.props.match.path}/confirmation`}
+            component={EventsRegConfirmation}
             lang={this.state.lang}
           />
         </Left>
