@@ -2,6 +2,7 @@ import * as React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Loadable from 'react-loadable';
 import Cookies from 'universal-cookie';
+import { ThemeProvider } from 'styled-components';
 // Import locale strings
 import { strings } from './components/localization';
 
@@ -21,6 +22,10 @@ const Home = Loadable({
 });
 
 const cookies = new Cookies();
+
+const theme = {
+  main: 'mediumseagreen',
+};
 // import Home from './containers/home/Home';
 // const Login = React.lazy(() => import('./containers/login/Login'));
 
@@ -83,16 +88,18 @@ class App extends React.Component<any, any> {
 
     return (
       <Router>
-        <div style={{ height: '100%', width: '100%' }}>
-          <PrivateRoute
-            exact={true}
-            path="/"
-            component={Home}
-            authenticated={authenticated}
-          />
-          <Route exact={true} path="/login" component={Login} lang={lang} />
-          <Route path="/meetup" component={EventsPage} lang={lang} />
-        </div>
+        <ThemeProvider theme={theme}>
+          <div style={{ height: '100%', width: '100%' }}>
+            <PrivateRoute
+              exact={true}
+              path="/"
+              component={Home}
+              authenticated={authenticated}
+            />
+            <Route exact={true} path="/login" component={Login} lang={lang} />
+            <Route path="/meetup" component={EventsPage} lang={lang} />
+          </div>
+        </ThemeProvider>
       </Router>
     );
   }
