@@ -45,7 +45,7 @@ const Left = styled.div`
 
   @media (max-width: 699px) {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     transform: translateX(0);
     justify-content: flex-start;
     padding: 1em 0;
