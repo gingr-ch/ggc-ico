@@ -69,7 +69,6 @@ const LeftContainer = styled.div`
 
   @media (max-width: 699px) {
     width: 84%;
-    min-height: 95vh;
     height: 100%;
     transform: translate3d(0, 0, 0);
 
