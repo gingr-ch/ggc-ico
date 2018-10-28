@@ -69,7 +69,7 @@ const LeftContainer = styled.div`
 
   @media (max-width: 699px) {
     width: 84%;
-    min-height: 100vh;
+    min-height: 95vh;
     height: 100%;
     transform: translate3d(0, 0, 0);
 
@@ -109,10 +109,14 @@ class EventsPage extends React.Component<any, any> {
     super(props);
     this.state = {
       center: {
-        lat: 47.3882067,
-        lng: 8.4946743,
+        lat: 47.3882787,
+        lng: 8.4852675,
       },
-      zoom: 15,
+      marker: {
+        lat: 47.38846,
+        lng: 8.496801,
+      },
+      zoom: 14,
       lang: strings,
       error: false,
       isMobile: false,
@@ -137,7 +141,7 @@ class EventsPage extends React.Component<any, any> {
               defaultCenter={this.state.center}
               defaultZoom={this.state.zoom}
             >
-              <MapPin lat={this.state.center.lat} lng={this.state.center.lng} />
+              <MapPin lat={this.state.marker.lat} lng={this.state.marker.lng} />
             </GoogleMapReact>
           )}
         </div>

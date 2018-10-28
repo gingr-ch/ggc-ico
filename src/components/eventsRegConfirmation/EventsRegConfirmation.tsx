@@ -20,6 +20,7 @@ const Heading = styled.h2`
     & + div {
       font-size: 21px;
       max-width: 235px;
+      text-align: left;
     }
   }
 `;
