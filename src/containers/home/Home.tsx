@@ -159,7 +159,7 @@ class Home extends React.Component<any, any> {
           <Nav lang={this.state.lang} />
         </Header>
         <EventBanner />
-        <Section bg="#eaeaea" top={true}>
+        <Section bg="#eaeaea" top={true} small={true}>
           <Top lang={this.state.lang} />
         </Section>
         <Section bg="#4c306a" small={true}>
