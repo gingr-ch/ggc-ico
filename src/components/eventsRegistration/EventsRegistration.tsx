@@ -4,6 +4,7 @@ import Input from '@material-ui/core/Input';
 // import TextField from '@material-ui/core/TextField';
 import history from '../../components/BrowserHistory';
 import Button from '../../components/button/Button';
+import MobileNav from '../../components/mobileNav/MobileNav';
 import './EventsRegistration.css';
 
 const encode = data => {
@@ -68,7 +69,7 @@ class EventsRegistration extends React.Component<any, any> {
       .then(() =>
         setTimeout(() => {
           this.setState({ sent: true });
-          history.push('/meetup/confirmation');
+          history.push('/confirmation');
           // tslint:disable-next-line:align
         }, 3000)
       )
@@ -80,6 +81,7 @@ class EventsRegistration extends React.Component<any, any> {
 
     return (
       <div>
+        <MobileNav>Back</MobileNav>
         <Heading>Register Gingr GG Coin Meetup</Heading>
         <form
           onSubmit={this.handleSubmit}

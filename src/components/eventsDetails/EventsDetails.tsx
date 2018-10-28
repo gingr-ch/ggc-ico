@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import Button from '../button/Button';
+import MobileNav from '../mobileNav/MobileNav';
 
 const Heading = styled.h2`
   font-size: 28px;
@@ -25,7 +26,7 @@ const List = styled.div`
 
   @media (max-width: 699px) {
     font-size: 17px;
-    margin-bottom: 1.7em;
+    margin-bottom: 1.2em;
   }
 `;
 
@@ -59,6 +60,7 @@ const EventsDetails = props => {
 
   return (
     <div>
+      <MobileNav>GGC ICO Website</MobileNav>
       <Heading>Be part of the GG Coin Meetup</Heading>
       <List>
         <ListItem>

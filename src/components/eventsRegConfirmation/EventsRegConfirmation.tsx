@@ -9,6 +9,19 @@ const Heading = styled.h2`
   font-family: Asap;
   font-weight: normal;
   margin-bottom: 0em;
+
+  & + div {
+    text-align: center;
+  }
+
+  @media (max-width: 699px) {
+    margin-bottom: 1em;
+
+    & + div {
+      font-size: 21px;
+      max-width: 235px;
+    }
+  }
 `;
 
 const Container = styled.div`
@@ -16,9 +29,15 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  height: 100%;
 
   button {
     margin-top: 2.5em;
+  }
+
+  @media (max-width: 699px) {
+    align-items: flex-start;
+    justify-content: space-between;
   }
 `;
 
@@ -29,8 +48,10 @@ const EventsRegConfirmation = props => {
 
   return (
     <Container>
-      <Heading>Thank you for joining</Heading>
-      <div>All details will be sent via email</div>
+      <div className="heading-container">
+        <Heading>Thank you for joining</Heading>
+        <div>All details will be sent via email</div>
+      </div>
       <Button btnStyle="secondary-fat" click={goToHome}>
         Go to GGC site
       </Button>

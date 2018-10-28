@@ -2,6 +2,8 @@ import * as React from 'react';
 import { Route } from 'react-router-dom';
 import styled from 'styled-components';
 import GoogleMapReact from 'google-map-react';
+import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
+
 import { strings } from '../../components/localization';
 
 import EventsDetails from '../../components/eventsDetails/EventsDetails';
@@ -46,15 +48,12 @@ const Left = styled.div`
     height: 100vh;
     transform: translateX(0);
     justify-content: flex-start;
-    padding-top: 2em;
+    padding: 1em 0;
+    box-sizing: border-box;
     overflow: hidden;
 
     &::after {
       content: none;
-    }
-
-    @media (max-width: 699px) {
-      padding-top: 0;
     }
   }
 `;
@@ -64,16 +63,19 @@ const LeftContainer = styled.div`
   height: auto;
   transform: translate3d(10%, 0, 0);
 
-  button {
+  button.gg-button--secondary {
     margin-top: 1em;
   }
 
   @media (max-width: 699px) {
-    width: 80%;
+    width: 84%;
+    min-height: 100%;
+    height: 100%;
     transform: translate3d(0, 0, 0);
 
-    button {
+    button.gg-button--secondary {
       width: 100%;
+      margin-top: 0;
     }
   }
 `;
@@ -113,22 +115,31 @@ class EventsPage extends React.Component<any, any> {
       zoom: 15,
       lang: strings,
       error: false,
+      isMobile: false,
     };
   }
+
+  isMobile = () => {
+    if (!isWidthUp('sm', this.props.width)) {
+      this.setState({ isMobile: true });
+    }
+  };
 
   render() {
     return (
       <Container>
         <div style={{ height: '100vh', width: '100%' }}>
-          <GoogleMapReact
-            bootstrapURLKeys={{
-              key: 'AIzaSyBnTvJK4x80mH7WfOs-HpCJ9uwuguyiMGc',
-            }}
-            defaultCenter={this.state.center}
-            defaultZoom={this.state.zoom}
-          >
-            <MapPin lat={this.state.center.lat} lng={this.state.center.lng} />
-          </GoogleMapReact>
+          {!this.state.isMobile && (
+            <GoogleMapReact
+              bootstrapURLKeys={{
+                key: 'AIzaSyBnTvJK4x80mH7WfOs-HpCJ9uwuguyiMGc',
+              }}
+              defaultCenter={this.state.center}
+              defaultZoom={this.state.zoom}
+            >
+              <MapPin lat={this.state.center.lat} lng={this.state.center.lng} />
+            </GoogleMapReact>
+          )}
         </div>
         <Left>
           <LeftContainer>
@@ -155,4 +166,4 @@ class EventsPage extends React.Component<any, any> {
   }
 }
 
-export default EventsPage;
+export default withWidth()(EventsPage);
