@@ -1,4 +1,6 @@
 import * as React from 'react';
+import Dialog from 'rc-dialog';
+import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 
 // Load firebase service
 import Base from '../../Base';
@@ -14,6 +16,7 @@ import Section from '../../components/section/Section';
 import Top from '../top/Top';
 import Header from '../../components/header/Header';
 import Nav from '../../components/nav/Nav';
+import Button from '../../components/button/Button';
 import PressReports from '../pressReports/PressReports';
 import Download from '../download/Download';
 import StrongSolution from '../strongSolution/StrongSolution';
@@ -53,8 +56,30 @@ class Home extends React.Component<any, any> {
     this.state = {
       lang: strings,
       user: null,
+      center: true,
+      visible: true,
+      width: '80%',
+      height: '80%',
+      mousePosition: { x: '50%', y: '135px' },
     };
   }
+
+  onClick = (e: any) => {
+    this.setState({
+      mousePosition: {
+        x: e.pageX,
+        y: e.pageY,
+      },
+      visible: true,
+    });
+  };
+
+  onClose = () => {
+    // console.log(e);
+    this.setState({
+      visible: false,
+    });
+  };
 
   // handle state change when language is changed
   handleLangChange(langCode: any) {
@@ -83,7 +108,46 @@ class Home extends React.Component<any, any> {
     this.getUser();
   }
 
+  goToMeetup = () => {
+    this.props.history.push('/meetup');
+  };
+
   render() {
+    const style = {
+      width: this.state.width,
+      height: this.state.height,
+    };
+
+    let wrapClassName = '';
+    if (this.state.center) {
+      wrapClassName = 'event-dialog center';
+    }
+
+    const isMobile = !isWidthUp('sm', this.props.width);
+
+    const dialog = (
+      <Dialog
+        visible={this.state.visible}
+        wrapClassName={wrapClassName}
+        animation="zoom"
+        maskAnimation="fade"
+        onClose={this.onClose}
+        style={style}
+        mousePosition={this.state.mousePosition}
+        destroyOnClose={this.state.destroyOnClose}
+      >
+        <div className="rc-dialog-body__content flex-row">
+          <div className="rc-dialog-body__text flex-column">
+            <h2>Be part of the GG Coin Meetup</h2>
+            <span>08/11/2018 Zürich</span>
+            <Button btnStyle="secondary-fat" click={this.goToMeetup}>
+              Join now
+            </Button>
+          </div>
+        </div>
+      </Dialog>
+    );
+
     return (
       <div className="App">
         <BackToTop />
@@ -195,9 +259,10 @@ class Home extends React.Component<any, any> {
         </Section>
         <SocialSidebar />
         <DotNav lang={this.state.lang} />
+        {isMobile && dialog}
       </div>
     );
   }
 }
 
-export default Home;
+export default withWidth()(Home);

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { withRouter } from 'react-router';
 import styled from 'styled-components';
+
 import Button from '../button/Button';
 
 const Banner = styled.div`
