@@ -79,6 +79,16 @@ const LeftContainer = styled.div`
   }
 `;
 
+const MapContainer = styled.div`
+  height: 100vh;
+  width: 100%;
+
+  @media (max-width: 699px) {
+    height: auto;
+    display: none;
+  }
+`;
+
 // const Right = styled.div`
 //   width: 60vw;
 //   height: 100vh;
@@ -131,7 +141,7 @@ class EventsPage extends React.Component<any, any> {
   render() {
     return (
       <Container>
-        <div style={{ height: '100vh', width: '100%' }}>
+        <MapContainer>
           {!this.state.isMobile && (
             <GoogleMapReact
               bootstrapURLKeys={{
@@ -143,7 +153,7 @@ class EventsPage extends React.Component<any, any> {
               <MapPin lat={this.state.marker.lat} lng={this.state.marker.lng} />
             </GoogleMapReact>
           )}
-        </div>
+        </MapContainer>
         <Left>
           <LeftContainer>
             <Route
