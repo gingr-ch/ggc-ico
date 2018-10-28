@@ -19,6 +19,7 @@ const Heading = styled.h2`
   font-family: Asap;
   font-weight: normal;
   margin-bottom: 0em;
+  max-width: 250px;
 `;
 
 const Spacer = styled.div`
@@ -79,10 +80,7 @@ class EventsRegistration extends React.Component<any, any> {
 
     return (
       <div>
-        <Heading>
-          Register
-          <br /> Gingr GG Coin Meetup
-        </Heading>
+        <Heading>Register Gingr GG Coin Meetup</Heading>
         <form
           onSubmit={this.handleSubmit}
           name="meetup"
