@@ -13,11 +13,16 @@ import Base from './Base';
 
 import PrivateRoute from './PrivateRoute';
 import Login from './containers/login/Login';
-import EventsPage from './containers/eventsPage/EventsPage';
+// import EventsPage from './containers/eventsPage/EventsPage';
 import LoaderPage from './components/loaderPage/LoaderPage';
 
 const Home = Loadable({
   loader: () => import('./containers/home/Home'),
+  loading: () => <LoaderPage />,
+});
+
+const EventsPage = Loadable({
+  loader: () => import('./containers/eventsPage/EventsPage'),
   loading: () => <LoaderPage />,
 });
 

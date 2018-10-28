@@ -67,9 +67,16 @@ class Top extends React.Component<any, any> {
     });
   }
 
-  ref = (player: any) => {
-    this.player = player;
-    this.player.seekTo(44);
+  ref = async (player: any) => {
+    try {
+      this.player = player;
+
+      if (this.player !== null) {
+        this.player.seekTo(44);
+      }
+    } catch (err) {
+      throw err;
+    }
   };
 
   click(link: string) {
