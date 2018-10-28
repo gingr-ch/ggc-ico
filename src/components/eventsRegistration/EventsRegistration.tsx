@@ -61,7 +61,7 @@ class EventsRegistration extends React.Component<any, any> {
     e.preventDefault();
     this.setState({ sending: true });
 
-    fetch('/meetup/registration', {
+    fetch('/meetup', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'meetup', ...this.state }),
@@ -69,7 +69,7 @@ class EventsRegistration extends React.Component<any, any> {
       .then(() =>
         setTimeout(() => {
           this.setState({ sent: true });
-          history.push('/confirmation');
+          history.push('/meetup/confirmation');
           // tslint:disable-next-line:align
         }, 3000)
       )
@@ -177,7 +177,7 @@ class EventsRegistration extends React.Component<any, any> {
                       repeatCount="indefinite"
                     />
                   </circle>
-                  <circle cx="60" cy="15" r="9" fill-opacity="0.3">
+                  <circle cx="60" cy="15" r="9" fillOpacity="0.3">
                     <animate
                       attributeName="r"
                       from="9"

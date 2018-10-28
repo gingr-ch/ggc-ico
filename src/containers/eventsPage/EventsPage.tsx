@@ -50,7 +50,7 @@ const Left = styled.div`
     justify-content: flex-start;
     padding: 1em 0;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: scroll;
 
     &::after {
       content: none;
@@ -69,7 +69,7 @@ const LeftContainer = styled.div`
 
   @media (max-width: 699px) {
     width: 84%;
-    min-height: 100%;
+    min-height: 100vh;
     height: 100%;
     transform: translate3d(0, 0, 0);
 
