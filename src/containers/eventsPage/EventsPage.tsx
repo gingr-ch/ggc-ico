@@ -41,9 +41,9 @@ const Left = styled.div`
     z-index: 3;
   }
 
-  @media (max-width: 599px) {
+  @media (max-width: 699px) {
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
     transform: translateX(0);
     justify-content: flex-start;
     padding-top: 2em;
@@ -51,6 +51,29 @@ const Left = styled.div`
 
     &::after {
       content: none;
+    }
+
+    @media (max-width: 699px) {
+      padding-top: 0;
+    }
+  }
+`;
+
+const LeftContainer = styled.div`
+  width: 50%;
+  height: auto;
+  transform: translate3d(10%, 0, 0);
+
+  button {
+    margin-top: 1em;
+  }
+
+  @media (max-width: 699px) {
+    width: 80%;
+    transform: translate3d(0, 0, 0);
+
+    button {
+      width: 100%;
     }
   }
 `;
@@ -108,22 +131,24 @@ class EventsPage extends React.Component<any, any> {
           </GoogleMapReact>
         </div>
         <Left>
-          <Route
-            exact={true}
-            path={this.props.match.path}
-            component={EventsDetails}
-            lang={this.state.lang}
-          />
-          <Route
-            path={`${this.props.match.path}/registration`}
-            component={EventsRegistration}
-            lang={this.state.lang}
-          />
-          <Route
-            path={`${this.props.match.path}/confirmation`}
-            component={EventsRegConfirmation}
-            lang={this.state.lang}
-          />
+          <LeftContainer>
+            <Route
+              exact={true}
+              path={this.props.match.path}
+              component={EventsDetails}
+              lang={this.state.lang}
+            />
+            <Route
+              path={`${this.props.match.path}/registration`}
+              component={EventsRegistration}
+              lang={this.state.lang}
+            />
+            <Route
+              path={`${this.props.match.path}/confirmation`}
+              component={EventsRegConfirmation}
+              lang={this.state.lang}
+            />
+          </LeftContainer>
         </Left>
       </Container>
     );

@@ -10,6 +10,10 @@ const Heading = styled.h2`
   font-family: Asap;
   font-weight: normal;
   margin-bottom: 1.7em;
+
+  @media (max-width: 699px) {
+    margin-bottom: 1.2em;
+  }
 `;
 
 const List = styled.div`
@@ -18,6 +22,11 @@ const List = styled.div`
   font-size: 19px;
   font-size: normal;
   margin-bottom: 1.9em;
+
+  @media (max-width: 699px) {
+    font-size: 17px;
+    margin-bottom: 1.7em;
+  }
 `;
 
 const ListItem = styled.div`
@@ -49,13 +58,7 @@ const EventsDetails = props => {
   };
 
   return (
-    <div
-      style={{
-        width: '50%',
-        height: 'auto',
-        transform: 'translate3d(10%, 0, 0)',
-      }}
-    >
+    <div>
       <Heading>Be part of the GG Coin Meetup</Heading>
       <List>
         <ListItem>

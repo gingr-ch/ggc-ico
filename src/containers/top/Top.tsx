@@ -278,4 +278,3 @@ class Top extends React.Component<any, any> {
 }
 
 export default withWidth()(Top);
-// export default Top;
