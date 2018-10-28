@@ -9,7 +9,13 @@ interface MapPinProps {
 
 const MapPin = (props: MapPinProps) => {
   return (
-    <div style={{ width: '50.675px', height: '64.269px' }}>
+    <div
+      style={{
+        width: '50.675px',
+        height: '64.269px',
+        transform: 'translate3d(0, -45px, 0)',
+      }}
+    >
       <SvgMapPin lat={props.lat} lng={props.lng} />
     </div>
   );
