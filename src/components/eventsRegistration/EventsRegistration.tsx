@@ -21,15 +21,22 @@ const Heading = styled.h2`
   margin-bottom: 0em;
 `;
 
-const Container = styled.div`
-  width: 50%;
-  height: auto;
-  transform: translate3d(10%, 0, 0);
-
-  button {
-    margin-top: 1em;
+const Spacer = styled.div`
+  @media (max-width: 699px) {
+    display: flex;
+    flex: 1 1 auto;
   }
 `;
+
+// const Container = styled.div`
+//   width: 50%;
+//   height: auto;
+//   transform: translate3d(10%, 0, 0);
+//
+//   button {
+//     margin-top: 1em;
+//   }
+// `;
 
 class EventsRegistration extends React.Component<any, any> {
   constructor(props: object) {
@@ -71,7 +78,7 @@ class EventsRegistration extends React.Component<any, any> {
     const { company, surname, name, phone, email, sending, sent } = this.state;
 
     return (
-      <Container>
+      <div>
         <Heading>
           Register
           <br /> Gingr GG Coin Meetup
@@ -133,6 +140,7 @@ class EventsRegistration extends React.Component<any, any> {
             onChange={this.handleChange}
             value={email}
           />
+          <Spacer />
           <Button
             btnStyle="secondary-fat"
             btnType="submit"
@@ -219,7 +227,7 @@ class EventsRegistration extends React.Component<any, any> {
             {!sent && !sending && 'Send'}
           </Button>
         </form>
-      </Container>
+      </div>
     );
   }
 }
