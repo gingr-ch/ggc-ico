@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import Input from '@material-ui/core/Input';
 // import TextField from '@material-ui/core/TextField';
-import history from '../../components/BrowserHistory';
+// import history from '../../components/BrowserHistory';
 import Button from '../../components/button/Button';
 import MobileNav from '../../components/mobileNav/MobileNav';
 import './EventsRegistration.css';
@@ -69,7 +69,7 @@ class EventsRegistration extends React.Component<any, any> {
       .then(() =>
         setTimeout(() => {
           this.setState({ sent: true });
-          history.push('/meetup/confirmation');
+          this.props.history.push('/meetup/confirmation');
           // tslint:disable-next-line:align
         }, 3000)
       )
