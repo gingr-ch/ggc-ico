@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Button from '../button/Button';
 
 const Banner = styled.div`
-  background: var(--purple);
+  background: var(--purple-dark);
   color: white;
   text-transform: uppercase;
   font-size: 22px;
