@@ -57,6 +57,7 @@
   "signUp": "prijava",
   "ggCoin": "GG kovanec",
   "flow": "Pretok",
+  "ggCoinFlow": "{0} {1}",
   "onOurGingrPlatform": "Na naši platformi Gingr",
   "gingrPlatform": "Gingr platforme",
   "platform": "Platforma",
