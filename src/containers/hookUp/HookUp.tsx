@@ -28,7 +28,11 @@ class HookUp extends React.Component<any, any> {
       <div className="gg-section-container gg-section-container--hookup">
         <div className="gg-content-container">
           <h1 className="app-header">
-            <span>{this.props.lang.hookUp}</span> {this.props.lang.booking}
+            {this.props.lang.formatString(
+              this.props.lang.hookupBooking,
+              <span>{this.props.lang.hookUp}</span>,
+              this.props.lang.booking
+            )}
           </h1>
           <h4>"{this.props.lang.findYourMostDesired}"</h4>
           <OnVisible className="hidden-content hidden-content--slide-in--right">
