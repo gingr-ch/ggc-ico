@@ -138,8 +138,8 @@ class Home extends React.Component<any, any> {
       >
         <div className="rc-dialog-body__content flex-row">
           <div className="rc-dialog-body__text flex-column">
-            <h2>Be part of the GG Coin Meetup</h2>
-            <span>08/11/2018 Zürich</span>
+            <h2>{this.state.lang.bePartofTheGgCoinMeetup}</h2>
+            <span>08/11/2018 {this.state.lang.zurich}</span>
             <Button btnStyle="secondary-fat" click={this.goToMeetup}>
               Join now
             </Button>
@@ -158,7 +158,7 @@ class Home extends React.Component<any, any> {
         >
           <Nav lang={this.state.lang} />
         </Header>
-        <EventBanner />
+        <EventBanner lang={this.state.lang} />
         <Section bg="#eaeaea" top={true} small={true}>
           <Top lang={this.state.lang} />
         </Section>

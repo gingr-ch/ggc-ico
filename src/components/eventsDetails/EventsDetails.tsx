@@ -60,47 +60,49 @@ const EventsDetails = props => {
 
   return (
     <div>
-      <MobileNav>GGC ICO Website</MobileNav>
-      <Heading>Be part of the GG Coin Meetup</Heading>
+      <MobileNav>{props.lang.ggcIcoWebsite}</MobileNav>
+      <Heading>{props.lang.bePartOfTheGgCoinMeetup}</Heading>
       <List>
         <ListItem>
-          <span>What</span>
-          <span>Business Networking Meetup</span>
+          <span>{props.lang.what}</span>
+          <span>{props.lang.businessNetworkingMeetup}</span>
         </ListItem>
         <ListItem>
-          <span>When</span>
+          <span>{props.lang.when}</span>
           <span>08/11/2018</span>
         </ListItem>
         <ListItem>
-          <span>Where</span>
-          <span>Hihlstrasse 473, 8048 Zürich</span>
+          <span>{props.lang.where}</span>
+          <span>Hihlstrasse 473, 8048 {props.lang.zurich}</span>
         </ListItem>
       </List>
 
-      <Heading>Timeline</Heading>
+      <Heading>{props.lang.timeline}</Heading>
       <List>
         <ListItem>
           <span>17:00 - 18:00</span>
-          <span>Meetup</span>
+          <span>{props.lang.meetup}</span>
         </ListItem>
         <ListItem>
           <span>18:00 - 18:30</span>
           <div>
-            GGC Coin Presentation
-            <span>with Sergio Rigert / CEO</span>
+            {props.lang.ggCoinPresentation}
+            <span>
+              {props.lang.with} Sergio Rigert / {props.lang.ceo}
+            </span>
           </div>
         </ListItem>
         <ListItem>
           <span>18:30 - 22:00</span>
           <div>
-            Open Talk
-            <span>with Gingr Team</span>
+            {props.lang.openTalk}
+            <span>{props.lang.with} Gingr Team</span>
           </div>
         </ListItem>
       </List>
 
       <Button btnStyle="secondary-fat" click={goToReg}>
-        Join
+        {props.lang.join}
       </Button>
     </div>
   );

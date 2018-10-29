@@ -50,11 +50,11 @@ const EventsRegConfirmation = props => {
   return (
     <Container>
       <div className="heading-container">
-        <Heading>Thank you for joining</Heading>
-        <div>All details will be sent via email</div>
+        <Heading>{props.lang.thankYouForJoining}</Heading>
+        <div>{props.lang.allDetailsWillBeSentViaEmail}</div>
       </div>
       <Button btnStyle="secondary-fat" click={goToHome}>
-        Go to GGC site
+        {props.lang.goToGgcSite}
       </Button>
     </Container>
   );

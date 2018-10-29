@@ -81,8 +81,10 @@ class EventsRegistration extends React.Component<any, any> {
 
     return (
       <div>
-        <MobileNav>Back</MobileNav>
-        <Heading>Register Gingr GG Coin Meetup</Heading>
+        <MobileNav>{this.props.lang.register}</MobileNav>
+        <Heading>
+          {this.props.lang.register} Gingr GG Coin {this.props.lang.meetup}
+        </Heading>
         <form
           onSubmit={this.handleSubmit}
           name="meetup"
@@ -95,7 +97,7 @@ class EventsRegistration extends React.Component<any, any> {
             type="text"
             name="company"
             id="company"
-            placeholder="Company"
+            placeholder={this.props.lang.company}
             onChange={this.handleChange}
             value={company}
           />
@@ -106,7 +108,7 @@ class EventsRegistration extends React.Component<any, any> {
             type="text"
             name="surname"
             id="surname"
-            placeholder="Surname *"
+            placeholder={this.props.lang.surname + ' *'}
             onChange={this.handleChange}
             value={surname}
           />
@@ -116,7 +118,7 @@ class EventsRegistration extends React.Component<any, any> {
             type="text"
             name="name"
             id="name"
-            placeholder="Name *"
+            placeholder={this.props.lang.name + ' *'}
             onChange={this.handleChange}
             value={name}
           />
@@ -126,7 +128,7 @@ class EventsRegistration extends React.Component<any, any> {
             type="tel"
             name="phone"
             id="phone"
-            placeholder="Phone *"
+            placeholder={this.props.lang.phone + ' *'}
             onChange={this.handleChange}
             value={phone}
           />
@@ -136,7 +138,7 @@ class EventsRegistration extends React.Component<any, any> {
             type="email"
             name="email"
             id="email"
-            placeholder="Email *"
+            placeholder={this.props.lang.email + ' *'}
             onChange={this.handleChange}
             value={email}
           />
@@ -223,8 +225,8 @@ class EventsRegistration extends React.Component<any, any> {
                   </circle>
                 </svg>
               )}
-            {sending && sent && 'Sent'}
-            {!sent && !sending && 'Send'}
+            {sending && sent && this.props.lang.sent}
+            {!sent && !sending && this.props.lang.send}
           </Button>
         </form>
       </div>

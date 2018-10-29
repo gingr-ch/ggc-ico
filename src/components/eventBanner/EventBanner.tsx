@@ -69,11 +69,11 @@ const EventBanner = props => {
   return (
     <Banner>
       <div className="banner-container">
-        <BannerTitle>Be part of the GG Coin Meetup</BannerTitle>
-        <span>{date} Zürich</span>
+        <BannerTitle>{props.lang.bePartOfTheGgCoinMeetup}</BannerTitle>
+        <span>{date} {props.lang.zurich}</span>
         <Spacer />
         <Button btnStyle="secondary" click={goToMeetup}>
-          Join now
+          {props.lang.joinNow}
         </Button>
       </div>
     </Banner>
