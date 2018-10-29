@@ -13,7 +13,7 @@ class Beta extends React.Component<any, any> {
   }
 
   click() {
-    window.open('https://gingr.ch', '_blank');
+    window.open('https://gingr.sex', '_blank');
   }
 
   render() {
