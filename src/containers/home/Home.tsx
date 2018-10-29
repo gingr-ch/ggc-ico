@@ -138,7 +138,7 @@ class Home extends React.Component<any, any> {
       >
         <div className="rc-dialog-body__content flex-row">
           <div className="rc-dialog-body__text flex-column">
-            <h2>{this.state.lang.bePartofTheGgCoinMeetup}</h2>
+            <h2>{this.state.lang.bePartOfTheGgCoinMeetup}</h2>
             <span>08/11/2018 {this.state.lang.zurich}</span>
             <Button btnStyle="secondary-fat" click={this.goToMeetup}>
               Join now
