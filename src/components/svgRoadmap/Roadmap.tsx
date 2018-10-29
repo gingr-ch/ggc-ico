@@ -119,7 +119,7 @@ const Roadmap = (props: any) => (
     <Text
       verticalAnchor="start"
       textAnchor="end"
-      width={155}
+      width={185}
       x="155.558"
       y="358.229"
       lineHeight="1.2em"
@@ -129,7 +129,11 @@ const Roadmap = (props: any) => (
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
       }}
     >
-      {'GINGR 2.0 ' + props.lang.launch}
+      {props.lang.formatString(
+        props.lang.gingr2Launch,
+        'GINGR 2.0',
+        props.lang.launch
+      )}
     </Text>
 
     <Text
