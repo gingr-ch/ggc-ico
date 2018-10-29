@@ -56,8 +56,11 @@ class RevolutionarySolution extends React.Component<any, any> {
           style={{ justifyContent: 'space-between' }}
         >
           <h1 className="app-header app-header--xs">
-            {this.props.lang.revolutionary}
-            <br /> {this.props.lang.solution}
+            {this.props.lang.formatString(
+              this.props.lang.revolutionarySolution,
+              <div>{this.props.lang.revolutionary}</div>,
+              <div>{this.props.lang.solution}</div>
+            )}
           </h1>
 
           <div
