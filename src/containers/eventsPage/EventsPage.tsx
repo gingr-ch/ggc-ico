@@ -159,18 +159,21 @@ class EventsPage extends React.Component<any, any> {
             <Route
               exact={true}
               path={this.props.match.path}
-              component={EventsDetails}
-              lang={this.state.lang}
+              render={props => (
+                <EventsDetails {...props} lang={this.state.lang} />
+              )}
             />
             <Route
               path={`${this.props.match.path}/registration`}
-              component={EventsRegistration}
-              lang={this.state.lang}
+              render={props => (
+                <EventsRegistration {...props} lang={this.state.lang} />
+              )}
             />
             <Route
               path={`${this.props.match.path}/confirmation`}
-              component={EventsRegConfirmation}
-              lang={this.state.lang}
+              render={props => (
+                <EventsRegConfirmation {...props} lang={this.state.lang} />
+              )}
             />
           </LeftContainer>
         </Left>
