@@ -13,7 +13,7 @@ const Heading = styled.h2`
   margin-bottom: 1.7em;
 
   @media (max-width: 699px) {
-    margin-bottom: 1.2em;
+    margin-bottom: 1em;
   }
 `;
 
@@ -26,7 +26,7 @@ const List = styled.div`
 
   @media (max-width: 699px) {
     font-size: 17px;
-    margin-bottom: 1.2em;
+    margin-bottom: 0em;
   }
 `;
 
