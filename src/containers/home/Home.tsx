@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Dialog from 'rc-dialog';
-import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
+// import Dialog from 'rc-dialog';
+// import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 
 // Load firebase service
 import Base from '../../Base';
@@ -16,7 +16,7 @@ import Section from '../../components/section/Section';
 import Top from '../top/Top';
 import Header from '../../components/header/Header';
 import Nav from '../../components/nav/Nav';
-import Button from '../../components/button/Button';
+// import Button from '../../components/button/Button';
 import PressReports from '../pressReports/PressReports';
 import Download from '../download/Download';
 import StrongSolution from '../strongSolution/StrongSolution';
@@ -46,7 +46,7 @@ import BackToTop from '../../components/backToTop/BackToTop';
 import SocialSidebar from '../../components/socialSidebar/SocialSidebar';
 import DotNav from '../../components/dotNav/DotNav';
 
-import EventBanner from '../../components/eventBanner/EventBanner';
+// import EventBanner from '../../components/eventBanner/EventBanner';
 
 class Home extends React.Component<any, any> {
   constructor(props: object) {
@@ -113,40 +113,40 @@ class Home extends React.Component<any, any> {
   };
 
   render() {
-    const style = {
-      width: this.state.width,
-      height: this.state.height,
-    };
+    // const style = {
+    //   width: this.state.width,
+    //   height: this.state.height,
+    // };
 
-    let wrapClassName = '';
-    if (this.state.center) {
-      wrapClassName = 'event-dialog center';
-    }
+    // let wrapClassName = '';
+    // if (this.state.center) {
+    //   wrapClassName = 'event-dialog center';
+    // }
 
-    const isMobile = !isWidthUp('sm', this.props.width);
+    // const isMobile = !isWidthUp('sm', this.props.width);
 
-    const dialog = (
-      <Dialog
-        visible={this.state.visible}
-        wrapClassName={wrapClassName}
-        animation="zoom"
-        maskAnimation="fade"
-        onClose={this.onClose}
-        style={style}
-        mousePosition={this.state.mousePosition}
-        destroyOnClose={this.state.destroyOnClose}
-      >
-        <div className="rc-dialog-body__content flex-row">
-          <div className="rc-dialog-body__text flex-column">
-            <h2>{this.state.lang.bePartOfTheGgCoinMeetup}</h2>
-            <span>08/11/2018 {this.state.lang.zurich}</span>
-            <Button btnStyle="secondary-fat" click={this.goToMeetup}>
-              Join now
-            </Button>
-          </div>
-        </div>
-      </Dialog>
-    );
+    // const dialog = (
+    //   <Dialog
+    //     visible={this.state.visible}
+    //     wrapClassName={wrapClassName}
+    //     animation="zoom"
+    //     maskAnimation="fade"
+    //     onClose={this.onClose}
+    //     style={style}
+    //     mousePosition={this.state.mousePosition}
+    //     destroyOnClose={this.state.destroyOnClose}
+    //   >
+    //     <div className="rc-dialog-body__content flex-row">
+    //       <div className="rc-dialog-body__text flex-column">
+    //         <h2>{this.state.lang.bePartOfTheGgCoinMeetup}</h2>
+    //         <span>08/11/2018 {this.state.lang.zurich}</span>
+    //         <Button btnStyle="secondary-fat" click={this.goToMeetup}>
+    //           Join now
+    //         </Button>
+    //       </div>
+    //     </div>
+    //   </Dialog>
+    // );
 
     return (
       <div className="App">
@@ -158,7 +158,7 @@ class Home extends React.Component<any, any> {
         >
           <Nav lang={this.state.lang} />
         </Header>
-        <EventBanner lang={this.state.lang} />
+        {/*<EventBanner lang={this.state.lang} />*/}
         <Section bg="#eaeaea" top={true} small={true}>
           <Top lang={this.state.lang} />
         </Section>
@@ -259,10 +259,11 @@ class Home extends React.Component<any, any> {
         </Section>
         <SocialSidebar />
         <DotNav lang={this.state.lang} />
-        {isMobile && dialog}
+        {/*isMobile && dialog*/}
       </div>
     );
   }
 }
 
-export default withWidth()(Home);
+// export default withWidth()(Home);
+export default Home;
