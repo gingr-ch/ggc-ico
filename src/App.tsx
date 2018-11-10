@@ -74,7 +74,7 @@ class App extends React.Component<any, any> {
             loading: false,
           });
           // tslint:disable-next-line:align
-        }, 400);
+        }, 1000);
       } else {
         this.setState({
           authenticated: false,
