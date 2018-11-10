@@ -67,11 +67,14 @@ class App extends React.Component<any, any> {
   componentWillMount() {
     Base.auth().onAuthStateChanged(user => {
       if (user) {
-        this.setState({
-          authenticated: true,
-          currentUser: user,
-          loading: false,
-        });
+        setTimeout(() => {
+          this.setState({
+            authenticated: true,
+            currentUser: user,
+            loading: false,
+          });
+          // tslint:disable-next-line:align
+        }, 400);
       } else {
         this.setState({
           authenticated: false,
