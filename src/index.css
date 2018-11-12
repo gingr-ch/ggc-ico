@@ -113,3 +113,32 @@ header {
   min-height: 49px;
   min-width: 185px;
 }
+
+.gg-nav {
+  min-height: 73px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.gg-nav ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.gg-nav ul li {
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.gg-nav a {
+  color: white;
+  text-decoration: none;
+}
