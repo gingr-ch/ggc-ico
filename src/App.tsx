@@ -19,11 +19,13 @@ import LoaderPage from './components/loaderPage/LoaderPage';
 const Home = Loadable({
   loader: () => import('./containers/home/Home'),
   loading: () => <LoaderPage />,
+  timeout: 300,
 });
 
 const EventsPage = Loadable({
   loader: () => import('./containers/eventsPage/EventsPage'),
   loading: () => <LoaderPage />,
+  timeout: 300,
 });
 
 const cookies = new Cookies();
@@ -70,13 +72,8 @@ class App extends React.Component<any, any> {
         this.setState({
           authenticated: true,
           currentUser: user,
+          loading: false,
         });
-        setTimeout(() => {
-          this.setState({
-            loading: false,
-          });
-          // tslint:disable-next-line:align
-        }, 1000);
       } else {
         this.setState({
           authenticated: false,
@@ -87,6 +84,13 @@ class App extends React.Component<any, any> {
     });
 
     this.checkLanguageCookie();
+  }
+
+  componentDidMount() {
+    // setTimeout(() => {
+    //   this.setState({ loading: false });
+    //   // tslint:disable-next-line:align
+    // }, 200);
   }
 
   render() {
