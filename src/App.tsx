@@ -19,13 +19,13 @@ import LoaderPage from './components/loaderPage/LoaderPage';
 const Home = Loadable({
   loader: () => import('./containers/home/Home'),
   loading: () => <LoaderPage />,
-  timeout: 300,
+  delay: 500,
 });
 
 const EventsPage = Loadable({
   loader: () => import('./containers/eventsPage/EventsPage'),
   loading: () => <LoaderPage />,
-  timeout: 300,
+  delay: 500,
 });
 
 const cookies = new Cookies();
