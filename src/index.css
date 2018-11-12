@@ -69,6 +69,8 @@ header {
   margin-bottom: -17px;
 }
 
+/****** React loads index.css before any other CSS ******/
+/* Avoid elements redering badly by adding styles here  */
 .gg-header {
   background-color: rgba(10, 17, 36, 1);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
@@ -83,4 +85,31 @@ header {
   z-index: 9;
   min-height: 73px;
   max-height: 73px;
+}
+
+.select-search-box {
+  width: var(--flag-d);
+  height: var(--flag-d);
+  position: relative;
+  border-radius: 50%;
+  margin-left: 16px;
+  /* background-image: url(static/media/gb.044f7b44.svg); */
+  background: #fff;
+  background-position: center;
+  background-size: contain;
+}
+
+.select-search-box__select {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: -92px;
+  right: 0;
+  background: #fff;
+  border-radius: 4px;
+  overflow: auto;
+  box-shadow: 0 7px 14px 0 rgba(50, 50, 93, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+  z-index: 100;
+  min-height: 49px;
+  min-width: 185px;
 }
