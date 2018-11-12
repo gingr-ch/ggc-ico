@@ -66,7 +66,7 @@ class App extends React.Component<any, any> {
     }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     Base.auth().onAuthStateChanged(user => {
       if (user) {
         this.setState({
@@ -86,12 +86,12 @@ class App extends React.Component<any, any> {
     this.checkLanguageCookie();
   }
 
-  componentDidMount() {
-    // setTimeout(() => {
-    //   this.setState({ loading: false });
-    //   // tslint:disable-next-line:align
-    // }, 200);
-  }
+  // componentDidMount() {
+  // setTimeout(() => {
+  //   this.setState({ loading: false });
+  //   // tslint:disable-next-line:align
+  // }, 200);
+  // }
 
   render() {
     const { authenticated, loading, lang } = this.state;
