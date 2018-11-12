@@ -5,6 +5,7 @@ import Cookies from 'universal-cookie';
 import { ThemeProvider } from 'styled-components';
 // Import locale strings
 import { strings } from './components/localization';
+import ReactCSSTransitionReplace from 'react-css-transition-replace';
 
 // import global css
 import './App.css';
@@ -97,24 +98,37 @@ class App extends React.Component<any, any> {
     const { authenticated, loading, lang } = this.state;
 
     if (loading) {
-      return <LoaderPage />;
+      return (
+        <ReactCSSTransitionReplace
+          transitionName="cross-fade"
+          transitionLeaveTimeout={2000}
+        >
+          <LoaderPage key="loaderKey" />
+        </ReactCSSTransitionReplace>
+      );
     }
 
     return (
-      <Router>
-        <ThemeProvider theme={theme}>
-          <div style={{ height: '100%', width: '100%' }}>
-            <PrivateRoute
-              exact={true}
-              path="/"
-              component={Home}
-              authenticated={authenticated}
-            />
-            <Route exact={true} path="/login" component={Login} lang={lang} />
-            <Route path="/meetup" component={EventsPage} lang={lang} />
-          </div>
-        </ThemeProvider>
-      </Router>
+      <ReactCSSTransitionReplace
+        transitionName="cross-fade"
+        transitionEnterTimeout={100}
+        transitionLeaveTimeout={1000}
+      >
+        <Router>
+          <ThemeProvider theme={theme}>
+            <div style={{ height: '100%', width: '100%' }}>
+              <PrivateRoute
+                exact={true}
+                path="/"
+                component={Home}
+                authenticated={authenticated}
+              />
+              <Route exact={true} path="/login" component={Login} lang={lang} />
+              <Route path="/meetup" component={EventsPage} lang={lang} />
+            </div>
+          </ThemeProvider>
+        </Router>
+      </ReactCSSTransitionReplace>
     );
   }
 }
