@@ -13,9 +13,9 @@ import { strings } from '../../components/localization';
 
 // import components
 import Section from '../../components/section/Section';
-import Top from '../top/Top';
 import Header from '../../components/header/Header';
 import Nav from '../../components/nav/Nav';
+import Top from '../top/Top';
 // import Button from '../../components/button/Button';
 import PressReports from '../pressReports/PressReports';
 import Download from '../download/Download';

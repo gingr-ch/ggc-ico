@@ -45,6 +45,10 @@ body {
   background: black;
 }
 
+header {
+  max-height: 73px;
+}
+
 :root {
   --color-green: #00D646;
   --yellow: #ffd400;
