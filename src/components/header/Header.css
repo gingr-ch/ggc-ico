@@ -11,6 +11,7 @@
   width: 100%;
   z-index: 9;
   min-height: 73px;
+  max-height: 73px;
 }
 
 .gg-header > * {
