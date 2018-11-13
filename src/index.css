@@ -217,3 +217,9 @@ header {
 .flex-column__content {
   text-align: left;
 }
+
+/* Horizontal spacer */
+.spacer {
+  display: block;
+  margin: 1em 0;
+}

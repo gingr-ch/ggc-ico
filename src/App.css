@@ -247,13 +247,6 @@
   transition: height 600ms ease-in-out;
 }
 
-
-/* Horizontal spacer */
-.spacer {
-  display: block;
-  margin: 1em 0;
-}
-
 /* Paths */
 .path {
   border-bottom: 8px dotted var(--yellow);
