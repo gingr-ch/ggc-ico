@@ -114,6 +114,19 @@ header {
   min-width: 185px;
 }
 
+.gg-header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: var(--content-width);
+  width: 100%;
+}
+
+.App-logo {
+  height: 48px;
+  width: 123px;
+}
+
 .gg-nav {
   min-height: 73px;
   width: 100%;
@@ -121,6 +134,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex: 1 1 auto;
 }
 
 .gg-nav ul {
