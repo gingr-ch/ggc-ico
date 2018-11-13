@@ -111,7 +111,7 @@ class App extends React.Component<any, any> {
     return (
       <ReactCSSTransitionReplace
         transitionName="cross-fade"
-        transitionEnterTimeout={100}
+        transitionEnterTimeout={1000}
         transitionLeaveTimeout={1000}
       >
         <Router>

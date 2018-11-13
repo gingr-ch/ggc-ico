@@ -252,45 +252,6 @@
   transition: height 600ms ease-in-out;
 }
 
-/* Flex */
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 2.5em;
-}
-
-.flex-column--45 {
-  flex: 1 1 45%;
-}
-
-.flex-column--25 {
-  flex: 1 1 25%;
-}
-
-.flex-column--30 {
-  flex: 1 1 30%;
-}
-
-.flex-column__image {
-  height: 160px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-column__content {
-  text-align: left;
-}
 
 /* Horizontal spacer */
 .spacer {
