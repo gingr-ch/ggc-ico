@@ -46,6 +46,11 @@
   margin-right: 16px;
 }
 
+.gg-header-container__buttons button:last-child,
+.gg-header-container__buttons a:last-child {
+  border-color: #df9eff !important;
+}
+
 .mobile-nav-button {
   display: none;
   position: relative;
@@ -82,6 +87,10 @@
 div[class^="MuiPaper-root-"],
 div[direction="left"] {
   background-color: black !important;
+}
+
+.btn-login {
+  margin-left: 16px;
 }
 
 @media(max-width: 967px) {

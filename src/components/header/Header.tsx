@@ -101,37 +101,38 @@ class Header extends React.Component<any, any> {
             >
               {this.props.lang.whitepaper}
             </a>
-            {this.props.user && this.props.user.indexOf('friends') === 0 && (
-              <div style={{ display: 'flex' }}>
-                <Link
-                  to={whitelist}
-                  // click={() => this.click(whitelist, false)}
-                  // borderColor="#ffffff"
-                  // className="btn-login"
-                  style={{
-                    textTransform: 'uppercase',
-                    color: 'white',
-                    border: '2px solid white',
-                    fontSize: '15px',
-                    textDecoration: 'none',
-                    height: 'auto',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    cursor: 'pointer',
-                  }}
-                >
-                  {this.props.lang.whitelist}
-                </Link>
 
-                <Button
-                  click={() => this.click(adminIco, true)}
-                  borderColor="#df9eff"
-                  className="btn-login"
-                >
-                  {this.props.lang.login}
-                </Button>
-              </div>
+            <Link
+              to={whitelist}
+              // click={() => this.click(whitelist, false)}
+              // borderColor="#ffffff"
+              // className="btn-login"
+              style={{
+                textTransform: 'uppercase',
+                color: 'white',
+                borderWidth: '2px',
+                borderStyle: 'solid',
+                borderColor: 'white',
+                fontSize: '15px',
+                textDecoration: 'none',
+                height: 'auto',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                cursor: 'pointer',
+              }}
+            >
+              {this.props.lang.whitelist}
+            </Link>
+
+            {this.props.user && this.props.user.indexOf('friends') === 0 && (
+              <Button
+                click={() => this.click(adminIco, true)}
+                borderColor="#df9eff"
+                className="btn-login"
+              >
+                {this.props.lang.login}
+              </Button>
             )}
           </div>
 
