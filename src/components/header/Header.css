@@ -35,8 +35,8 @@
 
 .gg-header-container__buttons button,
 .gg-header-container__buttons a {
-  width: 100%;
-  max-width: 113px;
+  width: 103px;
+  max-width: 103px;
   max-height: 28px;
   padding: 3px 8px;
 }
@@ -90,7 +90,7 @@ div[direction="left"] {
 }
 
 .btn-login {
-  margin-left: 16px;
+  /* margin-left: 16px; */
 }
 
 @media(max-width: 967px) {
