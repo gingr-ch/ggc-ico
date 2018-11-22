@@ -46,7 +46,15 @@ class Instafuck extends React.Component<any, any> {
             </LazyLoad>
           </div>
 
-          <div className="hide show-xs flex-column">
+          <div
+            className="hide show-xs"
+            style={{
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'flex-start',
+              padding: '2.5em',
+            }}
+          >
             <div className="instafuck-item">
               <img src={gingrIconPink} alt="" />
               <h1>1</h1>
