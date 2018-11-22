@@ -35,9 +35,10 @@
 
 .gg-header-container__buttons button,
 .gg-header-container__buttons a {
-  width: 113px;
+  width: 100%;
   max-width: 113px;
   max-height: 28px;
+  padding: 3px 8px;
 }
 
 .gg-header-container__buttons button:first-child,

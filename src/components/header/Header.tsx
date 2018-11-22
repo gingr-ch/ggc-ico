@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import Drawer from '@material-ui/core/Drawer';
 import Img from 'react-image';
 
@@ -33,6 +34,7 @@ const users = {
 };
 
 let adminIco = 'https://admin.ggcico.io/auth/register?refcode=';
+let whitelist = '/whitelist';
 // const whitePaper =
 //   'https://docs.wixstatic.com/ugd/2eea42_b23b9045b42246c2ac4f7c6cbf5ee65c.pdf';
 const whitepaperPdf = 'https://api.ggcoin.ch/download/pdf/ggc-white-paper.pdf';
@@ -43,15 +45,19 @@ class Header extends React.Component<any, any> {
   //   user: 'friends',
   // };
 
-  constructor(props: any) {
+  constructor(props: object) {
     super(props);
     this.state = {
       right: false,
     };
   }
 
-  click(url: string) {
-    window.open(url, '_blank');
+  click(url: string, blank: boolean) {
+    if (blank) {
+      window.open(url, '_blank');
+    } else {
+      this.props.history.push(url);
+    }
   }
 
   toggleDrawer = (side: string, open: boolean) => () => {
@@ -90,20 +96,42 @@ class Header extends React.Component<any, any> {
                 justifyContent: 'center',
                 alignItems: 'center',
                 cursor: 'pointer',
-                padding: '3px',
               }}
               target="_blank"
             >
               {this.props.lang.whitepaper}
             </a>
             {this.props.user && this.props.user.indexOf('friends') === 0 && (
-              <Button
-                click={() => this.click(adminIco)}
-                borderColor="#df9eff"
-                className="btn-login"
-              >
-                {this.props.lang.login}
-              </Button>
+              <div style={{ display: 'flex' }}>
+                <Link
+                  to={whitelist}
+                  // click={() => this.click(whitelist, false)}
+                  // borderColor="#ffffff"
+                  // className="btn-login"
+                  style={{
+                    textTransform: 'uppercase',
+                    color: 'white',
+                    border: '2px solid white',
+                    fontSize: '15px',
+                    textDecoration: 'none',
+                    height: 'auto',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    cursor: 'pointer',
+                  }}
+                >
+                  {this.props.lang.whitelist}
+                </Link>
+
+                <Button
+                  click={() => this.click(adminIco, true)}
+                  borderColor="#df9eff"
+                  className="btn-login"
+                >
+                  {this.props.lang.login}
+                </Button>
+              </div>
             )}
           </div>
 
