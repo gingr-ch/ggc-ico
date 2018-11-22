@@ -23,8 +23,14 @@ const Home = Loadable({
   delay: 500,
 });
 
-const EventsPage = Loadable({
-  loader: () => import('./containers/eventsPage/EventsPage'),
+// const EventsPage = Loadable({
+//   loader: () => import('./containers/eventsPage/EventsPage'),
+//   loading: () => <LoaderPage />,
+//   delay: 500,
+// });
+
+const WhitelistPage = Loadable({
+  loader: () => import('./containers/whitelist/Whitelist'),
   loading: () => <LoaderPage />,
   delay: 500,
 });
@@ -117,14 +123,20 @@ class App extends React.Component<any, any> {
         <Router>
           <ThemeProvider theme={theme}>
             <div style={{ height: '100%', width: '100%' }}>
+              <Route exact={true} path="/login" component={Login} lang={lang} />
               <PrivateRoute
                 exact={true}
                 path="/"
                 component={Home}
                 authenticated={authenticated}
               />
-              <Route exact={true} path="/login" component={Login} lang={lang} />
-              <Route path="/meetup" component={EventsPage} lang={lang} />
+              <PrivateRoute
+                path="/whitelist"
+                component={WhitelistPage}
+                lang={lang}
+                authenticated={authenticated}
+              />
+              {/*<Route path="/meetup" component={EventsPage} lang={lang} />*/}
             </div>
           </ThemeProvider>
         </Router>
