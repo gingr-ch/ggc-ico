@@ -1,6 +1,8 @@
 import * as React from 'react';
+import Header from '../../components/header/Header';
+import Nav from '../../components/nav/Nav';
 
-const Whitelist = () => {
+const Whitelist = props => {
   return (
     <div
       style={{
@@ -10,6 +12,13 @@ const Whitelist = () => {
         background: '#78006f',
       }}
     >
+      <Header
+        lang={props.lang}
+        langSelect={props.handleLangChange}
+        user={props.user}
+      >
+        <Nav lang={props.lang} />
+      </Header>
       <iframe
         id="typeform-full"
         width="100%"
