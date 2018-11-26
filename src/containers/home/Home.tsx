@@ -5,11 +5,15 @@ import * as React from 'react';
 // Load firebase service
 import Base from '../../Base';
 
+import ReactCSSTransitionReplace from 'react-css-transition-replace';
+
 // import LazyLoad from 'react-lazyload';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
 // Import locale strings
 import { strings } from '../../components/localization';
+
+import LoaderPage from '../../components/loaderPage/LoaderPage';
 
 // import components
 import Section from '../../components/section/Section';
@@ -61,6 +65,7 @@ class Home extends React.Component<any, any> {
       width: '80%',
       height: '80%',
       mousePosition: { x: '50%', y: '135px' },
+      loading: true,
     };
   }
 
@@ -106,6 +111,7 @@ class Home extends React.Component<any, any> {
 
   componentDidMount() {
     this.getUser();
+    this.setState({ loading: false });
   }
 
   goToMeetup = () => {
@@ -113,6 +119,18 @@ class Home extends React.Component<any, any> {
   };
 
   render() {
+    if (this.state.loading) {
+      return (
+        <ReactCSSTransitionReplace
+          transitionName="cross-fade"
+          transitionEnterTimeout={200}
+          transitionLeaveTimeout={3000}
+        >
+          <LoaderPage key="loaderKey" />
+        </ReactCSSTransitionReplace>
+      );
+    }
+
     // const style = {
     //   width: this.state.width,
     //   height: this.state.height,
@@ -159,118 +177,124 @@ class Home extends React.Component<any, any> {
     ];
 
     return (
-      <div className="App">
-        <BackToTop />
-        <Header
-          lang={this.state.lang}
-          langSelect={this.handleLangChange}
-          user={this.state.user}
-        >
-          <Nav items={items} />
-        </Header>
-        {/*<EventBanner lang={this.state.lang} />*/}
-        <Section bg="#eaeaea" top={true} small={true}>
-          <Top lang={this.state.lang} />
-        </Section>
-        <Section bg="#4c306a" small={true}>
-          <PressReports lang={this.state.lang} user={this.state.user} />
-        </Section>
-        <Section bg="#f39fff">
-          <StrongSolution lang={this.state.lang} />
-        </Section>
-        <Section bg="#f39fff">
-          <ReasonsToInvest lang={this.state.lang} />
-        </Section>
-        <ScrollableAnchor id={'download'}>
-          <Section bg="white" small={true}>
-            <Download lang={this.state.lang} />
+      <ReactCSSTransitionReplace
+        transitionName="cross-fade"
+        transitionEnterTimeout={1000}
+        transitionLeaveTimeout={1000}
+      >
+        <div className="App">
+          <BackToTop />
+          <Header
+            lang={this.state.lang}
+            langSelect={this.handleLangChange}
+            user={this.state.user}
+          >
+            <Nav items={items} />
+          </Header>
+          {/*<EventBanner lang={this.state.lang} />*/}
+          <Section bg="#eaeaea" top={true} small={true}>
+            <Top lang={this.state.lang} />
           </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'what-is-gingr'}>
-          <Section bg="#812a7b">
-            <WhatIsGingr lang={this.state.lang} />
+          <Section bg="#4c306a" small={true}>
+            <PressReports lang={this.state.lang} user={this.state.user} />
           </Section>
-        </ScrollableAnchor>
-        <Section bg="#de9dff">
-          <Beta lang={this.state.lang} />
-        </Section>
-        <Section bg="#802e7a">
-          <Instafuck lang={this.state.lang} />
-        </Section>
-        <Section bg="#de9dff">
-          <HookUp lang={this.state.lang} />
-        </Section>
-        <ScrollableAnchor id={'blockchain'}>
+          <Section bg="#f39fff">
+            <StrongSolution lang={this.state.lang} />
+          </Section>
+          <Section bg="#f39fff">
+            <ReasonsToInvest lang={this.state.lang} />
+          </Section>
+          <ScrollableAnchor id={'download'}>
+            <Section bg="white" small={true}>
+              <Download lang={this.state.lang} />
+            </Section>
+          </ScrollableAnchor>
+          <ScrollableAnchor id={'what-is-gingr'}>
+            <Section bg="#812a7b">
+              <WhatIsGingr lang={this.state.lang} />
+            </Section>
+          </ScrollableAnchor>
+          <Section bg="#de9dff">
+            <Beta lang={this.state.lang} />
+          </Section>
           <Section bg="#802e7a">
-            <Blockchain lang={this.state.lang} />
+            <Instafuck lang={this.state.lang} />
           </Section>
-        </ScrollableAnchor>
-        <Section bg="#592356">
-          <Flow lang={this.state.lang} />
-        </Section>
-        <ScrollableAnchor id={'ico-details'}>
-          <Section bg="#4d346a">
-            <IcoDetails lang={this.state.lang} user={this.state.user} />
+          <Section bg="#de9dff">
+            <HookUp lang={this.state.lang} />
           </Section>
-        </ScrollableAnchor>
-        <Section bg="#802e7a" small={true}>
-          <IcoDetails2 lang={this.state.lang} />
-        </Section>
-        <Section bg="#4d346a" small={true}>
-          <IcoDetails3 lang={this.state.lang} />
-        </Section>
-        <Section bg="#591d55">
-          <ReasonsWhy lang={this.state.lang} />
-        </Section>
-        <ScrollableAnchor id={'revolutionary-solution'}>
-          <Section bg="#802e7a">
-            <RevolutionarySolution lang={this.state.lang} />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'roadmap'}>
-          <Section bg="#f29eff">
-            <Roadmap lang={this.state.lang} />
-          </Section>
-        </ScrollableAnchor>
-        <Section bg="#802e7a" small={true}>
-          <GlobalLeader lang={this.state.lang} />
-        </Section>
-        <Section bg="#f29eff" small={true}>
-          <GlobalLeader2 lang={this.state.lang} />
-        </Section>
-        <Section bg="#802e7a">
-          <GlobalLeader3 lang={this.state.lang} />
-        </Section>
-        <ScrollableAnchor id={'team'}>
-          <Section bg="#592356" small={true}>
-            <Team lang={this.state.lang} />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'team-ceo'}>
-          <Section bg="#802e7a" small={true} maxHeight={'350px'}>
-            <TeamCEO lang={this.state.lang} />
-          </Section>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'team-all'}>
+          <ScrollableAnchor id={'blockchain'}>
+            <Section bg="#802e7a">
+              <Blockchain lang={this.state.lang} />
+            </Section>
+          </ScrollableAnchor>
           <Section bg="#592356">
-            <TeamAll lang={this.state.lang} />
+            <Flow lang={this.state.lang} />
           </Section>
-        </ScrollableAnchor>
-        <Section bg="#4d346a" small={true}>
-          <Feedback lang={this.state.lang} />
-        </Section>
-        <ScrollableAnchor id={'contact'}>
-          <Section bg="#f29eff">
-            <ContactUs lang={this.state.lang} />
+          <ScrollableAnchor id={'ico-details'}>
+            <Section bg="#4d346a">
+              <IcoDetails lang={this.state.lang} user={this.state.user} />
+            </Section>
+          </ScrollableAnchor>
+          <Section bg="#802e7a" small={true}>
+            <IcoDetails2 lang={this.state.lang} />
           </Section>
-        </ScrollableAnchor>
-        <Section bg="#541252">
-          <Footer lang={this.state.lang} />
-        </Section>
-        <SocialSidebar />
-        <DotNav lang={this.state.lang} />
-        {/*isMobile && dialog*/}
-      </div>
+          <Section bg="#4d346a" small={true}>
+            <IcoDetails3 lang={this.state.lang} />
+          </Section>
+          <Section bg="#591d55">
+            <ReasonsWhy lang={this.state.lang} />
+          </Section>
+          <ScrollableAnchor id={'revolutionary-solution'}>
+            <Section bg="#802e7a">
+              <RevolutionarySolution lang={this.state.lang} />
+            </Section>
+          </ScrollableAnchor>
+          <ScrollableAnchor id={'roadmap'}>
+            <Section bg="#f29eff">
+              <Roadmap lang={this.state.lang} />
+            </Section>
+          </ScrollableAnchor>
+          <Section bg="#802e7a" small={true}>
+            <GlobalLeader lang={this.state.lang} />
+          </Section>
+          <Section bg="#f29eff" small={true}>
+            <GlobalLeader2 lang={this.state.lang} />
+          </Section>
+          <Section bg="#802e7a">
+            <GlobalLeader3 lang={this.state.lang} />
+          </Section>
+          <ScrollableAnchor id={'team'}>
+            <Section bg="#592356" small={true}>
+              <Team lang={this.state.lang} />
+            </Section>
+          </ScrollableAnchor>
+          <ScrollableAnchor id={'team-ceo'}>
+            <Section bg="#802e7a" small={true} maxHeight={'350px'}>
+              <TeamCEO lang={this.state.lang} />
+            </Section>
+          </ScrollableAnchor>
+          <ScrollableAnchor id={'team-all'}>
+            <Section bg="#592356">
+              <TeamAll lang={this.state.lang} />
+            </Section>
+          </ScrollableAnchor>
+          <Section bg="#4d346a" small={true}>
+            <Feedback lang={this.state.lang} />
+          </Section>
+          <ScrollableAnchor id={'contact'}>
+            <Section bg="#f29eff">
+              <ContactUs lang={this.state.lang} />
+            </Section>
+          </ScrollableAnchor>
+          <Section bg="#541252">
+            <Footer lang={this.state.lang} />
+          </Section>
+          <SocialSidebar />
+          <DotNav lang={this.state.lang} />
+          {/*isMobile && dialog*/}
+        </div>
+      </ReactCSSTransitionReplace>
     );
   }
 }

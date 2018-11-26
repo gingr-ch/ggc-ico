@@ -20,7 +20,7 @@ import LoaderPage from './components/loaderPage/LoaderPage';
 const Home = Loadable({
   loader: () => import('./containers/home/Home'),
   loading: () => <LoaderPage />,
-  delay: 500,
+  delay: 200,
 });
 
 // const EventsPage = Loadable({
@@ -32,7 +32,7 @@ const Home = Loadable({
 const WhitelistPage = Loadable({
   loader: () => import('./containers/whitelist/Whitelist'),
   loading: () => <LoaderPage />,
-  delay: 500,
+  delay: 200,
 });
 
 const cookies = new Cookies();
@@ -107,7 +107,8 @@ class App extends React.Component<any, any> {
       return (
         <ReactCSSTransitionReplace
           transitionName="cross-fade"
-          transitionLeaveTimeout={2000}
+          transitionEnterTimeout={200}
+          transitionLeaveTimeout={3000}
         >
           <LoaderPage key="loaderKey" />
         </ReactCSSTransitionReplace>
