@@ -148,6 +148,16 @@ class Home extends React.Component<any, any> {
     //   </Dialog>
     // );
 
+    const items = [
+      { id: 1, name: this.state.lang.download, anchor: '#download' },
+      { id: 2, name: this.state.lang.platform, anchor: '#what-is-gingr' },
+      { id: 3, name: this.state.lang.ggCoin, anchor: '#blockchain' },
+      { id: 4, name: this.state.lang.icoDetails, anchor: '#ico-details' },
+      { id: 5, name: this.state.lang.roadmap, anchor: '#roadmap' },
+      { id: 6, name: this.state.lang.team, anchor: '#team' },
+      { id: 7, name: this.state.lang.contact, anchor: '#contact' },
+    ];
+
     return (
       <div className="App">
         <BackToTop />
@@ -156,7 +166,7 @@ class Home extends React.Component<any, any> {
           langSelect={this.handleLangChange}
           user={this.state.user}
         >
-          <Nav lang={this.state.lang} />
+          <Nav lang={this.state.lang} items={items} />
         </Header>
         {/*<EventBanner lang={this.state.lang} />*/}
         <Section bg="#eaeaea" top={true} small={true}>

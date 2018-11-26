@@ -136,6 +136,7 @@ header {
 .App-logo {
   height: 48px;
   width: 123px;
+  cursor: pointer;
 }
 
 .gg-nav {

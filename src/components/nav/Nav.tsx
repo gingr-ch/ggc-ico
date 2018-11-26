@@ -7,18 +7,9 @@ class Nav extends React.Component<any, any> {
   }
 
   render() {
-    const items = [
-      { id: 1, name: this.props.lang.download, anchor: 'download' },
-      { id: 2, name: this.props.lang.platform, anchor: 'what-is-gingr' },
-      { id: 3, name: this.props.lang.ggCoin, anchor: 'blockchain' },
-      { id: 4, name: this.props.lang.icoDetails, anchor: 'ico-details' },
-      { id: 5, name: this.props.lang.roadmap, anchor: 'roadmap' },
-      { id: 6, name: this.props.lang.team, anchor: 'team' },
-      { id: 7, name: this.props.lang.contact, anchor: 'contact' },
-    ];
-    const itemsList = items.map(item => (
+    const itemsList = this.props.items.map(item => (
       <li key={item.id.toString()}>
-        <a href={'#' + item.anchor}>{item.name}</a>
+        <a href={item.anchor}>{item.name}</a>
       </li>
     ));
 

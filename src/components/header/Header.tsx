@@ -72,16 +72,21 @@ class Header extends React.Component<any, any> {
         'https://admin.ggcico.io/auth/register?refcode=' +
         users[this.props.user];
     }
+
     return (
       <header className="gg-header">
         <div className="gg-header-container">
-          <Img
-            src={gingrLogo}
-            className="App-logo"
-            alt="logo"
-            style={{ minWidth: '123px', minHeight: '48px' }}
-          />
+          <Link to="/">
+            <Img
+              src={gingrLogo}
+              className="App-logo"
+              alt="logo"
+              style={{ minWidth: '123px', minHeight: '48px' }}
+            />
+          </Link>
+
           {this.props.children}
+
           <div className="gg-header-container__buttons">
             <a
               href={whitepaperPdf}

@@ -3,6 +3,8 @@ import Header from '../../components/header/Header';
 import Nav from '../../components/nav/Nav';
 
 const Whitelist = props => {
+  const items = [{ id: 1, name: props.lang.home, anchor: '/' }];
+
   return (
     <div
       style={{
@@ -17,7 +19,7 @@ const Whitelist = props => {
         langSelect={props.handleLangChange}
         user={props.user}
       >
-        <Nav lang={props.lang} />
+        <Nav lang={props.lang} items={items} />
       </Header>
       <iframe
         id="typeform-full"
