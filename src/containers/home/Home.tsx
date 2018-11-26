@@ -166,7 +166,7 @@ class Home extends React.Component<any, any> {
           langSelect={this.handleLangChange}
           user={this.state.user}
         >
-          <Nav lang={this.state.lang} items={items} />
+          <Nav items={items} />
         </Header>
         {/*<EventBanner lang={this.state.lang} />*/}
         <Section bg="#eaeaea" top={true} small={true}>

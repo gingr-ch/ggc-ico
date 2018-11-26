@@ -19,7 +19,7 @@ const Whitelist = props => {
         langSelect={props.handleLangChange}
         user={props.user}
       >
-        <Nav lang={props.lang} items={items} />
+        <Nav items={items} />
       </Header>
       <iframe
         id="typeform-full"
