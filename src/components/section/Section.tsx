@@ -7,6 +7,7 @@ interface SectionProps {
   small?: boolean;
   maxHeight?: string;
   top?: boolean;
+  id?: string;
 }
 
 class Section extends React.Component<SectionProps> {
@@ -19,6 +20,7 @@ class Section extends React.Component<SectionProps> {
           minHeight: !this.props.small ? '100vh' : '0px',
           maxHeight: this.props.maxHeight ? this.props.maxHeight : 'none',
         }}
+        {...(this.props.id ? { id: this.props.id } : {})}
       >
         <div
           style={{

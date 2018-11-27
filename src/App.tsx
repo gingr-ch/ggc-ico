@@ -13,6 +13,10 @@ import './App.css';
 import Base from './Base';
 
 import PrivateRoute from './PrivateRoute';
+
+import Header from './components/header/Header';
+import Nav from './components/nav/Nav';
+
 import Login from './containers/login/Login';
 // import EventsPage from './containers/eventsPage/EventsPage';
 import LoaderPage from './components/loaderPage/LoaderPage';
@@ -53,6 +57,7 @@ class App extends React.Component<any, any> {
       loading: true,
       authenticated: false,
       user: null,
+      currentUser: null,
     };
   }
 
@@ -73,6 +78,19 @@ class App extends React.Component<any, any> {
     }
   }
 
+  getUser = async () => {
+    let user;
+
+    try {
+      user = Base.auth().currentUser;
+      let name = user.email.substring(0, user.email.lastIndexOf('@'));
+
+      this.setState({ user: name });
+    } catch (error) {
+      throw error;
+    }
+  };
+
   componentDidMount() {
     Base.auth().onAuthStateChanged(user => {
       if (user) {
@@ -81,6 +99,7 @@ class App extends React.Component<any, any> {
           currentUser: user,
           loading: false,
         });
+        this.getUser();
       } else {
         this.setState({
           authenticated: false,
@@ -101,7 +120,19 @@ class App extends React.Component<any, any> {
   // }
 
   render() {
-    const { authenticated, loading, lang } = this.state;
+    const { authenticated, loading, lang, user } = this.state;
+
+    // const items = [{ id: 1, name: lang.home, anchor: '/' }];
+
+    const items = [
+      { id: 1, name: lang.download, anchor: 'download' },
+      { id: 2, name: lang.platform, anchor: 'what-is-gingr' },
+      { id: 3, name: lang.ggCoin, anchor: 'blockchain' },
+      { id: 4, name: lang.icoDetails, anchor: 'ico-details' },
+      { id: 5, name: lang.roadmap, anchor: 'roadmap' },
+      { id: 6, name: lang.team, anchor: 'team' },
+      { id: 7, name: lang.contact, anchor: 'contact' },
+    ];
 
     if (loading) {
       return (
@@ -124,20 +155,29 @@ class App extends React.Component<any, any> {
         <Router>
           <ThemeProvider theme={theme}>
             <div style={{ height: '100%', width: '100%' }}>
+              <Header
+                lang={lang}
+                langSelect={this.handleLangChange}
+                user={user}
+              >
+                <Nav items={items} />
+              </Header>
+
               <Route exact={true} path="/login" component={Login} lang={lang} />
               <PrivateRoute
                 exact={true}
                 path="/"
                 component={Home}
                 lang={lang}
-                langSelect={this.handleLangChange}
+                user={user}
+                // langSelect={this.handleLangChange}
                 authenticated={authenticated}
               />
               <PrivateRoute
                 path="/whitelist"
                 component={WhitelistPage}
                 lang={lang}
-                langSelect={this.handleLangChange}
+                // langSelect={this.handleLangChange}
                 authenticated={authenticated}
               />
               {/*<Route path="/meetup" component={EventsPage} lang={lang} />*/}

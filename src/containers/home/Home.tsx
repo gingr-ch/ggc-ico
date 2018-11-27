@@ -3,12 +3,12 @@ import * as React from 'react';
 // import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 
 // Load firebase service
-import Base from '../../Base';
+// import Base from '../../Base';
 
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
 
 // import LazyLoad from 'react-lazyload';
-import ScrollableAnchor from 'react-scrollable-anchor';
+// import ScrollableAnchor from 'react-scrollable-anchor';
 
 // Import locale strings
 // import { strings } from '../../components/localization';
@@ -17,8 +17,8 @@ import LoaderPage from '../../components/loaderPage/LoaderPage';
 
 // import components
 import Section from '../../components/section/Section';
-import Header from '../../components/header/Header';
-import Nav from '../../components/nav/Nav';
+// import Header from '../../components/header/Header';
+// import Nav from '../../components/nav/Nav';
 import Top from '../top/Top';
 // import Button from '../../components/button/Button';
 import PressReports from '../pressReports/PressReports';
@@ -96,21 +96,21 @@ class Home extends React.Component<any, any> {
   //   return strings.getLanguage();
   // }
 
-  getUser = async () => {
-    let user;
-
-    try {
-      user = Base.auth().currentUser;
-      let name = user.email.substring(0, user.email.lastIndexOf('@'));
-
-      this.setState({ user: name });
-    } catch (error) {
-      throw error;
-    }
-  };
+  // getUser = async () => {
+  //   let user;
+  //
+  //   try {
+  //     user = Base.auth().currentUser;
+  //     let name = user.email.substring(0, user.email.lastIndexOf('@'));
+  //
+  //     this.setState({ user: name });
+  //   } catch (error) {
+  //     throw error;
+  //   }
+  // };
 
   componentDidMount() {
-    this.getUser();
+    // this.getUser();
     this.setState({ loading: false });
   }
 
@@ -166,17 +166,17 @@ class Home extends React.Component<any, any> {
     //   </Dialog>
     // );
 
-    const { lang, langSelect } = this.props;
+    const { lang /*langSelect*/ } = this.props;
 
-    const items = [
-      { id: 1, name: lang.download, anchor: '#download' },
-      { id: 2, name: lang.platform, anchor: '#what-is-gingr' },
-      { id: 3, name: lang.ggCoin, anchor: '#blockchain' },
-      { id: 4, name: lang.icoDetails, anchor: '#ico-details' },
-      { id: 5, name: lang.roadmap, anchor: '#roadmap' },
-      { id: 6, name: lang.team, anchor: '#team' },
-      { id: 7, name: lang.contact, anchor: '#contact' },
-    ];
+    // const items = [
+    //   { id: 1, name: lang.download, anchor: '#download' },
+    //   { id: 2, name: lang.platform, anchor: '#what-is-gingr' },
+    //   { id: 3, name: lang.ggCoin, anchor: '#blockchain' },
+    //   { id: 4, name: lang.icoDetails, anchor: '#ico-details' },
+    //   { id: 5, name: lang.roadmap, anchor: '#roadmap' },
+    //   { id: 6, name: lang.team, anchor: '#team' },
+    //   { id: 7, name: lang.contact, anchor: '#contact' },
+    // ];
 
     return (
       <ReactCSSTransitionReplace
@@ -186,15 +186,15 @@ class Home extends React.Component<any, any> {
       >
         <div className="App">
           <BackToTop />
-          <Header lang={lang} langSelect={langSelect} user={this.state.user}>
+          {/*<Header lang={lang} langSelect={langSelect} user={this.state.user}>
             <Nav items={items} />
-          </Header>
+          </Header>*/}
           {/*<EventBanner lang={lang} />*/}
           <Section bg="#eaeaea" top={true} small={true}>
             <Top lang={lang} />
           </Section>
           <Section bg="#4c306a" small={true}>
-            <PressReports lang={lang} user={this.state.user} />
+            <PressReports lang={lang} user={this.props.user} />
           </Section>
           <Section bg="#f39fff">
             <StrongSolution lang={lang} />
@@ -202,16 +202,12 @@ class Home extends React.Component<any, any> {
           <Section bg="#f39fff">
             <ReasonsToInvest lang={lang} />
           </Section>
-          <ScrollableAnchor id={'download'}>
-            <Section bg="white" small={true}>
-              <Download lang={lang} />
-            </Section>
-          </ScrollableAnchor>
-          <ScrollableAnchor id={'what-is-gingr'}>
-            <Section bg="#812a7b">
-              <WhatIsGingr lang={lang} />
-            </Section>
-          </ScrollableAnchor>
+          <Section bg="white" small={true} id="download">
+            <Download lang={lang} />
+          </Section>
+          <Section bg="#812a7b" id="what-is-gingr">
+            <WhatIsGingr lang={lang} />
+          </Section>
           <Section bg="#de9dff">
             <Beta lang={lang} />
           </Section>
@@ -221,19 +217,15 @@ class Home extends React.Component<any, any> {
           <Section bg="#de9dff">
             <HookUp lang={lang} />
           </Section>
-          <ScrollableAnchor id={'blockchain'}>
-            <Section bg="#802e7a">
-              <Blockchain lang={lang} />
-            </Section>
-          </ScrollableAnchor>
+          <Section bg="#802e7a" id="blockchain">
+            <Blockchain lang={lang} />
+          </Section>
           <Section bg="#592356">
             <Flow lang={lang} />
           </Section>
-          <ScrollableAnchor id={'ico-details'}>
-            <Section bg="#4d346a">
-              <IcoDetails lang={lang} user={this.state.user} />
-            </Section>
-          </ScrollableAnchor>
+          <Section bg="#4d346a" id="ico-details">
+            <IcoDetails lang={lang} user={this.state.user} />
+          </Section>
           <Section bg="#802e7a" small={true}>
             <IcoDetails2 lang={lang} />
           </Section>
@@ -243,16 +235,12 @@ class Home extends React.Component<any, any> {
           <Section bg="#591d55">
             <ReasonsWhy lang={lang} />
           </Section>
-          <ScrollableAnchor id={'revolutionary-solution'}>
-            <Section bg="#802e7a">
-              <RevolutionarySolution lang={lang} />
-            </Section>
-          </ScrollableAnchor>
-          <ScrollableAnchor id={'roadmap'}>
-            <Section bg="#f29eff">
-              <Roadmap lang={lang} />
-            </Section>
-          </ScrollableAnchor>
+          <Section bg="#802e7a" id="revolutionary-solution">
+            <RevolutionarySolution lang={lang} />
+          </Section>
+          <Section bg="#f29eff" id="roadmap">
+            <Roadmap lang={lang} />
+          </Section>
           <Section bg="#802e7a" small={true}>
             <GlobalLeader lang={lang} />
           </Section>
@@ -262,29 +250,21 @@ class Home extends React.Component<any, any> {
           <Section bg="#802e7a">
             <GlobalLeader3 lang={lang} />
           </Section>
-          <ScrollableAnchor id={'team'}>
-            <Section bg="#592356" small={true}>
-              <Team lang={lang} />
-            </Section>
-          </ScrollableAnchor>
-          <ScrollableAnchor id={'team-ceo'}>
-            <Section bg="#802e7a" small={true} maxHeight={'350px'}>
-              <TeamCEO lang={lang} />
-            </Section>
-          </ScrollableAnchor>
-          <ScrollableAnchor id={'team-all'}>
-            <Section bg="#592356">
-              <TeamAll lang={lang} />
-            </Section>
-          </ScrollableAnchor>
+          <Section bg="#592356" small={true} id="team">
+            <Team lang={lang} />
+          </Section>
+          <Section bg="#802e7a" small={true} maxHeight={'350px'} id="team-ceo">
+            <TeamCEO lang={lang} />
+          </Section>
+          <Section bg="#592356" id="team-all">
+            <TeamAll lang={lang} />
+          </Section>
           <Section bg="#4d346a" small={true}>
             <Feedback lang={lang} />
           </Section>
-          <ScrollableAnchor id={'contact'}>
-            <Section bg="#f29eff">
-              <ContactUs lang={lang} />
-            </Section>
-          </ScrollableAnchor>
+          <Section bg="#f29eff" id="contact">
+            <ContactUs lang={lang} />
+          </Section>
           <Section bg="#541252">
             <Footer lang={lang} />
           </Section>

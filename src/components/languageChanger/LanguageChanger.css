@@ -148,7 +148,7 @@ input[type='search']::-webkit-search-decoration {
   box-shadow: none;
 }
 
-.select-search-box__select--display {
+.select-search-box__select.select-search-box__select--display {
   display: block;
 }
 
