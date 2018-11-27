@@ -34,6 +34,7 @@ const users = {
 };
 
 let adminIco = 'https://admin.ggcico.io/auth/register?refcode=';
+let home = '/';
 let whitelist = '/whitelist';
 // const whitePaper =
 //   'https://docs.wixstatic.com/ugd/2eea42_b23b9045b42246c2ac4f7c6cbf5ee65c.pdf';
@@ -76,7 +77,7 @@ class Header extends React.Component<any, any> {
     return (
       <header className="gg-header">
         <div className="gg-header-container">
-          <Link to="/">
+          <Link to={home}>
             <Img
               src={gingrLogo}
               className="App-logo"

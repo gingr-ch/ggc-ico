@@ -14,11 +14,7 @@ const Whitelist = props => {
         background: '#78006f',
       }}
     >
-      <Header
-        lang={props.lang}
-        langSelect={props.handleLangChange}
-        user={props.user}
-      >
+      <Header lang={props.lang} langSelect={props.langSelect} user={props.user}>
         <Nav items={items} />
       </Header>
       <iframe

@@ -129,12 +129,15 @@ class App extends React.Component<any, any> {
                 exact={true}
                 path="/"
                 component={Home}
+                lang={lang}
+                langSelect={this.handleLangChange}
                 authenticated={authenticated}
               />
               <PrivateRoute
                 path="/whitelist"
                 component={WhitelistPage}
                 lang={lang}
+                langSelect={this.handleLangChange}
                 authenticated={authenticated}
               />
               {/*<Route path="/meetup" component={EventsPage} lang={lang} />*/}

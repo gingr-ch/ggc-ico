@@ -11,7 +11,7 @@ import ReactCSSTransitionReplace from 'react-css-transition-replace';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
 // Import locale strings
-import { strings } from '../../components/localization';
+// import { strings } from '../../components/localization';
 
 import LoaderPage from '../../components/loaderPage/LoaderPage';
 
@@ -55,10 +55,10 @@ import DotNav from '../../components/dotNav/DotNav';
 class Home extends React.Component<any, any> {
   constructor(props: object) {
     super(props);
-    this.handleLangChange = this.handleLangChange.bind(this);
+    // this.handleLangChange = this.handleLangChange.bind(this);
     // this.state = { checked: true };
     this.state = {
-      lang: strings,
+      lang: this.props.lang,
       user: null,
       center: true,
       visible: true,
@@ -87,14 +87,14 @@ class Home extends React.Component<any, any> {
   };
 
   // handle state change when language is changed
-  handleLangChange(langCode: any) {
-    if (langCode) {
-      strings.setLanguage(langCode.value);
-    }
-
-    this.setState({ lang: strings });
-    return strings.getLanguage();
-  }
+  // handleLangChange(langCode: any) {
+  //   if (langCode) {
+  //     strings.setLanguage(langCode.value);
+  //   }
+  //
+  //   this.setState({ lang: strings });
+  //   return strings.getLanguage();
+  // }
 
   getUser = async () => {
     let user;
@@ -156,8 +156,8 @@ class Home extends React.Component<any, any> {
     //   >
     //     <div className="rc-dialog-body__content flex-row">
     //       <div className="rc-dialog-body__text flex-column">
-    //         <h2>{this.state.lang.bePartOfTheGgCoinMeetup}</h2>
-    //         <span>08/11/2018 {this.state.lang.zurich}</span>
+    //         <h2>{lang.bePartOfTheGgCoinMeetup}</h2>
+    //         <span>08/11/2018 {lang.zurich}</span>
     //         <Button btnStyle="secondary-fat" click={this.goToMeetup}>
     //           Join now
     //         </Button>
@@ -166,14 +166,16 @@ class Home extends React.Component<any, any> {
     //   </Dialog>
     // );
 
+    const { lang, langSelect } = this.props;
+
     const items = [
-      { id: 1, name: this.state.lang.download, anchor: '#download' },
-      { id: 2, name: this.state.lang.platform, anchor: '#what-is-gingr' },
-      { id: 3, name: this.state.lang.ggCoin, anchor: '#blockchain' },
-      { id: 4, name: this.state.lang.icoDetails, anchor: '#ico-details' },
-      { id: 5, name: this.state.lang.roadmap, anchor: '#roadmap' },
-      { id: 6, name: this.state.lang.team, anchor: '#team' },
-      { id: 7, name: this.state.lang.contact, anchor: '#contact' },
+      { id: 1, name: lang.download, anchor: '#download' },
+      { id: 2, name: lang.platform, anchor: '#what-is-gingr' },
+      { id: 3, name: lang.ggCoin, anchor: '#blockchain' },
+      { id: 4, name: lang.icoDetails, anchor: '#ico-details' },
+      { id: 5, name: lang.roadmap, anchor: '#roadmap' },
+      { id: 6, name: lang.team, anchor: '#team' },
+      { id: 7, name: lang.contact, anchor: '#contact' },
     ];
 
     return (
@@ -184,114 +186,110 @@ class Home extends React.Component<any, any> {
       >
         <div className="App">
           <BackToTop />
-          <Header
-            lang={this.state.lang}
-            langSelect={this.handleLangChange}
-            user={this.state.user}
-          >
+          <Header lang={lang} langSelect={langSelect} user={this.state.user}>
             <Nav items={items} />
           </Header>
-          {/*<EventBanner lang={this.state.lang} />*/}
+          {/*<EventBanner lang={lang} />*/}
           <Section bg="#eaeaea" top={true} small={true}>
-            <Top lang={this.state.lang} />
+            <Top lang={lang} />
           </Section>
           <Section bg="#4c306a" small={true}>
-            <PressReports lang={this.state.lang} user={this.state.user} />
+            <PressReports lang={lang} user={this.state.user} />
           </Section>
           <Section bg="#f39fff">
-            <StrongSolution lang={this.state.lang} />
+            <StrongSolution lang={lang} />
           </Section>
           <Section bg="#f39fff">
-            <ReasonsToInvest lang={this.state.lang} />
+            <ReasonsToInvest lang={lang} />
           </Section>
           <ScrollableAnchor id={'download'}>
             <Section bg="white" small={true}>
-              <Download lang={this.state.lang} />
+              <Download lang={lang} />
             </Section>
           </ScrollableAnchor>
           <ScrollableAnchor id={'what-is-gingr'}>
             <Section bg="#812a7b">
-              <WhatIsGingr lang={this.state.lang} />
+              <WhatIsGingr lang={lang} />
             </Section>
           </ScrollableAnchor>
           <Section bg="#de9dff">
-            <Beta lang={this.state.lang} />
+            <Beta lang={lang} />
           </Section>
           <Section bg="#802e7a">
-            <Instafuck lang={this.state.lang} />
+            <Instafuck lang={lang} />
           </Section>
           <Section bg="#de9dff">
-            <HookUp lang={this.state.lang} />
+            <HookUp lang={lang} />
           </Section>
           <ScrollableAnchor id={'blockchain'}>
             <Section bg="#802e7a">
-              <Blockchain lang={this.state.lang} />
+              <Blockchain lang={lang} />
             </Section>
           </ScrollableAnchor>
           <Section bg="#592356">
-            <Flow lang={this.state.lang} />
+            <Flow lang={lang} />
           </Section>
           <ScrollableAnchor id={'ico-details'}>
             <Section bg="#4d346a">
-              <IcoDetails lang={this.state.lang} user={this.state.user} />
+              <IcoDetails lang={lang} user={this.state.user} />
             </Section>
           </ScrollableAnchor>
           <Section bg="#802e7a" small={true}>
-            <IcoDetails2 lang={this.state.lang} />
+            <IcoDetails2 lang={lang} />
           </Section>
           <Section bg="#4d346a" small={true}>
-            <IcoDetails3 lang={this.state.lang} />
+            <IcoDetails3 lang={lang} />
           </Section>
           <Section bg="#591d55">
-            <ReasonsWhy lang={this.state.lang} />
+            <ReasonsWhy lang={lang} />
           </Section>
           <ScrollableAnchor id={'revolutionary-solution'}>
             <Section bg="#802e7a">
-              <RevolutionarySolution lang={this.state.lang} />
+              <RevolutionarySolution lang={lang} />
             </Section>
           </ScrollableAnchor>
           <ScrollableAnchor id={'roadmap'}>
             <Section bg="#f29eff">
-              <Roadmap lang={this.state.lang} />
+              <Roadmap lang={lang} />
             </Section>
           </ScrollableAnchor>
           <Section bg="#802e7a" small={true}>
-            <GlobalLeader lang={this.state.lang} />
+            <GlobalLeader lang={lang} />
           </Section>
           <Section bg="#f29eff" small={true}>
-            <GlobalLeader2 lang={this.state.lang} />
+            <GlobalLeader2 lang={lang} />
           </Section>
           <Section bg="#802e7a">
-            <GlobalLeader3 lang={this.state.lang} />
+            <GlobalLeader3 lang={lang} />
           </Section>
           <ScrollableAnchor id={'team'}>
             <Section bg="#592356" small={true}>
-              <Team lang={this.state.lang} />
+              <Team lang={lang} />
             </Section>
           </ScrollableAnchor>
           <ScrollableAnchor id={'team-ceo'}>
             <Section bg="#802e7a" small={true} maxHeight={'350px'}>
-              <TeamCEO lang={this.state.lang} />
+              <TeamCEO lang={lang} />
             </Section>
           </ScrollableAnchor>
           <ScrollableAnchor id={'team-all'}>
             <Section bg="#592356">
-              <TeamAll lang={this.state.lang} />
+              <TeamAll lang={lang} />
             </Section>
           </ScrollableAnchor>
           <Section bg="#4d346a" small={true}>
-            <Feedback lang={this.state.lang} />
+            <Feedback lang={lang} />
           </Section>
           <ScrollableAnchor id={'contact'}>
             <Section bg="#f29eff">
-              <ContactUs lang={this.state.lang} />
+              <ContactUs lang={lang} />
             </Section>
           </ScrollableAnchor>
           <Section bg="#541252">
-            <Footer lang={this.state.lang} />
+            <Footer lang={lang} />
           </Section>
           <SocialSidebar />
-          <DotNav lang={this.state.lang} />
+          <DotNav lang={lang} />
           {/*isMobile && dialog*/}
         </div>
       </ReactCSSTransitionReplace>
