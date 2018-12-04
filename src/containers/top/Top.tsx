@@ -10,7 +10,7 @@ import './Top.css';
 import Button from '../../components/button/Button';
 import PromoLogos from '../../components/promoLogos/PromoLogos';
 import LegallyApproved from '../../components/svgLegallyApproved/svgLegallyApproved';
-import Finma from '../../components/svgFinma/svgFinma';
+import Finma from '../../components/svgFinma/svgFinma2';
 import LegalContent from '../../components/legalContent/LegalContent';
 
 import video from '../../assets/video/1080p/promo.m4v';

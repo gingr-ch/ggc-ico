@@ -1,26 +1,10 @@
 import * as React from 'react';
-// import Dialog from 'rc-dialog';
-// import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
-
-// Load firebase service
-// import Base from '../../Base';
-
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
 
-// import LazyLoad from 'react-lazyload';
-// import ScrollableAnchor from 'react-scrollable-anchor';
-
-// Import locale strings
-// import { strings } from '../../components/localization';
-
 import LoaderPage from '../../components/loaderPage/LoaderPage';
-
-// import components
 import Section from '../../components/section/Section';
-// import Header from '../../components/header/Header';
-// import Nav from '../../components/nav/Nav';
+
 import Top from '../top/Top';
-// import Button from '../../components/button/Button';
 import PressReports from '../pressReports/PressReports';
 import Download from '../download/Download';
 import StrongSolution from '../strongSolution/StrongSolution';
@@ -50,13 +34,9 @@ import BackToTop from '../../components/backToTop/BackToTop';
 import SocialSidebar from '../../components/socialSidebar/SocialSidebar';
 import DotNav from '../../components/dotNav/DotNav';
 
-// import EventBanner from '../../components/eventBanner/EventBanner';
-
 class Home extends React.Component<any, any> {
   constructor(props: object) {
     super(props);
-    // this.handleLangChange = this.handleLangChange.bind(this);
-    // this.state = { checked: true };
     this.state = {
       lang: this.props.lang,
       user: null,
@@ -86,29 +66,6 @@ class Home extends React.Component<any, any> {
     });
   };
 
-  // handle state change when language is changed
-  // handleLangChange(langCode: any) {
-  //   if (langCode) {
-  //     strings.setLanguage(langCode.value);
-  //   }
-  //
-  //   this.setState({ lang: strings });
-  //   return strings.getLanguage();
-  // }
-
-  // getUser = async () => {
-  //   let user;
-  //
-  //   try {
-  //     user = Base.auth().currentUser;
-  //     let name = user.email.substring(0, user.email.lastIndexOf('@'));
-  //
-  //     this.setState({ user: name });
-  //   } catch (error) {
-  //     throw error;
-  //   }
-  // };
-
   componentDidMount() {
     // this.getUser();
     this.setState({ loading: false });
@@ -119,6 +76,7 @@ class Home extends React.Component<any, any> {
   };
 
   render() {
+    console.warn(this.props.lang);
     if (this.state.loading) {
       return (
         <ReactCSSTransitionReplace
@@ -131,52 +89,7 @@ class Home extends React.Component<any, any> {
       );
     }
 
-    // const style = {
-    //   width: this.state.width,
-    //   height: this.state.height,
-    // };
-
-    // let wrapClassName = '';
-    // if (this.state.center) {
-    //   wrapClassName = 'event-dialog center';
-    // }
-
-    // const isMobile = !isWidthUp('sm', this.props.width);
-
-    // const dialog = (
-    //   <Dialog
-    //     visible={this.state.visible}
-    //     wrapClassName={wrapClassName}
-    //     animation="zoom"
-    //     maskAnimation="fade"
-    //     onClose={this.onClose}
-    //     style={style}
-    //     mousePosition={this.state.mousePosition}
-    //     destroyOnClose={this.state.destroyOnClose}
-    //   >
-    //     <div className="rc-dialog-body__content flex-row">
-    //       <div className="rc-dialog-body__text flex-column">
-    //         <h2>{lang.bePartOfTheGgCoinMeetup}</h2>
-    //         <span>08/11/2018 {lang.zurich}</span>
-    //         <Button btnStyle="secondary-fat" click={this.goToMeetup}>
-    //           Join now
-    //         </Button>
-    //       </div>
-    //     </div>
-    //   </Dialog>
-    // );
-
-    const { lang /*langSelect*/ } = this.props;
-
-    // const items = [
-    //   { id: 1, name: lang.download, anchor: '#download' },
-    //   { id: 2, name: lang.platform, anchor: '#what-is-gingr' },
-    //   { id: 3, name: lang.ggCoin, anchor: '#blockchain' },
-    //   { id: 4, name: lang.icoDetails, anchor: '#ico-details' },
-    //   { id: 5, name: lang.roadmap, anchor: '#roadmap' },
-    //   { id: 6, name: lang.team, anchor: '#team' },
-    //   { id: 7, name: lang.contact, anchor: '#contact' },
-    // ];
+    const { lang } = this.props;
 
     return (
       <ReactCSSTransitionReplace
@@ -186,10 +99,6 @@ class Home extends React.Component<any, any> {
       >
         <div className="App">
           <BackToTop />
-          {/*<Header lang={lang} langSelect={langSelect} user={this.state.user}>
-            <Nav items={items} />
-          </Header>*/}
-          {/*<EventBanner lang={lang} />*/}
           <Section bg="#eaeaea" top={true} small={true}>
             <Top lang={lang} />
           </Section>
@@ -270,12 +179,10 @@ class Home extends React.Component<any, any> {
           </Section>
           <SocialSidebar />
           <DotNav lang={lang} />
-          {/*isMobile && dialog*/}
         </div>
       </ReactCSSTransitionReplace>
     );
   }
 }
 
-// export default withWidth()(Home);
 export default Home;

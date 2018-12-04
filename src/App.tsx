@@ -12,12 +12,12 @@ import './App.css';
 
 import Base from './Base';
 
-import PrivateRoute from './PrivateRoute';
+// import PrivateRoute from './PrivateRoute';
 
 import Header from './components/header/Header';
 import Nav from './components/nav/Nav';
 
-import Login from './containers/login/Login';
+// import Login from './containers/login/Login';
 // import EventsPage from './containers/eventsPage/EventsPage';
 import LoaderPage from './components/loaderPage/LoaderPage';
 
@@ -33,11 +33,11 @@ const Home = Loadable({
 //   delay: 500,
 // });
 
-const WhitelistPage = Loadable({
-  loader: () => import('./containers/whitelist/Whitelist'),
-  loading: () => <LoaderPage />,
-  delay: 200,
-});
+// const WhitelistPage = Loadable({
+//   loader: () => import('./containers/whitelist/Whitelist'),
+//   loading: () => <LoaderPage />,
+//   delay: 200,
+// });
 
 const cookies = new Cookies();
 
@@ -120,8 +120,9 @@ class App extends React.Component<any, any> {
   // }
 
   render() {
-    const { authenticated, loading, lang, user } = this.state;
+    const { /*authenticated,*/ loading, lang, user } = this.state;
 
+    console.warn(lang);
     // const items = [{ id: 1, name: lang.home, anchor: '/' }];
 
     const items = [
@@ -163,16 +164,26 @@ class App extends React.Component<any, any> {
                 <Nav items={items} />
               </Header>
 
-              <Route exact={true} path="/login" component={Login} lang={lang} />
-              <PrivateRoute
+              {/*<Route exact={true} path="/login" component={Login} lang={lang} />*/}
+              <Route
                 exact={true}
                 path="/"
-                component={Home}
                 lang={lang}
                 user={user}
+                render={props => <Home {...props} lang={lang} user={user} />}
                 // langSelect={this.handleLangChange}
-                authenticated={authenticated}
+                // authenticated={authenticated}
               />
+              {/*
+              <Route
+                exact={true}
+                path={this.props.match.path}
+                render={props => (
+                  <EventsDetails {...props} lang={this.state.lang} />
+                )}
+              />
+              */}
+              {/*
               <PrivateRoute
                 path="/whitelist"
                 component={WhitelistPage}
@@ -180,6 +191,7 @@ class App extends React.Component<any, any> {
                 // langSelect={this.handleLangChange}
                 authenticated={authenticated}
               />
+              */}
               {/*<Route path="/meetup" component={EventsPage} lang={lang} />*/}
             </div>
           </ThemeProvider>

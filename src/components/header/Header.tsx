@@ -35,7 +35,7 @@ const users = {
 
 let adminIco = 'https://admin.ggcico.io/auth/register?refcode=';
 let home = '/';
-let whitelist = '/whitelist';
+// let whitelist = '/whitelist';
 // const whitePaper =
 //   'https://docs.wixstatic.com/ugd/2eea42_b23b9045b42246c2ac4f7c6cbf5ee65c.pdf';
 const whitepaperPdf = 'https://api.ggcoin.ch/download/pdf/ggc-white-paper.pdf';
@@ -108,6 +108,7 @@ class Header extends React.Component<any, any> {
               {this.props.lang.whitepaper}
             </a>
 
+            {/*
             {this.props.user && this.props.user.indexOf('friends') !== 0 && (
               <Link
                 to={whitelist}
@@ -132,16 +133,15 @@ class Header extends React.Component<any, any> {
                 {this.props.lang.whitelist}
               </Link>
             )}
+            */}
 
-            {this.props.user && this.props.user.indexOf('friends') === 0 && (
-              <Button
-                click={() => this.click(adminIco, true)}
-                borderColor="#df9eff"
-                className="btn-login"
-              >
-                {this.props.lang.login}
-              </Button>
-            )}
+            <Button
+              click={() => this.click(adminIco, true)}
+              borderColor="#df9eff"
+              className="btn-login"
+            >
+              {this.props.lang.login}
+            </Button>
           </div>
 
           <LanguageChanger
