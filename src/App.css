@@ -282,9 +282,6 @@
 }
 
 @media(max-width: 967px) {
-  .App .gg-nav {
-    display: none;
-  }
 
   .App-logo {
     margin: 0 auto 0 0;
