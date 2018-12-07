@@ -188,23 +188,7 @@ class Top extends React.Component<any, any> {
                 height="150px"
                 onClick={e => this.onClick(e)}
               />
-              <Finma
-                width="150px"
-                height="150px"
-                onClick={e => this.onClick(e)}
-              />
-              <a
-                onClick={e => this.onClick(e)}
-                style={{
-                  textDecoration: 'underline',
-                  fontSize: '14px',
-                  position: 'relative',
-                  top: '-1em',
-                  cursor: 'pointer',
-                }}
-              >
-                read more
-              </a>
+              <Finma width="150px" height="150px" />
             </div>
 
             <PromoLogos />
