@@ -15,6 +15,8 @@ const memorandum = require(process.env.REACT_APP_MEDIA_URL +
   'download/legal_memorandum.png');
 const companyMemorandum = require(process.env.REACT_APP_MEDIA_URL +
   'download/memorandum.png');
+const technicalPaper = require(process.env.REACT_APP_MEDIA_URL +
+  'download/technicalPaper.png');
 
 // const whitepaperPdf = require('../../assets/docs/ggcoin-white_paper.pdf');
 // const lightpaperPdf = require('../../assets/docs/ggcoin-lightpaper.pdf');
@@ -29,6 +31,8 @@ const memorandumPdf =
   'https://api.ggcoin.ch/download/pdf/ggc-legal-memorandum.pdf';
 const companyMemorandumPdf =
   'https://api.ggcoin.ch/download/pdf/ggc-company-memorandum.pdf';
+const technicalPaperPdf =
+  'https://api.ggcoin.ch/download/pdf/ggc-technical-paper.pdf';
 
 class Download extends React.Component<any, any> {
   constructor(props: any) {
@@ -73,6 +77,12 @@ class Download extends React.Component<any, any> {
                   <img src={lightPaper} />
                 </a>
                 <p>{this.props.lang.lightpaper}</p>
+              </li>
+              <li className="download-item">
+                <a href={technicalPaperPdf} target="_blank">
+                  <img src={technicalPaper} />
+                </a>
+                <p>{this.props.lang.technicalPaper}</p>
               </li>
               <li className="download-item">
                 <a href={memorandumPdf} target="_blank">
