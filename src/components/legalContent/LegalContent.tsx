@@ -3,7 +3,7 @@ import * as React from 'react';
 import './LegalContent.css';
 
 const Stach = require('../../assets/img/logo_stach.png');
-const Finma = require('../../assets/img/logo_finma.png');
+// const Finma = require('../../assets/img/logo_finma.png');
 
 class LegalContent extends React.Component<any, any> {
   constructor(props: any) {
@@ -27,6 +27,7 @@ class LegalContent extends React.Component<any, any> {
         </h2>
         <p>{this.props.lang.theGingrProjectAndAllItsLegal}</p>
         <div style={{ display: 'block', margin: '3em 0' }} />
+        {/*
         <h2
           style={{
             fontSize: '16px',
@@ -42,6 +43,7 @@ class LegalContent extends React.Component<any, any> {
         <p>{this.props.lang.asYouAreProbablyAware}</p>
         <p>{this.props.lang.havingSaidThatWeHaveNow}</p>
         <div style={{ display: 'block', margin: '3em 0' }} />
+        */}
         <div
           className="legal-content__companies flex-row"
           style={{ alignItems: 'flex-start' }}
@@ -99,6 +101,7 @@ class LegalContent extends React.Component<any, any> {
               </a>
             </p>
           </div>
+          {/*
           <div
             className="flex-column"
             style={{
@@ -141,6 +144,7 @@ class LegalContent extends React.Component<any, any> {
               </a>
             </p>
           </div>
+          */}
         </div>
       </div>
     );

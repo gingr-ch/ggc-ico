@@ -120,9 +120,9 @@ class Top extends React.Component<any, any> {
   };
 
   render() {
-    const style = {
-      width: this.state.width,
-    };
+    // const style = {
+    //   width: this.state.width,
+    // };
 
     let wrapClassName = '';
     if (this.state.center) {
@@ -146,7 +146,7 @@ class Top extends React.Component<any, any> {
         animation="zoom"
         maskAnimation="fade"
         onClose={this.onClose}
-        style={style}
+        // style={style}
         mousePosition={this.state.mousePosition}
         destroyOnClose={this.state.destroyOnClose}
       >
