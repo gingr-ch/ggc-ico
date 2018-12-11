@@ -121,15 +121,15 @@
   right: 0%;
 }
 
-.stamps-container svg {
+.stamps-container svg.stamp  {
   cursor: pointer;
 }
 
-.stamps-container svg:hover .stamp-hover-stroke {
+.stamps-container svg.stamp:hover .stamp-hover-stroke {
   stroke: var(--pink) !important;
 }
 
-.stamps-container svg:hover .stamp-hover {
+.stamps-container svg.stamp:hover .stamp-hover {
   fill: var(--pink) !important;
 }
 

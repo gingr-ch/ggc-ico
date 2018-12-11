@@ -187,6 +187,7 @@ class Top extends React.Component<any, any> {
                 width="150px"
                 height="150px"
                 onClick={e => this.onClick(e)}
+                class="stamp"
               />
               <Finma width="150px" height="150px" />
             </div>
