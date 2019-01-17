@@ -23,14 +23,14 @@ class GlobalLeader2 extends React.Component<any, any> {
             <table className="table-market-cap">
               <tbody>
                 <tr className="yellow-text">
-                  <td>2018</td>
-                  <td>2018 / 2019</td>
-                  <td />
                   <td>2019</td>
+                  <td>2019 / 2020</td>
                   <td />
                   <td>2020</td>
-                  <td>2020 / 2021</td>
+                  <td />
                   <td>2021</td>
+                  <td>2021 / 2022</td>
+                  <td>2022</td>
                 </tr>
                 <tr style={{ height: '33px' }}>
                   <td
