@@ -1312,14 +1312,20 @@ const FlowChart = (props: any) => (
       y="200.409"
       lineHeight="1.2em"
       style={{
+        isolation: 'isolate',
         fill: '#fff',
         fontFamily: 'brandon_grotesque_regularRg',
         fontSize: '8.144px',
         background: '#592857',
-        textAlign: 'center',
       }}
     >
-      ({props.lang.workingCapital} + {props.lang.income} + {props.lang.profits})
+      {'(' +
+        props.lang.workingCapital +
+        ' + ' +
+        props.lang.income +
+        ' + ' +
+        props.lang.profits +
+        ')'}
     </Text>
 
     <path fill="#940db5" d="M602.952 104.242H773.25v46.351H602.952z" />
