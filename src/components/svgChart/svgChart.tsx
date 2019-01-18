@@ -91,7 +91,7 @@ const Chart = (props: any) => (
       className="chart-top-st7 chart-top-st2 chart-top-st9"
       verticalAnchor="start"
       textAnchor="start"
-      width={25.1}
+      width={38.1}
       x="89.8799"
       y="165.6367"
     >
