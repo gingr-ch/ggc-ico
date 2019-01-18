@@ -1302,14 +1302,26 @@ const FlowChart = (props: any) => (
       fontFamily="brandon_grotesque_regularRg,Brandon Grotesque"
     >
       {props.lang.fiatFunds}
-      <tspan fontSize={8.144} fill="#fff">
-        <tspan x={-52.954} y={9.773}>
-          ({props.lang.workingCapital} + {props.lang.income} +{' '}
-          {props.lang.profits})
-        </tspan>
-        <tspan x={25.981} y={19.546} />
-      </tspan>
     </text>
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="start"
+      width="180"
+      x="608.269"
+      y="200.409"
+      lineHeight="1.2em"
+      style={{
+        fill: '#fff',
+        fontFamily: 'brandon_grotesque_regularRg',
+        fontSize: '8.144px',
+        background: '#592857',
+        textAlign: 'center',
+      }}
+    >
+      ({props.lang.workingCapital} + {props.lang.income} + {props.lang.profits})
+    </Text>
+
     <path fill="#940db5" d="M602.952 104.242H773.25v46.351H602.952z" />
     <text
       transform="translate(627.71 125.351)"
