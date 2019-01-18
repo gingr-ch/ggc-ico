@@ -14,12 +14,12 @@ interface LanguageChangerProps {
 const options = [
   { value: 'en', iso: 'gb', name: 'English' },
   { value: 'de', iso: 'de', name: 'German' },
+  { value: 'es', iso: 'es', name: 'Spanish' },
   { value: 'ar', iso: 'ae', name: 'Arabic' },
   { value: 'bg', iso: 'bg', name: 'Bulgarian' },
   { value: 'cs', iso: 'cz', name: 'Czech' },
   { value: 'da', iso: 'dk', name: 'Danish' },
   { value: 'el', iso: 'gr', name: 'Greek' },
-  { value: 'es', iso: 'es', name: 'Spanish' },
   { value: 'et', iso: 'et', name: 'Estonian' },
   { value: 'fi', iso: 'fi', name: 'Finnish' },
   { value: 'fr', iso: 'fr', name: 'French' },
