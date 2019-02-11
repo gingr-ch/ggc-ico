@@ -1,14 +1,16 @@
-import * as React from 'react';
-import { Link } from 'react-router-dom';
-import Drawer from '@material-ui/core/Drawer';
-import Img from 'react-image';
-
-import LanguageChanger from '../languageChanger/LanguageChanger';
-import Button from '../button/Button';
-import Nav from '../nav/Nav';
 import './Header.css';
 
-const gingrLogo = require(process.env.REACT_APP_MEDIA_URL + 'logo.png');
+import * as React from 'react';
+import Img from 'react-image';
+import { Link } from 'react-router-dom';
+
+import Drawer from '@material-ui/core/Drawer';
+
+import Button from '../button/Button';
+import LanguageChanger from '../languageChanger/LanguageChanger';
+import Nav from '../nav/Nav';
+
+const gingrLogo = require(process.env.REACT_APP_MEDIA_URL + 'gingr_logo_r.png');
 
 // const users = {
 //   friends1: 'L247',
