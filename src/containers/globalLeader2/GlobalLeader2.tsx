@@ -1,7 +1,7 @@
+import './GlobalLeader2.css';
+
 import * as React from 'react';
 import OnVisible from 'react-on-visible';
-
-import './GlobalLeader2.css';
 
 import Arrows from '../../components/svgArrows/svgArrows';
 
@@ -22,44 +22,28 @@ class GlobalLeader2 extends React.Component<any, any> {
           <OnVisible className="hidden-content hidden-content--flip-in-right hidden-content--ico-details2">
             <table className="table-market-cap">
               <tbody>
-                <tr className="yellow-text">
+                <tr className="yellow-text table-head">
                   <td>2019</td>
-                  <td>2019 / 2020</td>
-                  <td />
-                  <td>2020</td>
-                  <td />
-                  <td>2021</td>
-                  <td>2021 / 2022</td>
+                  <td colSpan={2}>2020</td>
+                  <td colSpan={2}>2021</td>
                   <td>2022</td>
+                  <td>2023</td>
+                  <td>2024</td>
                 </tr>
                 <tr style={{ height: '33px' }}>
-                  <td
-                    style={{
-                      background: '#ffd643',
-                      color: '#5a068b',
-                      textAlign: 'left',
-                      fontSize: '17px',
-                    }}
-                  />
                   <td style={{ background: '#ffd643' }} />
                   <td style={{ background: '#ffd643' }} />
                   <td style={{ background: '#ffd643' }} />
                   <td style={{ background: '#ffd643' }} />
                   <td style={{ background: '#ffd643' }} />
                   <td style={{ background: '#ffd643' }} />
-                  <td
-                    style={{
-                      background: '#ffd643',
-                      color: '#5a068b',
-                      textAlign: 'right',
-                      fontSize: '17px',
-                    }}
-                  />
+                  <td style={{ background: '#ffd643' }} />
+                  <td style={{ background: '#ffd643' }} />
                 </tr>
                 <tr>
                   <td>{this.props.lang.switzerland}</td>
                   <td>{this.props.lang.unitedKingdom}</td>
-                  <td>{this.props.lang.france}</td>
+                  <td>{this.props.lang.spain}</td>
                   <td>{this.props.lang.portugal}</td>
                   <td>{this.props.lang.czechRepublic}</td>
                   <td>{this.props.lang.mexico}</td>
@@ -68,8 +52,8 @@ class GlobalLeader2 extends React.Component<any, any> {
                 </tr>
                 <tr>
                   <td>{this.props.lang.germany}</td>
-                  <td>{this.props.lang.newZealand}</td>
-                  <td>{this.props.lang.luxemburg}</td>
+                  <td>{this.props.lang.ireland}</td>
+                  <td>{this.props.lang.belgium}</td>
                   <td>{this.props.lang.finland}</td>
                   <td>{this.props.lang.poland}</td>
                   <td>{this.props.lang.venezuela}</td>
@@ -78,8 +62,8 @@ class GlobalLeader2 extends React.Component<any, any> {
                 </tr>
                 <tr>
                   <td>{this.props.lang.austria}</td>
-                  <td>{this.props.lang.australia}</td>
-                  <td>{this.props.lang.italy}</td>
+                  <td>{this.props.lang.newZealand}</td>
+                  <td>{this.props.lang.netherlands}</td>
                   <td>{this.props.lang.norway}</td>
                   <td>{this.props.lang.hungary}</td>
                   <td>{this.props.lang.columbia}</td>
@@ -88,8 +72,8 @@ class GlobalLeader2 extends React.Component<any, any> {
                 </tr>
                 <tr>
                   <td>{this.props.lang.lichtenstein}</td>
-                  <td>{this.props.lang.canada}</td>
-                  <td>{this.props.lang.belgium}</td>
+                  <td>{this.props.lang.australia}</td>
+                  <td>{this.props.lang.denmark}</td>
                   <td>{this.props.lang.sweden}</td>
                   <td>{this.props.lang.slovakia}</td>
                   <td>{this.props.lang.brasil}</td>
@@ -98,8 +82,8 @@ class GlobalLeader2 extends React.Component<any, any> {
                 </tr>
                 <tr>
                   <td />
-                  <td>{this.props.lang.ireland}</td>
-                  <td>{this.props.lang.netherlands}</td>
+                  <td>{this.props.lang.canada}</td>
+                  <td>{this.props.lang.luxemburg}</td>
                   <td />
                   <td>{this.props.lang.lithuania}</td>
                   <td>{this.props.lang.argentina}</td>
@@ -109,7 +93,7 @@ class GlobalLeader2 extends React.Component<any, any> {
                 <tr>
                   <td />
                   <td />
-                  <td>{this.props.lang.denmark}</td>
+                  <td>{this.props.lang.italy}</td>
                   <td />
                   <td>{this.props.lang.latvia}</td>
                   <td>{this.props.lang.paraguay}</td>
@@ -129,7 +113,7 @@ class GlobalLeader2 extends React.Component<any, any> {
                 <tr>
                   <td />
                   <td />
-                  <td>{this.props.lang.spain}</td>
+                  <td>{this.props.lang.france}</td>
                   <td />
                   <td>{this.props.lang.bulgaria}</td>
                   <td>{this.props.lang.equador}</td>
