@@ -282,7 +282,7 @@
   "foundedGingrAG": "Gingr AG, fondée",
   "gingrBetaVersion": "LANCEMENT DE VERSION BÊTA GINGR",
   "launch": "Lancement",
-  "gingr2Launch": "{0} {1}",
+  "gingr2Launch": "{1} {0}",
   "developing": "DÉVELOPPEMENT",
   "pressReleaseWorldWide": "COMMUNIQUÉ DE PRESSE DANS LE MONDE ENTIER",
   "ggcPaymentSystemIncorporated": "GGC PAIEMENT SYSTÈME INCOPORATED",
@@ -360,5 +360,7 @@
   "name": "Nom",
   "thankYouForJoining": "Je vous remercie pour se joindre à",
   "allDetailsWillBeSentViaEmail": "Tous les détails seront envoyés par e-mail",
-  "goToGgcSite": "Accédez au Site GGC"
+  "goToGgcSite": "Accédez au Site GGC",
+  "searchingForPartner": "Recherche de partenaires",
+  "gingrShareTokenSale": "{1} {0}"
 }

@@ -361,5 +361,6 @@
   "thankYouForJoining": "Gracias por unirte",
   "allDetailsWillBeSentViaEmail": "Todos los datos se enviarán por correo electrónico",
   "goToGgcSite": "Ir al sitio GGC",
-  "searchingForPartner": "Buscando socio"
+  "searchingForPartner": "Buscando socio",
+  "gingrShareTokenSale": "{1} {0}"
 }

@@ -429,23 +429,39 @@ const Roadmap = (props: any) => (
       x="295.26"
       y="344.283"
     />
-    <text
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="end"
+      width={200}
+      x="164.605"
+      y="227.90"
+      lineHeight="1.2em"
       style={{
         fontSize: '15.103879928588867px',
         fill: '#fff',
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
       }}
-      transform="translate(10.093 237.578)"
     >
-      GINGR BETA VERSION
-      <tspan
-        style={{ letterSpacing: '0.031002743729686744em' }}
-        x="92.781"
-        y="18.125"
-      >
-        LAUNCH
-      </tspan>
-    </text>
+      {props.lang.gingrBetaVersion}
+    </Text>
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="start"
+      width={140}
+      x="330.501"
+      y="121.828"
+      lineHeight="1.2em"
+      style={{
+        fontSize: '9.23015022277832px',
+        fill: '#fff',
+        fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
+      }}
+    >
+      {props.lang.pressReleaseWorldWide}
+    </Text>
+
     <text
       style={{
         fontSize: '15.103879928588867px',
@@ -454,76 +470,103 @@ const Roadmap = (props: any) => (
       }}
       transform="translate(330.501 115.428)"
     >
-      GINGR 2.0 LAUNCH
-      <tspan style={{ fontSize: '9.23015022277832px' }}>
-        <tspan x="0" y="13.426">
-          PRESS RELEASE WORLD WIDE
-        </tspan>
-      </tspan>
+      {props.lang.formatString(
+        props.lang.gingr2Launch,
+        'GINGR 2.0',
+        props.lang.launch
+      )}
     </text>
+
     <text />
-    <text
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="start"
+      width={100}
+      x="330.501"
+      y="190.675"
+      lineHeight="1.2em"
       style={{
         fontSize: '15.103879928588867px',
         fill: '#fff',
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
       }}
-      transform="translate(330.501 199.675)"
     >
-      GGC ICO
-      <tspan x="0" y="18.125">
-        PUBLIC PRESALE
-      </tspan>
-    </text>
+      {'GGC ICO ' + props.lang.publicPreSale}
+    </Text>
+
     <text />
-    <text
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="start"
+      width={100}
+      x="330.501"
+      y="280.135"
+      lineHeight="1.2em"
       style={{
         fontSize: '15.103879928588867px',
         fill: '#fff',
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
       }}
-      transform="translate(330.501 289.135)"
     >
-      GGC ICO
-      <tspan x="0" y="18.125">
-        PUBLIC SALE
-      </tspan>
-    </text>
+      {'GGC ICO ' + props.lang.publicSale}
+    </Text>
+
     <text />
-    <text
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="end"
+      width={200}
+      x="164.605"
+      y="438.945"
+      lineHeight="1.2em"
       style={{
         fontSize: '15.103879928588867px',
         fill: '#fff',
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
       }}
-      transform="translate(4.249 438.945)"
     >
-      ESTABLISH UKRAINIAN
-      <tspan
-        style={{ letterSpacing: '-0.008987239579617222em' }}
-        x="65.353"
-        y="17.621"
-      >
-        I.T. COMPANY
-      </tspan>
-    </text>
+      {props.lang.establishUkranianITCompany}
+    </Text>
+
     <text />
-    <text
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="end"
+      width={200}
+      x="164.605"
+      y="509.598"
+      lineHeight="1.2em"
       style={{
         fontSize: '15.103879928588867px',
         fill: '#fff',
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
       }}
-      transform="translate(49.127 509.598)"
     >
-      G - SPOT OFFICE
-      <tspan style={{ fontSize: '9.23015022277832px' }}>
-        <tspan x="-20.318" y="12.587">
-          HEADQUARTERS SWITZERLAND
-        </tspan>
-      </tspan>
-    </text>
+      {props.lang.gSpotOffice}
+    </Text>
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="end"
+      width={200}
+      x="164.605"
+      y="527.598"
+      lineHeight="1.2em"
+      style={{
+        fontSize: '9.23015022277832px',
+        fill: '#fff',
+        fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
+      }}
+    >
+      {props.lang.headquartersSwitzerland}
+    </Text>
+
     <text />
+
     <text
       style={{
         fontSize: '15.103879928588867px',
@@ -552,24 +595,29 @@ const Roadmap = (props: any) => (
       GINGR BANK
     </text>
     <text />
-    <text
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="start"
+      width={145}
+      x="330.501"
+      y="564.899"
+      lineHeight="1.2em"
       style={{
         fontSize: '15.103879928588867px',
         fill: '#fff',
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
       }}
-      transform="translate(329.619 572.899)"
     >
-      GINGR SHARE TOKEN
-      <tspan
-        style={{ letterSpacing: '-0.013998110568252722em' }}
-        x="0"
-        y="17.621"
-      >
-        (GST) SALE
-      </tspan>
-    </text>
+      {props.lang.formatString(
+        props.lang.gingrShareTokenSale,
+        'Gingr Share Token (GST)',
+        props.lang.sale
+      )}
+    </Text>
+
     <text />
+
     <text
       style={{
         fontSize: '22px',
@@ -590,18 +638,9 @@ const Roadmap = (props: any) => (
       fontWeight="700"
       transform="translate(284.757 510.612) rotate(-90)"
     >
-      2
-      <tspan
-        style={{ letterSpacing: '-0.005015980113636364em' }}
-        x="11.396"
-        y="0"
-      >
-        0
-      </tspan>
-      <tspan x="25.058" y="0">
-        20
-      </tspan>
+      2020
     </text>
+
     <rect
       height="269.482"
       style={{ fill: '#f3d551' }}
@@ -620,20 +659,57 @@ const Roadmap = (props: any) => (
     >
       ROAD MAP
     </text>
-    <text
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="end"
+      width={182}
+      x="164.605"
+      y="575.618"
+      lineHeight="1.2em"
       style={{
         fontSize: '15.103879928588867px',
         fill: '#fff',
         fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
       }}
-      transform="translate(61.895 575.618)"
     >
-      GGC PAYMENT
-      <tspan x="-61.895" y="17.621">
-        SYSTEM IN COPORATED
-      </tspan>
-    </text>
+      {props.lang.ggcPaymentSystemIncorporated}
+    </Text>
+
     <text />
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="end"
+      width={200}
+      x="164.605"
+      y="227.90"
+      lineHeight="1.2em"
+      style={{
+        fontSize: '15.103879928588867px',
+        fill: '#fff',
+        fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
+      }}
+    >
+      {props.lang.gingrBetaVersion}
+    </Text>
+
+    <Text
+      verticalAnchor="start"
+      textAnchor="end"
+      width={200}
+      x="164.605"
+      y="300.658"
+      lineHeight="1.2em"
+      style={{
+        fontSize: '15.103879928588867px',
+        fill: '#fff',
+        fontFamily: 'brandon_grotesque_regularRg, Brandon Grotesque',
+      }}
+    >
+      {props.lang.developing}
+    </Text>
+
     <text
       style={{
         fontSize: '15.103879928588867px',
@@ -642,8 +718,7 @@ const Roadmap = (props: any) => (
       }}
       transform="translate(70.642 311.658)"
     >
-      DEVELOPING
-      <tspan x="22.852" y="18.125">
+      <tspan x="24.852" y="18.125">
         GINGR 2.0
       </tspan>
     </text>
