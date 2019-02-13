@@ -1,20 +1,21 @@
-import * as React from 'react';
-import ReactPlayer from 'react-player';
-import classNames from 'classnames';
-import Dialog from 'rc-dialog';
-import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 import 'rc-dialog/assets/index.css';
-
 import './Top.css';
 
-import Button from '../../components/button/Button';
-import PromoLogos from '../../components/promoLogos/PromoLogos';
-import LegallyApproved from '../../components/svgLegallyApproved/svgLegallyApproved';
-import Finma from '../../components/svgFinma/svgFinma2';
-import LegalContent from '../../components/legalContent/LegalContent';
+import classNames from 'classnames';
+import Dialog from 'rc-dialog';
+import * as React from 'react';
+import ReactPlayer from 'react-player';
+
+import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 
 import video from '../../assets/video/1080p/promo.m4v';
 import video480p from '../../assets/video/480p/promo.m4v';
+import Button from '../../components/button/Button';
+import LegalContent from '../../components/legalContent/LegalContent';
+import PromoLogos from '../../components/promoLogos/PromoLogos';
+import Finma from '../../components/svgFinma/svgFinma2';
+import LegallyApproved from '../../components/svgLegallyApproved/svgLegallyApproved';
+
 const swiss = require(process.env.REACT_APP_MEDIA_URL +
   'flags/switzerland.svg');
 
@@ -187,7 +188,7 @@ class Top extends React.Component<any, any> {
                 width="150px"
                 height="150px"
                 onClick={e => this.onClick(e)}
-                class="stamp"
+                className="stamp"
               />
               <Finma width="150px" height="150px" />
             </div>
