@@ -1,25 +1,22 @@
-import * as React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Loadable from 'react-loadable';
-import Cookies from 'universal-cookie';
-import { ThemeProvider } from 'styled-components';
-// Import locale strings
-import { strings } from './components/localization';
-import ReactCSSTransitionReplace from 'react-css-transition-replace';
-
 // import global css
 import './App.css';
 
+import * as React from 'react';
+import ReactCSSTransitionReplace from 'react-css-transition-replace';
+import ReactGA from 'react-ga';
+import Loadable from 'react-loadable';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+import Cookies from 'universal-cookie';
+
 import Base from './Base';
-
-// import PrivateRoute from './PrivateRoute';
-
 import Header from './components/header/Header';
+import LoaderPage from './components/loaderPage/LoaderPage';
+import { strings } from './components/localization';
 import Nav from './components/nav/Nav';
 
-// import Login from './containers/login/Login';
-// import EventsPage from './containers/eventsPage/EventsPage';
-import LoaderPage from './components/loaderPage/LoaderPage';
+ReactGA.initialize('UA-134491133-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const Home = Loadable({
   loader: () => import('./containers/home/Home'),

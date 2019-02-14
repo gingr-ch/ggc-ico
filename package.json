@@ -17,6 +17,7 @@
     "react-burger-menu": "^2.5.2",
     "react-css-transition-replace": "^3.0.3",
     "react-dom": "^16.6.0",
+    "react-ga": "^2.5.7",
     "react-image": "^1.4.1",
     "react-lazy-load-image-component": "^1.1.4",
     "react-lazyload": "^2.3.0",
