@@ -3,20 +3,17 @@ import './App.css';
 
 import * as React from 'react';
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
-import ReactGA from 'react-ga';
 import Loadable from 'react-loadable';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import Cookies from 'universal-cookie';
 
+import GAListener from './analytics';
 import Base from './Base';
 import Header from './components/header/Header';
 import LoaderPage from './components/loaderPage/LoaderPage';
 import { strings } from './components/localization';
 import Nav from './components/nav/Nav';
-
-ReactGA.initialize('UA-134491133-1');
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 const Home = Loadable({
   loader: () => import('./containers/home/Home'),
@@ -41,6 +38,7 @@ const cookies = new Cookies();
 const theme = {
   main: 'mediumseagreen',
 };
+
 // import Home from './containers/home/Home';
 // const Login = React.lazy(() => import('./containers/login/Login'));
 
@@ -87,6 +85,11 @@ class App extends React.Component<any, any> {
       throw error;
     }
   };
+
+  // initializeReactGA() {
+  //   ReactGA.initialize('UA-134491133-1');
+  //   ReactGA.pageview(window.location.pathname + window.location.search);
+  // }
 
   componentDidMount() {
     Base.auth().onAuthStateChanged(user => {
@@ -151,27 +154,28 @@ class App extends React.Component<any, any> {
         transitionLeaveTimeout={1000}
       >
         <Router>
-          <ThemeProvider theme={theme}>
-            <div style={{ height: '100%', width: '100%' }}>
-              <Header
-                lang={lang}
-                langSelect={this.handleLangChange}
-                user={user}
-              >
-                <Nav items={items} />
-              </Header>
+          <GAListener>
+            <ThemeProvider theme={theme}>
+              <div style={{ height: '100%', width: '100%' }}>
+                <Header
+                  lang={lang}
+                  langSelect={this.handleLangChange}
+                  user={user}
+                >
+                  <Nav items={items} />
+                </Header>
 
-              {/*<Route exact={true} path="/login" component={Login} lang={lang} />*/}
-              <Route
-                exact={true}
-                path="/"
-                lang={lang}
-                user={user}
-                render={props => <Home {...props} lang={lang} user={user} />}
-                // langSelect={this.handleLangChange}
-                // authenticated={authenticated}
-              />
-              {/*
+                {/*<Route exact={true} path="/login" component={Login} lang={lang} />*/}
+                <Route
+                  exact={true}
+                  path="/"
+                  // lang={lang}
+                  // user={user}
+                  render={props => <Home {...props} lang={lang} user={user} />}
+                  // langSelect={this.handleLangChange}
+                  // authenticated={authenticated}
+                />
+                {/*
               <Route
                 exact={true}
                 path={this.props.match.path}
@@ -180,7 +184,7 @@ class App extends React.Component<any, any> {
                 )}
               />
               */}
-              {/*
+                {/*
               <PrivateRoute
                 path="/whitelist"
                 component={WhitelistPage}
@@ -189,9 +193,10 @@ class App extends React.Component<any, any> {
                 authenticated={authenticated}
               />
               */}
-              {/*<Route path="/meetup" component={EventsPage} lang={lang} />*/}
-            </div>
-          </ThemeProvider>
+                {/*<Route path="/meetup" component={EventsPage} lang={lang} />*/}
+              </div>
+            </ThemeProvider>
+          </GAListener>
         </Router>
       </ReactCSSTransitionReplace>
     );

@@ -13,7 +13,7 @@ dependencies:
   react-burger-menu: 2.6.4
   react-css-transition-replace: 3.0.3
   react-dom: 16.8.1
-  react-ga: 2.5.7
+  react-ga: github.com/codequest-eu/react-ga/22155de3cd67dbda9e87b3848486d7b9840f9fb4
   react-image: 1.5.1
   react-lazy-load-image-component: 1.3.2
   react-lazyload: 2.5.0
@@ -29,6 +29,7 @@ dependencies:
   react-scrollable-anchor: 0.6.1
   react-select: 2.3.0
   react-select-search: 0.9.5
+  react-with-analytics: 0.0.5
   styled-components: 4.1.3
   universal-cookie: 3.0.7
 devDependencies:
@@ -9189,13 +9190,6 @@ packages:
       react: ^16.3.0
     resolution:
       integrity: sha512-+hCNqfy7o9wvO6UgjqFmBzARJS7qrNoda0VqzvOuioEpoEXKutiKuv92dSz6kP7rYLmyHPyYNLesi5t/aH1gfw==
-  /react-ga/2.5.7:
-    dev: false
-    peerDependencies:
-      prop-types: ^15.6.0
-      react: ^15.6.2 || ^16.0
-    resolution:
-      integrity: sha512-UmATFaZpEQDO96KFjB5FRLcT6hFcwaxOmAJZnjrSiFN/msTqylq9G+z5Z8TYzN/dbamDTiWf92m6MnXXJkAivQ==
   /react-image/1.5.1:
     dependencies:
       '@babel/runtime': 7.3.1
@@ -9435,6 +9429,16 @@ packages:
       react-dom: '>=15.0.0'
     resolution:
       integrity: sha512-2DGFck6h99kLNr8pOFk+z4Soq3iISydwOFeeEVPjTN6+Y01CmvbWmnN02VuTWyFdnRtIDPe+wy2q6Ui8snBPZg==
+  /react-with-analytics/0.0.5:
+    dependencies:
+      prop-types: 15.6.2
+    dev: false
+    peerDependencies:
+      react: ^16.3.0
+      react-dom: ^16.3.0
+      react-ga: ^2.5.3
+    resolution:
+      integrity: sha512-IcPhu9qZNL3idGk/6u94JCZOYF1bJUL7Vq/oGhb4pY7gcyfP64ysheEEX2Il40WgDvsvLs9qMcjd/8vg32WRuA==
   /react/16.8.1:
     dependencies:
       loose-envify: 1.4.0
@@ -11886,6 +11890,15 @@ packages:
     dev: false
     resolution:
       integrity: sha1-YpmpBVsc78lp/355wdkY3Osiw2A=
+  github.com/codequest-eu/react-ga/22155de3cd67dbda9e87b3848486d7b9840f9fb4:
+    dev: false
+    name: react-ga
+    peerDependencies:
+      prop-types: ^15.6.0
+      react: ^15.6.2 || ^16.0
+    resolution:
+      tarball: 'https://codeload.github.com/codequest-eu/react-ga/tar.gz/22155de3cd67dbda9e87b3848486d7b9840f9fb4'
+    version: 2.5.7
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
@@ -11916,7 +11929,7 @@ specifiers:
   react-burger-menu: ^2.5.2
   react-css-transition-replace: ^3.0.3
   react-dom: ^16.6.0
-  react-ga: ^2.5.7
+  react-ga: 'github:codequest-eu/react-ga'
   react-image: ^1.4.1
   react-lazy-load-image-component: ^1.1.4
   react-lazyload: ^2.3.0
@@ -11932,6 +11945,7 @@ specifiers:
   react-scrollable-anchor: ^0.6.1
   react-select: ^2.0.0
   react-select-search: ^0.9.3
+  react-with-analytics: ^0.0.5
   styled-components: ^4.0.0-beta.0
   tslint-config-prettier: ^1.13.0
   typescript: ^2.7.2
