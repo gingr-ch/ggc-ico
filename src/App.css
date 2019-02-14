@@ -456,3 +456,16 @@ h3 {
     min-width: 100%;
   }
 }
+
+
+@media(max-height: 760px) {
+  .rc-dialog {
+    padding-top: 330px;
+  }
+}
+
+@media(max-height: 415px) {
+  .rc-dialog {
+    padding-top: 500px;
+  }
+}
