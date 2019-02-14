@@ -122,7 +122,6 @@ class App extends React.Component<any, any> {
   render() {
     const { /*authenticated,*/ loading, lang, user } = this.state;
 
-    console.warn(lang);
     // const items = [{ id: 1, name: lang.home, anchor: '/' }];
 
     const items = [
