@@ -1,38 +1,37 @@
 import * as React from 'react';
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
 
+import BackToTop from '../../components/backToTop/BackToTop';
+import DotNav from '../../components/dotNav/DotNav';
 import LoaderPage from '../../components/loaderPage/LoaderPage';
 import Section from '../../components/section/Section';
-
-import Top from '../top/Top';
-import PressReports from '../pressReports/PressReports';
-import Download from '../download/Download';
-import StrongSolution from '../strongSolution/StrongSolution';
-import ReasonsToInvest from '../reasonsToInvest/ReasonsToInvest';
-import WhatIsGingr from '../whatIsGingr/WhatIsGingr';
+import SocialSidebar from '../../components/socialSidebar/SocialSidebar';
 import Beta from '../beta/Beta';
-import Instafuck from '../instafuck/Instafuck';
-import HookUp from '../hookUp/HookUp';
 import Blockchain from '../blockchain/Blockchain';
+import ContactUs from '../contactUs/ContactUs';
+import Download from '../download/Download';
+import Feedback from '../feedback/Feedback';
 import Flow from '../flow/Flow';
-import IcoDetails from '../icoDetails/IcoDetails';
-import IcoDetails2 from '../icoDetails2/IcoDetails2';
-import IcoDetails3 from '../icoDetails3/IcoDetails3';
-import ReasonsWhy from '../reasonsWhy/ReasonsWhy';
-import RevolutionarySolution from '../revolutionarySolution/RevolutionarySolution';
-import Roadmap from '../roadmap/Roadmap';
+import Footer from '../footer/Footer';
 import GlobalLeader from '../globalLeader/GlobalLeader';
 import GlobalLeader2 from '../globalLeader2/GlobalLeader2';
 import GlobalLeader3 from '../globalLeader3/GlobalLeader3';
+import HookUp from '../hookUp/HookUp';
+import IcoDetails from '../icoDetails/IcoDetails';
+import IcoDetails2 from '../icoDetails2/IcoDetails2';
+import IcoDetails3 from '../icoDetails3/IcoDetails3';
+import Instafuck from '../instafuck/Instafuck';
+import PressReports from '../pressReports/PressReports';
+import ReasonsToInvest from '../reasonsToInvest/ReasonsToInvest';
+import ReasonsWhy from '../reasonsWhy/ReasonsWhy';
+import RevolutionarySolution from '../revolutionarySolution/RevolutionarySolution';
+import Roadmap from '../roadmap/Roadmap';
+import StrongSolution from '../strongSolution/StrongSolution';
 import Team from '../team/Team';
-import TeamCEO from '../teamCEO/TeamCEO';
 import TeamAll from '../teamAll/TeamAll';
-import Feedback from '../feedback/Feedback';
-import ContactUs from '../contactUs/ContactUs';
-import Footer from '../footer/Footer';
-import BackToTop from '../../components/backToTop/BackToTop';
-import SocialSidebar from '../../components/socialSidebar/SocialSidebar';
-import DotNav from '../../components/dotNav/DotNav';
+import TeamCEO from '../teamCEO/TeamCEO';
+import Top from '../top/Top';
+import WhatIsGingr from '../whatIsGingr/WhatIsGingr';
 
 class Home extends React.Component<any, any> {
   constructor(props: object) {
@@ -76,7 +75,6 @@ class Home extends React.Component<any, any> {
   };
 
   render() {
-    console.warn(this.props.lang);
     if (this.state.loading) {
       return (
         <ReactCSSTransitionReplace

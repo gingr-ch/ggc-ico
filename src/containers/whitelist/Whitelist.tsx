@@ -1,7 +1,6 @@
 import * as React from 'react';
 
 const Whitelist = props => {
-  console.warn(props);
   return (
     <div
       style={{
